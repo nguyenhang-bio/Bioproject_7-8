@@ -1,0 +1,382 @@
+Discrepancy Report Results
+
+Summary
+FATAL: MISSING_PROTEIN_ID:64 proteins have invalid IDs.
+DISC_SOURCE_QUALS_ASNDISC:strain (all present, all unique)
+DISC_SOURCE_QUALS_ASNDISC:taxname (all present, all unique)
+DISC_FEATURE_COUNT:CDS: 64 present
+DISC_COUNT_NUCLEOTIDES:1 nucleotide Bioseqs are present
+FEATURE_LOCATION_CONFLICT:64 features have inconsistent gene locations.
+DISC_QUALITY_SCORES:Quality scores are missing on all sequences.
+ONCALLER_COMMENT_PRESENT:1 comment descriptors were found (all same)
+SHORT_PROT_SEQUENCES:2 protein sequences are shorter than 50 aa.
+MISSING_GENOMEASSEMBLY_COMMENTS:1 bioseqs are missing GenomeAssembly structured comments
+MOLTYPE_NOT_MRNA:1 molecule types are not set as mRNA.
+TECHNIQUE_NOT_TSA:1 technique are not set as TSA
+MISSING_STRUCTURED_COMMENT:1 sequences do not include structured comments.
+MISSING_PROJECT:65 sequences do not include project.
+DISC_INCONSISTENT_MOLINFO_TECH:Molinfo Technique Report (some missing, all same)
+
+
+Detailed Report
+
+FATAL: DiscRep_ALL:MISSING_PROTEIN_ID::64 proteins have invalid IDs.
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_1 (length 358)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_2 (length 1229)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_3 (length 142)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_4 (length 151)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_5 (length 472)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_6 (length 175)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_7 (length 154)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_8 (length 123)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_9 (length 163)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_10 (length 344)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_11 (length 169)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_12 (length 366)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_13 (length 441)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_14 (length 60)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_15 (length 675)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_16 (length 53)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_17 (length 367)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_18 (length 706)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_19 (length 194)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_20 (length 301)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_21 (length 168)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_22 (length 78)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_23 (length 181)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_24 (length 319)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_25 (length 260)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_26 (length 675)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_27 (length 104)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_28 (length 80)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_29 (length 565)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_30 (length 122)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_31 (length 146)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_32 (length 232)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_33 (length 114)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_34 (length 137)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_35 (length 46)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_36 (length 258)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_37 (length 57)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_38 (length 60)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_39 (length 59)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_40 (length 48)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_41 (length 86)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_42 (length 259)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_43 (length 231)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_44 (length 149)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_45 (length 84)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_46 (length 75)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_47 (length 75)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_48 (length 61)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_49 (length 59)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_50 (length 58)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_51 (length 844)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_52 (length 179)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_53 (length 122)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_54 (length 56)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_55 (length 128)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_56 (length 77)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_57 (length 134)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_58 (length 627)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_59 (length 475)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_60 (length 407)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_61 (length 214)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_62 (length 381)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_63 (length 116)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_64 (length 224)
+
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::strain (all present, all unique)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::1 sources have unique values for strain
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::taxname (all present, all unique)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::1 sources have unique values for taxname
+DiscRep_ALL:DISC_FEATURE_COUNT::CDS: 64 present
+DiscRep_ALL:DISC_COUNT_NUCLEOTIDES::1 nucleotide Bioseqs are present
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1 (length 51668)
+
+DiscRep_ALL:FEATURE_LOCATION_CONFLICT::64 features have inconsistent gene locations.
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c1901-825	NFECIMNI_00001
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c5590-1901	NFECIMNI_00002
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c6205-5777	NFECIMNI_00003
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c6680-6225	NFECIMNI_00004
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c8108-6690	NFECIMNI_00005
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c8635-8108	NFECIMNI_00006
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c9089-8625	NFECIMNI_00007
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c9468-9097	NFECIMNI_00008
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c9968-9477	NFECIMNI_00009
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c11062-10028	NFECIMNI_00010
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c11635-11126	NFECIMNI_00011
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c12747-11647	NFECIMNI_00012
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c14050-12725	NFECIMNI_00013
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c14242-14060	NFECIMNI_00014
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c16280-14253	NFECIMNI_00015
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c16720-16559	NFECIMNI_00016
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c17907-16804	NFECIMNI_00017
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	Ribonucleoside-diphosphate reductase large subunit	ENA_LR813619_LR813619.1:c20037-17917	NFECIMNI_00018
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c20638-20054	NFECIMNI_00019
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c21554-20649	NFECIMNI_00020
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c22069-21563	NFECIMNI_00021
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c22305-22069	NFECIMNI_00022
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c22807-22262	NFECIMNI_00023
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c23771-22812	NFECIMNI_00024
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c24569-23787	NFECIMNI_00025
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c26731-24704	NFECIMNI_00026
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c27045-26731	NFECIMNI_00027
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c27284-27042	NFECIMNI_00028
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	DNA primase/helicase	ENA_LR813619_LR813619.1:c28993-27296	NFECIMNI_00029
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c29371-29003	NFECIMNI_00030
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c29948-29508	NFECIMNI_00031
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c30693-29995	NFECIMNI_00032
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c31030-30686	NFECIMNI_00033
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c31458-31045	NFECIMNI_00034
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c31610-31470	NFECIMNI_00035
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c32481-31705	NFECIMNI_00036
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c32656-32483	NFECIMNI_00037
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c32838-32656	NFECIMNI_00038
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c33227-33048	NFECIMNI_00039
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c33378-33232	NFECIMNI_00040
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c33672-33412	NFECIMNI_00041
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c34518-33739	NFECIMNI_00042
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c35210-34515	NFECIMNI_00043
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c35900-35451	NFECIMNI_00044
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c36172-35918	NFECIMNI_00045
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c36575-36348	NFECIMNI_00046
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c36876-36649	NFECIMNI_00047
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c37051-36866	NFECIMNI_00048
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c37352-37173	NFECIMNI_00049
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c37531-37355	NFECIMNI_00050
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c41281-38747	NFECIMNI_00051
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c42236-41697	NFECIMNI_00052
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c42673-42305	NFECIMNI_00053
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c42850-42680	NFECIMNI_00054
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c43233-42847	NFECIMNI_00055
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c43478-43245	NFECIMNI_00056
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c43909-43505	NFECIMNI_00057
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c45802-43919	NFECIMNI_00058
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c47239-45812	NFECIMNI_00059
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c48459-47236	NFECIMNI_00060
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c49105-48461	NFECIMNI_00061
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c50247-49102	NFECIMNI_00062
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c50594-50244	NFECIMNI_00063
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+/home/hang/project/pro_7-8/annotation/PVN02:CDS	hypothetical protein	ENA_LR813619_LR813619.1:c51280-50606	NFECIMNI_00064
+
+DiscRep_ALL:DISC_QUALITY_SCORES::Quality scores are missing on all sequences.
+
+DiscRep_ALL:ONCALLER_COMMENT_PRESENT::1 comment descriptors were found (all same)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+
+DiscRep_ALL:SHORT_PROT_SEQUENCES::2 protein sequences are shorter than 50 aa.
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_35 (length 46)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_40 (length 48)
+
+DiscRep_ALL:MISSING_GENOMEASSEMBLY_COMMENTS::1 bioseqs are missing GenomeAssembly structured comments
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1 (length 51668)
+
+DiscRep_ALL:MOLTYPE_NOT_MRNA::1 molecule types are not set as mRNA.
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1 (length 51668)
+
+DiscRep_ALL:TECHNIQUE_NOT_TSA::1 technique are not set as TSA
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1 (length 51668)
+
+DiscRep_ALL:MISSING_STRUCTURED_COMMENT::1 sequences do not include structured comments.
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1 (length 51668)
+
+DiscRep_ALL:MISSING_PROJECT::65 sequences do not include project.
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1 (length 51668)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_1 (length 358)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_2 (length 1229)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_3 (length 142)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_4 (length 151)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_5 (length 472)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_6 (length 175)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_7 (length 154)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_8 (length 123)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_9 (length 163)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_10 (length 344)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_11 (length 169)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_12 (length 366)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_13 (length 441)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_14 (length 60)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_15 (length 675)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_16 (length 53)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_17 (length 367)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_18 (length 706)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_19 (length 194)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_20 (length 301)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_21 (length 168)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_22 (length 78)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_23 (length 181)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_24 (length 319)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_25 (length 260)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_26 (length 675)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_27 (length 104)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_28 (length 80)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_29 (length 565)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_30 (length 122)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_31 (length 146)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_32 (length 232)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_33 (length 114)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_34 (length 137)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_35 (length 46)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_36 (length 258)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_37 (length 57)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_38 (length 60)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_39 (length 59)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_40 (length 48)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_41 (length 86)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_42 (length 259)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_43 (length 231)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_44 (length 149)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_45 (length 84)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_46 (length 75)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_47 (length 75)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_48 (length 61)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_49 (length 59)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_50 (length 58)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_51 (length 844)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_52 (length 179)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_53 (length 122)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_54 (length 56)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_55 (length 128)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_56 (length 77)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_57 (length 134)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_58 (length 627)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_59 (length 475)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_60 (length 407)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_61 (length 214)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_62 (length 381)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_63 (length 116)
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1_64 (length 224)
+
+DiscRep_ALL:DISC_INCONSISTENT_MOLINFO_TECH::Molinfo Technique Report (some missing, all same)
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::technique (all missing)
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::1 Molinfos are missing field technique
+/home/hang/project/pro_7-8/annotation/PVN02:ENA_LR813619_LR813619.1 (length 51668)
+

@@ -1,0 +1,263 @@
+>Feature ENA_LR813619_LR813619.1
+1901	825	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00001
+			product	hypothetical protein
+5590	1901	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00002
+			product	hypothetical protein
+6205	5777	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00003
+			product	hypothetical protein
+6680	6225	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00004
+			product	hypothetical protein
+8108	6690	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00005
+			product	hypothetical protein
+8635	8108	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00006
+			product	hypothetical protein
+9089	8625	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00007
+			product	hypothetical protein
+9468	9097	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00008
+			product	hypothetical protein
+9968	9477	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00009
+			product	hypothetical protein
+11062	10028	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00010
+			product	hypothetical protein
+11635	11126	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00011
+			product	hypothetical protein
+12747	11647	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00012
+			product	hypothetical protein
+14050	12725	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00013
+			product	hypothetical protein
+14242	14060	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00014
+			product	hypothetical protein
+16280	14253	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00015
+			product	hypothetical protein
+16720	16559	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00016
+			product	hypothetical protein
+17907	16804	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00017
+			product	hypothetical protein
+20037	17917	CDS
+			EC_number	1.17.4.1
+			gene	I4L
+			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:UniProtKB:P0DSV2
+			locus_tag	NFECIMNI_00018
+			product	Ribonucleoside-diphosphate reductase large subunit
+20638	20054	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00019
+			product	hypothetical protein
+21554	20649	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00020
+			product	hypothetical protein
+22069	21563	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00021
+			product	hypothetical protein
+22305	22069	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00022
+			product	hypothetical protein
+22807	22262	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00023
+			product	hypothetical protein
+23771	22812	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00024
+			product	hypothetical protein
+24569	23787	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00025
+			product	hypothetical protein
+26731	24704	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00026
+			product	hypothetical protein
+27045	26731	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00027
+			product	hypothetical protein
+27284	27042	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00028
+			product	hypothetical protein
+28993	27296	CDS
+			EC_number	2.7.7.-
+			gene	4
+			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:UniProtKB:P03692
+			locus_tag	NFECIMNI_00029
+			product	DNA primase/helicase
+29371	29003	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00030
+			product	hypothetical protein
+29948	29508	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00031
+			product	hypothetical protein
+30693	29995	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00032
+			product	hypothetical protein
+31030	30686	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00033
+			product	hypothetical protein
+31458	31045	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00034
+			product	hypothetical protein
+31610	31470	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00035
+			product	hypothetical protein
+32481	31705	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00036
+			product	hypothetical protein
+32656	32483	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00037
+			product	hypothetical protein
+32838	32656	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00038
+			product	hypothetical protein
+33227	33048	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00039
+			product	hypothetical protein
+33378	33232	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00040
+			product	hypothetical protein
+33672	33412	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00041
+			product	hypothetical protein
+34518	33739	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00042
+			product	hypothetical protein
+35210	34515	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00043
+			product	hypothetical protein
+35900	35451	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00044
+			product	hypothetical protein
+36172	35918	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00045
+			product	hypothetical protein
+36575	36348	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00046
+			product	hypothetical protein
+36876	36649	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00047
+			product	hypothetical protein
+37051	36866	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00048
+			product	hypothetical protein
+37352	37173	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00049
+			product	hypothetical protein
+37531	37355	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00050
+			product	hypothetical protein
+41281	38747	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00051
+			product	hypothetical protein
+42236	41697	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00052
+			product	hypothetical protein
+42673	42305	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00053
+			product	hypothetical protein
+42850	42680	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00054
+			product	hypothetical protein
+43233	42847	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00055
+			product	hypothetical protein
+43478	43245	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00056
+			product	hypothetical protein
+43909	43505	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00057
+			product	hypothetical protein
+45802	43919	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00058
+			product	hypothetical protein
+47239	45812	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00059
+			product	hypothetical protein
+48459	47236	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00060
+			product	hypothetical protein
+49105	48461	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00061
+			product	hypothetical protein
+50247	49102	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00062
+			product	hypothetical protein
+50594	50244	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00063
+			product	hypothetical protein
+51280	50606	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	NFECIMNI_00064
+			product	hypothetical protein
