@@ -1,0 +1,112 @@
+BLASTP 2.16.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: Non-redundant UniProtKB/SwissProt sequences
+           483,620 sequences; 183,938,400 total letters
+
+
+
+Query= NFECIMNI_00021 hypothetical protein
+
+Length=169
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+G3FFN4.1 RecName: Full=dATP triphosphohydrolase; Short=dATPase [V...  50.8    3e-07
+A0A7U3TCA2.1 RecName: Full=dATP triphosphohydrolase; Short=dATPas...  47.4    5e-06
+A0A2L0V156.1 RecName: Full=dATP triphosphohydrolase; Short=dATPas...  47.0    1e-05
+
+
+>G3FFN4.1 RecName: Full=dATP triphosphohydrolase; Short=dATPase [Vibrio 
+phage phiVC8]
+Length=170
+
+ Score = 50.8 bits (120),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 41/136 (30%), Positives = 59/136 (43%), Gaps = 28/136 (21%)
+
+Query  1    MDIQAALRSGKVRRYHAQPDIPAQSTAEHMWGVAMLVMMFYPTASVT------LLKAALS  54
+            M IQ  LR+G V R+        QS AEHM+ VA++         +       ++  AL+
+Sbjct  2    MQIQNILRAGHVPRWQLCDTTRTQSIAEHMFNVALIARHMCAHIGINGDEMNEIVVQALT  61
+
+Query  55   HDCGEVGLGDMPSPTKQATPGMREILKDMEHDNMSSLGLEP------WEEHLS-PTEKTA  107
+            HD  EV LGDMP+ TKQ                +   G+EP       E  ++ P  K  
+Sbjct  62   HDMDEVILGDMPTVTKQ---------------RLREAGIEPNGLIDCVETIITDPFAKQL  106
+
+Query  108  LKICDVLEGLQYTARH  123
+            +KI D++E   +   H
+Sbjct  107  VKIADLIEAAWWIDEH  122
+
+
+>A0A7U3TCA2.1 RecName: Full=dATP triphosphohydrolase; Short=dATPase; AltName: 
+Full=DatZ [Cyanophage S-2L]
+Length=175
+
+ Score = 47.4 bits (111),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 35/119 (29%), Positives = 57/119 (48%), Gaps = 10/119 (8%)
+
+Query  7    LRSGKVRRYHAQPDIPAQSTAEHMWGVAMLVMMFYPTASV---TLLKA---ALSHDCGEV  60
+            LR+  + R+        Q+ AEHMW V +L   +   A +   T+ +A   AL HD  E+
+Sbjct  12   LRASHISRWGIVQTTYPQNIAEHMWRVWLLCRDWGAAAGMPQHTVRQACEFALVHDLAEI  71
+
+Query  61   GLGDMPSPTKQATPGMREILKDMEHDNMSSLGLEPWEEHLSPTEKTALKICDVLEGLQY  119
+              GD P+P K  TP ++E+L  +E   +  +     E  ++P  +   K CD  E + +
+Sbjct  72   RTGDAPTPHK--TPELKELLAGIEAQIVPEVA--ELEATMAPEARELWKFCDTAEAVLF  126
+
+
+>A0A2L0V156.1 RecName: Full=dATP triphosphohydrolase; Short=dATPase [Salmonella 
+phage PMBT28]
+Length=194
+
+ Score = 47.0 bits (110),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 38/133 (29%), Positives = 58/133 (44%), Gaps = 24/133 (18%)
+
+Query  7    LRSGKVRRYHAQPDIPAQSTAEHMWGVAMLVMMFY-------PTASVTLLK------AAL  53
+            +R+  V R+   P   +QS A+H W VAML M  +       P  + T ++       AL
+Sbjct  10   MRAQYVTRWQIVPTTRSQSVAQHSWAVAMLAMNLWCRRTGGQPGEAATDVELGKIAVMAL  69
+
+Query  54   SHDCGEVGLGDMPSPTK---QATPGMREILKDMEHDNMSSLGLEPWEEHLSPTEKTALKI  110
+             HD  EV  GD+ +PTK    A+  + E+        + S+   P         +T +KI
+Sbjct  70   WHDAPEVFTGDINTPTKIFLNASNALDELENTAGDGYLESMDGGP--------IRTCVKI  121
+
+Query  111  CDVLEGLQYTARH  123
+             D LE + +   H
+Sbjct  122  ADFLEAMYWLMEH  134
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.134    0.413    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7873429200
+
+
+  Database: Non-redundant UniProtKB/SwissProt sequences
+    Posted date:  Aug 4, 2024  7:01 AM
+  Number of letters in database: 183,938,400
+  Number of sequences in database:  483,620
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

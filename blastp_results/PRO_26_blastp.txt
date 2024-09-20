@@ -1,0 +1,103 @@
+BLASTP 2.16.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: Non-redundant UniProtKB/SwissProt sequences
+           483,620 sequences; 183,938,400 total letters
+
+
+
+Query= NFECIMNI_00026 hypothetical protein
+
+Length=676
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+Q9ZJE9.1 RecName: Full=DNA polymerase I; Short=POL I [Helicobacte...  51.2    2e-05
+B0FIL5.1 RecName: Full=DNA-directed DNA polymerase; AltName: Full...  45.8    0.001
+
+
+>Q9ZJE9.1 RecName: Full=DNA polymerase I; Short=POL I [Helicobacter pylori 
+J99]
+Length=897
+
+ Score = 51.2 bits (121),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 77/354 (22%), Positives = 144/354 (41%), Gaps = 63/354 (18%)
+
+Query  289  VEGNPNSPQQVKDWLFSLGWEPETWEYKRDKDTGEERKIPQINVKHTGGELDPGIERLIE  348
+            V+ N NSP+Q+ + L+     P+   +  D     E+ + +I  KH      P I  LI 
+Sbjct  553  VDFNLNSPKQLGEVLYDKLGLPKNKSHSTD-----EKNLLKILDKH------PSIP-LIL  600
+
+Query  349  DHQELQRLKGLGIVKHRIGIVNGWIRDHIDGKVIARAAGFTNTLRLRHAEVVNVPSARVP  408
+            +++EL +L       +   ++    +D        +    T  L      + N+P  R P
+Sbjct  601  EYRELNKL----FNTYTTPLLRLKDKDDKIHTTFIQTGTATGRLSSHSPNLQNIP-VRSP  655
+
+Query  409  YGHELRSLLIAHDDNHQLLGSDLSSLEDRCKHHYQLPLDPEYVKSQQTEGYDPHMRIARM  468
+             G  +R   IA    + LLG D S +E R   H+    D   +     +G D H+  ++ 
+Sbjct  656  KGLLIRKGFIASSKEYCLLGVDYSQIELRLLAHFSQDKD---LMEAFLKGRDIHLETSKA  712
+
+Query  469  GGLCTIEDEEFYIACELDQVEMTDENKARYKKLKPIRGKGKPINYGCQYGQRPAGIARSA  528
+                                 +  E+ A+ K     R   K IN+G  YG     ++ + 
+Sbjct  713  ---------------------LFGEDLAKEK-----RSIAKSINFGLVYGMGSKKLSETL  746
+
+Query  529  KMPLAMAETLFNAYWE--------LNWSINKIAESTEVKSANGCNWQRNPVSGIWYYLKT  580
+             +PL+ A++   AY++        LN    +I ++++  +  G  ++    +G+  Y+K 
+Sbjct  747  SIPLSEAKSYIEAYFKRFPSIKDYLNGMREEILKTSKAFTLLG-RYRVFDFTGVNDYVKG  805
+
+Query  581  N--KDRFSTLCQGTGAYAFDIWVEQIFQICEERWNREPL--LNGQFHDEVILTV  630
+            N  ++  + + QG+ +    + + ++     ER+   P   L  Q HDE+I  +
+Sbjct  806  NYLREGVNAIFQGSASDLLKLGMLKV----SERFKNNPSVRLLLQVHDELIFEI  855
+
+
+>B0FIL5.1 RecName: Full=DNA-directed DNA polymerase; AltName: Full=DNA 
+polymerase gp53 [Escherichia phage phiEco32]
+Length=614
+
+ Score = 45.8 bits (107),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 28/64 (44%), Positives = 40/64 (63%), Gaps = 3/64 (5%)
+
+Query  356  LKGLGIVKHRIGIVNGWI-RDHIDGKVIARA-AGFTNTLRLRHAEVVNVPSARVPYGHEL  413
+            LK   +  HR+G+++G I ++  DGK+ A A +  T T R +H  VVN+PS R  +GHE 
+Sbjct  249  LKRRVVAAHRLGLISGLIAKEREDGKLSAEANSCATPTFRFKHRIVVNIPS-RGLFGHEC  307
+
+Query  414  RSLL  417
+            RSL 
+Sbjct  308  RSLF  311
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.138    0.440    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 68431175040
+
+
+  Database: Non-redundant UniProtKB/SwissProt sequences
+    Posted date:  Aug 4, 2024  7:01 AM
+  Number of letters in database: 183,938,400
+  Number of sequences in database:  483,620
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

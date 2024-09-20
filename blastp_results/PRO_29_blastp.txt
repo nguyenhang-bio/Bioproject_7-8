@@ -1,0 +1,139 @@
+BLASTP 2.16.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: Non-redundant UniProtKB/SwissProt sequences
+           483,620 sequences; 183,938,400 total letters
+
+
+
+Query= NFECIMNI_00029 DNA primase/helicase
+
+Length=566
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+P20315.1 RecName: Full=DNA helicase/primase; AltName: Full=Gene p...  123     1e-28
+P03692.1 RecName: Full=DNA helicase/primase; AltName: Full=Gene p...  119     3e-27
+
+
+>P20315.1 RecName: Full=DNA helicase/primase; AltName: Full=Gene product 
+4; Short=Gp4 [Enterobacteria phage T3]
+Length=566
+
+ Score = 123 bits (308),  Expect = 1e-28, Method: Compositional matrix adjust.
+ Identities = 130/482 (27%), Positives = 218/482 (45%), Gaps = 30/482 (6%)
+
+Query  82   FTHRGIEKDDWHTFGVRVILSQSDGKTPYAIGHPYTRDGKLVGFKIKLIARKTMWNVGDV  141
+             T RGI K+     G    L++ D +  Y +     ++G +V  K++    K     G  
+Sbjct  80   LTARGISKETCQKAGY--WLAKVDNRM-YQVADYRDQNGSIVSQKVR-DKDKNFKTTGSH  135
+
+Query  142  KGADLYGWELAKRVGGSTLYITEGEEDAIALRKILRTMSTSDKYDYPVVSLPAGTDSVAK  201
+            K   L+   L    GG  + +TEGE DA+ + ++           YPVVSL  G  S AK
+Sbjct  136  KSDALFLKHLWS--GGKKIVVTEGEIDALTVMEL-------QDCKYPVVSLGHGA-SAAK  185
+
+Query  202  CIGRMAAEIQQRFKSVVLVYDDDEPGRKAVRETRKIIPNAKV--AVLPEKDANDCLLKGR  259
+                   E   +F+ ++L++D D+ GRKAV E  +++P  KV  AVLP KDAN+C + G 
+Sbjct  186  KTCAANYEYFDQFEQIILMFDMDDAGRKAVEEAAQVLPAGKVRVAVLPCKDANECHIMGE  245
+
+Query  260  LKATRDACIFQADKPVD---TPTKSVRDCRKEIM-DPPVMGKSYP-WPTLTKLTFGQRKG  314
+             KA  +  ++ A+  V        S++D  KE M     +G  +     L   T G R G
+Sbjct  246  DKAILEQ-VWNANPWVPDGVVSALSLKDRVKEAMTSEDAVGLLFDGCQGLNDRTLGARGG  304
+
+Query  315  EHISIGGGTGCGK-TLIGHELSAWNATEHKWRTLMIMMEETNAETFRAVAGKIDNFPYHV  373
+            E + +  G+G GK T +  +  AW     K R  + M+EE+  +T + + G  +      
+Sbjct  305  EVVMVTSGSGMGKSTFVRQQALAWGKRMGK-RVGLAMLEESVEDTIQDMMGLNNKVRLRQ  363
+
+Query  374  PEEDSGLAPDMEQLDKTLDRI--EPYITVWDIEALEDPESTWEQIEHFIRTQGHLYDVVM  431
+             +E      +  + D+  D +  +    ++D  A  + +    ++  ++RT G   DV++
+Sbjct  364  SDEVKKAIAEDGRFDEWYDELFGDDTFHLYDSFAEAEADRLLAKLA-YMRT-GLGCDVIV  421
+
+Query  432  IDNATTLSEGLTASERNDFLGKVNSELAKLAKKFDFMSIMFSHLNAPPSSQRSHEHGGKV  491
+            +D+ + +      S+    + ++ ++L   AK    + ++  HL  P    ++HE G  V
+Sbjct  422  LDHISIVVSASEESDERKMIDRLMTKLKGFAKSTGVVLVVICHLKNPEKG-KAHEEGRAV  480
+
+Query  492  LESQFTGSRAAMRYSHMIIGFERNKHAECPHCSYITCIKNRKYGRTGRFKTF-YTERTGR  550
+              +   GS A  + S  II  ERN+  + P+   +  +K R  G TG      Y   TG 
+Sbjct  481  SITDLRGSGALRQLSDTIIALERNQQGDMPNLVLVRLLKCRFTGDTGIAGYMEYNRETGW  540
+
+Query  551  LQ  552
+            L+
+Sbjct  541  LE  542
+
+
+>P03692.1 RecName: Full=DNA helicase/primase; AltName: Full=Gene product 
+4; Short=Gp4 [Escherichia phage T7]
+Length=566
+
+ Score = 119 bits (298),  Expect = 3e-27, Method: Compositional matrix adjust.
+ Identities = 128/480 (27%), Positives = 206/480 (43%), Gaps = 26/480 (5%)
+
+Query  81   PFTHRGIEKDDWHTFGVRVILSQSDGKTPYAIGHPYTRDGKLVGFKIKLIARKTMWNVGD  140
+              T RGI K+     G  +  ++ DG   Y +     ++G +V  K++    K     G 
+Sbjct  80   ALTARGISKETCQKAGYWI--AKVDG-VMYQVADYRDQNGNIVSQKVR-DKDKNFKTTGS  135
+
+Query  141  VKGADLYGWELAKRVGGSTLYITEGEEDAIALRKILRTMSTSDKYDYPVVSLPAGTDSVA  200
+             K   L+G  L    GG  + +TEGE D      +L  M   D   YPVVSL  G  S A
+Sbjct  136  HKSDALFGKHLWN--GGKKIVVTEGEID------MLTVMELQD-CKYPVVSLGHGA-SAA  185
+
+Query  201  KCIGRMAAEIQQRFKSVVLVYDDDEPGRKAVRETRKIIPNAK--VAVLPEKDANDCLLKG  258
+            K       E   +F+ ++L++D DE GRKAV E  +++P  K  VAVLP KDAN+C L G
+Sbjct  186  KKTCAANYEYFDQFEQIILMFDMDEAGRKAVEEAAQVLPAGKVRVAVLPCKDANECHLNG  245
+
+Query  259  R----LKATRDACIFQADKPVDTPTKSVRDCRKEIMDPPVMGKSYPWPT-LTKLTFGQRK  313
+                 ++   +A  +  D  V   +   R  R+ +     +G  +   T +   T G R 
+Sbjct  246  HDREIMEQVWNAGPWIPDGVVSALSLRER-IREHLSSEESVGLLFSGCTGINDKTLGARG  304
+
+Query  314  GEHISIGGGTGCGK-TLIGHELSAWNATEHKWRTLMIMMEETNAETFRAVAGKIDNFPYH  372
+            GE I +  G+G GK T +  +   W     K +  + M+EE+  ET   + G  +     
+Sbjct  305  GEVIMVTSGSGMGKSTFVRQQALQWGTAMGK-KVGLAMLEESVEETAEDLIGLHNRVRLR  363
+
+Query  373  VPEEDSGLAPDMEQLDKTLDRIEPYITVWDIEALEDPESTWEQIEHFIRTQGHLYDVVMI  432
+              +       +  + D+  D +    T    ++  + E+     +      G   DV+++
+Sbjct  364  QSDSLKREIIENGKFDQWFDELFGNDTFHLYDSFAEAETDRLLAKLAYMRSGLGCDVIIL  423
+
+Query  433  DNATTLSEGLTASERNDFLGKVNSELAKLAKKFDFMSIMFSHLNAPPSSQRSHEHGGKVL  492
+            D+ + +      S+    +  + ++L   AK    + ++  HL  P    ++HE G  V 
+Sbjct  424  DHISIVVSASGESDERKMIDNLMTKLKGFAKSTGVVLVVICHLKNPDKG-KAHEEGRPVS  482
+
+Query  493  ESQFTGSRAAMRYSHMIIGFERNKHAECPHCSYITCIKNRKYGRTGRFKTF-YTERTGRL  551
+             +   GS A  + S  II  ERN+  + P+   +  +K R  G TG      Y + TG L
+Sbjct  483  ITDLRGSGALRQLSDTIIALERNQQGDMPNLVLVRILKCRFTGDTGIAGYMEYNKETGWL  542
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.136    0.419    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 55132741020
+
+
+  Database: Non-redundant UniProtKB/SwissProt sequences
+    Posted date:  Aug 4, 2024  7:01 AM
+  Number of letters in database: 183,938,400
+  Number of sequences in database:  483,620
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

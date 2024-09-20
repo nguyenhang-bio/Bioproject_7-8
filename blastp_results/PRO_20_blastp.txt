@@ -1,0 +1,163 @@
+BLASTP 2.16.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: Non-redundant UniProtKB/SwissProt sequences
+           483,620 sequences; 183,938,400 total letters
+
+
+
+Query= NFECIMNI_00020 hypothetical protein
+
+Length=302
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+B8JBM1.1 RecName: Full=Probable DNA ligase; AltName: Full=Polydeo...  50.4    8e-06
+Q2IH69.1 RecName: Full=Probable DNA ligase; AltName: Full=Polydeo...  49.7    2e-05
+B4UIS1.1 RecName: Full=Probable DNA ligase; AltName: Full=Polydeo...  45.4    4e-04
+Q826P6.1 RecName: Full=Probable DNA ligase; AltName: Full=Polydeo...  45.4    4e-04
+C1AX87.1 RecName: Full=Probable DNA ligase; AltName: Full=Polydeo...  44.3    8e-04
+
+
+>B8JBM1.1 RecName: Full=Probable DNA ligase; AltName: Full=Polydeoxyribonucleotide 
+synthase [ATP] [Anaeromyxobacter dehalogenans 2CP-1]
+Length=513
+
+ Score = 50.4 bits (119),  Expect = 8e-06, Method: Compositional matrix adjust.
+ Identities = 52/177 (29%), Positives = 74/177 (42%), Gaps = 44/177 (25%)
+
+Query  156  CCTKDPEVWYKVFEDITSTPDAFGLAREGIIGKAIDEPYHEGKRDFTLMKIKRDLTLDLL  215
+              T+DP       ED      A    +EG++ KA+D PY  G+R    +K+KR  TLDL+
+Sbjct  339  LVTRDPAEAGAFLED------ALARGQEGVVAKALDAPYEAGRRGAAWLKVKRAHTLDLV  392
+
+Query  216  VVGM--GRGLK---------GTKYENTLGYLIVEEKNGQQHQVSGMTDAQRVEWHAN--P  262
+            V+    G G +         G +  +T G++++           GMTDA  + W      
+Sbjct  393  VLAAEWGSGRRRGWLSNLHLGARDPSTGGFVML------GKTFKGMTDAM-LAWQTERLK  445
+
+Query  263  AAIKGK------------IVE-----IEAMCRLPNG-SLREARFKAIRHDKTIVDID  301
+            A   G             +VE     I++  R P G +LR AR K  R DK   D D
+Sbjct  446  ALATGPLDAWQVPVRPELVVEVAFDGIQSSPRYPGGLALRFARVKRYREDKRPEDAD  502
+
+
+>Q2IH69.1 RecName: Full=Probable DNA ligase; AltName: Full=Polydeoxyribonucleotide 
+synthase [ATP] [Anaeromyxobacter dehalogenans 2CP-C]
+Length=513
+
+ Score = 49.7 bits (117),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 52/177 (29%), Positives = 77/177 (44%), Gaps = 44/177 (25%)
+
+Query  156  CCTKDPEVWYKVFEDITSTPDAFGLAREGIIGKAIDEPYHEGKRDFTLMKIKRDLTLDLL  215
+              T+DP       ED      A    +EG++ KA+D PY  G+R    +K+KR  TLDL+
+Sbjct  339  LVTRDPAEARAFLED------ALARGQEGVVAKALDAPYEAGRRGAAWLKVKRAHTLDLV  392
+
+Query  216  VVGM--GRGLK---------GTKYENTLGYLIVEEKNGQQHQVSGMTDAQRVEWHAN--P  262
+            V+    G G +         G +   + G++++    G+  +  GMTDA  + W  +   
+Sbjct  393  VLAAEWGSGRRRGWLSNLHLGARDPASGGFVML----GKTFK--GMTDAM-LAWQTDRLK  445
+
+Query  263  AAIKGK------------IVE-----IEAMCRLPNG-SLREARFKAIRHDKTIVDID  301
+            A   G             +VE     I++  R P G +LR AR K  R DK   D D
+Sbjct  446  ALATGPLDAWQVPVRPELVVEVAFDGIQSSPRYPGGLALRFARVKRYREDKRPEDAD  502
+
+
+>B4UIS1.1 RecName: Full=Probable DNA ligase; AltName: Full=Polydeoxyribonucleotide 
+synthase [ATP] [Anaeromyxobacter sp. K]
+Length=513
+
+ Score = 45.4 bits (106),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 49/156 (31%), Positives = 66/156 (42%), Gaps = 36/156 (23%)
+
+Query  176  DAFGLAREGIIGKAIDEPYHEGKRDFTLMKIKRDLTLDLLVV----GMGR------GLKG  225
+            +A    +EG++ KA+D PY  G+R    +K+KR  TLDL+V+    G GR       L  
+Sbjct  353  EALARGQEGVVAKALDAPYEAGRRGAAWLKVKRAHTLDLVVLAAEWGSGRRRGWLSNLHL  412
+
+Query  226  TKYENTLGYLIVEEKNGQQHQVSGMTDAQRVEWHAN--PAAIKGK------------IVE  271
+               +   G  ++  K        GMTDA  + W      A   G             +VE
+Sbjct  413  GARDPATGEFVMLGKT-----FKGMTDAM-LAWQTERLKALATGPLDAWQVPVRPELVVE  466
+
+Query  272  -----IEAMCRLPNG-SLREARFKAIRHDKTIVDID  301
+                 I+A  R P G +LR AR K  R DK   D D
+Sbjct  467  VAFDGIQASPRYPGGLALRFARVKRYREDKRPEDAD  502
+
+
+>Q826P6.1 RecName: Full=Probable DNA ligase; AltName: Full=Polydeoxyribonucleotide 
+synthase [ATP] [Streptomyces avermitilis MA-4680 
+= NBRC 14893]
+Length=512
+
+ Score = 45.4 bits (106),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 54/187 (29%), Positives = 81/187 (43%), Gaps = 40/187 (21%)
+
+Query  150  RKAEIICCTKDPEVWYKVFEDITSTPD---------AFGLAR--EGIIGKAIDEPYHEGK  198
+            R AE+     +P    +V   + S PD         A  LAR  EG++ KA+D PY  G+
+Sbjct  317  RHAELARLVPEP---LRVRRALVSGPDDGAAAETFLADTLARGHEGVVVKALDAPYSAGR  373
+
+Query  199  RDFTLMKIKRDLTLDLLVVGM--GRGLKGTKYENTLGYLIVEEKNGQQHQVS----GMTD  252
+            R  + +K+K   TLDL+V+    G G +  K  N   +L     +G    +     GMTD
+Sbjct  374  RGASWLKVKPVHTLDLVVLAAEWGHGRRTGKLSNL--HLGARAADGSFAMLGKTFKGMTD  431
+
+Query  253  AQ-----------RVEWHANPAAIKGKIV------EIEAMCRLPNG-SLREARFKAIRHD  294
+            A             VE + +   ++ ++V       ++   R P G +LR AR    R D
+Sbjct  432  AMLTWQTERLTELAVEENGSVVTVRPELVVEIAYDGLQKSTRYPAGVTLRFARVVRYRED  491
+
+Query  295  KTIVDID  301
+            KT  + D
+Sbjct  492  KTPAEAD  498
+
+
+>C1AX87.1 RecName: Full=Probable DNA ligase; AltName: Full=Polydeoxyribonucleotide 
+synthase [ATP] [Rhodococcus opacus B4]
+Length=503
+
+ Score = 44.3 bits (103),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 46/150 (31%), Positives = 66/150 (44%), Gaps = 25/150 (17%)
+
+Query  176  DAFGLAREGIIGKAIDEPYHEGKRDFTLMKIKRDLTLDLLVVGMGRGL-KGTKYENTLGY  234
+            DA     EG++ K++  PY  G+R     K+K + TLDL+V+G   G  + T Y + L  
+Sbjct  344  DALAAGHEGVMVKSLTAPYAAGRRGRAWQKVKPEHTLDLVVLGAEWGYGRRTGYLSNLHL  403
+
+Query  235  LIVEEKNGQQHQVS----GMTDAQRVEWHAN--PAAIKGK-----------IVEIE----  273
+               +   G    V     G+TDA  ++W  +  P   + +           +VEIE    
+Sbjct  404  GARDPDGGAPIMVGKTFKGLTDAL-LQWQTDEFPRHERARDDHTVYLHPDLVVEIELDGV  462
+
+Query  274  -AMCRLPNG-SLREARFKAIRHDKTIVDID  301
+                R P G +LR AR    R DKT  D D
+Sbjct  463  QVSTRYPGGLALRFARVLRYRPDKTAADAD  492
+
+
+
+Lambda      K        H        a         alpha
+   0.324    0.141    0.433    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23560649100
+
+
+  Database: Non-redundant UniProtKB/SwissProt sequences
+    Posted date:  Aug 4, 2024  7:01 AM
+  Number of letters in database: 183,938,400
+  Number of sequences in database:  483,620
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

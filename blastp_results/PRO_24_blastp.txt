@@ -1,0 +1,103 @@
+BLASTP 2.16.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: Non-redundant UniProtKB/SwissProt sequences
+           483,620 sequences; 183,938,400 total letters
+
+
+
+Query= NFECIMNI_00024 hypothetical protein
+
+Length=320
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+P00638.2 RecName: Full=Exonuclease; AltName: Full=Exonuclease gp6...  51.2    4e-06
+P20321.1 RecName: Full=Exodeoxyribonuclease; Short=Exonuclease [E...  49.7    1e-05
+
+
+>P00638.2 RecName: Full=Exonuclease; AltName: Full=Exonuclease gp6; AltName: 
+Full=Gene product 6; Short=Gp6 [Escherichia phage T7]
+Length=300
+
+ Score = 51.2 bits (121),  Expect = 4e-06, Method: Compositional matrix adjust.
+ Identities = 65/239 (27%), Positives = 101/239 (42%), Gaps = 30/239 (13%)
+
+Query  1    MALPTIEKQYDDDEQCTEYKFEELLIDGDLLVFSSCAAVEYGRSPEEYTLQEILTNIEGR  60
+            MAL  +++ Y+  E C +     L++DGD LVF + +A E+  S EE        + + R
+Sbjct  1    MALLDLKQFYELREGCDDKGI--LVMDGDWLVFQAMSAAEFDASWEEEIWHRCCDHAKAR  58
+
+Query  61   ------IAAMKRRLRA---RKVRIFFTAKDNFRYRILD-TYKANRKEAWLP----ENLDA  106
+                  I + + R +A     + + FT   N+R  ++D  YKANRK    P    E LDA
+Sbjct  59   QILEDSIKSYETRKKAWAGAPIVLAFTDSVNWRKELVDPNYKANRKAVKKPVGYFEFLDA  118
+
+Query  107  AKSHIMTMFHGEMAPGLEADDLLAI---NQKLDGS--TIIATIDKDIPQVRGMHYRWETQ  161
+                    F+    P LE DD++ +   N    G+   +I + DKD   +    + W T 
+Sbjct  119  LFER--EEFYCIREPMLEGDDVMGVIASNPSAFGARKAVIISCDKDFKTIPNCDFLWCTT  176
+
+Query  162  HKGEAVFEVSGNG-----ELKKEIHNKKTKITGNG--IRFFCYQLLIGDPTDGVMGCGK  213
+                   E S +       +K +I +  + I G G     F     I +P   V+  GK
+Sbjct  177  GNILTQTEESADWWHLFQTIKGDITDGYSGIAGWGDTAEDFLNNPFITEPKTSVLKSGK  235
+
+
+>P20321.1 RecName: Full=Exodeoxyribonuclease; Short=Exonuclease [Enterobacteria 
+phage T3]
+Length=302
+
+ Score = 49.7 bits (117),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 64/229 (28%), Positives = 98/229 (43%), Gaps = 42/229 (18%)
+
+Query  1    MALPTIEKQYDDDEQCTEYKFEELLIDGDLLVFSSCAAVEYGRSPEEYTLQEILTNIEGR  60
+            MAL  +++ Y+  E C +     L++DGD LVF + +A E+  S EE        + + R
+Sbjct  1    MALLDLKQFYELREGCDDKGI--LVMDGDWLVFQAMSAAEFDASWEEEIWHRCCDHAKAR  58
+
+Query  61   ------IAAMKRRLRA---RKVRIFFTAKDNFRYRILD-TYKANRKEAWLP----ENLDA  106
+                  I + + R +A     + + FT   N+R  ++D  YKANRK    P    E L+A
+Sbjct  59   QILEDSIKSYETRKKAWVGAPIVLAFTDSVNWRKELVDPNYKANRKATKKPVGYFEFLEA  118
+
+Query  107  AKSHIMTMFHGEMAPGLEADDLLAI---NQKLDGS--TIIATIDKDIPQVRGMHYRWETQ  161
+                    F+    P LE DD++ +   N    G+   +I + DKD   +    + W T 
+Sbjct  119  LFER--EEFYCIREPMLEGDDVMGVIASNPSAFGARKAVIISCDKDFKTIPNCDFLWCT-  175
+
+Query  162  HKGEAVFEVSGNGELKKEIHNKKTKITGNGIRFFCYQLLIGDPTDGVMG  210
+                     +GN          +TK T +    F  Q + GD TDG  G
+Sbjct  176  ---------TGN-------ILTQTKETADWWHLF--QTIKGDMTDGYSG  206
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.139    0.423    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 25853036580
+
+
+  Database: Non-redundant UniProtKB/SwissProt sequences
+    Posted date:  Aug 4, 2024  7:01 AM
+  Number of letters in database: 183,938,400
+  Number of sequences in database:  483,620
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

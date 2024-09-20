@@ -1,0 +1,86 @@
+BLASTP 2.16.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: Non-redundant UniProtKB/SwissProt sequences
+           483,620 sequences; 183,938,400 total letters
+
+
+
+Query= NFECIMNI_00015 hypothetical protein
+
+Length=676
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+Q9P9T5.1 RecName: Full=Uncharacterized protein XF_1569/XF_1674 [X...  130     4e-32
+
+
+>Q9P9T5.1 RecName: Full=Uncharacterized protein XF_1569/XF_1674 [Xylella 
+fastidiosa 9a5c]
+Length=316
+
+ Score = 130 bits (326),  Expect = 4e-32, Method: Compositional matrix adjust.
+ Identities = 80/322 (25%), Positives = 155/322 (48%), Gaps = 40/322 (12%)
+
+Query  172  FSKWCFEIQMGFKFQMQDFHAIIFEFCQKIVNGEIDRGIVCIPPRHSKTQILSIFLPLYS  231
+            F+++ F+ +   +F++   H +I      ++ G     ++ +PP  SKT++++I +    
+Sbjct  25   FTRYFFKQRQQLRFRVNWHHHVIAGVVDDVIAGRRKDVVINVPPGSSKTELVAINVMARG  84
+
+Query  232  FCNNPSSHNIITSYADDVVAESSGYIRQIMLDSLFQKVFPAVRIDQNKRSLERWGTT---  288
+               NP +  +  SY+DD+   +S   R+I+    ++ ++P + I  + +S +RW      
+Sbjct  85   LALNPYARFLHISYSDDLALLNSETAREIVQSDEYRALWP-LEIADDAKSKKRWNVVVDG  143
+
+Query  289  -RSGVMHAVPTGGKMTGKGAGSLSTVYSGCFVVDDAIKPKDAYSNQVRKEINDRFDNTFM  347
+             ++G ++AV  GG++TG  AG ++  + G  ++DD +K +DAYS   R + N +  +T  
+Sbjct  144  KKAGGVYAVSLGGQVTGFRAGHMAPGWQGAIIIDDPLKVEDAYSKTGRSKANRKLVSTVK  203
+
+Query  348  SRLANDGVVTADDGSLVKCPRTPMVIIMQRVHDEDLVGYLLRGGSSDKYTYLNIPGIVTP  407
+            SR A+              P TP+++IMQR+  +D  G++  GG    +  + IP ++  
+Sbjct  204  SRKAS--------------PDTPIIVIMQRLAQDDPTGFIQSGGFPGAWECIEIPALI--  247
+
+Query  408  ECGTEKWYNTLCTKQAYTHAVP------YLYDLKRGAGESALWPSRKSLESLISMRSATP  461
+                           AY   +P       + D +   G  + WP ++ L  L+++ +   
+Sbjct  248  -------------DDAYVSRLPEHVQGQVVRDAQDQDGRYSYWPYKEPLAELLALEATDR  294
+
+Query  462  YTFNSQYMGDPTARGTGLICED  483
+            Y F+ QY   P+  G G+I  D
+Sbjct  295  YVFSGQYQQRPSPLGGGIIKGD  316
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 68431175040
+
+
+  Database: Non-redundant UniProtKB/SwissProt sequences
+    Posted date:  Aug 4, 2024  7:01 AM
+  Number of letters in database: 183,938,400
+  Number of sequences in database:  483,620
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

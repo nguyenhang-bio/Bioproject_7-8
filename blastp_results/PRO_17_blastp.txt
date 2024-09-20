@@ -1,0 +1,1927 @@
+BLASTP 2.16.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: Non-redundant UniProtKB/SwissProt sequences
+           483,620 sequences; 183,938,400 total letters
+
+
+
+Query= NFECIMNI_00017 hypothetical protein
+
+Length=368
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+P43755.2 RecName: Full=Ribonucleoside-diphosphate reductase subun...  178     2e-51
+P37427.3 RecName: Full=Ribonucleoside-diphosphate reductase 1 sub...  166     6e-47
+P69924.2 RecName: Full=Ribonucleoside-diphosphate reductase 1 sub...  166     8e-47
+Q89AS5.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  162     4e-45
+P57275.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  155     1e-42
+Q8K9W4.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  149     3e-40
+P11156.2 RecName: Full=Ribonucleoside-diphosphate reductase subun...  130     2e-33
+P55983.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  79.0    4e-15
+Q9ZKC3.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  78.6    5e-15
+P50650.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  77.4    1e-14
+P09938.2 RecName: Full=Ribonucleoside-diphosphate reductase small...  77.4    2e-14
+P36603.2 RecName: Full=Ribonucleoside-diphosphate reductase small...  75.5    7e-14
+O83092.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  73.2    4e-13
+P50649.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  72.8    4e-13
+P49730.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  72.8    5e-13
+Q9C167.2 RecName: Full=Ribonucleoside-diphosphate reductase small...  73.2    5e-13
+O15910.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  72.0    8e-13
+P07201.2 RecName: Full=Ribonucleoside-diphosphate reductase small...  71.6    2e-12
+Q9DHU2.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  69.7    4e-12
+Q9QTF2.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  68.6    9e-12
+P48592.2 RecName: Full=Ribonucleoside-diphosphate reductase subun...  66.6    6e-11
+P0DKH3.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  65.1    2e-10
+Q6PEE3.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  63.5    6e-10
+O46310.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  63.2    7e-10
+Q4R741.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  63.2    8e-10
+Q5R9G0.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  63.2    8e-10
+Q7LG56.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  62.8    9e-10
+Q9KFH7.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  62.0    2e-09
+P42521.2 RecName: Full=Ribonucleoside-diphosphate reductase small...  61.6    2e-09
+P50621.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  61.2    3e-09
+P42170.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  60.5    6e-09
+Q9LSD0.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  59.7    9e-09
+P0DSS8.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  59.7    9e-09
+P29883.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  59.7    1e-08
+O84835.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  59.3    1e-08
+P11158.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  58.9    1e-08
+O57175.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  58.9    1e-08
+P20493.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  58.9    1e-08
+P79733.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  58.5    3e-08
+A0A7H0DN21.1 RecName: Full=Ribonucleoside-diphosphate reductase s...  56.6    9e-08
+P11157.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  55.8    2e-07
+Q4R7Q7.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  55.8    2e-07
+P0DSS7.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  55.5    2e-07
+P31350.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  55.5    3e-07
+P32209.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  54.7    3e-07
+P09247.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  54.7    3e-07
+Q60561.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  53.1    2e-06
+P50651.2 RecName: Full=Ribonucleoside-diphosphate reductase small...  52.4    2e-06
+P49723.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  52.4    2e-06
+Q9PL92.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  52.4    3e-06
+Q9Z6S4.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  51.6    4e-06
+Q8SRR2.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  51.6    4e-06
+Q6UDJ1.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  51.2    5e-06
+Q4KLN6.1 RecName: Full=Ribonucleoside-diphosphate reductase subun...  50.8    9e-06
+O30601.1 RecName: Full=SPbeta prophage-derived ribonucleoside-dip...  49.7    2e-05
+P0C8I1.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  47.4    1e-04
+P0C8I0.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  45.1    5e-04
+P0C8I2.1 RecName: Full=Ribonucleoside-diphosphate reductase small...  44.7    6e-04
+
+
+>P43755.2 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Haemophilus 
+influenzae Rd KW20]
+Length=376
+
+ Score = 178 bits (451),  Expect = 2e-51, Method: Compositional matrix adjust.
+ Identities = 118/361 (33%), Positives = 183/361 (51%), Gaps = 31/361 (9%)
+
+Query  18   LFLGVKQGLLDTINVQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKT  77
+            +F G    +      +Y   E L ++Q+S  W   EVD+SQDR+D     +    + +  
+Sbjct  18   MFFGQNVNVARYDQQKYETFEKLIEKQLSFFWRPEEVDVSQDRIDYAALPEHEKHIFISN  77
+
+Query  78   ISWQHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQM  137
+            + +Q L DS+  RS +  L+P V+  E+E  I  W+  ETIH+R+Y+HI++    DP  +
+Sbjct  78   LKYQTLLDSIQGRSPNVALLPLVSIPELETWIETWTFSETIHSRSYTHIIRNIVNDPSIV  137
+
+Query  138  LEETYTNTAVLNRSQAIVGAFDKLEEDH---------------RHSQVTDTS----ILLT  178
+             ++  TN  ++ R+Q I   +D L  D                +   VT  S    + L 
+Sbjct  138  FDDIVTNEEIIKRAQDISSYYDDLIRDSQLYGLYGEGTYTVDGKECVVTLRSLKKQLYLC  197
+
+Query  179  LTALFALEEIGFMGSFAVTFGIAEHTGKFM-GIAQLVKLICRDEVLHTRFNGAILKIH--  235
+            L ++ ALE I F  SFA +F  AE   + M G A+++K I RDE LH      IL I   
+Sbjct  198  LMSVNALEAIRFYVSFACSFAFAER--RLMEGNAKIIKFIARDEALHLTGTQHILNIMAA  255
+
+Query  236  -QRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFM  294
+             Q  P +AE+ E    K +   +  A   QE  + DYLF +G   IG+N D++ QY+ ++
+Sbjct  256  GQDDPEMAEIAEE--CKQEAYDLFVAAAEQEKAWADYLFKDG-SMIGLNRDILVQYVEYI  312
+
+Query  295  AAPMYEAYGLVPSFDVPKKNPLPYMDHWIDGSKVQVAPQELQNSAYQVGAVAD--DTHNL  352
+                 +A GL   F   + NP+P+++ W+    VQVAPQE++ S+Y VG +    DT++ 
+Sbjct  313  TNIRMQAVGLPLPFQT-RSNPIPWINAWLVSDNVQVAPQEVEVSSYLVGQIDSKVDTNDF  371
+
+Query  353  D  353
+            D
+Sbjct  372  D  372
+
+
+>P37427.3 RecName: Full=Ribonucleoside-diphosphate reductase 1 subunit 
+beta; AltName: Full=Protein B2; AltName: Full=Protein R2; AltName: 
+Full=Ribonucleotide reductase 1 [Salmonella enterica 
+subsp. enterica serovar Typhimurium str. LT2]
+Length=376
+
+ Score = 166 bits (421),  Expect = 6e-47, Method: Compositional matrix adjust.
+ Identities = 106/348 (30%), Positives = 179/348 (51%), Gaps = 27/348 (8%)
+
+Query  33   QYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARSI  92
+            +Y   E L ++Q+S  W   EVD+S+DR+D     +    + +  + +Q L DS+  RS 
+Sbjct  33   KYDIFEKLIEKQLSFFWRPEEVDVSRDRIDYQALPEHEKHIFISNLKYQTLLDSIQGRSP  92
+
+Query  93   SGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRSQ  152
+            +  L+P ++  E+E  +  W+  ETIH+R+Y+HI++    DP  + ++  TN  +  R++
+Sbjct  93   NVALLPLISIPELETWVETWAFSETIHSRSYTHIIRNIVNDPAVVFDDIVTNEQIQKRAE  152
+
+Query  153  AIVGAFDKLEE---------DHRHSQVTDTSIL----------LTLTALFALEEIGFMGS  193
+             I   +D+L E         +  H+    T ++          L L ++ ALE I F  S
+Sbjct  153  GISAYYDELIEMTSYWHLLGEGTHTVNGKTVVVNLRELKKKLYLCLMSVNALEAIRFYVS  212
+
+Query  194  FAVTFGIAEHTGKFMGIAQLVKLICRDEVLH---TRFNGAILKIHQRIPAIAEMLESPML  250
+            FA +F  AE      G A++++LI RDE LH   T+    +L+     P +AE+ E    
+Sbjct  213  FACSFAFAERE-LMEGNAKIIRLIARDEALHLTGTQHMLNLLRSGVDDPEMAEIAEE--C  269
+
+Query  251  KSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDV  310
+            K +   +      QE  + DYLF +G   IG+N D++ QY+ ++     +A GL   F  
+Sbjct  270  KQECYDLFVQAAQQEKEWADYLFRDG-SMIGLNKDILCQYVEYITNIRMQAVGLDLPFQT  328
+
+Query  311  PKKNPLPYMDHWIDGSKVQVAPQELQNSAYQVGAVADDTHNLDLGDME  358
+             + NP+P+++ W+    VQVAPQE++ S+Y VG +  +    DL + +
+Sbjct  329  -RSNPIPWINTWLVSDNVQVAPQEVEVSSYLVGQIDSEVDTDDLSNFQ  375
+
+
+>P69924.2 RecName: Full=Ribonucleoside-diphosphate reductase 1 subunit 
+beta; AltName: Full=Protein B2; AltName: Full=Protein R2; AltName: 
+Full=Ribonucleotide reductase 1 [Escherichia coli K-12]
+ P69925.2 RecName: Full=Ribonucleoside-diphosphate reductase 1 subunit 
+beta; AltName: Full=Protein B2; AltName: Full=Protein R2; AltName: 
+Full=Ribonucleotide reductase 1 [Escherichia coli O157:H7]
+Length=376
+
+ Score = 166 bits (420),  Expect = 8e-47, Method: Compositional matrix adjust.
+ Identities = 108/349 (31%), Positives = 180/349 (52%), Gaps = 29/349 (8%)
+
+Query  33   QYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARSI  92
+            +Y   E L ++Q+S  W   EVD+S+DR+D     +    + +  + +Q L DS+  RS 
+Sbjct  33   KYDIFEKLIEKQLSFFWRPEEVDVSRDRIDYQALPEHEKHIFISNLKYQTLLDSIQGRSP  92
+
+Query  93   SGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRSQ  152
+            +  L+P ++  E+E  +  W+  ETIH+R+Y+HI++    DP  + ++  TN  +  R++
+Sbjct  93   NVALLPLISIPELETWVETWAFSETIHSRSYTHIIRNIVNDPSVVFDDIVTNEQIQKRAE  152
+
+Query  153  AIVGAFDKL-----------EEDHRHSQVTDT--------SILLTLTALFALEEIGFMGS  193
+             I   +D+L           E  H  +  T T         + L L ++ ALE I F  S
+Sbjct  153  GISSYYDELIEMTSYWHLLGEGTHTVNGKTVTVSLRELKKKLYLCLMSVNALEAIRFYVS  212
+
+Query  194  FAVTFGIAEHTGKFM-GIAQLVKLICRDEVLH---TRFNGAILKIHQRIPAIAEMLESPM  249
+            FA +F  AE   + M G A++++LI RDE LH   T+    +L+     P +AE+ E   
+Sbjct  213  FACSFAFAER--ELMEGNAKIIRLIARDEALHLTGTQHMLNLLRSGADDPEMAEIAEE--  268
+
+Query  250  LKSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFD  309
+             K +   +      QE  + DYLF +G   IG+N D++ QY+ ++     +A GL   F 
+Sbjct  269  CKQECYDLFVQAAQQEKDWADYLFRDG-SMIGLNKDILCQYVEYITNIRMQAVGLDLPFQ  327
+
+Query  310  VPKKNPLPYMDHWIDGSKVQVAPQELQNSAYQVGAVADDTHNLDLGDME  358
+              + NP+P+++ W+    VQVAPQE++ S+Y VG +  +    DL + +
+Sbjct  328  T-RSNPIPWINTWLVSDNVQVAPQEVEVSSYLVGQIDSEVDTDDLSNFQ  375
+
+
+>Q89AS5.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Buchnera 
+aphidicola str. Bp (Baizongia pistaciae)]
+Length=376
+
+ Score = 162 bits (409),  Expect = 4e-45, Method: Compositional matrix adjust.
+ Identities = 107/360 (30%), Positives = 174/360 (48%), Gaps = 23/360 (6%)
+
+Query  15   YQRLFLGVKQGLLDTINVQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLM  74
+            Y+ +F G    +      +Y   E L ++Q+S  W   EVDLS+D +D     +    + 
+Sbjct  15   YEPMFFGQSVNISRYDQQKYEIFEKLIEKQLSFFWRPEEVDLSRDYIDFQNLPQHEKHIF  74
+
+Query  75   VKTISWQHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADP  134
+            V  + +Q L DS+  RS +  L+P V+  E+E  I  WS  ETIH+R+Y+HI++     P
+Sbjct  75   VSNLKYQTLLDSIQGRSPNIALLPIVSLPELETWIETWSFSETIHSRSYTHIIRNIINTP  134
+
+Query  135  GQMLEETYTNTAVLNRSQAIVGAFDKLEE---------DHRHS----------QVTDTSI  175
+              + ++   N  + NR++ I   +D L E         + +H+                +
+Sbjct  135  SLIFDDIIDNKNIANRAKDIAKYYDDLIELTSYWHLFGEGKHTINGKKIKIDLHELKKKL  194
+
+Query  176  LLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILKIH  235
+             L L ++ ALE I F  SFA +F  AE   K  G A++++LI RDE LH      IL I 
+Sbjct  195  YLCLISVNALEAIRFYVSFACSFAFAERE-KMEGNAKIIRLIARDEALHLTSTQHILNIL  253
+
+Query  236  QRIPAIAEMLE-SPMLKSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFM  294
+                    M + S     +   +   V  QE ++  YLF  G   +G+N +++ QYI ++
+Sbjct  254  HNDKNNEGMSDISKECYEECYHLFIRVSDQEKIWAKYLFQNG-SMLGLNQEILSQYIEYI  312
+
+Query  295  AAPMYEAYGLVPSFDVPKKNPLPYMDHWIDGSKVQVAPQELQNSAYQVGAVADDTHNLDL  354
+                 +A GL   F +   NP+P+++ W+    VQVAPQE+  S+Y +G +  + ++ D 
+Sbjct  313  TNIRMKAIGLPSPFKI-LSNPIPWINSWLISDNVQVAPQEISVSSYLIGQINSEINDSDF  371
+
+
+>P57275.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Buchnera 
+aphidicola str. APS (Acyrthosiphon pisum)]
+Length=376
+
+ Score = 155 bits (392),  Expect = 1e-42, Method: Compositional matrix adjust.
+ Identities = 99/347 (29%), Positives = 169/347 (49%), Gaps = 25/347 (7%)
+
+Query  33   QYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARSI  92
+            +Y   E L ++Q+S  W   E+DLS+DR+D      +   + +  + +Q L DS+  RS 
+Sbjct  33   KYKIFEQLIEKQLSFFWRPEEIDLSRDRIDFQNLPDNEKHIFISNLKYQTLLDSIQGRSP  92
+
+Query  93   SGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRSQ  152
+            +   +P ++  E+E  I  WS  ETIH+R+Y+HI++     P  + ++  +N  + +R+Q
+Sbjct  93   NIAFLPIISIPELETWIETWSFSETIHSRSYTHIIRNIVNCPSLVFDDIISNKNIYDRAQ  152
+
+Query  153  AIVGAFDKL-------------------EEDHRHSQVTDTSILLTLTALFALEEIGFMGS  193
+             I   +D+L                   ++ H + +     + L L ++  LE I F  S
+Sbjct  153  NISIYYDELINLTSYWHLLGEGIHLINGKKIHINLRFLKKRLYLCLISVNVLEAIRFYVS  212
+
+Query  194  FAVTFGIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPML--K  251
+            FA +F  AE      G A++++LI RDE LH      IL +   I    E +E  +L  K
+Sbjct  213  FACSFAFAERE-LMEGNAKIIRLIARDEALHLTGTQHILNLLSNIKN-NENMEDVVLECK  270
+
+Query  252  SQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVP  311
+             +   I  +   QE  +  YLF  G   +G+N D++ QYI ++      A G    F   
+Sbjct  271  EEAINIFISAAQQEKKWASYLFKSG-SMLGLNKDILCQYIEYITNIRMHAIGFKMPFK-K  328
+
+Query  312  KKNPLPYMDHWIDGSKVQVAPQELQNSAYQVGAVADDTHNLDLGDME  358
+            + NP+P+++ W+    +Q+APQE + S+Y VG +  +  + +    E
+Sbjct  329  QSNPIPWINDWLTSDNIQIAPQETEISSYLVGQIDSEVSDNEFKKFE  375
+
+
+>Q8K9W4.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Buchnera 
+aphidicola str. Sg (Schizaphis graminum)]
+Length=376
+
+ Score = 149 bits (375),  Expect = 3e-40, Method: Compositional matrix adjust.
+ Identities = 101/361 (28%), Positives = 176/361 (49%), Gaps = 23/361 (6%)
+
+Query  18   LFLGVKQGLLDTINVQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKT  77
+            +F G    +      +Y   E L ++Q+S  W   E+DLS+DR+D      +   + +  
+Sbjct  18   MFFGQSVNIARYDQQKYNIFEKLIEKQLSFFWRPEEIDLSKDRIDFDNLPSNEKHIFISN  77
+
+Query  78   ISWQHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQM  137
+            + +Q L DS+  RS +   +P V+  E+E  I  WS  ETIH+R+Y+HI++    +P  +
+Sbjct  78   LKYQTLLDSIQGRSPNIAFLPIVSIPELETWIETWSFSETIHSRSYTHIIRNIINNPSIV  137
+
+Query  138  LEETYTNTAVLNRSQAIVGAFDKL-----------EEDHR--------HSQVTDTSILLT  178
+             ++  +N  + +R+Q I   +D+L           E +H+        + ++    + L 
+Sbjct  138  FDDIISNKNINDRAQDISIYYDELIRITAYWHLLGEGNHKINEKKVEINLKLLKRRLYLC  197
+
+Query  179  LTALFALEEIGFMGSFAVTFGIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRI  238
+            L ++  LE I F  SFA +F  AE      G A++++LI RDE LH      IL I    
+Sbjct  198  LISVNVLEAIRFYVSFACSFAFAEREI-MEGNAKIIRLIARDEALHLTGTQHILNILNNE  256
+
+Query  239  PAIAEMLESPM-LKSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFMAAP  297
+                 M  + +  + +  KI  +   QE  +  YLF +G   +G+N D++ QYI ++   
+Sbjct  257  KNNENMKNTVLECREEAIKIFISASEQEKKWAKYLFQDG-SMLGLNKDILCQYIEYITNI  315
+
+Query  298  MYEAYGLVPSFDVPKKNPLPYMDHWIDGSKVQVAPQELQNSAYQVGAVADDTHNLDLGDM  357
+               A G    F+    NP+P+++ W++   +Q APQE + S+Y VG +  +  N +  + 
+Sbjct  316  RMHAIGFKMPFE-KTSNPIPWINSWLNSDYIQAAPQETEISSYLVGQIESEISNQEFKNF  374
+
+Query  358  E  358
+            +
+Sbjct  375  K  375
+
+
+>P11156.2 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Protein B2; AltName: Full=Ribonucleotide reductase 
+[Tequatrovirus T4]
+Length=388
+
+ Score = 130 bits (328),  Expect = 2e-33, Method: Compositional matrix adjust.
+ Identities = 91/363 (25%), Positives = 172/363 (47%), Gaps = 30/363 (8%)
+
+Query  18   LFLGVKQGLLDTINVQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKT  77
+            +F G   GL      ++   E L ++Q+S  W   EV+L  D     +  +   ++    
+Sbjct  17   MFFGSGLGLARYDIQRHRVFEELIERQISFFWRPEEVNLMMDAAQFNKLPQYQQNIFTNN  76
+
+Query  78   ISWQHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQM  137
+            + +Q L DS+  R+ S +LM  +++  ++  +  W+  ETIH+R+Y+HI++  + DP ++
+Sbjct  77   LKYQSLLDSIQGRAPSAVLMSLISDPSLDTWVATWTFSETIHSRSYTHIMRNLYTDPSKV  136
+
+Query  138  LEETYTNTAVLNRSQAIVGAFDKL---------------------------EEDHRHSQV  170
+             +E   + A++ R+++I   +D +                           + + R  + 
+Sbjct  137  FDEIVLDEAIMKRAESIGRYYDDVLVKTREWENAKDMVEYYKDQGLILADKDVEQRAKRD  196
+
+Query  171  TDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIAQLVKLICRDEVLHTRFNGA  230
+               S+ L L  + ALE I F  SFA TF   ++     G A+++K I RDE LH +    
+Sbjct  197  LMKSLYLCLHVINALEAIRFYVSFACTFNFHKNMEIMEGNAKIMKFIARDEQLHLKGTQY  256
+
+Query  231  ILKIHQRIPAIAEMLE-SPMLKSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQ  289
+            I++  Q      E ++ +   + +   I   V  QE  +  +LF +G +  G+N + +  
+Sbjct  257  IIRQLQSGTDGDEWVKIAQECEQEAVDIFMEVNRQEKDWAVHLFKDG-DVPGLNTNSMWS  315
+
+Query  290  YIYFMAAPMYEAYGL-VPSFDVPKKNPLPYMDHWIDGSKVQVAPQELQNSAYQVGAVADD  348
+            +I ++     +  GL  P  D P K+P P++  +++   VQ APQE++ S+Y V  + +D
+Sbjct  316  FIDYLTVSRMKQCGLPCPITDAPVKHPYPWIREYLNSDNVQSAPQEVELSSYLVAQIDND  375
+
+Query  349  THN  351
+              +
+Sbjct  376  VDD  378
+
+
+>P55983.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Helicobacter 
+pylori 26695]
+Length=341
+
+ Score = 79.0 bits (193),  Expect = 4e-15, Method: Compositional matrix adjust.
+ Identities = 74/344 (22%), Positives = 164/344 (48%), Gaps = 19/344 (6%)
+
+Query  8    NTGYKTGYQRLFLGVKQGLLDTINVQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETD  67
+            N+      +++F G    + D   ++Y   + L++  ++  W   EV ++ D+ D L+  
+Sbjct  12   NSTESVNERKIFGGNPTSMFDLNKIKYQWADHLWKTMLANTWFAEEVSMNDDKRDYLKLS  71
+
+Query  68   KSVTDLMVKTISWQHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIV  127
+                    + ++     DS+ A ++   + P +T+ E+   +   +  E +H+  Y+ +V
+Sbjct  72   AEEKIGYDRALAQLIFMDSLQANNLIDNINPFITSPEINLCLVRQAYEEALHSHAYAVMV  131
+
+Query  128  KQTFADPGQMLEETYTNTAVLNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEE  187
+            +   A+  ++ +    +  + +++  I   + +L ++      T+ +IL  L A   LE 
+Sbjct  132  ESISANTEEIYDMWRNDMQLKSKNDYIAQVYMELAKNP-----TEENILKALFANQILEG  186
+
+Query  188  IGFMGSFAVTFGIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEM---  244
+            I F   F+  + +A  +GK +G AQ+++ I RDEV H      ++     I A+      
+Sbjct  187  IYFYSGFSYFYTLA-RSGKMLGSAQMIRFIQRDEVTH------LILFQNMINALRNERAD  239
+
+Query  245  LESPMLKSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGL  304
+            L +P L +++  +    V  E ++ DY+ ++G+  +G+ + LI+QYI F+A       G+
+Sbjct  240  LFTPQLINEVIGMFKKAVEIEALWGDYI-TQGK-ILGLTSSLIEQYIQFLADSRLSKVGI  297
+
+Query  305  VPSFDVPKKNPLPYMDHWIDGSKVQVAPQELQNSAYQVGAVADD  348
+               + V  ++P+ +++ +   ++ +    E + S Y  G+V+ D
+Sbjct  298  AKVYGV--QHPIKWVESFSSFNEQRSNFFEARVSNYAKGSVSFD  339
+
+
+>Q9ZKC3.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Helicobacter 
+pylori J99]
+Length=341
+
+ Score = 78.6 bits (192),  Expect = 5e-15, Method: Compositional matrix adjust.
+ Identities = 74/344 (22%), Positives = 164/344 (48%), Gaps = 19/344 (6%)
+
+Query  8    NTGYKTGYQRLFLGVKQGLLDTINVQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETD  67
+            N+      +++F G    + D   ++Y   + L++  ++  W   EV ++ D+ D L+  
+Sbjct  12   NSTESVNERKIFGGNPTSMFDLNKIKYQWADHLWKTMLANTWFAEEVSMNDDKRDYLKLS  71
+
+Query  68   KSVTDLMVKTISWQHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIV  127
+                    + ++     DS+ A ++   + P +T+ E+   +   +  E +H+  Y+ +V
+Sbjct  72   AEEKIGYDRALAQLIFMDSLQANNLIDNINPFITSPEINLCLVRQAYEEALHSHAYAVMV  131
+
+Query  128  KQTFADPGQMLEETYTNTAVLNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEE  187
+            +   A+  ++ +    +  + +++  I   + +L ++      T+ +IL  L A   LE 
+Sbjct  132  ESISANTEEIYDMWRNDMQLKSKNDYIAQVYMELAKNP-----TEENILKALFANQILEG  186
+
+Query  188  IGFMGSFAVTFGIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEM---  244
+            I F   F+  + +A  +GK +G AQ+++ I RDEV H      ++     I A+      
+Sbjct  187  IYFYSGFSYFYTLA-RSGKMLGSAQMIRFIQRDEVTH------LILFQNMINALRNERAD  239
+
+Query  245  LESPMLKSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGL  304
+            L +P L +++ ++    V  E  + DY+ ++G+  +G+ + LI+QYI F+A       G+
+Sbjct  240  LFTPQLINEVIEMFKKAVEIEASWGDYI-TQGK-ILGLTSSLIEQYIQFLADSRLSKVGI  297
+
+Query  305  VPSFDVPKKNPLPYMDHWIDGSKVQVAPQELQNSAYQVGAVADD  348
+               + V  ++P+ +++ +   ++ +    E + S Y  G+V+ D
+Sbjct  298  AKVYGV--QHPIKWVESFSSFNEQRSNFFEARVSNYAKGSVSFD  339
+
+
+>P50650.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase R2 subunit; AltName: 
+Full=Ribonucleotide reductase small subunit [Plasmodium falciparum 
+Dd2]
+Length=349
+
+ Score = 77.4 bits (189),  Expect = 1e-14, Method: Compositional matrix adjust.
+ Identities = 74/294 (25%), Positives = 125/294 (43%), Gaps = 33/294 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            + YP++   Y++  +  W   E+DLS D  D  + +++    +   +++   +D +   +
+Sbjct  46   ILYPDVWDFYKKAEASFWTAEEIDLSSDLKDFEKLNENEKHFIKHVLAFFAASDGIVLEN  105
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLE--ETYTNTAVLN  149
+            ++   +  V  +E +   +     E IH+ TYS ++     D  + L       N   + 
+Sbjct  106  LASKFLREVQITEAKKFYSFQIAVENIHSETYSLLIDNYIKDEKERLNLFHAIENIPAV-  164
+
+Query  150  RSQAIVGAFDKLEEDHRHSQVTDT-SILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFM  208
+            +++A+  A            + DT S    + A   +E I F GSF   F   +   K  
+Sbjct  165  KNKALWAA----------KWINDTNSFAERIVANACVEGILFSGSFCAIFWFKKQ-NKLH  213
+
+Query  209  GIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVF  268
+            G+    +LI RDE LHT FN  I            +L++ + +  IQ I+   V  E  F
+Sbjct  214  GLTFSNELISRDEGLHTDFNCLIYS----------LLDNKLPEQIIQNIVKEAVEVERSF  263
+
+Query  269  QDYLFSEGREC--IGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMD  320
+                  E   C  IG+N+ L+ QYI F+A  + E  G    F    KNP  +MD
+Sbjct  264  ----ICESLPCDLIGMNSRLMSQYIEFVADRLLECLGCSKIFH--SKNPFNWMD  311
+
+
+>P09938.2 RecName: Full=Ribonucleoside-diphosphate reductase small chain 
+1; AltName: Full=Ribonucleotide reductase R2 subunit 1; AltName: 
+Full=Ribonucleotide reductase small subunit 1 [Saccharomyces 
+cerevisiae S288C]
+Length=399
+
+ Score = 77.4 bits (189),  Expect = 2e-14, Method: Compositional matrix adjust.
+ Identities = 75/297 (25%), Positives = 132/297 (44%), Gaps = 35/297 (12%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMD----MLETDKSVTDLMVKTISWQHLADSV  87
+            ++Y E+   Y++  +  W   E+DLS+D  D    M E ++     + + +++   +D +
+Sbjct  91   IKYHEIWQAYKRAEASFWTAEEIDLSKDIHDWNNRMNENERF---FISRVLAFFAASDGI  147
+
+Query  88   AARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAV  147
+               ++       V   E ++      + E IH+ TYS ++     DP +       +  +
+Sbjct  148  VNENLVENFSTEVQIPEAKSFYGFQIMIENIHSETYSLLIDTYIKDPKE-------SEFL  200
+
+Query  148  LNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKF  207
+             N    I    +K E   R  Q  D      L A  ++E + F GSFA  F + +  G  
+Sbjct  201  FNAIHTIPEIGEKAEWALRWIQDADALFGERLVAFASIEGVFFSGSFASIFWLKKR-GMM  259
+
+Query  208  MGIAQLVKLICRDEVLHTRFNGAILKIHQRI---PAIAEMLESPMLKSQIQKILDAVVAQ  264
+             G+    +LICRDE LHT F   +L  H +    PAI E + +  ++ + +  LDA+   
+Sbjct  260  PGLTFSNELICRDEGLHTDF-ACLLFAHLKNKPDPAIVEKIVTEAVEIEQRYFLDALPVA  318
+
+Query  265  EIVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+                           +G+NADL+ QY+ F+A  +  A+G    + V  +NP  +M++
+Sbjct  319  --------------LLGMNADLMNQYVEFVADRLLVAFGNKKYYKV--ENPFDFMEN  359
+
+
+>P36603.2 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit [Schizosaccharomyces 
+pombe 972h-]
+Length=391
+
+ Score = 75.5 bits (184),  Expect = 7e-14, Method: Compositional matrix adjust.
+ Identities = 82/353 (23%), Positives = 147/353 (42%), Gaps = 41/353 (12%)
+
+Query  19   FLGVKQGLLDTI------------NVQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLET  66
+            +LG K+  LD +             ++Y E+   Y++  +  W   E+DLS+D +D    
+Sbjct  56   YLGKKEDELDEVVLRPNPHRFVLFPIKYHEIWQFYKKAEASFWTAEEIDLSKDLVDWDNK  115
+
+Query  67   DKSVTDLMVKTI-SWQHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSH  125
+              +     + T+ ++   +D +   ++       V   E   +     + E IH+ TYS 
+Sbjct  116  LNADERYFISTVLAYFAASDGIVNENLLERFSSEVQIPEARCVYGFQIMIENIHSETYSL  175
+
+Query  126  IVKQTFADPGQMLEETYTNTAVLNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFAL  185
+            ++     +P    E+     A+L        A   L    R     D++  + L A  A+
+Sbjct  176  LLDTYIREPK---EKQRHFDAILTMGSIKAKAKWAL----RWINDEDSTYAIRLVAFAAV  228
+
+Query  186  EEIGFMGSFAVTFGIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEML  245
+            E I F GSFA  F + +  G   G+    +LICRDE LHT F   +    +  P      
+Sbjct  229  EGIFFSGSFASIFWLKKR-GLMPGLTFSNELICRDEGLHTDFACLMFSHLKHRPG-----  282
+
+Query  246  ESPMLKSQIQKILDAVVAQEIVFQDYLFSEGR--ECIGINADLIKQYIYFMAAPMYEAYG  303
+                     +K+++A++ + +  +   F++      +G+N DL+ QYI F+A  +  A G
+Sbjct  283  ---------RKVVEAIIVEAVDIEKEYFTDALPVSLLGMNKDLMCQYIEFVADRLLVALG  333
+
+Query  304  LVPSFDVPKKNPLPYMDHWIDGSKVQVAPQELQNSAYQVGAVADDTHNLDLGD  356
+                ++V   NP  +M++     K     +++  S YQ+  V   T   +  D
+Sbjct  334  NDKYYNVT--NPFDFMENISLAGKTNFFEKKV--SDYQIAGVMSGTKRAEKDD  382
+
+
+>O83092.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Treponema 
+pallidum subsp. pallidum str. Nichols]
+Length=351
+
+ Score = 73.2 bits (178),  Expect = 4e-13, Method: Compositional matrix adjust.
+ Identities = 73/343 (21%), Positives = 159/343 (46%), Gaps = 27/343 (8%)
+
+Query  16   QRLFLGVKQGLLDTINVQYPELEALYQQQMSQIWNEFEVDLS---QDRMDMLETDKSVTD  72
+            +R+  G    L D  N++YP +   Y+Q M+  W   E+++S   QD  ++   +K+  D
+Sbjct  25   RRMVGGNTTNLNDFNNMKYPWVSKWYRQAMNNFWIPEEINMSSDVQDYRNLSAIEKTAYD  84
+
+Query  73   LMVKTISWQHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFA  132
+               K +S+    DS+   ++   +  ++T +E+   +   +  E +H+++YS+++  T  
+Sbjct  85   ---KILSFLIFLDSIQTANLPN-IGQYITANEINLCLTIQAFQEAVHSQSYSYML-DTIC  139
+
+Query  133  DP---GQMLEETYTNTAVLNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIG  189
+             P     +L +   +  +L R++ I   +++ ++D      +  ++L    A + LE I 
+Sbjct  140  SPEERNDILYQWKDDEHLLARNKFIGNLYNEFQDDK-----SVLALLKVAIANYVLEGIY  194
+
+Query  190  FMGSFAVTFGIAEHTGKFMGIAQLVKLICRDEVLHT-RFNGAILKIHQRIPAIAEMLESP  248
+            F   F   + +  +  K  G  Q ++ I RDE  H   F   I ++ +  P +       
+Sbjct  195  FYSGFMFFYNLGRNN-KMPGSVQEIRYINRDENTHLWLFRSIIQELQKEEPQVFTARNVR  253
+
+Query  249  MLKSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSF  308
+            + +  I++  +    QEI + DY+   G +  G+N  ++  YI ++     E  G  P +
+Sbjct  254  LFRDMIREGCE----QEIKWGDYVI--GDQIPGLNRHMVADYIRYLGNLRCENLGFEPLY  307
+
+Query  309  DVPKKNP--LPYMDHWIDGSKVQVAPQELQNSAY-QVGAVADD  348
+            +  +  P  + ++  + + + ++    E +++AY +  A+ DD
+Sbjct  308  EGHRVEPESMSWVSQYSNANLIKTDFFEAKSTAYAKSSAMVDD  350
+
+
+>P50649.1 RecName: Full=Ribonucleoside-diphosphate reductase small subunit; 
+AltName: Full=Ribonucleotide reductase R2 subunit; AltName: 
+Full=Ribonucleotide reductase small subunit [Plasmodium 
+falciparum FCR-3/Gambia]
+Length=322
+
+ Score = 72.8 bits (177),  Expect = 4e-13, Method: Compositional matrix adjust.
+ Identities = 70/294 (24%), Positives = 124/294 (42%), Gaps = 31/294 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            + YP++   Y++  +  W   E+D S D  D  + +++    +   +++   +D +   +
+Sbjct  17   ILYPDVFPFYKKAEACFWTAEEIDYSSDLKDFEKLNENEKHFIKHVLAFFAASDGIVLEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLE--ETYTNTAVLN  149
+            ++   +  V  +E +   +     E IH+ TYS ++     D  + L       N   + 
+Sbjct  77   LAVSFLREVQITEAKKFYSFQIAVENIHSETYSLLIDNYIKDEKERLNLFHAIENIPAV-  135
+
+Query  150  RSQAIVGAFDKLEEDHRHSQVTDT-SILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFM  208
+            +++A+  A            + DT S    + A   +E I F GSF   F   +   K  
+Sbjct  136  KNKALWAA----------KWINDTNSFAERIVANACVEGILFSGSFCAIFWFKKQ-NKLH  184
+
+Query  209  GIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVF  268
+            G+    +LI RDE LHT FN  I            +L++ + +  +Q I+      E+  
+Sbjct  185  GLTFSNELISRDEGLHTDFNCLIY----------SLLDNKLPEQMVQNIVKEAGGVEV--  232
+
+Query  269  QDYLFSEGREC--IGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMD  320
+            +     E   C  IG+N+ L+ QYI F+A  + E  G    F    KNP  +MD
+Sbjct  233  EKSFICESLPCDLIGMNSRLMSQYIEFVADRLLECLGCSKIFH--SKNPFNWMD  284
+
+
+>P49730.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleoside-diphosphate reductase R2 subunit; 
+AltName: Full=Ribonucleotide reductase small subunit [Nicotiana 
+tabacum]
+Length=329
+
+ Score = 72.8 bits (177),  Expect = 5e-13, Method: Compositional matrix adjust.
+ Identities = 65/294 (22%), Positives = 120/294 (41%), Gaps = 33/294 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QYP++  +Y++ ++  W   EVDLS D              +   +++   +D +   +
+Sbjct  22   IQYPQIWEMYKKALASFWTAEEVDLSSDTRHWETLTPGERHFITHVLAFFAASDGIVLEN  81
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFAD---PGQMLEETYTNTAVL  148
+            ++G  M  V  +E           E IH+  YS +++    D     ++     TN  V 
+Sbjct  82   LAGRFMKEVQVAEARAFYGFQIAIENIHSEMYSLLLESYIKDSDEKSRLFRAVETNPCVE  141
+
+Query  149  NRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFM  208
+             +++  +   D  E           +    L A   +E I F GSF   F + +  G   
+Sbjct  142  KKAKWALRWIDGSE-----------TFAERLVAFACVEGIFFSGSFCAIFWLKKR-GLMP  189
+
+Query  209  GIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVF  268
+            G+    +LI RDE LH  F              A +L S +     ++ +  +VA  +  
+Sbjct  190  GLTFSNELISRDEGLHCDF--------------ACLLYSLLRTKLTEERVKGIVADAVEI  235
+
+Query  269  QDYLFSEGREC--IGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMD  320
+            +     +   C  +G+N DL+ +YI F+A  + +A G    ++   +NP  +M+
+Sbjct  236  EREFVCDALPCALVGMNGDLMSKYIEFVADRLLDALGYDKLYNA--QNPFDWME  287
+
+
+>Q9C167.2 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit [Neurospora 
+crassa OR74A]
+Length=410
+
+ Score = 73.2 bits (178),  Expect = 5e-13, Method: Compositional matrix adjust.
+ Identities = 84/328 (26%), Positives = 138/328 (42%), Gaps = 35/328 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMD---MLETDKSVTDLMVKTISWQHLADSVA  88
+            ++Y E+  +Y++  +  W   E+DLS+D  D    L  D+     +   +++   +D + 
+Sbjct  92   IKYHEIWQMYKKAEASFWTAEEIDLSKDLHDWNNRLNDDEKF--FISHILAFFAASDGIV  149
+
+Query  89   ARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVL  148
+              ++       V   E         + E IH+ TYS ++     +P Q        T + 
+Sbjct  150  NENLVERFSGEVQIPEARCFYGFQIMMENIHSETYSLLIDTYIKEPSQ-------RTYLF  202
+
+Query  149  NRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFM  208
+            N    I     K +   R      ++    L A  A+E I F G+FA  F + +  G   
+Sbjct  203  NAIDTIPCIRKKADWALRWITDKSSTFAQRLVAFAAVEGIFFSGAFASIFWLKKR-GLMP  261
+
+Query  209  GIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKIL-DAVVAQEIV  267
+            G+    +LI RDE LHT F   +       P+          K  IQ+I+ DAV  +   
+Sbjct  262  GLTFSNELISRDEGLHTDFACLLFSHLNNRPS----------KQLIQEIIVDAVRIE---  308
+
+Query  268  FQDYLFSEGREC--IGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHWIDG  325
+             Q++L +E   C  +G+NADL+KQYI F+A  +  A G    +     NP  +M++   G
+Sbjct  309  -QEFL-TEALPCALLGMNADLMKQYIEFVADRLLVALGNEKIYR--STNPFDFMENISLG  364
+
+Query  326  SKVQVAPQELQNSAYQVGAVADDTHNLD  353
+             K     + + +  YQ   V + T   D
+Sbjct  365  GKTNFFEKRVGD--YQKAGVMNSTKKAD  390
+
+
+>O15910.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase R2 subunit; AltName: 
+Full=Ribonucleotide reductase small subunit [Trypanosoma 
+brucei brucei]
+Length=337
+
+ Score = 72.0 bits (175),  Expect = 8e-13, Method: Compositional matrix adjust.
+ Identities = 71/294 (24%), Positives = 122/294 (41%), Gaps = 32/294 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            ++YP++   Y++  S IW   E+DL  D  D  + D      +   +++   +D +   +
+Sbjct  32   IKYPDIWQKYKEAESSIWTVEEIDLGNDMTDWEKLDDGERHFIKHVLAFFAASDGIVLEN  91
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQ---MLEETYTNTAVL  148
+            ++   M  V   E+          E IH+ TYS ++     DP +   +L    T   + 
+Sbjct  92   LAERFMCEVQVPEVRCFYGFQIAMENIHSETYSVLIDTYVVDPDEKQRLLHAIRTIPCIE  151
+
+Query  149  NRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFM  208
+             +++  +               + TS    L A  A+E I F GSF   F + +  G   
+Sbjct  152  KKAKWAIEWIG-----------SQTSFPTRLVAFAAVEGIFFSGSFCAIFWLKKR-GLMP  199
+
+Query  209  GIAQLVKLICRDEVLHTRFNGAILK--IHQRIPAIAEMLESPMLKSQIQKILDAVVAQEI  266
+            G+    +LI RDE LHT F   + +  I  ++P              ++ I +AV  +  
+Sbjct  200  GLTFSNELISRDEGLHTDFACLLYEKYIVNKLPR----------DRVLEIICNAVSIERE  249
+
+Query  267  VFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMD  320
+               D L       IG+N+ L+ QYI F+A  +  + G    ++   KNP  +MD
+Sbjct  250  FICDAL---PVRLIGMNSQLMTQYIEFVADRLLVSLGYDRHYN--SKNPFDFMD  298
+
+
+>P07201.2 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit; AltName: 
+Full=p41 [Spisula solidissima]
+Length=384
+
+ Score = 71.6 bits (174),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 77/328 (23%), Positives = 131/328 (40%), Gaps = 29/328 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QY ++  +Y++  +  W   EVDLS+D        K     +   +++   +D +   +
+Sbjct  77   IQYHDIWKMYKKAEASFWTAEEVDLSKDMAHWESLKKEEKHFISHVLAFFAASDGIVNEN  136
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            +       V  +E           E IH+  YS ++     DP +          + N  
+Sbjct  137  LVERFSKEVQVTEARCFYGFQIAMENIHSEMYSLLIDTYIKDPQE-------RDFLFNAI  189
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIA  211
+            + +    +K +   R      +S    + A  A+E I F GSFA  F + +  G   G+ 
+Sbjct  190  ETMPCVKEKADWAMRWINDDSSSYAERVVAFAAVEGIFFSGSFASIFWLKKR-GIMPGLT  248
+
+Query  212  QLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQDY  271
+               +LI RDE LH  F   +          + ++  P  + +I +I+D  V  E VF   
+Sbjct  249  FSNELISRDEGLHCDFACLMF---------SHLVNKPS-QERIHQIIDEAVKIEQVF---  295
+
+Query  272  LFSEGREC--IGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHWIDGSKVQ  329
+              +E   C  IG+N DL++QYI F+A  +         ++  K+NP  +M+H     K  
+Sbjct  296  -LTEALPCRLIGMNCDLMRQYIEFVADRLLLELKCDKLYN--KENPFDFMEHISLEGKTN  352
+
+Query  330  VAPQ---ELQNSAYQVGAVADDTHNLDL  354
+               +   E Q      G    D+H   L
+Sbjct  353  FFEKRVGEYQKMGVMSGGNTGDSHAFTL  380
+
+
+>Q9DHU2.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit [Yaba-like 
+disease virus]
+Length=325
+
+ Score = 69.7 bits (169),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 77/295 (26%), Positives = 126/295 (43%), Gaps = 32/295 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            + Y ++  +Y++ ++  W   EVDLS+D  D L+   +  + +   +++   +D +   +
+Sbjct  21   IVYEDIWKMYKKAVASFWTVEEVDLSKDFSDWLKLSDNEKNFIKHILAFFAASDGIVNEN  80
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++      V  SE           E IH+  YS ++     D     E+ Y   A+ N +
+Sbjct  81   LAERFYSEVQISEARCFYGFQIAMENIHSEMYSLLIDTYILDSK---EKNYLFNAIENMN  137
+
+Query  152  ---QAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFM  208
+               Q    A   +E  +R       +    L A  A+E I F GSFA  F I +  G   
+Sbjct  138  CVKQKANWAKKWIESKNR-------TYGERLVAFAAVEGIFFSGSFAAIFWIKKR-GLMP  189
+
+Query  209  GIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVF  268
+            G+    +LI RDE LH  F   + K           L +P L S ++ I+   V  E  F
+Sbjct  190  GLTFSNELISRDEGLHCDFACIMFK----------HLLNPPLNSVVRDIIIEAVNIEKNF  239
+
+Query  269  QDYLFSEG--RECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+                 +E    + IG+N DL+KQYI F+A  +    G    +    KNP  +M++
+Sbjct  240  ----LTEAIPVKLIGMNCDLMKQYIEFVADRLLLELGCDKYY--CSKNPFDFMEN  288
+
+
+>Q9QTF2.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit [Red 
+seabream iridovirus]
+Length=312
+
+ Score = 68.6 bits (166),  Expect = 9e-12, Method: Compositional matrix adjust.
+ Identities = 76/298 (26%), Positives = 129/298 (43%), Gaps = 43/298 (14%)
+
+Query  35   PELEALYQQQMSQIWNEFEVDLSQDRMDMLETDK---SVTDLMVKTISWQHLADSVAARS  91
+            P L A+Y++ ++  W   EVDLS D      TDK   +    M   +++  +AD +   +
+Sbjct  11   PHLWAMYKKAVASFWTVEEVDLSTDVRHW--TDKLTEAERRFMSHILAFFAMADGIVGDN  68
+
+Query  92   ISGLLMPHVTN--SEMENLINAWSLF------ETIHARTYSHIVKQTFADPGQMLEETYT  143
+            +       V N   E++++  A + +      E IHA  Y+ ++    A   Q       
+Sbjct  69   L-------VCNFAKELDHIPEARAFYGFQVAIENIHAEMYTQLIITLVAKENQ-------  114
+
+Query  144  NTAVLNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEH  203
+              A+ + ++ +     K +   +    T   I   L A  A+E + F GSFA  F + + 
+Sbjct  115  -AALFSAAEDMPCVKAKAQWAAQWLNATHKPIATRLLAFAAVEGVMFSGSFAAIFWLKKR  173
+
+Query  204  TGKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVA  263
+            +    G+A   +LI RDE LH  F   + +         +M   P      Q I DAV  
+Sbjct  174  S-LMPGLAFSNELISRDEGLHCDFACMLFR---------QMANKPCQDDAHQIISDAVDI  223
+
+Query  264  QEIVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            +   F++ L       +G+N+D +K YI F+A  + +A G    ++V   NP  +MD+
+Sbjct  224  ETAFFREAL---KTPLLGMNSDSMKLYIQFVADRLLDALGYAKMYNV--SNPFDFMDN  276
+
+
+>P48592.2 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2; 
+AltName: Full=Ribonucleotide reductase small subunit [Drosophila 
+melanogaster]
+Length=393
+
+ Score = 66.6 bits (161),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 73/294 (25%), Positives = 121/294 (41%), Gaps = 32/294 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QY ++  +Y++  +  W   EVDLS+D  D           +   +++   +D +   +
+Sbjct  89   IQYHDIWQMYKKAEASFWTVEEVDLSKDLTDWHRLKDDERHFISHVLAFFAASDGIVNEN  148
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQ---MLEETYTNTAVL  148
+            +       V  +E           E +H+  YS ++     DP Q   +     T  AV 
+Sbjct  149  LVERFSQEVQITEARCFYGFQIAMENVHSEMYSVLIDTYIRDPHQREYLFNAIETMPAV-  207
+
+Query  149  NRSQAIVGAFDKLEEDHRHSQVTDTSILL--TLTALFALEEIGFMGSFAVTFGIAEHTGK  206
+                       K + D   S ++  S      + A  A+E I F GSFA  F + +  G 
+Sbjct  208  -----------KRKADWALSWISSKSANFGERIIAFAAVEGIFFSGSFASIFWLKKR-GL  255
+
+Query  207  FMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEI  266
+              G+    +LI RDE LH  F  A+L           +++ P  +  I+ I DAV  ++ 
+Sbjct  256  MPGLTFSNELISRDEGLHCDF--AVLMFQH-------LVQRPKRERIIEIIRDAVAIEQE  306
+
+Query  267  VFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMD  320
+               D L       IG+N DL+ QYI F+A  +    G+   ++   KNP  +M+
+Sbjct  307  FLTDAL---PVNLIGMNCDLMSQYIEFVADRLLVELGVGKIYNT--KNPFNFME  355
+
+
+>P0DKH3.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain 
+B; AltName: Full=Ribonucleoside-diphosphate reductase R2B 
+subunit; AltName: Full=Ribonucleotide reductase small subunit 
+B [Arabidopsis thaliana]
+Length=333
+
+ Score = 65.1 bits (157),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 70/296 (24%), Positives = 119/296 (40%), Gaps = 36/296 (12%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTD----LMVKTISWQHLADSV  87
+            +QYP++  +Y++  +  W   EVDLSQD  D    + S+T+     +   +++   +D +
+Sbjct  22   IQYPQIWEMYKKAEASFWTAEEVDLSQDNRDW---ENSLTNDERHFIKHVLAFFAASDGI  78
+
+Query  88   AARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAV  147
+               ++S   M  V  SE           E IH+  YS ++     D  +           
+Sbjct  79   VLENLSTRFMSDVQISEARAFYGFQIAIENIHSEMYSLLLDTYIKDNKERDH--------  130
+
+Query  148  LNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKF  207
+            L R+   +    K  E          S    + A   +E I F GSF   F + +  G  
+Sbjct  131  LFRAIETIPCVTKKAEWAMKWINGSQSFAERIVAFACVEGIFFSGSFCSIFWLKKR-GLM  189
+
+Query  208  MGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQI-QKILDAVVAQEI  266
+             G+    +LI RDE LH  F   I                 +L++++ +  L A+V   +
+Sbjct  190  PGLTFSNELISRDEGLHCDFACLIYS---------------LLRTKLDEDRLKAIVCDAV  234
+
+Query  267  VFQDYLFSEGREC--IGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMD  320
+              +     +   C  +G+N +L+ QYI F+A  +  A G    + V   NP  +M+
+Sbjct  235  EIEREFVCDALPCALVGMNRELMSQYIEFVADRLLAALGCAKVYGV--SNPFDWME  288
+
+
+>Q6PEE3.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2 
+B; AltName: Full=TP53-inducible ribonucleotide reductase M2 
+B; AltName: Full=p53-inducible ribonucleotide reductase small 
+subunit 2-like protein; Short=p53R2 [Mus musculus]
+Length=351
+
+ Score = 63.5 bits (153),  Expect = 6e-10, Method: Compositional matrix adjust.
+ Identities = 78/324 (24%), Positives = 134/324 (41%), Gaps = 29/324 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQD--RMDMLETDKSVTDLMVKTISWQHLADSVAA  89
+            +QYP++  +Y+Q  +  W   EVDLS+D    + L++D+     +   +++   +D +  
+Sbjct  47   IQYPDIWRMYKQAQASFWTAEEVDLSKDLPHWNKLKSDEKY--FISHILAFFAASDGIVN  104
+
+Query  90   RSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLN  149
+             ++       V   E         L E +H+  YS ++     DP +          + N
+Sbjct  105  ENLVERFSQEVQVPEARCFYGFQILIENVHSEMYSLLIDTYIRDPKK-------REFLFN  157
+
+Query  150  RSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMG  209
+              + +     K +   R      ++    + A  A+E I F GSFA  F + +  G   G
+Sbjct  158  AIETMPYVKKKADWALRWIADRKSTFGERVVAFAAVEGIFFSGSFAAIFWLKKR-GLMPG  216
+
+Query  210  IAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQ  269
+            +    +LI RDE LH  F   + +     P+          + ++++I+   V  E  F 
+Sbjct  217  LTFSNELISRDEGLHCDFACLMFQYLVNKPS----------EDRVREIIADAVQIEQEFL  266
+
+Query  270  DYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHWIDGSKVQ  329
+                  G   IG+N  L+KQYI F+A  +    G    F    +NP  +M++     K  
+Sbjct  267  TEALPVG--LIGMNCVLMKQYIEFVADRLLGELGFSKIFQA--ENPFDFMENISLEGKTN  322
+
+Query  330  VAPQELQNSAYQVGAV-ADDTHNL  352
+                E + S YQ  AV A+ T N+
+Sbjct  323  FF--EKRVSEYQRFAVMAETTDNV  344
+
+
+>O46310.1 RecName: Full=Ribonucleoside-diphosphate reductase small subunit; 
+AltName: Full=Ribonucleotide reductase M2 subunit; AltName: 
+Full=Ribonucleotide reductase small subunit [Leishmania 
+amazonensis]
+Length=345
+
+ Score = 63.2 bits (152),  Expect = 7e-10, Method: Compositional matrix adjust.
+ Identities = 70/272 (26%), Positives = 112/272 (41%), Gaps = 20/272 (7%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QY ++   Y++Q S IW   E+DL  D  D    +      +   +++   +D +   +
+Sbjct  40   IQYHDIWRKYKEQESCIWTVEEIDLGNDMKDWATLNDGERHFIKHVLAFFAGSDGIVIEN  99
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++   M  V   E         + E IH+ TYS ++     D  + L        +L+  
+Sbjct  100  LAQRFMSDVKVPEARAFYGFQLMMENIHSETYSVLLDTYITDSEEKLR-------LLHAI  152
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIA  211
+            Q I     K E   R    +  S    L    A+E I F GSF   F + +  G   G+ 
+Sbjct  153  QTIPCIQKKAEWPVRWIG-SSASFQQRLIGFAAVEGIFFSGSFCALFWLKKR-GLMPGLT  210
+
+Query  212  QLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQDY  271
+               +LI RDE LHT F   +   H +     E +        ++ I+DAV  +     D 
+Sbjct  211  FSNELISRDEGLHTDFACLLYNSHIKHKLPRERV--------LEIIVDAVNIEREFICDA  262
+
+Query  272  LFSEGRECIGINADLIKQYIYFMAAPMYEAYG  303
+            L       IG+NA+L+ QYI F+A  +  + G
+Sbjct  263  L---PVRLIGMNAELMAQYIEFVADRLLVSLG  291
+
+
+>Q4R741.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2 
+B [Macaca fascicularis]
+Length=351
+
+ Score = 63.2 bits (152),  Expect = 8e-10, Method: Compositional matrix adjust.
+ Identities = 78/325 (24%), Positives = 135/325 (42%), Gaps = 31/325 (10%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQD--RMDMLETDKSVTDLMVKTISWQHLADSVAA  89
+            +QYP++  +Y+Q  +  W   EVDLS+D    + L+ D+     +   +++   +D +  
+Sbjct  47   IQYPDIWKMYKQAQASFWTAEEVDLSKDLPHWNKLKADEKY--FISHILAFFAASDGIVN  104
+
+Query  90   RSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLN  149
+             ++       V   E         L E +H+  YS ++     DP +          + N
+Sbjct  105  ENLVERFSQEVQVPEARCFYGFQILIENVHSEMYSLLIDTYIRDPKK-------REFLFN  157
+
+Query  150  RSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMG  209
+              + +     K +   R      ++    + A  A+E I F GSFA  F + +  G   G
+Sbjct  158  AIETMPYVKKKADWALRWIADRKSTFGERVVAFAAVEGIFFSGSFAAIFWLKKR-GLMPG  216
+
+Query  210  IAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAV-VAQEIVF  268
+            +    +LI RDE LH  F   + +          ++  P  +   + I+DAV + QE + 
+Sbjct  217  LTFSNELISRDEGLHCDFACLMFQY---------LVNKPSEERVREIIVDAVQIEQEFLT  267
+
+Query  269  QDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHWIDGSKV  328
+            +          IG+N  L+KQYI F+A  +    G    F    +NP  +M++     K 
+Sbjct  268  EALPVG----LIGMNCILMKQYIEFVADRLLVELGFSKIFQA--ENPFDFMENISLEGKT  321
+
+Query  329  QVAPQELQNSAYQVGAV-ADDTHNL  352
+                + +  S YQ  AV A+ T N+
+Sbjct  322  NFFEKRV--SEYQRFAVMAETTDNV  344
+
+
+>Q5R9G0.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2 
+B [Pongo abelii]
+Length=351
+
+ Score = 63.2 bits (152),  Expect = 8e-10, Method: Compositional matrix adjust.
+ Identities = 76/324 (23%), Positives = 134/324 (41%), Gaps = 29/324 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQD--RMDMLETDKSVTDLMVKTISWQHLADSVAA  89
+            +QYP++  +Y+Q  +  W   EVDLS+D    + L+ D+     +   +++   +D +  
+Sbjct  47   IQYPDIWKMYKQAQASFWTAEEVDLSKDLPHWNKLKADEKY--FISHILAFFAASDGIVN  104
+
+Query  90   RSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLN  149
+             ++       V   E         L E +H+  YS ++     DP +          + N
+Sbjct  105  ENLVERFSQEVQVPEARCFYGFQILIENVHSEMYSLLIDTYIRDPKK-------REFLFN  157
+
+Query  150  RSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMG  209
+              + +     K +   R      ++    + A  A+E + F GSFA  F + +  G   G
+Sbjct  158  AIETMPYVKKKADWALRWIADRKSTFGERVVAFAAVEGVFFSGSFAAIFWLKKR-GLMPG  216
+
+Query  210  IAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQ  269
+            +    +LI RDE LH  F   + +          ++  P  +   + I+DAV  ++    
+Sbjct  217  LTFSNELISRDEGLHCDFACLMFQY---------LVNKPSEERVREIIVDAVKIEQEFLT  267
+
+Query  270  DYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHWIDGSKVQ  329
+            + L       IG+N  L+KQYI F+A  +    G    F    +NP  +M++     K  
+Sbjct  268  EAL---PVGLIGMNCILMKQYIEFVADRLLVELGFSKVFQA--ENPFDFMENISLEGKTN  322
+
+Query  330  VAPQELQNSAYQVGAV-ADDTHNL  352
+               + +  S YQ  AV A+ T N+
+Sbjct  323  FFEKRV--SEYQRFAVMAETTDNV  344
+
+
+>Q7LG56.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2 
+B; AltName: Full=TP53-inducible ribonucleotide reductase M2 
+B; AltName: Full=p53-inducible ribonucleotide reductase small 
+subunit 2-like protein; Short=p53R2 [Homo sapiens]
+Length=351
+
+ Score = 62.8 bits (151),  Expect = 9e-10, Method: Compositional matrix adjust.
+ Identities = 76/324 (23%), Positives = 134/324 (41%), Gaps = 29/324 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQD--RMDMLETDKSVTDLMVKTISWQHLADSVAA  89
+            +QYP++  +Y+Q  +  W   EVDLS+D    + L+ D+     +   +++   +D +  
+Sbjct  47   IQYPDIWKMYKQAQASFWTAEEVDLSKDLPHWNKLKADEKY--FISHILAFFAASDGIVN  104
+
+Query  90   RSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLN  149
+             ++       V   E         L E +H+  YS ++     DP +          + N
+Sbjct  105  ENLVERFSQEVQVPEARCFYGFQILIENVHSEMYSLLIDTYIRDPKK-------REFLFN  157
+
+Query  150  RSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMG  209
+              + +     K +   R      ++    + A  A+E + F GSFA  F + +  G   G
+Sbjct  158  AIETMPYVKKKADWALRWIADRKSTFGERVVAFAAVEGVFFSGSFAAIFWLKKR-GLMPG  216
+
+Query  210  IAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQ  269
+            +    +LI RDE LH  F   + +          ++  P  +   + I+DAV  ++    
+Sbjct  217  LTFSNELISRDEGLHCDFACLMFQY---------LVNKPSEERVREIIVDAVKIEQEFLT  267
+
+Query  270  DYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHWIDGSKVQ  329
+            + L       IG+N  L+KQYI F+A  +    G    F    +NP  +M++     K  
+Sbjct  268  EAL---PVGLIGMNCILMKQYIEFVADRLLVELGFSKVFQA--ENPFDFMENISLEGKTN  322
+
+Query  330  VAPQELQNSAYQVGAV-ADDTHNL  352
+               + +  S YQ  AV A+ T N+
+Sbjct  323  FFEKRV--SEYQRFAVMAETTDNV  344
+
+
+>Q9KFH7.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Halalkalibacterium 
+halodurans C-125]
+Length=345
+
+ Score = 62.0 bits (149),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 64/308 (21%), Positives = 132/308 (43%), Gaps = 18/308 (6%)
+
+Query  21   GVKQGLLDTINVQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISW  80
+            G    +L+  +V++     LY+  ++  W  FE+++S D        ++  +   K I  
+Sbjct  24   GKSSNVLNWDDVRFSWAYPLYKNMLANFWTPFEINMSHDAKQFPTLTETEQEAFKKIIGL  83
+
+Query  81   QHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTF--ADPGQML  138
+                DSV     S     ++T+S +  L++  S  E +H ++YS+++      A   ++ 
+Sbjct  84   LAFLDSVQT-DYSMRAAEYLTDSSLAALMSVLSFQEVVHNQSYSYVLSSLVPKATQDEIF  142
+
+Query  139  EETYTNTAVLNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTF  198
+            E    +  +  R++ I+  ++K  ++      T  + L ++     LE + F   FA  +
+Sbjct  143  EYWKHDDVLKERNEFIIDGYEKFVDNP-----TPKTFLESIVYDVILEGLNFYSGFAFFY  197
+
+Query  199  GIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILK-IHQRIPAIAEMLESPMLKSQIQKI  257
+             +A +  K +  + ++  I RDE LH      I K +    P +        +K+ + K 
+Sbjct  198  NLARNQ-KMVSTSTMINYINRDEQLHVYLFTNIFKELLVEFPELNTEETKTFVKTTLMKA  256
+
+Query  258  LDAVVAQEIVFQDYL-FSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPL  316
+             D       + +D+  +  G +  GIN + ++ YI F+A       G+   +   K NP+
+Sbjct  257  AD-------LEKDWFRYIIGDKIPGINPEDMETYISFIANKRAVQLGMEKPYPEIKHNPM  309
+
+Query  317  PYMDHWID  324
+             ++  + D
+Sbjct  310  KWIRAYED  317
+
+
+>P42521.2 RecName: Full=Ribonucleoside-diphosphate reductase small subunit; 
+AltName: Full=Ribonucleotide reductase small subunit [Dictyostelium 
+discoideum]
+Length=338
+
+ Score = 61.6 bits (148),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 70/301 (23%), Positives = 125/301 (42%), Gaps = 46/301 (15%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTD----LMVKTISWQHLADSV  87
+            ++YP++  +Y++ ++  W   E+DL  D +D    +  +TD     +   +++   +D +
+Sbjct  27   IKYPDIWRMYKKALASHWVAEEIDLGNDNVDW---EYKLTDNERHFISHVLAFFAASDGI  83
+
+Query  88   AARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAV  147
+               +++   M  V   E           E IH+ TYS +++    D         T   +
+Sbjct  84   VNENLATRFMSEVQIPEARCFYGFQIAIENIHSETYSLLIETYIKDKQ-------TKDKL  136
+
+Query  148  LNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKF  207
+             N  + I     K E   R    +D S    L A  A+E I F GSF   F + +  G  
+Sbjct  137  FNAIETIPCIKKKAEWALRWINDSD-SFAERLVAFAAVEGIFFSGSFCSIFWLKKR-GLM  194
+
+Query  208  MGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIV  267
+             G+    +LI RDE LH  F                   + +L +++Q+ LD  V ++++
+Sbjct  195  QGLTFSNELISRDEGLHCDF-------------------ACLLYTKLQRKLDPKVIEKMI  235
+
+Query  268  FQDYLFSEGR--------ECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYM  319
+             +D +  E          + IG+N+  + QYI F A  +  + G    F+    NP  +M
+Sbjct  236  -RDAVECEKEFICESLPVDLIGMNSRSMSQYIEFCADRLVVSLGYKKIFN--SSNPFEWM  292
+
+Query  320  D  320
+            +
+Sbjct  293  E  293
+
+
+>P50621.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Bacillus 
+subtilis subsp. subtilis str. 168]
+Length=329
+
+ Score = 61.2 bits (147),  Expect = 3e-09, Method: Compositional matrix adjust.
+ Identities = 63/284 (22%), Positives = 124/284 (44%), Gaps = 22/284 (8%)
+
+Query  38   EALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARSISGLLM  97
+            +  Y Q + Q W   E+ L+ D +      K+  D  +K ++   L D+    +   ++ 
+Sbjct  19   QMFYNQNVKQFWLPEEIALNGDLLTWKYLGKNEQDTYMKVLAGLTLLDTEQGNTGMPIVA  78
+
+Query  98   PHVTNSEMENLINAWSLFET-IHARTYSHIVKQTFADPGQMLEETY----TNTAVLNRSQ  152
+             HV   + + ++N  ++ E  +HA++YS+I   T A P + + E +     N  +  ++Q
+Sbjct  79   EHVDGHQRKAVLNFMAMMENAVHAKSYSNIF-MTLA-PTETINEVFEWVKQNKYLQKKAQ  136
+
+Query  153  AIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIAQ  212
+             IVG +  +++D       + S+   + A   LE   F   F          GK M   +
+Sbjct  137  MIVGLYKAIQKD------DEISLFKAMVASVYLESFLFYSGFYYPLYFYGQ-GKLMQSGE  189
+
+Query  213  LVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQDYL  272
+            ++ LI RDE +H  + G +    Q I       +   L+     +L+ +   E+ + + L
+Sbjct  190  IINLILRDEAIHGVYVGLLA---QEIYNKQTEEKKAELREFAIDLLNQLYENELEYTEDL  246
+
+Query  273  FSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPL  316
+            + +    +G++ D +K++I + A       G  P F+    NP+
+Sbjct  247  YDQ----VGLSHD-VKKFIRYNANKALMNLGFDPYFEEEDINPI  285
+
+
+>P42170.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit [Caenorhabditis 
+elegans]
+Length=381
+
+ Score = 60.5 bits (145),  Expect = 6e-09, Method: Compositional matrix adjust.
+ Identities = 72/291 (25%), Positives = 119/291 (41%), Gaps = 31/291 (11%)
+
+Query  40   LYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARSISGLLMPH  99
+             Y++ ++  W   EVDL +D  D  + +      + + +++   +D +   ++       
+Sbjct  85   FYKKAVASFWTVEEVDLGKDMNDWEKMNGDEQYFISRILAFFAASDGIVNENLCERFSNE  144
+
+Query  100  VTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRSQAIVGAFD  159
+            V  SE           E IH+  YS +++    D      ET  NT + N        F 
+Sbjct  145  VQVSEARFFYGFQIAIENIHSEMYSKLIETYIRD------ETERNT-LFNAVDEF--EFI  195
+
+Query  160  KLEEDHRHSQVTD--TSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIAQLVKLI  217
+            K + D     ++D   S    L A  A+E I F GSFA  F + +  G   G+    +LI
+Sbjct  196  KKKADWALRWISDKKASFAERLIAFAAVEGIFFSGSFASIFWLKKR-GLMPGLTHSNELI  254
+
+Query  218  CRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQDYLFSEGR  277
+             RDE LH  F              A +L S + K   Q+ +  ++   +  +    +E  
+Sbjct  255  SRDEGLHRDF--------------ACLLYSKLQKKLTQQRIYDIIKDAVAIEQEFLTEAL  300
+
+Query  278  --ECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHW-IDG  325
+              + IG+N  L+ QYI F+A  +    G    +    KNP  +M++  IDG
+Sbjct  301  PVDMIGMNCRLMSQYIEFVADHLLVELGCDKLY--KSKNPFDFMENISIDG  349
+
+
+>Q9LSD0.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain 
+C; AltName: Full=Ribonucleoside-diphosphate reductase TSO2 
+subunit; AltName: Full=Ribonucleotide reductase small subunit 
+C [Arabidopsis thaliana]
+Length=332
+
+ Score = 59.7 bits (143),  Expect = 9e-09, Method: Compositional matrix adjust.
+ Identities = 69/298 (23%), Positives = 120/298 (40%), Gaps = 40/298 (13%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTD----LMVKTISWQHLADSV  87
+            + YP++  +Y++  +  W   EVDLSQD  D    + S+ D     +   +++   +D +
+Sbjct  22   IHYPQIWEMYKKAEASFWTAEEVDLSQDNRDW---ENSLNDGERHFIKHVLAFFAASDGI  78
+
+Query  88   AARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQ---MLEETYTN  144
+               +++   M  V  SE           E IH+  YS ++     D  +   +     T 
+Sbjct  79   VLENLASRFMSDVQVSEARAFYGFQIAIENIHSEMYSLLLDTYIKDNKERDHLFRAIETI  138
+
+Query  145  TAVLNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHT  204
+              V  ++Q  +   D        SQ     I+    A   +E I F GSF   F + +  
+Sbjct  139  PCVAKKAQWAMKWIDG-------SQTFAERII----AFACVEGIFFSGSFCSIFWLKKR-  186
+
+Query  205  GKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQ  264
+            G   G+    +LI RDE LH  F              A +L + +     ++ + ++V  
+Sbjct  187  GLMPGLTFSNELISRDEGLHCDF--------------ACLLYTLLKTKLSEERVKSIVCD  232
+
+Query  265  EIVFQDYLFSEGREC--IGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMD  320
+             +  +     +   C  +G+N DL+ QYI F+A  +  A G    + V   NP  +M+
+Sbjct  233  AVEIEREFVCDALPCALVGMNRDLMSQYIEFVADRLLGALGYGKVYGV--TNPFDWME  288
+
+
+>P0DSS8.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit; AltName: 
+Full=Ribonucleotide reductase subunit 2; Short=RNR2 [Variola 
+virus]
+Length=319
+
+ Score = 59.7 bits (143),  Expect = 9e-09, Method: Compositional matrix adjust.
+ Identities = 72/292 (25%), Positives = 124/292 (42%), Gaps = 27/292 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QY ++  +Y++  +  W   EVD+S+D  D  +        +   +++   +D +   +
+Sbjct  17   IQYHDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++      V  +E           E IH+  YS ++     D     E+ Y   A+   +
+Sbjct  77   LAERFCIEVQITEARCFYGFQMAIENIHSEMYSLLIDTYVKDSN---EKNYLFNAI--ET  131
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDT-SILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGI  210
+               V    K + D     + D+ S    L A  A+E I F GSFA  F + +  G   G+
+Sbjct  132  MPCV----KKKADWAQKWIHDSASYGERLIAFAAVEGIFFSGSFASIFWLKKR-GLMPGL  186
+
+Query  211  AQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQD  270
+                +LI RDE LH  F   + K H   P   E + S         I DAV  +    Q+
+Sbjct  187  TFSNELISRDEGLHCDFACLMFK-HLLYPPSEETVRSI--------ITDAVSIE----QE  233
+
+Query  271  YL-FSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            +L  +   + IG+N +++K YI F+A  +    G    ++V   NP  +M++
+Sbjct  234  FLTVALPVKLIGMNCEMMKTYIKFVADRLISELGFKKIYNV--TNPFDFMEN  283
+
+
+>P29883.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit; AltName: 
+Full=Ribonucleotide reductase subunit 2; Short=RNR2 [Vaccinia 
+virus L-IPV]
+Length=319
+
+ Score = 59.7 bits (143),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 69/292 (24%), Positives = 124/292 (42%), Gaps = 27/292 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QY ++  +Y++  +  W   EVD+S+D  D  +        +   +++   +D +   +
+Sbjct  17   IQYHDIWNMYKKAEASFWTVEEVDISKDINDWNKVTPDEKYFIKHVLAFFAASDGIVNEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++      V  +E           E IH+  YS ++     D     E+ Y   A+   +
+Sbjct  77   LAERFCTEVQITEARCFYGFRMAIENIHSEMYSLLIDTYVKDSN---EKNYLFNAI--ET  131
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSIL-LTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGI  210
+               V    K + D     + D++     L A  A+E I F GSFA  F + +  G   G+
+Sbjct  132  MPCV----KKKADWAQKWIHDSAGYGERLIAFAAVEGIFFSGSFASIFWLKKR-GLMPGL  186
+
+Query  211  AQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQD  270
+                +LI RDE LH  F   + K          +L  P  ++    I DAV  +    Q+
+Sbjct  187  TFSNELISRDEGLHCDFACLMFK---------HLLHPPSEETVRSIITDAVSIE----QE  233
+
+Query  271  YLFSE-GRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            +L +    + IG+N +++K YI F+A  +    G    ++V   NP  +M++
+Sbjct  234  FLTAALPVKLIGMNCEMMKTYIEFVADRLISELGFKKIYNV--TNPFDFMEN  283
+
+
+>O84835.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Chlamydia 
+trachomatis D/UW-3/CX]
+Length=346
+
+ Score = 59.3 bits (142),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 67/288 (23%), Positives = 122/288 (42%), Gaps = 21/288 (7%)
+
+Query  49   WNEFEVDLSQDRMDMLETDKSVTD---LMVKTISWQHLADSVAARSISGLLMPHVTNSEM  105
+            W   E+ + +D +++ ++D+   D   +++  + +   A+S+   +I   +  HVTN E 
+Sbjct  51   WLPTEIPMGKD-IELWKSDRLSEDERRVILLNLGFFSTAESLVGNNIVLAIFKHVTNPEA  109
+
+Query  106  ENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRSQ---AIVGAFDKLE  162
+               +   +  E +H  T+ +I +    D  ++        A+  +      I G    L+
+Sbjct  110  RQYLLRQAFEEAVHTHTFLYICESLGLDEKEIFNAYNERAAIKAKDDFQMEITGKV--LD  167
+
+Query  163  EDHRHSQVTD-TSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIAQLVKLICRDE  221
+             + R   V      +  L   + + E  F  S  V         K +GI +  + I RDE
+Sbjct  168  PNFRTDSVEGLQEFVKNLVGYYIIMEGIFFYSGFVMILSFHRQNKMIGIGEQYQYILRDE  227
+
+Query  222  VLHTRFNGAILK-IHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVF-QDYLFSEGREC  279
+             +H  F   ++  I +  P I     +P L+ +I +++   V  EI + QD L    R  
+Sbjct  228  TIHLNFGIDLINGIKEENPEIW----TPELQQEIVELIKRAVDLEIEYAQDCL---PRGI  280
+
+Query  280  IGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHWIDGSK  327
+            +G+ A +   Y+  +A    E  GL P +    KNP P+M   ID +K
+Sbjct  281  LGLRASMFIDYVQHIADRRLERIGLKPIYHT--KNPFPWMSETIDLNK  326
+
+
+>P11158.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit; AltName: 
+Full=Ribonucleotide reductase subunit 2; Short=RNR2 [Vaccinia 
+virus WR]
+Length=319
+
+ Score = 58.9 bits (141),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 69/292 (24%), Positives = 124/292 (42%), Gaps = 27/292 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QY ++  +Y++  +  W   EVD+S+D  D  +        +   +++   +D +   +
+Sbjct  17   IQYYDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++      V  +E           E IH+  YS ++     D     E+ Y   A+   +
+Sbjct  77   LAERFCTEVQITEARCFYGFQMAIENIHSEMYSLLIDTYVKDSN---EKNYLFNAI--ET  131
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSIL-LTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGI  210
+               V    K + D     + D++     L A  A+E I F GSFA  F + +  G   G+
+Sbjct  132  MPCV----KKKADWAQKWIHDSAGYGERLIAFAAVEGIFFSGSFASIFWLKKR-GLMPGL  186
+
+Query  211  AQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQD  270
+                +LI RDE LH  F   + K          +L  P  ++    I DAV  +    Q+
+Sbjct  187  TFSNELISRDEGLHCDFACLMFK---------HLLHPPSEETVRSIITDAVSIE----QE  233
+
+Query  271  YLFSE-GRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            +L +    + IG+N +++K YI F+A  +    G    ++V   NP  +M++
+Sbjct  234  FLTAALPVKLIGMNCEMMKTYIEFVADRLISELGFKKIYNV--TNPFDFMEN  283
+
+
+>O57175.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit; AltName: 
+Full=Ribonucleotide reductase subunit 2; Short=RNR2 [Vaccinia 
+virus Ankara]
+Length=319
+
+ Score = 58.9 bits (141),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 69/292 (24%), Positives = 124/292 (42%), Gaps = 27/292 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QY ++  +Y++  +  W   EVD+S+D  D  +        +   +++   +D +   +
+Sbjct  17   IQYHDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++      V  +E           E IH+  YS ++     D     E+ Y   A+   +
+Sbjct  77   LAERFCTEVQITEARCFYGFQMAIENIHSEMYSLLIDTYVKDSN---EKNYLFNAI--ET  131
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSIL-LTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGI  210
+               V    K + D     + D++     L A  A+E I F GSFA  F + +  G   G+
+Sbjct  132  MPCV----KKKADWAQKWIHDSAGYGERLIAFAAVEGIFFSGSFASIFWLKKR-GLMPGL  186
+
+Query  211  AQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQD  270
+                +LI RDE LH  F   + K          +L  P  ++    I DAV  +    Q+
+Sbjct  187  TFSNELISRDEGLHCDFACLMFK---------HLLHPPSEETVRSIITDAVSIE----QE  233
+
+Query  271  YLFSE-GRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            +L +    + IG+N +++K YI F+A  +    G    ++V   NP  +M++
+Sbjct  234  FLTAALPVKLIGMNCEMMKTYIEFVADRLISELGFKKIYNV--TNPFDFMEN  283
+
+
+>P20493.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit; AltName: 
+Full=Ribonucleotide reductase subunit 2; Short=RNR2 [Vaccinia 
+virus Copenhagen]
+Length=319
+
+ Score = 58.9 bits (141),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 71/292 (24%), Positives = 124/292 (42%), Gaps = 27/292 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QY ++  +Y++  +  W   EVD+S+D  D  +        +   +++   +D +   +
+Sbjct  17   IQYYDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++      V  +E           E IH+  YS ++     D     E+ Y   A+   +
+Sbjct  77   LAERFCTEVQITEARCFYGFQMAIENIHSEMYSLLIDTYVKDSN---EKNYLFNAI--ET  131
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSIL-LTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGI  210
+               V    K + D     + D++     L A  A+E I F GSFA  F + +  G   G+
+Sbjct  132  MPCV----KKKADWAQKWIHDSAGYGERLIAFAAVEGIFFSGSFASIFWLKKR-GLMPGL  186
+
+Query  211  AQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQD  270
+                +LI RDE LH  F   + K H   P   E + S         I DAV  +    Q+
+Sbjct  187  TFSNELISRDEGLHCDFACLMFK-HLLYPPSEETVRSI--------ITDAVSIE----QE  233
+
+Query  271  YLFSE-GRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            +L +    + IG+N +++K YI F+A  +    G    ++V   NP  +M++
+Sbjct  234  FLTAALPVKLIGMNCEMMKTYIEFVADRLISELGFKKIYNV--TNPFDFMEN  283
+
+
+>P79733.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2; 
+AltName: Full=Ribonucleotide reductase protein R2 class I; 
+AltName: Full=Ribonucleotide reductase small chain; AltName: 
+Full=Ribonucleotide reductase small subunit [Danio rerio]
+Length=386
+
+ Score = 58.5 bits (140),  Expect = 3e-08, Method: Compositional matrix adjust.
+ Identities = 70/296 (24%), Positives = 127/296 (43%), Gaps = 34/296 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQD--RMDMLETDKSVTDLMVKTISWQHLADSVAA  89
+            +QY ++  +Y++  +  W   EVDLS+D    D L+ ++     +   +++   +D +  
+Sbjct  82   IQYHDIWQMYKKAEASFWTAEEVDLSKDLQHWDSLKDEERY--FISHVLAFFAASDGIVN  139
+
+Query  90   RSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQ---MLEETYTNTA  146
+             ++       V  +E           E IH+  YS ++     D  +   +     T   
+Sbjct  140  ENLVERFTQEVQVTEARCFYGFQIAMENIHSEMYSLLIDTYIKDSKEREFLFNAIETMPC  199
+
+Query  147  VLNRSQ-AIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTG  205
+            V  ++  A+    DK   + R+ +         + A  A+E I F GSFA  F + +  G
+Sbjct  200  VKKKADWALNWIGDK---NARYGE--------RVVAFAAVEGIFFSGSFASIFWLKKR-G  247
+
+Query  206  KFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQE  265
+               G+    +LI RDE LH  F   + K          ++  P  ++  + I++AV  ++
+Sbjct  248  LMPGLTFSNELISRDEGLHCDFACLMFK---------HLINKPSEETVKKIIMNAVEIEQ  298
+
+Query  266  IVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+                D L     + IG+N DL+KQYI F+A  +    G    + V  +NP  +M++
+Sbjct  299  EFLTDAL---PVKLIGMNCDLMKQYIEFVADRLLLELGFDKVYRV--ENPFDFMEN  349
+
+
+>A0A7H0DN21.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit; AltName: 
+Full=Ribonucleotide reductase subunit 2; Short=RNR2 [Monkeypox 
+virus]
+Length=319
+
+ Score = 56.6 bits (135),  Expect = 9e-08, Method: Compositional matrix adjust.
+ Identities = 68/292 (23%), Positives = 124/292 (42%), Gaps = 27/292 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QY ++  +Y++  +  W   EVD+S+D  D  +        +   +++   +D +   +
+Sbjct  17   IQYHDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++      V  +E           E IH+  YS ++     D     E+ Y   A+   +
+Sbjct  77   LAERFCTEVQITEARCFYGFQMAIENIHSEMYSLLIDTYVKDSN---EKNYLFNAI--ET  131
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSIL-LTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGI  210
+               V    K + D     + D++     L A  A+E I F GSFA  F + +  G   G+
+Sbjct  132  MPCV----KKKADWAQKWIHDSAGYGERLIAFAAVEGIFFSGSFASIFWLKKR-GLMPGL  186
+
+Query  211  AQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQD  270
+                +LI RDE LH  F   + K           L  P  +  ++ I+   V+ E   Q+
+Sbjct  187  TFSNELISRDEGLHCDFACLMFK----------HLLHPPSEETVRFIITNAVSIE---QE  233
+
+Query  271  YL-FSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            +L  +   + IG+N +++K YI F+A  +    G    ++V   NP  +M++
+Sbjct  234  FLTVALPVKLIGMNCEMMKTYIEFVADRLISELGFKKIYNV--TNPFDFMEN  283
+
+
+>P11157.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2; 
+AltName: Full=Ribonucleotide reductase small chain; AltName: 
+Full=Ribonucleotide reductase small subunit [Mus musculus]
+Length=390
+
+ Score = 55.8 bits (133),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 71/294 (24%), Positives = 126/294 (43%), Gaps = 30/294 (10%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQD--RMDMLETDKSVTDLMVKTISWQHLADSVAA  89
+            ++Y ++  +Y++  +  W   EVDLS+D    + L+ D+     +   +++   +D +  
+Sbjct  86   IEYHDIWQMYKKAEASFWTAEEVDLSKDIQHWEALKPDER--HFISHVLAFFAASDGIVN  143
+
+Query  90   RSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLN  149
+             ++       V  +E           E IH+  YS ++     DP    E  Y    + N
+Sbjct  144  ENLVERFSQEVQVTEARCFYGFQIAMENIHSEMYSLLIDTYIKDPK---EREY----LFN  196
+
+Query  150  RSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMG  209
+              + +     K +   R     + +    + A  A+E I F GSFA  F + +  G   G
+Sbjct  197  AIETMPCVKKKADWALRWIGDKEATYGERVVAFAAVEGIFFSGSFASIFWLKKR-GLMPG  255
+
+Query  210  IAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQ  269
+            +    +LI RDE LH  F   + K     PA          + ++++I+   V  E   Q
+Sbjct  256  LTFSNELISRDEGLHCDFACLMFKHLVHKPA----------EQRVREIITNAVRIE---Q  302
+
+Query  270  DYLFSEGR--ECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            ++L +E    + IG+N  L+KQYI F+A  +    G    F V  +NP  +M++
+Sbjct  303  EFL-TEALPVKLIGMNCTLMKQYIEFVADRLMLELGFNKIFRV--ENPFDFMEN  353
+
+
+>Q4R7Q7.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2; 
+AltName: Full=Ribonucleotide reductase small chain; AltName: 
+Full=Ribonucleotide reductase small subunit [Macaca fascicularis]
+Length=389
+
+ Score = 55.8 bits (133),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 64/290 (22%), Positives = 117/290 (40%), Gaps = 22/290 (8%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            ++Y ++  +Y++  +  W   EVDLS+D              +   +++   +D +   +
+Sbjct  85   IEYHDIWQMYKKAEASFWTAEEVDLSKDIQHWESLKPEERYFISHVLAFFAASDGIVNEN  144
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            +       V  +E           E IH+  YS ++     DP +          + N  
+Sbjct  145  LVERFSQEVQITEARCFYGFQIAMENIHSEMYSLLIDTYIKDPKE-------REFLFNAI  197
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIA  211
+            + +     K +   R     + +    + A  A+E I F GSFA  F + +  G   G+ 
+Sbjct  198  ETMPCVEKKADWALRWIGDKEATYGERVVAFAAVEGIFFSGSFASIFWLKKR-GLMPGLT  256
+
+Query  212  QLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQDY  271
+               +LI RDE LH  F   + K          ++  P  +   + I++AV  ++    + 
+Sbjct  257  FSNELISRDEGLHCDFACLMFK---------HLVHKPSEERVREIIINAVRVEQEFLTEA  307
+
+Query  272  LFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            L     + IG+N  L+KQYI F+A  +    G    F V  +NP  +M++
+Sbjct  308  L---PVKLIGMNCTLMKQYIEFVADRLMLELGFSKVFRV--ENPFDFMEN  352
+
+
+>P0DSS7.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit; AltName: 
+Full=Ribonucleotide reductase subunit 2; Short=RNR2 [Variola 
+virus human/India/Ind3/1967]
+Length=319
+
+ Score = 55.5 bits (132),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 70/292 (24%), Positives = 124/292 (42%), Gaps = 27/292 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +QY ++  +Y++  +  W   EVD+S+D  D  +        +   +++   +D +   +
+Sbjct  17   IQYHDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++      V  +E           E IH+  YS ++     D     E+ Y   A+   +
+Sbjct  77   LAERFCIEVQITEARCFYGFQMAIENIHSEMYSLLIDTYVKDSN---EKNYLFNAI--ET  131
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSIL-LTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGI  210
+               V    K + D     + D++     L A  A+E I F GSFA  F + +  G   G+
+Sbjct  132  MPCV----KKKADWAQKWIHDSAGYGERLIAFAAVEGIFFSGSFASIFWLKKR-GLMPGL  186
+
+Query  211  AQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQD  270
+                +LI RDE LH  F   + K H   P   E + S         I DAV  +    Q+
+Sbjct  187  TFSNELISRDEGLHCDFACLMFK-HLLYPPSEETVRSI--------ITDAVSIE----QE  233
+
+Query  271  YL-FSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            +L  +   + IG+N +++K Y+ F+A  +    G    ++V   NP  +M++
+Sbjct  234  FLTVALPVKLIGMNCEMMKTYMEFVADRLISELGFKRIYNV--TNPSDFMEN  283
+
+
+>P31350.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2; 
+AltName: Full=Ribonucleotide reductase small chain; AltName: 
+Full=Ribonucleotide reductase small subunit [Homo sapiens]
+Length=389
+
+ Score = 55.5 bits (132),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 64/290 (22%), Positives = 117/290 (40%), Gaps = 22/290 (8%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            ++Y ++  +Y++  +  W   EVDLS+D              +   +++   +D +   +
+Sbjct  85   IEYHDIWQMYKKAEASFWTAEEVDLSKDIQHWESLKPEERYFISHVLAFFAASDGIVNEN  144
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            +       V  +E           E IH+  YS ++     DP +          + N  
+Sbjct  145  LVERFSQEVQITEARCFYGFQIAMENIHSEMYSLLIDTYIKDPKE-------REFLFNAI  197
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIA  211
+            + +     K +   R     + +    + A  A+E I F GSFA  F + +  G   G+ 
+Sbjct  198  ETMPCVKKKADWALRWIGDKEATYGERVVAFAAVEGIFFSGSFASIFWLKKR-GLMPGLT  256
+
+Query  212  QLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQDY  271
+               +LI RDE LH  F   + K          ++  P  +   + I++AV  ++    + 
+Sbjct  257  FSNELISRDEGLHCDFACLMFK---------HLVHKPSEERVREIIINAVRIEQEFLTEA  307
+
+Query  272  LFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            L     + IG+N  L+KQYI F+A  +    G    F V  +NP  +M++
+Sbjct  308  L---PVKLIGMNCTLMKQYIEFVADRLMLELGFSKVFRV--ENPFDFMEN  352
+
+
+>P32209.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit [Swinepox 
+virus (STRAIN KASZA)]
+Length=274
+
+ Score = 54.7 bits (130),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 68/278 (24%), Positives = 117/278 (42%), Gaps = 25/278 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            ++Y ++  +Y+Q ++  W   EVDLS+D  D  +  K     +   +++   +D +   +
+Sbjct  17   IKYHDIWKMYKQSVASFWTVEEVDLSKDLDDWDKLTKDEKYFIKHILAFFASSDGIVNEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++      V  SE           E IH+  YS ++     D    +E+ +   A+    
+Sbjct  77   LAERFYVDVQCSEARCFYGFQIAMENIHSEMYSLLIDTYVRDN---IEKMHLFNAIETME  133
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSIL-LTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGI  210
+                    K + D     ++   +    + A  A+E I F GSFA  F I +  G   G+
+Sbjct  134  CV------KKKADWARKWISSNKVYGERVVAFAAVEGIFFSGSFAAIFWIKKR-GLMPGL  186
+
+Query  211  AQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQD  270
+                +LI RDE LH  F   + K H   P   E++ S         I+DAV  +    ++
+Sbjct  187  TFSNELISRDEGLHCDFACLMFK-HLLHPPSKEVITSI--------IIDAVNIE----KE  233
+
+Query  271  YL-FSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPS  307
+            +L  +   + IG+N  L+ QYI F+A  +    G   S
+Sbjct  234  FLTVAIPVDLIGMNCCLMSQYIEFVADRLLTELGCEKS  271
+
+
+>P09247.1 RecName: Full=Ribonucleoside-diphosphate reductase small subunit; 
+AltName: Full=Ribonucleotide reductase small subunit [Human 
+herpesvirus 3 strain Dumas]
+ Q4JQV7.1 RecName: Full=Ribonucleoside-diphosphate reductase small subunit; 
+AltName: Full=Ribonucleotide reductase small subunit [Human 
+herpesvirus 3 strain Oka vaccine]
+Length=306
+
+ Score = 54.7 bits (130),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 61/208 (29%), Positives = 88/208 (42%), Gaps = 25/208 (12%)
+
+Query  116  ETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRSQAIVGAFDKLEEDHR-HSQVTDTS  174
+            E +HAR YS I    F    + L   Y N  + N S  I      LEE  R +  V +  
+Sbjct  96   EVVHARVYSQIQLMLFRG-DESLRVQYVNVTINNPS--IQQKVQWLEEKVRDNPSVAEKY  152
+
+Query  175  ILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILKI  234
+            IL+ L     +E I F+ SFA       + G F+   Q   LI RDE +HT  +  I   
+Sbjct  153  ILMIL-----IEGIFFVSSFA-AIAYLRNNGLFVVTCQFNDLISRDEAIHTSASCCIY--  204
+
+Query  235  HQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFM  294
+            +  +P      E P + ++I ++    V  E  F   L S   +   +N D I QY+ F 
+Sbjct  205  NNYVP------EKPAI-TRIHQLFSEAVEIECAF---LKSHAPKTRLVNVDAITQYVKFS  254
+
+Query  295  AAPMYEAYGLVPSFDVPKKN---PLPYM  319
+            A  +  A  +   F+ P  +   PL +M
+Sbjct  255  ADRLLSAINVPKLFNTPPPDSDFPLAFM  282
+
+
+>Q60561.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2; 
+AltName: Full=Ribonucleotide reductase small chain; AltName: 
+Full=Ribonucleotide reductase small subunit [Mesocricetus 
+auratus]
+Length=386
+
+ Score = 53.1 bits (126),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 70/294 (24%), Positives = 125/294 (43%), Gaps = 30/294 (10%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQD--RMDMLETDKSVTDLMVKTISWQHLADSVAA  89
+            ++Y ++  +Y++  +  W   EVDLS+D    + L+ D+     +   +++   +D +  
+Sbjct  86   IEYHDIWKMYKKAEASFWTAEEVDLSKDIQHWEALKPDER--HFISHVLAFFAASDGIVN  143
+
+Query  90   RSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLN  149
+             ++       V  +E           E IH+  YS ++     D     E  Y    + N
+Sbjct  144  ENLVERFSQEVQVTEARCFYGFQIAMENIHSEMYSLLIDTYIKDSK---EREY----LFN  196
+
+Query  150  RSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMG  209
+              + +     K +   R     + +    + A  A+E I F GSFA  F + +  G   G
+Sbjct  197  AIETMPCVKKKADWALRWIGDKEATYGERVVAFAAVEGIFFSGSFASIFWLKKR-GLMPG  255
+
+Query  210  IAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQ  269
+            +    +LI RDE LH  F   + K     P+          + ++Q+I+   V  E   Q
+Sbjct  256  LTFSNELISRDEGLHCDFACLMFKHLVHKPS----------EQRVQEIITNAVRIE---Q  302
+
+Query  270  DYLFSEGR--ECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+            ++L +E    + IG+N  L+KQYI F+A  +    G    F V  +NP  +M++
+Sbjct  303  EFL-TEALPVKLIGMNCTLMKQYIEFVADRLMLELGFNKIFKV--ENPFDFMEN  353
+
+
+>P50651.2 RecName: Full=Ribonucleoside-diphosphate reductase small chain 
+A; AltName: Full=Ribonucleoside-diphosphate reductase R2A 
+subunit; Short=AtRNR2; Short=Protein R2at; AltName: Full=Ribonucleotide 
+reductase small subunit A [Arabidopsis thaliana]
+Length=341
+
+ Score = 52.4 bits (124),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 65/291 (22%), Positives = 120/291 (41%), Gaps = 27/291 (9%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            ++Y  +  +Y++  +  W   EVDLS D         S    +   +++   +D +   +
+Sbjct  34   IRYKSIWEMYKKAEASFWTAEEVDLSTDVQQWEALTDSEKHFISHILAFFAASDGIVLEN  93
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            ++   +  V   E           E IH+  YS ++ +TF      ++++     + N  
+Sbjct  94   LAARFLNDVQVPEARAFYGFQIAMENIHSEMYSLLL-ETF------IKDSKEKDRLFNAI  146
+
+Query  152  QAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIA  211
+            + I     K +      Q +  S  + L A   +E I F GSF   F + +  G   G+ 
+Sbjct  147  ETIPCISKKAKWCLDWIQ-SPMSFAVRLVAFACVEGIFFSGSFCAIFWLKKR-GLMPGLT  204
+
+Query  212  QLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQDY  271
+               +LI RDE LH  F   +  + Q+        + P+ K  + +I+   V  E  F   
+Sbjct  205  FSNELISRDEGLHCDFACLLYSLLQK--------QLPLEK--VYQIVHEAVEIETEF---  251
+
+Query  272  LFSEGREC--IGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMD  320
+               +   C  IG+N++L+ QYI F+A  +    G   ++    +NP  +M+
+Sbjct  252  -VCKALPCDLIGMNSNLMSQYIQFVADRLLVTLGCERTYKA--ENPFDWME  299
+
+
+>P49723.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain 
+2; AltName: Full=Ribonucleotide reductase R2 subunit 2; AltName: 
+Full=Ribonucleotide reductase small subunit 2 [Saccharomyces 
+cerevisiae S288C]
+Length=345
+
+ Score = 52.4 bits (124),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 74/295 (25%), Positives = 125/295 (42%), Gaps = 35/295 (12%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLE-TDKSVT---DLMVKTISWQHLADSV  87
+            ++Y E+ A Y++  +  W   E++L++D  D  + TD   T   +L+  +IS  +L +  
+Sbjct  40   IKYHEIWAAYKKVEASFWTAEEIELAKDTEDFQKLTDDQKTYIGNLLALSISSDNLVNKY  99
+
+Query  88   AARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQM-LEETYTNTA  146
+               + S  L     N E ++      + E I++  YS +V   F DP  + L +   N  
+Sbjct  100  LIENFSAQLQ----NPEGKSFYGFQIMMENIYSEVYSMMVDAFFKDPKNIPLFKEIANLP  155
+
+Query  147  VLNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGK  206
+             +    A +          R     D+     L A  A E I   G++A  F + +   K
+Sbjct  156  EVKHKAAFI---------ERWISNDDSLYAERLVAFAAKEGIFQAGNYASMFWLTDK--K  204
+
+Query  207  FM-GIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQE  265
+             M G+A   + ICRD   +T F   +L  H R         +P +   I+KI+   V  E
+Sbjct  205  IMPGLAMANRNICRDRGAYTDF-SCLLFAHLRTKP------NPKI---IEKIITEAV--E  252
+
+Query  266  IVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMD  320
+            I  + Y  S   E  G++   I  YI F+A  + + +G    ++    NP  +M+
+Sbjct  253  IEKEYYSNSLPVEKFGMDLKSIHTYIEFVADGLLQGFGNEKYYNAV--NPFEFME  305
+
+
+>Q9PL92.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Chlamydia 
+muridarum str. Nigg]
+Length=346
+
+ Score = 52.4 bits (124),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 60/255 (24%), Positives = 103/255 (40%), Gaps = 27/255 (11%)
+
+Query  84   ADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYT  143
+            A+S+   +I   +  HVTN E    +   +  E +H  T+ +I +    D  ++      
+Sbjct  88   AESLVGNNIVLAIFKHVTNPEARQYLLRQAFEEAVHTHTFLYICESLGLDEKEIFNAYNE  147
+
+Query  144  NTAVLNRSQ---AIVGAFDKLEEDHRHSQVTD-TSILLTLTALF-ALEEIGFMGSFAVTF  198
+              ++  +      I G    L+ + R   V      +  L   +  +E I F   F +  
+Sbjct  148  RASIKAKDDFQMEITGKV--LDPNFRTDSVEGLQEFIKNLVGYYIIMEGIFFYSGFVMIL  205
+
+Query  199  GIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILK-IHQRIPAIAEMLESPMLKSQIQKI  257
+                   K +GI +  + I RDE +H  F   ++  I +  P I     +  L+ +I ++
+Sbjct  206  SFHRQN-KMVGIGEQYQYILRDETIHLNFGVDLINGIKEENPEIW----TTELQQEIIEM  260
+
+Query  258  LDAVVAQEIVFQDYLFSEGREC-----IGINADLIKQYIYFMAAPMYEAYGLVPSFDVPK  312
+            +   V  EI   DY     R+C     +G+ A +   Y+  +A    E  GL P +    
+Sbjct  261  IQRAVDLEI---DY----ARDCLPRGILGLRASMFIDYVQHIADRRLERIGLKPIYHT--  311
+
+Query  313  KNPLPYMDHWIDGSK  327
+            KNP P+M   ID +K
+Sbjct  312  KNPFPWMSETIDLNK  326
+
+
+>Q9Z6S4.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Chlamydia 
+pneumoniae]
+Length=346
+
+ Score = 51.6 bits (122),  Expect = 4e-06, Method: Compositional matrix adjust.
+ Identities = 63/320 (20%), Positives = 132/320 (41%), Gaps = 25/320 (8%)
+
+Query  23   KQGLLDTINVQYPELEAL--------YQQQMSQIWNEFEVDLSQDRMDMLETDKSVTD--  72
+            K+GL++   V   +L  +        Y    +  W   EV +++D +++ ++D+   D  
+Sbjct  17   KKGLVNCNQVDVNQLVPIKYKWAWEHYLNGCANNWLPTEVPMARD-IELWKSDELSEDER  75
+
+Query  73   -LMVKTISWQHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTF  131
+             +++  + +   A+S+   +I   +  H+TN E    +   +  E +H  T+ +I +   
+Sbjct  76   RVILLNLGFFSTAESLVGNNIVLAIFKHITNPEARQYLLRQAFEEAVHTHTFLYICESLG  135
+
+Query  132  ADPGQMLEETYTNTAVLNRSQ-AIVGAFDKLEEDH--RHSQVTDTSILLTLTALFALEEI  188
+             D G++        ++  +    +    D L+ +   + S+     I   +     +E I
+Sbjct  136  LDEGEVFNAYNERASIRAKDDFQMTLTVDVLDPNFSVQSSEGLGQFIKNLVGYYIIMEGI  195
+
+Query  189  GFMGSFAVTFGIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILK-IHQRIPAIAEMLES  247
+             F   F +         K  GI +  + I RDE +H  F   ++  I +  P +     +
+Sbjct  196  FFYSGFVMILSFHRQN-KMTGIGEQYQYILRDETIHLNFGIDLINGIKEENPEVW----T  250
+
+Query  248  PMLKSQIQKILDAVVAQEIVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPS  307
+              L+ +I  +++  V  EI +       G   +G+ + +   Y+  +A    E  GL P 
+Sbjct  251  TELQEEIVALIEKAVELEIEYAKDCLPRG--ILGLRSSMFIDYVRHIADRRLERIGLKPI  308
+
+Query  308  FDVPKKNPLPYMDHWIDGSK  327
+            +    +NP P+M   +D +K
+Sbjct  309  YH--SRNPFPWMSETMDLNK  326
+
+
+>Q8SRR2.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit [Encephalitozoon 
+cuniculi GB-M1]
+Length=325
+
+ Score = 51.6 bits (122),  Expect = 4e-06, Method: Compositional matrix adjust.
+ Identities = 67/306 (22%), Positives = 122/306 (40%), Gaps = 28/306 (9%)
+
+Query  18   LFLGVKQGLLDTINVQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKT  77
+            L L  K+     + ++Y ++  +Y++  S  W   EV L +D  D  + +      +   
+Sbjct  9    LLLDPKEERFVLLPIKYHDIWKMYKKAESSFWTVEEVSLDKDIDDWGKLNAKERHFISYV  68
+
+Query  78   ISWQHLADSVAARSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQM  137
+            +++   +D +   ++       V   E           E IH+  YS ++     D    
+Sbjct  69   LAFFAASDGIVNLNLVERFSTEVKVLEARFFYGFQMAIENIHSEMYSLLIDTYIRDND--  126
+
+Query  138  LEETYTNTAVLNRSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVT  197
+             E+ +   A+    + I    +K +   R  +  ++     L A   +E I F G+FA  
+Sbjct  127  -EKNFLFDAI----RTIPSVKEKADWAIRWIEDKNSDFATRLVAFACVEGIFFSGAFASI  181
+
+Query  198  FGIAEHTGKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKI  257
+            F + +  G   G+    +LI RDE LH  F   +L  H              LK +  +I
+Sbjct  182  FWLKKR-GLMPGLTFSNELISRDEGLHCEF-ACLLHYH--------------LKKKCNRI  225
+
+Query  258  LDAVVAQEIVFQDYLFSEGR--ECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNP  315
+             + VV   +  +    SE      IG+N +L+ +YI F+A  + E  G    ++    NP
+Sbjct  226  KE-VVMDAVEIEKKFLSESLPVNLIGMNCNLMCRYIEFVADRLLENLGEERVYNAT--NP  282
+
+Query  316  LPYMDH  321
+              +M++
+Sbjct  283  FDFMEN  288
+
+
+>Q6UDJ1.1 RecName: Full=Ribonucleoside-diphosphate reductase small subunit; 
+AltName: Full=Ribonucleotide reductase small subunit [Psittacid 
+herpesvirus 1 Amazon parrot/1997]
+Length=313
+
+ Score = 51.2 bits (121),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 70/293 (24%), Positives = 121/293 (41%), Gaps = 36/293 (12%)
+
+Query  33   QYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARSI  92
+            + P++  L    ++  WNEFE+  ++D  D+    +   D       +   AD +   ++
+Sbjct  16   ECPDMRELRDLSIANNWNEFELCYARDEKDVDCLTEDECDFYKFVFCFLAAADDLVNVNL  75
+
+Query  93   SGL--LMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNR  150
+              L  L P     ++++        ET+H+RTYS  V+  F     +  + Y   AV  +
+Sbjct  76   DNLVTLFPQ---KDIQHYYAEQIRIETVHSRTYS-AVQLVFFRNDAIARDRYVLEAV--K  129
+
+Query  151  SQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFAL----EEIGFMGSFAVTFGIAEHTGK  206
+              AI    D L      S++ +    LTL   + L    E I F+ SFA    +  H+  
+Sbjct  130  DGAIRRKIDWL------SRIQNEGDELTLPEKYILMILIEGIFFVSSFAAISYLRRHS-I  182
+
+Query  207  FMGIAQLVKLICRDEVLHTRFNGAI----LKIHQRIPAIAEMLESPMLKSQIQKILDAVV  262
+            F    Q   LI RDE +HT  +  I    LK H + P++  + +  + K  ++   D +V
+Sbjct  183  FQVTCQSNDLISRDETIHTTASCCIYNNWLKGHPK-PSVKRIHQ--LFKEAVEIECDFLV  239
+
+Query  263  AQEIVFQDYLFSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNP  315
+            A+            +    I+ D I+ ++ F A       G+   +D P  +P
+Sbjct  240  AR----------APKAARLIDIDAIQSFVRFTANRWLSMIGVPTIYDDPAPDP  282
+
+
+>Q4KLN6.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit M2; 
+AltName: Full=Ribonucleotide reductase small chain; AltName: 
+Full=Ribonucleotide reductase small subunit [Rattus norvegicus]
+Length=390
+
+ Score = 50.8 bits (120),  Expect = 9e-06, Method: Compositional matrix adjust.
+ Identities = 68/296 (23%), Positives = 123/296 (42%), Gaps = 34/296 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQD--RMDMLETDKSVTDLMVKTISWQHLADSVAA  89
+            ++Y ++  +Y++  +  W   EVDLS+D    + L+ D+     +   +++   +D +  
+Sbjct  86   IEYHDIWQMYKKAEASFWTAEEVDLSKDIQHWEALKPDER--HFISHVLAFFAASDGIVN  143
+
+Query  90   RSISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLN  149
+             ++       V  +E           E IH+  YS ++     D     E  Y    + N
+Sbjct  144  ENLVERFSQEVQVTEARCFYGFQIAMENIHSEMYSLLIDTYIKDSK---EREY----LFN  196
+
+Query  150  RSQAIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMG  209
+              + +     K +   R     + +    + A  A+E I F GSFA  F + +  G   G
+Sbjct  197  AIETMPCVKKKADWALRWIGDKEATYGERVVAFAAVEGIFFSGSFASIFWLKKR-GLMPG  255
+
+Query  210  IAQLVKLICRDEVLHTRFNGAILK--IHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIV  267
+            +    +LI RDE LH  F   + K  +H               K   Q++ + +     +
+Sbjct  256  LTFSNELISRDEGLHCDFACLMFKHLVH---------------KPSEQRVKEIITNSVRI  300
+
+Query  268  FQDYLFSEGR--ECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDH  321
+             Q++L +E    + IG+N  L+KQYI F+A  +    G    F V  +NP  +M++
+Sbjct  301  EQEFL-TEALPVKLIGMNCTLMKQYIEFVADRLMLELGFNKIFKV--ENPFDFMEN  353
+
+
+>O30601.1 RecName: Full=SPbeta prophage-derived ribonucleoside-diphosphate 
+reductase subunit beta; AltName: Full=Ribonucleotide reductase 
+small subunit [Bacillus subtilis subsp. subtilis str. 
+168]
+ O64174.1 RecName: Full=Ribonucleoside-diphosphate reductase subunit beta; 
+AltName: Full=Ribonucleotide reductase small subunit [Bacillus 
+phage SPBc2]
+Length=329
+
+ Score = 49.7 bits (117),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 58/284 (20%), Positives = 120/284 (42%), Gaps = 22/284 (8%)
+
+Query  38   EALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARSISGLLM  97
+            +  Y Q + Q W   E+ L+ D +      K+  D  +K ++   L D+    +   ++ 
+Sbjct  19   QMFYNQNVKQFWLPEEIALNGDLLTWKYLGKNEQDTYMKVLAGLTLLDTEQGNTGMPIVA  78
+
+Query  98   PHVTNSEMENLINAWSLFET-IHARTYSHIVKQTFADPGQMLEETY----TNTAVLNRSQ  152
+             HV   + + ++N  ++ E  +HA++YS+I   T A P + + E +     N  +  +++
+Sbjct  79   EHVDGHQRKAVLNFMAMMENAVHAKSYSNIF-LTLA-PTEQINEVFEWVKNNRFLQKKAR  136
+
+Query  153  AIVGAFDKLEEDHRHSQVTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHTGKFMGIAQ  212
+             IV  +  ++++       + S+   + A   LE   F   F          GK M   +
+Sbjct  137  TIVSVYKTIKKN------DEISLFKGMVASVFLESFLFYSGFYYPLYFYGQ-GKLMQSGE  189
+
+Query  213  LVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQEIVFQDYL  272
+            ++ LI RDE +H  + G +    Q I       +   L +    +L  +   E+ + + +
+Sbjct  190  IINLIIRDEAIHGVYVGLLA---QEIYKKQTPQKQKELYAWALNLLQELYENELEYTEDV  246
+
+Query  273  FSEGRECIGINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPL  316
+            + +    +G+  D +K++I + A       G    F+    NP+
+Sbjct  247  YDQ----VGLAPD-VKKFIRYNANKALNNLGFDHWFEEEDVNPI  285
+
+
+>P0C8I1.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit [African 
+swine fever virus tick/South Africa/Pretoriuskop Pr4/1996]
+Length=327
+
+ Score = 47.4 bits (111),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 74/331 (22%), Positives = 120/331 (36%), Gaps = 35/331 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +Q+PE    Y++  S  W   EVD+ +D  D     KS  +   + +++  +AD +   +
+Sbjct  17   IQHPECWNWYKKLESLTWTAQEVDMCKDIDDWEAMPKSQREFYKQILAFFVVADEIVIEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            +    M  +   E+       +  E +H+  YS  VK    D  +               
+Sbjct  77   LLTNFMREIKVKEVLYFYTMQAAQECVHSEAYSIQVKTLIPDEKE--------------Q  122
+
+Query  152  QAIVGAFDKLEEDHRHSQ-------VTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHT  204
+            Q I    +K     + +Q        T  S+   L    A+E I F   F V     +  
+Sbjct  123  QRIFSGIEKHPIIKKMAQWVRQWMDPTKNSLGERLVGFAAVEGILFQNHF-VAIQFLKEQ  181
+
+Query  205  GKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQ  264
+                G+    + I RDE +H  F  A   I   +  I E       +  I KIL   V  
+Sbjct  182  NIMPGLVSYNEFISRDEGVHCSF--ACFLISNYVYNIPE-------ERIIHKILKEAVEL  232
+
+Query  265  EIVFQDYLFSEGRECI-GINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHWI  323
+               F +Y F + R  + G + +++ QYI +    +         + V   NP P M  + 
+Sbjct  233  VDEFINYAFDKARGRVPGFSKEMLFQYIRYFTDNLCFMMQCKSIYKV--GNPFPQMTKFF  290
+
+Query  324  DGSKVQVAPQELQNSAYQVGAVADDTHNLDL  354
+                 +    EL+ + YQ   V DD     L
+Sbjct  291  LNEVEKTNFFELRPTQYQ-NCVKDDAFAFKL  320
+
+
+>P0C8I0.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit [African 
+swine fever virus pig/Kenya/KEN-50/1950]
+Length=327
+
+ Score = 45.1 bits (105),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 72/331 (22%), Positives = 118/331 (36%), Gaps = 35/331 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +Q+PE    Y++  S  W   EVD+ +D  D     K   +   + +++  +AD +   +
+Sbjct  17   IQHPECWNWYKKLESLTWTAQEVDMCKDIDDWEAMPKPQREFYKQILAFFVVADEIVIEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            +    M  +   E+       +  E +H+  YS  VK    D  +               
+Sbjct  77   LLTNFMREIKVKEVLYFYTMQAAQECVHSEAYSIQVKTLIPDEKE--------------Q  122
+
+Query  152  QAIVGAFDKLEEDHRHSQ-------VTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHT  204
+            Q I    +K     + +Q           S+   L    A+E I F   F V     +  
+Sbjct  123  QRIFSGIEKHPIIRKMAQWVQQWMDPVKNSLGERLVGFAAVEGILFQNHF-VAIQFLKEQ  181
+
+Query  205  GKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQ  264
+                G+    + I RDE +H  F  A   I   +  I E       +  I KIL   V  
+Sbjct  182  NIMPGLVSYNEFISRDEGMHCSF--ACFLISNYLNNIPE-------EKIIHKILKEAVEL  232
+
+Query  265  EIVFQDYLFSEGRECI-GINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHWI  323
+               F  Y F + R  + G + +++ QYI +    +         + V  +NP P M  + 
+Sbjct  233  VDEFISYAFDKARGSVPGFSKEMLFQYIRYFTDNLCFMLQCKSIYKV--ENPFPQMTKFF  290
+
+Query  324  DGSKVQVAPQELQNSAYQVGAVADDTHNLDL  354
+                 +    EL+ + YQ   V DD     L
+Sbjct  291  LNEVEKTNFFELRPTQYQ-NCVKDDAFAFKL  320
+
+
+>P0C8I2.1 RecName: Full=Ribonucleoside-diphosphate reductase small chain; 
+AltName: Full=Ribonucleotide reductase small subunit [African 
+swine fever virus warthog/Namibia/Wart80/1980]
+Length=327
+
+ Score = 44.7 bits (104),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 73/331 (22%), Positives = 118/331 (36%), Gaps = 35/331 (11%)
+
+Query  32   VQYPELEALYQQQMSQIWNEFEVDLSQDRMDMLETDKSVTDLMVKTISWQHLADSVAARS  91
+            +Q+PE    Y++  S  W   EVD+ +D  D     K   +   + +++  +AD +   +
+Sbjct  17   IQHPECWNWYKKLESLTWTAQEVDMCKDIDDWEAMPKPQREFYKQILAFFVVADEIVIEN  76
+
+Query  92   ISGLLMPHVTNSEMENLINAWSLFETIHARTYSHIVKQTFADPGQMLEETYTNTAVLNRS  151
+            +    M  +   E+       +  E +H+  YS  VK    D  +               
+Sbjct  77   LLTNFMREIKVKEVLYFYTMQAAQECVHSEAYSIQVKTLIPDEKE--------------Q  122
+
+Query  152  QAIVGAFDKLEEDHRHSQ-------VTDTSILLTLTALFALEEIGFMGSFAVTFGIAEHT  204
+            Q I    +K     + +Q        T  S+   L    A+E I F   F V     +  
+Sbjct  123  QRIFSGIEKHPIIKKMAQWVRQWMDPTKNSLGERLVGFAAVEGILFQNHF-VAIQFLKEQ  181
+
+Query  205  GKFMGIAQLVKLICRDEVLHTRFNGAILKIHQRIPAIAEMLESPMLKSQIQKILDAVVAQ  264
+                G+    + I RDE +H  F  A   I   +  I E       +  I KIL   V  
+Sbjct  182  NIMPGLVSYNEFISRDEGVHCSF--ACFLISNYVYNIPE-------EKIIHKILKEAVEL  232
+
+Query  265  EIVFQDYLFSEGRECI-GINADLIKQYIYFMAAPMYEAYGLVPSFDVPKKNPLPYMDHWI  323
+               F  Y F + R  + G + +++ QYI +    +         + V   NP P M  + 
+Sbjct  233  VDEFISYAFDKARGRVPGFSKEMLFQYIRYFTDNLCFMMQCKSIYKV--GNPFPQMTKFF  290
+
+Query  324  DGSKVQVAPQELQNSAYQVGAVADDTHNLDL  354
+                 +    EL+ + YQ   V DD     L
+Sbjct  291  LNEVEKTNFFELRPTQYQ-NCVKDDAFAFKL  320
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.135    0.397    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 31470517380
+
+
+  Database: Non-redundant UniProtKB/SwissProt sequences
+    Posted date:  Aug 4, 2024  7:01 AM
+  Number of letters in database: 183,938,400
+  Number of sequences in database:  483,620
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

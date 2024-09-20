@@ -1,0 +1,160 @@
+BLASTP 2.16.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: Non-redundant UniProtKB/SwissProt sequences
+           483,620 sequences; 183,938,400 total letters
+
+
+
+Query= NFECIMNI_00013 hypothetical protein
+
+Length=442
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+P0DTK9.1 RecName: Full=Anti-CBASS protein Acb1; Short=Acb1 [Caulo...  179     6e-49
+A0A494TJG7.1 RecName: Full=Anti-CBASS protein Acb1; Short=Acb1 [S...  168     8e-45
+P44183.1 RecName: Full=Uncharacterized protein HI_1409 [Haemophil...  127     3e-31
+
+
+>P0DTK9.1 RecName: Full=Anti-CBASS protein Acb1; Short=Acb1 [Caulobacter 
+sp. RHG1]
+Length=627
+
+ Score = 179 bits (454),  Expect = 6e-49, Method: Compositional matrix adjust.
+ Identities = 119/354 (34%), Positives = 177/354 (50%), Gaps = 22/354 (6%)
+
+Query  22   DGLENVMTGLGTGNDKNSYNQWVRSGRNRDHESLIVRFRECWVSQKACKILPQDMTREWR  81
+            D L +++TGLGT  DK +   +       D   L    R  W++QK   I+P DMTREWR
+Sbjct  5    DSLRSLVTGLGTSKDKGASASYYFQPLGPDE--LNAMHRGDWLAQKVIDIIPNDMTREWR  62
+
+Query  82   --RCSTP-----EAVKADKELRIRDLFREAYIWARVFGTAAIILDIKGSGKANTPLDLRR  134
+              +   P     EAV+    + ++     A   AR+ G + I + IKG+   + PLD R 
+Sbjct  63   NWQAKQPQIEKIEAVEKAPLINLQVKVNLALKMARLHGGSVIYIGIKGTVDLSEPLDPRS  122
+
+Query  135  LKPGCIRSLQVVDRTRLMPTGTVEMNPMDPEYGYPQHYTLGGST---LQIHRSRILRFEG  191
+            +  G +  L V+ R  +    TV  +     YG P +Y + G+    +QIH SR++RF G
+Sbjct  123  IGRGDLAYLHVLSRYEVTCGETV-TDVTSEFYGQPSYYEVAGANGAPVQIHPSRVVRFVG  181
+
+Query  192  TPLTRYENWKNQWYSDSILLPLMTTIDNFHVAAQSASALVHEANADVVTVQGLQNLLTSP  251
+             P+    +  N  + DS+L  +   + N   A    +AL+ EA  D++ + GL     + 
+Sbjct  182  APVLDRRSVGNDPWGDSVLQAVYDAVRNAGSAQGHIAALIPEAKVDIIHMPGLGEFTKTE  241
+
+Query  252  IGEQALMKRFRMMKTMKSNHNIILLDGT---------EEYTTKTIALNGVKDLIWEYLRI  302
+             G   L  RF    TMKS  N +LLDGT         E++  K I+   + +L+  YL I
+Sbjct  242  AGRAKLTARFTYANTMKSMLNAVLLDGTGGAGKDAGGEKWEQKQISFAQLPELLQSYLSI  301
+
+Query  303  IAAACGVPATRFLSASPDGMNATGESDLNNYIDLVYAEQGQVFDPRLQVIDKLL  356
+             +AA  +PATR LS SP G+NATG+SD+ N+ D   A QG    P L  +D+++
+Sbjct  302  ASAAADIPATRMLSQSPKGLNATGDSDMRNHYDNCTARQGTELSPALNRLDEVI  355
+
+
+>A0A494TJG7.1 RecName: Full=Anti-CBASS protein Acb1; Short=Acb1 [Sphingomonas 
+paeninsulae]
+Length=624
+
+ Score = 168 bits (425),  Expect = 8e-45, Method: Compositional matrix adjust.
+ Identities = 114/374 (30%), Positives = 183/374 (49%), Gaps = 25/374 (7%)
+
+Query  19   SLKDGLENVMTGLGTGNDKNSYNQWVRSGRN-RDHESLIVRFRECWVSQKACKILPQDMT  77
+            S  DGL NV++G GT  DK  +    R G N  D   +   +R  W+++K   +   DMT
+Sbjct  6    SFFDGLTNVLSGAGTSVDKRVH---ARYGLNIVDQHQVEASYRTSWLARKIVDMPAHDMT  62
+
+Query  78   REWRRCSTPEAV-----KADKELRIRDLFREAYIWARVFGTAAIILDIKGSGKANTPLDL  132
+            REWR       +       +K L +R+   +A +  R  G  AI L IKG    + PL +
+Sbjct  63   REWRDWKADGELIGKIEAEEKRLCLRERVTQAIVLGR-LGGGAIYLGIKGD-DPSQPLAV  120
+
+Query  133  RRLKPGCIRSLQVVDRTRLMPTGTVEMNPMDPEYGYPQHYTLGGST----LQIHRSRILR  188
+              ++PG +  + V  R +L   G    +P D  +G P ++ +        ++IH SR++ 
+Sbjct  121  EHIRPGQLSYIAVFSRWQLT-IGQEVSDPEDALFGGPDYFQITSIANKVGVRIHPSRMVI  179
+
+Query  189  FEGTPLTRY--ENWKNQWYSDSILLPLMTTIDNFHVAAQSASALVHEANADVVTVQGLQN  246
+            F+G  + R     W++ ++ D I   +   I N   A  S ++L+ EA  DV+ + GL  
+Sbjct  180  FKGAHVMRGIGSQWEDAFWGDPIYQAVGDAIRNADSAQNSFASLIDEATYDVIGIPGLME  239
+
+Query  247  LLTSPIGEQALMKRFRMMKTMKSNHNIILLDG------TEEYTTKTIALNGVKDLIWEYL  300
+             L+ P G+  L KR    +  KSNH  I+LD        E + T+ +   G+ +L+  +L
+Sbjct  240  RLSQPGGDAQLSKRLDAARQGKSNHRAIILDSGEGGKDAETWVTRQVTWAGMPELMAAFL  299
+
+Query  301  RIIAAACGVPATRFLSASPDGMNATGESDLNNYIDLVYAEQGQVFDPRLQVIDKLLAAHY  360
+            + +A A  +P TR L  S  GM+ATGE D N+Y+  +  +Q  +  P +  ID ++    
+Sbjct  300  QTVAGASDIPYTRLLGTSATGMSATGEGDKNDYLSSIATKQETMLRPNMVRIDAVMLRSA  359
+
+Query  361  GI-DEFEYEWNCAF  373
+            GI DE  ++W+  F
+Sbjct  360  GIKDELWFDWSPLF  373
+
+
+>P44183.1 RecName: Full=Uncharacterized protein HI_1409 [Haemophilus influenzae 
+Rd KW20]
+Length=436
+
+ Score = 127 bits (319),  Expect = 3e-31, Method: Compositional matrix adjust.
+ Identities = 99/413 (24%), Positives = 194/413 (47%), Gaps = 31/413 (8%)
+
+Query  22   DGLENVMTGLGTGNDKNSYNQWVRSGRNRDHESLIVRFRECWVSQKACKILPQDMTREWR  81
+            DG++++   LG+  D+  Y + +      D   +   +R+ W++ K C    +DM R WR
+Sbjct  5    DGIKSLALKLGSKQDQTYYARGL--SLTDDLMQIEALWRDNWIANKVCIKRSEDMVRNWR  62
+
+Query  82   RCST--------PEAVKADKELRIRDLFREAYIWARVFGTAAIILDIKGSGKANTPLD-L  132
+               +         E  K ++ L++R+   +A  W+ ++G   +++ +  +    +PL   
+Sbjct  63   DIFSNDLKSEQLDEFTKLERRLKLRETLTKALQWSSLYGAVGLLV-VTDTINITSPLQPT  121
+
+Query  133  RRLKPGCIRSLQVVDRTRLMPTGTVEMNPMDPEYGYPQHYTLGGST--LQIHRSRILRFE  190
+             RLK      L ++ + ++ PTG  + +   P +G    YT+ G T  + +H SR+L   
+Sbjct  122  ERLK-----RLIILPKWKISPTGQRDDDVFSPNFGRYSEYTITGGTQSVSVHHSRLLIIN  176
+
+Query  191  GT--PLTRYENWKNQWYSDSILLPLMTTIDNFHVAAQSASALVHEANADVVTVQGLQNLL  248
+                PL+  + W     SD  L  ++  +  F  A+ +   L+ E+  D+  + GL + +
+Sbjct  177  ANDAPLSDNDIWG---VSD--LEKIIDVLKRFDSASANVGDLIFESKIDIFKIAGLSDKI  231
+
+Query  249  TSPIGEQALMKRFRMMKTMKSNHNIILLDGTEEYTTKTIALNGVKDLIWEYLRIIAAACG  308
+            ++ + E  +      ++++KS  N +LLD   EY  K ++  G+KDL+ E+   +A A  
+Sbjct  232  SAGL-ENDVAHVISAVQSIKSATNSLLLDAENEYDRKELSFGGLKDLLTEFRNAVAGAAD  290
+
+Query  309  VPATRFLSASPDGMNATGESDLNNYIDLVYAEQGQVFDPRLQVIDKLLAAHYGIDEFEYE  368
+            +P T     S  G+ A+G+ D+ NY + ++  Q     P L+V+D LL       + +  
+Sbjct  291  MPVTILFGQSVSGL-ASGDEDIQNYHESIHRLQETRLRPVLEVLDTLLCNELFGGQPDDW  349
+
+Query  369  WNCAFPESALQKEERRNKL---ADSLNKLVTGRVIQGQAAIDILENEHVFGDL  418
+            W    P + +++E++ N L   A + N L+   V+      + L    +F ++
+Sbjct  350  WFEFLPLTVVKQEQQVNMLNTFATAANTLIQNGVVNEYQVANELRESGLFANI  402
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.135    0.408    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 40259941980
+
+
+  Database: Non-redundant UniProtKB/SwissProt sequences
+    Posted date:  Aug 4, 2024  7:01 AM
+  Number of letters in database: 183,938,400
+  Number of sequences in database:  483,620
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
