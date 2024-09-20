@@ -1,0 +1,137 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Jan 21 2022
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    LAPTOP-GSVN34HQ (AVX512, FMA3, 7 GB RAM)
+Command: iqtree2 -s NFECIMNI_00018_aligned.fasta -m LG+G4 -bb 1000
+Seed:    141694 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Sep 17 10:41:35 2024
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file NFECIMNI_00018_aligned.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 28 sequences with 1371 columns, 1105 distinct patterns
+700 parsimony-informative, 338 singleton sites, 333 constant sites
+                            Gap/Ambiguity  Composition  p-value
+   1  NFECIMNI_00018               48.50%    failed      2.04%
+   2  sp|A0A7H0DN21.1|RIR2_MONPV   76.73%    passed     11.43%
+   3  sp|O57175.1|RIR2_VACCA       76.73%    passed     18.59%
+   4  sp|P09247.1|RIR2_VZVD        77.68%    failed      4.97%
+   5  sp|P0C8I0.1|RIR2_ASFK5       76.15%    failed      0.02%
+   6  sp|P0C8I1.1|RIR2_ASFP4       76.15%    failed      0.15%
+   7  sp|P0C8I2.1|RIR2_ASFWA       76.15%    failed      0.06%
+   8  sp|P0DSS7.1|RIR2_VAR67       76.73%    passed     20.33%
+   9  sp|P0DSS8.1|RIR2_VARV        76.73%    passed      9.77%
+  10  sp|P11156.2|RIR2_BPT4        71.70%    passed     26.15%
+  11  sp|P11158.1|RIR2_VACCW       76.73%    passed     18.87%
+  12  sp|P20493.1|RIR2_VACCC       76.73%    passed     17.57%
+  13  sp|P29883.1|RIR2_VACCP       76.73%    passed     18.26%
+  14  sp|P32209.1|RIR2_SWPVK       80.01%    passed     12.27%
+  15  sp|Q6UDJ1.1|RIR2_PSHV1       77.17%    passed     51.14%
+  16  sp|Q9DHU2.1|RIR2_YLDV        76.29%    failed      0.09%
+  17  sp|Q9QTF2.1|RIR2_RSIV        77.24%    passed     21.66%
+  18  sp|A0A7H0DN52.1|RIR1_MONPV   43.76%    failed      0.00%
+  19  sp|P08543.2|RIR1_HHV11       17.07%    failed      0.00%
+  20  sp|P09853.2|RIR1_HHV23       16.56%    failed      0.00%
+  21  sp|P32282.1|RIR1_BPT4        45.00%    failed      1.85%
+  22  sp|P50642.1|RIR1_EHV4        42.45%    passed     16.50%
+  23  sp|P89462.1|RIR1_HHV2H       16.70%    failed      0.00%
+  24  sp|Q01037.1|RIR1_SHV21       44.06%    failed      4.35%
+  25  sp|Q196Z5.1|RIR1_IIV3        54.05%    passed     17.57%
+  26  sp|Q2HR67.1|RIR1_HHV8P       42.23%    failed      4.30%
+  27  sp|Q6GZT8.1|RIR1_FRG3G       58.79%    failed      1.78%
+  28  sp|Q6UDJ2.1|RIR1_PSHV1       40.85%    failed      0.24%
+WARNING: 18 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                        60.56%  15 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.006 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 141694)...
+
+NOTE: 23 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -26133.752
+2. Current log-likelihood: -24485.873
+3. Current log-likelihood: -24466.655
+4. Current log-likelihood: -24466.503
+Optimal log-likelihood: -24466.481
+Gamma shape alpha: 2.087
+Parameters optimization took 4 rounds (1.465 sec)
+Computing ML distances based on estimated model parameters... 0.094 sec
+Computing BIONJ tree...
+0.022 seconds
+Log-likelihood of BIONJ tree: -24454.231
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.582 second
+Computing log-likelihood of 98 initial trees ... 9.136 seconds
+Current best score: -24454.231
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -24444.520
+UPDATE BEST LOG-LIKELIHOOD: -24444.517
+UPDATE BEST LOG-LIKELIHOOD: -24444.512
+Iteration 10 / LogL: -24444.512 / Time: 0h:0m:37s
+Iteration 20 / LogL: -24444.519 / Time: 0h:1m:6s
+Finish initializing candidate tree set (1)
+Current best tree score: -24444.512 / CPU time: 63.614
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -24444.574 / Time: 0h:1m:29s (0h:3m:38s left)
+Iteration 40 / LogL: -24444.519 / Time: 0h:1m:54s (0h:2m:59s left)
+Iteration 50 / LogL: -24444.765 / Time: 0h:2m:18s (0h:2m:23s left)
+Log-likelihood cutoff on original alignment: -24478.775
+UPDATE BEST LOG-LIKELIHOOD: -24444.511
+Iteration 60 / LogL: -24444.755 / Time: 0h:2m:43s (0h:1m:53s left)
+Iteration 70 / LogL: -24445.466 / Time: 0h:3m:12s (0h:1m:26s left)
+Iteration 80 / LogL: -24446.412 / Time: 0h:3m:37s (0h:0m:57s left)
+Iteration 90 / LogL: -24459.391 / Time: 0h:4m:2s (0h:0m:29s left)
+Iteration 100 / LogL: -24444.548 / Time: 0h:4m:23s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -24479.050
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:4m:28s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -24444.511
+Optimal log-likelihood: -24444.508
+Gamma shape alpha: 2.105
+Parameters optimization took 1 rounds (0.278 sec)
+BEST SCORE FOUND : -24444.508
+Creating bootstrap support values...
+Split supports printed to NEXUS file NFECIMNI_00018_aligned.fasta.splits.nex
+Total tree length: 23.792
+
+Total number of iterations: 102
+CPU time used for tree search: 262.219 sec (0h:4m:22s)
+Wall-clock time used for tree search: 265.551 sec (0h:4m:25s)
+Total CPU time used: 264.969 sec (0h:4m:24s)
+Total wall-clock time used: 268.351 sec (0h:4m:28s)
+
+Computing bootstrap consensus tree...
+Reading input file NFECIMNI_00018_aligned.fasta.splits.nex...
+28 taxa and 135 splits.
+Consensus tree written to NFECIMNI_00018_aligned.fasta.contree
+Reading input trees file NFECIMNI_00018_aligned.fasta.contree
+Log-likelihood of consensus tree: -24444.512
+
+Analysis results written to: 
+  IQ-TREE report:                NFECIMNI_00018_aligned.fasta.iqtree
+  Maximum-likelihood tree:       NFECIMNI_00018_aligned.fasta.treefile
+  Likelihood distances:          NFECIMNI_00018_aligned.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          NFECIMNI_00018_aligned.fasta.splits.nex
+  Consensus tree:                NFECIMNI_00018_aligned.fasta.contree
+  Screen log file:               NFECIMNI_00018_aligned.fasta.log
+
+Date and Time: Tue Sep 17 10:46:04 2024
