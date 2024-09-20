@@ -1,0 +1,476 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_40.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00040  [L=49]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+       0.13   17.3   0.6       0.38   15.9   0.6    1.8  1  sp|B8D274|SYM_HALOH    Methionine--tRNA ligase OS=Halothermot
+       0.21   16.7   0.9    5.4e+02    6.2   0.0    3.7  3  sp|Q8GZ43|YZR3_ARATH   RanBP2-type zinc finger protein At1g67
+       0.79   14.9   2.6        2.5   13.4   2.6    1.9  1  sp|B9J4E0|SYM_BACCQ    Methionine--tRNA ligase OS=Bacillus ce
+       0.79   14.9   2.6        2.5   13.4   2.6    1.9  1  sp|B7HVW2|SYM_BACC7    Methionine--tRNA ligase OS=Bacillus ce
+        0.8   14.9   2.6        2.5   13.4   2.6    1.9  1  sp|Q72Y44|SYM1_BACC1   Methionine--tRNA ligase 1 OS=Bacillus 
+       0.81   14.9   2.9        3.1   13.1   2.9    2.0  1  sp|Q815U6|SYM2_BACCR   Methionine--tRNA ligase 2 OS=Bacillus 
+       0.84   14.8   2.7        2.9   13.2   2.7    1.9  1  sp|B7INU9|SYM_BACC2    Methionine--tRNA ligase OS=Bacillus ce
+       0.89   14.8   3.1        3.7   12.8   3.1    2.1  1  sp|A9VP41|SYM_BACMK    Methionine--tRNA ligase OS=Bacillus my
+          1   14.6   0.5        1.3   14.3   0.5    1.3  1  sp|Q64NV0|RL32_BACFR   Large ribosomal subunit protein bL32 O
+          1   14.6   0.5        1.3   14.3   0.5    1.3  1  sp|Q8A138|RL32_BACTN   Large ribosomal subunit protein bL32 O
+        1.8   13.8   0.6         16   10.9   0.1    2.6  2  sp|Q12PZ8|RLMD_SHEDO   23S rRNA (uracil(1939)-C(5))-methyltra
+        1.9   13.8   2.4        6.1   12.2   2.4    1.9  1  sp|Q6HBM0|SYM1_BACHK   Methionine--tRNA ligase 1 OS=Bacillus 
+        1.9   13.8   2.4        6.1   12.2   2.4    1.9  1  sp|B7JEJ3|SYM_BACC0    Methionine--tRNA ligase OS=Bacillus ce
+        1.9   13.8   2.4        6.1   12.2   2.4    1.9  1  sp|A0RKM3|SYM1_BACAH   Methionine--tRNA ligase 1 OS=Bacillus 
+        1.9   13.8   2.4        6.1   12.2   2.4    1.9  1  sp|C1EYD5|SYM_BACC3    Methionine--tRNA ligase OS=Bacillus ce
+        2.3   13.5   0.2         13   11.2   0.0    2.1  2  sp|P39807|YVYF_BACSU   Uncharacterized protein YvyF OS=Bacill
+        2.3   13.5   0.1    5.6e+02    6.1   0.0    3.1  2  sp|O43052|RGA1_SCHPO   Rho-type GTPase-activating protein 1 O
+        3.4   13.0   2.1    2.5e+03    4.1   0.0    3.3  3  sp|Q6MFY5|RPA12_RAT    DNA-directed RNA polymerase I subunit 
+        4.1   12.7   0.1         12   11.3   0.1    1.7  1  sp|F8WRK9|CEEP_RHOMR   Cellobiose 2-epimerase OS=Rhodothermus
+        4.2   12.7   1.7         13   11.2   1.0    2.2  1  sp|A5UJ98|SYM_METS3    Methionine--tRNA ligase OS=Methanobrev
+        4.5   12.6   3.4         15   11.0   3.4    1.9  1  sp|C3LD96|SYM_BACAC    Methionine--tRNA ligase OS=Bacillus an
+        4.5   12.6   3.4         15   11.0   3.4    1.9  1  sp|C3P025|SYM_BACAA    Methionine--tRNA ligase OS=Bacillus an
+        4.5   12.6   3.4         15   11.0   3.4    1.9  1  sp|Q81XF9|SYM2_BACAN   Methionine--tRNA ligase 2 OS=Bacillus 
+        4.6   12.6   2.2         16   10.9   2.2    1.9  1  sp|B7HD62|SYM_BACC4    Methionine--tRNA ligase OS=Bacillus ce
+        5.6   12.3   0.2    1.3e+03    5.0   0.0    2.8  2  sp|Q58445|RPO1N_METJA  DNA-directed RNA polymerase subunit Rp
+        6.8   12.0   1.8    3.5e+02    6.7   0.3    3.0  2  sp|P79387|STF1_PIG     Steroidogenic factor 1 OS=Sus scrofa O
+        9.6   11.6   2.3    7.3e+02    5.8   0.0    3.0  3  sp|Q791N7|RPA12_MOUSE  DNA-directed RNA polymerase I subunit 
+        9.7   11.6   6.8         15   10.9   3.9    2.8  1  sp|B8GFL4|SYM_METPE    Methionine--tRNA ligase OS=Methanospha
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|B8D274|SYM_HALOH  Methionine--tRNA ligase OS=Halothermothrix orenii (strain H 168 / OCM 544 / DSM 9562) OX=373903 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.9   0.6   1.9e-05      0.38      23      47 ..     137     161 ..     122     162 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 1.9e-05
+       NFECIMNI_00040  23 adaicphcgtvvhgsycgacdkiie 47 
+                           + icp cg vv+g  c  c  +ie
+  sp|B8D274|SYM_HALOH 137 VEGICPVCGKVVRGDQCDYCSSLIE 161
+                          689******************9998 PP
+
+>> sp|Q8GZ43|YZR3_ARATH  RanBP2-type zinc finger protein At1g67325 OS=Arabidopsis thaliana OX=3702 GN=At1g67325 PE=1 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   0.0     0.027   5.4e+02      21      39 ..      22      39 ..       5      45 .. 0.75
+   2 ?    4.1   0.1      0.12   2.5e+03      22      41 ..     195     213 ..     189     218 .. 0.72
+   3 ?    2.6   0.0      0.37   7.6e+03      17      35 ..     237     255 ..     222     265 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.027
+        NFECIMNI_00040 21 peadaicphcgtvvhgsyc 39
+                           e d icp cg v + s+ 
+  sp|Q8GZ43|YZR3_ARATH 22 REDDWICPSCGNV-NFSFR 39
+                          57899******97.44555 PP
+
+  == domain 2  score: 4.1 bits;  conditional E-value: 0.12
+        NFECIMNI_00040  22 eadaicphcgtvvhgsycga 41 
+                           + d  cp+cg v + s+   
+  sp|Q8GZ43|YZR3_ARATH 195 DNDWTCPNCGNV-NFSFRTV 213
+                           56889*****97.4455555 PP
+
+  == domain 3  score: 2.6 bits;  conditional E-value: 0.37
+        NFECIMNI_00040  17 fnqspeadaicphcgtvvh 35 
+                              +pe    c +cg + +
+  sp|Q8GZ43|YZR3_ARATH 237 KQNAPEGSWKCDNCGNINY 255
+                           56789**********9855 PP
+
+>> sp|B9J4E0|SYM_BACCQ  Methionine--tRNA ligase OS=Bacillus cereus (strain Q1) OX=361100 GN=metG PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   2.6   0.00012       2.5      22      47 ..     136     161 ..     117     162 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 0.00012
+       NFECIMNI_00040  22 eadaicphcgtvvhgsycgacdkiie 47 
+                            + icphc    +g  c ac  i++
+  sp|B9J4E0|SYM_BACCQ 136 YVEGICPHCHEAARGDQCDACSAILD 161
+                          5689*****************99975 PP
+
+>> sp|B7HVW2|SYM_BACC7  Methionine--tRNA ligase OS=Bacillus cereus (strain AH187) OX=405534 GN=metG PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   2.6   0.00012       2.5      22      47 ..     136     161 ..     117     162 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 0.00012
+       NFECIMNI_00040  22 eadaicphcgtvvhgsycgacdkiie 47 
+                            + icphc    +g  c ac  i++
+  sp|B7HVW2|SYM_BACC7 136 YVEGICPHCHEAARGDQCDACSAILD 161
+                          5689*****************99975 PP
+
+>> sp|Q72Y44|SYM1_BACC1  Methionine--tRNA ligase 1 OS=Bacillus cereus (strain ATCC 10987 / NRS 248) OX=222523 GN=metG1 P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   2.6   0.00012       2.5      22      47 ..     136     161 ..     117     162 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 0.00012
+        NFECIMNI_00040  22 eadaicphcgtvvhgsycgacdkiie 47 
+                             + icphc    +g  c ac  i++
+  sp|Q72Y44|SYM1_BACC1 136 YVEGICPHCHEAARGDQCDACSAILD 161
+                           5689*****************99975 PP
+
+>> sp|Q815U6|SYM2_BACCR  Methionine--tRNA ligase 2 OS=Bacillus cereus (strain ATCC 14579 / DSM 31 / CCUG 7414 / JCM 2152
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   2.9   0.00015       3.1      22      47 ..     136     161 ..     117     162 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 0.00015
+        NFECIMNI_00040  22 eadaicphcgtvvhgsycgacdkiie 47 
+                             + icphc    +g  c ac  i++
+  sp|Q815U6|SYM2_BACCR 136 YVEGICPHCHEAARGDQCDACSAILD 161
+                           5689*****************99975 PP
+
+>> sp|B7INU9|SYM_BACC2  Methionine--tRNA ligase OS=Bacillus cereus (strain G9842) OX=405531 GN=metG PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   2.7   0.00014       2.9      23      47 ..     137     161 ..     119     162 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 0.00014
+       NFECIMNI_00040  23 adaicphcgtvvhgsycgacdkiie 47 
+                           + icphc    +g  c ac  i++
+  sp|B7INU9|SYM_BACC2 137 VEGICPHCHEAARGDQCDACSAILD 161
+                          689*****************99975 PP
+
+>> sp|A9VP41|SYM_BACMK  Methionine--tRNA ligase OS=Bacillus mycoides (strain KBAB4) OX=315730 GN=metG PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   3.1   0.00018       3.7      22      47 ..     136     161 ..     117     162 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 0.00018
+       NFECIMNI_00040  22 eadaicphcgtvvhgsycgacdkiie 47 
+                            + icphc    +g  c ac  i++
+  sp|A9VP41|SYM_BACMK 136 YVEGICPHCHEAARGDQCDACSAILD 161
+                          5689*****************99975 PP
+
+>> sp|Q64NV0|RL32_BACFR  Large ribosomal subunit protein bL32 OS=Bacteroides fragilis (strain YCH46) OX=295405 GN=rpmF P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.3   0.5   6.2e-05       1.3      24      43 ..      27      47 ..      11      51 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 6.2e-05
+        NFECIMNI_00040 24 daicphcgt.vvhgsycgacd 43
+                           aicp+cg   v+ + cgac 
+  sp|Q64NV0|RL32_BACFR 27 LAICPNCGEwHVYHTVCGACG 47
+                          49******7358889*****6 PP
+
+>> sp|Q8A138|RL32_BACTN  Large ribosomal subunit protein bL32 OS=Bacteroides thetaiotaomicron (strain ATCC 29148 / DSM 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.3   0.5   6.2e-05       1.3      24      43 ..      27      47 ..      11      51 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 6.2e-05
+        NFECIMNI_00040 24 daicphcgt.vvhgsycgacd 43
+                           aicp+cg   v+ + cgac 
+  sp|Q8A138|RL32_BACTN 27 LAICPNCGEwHVYHTVCGACG 47
+                          49******7358889*****6 PP
+
+>> sp|Q12PZ8|RLMD_SHEDO  23S rRNA (uracil(1939)-C(5))-methyltransferase RlmD OS=Shewanella denitrificans (strain OS217 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.1   0.00078        16      12      43 ..      66      93 ..      56      96 .. 0.70
+   2 ?   -0.4   0.1       3.5   7.1e+04       4      24 ..     104     124 ..     101     133 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.00078
+        NFECIMNI_00040 12 allipf.nqspe.adaicphcgtvvhgsycgacd 43
+                          a li +  qspe ada cph g      +cg cd
+  sp|Q12PZ8|RLMD_SHEDO 66 AKLIKIeQQSPErADASCPHYG------HCGGCD 93
+                          44454416899869*****987......688888 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 3.5
+        NFECIMNI_00040   4 qlaqssvaallipfnqspead 24 
+                              q s+  l++ f+ sp  d
+  sp|Q12PZ8|RLMD_SHEDO 104 NHKQQSLNELMVKFSGSPVID 124
+                           456889999********9877 PP
+
+>> sp|Q6HBM0|SYM1_BACHK  Methionine--tRNA ligase 1 OS=Bacillus thuringiensis subsp. konkukian (strain 97-27) OX=281309 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   2.4    0.0003       6.1      22      47 ..     136     161 ..     117     162 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.0003
+        NFECIMNI_00040  22 eadaicphcgtvvhgsycgacdkiie 47 
+                             + +cphc    +g  c ac  i++
+  sp|Q6HBM0|SYM1_BACHK 136 YVEGVCPHCHEEARGDQCDACSAILD 161
+                           4689*****************99975 PP
+
+>> sp|B7JEJ3|SYM_BACC0  Methionine--tRNA ligase OS=Bacillus cereus (strain AH820) OX=405535 GN=metG PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   2.4    0.0003       6.1      22      47 ..     136     161 ..     117     162 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.0003
+       NFECIMNI_00040  22 eadaicphcgtvvhgsycgacdkiie 47 
+                            + +cphc    +g  c ac  i++
+  sp|B7JEJ3|SYM_BACC0 136 YVEGVCPHCHEEARGDQCDACSAILD 161
+                          4689*****************99975 PP
+
+>> sp|A0RKM3|SYM1_BACAH  Methionine--tRNA ligase 1 OS=Bacillus thuringiensis (strain Al Hakam) OX=412694 GN=metG1 PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   2.4    0.0003       6.1      22      47 ..     136     161 ..     117     162 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.0003
+        NFECIMNI_00040  22 eadaicphcgtvvhgsycgacdkiie 47 
+                             + +cphc    +g  c ac  i++
+  sp|A0RKM3|SYM1_BACAH 136 YVEGVCPHCHEEARGDQCDACSAILD 161
+                           4689*****************99975 PP
+
+>> sp|C1EYD5|SYM_BACC3  Methionine--tRNA ligase OS=Bacillus cereus (strain 03BB102) OX=572264 GN=metG PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   2.4    0.0003       6.1      22      47 ..     136     161 ..     117     162 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.0003
+       NFECIMNI_00040  22 eadaicphcgtvvhgsycgacdkiie 47 
+                            + +cphc    +g  c ac  i++
+  sp|C1EYD5|SYM_BACC3 136 YVEGVCPHCHEEARGDQCDACSAILD 161
+                          4689*****************99975 PP
+
+>> sp|P39807|YVYF_BACSU  Uncharacterized protein YvyF OS=Bacillus subtilis (strain 168) OX=224308 GN=yvyF PE=4 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.1         3     6e+04      26      34 ..       6      14 ..       3      31 .. 0.55
+   2 ?   11.2   0.0   0.00062        13      16      46 ..      75     106 ..      60     108 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 3
+        NFECIMNI_00040 26 icphcgtvv 34
+                           cp c+ + 
+  sp|P39807|YVYF_BACSU  6 NCPKCNALF 14
+                          588887654 PP
+
+  == domain 2  score: 11.2 bits;  conditional E-value: 0.00062
+        NFECIMNI_00040  16 pfnqspeadaicphcgtvv.hgsycgacdkii 46 
+                            +   p     c +cgt + +g +c ac   i
+  sp|P39807|YVYF_BACSU  75 QITHLPNLAYPCERCGTSIrEGKFCKACQSDI 106
+                           55667777788*****977369******9766 PP
+
+>> sp|O43052|RGA1_SCHPO  Rho-type GTPase-activating protein 1 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.1   0.0     0.027   5.6e+02      22      44 ..     111     133 ..      91     136 .. 0.78
+   2 ?    3.7   0.0      0.16   3.4e+03      23      44 ..     176     197 ..     165     201 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 6.1 bits;  conditional E-value: 0.027
+        NFECIMNI_00040  22 eadaicphcgtvvhgsycgacdk 44 
+                            +  ic  cg v+ g y  a   
+  sp|O43052|RGA1_SCHPO 111 SSSKICASCGQVISGQYVRALGN 133
+                           5678*************988765 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.16
+        NFECIMNI_00040  23 adaicphcgtvvhgsycgacdk 44 
+                            d +c  cg  ++g y  a +k
+  sp|O43052|RGA1_SCHPO 176 LDLLCASCGMALRGYYITALNK 197
+                           699*************999877 PP
+
+>> sp|Q6MFY5|RPA12_RAT  DNA-directed RNA polymerase I subunit RPA12 OS=Rattus norvegicus OX=10116 GN=Polr1h PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.5   0.1      0.19     4e+03      26      34 ..      16      24 ..       3      30 .. 0.79
+   2 ?    3.9   0.1      0.14   2.8e+03      24      34 ..      32      42 ..      24      54 .. 0.77
+   3 ?    4.1   0.0      0.12   2.5e+03      16      32 ..      73      89 ..      59     100 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.19
+       NFECIMNI_00040 26 icphcgtvv 34
+                         +cp cg+v+
+  sp|Q6MFY5|RPA12_RAT 16 FCPDCGSVL 24
+                         7*****996 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.14
+       NFECIMNI_00040 24 daicphcgtvv 34
+                           icp+cg  +
+  sp|Q6MFY5|RPA12_RAT 32 TVICPRCGFSI 42
+                         579*****765 PP
+
+  == domain 3  score: 4.1 bits;  conditional E-value: 0.12
+       NFECIMNI_00040 16 pfnqspeadaicphcgt 32
+                         p +q p  d  c +cg 
+  sp|Q6MFY5|RPA12_RAT 73 PESQGPVVDRRCSRCGH 89
+                         77899**********96 PP
+
+>> sp|F8WRK9|CEEP_RHOMR  Cellobiose 2-epimerase OS=Rhodothermus marinus OX=29549 GN=ce PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.1   0.00056        12      24      44 ..     154     174 ..     140     177 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00056
+        NFECIMNI_00040  24 daicphcgtvvhgsycgacdk 44 
+                           d i  hc+  vhg y  acd+
+  sp|F8WRK9|CEEP_RHOMR 154 DLIETHCADRVHGGYVEACDR 174
+                           78889***************8 PP
+
+>> sp|A5UJ98|SYM_METS3  Methionine--tRNA ligase OS=Methanobrevibacter smithii (strain ATCC 35061 / DSM 861 / OCM 144 / P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   1.0   0.00064        13      23      47 ..     139     163 ..     132     164 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00064
+       NFECIMNI_00040  23 adaicphcgtvvhgsycgacdkiie 47 
+                           + icp cg+  +g +c  c + +e
+  sp|A5UJ98|SYM_METS3 139 VEGICPVCGSEARGDHCEKCGRALE 163
+                          578*****************99887 PP
+
+>> sp|C3LD96|SYM_BACAC  Methionine--tRNA ligase OS=Bacillus anthracis (strain CDC 684 / NRRL 3495) OX=568206 GN=metG PE=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   3.4   0.00073        15      23      47 ..     137     161 ..     117     162 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 0.00073
+       NFECIMNI_00040  23 adaicphcgtvvhgsycgacdkiie 47 
+                           + +cphc    +g  c ac  i++
+  sp|C3LD96|SYM_BACAC 137 VEGVCPHCHEEARGDQCDACSAILD 161
+                          689*****************99975 PP
+
+>> sp|C3P025|SYM_BACAA  Methionine--tRNA ligase OS=Bacillus anthracis (strain A0248) OX=592021 GN=metG PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   3.4   0.00073        15      23      47 ..     137     161 ..     117     162 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 0.00073
+       NFECIMNI_00040  23 adaicphcgtvvhgsycgacdkiie 47 
+                           + +cphc    +g  c ac  i++
+  sp|C3P025|SYM_BACAA 137 VEGVCPHCHEEARGDQCDACSAILD 161
+                          689*****************99975 PP
+
+>> sp|Q81XF9|SYM2_BACAN  Methionine--tRNA ligase 2 OS=Bacillus anthracis OX=1392 GN=metG2 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   3.4   0.00073        15      23      47 ..     137     161 ..     117     162 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 0.00073
+        NFECIMNI_00040  23 adaicphcgtvvhgsycgacdkiie 47 
+                            + +cphc    +g  c ac  i++
+  sp|Q81XF9|SYM2_BACAN 137 VEGVCPHCHEEARGDQCDACSAILD 161
+                           689*****************99975 PP
+
+>> sp|B7HD62|SYM_BACC4  Methionine--tRNA ligase OS=Bacillus cereus (strain B4264) OX=405532 GN=metG PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   2.2   0.00077        16      23      47 ..     137     161 ..     119     162 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.00077
+       NFECIMNI_00040  23 adaicphcgtvvhgsycgacdkiie 47 
+                           + icp+c    +g  c ac  i++
+  sp|B7HD62|SYM_BACC4 137 VEGICPYCHEAARGDQCDACSAILD 161
+                          689*****************99975 PP
+
+>> sp|Q58445|RPO1N_METJA  DNA-directed RNA polymerase subunit Rpo1N OS=Methanocaldococcus jannaschii (strain ATCC 43067 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.0   0.0     0.064   1.3e+03      24      34 ..      99     109 ..      92     114 .. 0.86
+   2 ?    4.0   0.0      0.13   2.6e+03      25      34 ..     147     156 ..     139     160 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.064
+         NFECIMNI_00040  24 daicphcgtvv 34 
+                             a+cphcg v 
+  sp|Q58445|RPO1N_METJA  99 KAVCPHCGRVA 109
+                            59******985 PP
+
+  == domain 2  score: 4.0 bits;  conditional E-value: 0.13
+         NFECIMNI_00040  25 aicphcgtvv 34 
+                             icphcg + 
+  sp|Q58445|RPO1N_METJA 147 TICPHCGEIK 156
+                            69*****985 PP
+
+>> sp|P79387|STF1_PIG  Steroidogenic factor 1 OS=Sus scrofa OX=9823 GN=NR5A1 PE=2 SV=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.3     0.017   3.5e+02      19      41 ..       5      27 ..       1      33 [. 0.81
+   2 ?    3.3   0.0      0.23   4.7e+03       4      43 ..     314     353 ..     311     357 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.017
+      NFECIMNI_00040 19 qspeadaicphcgtvvhgsycga 41
+                           + d +cp cg  v g + g 
+  sp|P79387|STF1_PIG  5 YDEDLDELCPVCGDKVSGYHYGL 27
+                        567889***********998874 PP
+
+  == domain 2  score: 3.3 bits;  conditional E-value: 0.23
+      NFECIMNI_00040   4 qlaqssvaallipfnqspeadaicphcgtvvhgsycgacd 43 
+                         q+      ++l+   q  e   ++ ++g+++hg    a +
+  sp|P79387|STF1_PIG 314 QIQHGKEGSILLVTGQEVELTTVAAQAGSLLHGLVLRAQE 353
+                         555666778899999******************8877655 PP
+
+>> sp|Q791N7|RPA12_MOUSE  DNA-directed RNA polymerase I subunit RPA12 OS=Mus musculus OX=10090 GN=Polr1h PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.6   0.1      0.18   3.6e+03      26      34 ..      16      24 ..       3      32 .. 0.80
+   2 ?    0.6   0.1       1.7   3.4e+04      25      36 ..      33      44 ..      26      53 .. 0.74
+   3 ?    5.8   0.0     0.036   7.3e+02      16      32 ..      73      89 ..      60     103 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 3.6 bits;  conditional E-value: 0.18
+         NFECIMNI_00040 26 icphcgtvv 34
+                           +cp cg+v+
+  sp|Q791N7|RPA12_MOUSE 16 FCPDCGSVL 24
+                           7*****996 PP
+
+  == domain 2  score: 0.6 bits;  conditional E-value: 1.7
+         NFECIMNI_00040 25 aicphcgtvvhg 36
+                            ic +cg  +  
+  sp|Q791N7|RPA12_MOUSE 33 VICSRCGFSIDV 44
+                           699999987665 PP
+
+  == domain 3  score: 5.8 bits;  conditional E-value: 0.036
+         NFECIMNI_00040 16 pfnqspeadaicphcgt 32
+                           p  q p  d  cp+cg 
+  sp|Q791N7|RPA12_MOUSE 73 PELQGPVIDRRCPRCGH 89
+                           5668999********95 PP
+
+>> sp|B8GFL4|SYM_METPE  Methionine--tRNA ligase OS=Methanosphaerula palustris (strain ATCC BAA-1556 / DSM 19958 / E1-9c)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   3.9   0.00075        15      23      46 ..     140     164 ..     122     166 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.00075
+       NFECIMNI_00040  23 adaicphcgtvvhgsycg.acdkii 46 
+                           + icphcg v +g  c   c k +
+  sp|B8GFL4|SYM_METPE 140 VEGICPHCGAVARGDECDqGCGKHL 164
+                          689*************963587766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (49 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     17790  (0.0311088); expected 11437.3 (0.02)
+Passed bias filter:                    15378  (0.026891); expected 11437.3 (0.02)
+Passed Vit filter:                       979  (0.00171195); expected 571.9 (0.001)
+Passed Fwd filter:                        54  (9.4428e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              28  [number of targets reported over threshold]
+# CPU time: 1.28u 0.57s 00:00:01.85 Elapsed: 00:00:01.24
+# Mc/sec: 8120.77
+//
+[ok]

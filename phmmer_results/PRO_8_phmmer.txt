@@ -1,0 +1,487 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_8.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00008  [L=124]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+      0.019   19.9   0.0      0.048   18.6   0.0    1.6  1  sp|Q2NQ84|GLMU_SODGM   Bifunctional protein GlmU OS=Sodalis g
+       0.98   14.4   0.4    2.1e+02    6.9   0.2    2.2  2  sp|O83463|Y449_TREPA   Uncharacterized lipoprotein TP_0449 OS
+        1.3   14.0   0.0        3.9   12.5   0.0    1.7  1  sp|A7MMY0|GLMU_CROS8   Bifunctional protein GlmU OS=Cronobact
+        1.7   13.7   0.8         20   10.2   0.0    2.4  2  sp|Q2H3R6|CSM3_CHAGB   Chromosome segregation in meiosis prot
+        2.1   13.4   1.4         69    8.4   0.2    2.3  2  sp|P69856|NANC_ECOLI   N-acetylneuraminic acid outer membrane
+        2.1   13.4   1.4         69    8.4   0.2    2.3  2  sp|P69857|NANC_ECO57   N-acetylneuraminic acid outer membrane
+        2.1   13.4   1.4         69    8.4   0.2    2.3  2  sp|P69858|NANC_SHIFL   N-acetylneuraminic acid outer membrane
+        2.1   13.3   1.4         69    8.4   0.2    2.3  2  sp|Q8CVG4|NANC_ECOL6   N-acetylneuraminic acid outer membrane
+        3.1   12.8   0.0         11   11.1   0.0    1.8  2  sp|A1U3F2|LPXC_MARN8   UDP-3-O-acyl-N-acetylglucosamine deace
+        3.2   12.7   0.0         11   11.1   0.0    1.8  1  sp|A4WGF8|GLMU_ENT38   Bifunctional protein GlmU OS=Enterobac
+        3.6   12.6   0.0         23   10.0   0.0    2.2  2  sp|A8G7N0|GLMU_SERP5   Bifunctional protein GlmU OS=Serratia 
+        4.1   12.4   0.0         14   10.7   0.0    1.8  2  sp|Q57HY1|GLMU_SALCH   Bifunctional protein GlmU OS=Salmonell
+        5.6   12.0   0.0         25    9.9   0.0    2.0  2  sp|A8ACN3|GLMU_CITK8   Bifunctional protein GlmU OS=Citrobact
+        5.6   12.0   0.0         19   10.3   0.0    1.8  2  sp|B5EYZ3|GLMU_SALA4   Bifunctional protein GlmU OS=Salmonell
+        5.6   12.0   0.0         19   10.3   0.0    1.8  2  sp|A9MXA3|GLMU_SALPB   Bifunctional protein GlmU OS=Salmonell
+        5.6   12.0   0.0         19   10.3   0.0    1.8  2  sp|B4SYC8|GLMU_SALNS   Bifunctional protein GlmU OS=Salmonell
+        5.6   12.0   0.0         19   10.3   0.0    1.8  2  sp|B5FN29|GLMU_SALDC   Bifunctional protein GlmU OS=Salmonell
+        5.6   12.0   0.0         19   10.3   0.0    1.8  2  sp|B5QUS1|GLMU_SALEP   Bifunctional protein GlmU OS=Salmonell
+        5.6   12.0   0.0         19   10.3   0.0    1.8  2  sp|B4TAW9|GLMU_SALHS   Bifunctional protein GlmU OS=Salmonell
+        5.6   12.0   0.0         19   10.3   0.0    1.8  2  sp|Q8ZKX0|GLMU_SALTY   Bifunctional protein GlmU OS=Salmonell
+        5.7   11.9   0.0         19   10.3   0.0    1.8  2  sp|B5BIN3|GLMU_SALPK   Bifunctional protein GlmU OS=Salmonell
+        5.7   11.9   0.0         19   10.3   0.0    1.8  2  sp|Q5PKV8|GLMU_SALPA   Bifunctional protein GlmU OS=Salmonell
+        5.8   11.9   0.0         19   10.3   0.0    1.8  2  sp|Q8Z2Q3|GLMU_SALTI   Bifunctional protein GlmU OS=Salmonell
+        7.4   11.6   0.0         11   11.0   0.0    1.2  1  sp|P14935|Y2003_METTM  Uncharacterized protein MTBMA_p00030 O
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q2NQ84|GLMU_SODGM  Bifunctional protein GlmU OS=Sodalis glossinidius (strain morsitans) OX=343509 GN=glmU PE=3 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   18.6   0.0     2e-06     0.048      20      86 ..     165     231 ..     157     241 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 18.6 bits;  conditional E-value: 2e-06
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdh.stlqpyrekevddvrve 86 
+                            q+ e+ t   v  g+d+ rwlg      aqg + +  + ama  w  g   + +qp r+ ev+ v+  
+  sp|Q2NQ84|GLMU_SODGM 165 RQIKEINTGILVAGGEDIKRWLGQLTNKNAQGeFYLTDIIAMA--WHEGRKiNAVQPTRQTEVEGVNNR 231
+                           578899999**********************954567777776..9888652789********998655 PP
+
+>> sp|O83463|Y449_TREPA  Uncharacterized lipoprotein TP_0449 OS=Treponema pallidum (strain Nichols) OX=243276 GN=TP_0449
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   0.2    0.0086   2.1e+02      44      79 ..      60      94 ..      28     110 .. 0.77
+   2 ?    5.6   0.0     0.021   5.1e+02      78     104 ..     163     189 ..     153     193 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.0086
+        NFECIMNI_00008 44 eayhiaqgyliahlaamaetwetgdhstlqpyreke 79
+                           ay+ a  y +a++  +   w+t+ h+ lqp  + +
+  sp|O83463|Y449_TREPA 60 PAYYHAAQYNFARVCGLQNDWKTAVHA-LQPLYDAD 94
+                          577777779****************96.78876655 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.021
+        NFECIMNI_00008  78 kevddvrveyavsrdmqdnldpylsts 104
+                            e +dvrv  ++ r ++d++ p+l   
+  sp|O83463|Y449_TREPA 163 SEAEDVRVLQSIVRKLKDSVPPHLIAD 189
+                           5899*******************9765 PP
+
+>> sp|A7MMY0|GLMU_CROS8  Bifunctional protein GlmU OS=Cronobacter sakazakii (strain ATCC BAA-894) OX=290339 GN=glmU PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0   0.00016       3.9      20      86 ..     163     229 ..     156     238 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 0.00016
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetg.dhstlqpyrekevddvrve 86 
+                            q+ e+ t   v  g d+ rwl+    + aqg y i  + ama  w  g + + + p r  ev+ v+  
+  sp|A7MMY0|GLMU_CROS8 163 RQINEINTGILVANGADLKRWLAKLDNNNAQGeYYITDIIAMA--WNEGrEIAAVHPQRLSEVEGVNNR 229
+                           577899999**************99999999978999999997..87772568899******9988654 PP
+
+>> sp|Q2H3R6|CSM3_CHAGB  Chromosome segregation in meiosis protein 3 OS=Chaetomium globosum (strain ATCC 6205 / CBS 148.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   0.00085        20      56      96 ..     127     167 ..     103     177 .. 0.89
+   2 ?    1.2   0.2       0.5   1.2e+04      61      99 ..     339     377 ..     328     389 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 0.00085
+        NFECIMNI_00008  56 hlaamaetwetgdhstlqpyrekevddvrveyavsrdmqdn 96 
+                            l a+a   +tg  +t++  r+k +d+++   a+ +d +dn
+  sp|Q2H3R6|CSM3_CHAGB 127 FLDALAMVEKTGHKTTMRSARQKWIDELKPRAAIEEDEEDN 167
+                           5778888999******************************9 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 0.5
+        NFECIMNI_00008  61 aetwetgdhstlqpyrekevddvrveyavsrdmqdnldp 99 
+                               e g + t qp   kev   +   a      dn d 
+  sp|Q2H3R6|CSM3_CHAGB 339 EAEAEAGVQKTAQPVDPKEVGSGNARAAEKTSNLDNDDD 377
+                           22358999************9888777766666666554 PP
+
+>> sp|P69856|NANC_ECOLI  N-acetylneuraminic acid outer membrane channel protein NanC OS=Escherichia coli (strain K12) OX
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.9   0.1     0.075   1.8e+03      49     107 ..      46     104 ..      30     120 .. 0.66
+   2 ?    8.4   0.2    0.0029        69      34      57 ..     147     170 ..     135     219 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.075
+        NFECIMNI_00008  49 aqgyliahlaam.aetwetgdhstlqpyrekevddvrveyavsrdmqdnldpylstsygq 107
+                           ++g+     a+m + tw t   +  +     +v  v+v ya+  d q  + p + t ++ 
+  sp|P69856|NANC_ECOLI  46 SEGWQNGWWASMeSNTWNTIHDNKKENAALNDV-QVEVNYAIKLDDQWTVRPGMLTHFSS 104
+                           555555555665246787754433333333333.45677999999999999988776654 PP
+
+  == domain 2  score: 8.4 bits;  conditional E-value: 0.0029
+        NFECIMNI_00008  34 gddvnrwlgfeayhiaqgyliahl 57 
+                            d+v+rw g+  yhi   + +a  
+  sp|P69856|NANC_ECOLI 147 RDNVHRWDGYVTYHINSDFTFAWQ 170
+                           489************999877643 PP
+
+>> sp|P69857|NANC_ECO57  N-acetylneuraminic acid outer membrane channel protein NanC OS=Escherichia coli O157:H7 OX=8333
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.9   0.1     0.075   1.8e+03      49     107 ..      46     104 ..      30     120 .. 0.66
+   2 ?    8.4   0.2    0.0029        69      34      57 ..     147     170 ..     135     219 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.075
+        NFECIMNI_00008  49 aqgyliahlaam.aetwetgdhstlqpyrekevddvrveyavsrdmqdnldpylstsygq 107
+                           ++g+     a+m + tw t   +  +     +v  v+v ya+  d q  + p + t ++ 
+  sp|P69857|NANC_ECO57  46 SEGWQNGWWASMeSNTWNTIHDNKKENAALNDV-QVEVNYAIKLDDQWTVRPGMLTHFSS 104
+                           555555555665246787754433333333333.45677999999999999988776654 PP
+
+  == domain 2  score: 8.4 bits;  conditional E-value: 0.0029
+        NFECIMNI_00008  34 gddvnrwlgfeayhiaqgyliahl 57 
+                            d+v+rw g+  yhi   + +a  
+  sp|P69857|NANC_ECO57 147 RDNVHRWDGYVTYHINSDFTFAWQ 170
+                           489************999877643 PP
+
+>> sp|P69858|NANC_SHIFL  N-acetylneuraminic acid outer membrane channel protein NanC OS=Shigella flexneri OX=623 GN=nanC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.9   0.1     0.075   1.8e+03      49     107 ..      46     104 ..      30     120 .. 0.66
+   2 ?    8.4   0.2    0.0029        69      34      57 ..     147     170 ..     135     219 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.075
+        NFECIMNI_00008  49 aqgyliahlaam.aetwetgdhstlqpyrekevddvrveyavsrdmqdnldpylstsygq 107
+                           ++g+     a+m + tw t   +  +     +v  v+v ya+  d q  + p + t ++ 
+  sp|P69858|NANC_SHIFL  46 SEGWQNGWWASMeSNTWNTIHDNKKENAALNDV-QVEVNYAIKLDDQWTVRPGMLTHFSS 104
+                           555555555665246787754433333333333.45677999999999999988776654 PP
+
+  == domain 2  score: 8.4 bits;  conditional E-value: 0.0029
+        NFECIMNI_00008  34 gddvnrwlgfeayhiaqgyliahl 57 
+                            d+v+rw g+  yhi   + +a  
+  sp|P69858|NANC_SHIFL 147 RDNVHRWDGYVTYHINSDFTFAWQ 170
+                           489************999877643 PP
+
+>> sp|Q8CVG4|NANC_ECOL6  N-acetylneuraminic acid outer membrane channel protein NanC OS=Escherichia coli O6:H1 (strain C
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.9   0.1     0.075   1.8e+03      49     107 ..      46     104 ..      30     120 .. 0.66
+   2 ?    8.4   0.2    0.0029        69      34      57 ..     147     170 ..     135     219 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.075
+        NFECIMNI_00008  49 aqgyliahlaam.aetwetgdhstlqpyrekevddvrveyavsrdmqdnldpylstsygq 107
+                           ++g+     a+m + tw t   +  +     +v  v+v ya+  d q  + p + t ++ 
+  sp|Q8CVG4|NANC_ECOL6  46 SEGWQNGWWASMeSNTWNTIHDNKKENAALNDV-QVEVNYAIKLDDQWTVRPGMLTHFSS 104
+                           555555555665246787754433333333333.45677999999999999988776654 PP
+
+  == domain 2  score: 8.4 bits;  conditional E-value: 0.0029
+        NFECIMNI_00008  34 gddvnrwlgfeayhiaqgyliahl 57 
+                            d+v+rw g+  yhi   + +a  
+  sp|Q8CVG4|NANC_ECOL6 147 RDNVHRWDGYVTYHINSDFTFAWQ 170
+                           489************999877643 PP
+
+>> sp|A1U3F2|LPXC_MARN8  UDP-3-O-acyl-N-acetylglucosamine deacetylase OS=Marinobacter nauticus (strain ATCC 700491 / DSM
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   0.00045        11      19      58 ..     125     164 ..     118     200 .. 0.79
+   2 ?   -1.7   0.0       3.9   9.3e+04      38      66 ..     255     283 ..     249     294 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.00045
+        NFECIMNI_00008  19 peqfielqteatvemgddvnrwlgfeayhiaqgyliahla 58 
+                            ++fi ++ e tve gd    +l fe + ++ g  + h  
+  sp|A1U3F2|LPXC_MARN8 125 AKRFIRIKREVTVEEGDKKATFLPFEGFKVSFGIDFDHPV 164
+                           578***************************9998877754 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 3.9
+        NFECIMNI_00008  38 nrwlgfeayhiaqgyliahlaamaetwet 66 
+                            ++ g+++ h   + l+  l a  + we 
+  sp|A1U3F2|LPXC_MARN8 255 GEFRGIKSGHDLNNKLLRKLRAEEDAWEV 283
+                           56778888999999999999999999995 PP
+
+>> sp|A4WGF8|GLMU_ENT38  Bifunctional protein GlmU OS=Enterobacter sp. (strain 638) OX=399742 GN=glmU PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   0.00044        11      20      91 ..     163     234 ..     156     239 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.00044
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + ama   e  + + + p r  e d v+    +sr
+  sp|A4WGF8|GLMU_ENT38 163 RQIQEINTGILIANGADLKRWLSKLNNNNAQGeYYITDIIAMAH-HEGHEITAVHPTRISETDGVNNRLQLSR 234
+                           5778999999*************999999999899*******97.5777888899*******99987766665 PP
+
+>> sp|A8G7N0|GLMU_SERP5  Bifunctional protein GlmU OS=Serratia proteamaculans (strain 568) OX=399741 GN=glmU PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   0.00098        23      20      90 ..     163     233 ..     157     238 .. 0.80
+   2 ?   -1.0   0.0       2.4   5.7e+04      23      68 ..     330     374 ..     322     382 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 0.00098
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavs 90 
+                            q+ e+ t   v  g d+ rwlg+     aqg + i  + a+a   +      + p r  ev+ v+    +s
+  sp|A8G7N0|GLMU_SERP5 163 RQINEINTGILVANGRDLKRWLGMLNNDNAQGeFYITDIIALAHA-DGKKIEAVHPSRLSEVEGVNNRLQLS 233
+                           578899999**********************95678999999976.33455678888888888887665555 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 2.4
+        NFECIMNI_00008  23 ielqteatvemgddvnrwlgfeayhiaqgyliahlaamaetwetgd 68 
+                             l+  a + +g  v +++ ++  ++ +g    hl+ + +  e gd
+  sp|A8G7N0|GLMU_SERP5 330 ARLRPGAELAVGAHVGNFVEMKKARLGKGSKAGHLSYLGDA-EIGD 374
+                           55666666666777777777777777777777777666553.4444 PP
+
+>> sp|Q57HY1|GLMU_SALCH  Bifunctional protein GlmU OS=Salmonella choleraesuis (strain SC-B67) OX=321314 GN=glmU PE=3 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   0.00057        14      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0         6   1.4e+05      22      62 ..     329     369 ..     298     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00057
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|Q57HY1|GLMU_SALCH 163 RQIQEINTGILIANGADLKRWLSKMTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|Q57HY1|GLMU_SALCH 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666665554 PP
+
+>> sp|A8ACN3|GLMU_CITK8  Bifunctional protein GlmU OS=Citrobacter koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.0     0.001        25      20      91 ..     163     234 ..     156     240 .. 0.85
+   2 ?   -1.6   0.0       3.7   8.7e+04      22      69 ..     329     375 ..     309     379 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 0.001
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  ev+ v+    +sr
+  sp|A8ACN3|GLMU_CITK8 163 RQIQEINTGILIANGADMKRWLAKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPDRLSEVEGVNNRLQLSR 234
+                           57789999999********************9889999999985.4666789999***999999987666665 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 3.7
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamaetwetgdh 69 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl+ + +  e gd+
+  sp|A8ACN3|GLMU_CITK8 329 FARLRPGAELREGAHVGNFVEMKKARLGKGSKAGHLSYLGDA-EIGDN 375
+                           677777788888888888888888899999999999887764.66665 PP
+
+>> sp|B5EYZ3|GLMU_SALA4  Bifunctional protein GlmU OS=Salmonella agona (strain SL483) OX=454166 GN=glmU PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00078        19      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0         6   1.4e+05      22      62 ..     329     369 ..     298     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00078
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|B5EYZ3|GLMU_SALA4 163 RQIQEINTGILIANGADLKRWLSKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|B5EYZ3|GLMU_SALA4 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666665554 PP
+
+>> sp|A9MXA3|GLMU_SALPB  Bifunctional protein GlmU OS=Salmonella paratyphi B (strain ATCC BAA-1250 / SPB7) OX=1016998 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00078        19      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0         6   1.4e+05      22      62 ..     329     369 ..     298     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00078
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|A9MXA3|GLMU_SALPB 163 RQIQEINTGILIANGADLKRWLSKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|A9MXA3|GLMU_SALPB 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666665554 PP
+
+>> sp|B4SYC8|GLMU_SALNS  Bifunctional protein GlmU OS=Salmonella newport (strain SL254) OX=423368 GN=glmU PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00078        19      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0         6   1.4e+05      22      62 ..     329     369 ..     298     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00078
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|B4SYC8|GLMU_SALNS 163 RQIQEINTGILIANGADLKRWLSKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|B4SYC8|GLMU_SALNS 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666665554 PP
+
+>> sp|B5FN29|GLMU_SALDC  Bifunctional protein GlmU OS=Salmonella dublin (strain CT_02021853) OX=439851 GN=glmU PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00078        19      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0         6   1.4e+05      22      62 ..     329     369 ..     298     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00078
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|B5FN29|GLMU_SALDC 163 RQIQEINTGILIANGADLKRWLSKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|B5FN29|GLMU_SALDC 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666665554 PP
+
+>> sp|B5QUS1|GLMU_SALEP  Bifunctional protein GlmU OS=Salmonella enteritidis PT4 (strain P125109) OX=550537 GN=glmU PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00078        19      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0         6   1.4e+05      22      62 ..     329     369 ..     298     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00078
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|B5QUS1|GLMU_SALEP 163 RQIQEINTGILIANGADLKRWLSKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|B5QUS1|GLMU_SALEP 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666665554 PP
+
+>> sp|B4TAW9|GLMU_SALHS  Bifunctional protein GlmU OS=Salmonella heidelberg (strain SL476) OX=454169 GN=glmU PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00078        19      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0         6   1.4e+05      22      62 ..     329     369 ..     298     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00078
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|B4TAW9|GLMU_SALHS 163 RQIQEINTGILIANGADMKRWLSKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|B4TAW9|GLMU_SALHS 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666665554 PP
+
+>> sp|Q8ZKX0|GLMU_SALTY  Bifunctional protein GlmU OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00078        19      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0         6   1.4e+05      22      62 ..     329     369 ..     298     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00078
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|Q8ZKX0|GLMU_SALTY 163 RQIQEINTGILIANGADMKRWLSKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|Q8ZKX0|GLMU_SALTY 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666665554 PP
+
+>> sp|B5BIN3|GLMU_SALPK  Bifunctional protein GlmU OS=Salmonella paratyphi A (strain AKU_12601) OX=554290 GN=glmU PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00078        19      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0         6   1.4e+05      22      62 ..     329     369 ..     298     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00078
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|B5BIN3|GLMU_SALPK 163 RQIQEINTGILIANGADLKRWLSKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|B5BIN3|GLMU_SALPK 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666665554 PP
+
+>> sp|Q5PKV8|GLMU_SALPA  Bifunctional protein GlmU OS=Salmonella paratyphi A (strain ATCC 9150 / SARB42) OX=295319 GN=gl
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00078        19      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0         6   1.4e+05      22      62 ..     329     369 ..     298     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00078
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|Q5PKV8|GLMU_SALPA 163 RQIQEINTGILIANGADLKRWLSKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|Q5PKV8|GLMU_SALPA 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666665554 PP
+
+>> sp|Q8Z2Q3|GLMU_SALTI  Bifunctional protein GlmU OS=Salmonella typhi OX=90370 GN=glmU PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00078        19      20      91 ..     163     234 ..     156     239 .. 0.85
+   2 ?   -2.3   0.0       6.3   1.5e+05      22      62 ..     329     369 ..     301     379 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00078
+        NFECIMNI_00008  20 eqfielqteatvemgddvnrwlgfeayhiaqg.yliahlaamaetwetgdhstlqpyrekevddvrveyavsr 91 
+                            q+ e+ t   +  g d+ rwl+    + aqg y i  + a+a   e  + + + p r  e d v+    +sr
+  sp|Q8Z2Q3|GLMU_SALTI 163 RQIQEINTGILIANGADLKRWLSKLTNNNAQGeYYITDIIALAY-QEGREIAAVHPARISETDGVNNRLQLSR 234
+                           57789999999********************9889999999985.466688999********99987766665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 6.3
+        NFECIMNI_00008  22 fielqteatvemgddvnrwlgfeayhiaqgyliahlaamae 62 
+                           f  l+  a +  g  v +++ ++  ++ +g    hl  + +
+  sp|Q8Z2Q3|GLMU_SALTI 329 FARLRPGAELLAGAHVGNFVEMKKARLGKGSKAGHLTYLGD 369
+                           44555555555566666666666666666666666666554 PP
+
+>> sp|P14935|Y2003_METTM  Uncharacterized protein MTBMA_p00030 OS=Methanothermobacter marburgensis (strain ATCC BAA-927 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   0.00045        11       3      45 ..      93     135 ..      91     142 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 0.00045
+         NFECIMNI_00008   3 lydkwldkfpqfvavspeqfielqteatvemgddvnrwlgfea 45 
+                            ly  w++ f  f  v p  +ie   + + ++   ++ w gf  
+  sp|P14935|Y2003_METTM  93 LYPPWINNFGNFGRVEPPPLIEKNLKKSKKIKIKIHPWTGFPY 135
+                            89**************************************974 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (124 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     12177  (0.0212935); expected 11437.3 (0.02)
+Passed bias filter:                    10893  (0.0190482); expected 11437.3 (0.02)
+Passed Vit filter:                       651  (0.00113838); expected 571.9 (0.001)
+Passed Fwd filter:                        24  (4.1968e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              24  [number of targets reported over threshold]
+# CPU time: 1.90u 0.47s 00:00:02.37 Elapsed: 00:00:01.27
+# Mc/sec: 20207.29
+//
+[ok]

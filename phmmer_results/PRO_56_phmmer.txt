@@ -1,0 +1,213 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_56.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00056  [L=78]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+       0.89   14.6   0.0        3.5   12.7   0.0    2.0  2  sp|Q2RJD1|SURE_MOOTA   5'-nucleotidase SurE OS=Moorella therm
+        1.2   14.2   0.0         68    8.6   0.0    2.9  2  sp|Q8UEN6|SYV_AGRFC    Valine--tRNA ligase OS=Agrobacterium f
+        1.2   14.2   0.0         11   11.1   0.0    2.3  2  sp|Q5RKJ0|F110C_RAT    Protein FAM110C OS=Rattus norvegicus O
+        1.7   13.7   0.1        3.5   12.7   0.1    1.4  1  sp|Q3AL65|SURE_SYNSC   5'-nucleotidase SurE OS=Synechococcus 
+        1.9   13.6   0.0        2.3   13.3   0.0    1.1  1  sp|P84596|DRS3_PITHY   Dermaseptin-H3 (Fragment) OS=Pithecopu
+        3.5   12.7   0.0        8.1   11.6   0.0    1.5  1  sp|Q8DGA5|GUAA_THEVB   GMP synthase [glutamine-hydrolyzing] O
+        3.8   12.6   0.3        9.4   11.4   0.3    1.6  1  sp|Q96A99|PTX4_HUMAN   Pentraxin-4 OS=Homo sapiens OX=9606 GN
+        3.8   12.6   0.1        7.4   11.7   0.1    1.4  1  sp|Q3AVE5|SURE_SYNS9   5'-nucleotidase SurE OS=Synechococcus 
+        4.4   12.4   0.1         18   10.5   0.0    2.0  2  sp|Q8IZJ0|IFNL2_HUMAN  Interferon lambda-2 OS=Homo sapiens OX
+        5.6   12.1   0.0         11   11.2   0.0    1.4  1  sp|Q7U5U4|SURE_PARMW   5'-nucleotidase SurE OS=Parasynechococ
+        7.3   11.7   1.2    1.3e+02    7.7   0.1    2.1  2  sp|Q7U524|RNPA_PARMW   Ribonuclease P protein component OS=Pa
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q2RJD1|SURE_MOOTA  5'-nucleotidase SurE OS=Moorella thermoacetica (strain ATCC 39073 / JCM 9320) OX=264732 GN=surE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0         3   1.6e+05      26      61 ..      36      72 ..      33      75 .. 0.70
+   2 ?   12.7   0.0   6.7e-05       3.5      26      53 ..     191     218 ..     170     240 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 3
+        NFECIMNI_00056 26 eirssdhrgrlyhwlwralksleeepavm.lteegtp 61
+                          + rs+  +g   h   ra +   e p  m l   gtp
+  sp|Q2RJD1|SURE_MOOTA 36 KERSAIGHGITMHKPLRATEVTWEGPVEMaLAVNGTP 72
+                          5567777777788888888888888876536677887 PP
+
+  == domain 2  score: 12.7 bits;  conditional E-value: 6.7e-05
+        NFECIMNI_00056  26 eirssdhrgrlyhwlwralksleeepav 53 
+                             r  d rgr y+wl   ++ l++ep  
+  sp|Q2RJD1|SURE_MOOTA 191 ITRRLDPRGRAYYWLAGEVEDLDQEPDT 218
+                           35789*********************76 PP
+
+>> sp|Q8UEN6|SYV_AGRFC  Valine--tRNA ligase OS=Agrobacterium fabrum (strain C58 / ATCC 33970) OX=176299 GN=valS PE=3 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   0.0    0.0013        68      19      72 ..     183     236 ..     178     241 .. 0.89
+   2 ?    1.9   0.0      0.17   8.8e+03      12      43 ..     679     710 ..     676     718 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 0.0013
+       NFECIMNI_00056  19 dlrrsdeeirssdhrgrlyhwlwralksleeepavmlteegtpvltedgkyiki 72 
+                              sd e++  + +g+l+h+ +   k +  e  v +  +gtp   e   yi +
+  sp|Q8UEN6|SYV_AGRFC 183 QTAISDMEVEQIEVKGNLWHFRYPLEKGVTYEYPVAFDADGTPTEFETRDYIVV 236
+                          5567999*************************99**********9999999876 PP
+
+  == domain 2  score: 1.9 bits;  conditional E-value: 0.17
+       NFECIMNI_00056  12 eiapktldlrrsdeeirssdhrgrlyhwlwra 43 
+                          e+a    d+  + e +r +d  g ly+++w+ 
+  sp|Q8UEN6|SYV_AGRFC 679 ELANTARDVTAALENFRFNDASGILYRFVWNQ 710
+                          66777788999999****************75 PP
+
+>> sp|Q5RKJ0|F110C_RAT  Protein FAM110C OS=Rattus norvegicus OX=10116 GN=Fam110c PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   0.00021        11       6      34 ..     183     210 ..     178     219 .. 0.88
+   2 ?   -0.1   0.0      0.74   3.9e+04      31      56 ..     299     323 ..     287     326 .] 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.00021
+       NFECIMNI_00056   6 qpgypfeiapktldlrrsdeeirssdhrg 34 
+                           p+ pfe+ap+ + +rrs  e+r+s  +g
+  sp|Q5RKJ0|F110C_RAT 183 SPALPFEVAPR-VPVRRSGVELRASRSKG 210
+                          699*******8.589*********99887 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 0.74
+       NFECIMNI_00056  31 dhrgrlyhwlwralksleeepavmlt 56 
+                          ++++r+  wl+   k  +e p+  l 
+  sp|Q5RKJ0|F110C_RAT 299 ERNARIIKWLFTCKK-AKETPSQKLQ 323
+                          45689999**98765.5667776665 PP
+
+>> sp|Q3AL65|SURE_SYNSC  5'-nucleotidase SurE OS=Synechococcus sp. (strain CC9605) OX=110662 GN=surE PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.1   6.8e-05       3.5      18      48 ..     187     219 ..     181     225 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 6.8e-05
+        NFECIMNI_00056  18 ldlrrsdeei.rssdhrgrlyhwlw.ralksle 48 
+                           l +rr de++ r  d rgr y+wl  +a++ le
+  sp|Q3AL65|SURE_SYNSC 187 LSIRRYDEQFsRREDPRGRAYYWLAgEAVQDLE 219
+                           789****9974889*********9525666666 PP
+
+>> sp|P84596|DRS3_PITHY  Dermaseptin-H3 (Fragment) OS=Pithecopus hypochondrialis OX=317381 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.0   4.4e-05       2.3      22      54 ..      29      61 ..      19      68 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 4.4e-05
+        NFECIMNI_00056 22 rsdeeirssdhrgrlyhwlwralksleeepavm 54
+                          + dee++  d+++++ + lw  +k++ +e a+ 
+  sp|P84596|DRS3_PITHY 29 NEDEELQEDDEQSEMKRGLWSTIKNVGKEAAIA 61
+                          579************************999986 PP
+
+>> sp|Q8DGA5|GUAA_THEVB  GMP synthase [glutamine-hydrolyzing] OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   0.00016       8.1      12      45 ..     425     459 ..     413     472 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 0.00016
+        NFECIMNI_00056  12 eiapktldl.rrsdeeirssdhrgrlyhwlwralk 45 
+                           e+ p+ l++ r +d  +r   +r+++yh lw+a+ 
+  sp|Q8DGA5|GUAA_THEVB 425 EVTPERLEIlRDADLIVRQEINRAQMYHELWQAFA 459
+                           78999999615578889***************976 PP
+
+>> sp|Q96A99|PTX4_HUMAN  Pentraxin-4 OS=Homo sapiens OX=9606 GN=PTX4 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.3   0.00018       9.4       4      35 ..     190     222 ..     188     238 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00018
+        NFECIMNI_00056   4 epqpgypfeiapktldlrrsdeeirs.sdhrgr 35 
+                            p p  p e+ p +l l+r  +e+r+ s+hrg 
+  sp|Q96A99|PTX4_HUMAN 190 VPTPTQPEELGPTSLKLQRDRQELRAaSEHRGP 222
+                           5999********************96389*995 PP
+
+>> sp|Q3AVE5|SURE_SYNS9  5'-nucleotidase SurE OS=Synechococcus sp. (strain CC9902) OX=316279 GN=surE PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.1   0.00014       7.4      18      42 ..     187     212 ..     180     225 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00014
+        NFECIMNI_00056  18 ldlrrsdeeirs.sdhrgrlyhwlwr 42 
+                           l +rr de++ s  d rgr y+wl  
+  sp|Q3AVE5|SURE_SYNS9 187 LSIRRYDEQFSSrKDPRGRAYYWLAG 212
+                           889******9874699*******964 PP
+
+>> sp|Q8IZJ0|IFNL2_HUMAN  Interferon lambda-2 OS=Homo sapiens OX=9606 GN=IFNL2 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0       1.6   8.4e+04      14      23 ..      80      89 ..      59     118 .. 0.73
+   2 ?   10.5   0.0   0.00035        18      32      50 ..     151     169 ..     141     182 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 1.6
+         NFECIMNI_00056 14 apktldlrrs 23
+                            p+t dlr+ 
+  sp|Q8IZJ0|IFNL2_HUMAN 80 FPRTWDLRQL 89
+                           4666666653 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 0.00035
+         NFECIMNI_00056  32 hrgrlyhwlwralksleee 50 
+                             rgrl+hwl+r  ++ ++e
+  sp|Q8IZJ0|IFNL2_HUMAN 151 TRGRLHHWLYRLQEAPKKE 169
+                            69*********88776554 PP
+
+>> sp|Q7U5U4|SURE_PARMW  5'-nucleotidase SurE OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=surE PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   0.00021        11      18      42 ..     184     209 ..     177     222 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00021
+        NFECIMNI_00056  18 ldlrrsdeeirss.dhrgrlyhwlwr 42 
+                           l +rr de++ s  d rgr y+wl  
+  sp|Q7U5U4|SURE_PARMW 184 LSIRRYDEQFSSRvDPRGRAYYWLAG 209
+                           889******988549********964 PP
+
+>> sp|Q7U524|RNPA_PARMW  Ribonuclease P protein component OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=rn
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.7   0.1    0.0025   1.3e+02      32      56 ..      19      44 ..       3      50 .. 0.82
+   2 ?    3.2   0.1     0.069   3.6e+03      29      59 ..      85     117 ..      67     126 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.0025
+        NFECIMNI_00056 32 hr.grlyhwlwralksleeepavmlt 56
+                          hr gr +h  w  l+ + eep ++  
+  sp|Q7U524|RNPA_PARMW 19 HRiGRRHHGDWMVLRVMPEEPRLLRP 44
+                          4449*****************98755 PP
+
+  == domain 2  score: 3.2 bits;  conditional E-value: 0.069
+        NFECIMNI_00056  29 ssdhrgrly.hwlwralk..sleeepavmlteeg 59 
+                             +hrg l  +w+  +l+  + e ep+ +l ee 
+  sp|Q7U524|RNPA_PARMW  85 QLEHRGDLAgRWVLISLRpeASEAEPSQLL-EEC 117
+                           458999986379888886325677887666.444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (78 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13843  (0.0242068); expected 11437.3 (0.02)
+Passed bias filter:                    12533  (0.021916); expected 11437.3 (0.02)
+Passed Vit filter:                       723  (0.00126429); expected 571.9 (0.001)
+Passed Fwd filter:                        11  (1.92353e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              11  [number of targets reported over threshold]
+# CPU time: 1.67u 0.49s 00:00:02.16 Elapsed: 00:00:01.20
+# Mc/sec: 13358.98
+//
+[ok]

@@ -1,0 +1,146 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_23.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00023  [L=182]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+      0.051   18.4   0.0      0.066   18.1   0.0    1.2  1  sp|D3WAC2|ENDON_BPLP2  Probable HNH endonuclease OS=Lactococc
+      0.051   18.4   0.0      0.066   18.1   0.0    1.2  1  sp|O21871|ENDON_BPLSK  Probable HNH endonuclease OS=Lactococc
+       0.19   16.6   1.4       0.38   15.6   1.4    1.5  1  sp|Q54R14|Y3443_DICDI  SET domain-containing protein DDB_G028
+       0.31   15.9   0.3       0.84   14.5   0.2    1.7  1  sp|Q980L7|ATGT_SACS2   tRNA-guanine(15) transglycosylase OS=S
+       0.55   15.1   0.1       0.82   14.5   0.1    1.4  1  sp|F4JL28|EBS_ARATH    Chromatin remodeling protein EBS OS=Ar
+        1.1   14.1   0.1        1.1   14.1   0.1    1.0  1  sp|P46190|RS15_MESHY   Small ribosomal subunit protein uS15 (
+        3.4   12.5   0.0        4.7   12.0   0.0    1.2  1  sp|B3EUF4|RS7_AMOA5    Small ribosomal subunit protein uS7 OS
+        5.8   11.7   0.9    3.3e+02    6.0   0.1    2.2  2  sp|Q46G12|TFE_METBF    Transcription factor E OS=Methanosarci
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|D3WAC2|ENDON_BPLP2  Probable HNH endonuclease OS=Lactococcus phage p2 OX=254252 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   18.1   0.0   9.2e-07     0.066      52     117 ..      30      88 ..      10      92 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 18.1 bits;  conditional E-value: 9.2e-07
+         NFECIMNI_00023  52 fqcmcahckkyhpledlevnhkntvgtltlenfgtycerlllikpdeleilckacheivtyqersg 117
+                             +  c +c  +   +  ev+h   +  lt en+  +    + + pd l++lck+ch   t + + g
+  sp|D3WAC2|ENDON_BPLP2  30 DKMTCVRCGAFG-AKKYEVDH---IVELTWENLDDWN---IALNPDNLQLLCKSCHNKKTSEYKRG 88 
+                            556678887775.45678888...5679999998764...6789************9888776655 PP
+
+>> sp|O21871|ENDON_BPLSK  Probable HNH endonuclease OS=Lactococcus phage SK1 OX=2905675 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   18.1   0.0   9.2e-07     0.066      52     117 ..      30      88 ..      10      92 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 18.1 bits;  conditional E-value: 9.2e-07
+         NFECIMNI_00023  52 fqcmcahckkyhpledlevnhkntvgtltlenfgtycerlllikpdeleilckacheivtyqersg 117
+                             +  c +c  +   +  ev+h   +  lt en+  +    + + pd l++lck+ch   t + + g
+  sp|O21871|ENDON_BPLSK  30 DKMTCVRCGAFG-AKKYEVDH---IVELTWENLDDWN---IALNPDNLQLLCKSCHNKKTSEYKRG 88 
+                            556678887775.45678888...5679999998764...6789************9888776655 PP
+
+>> sp|Q54R14|Y3443_DICDI  SET domain-containing protein DDB_G0283443 OS=Dictyostelium discoideum OX=44689 GN=DDB_G028344
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.6   1.4   5.4e-06      0.38      39     107 ..     319     386 ..     308     391 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 5.4e-06
+         NFECIMNI_00023  39 rkrllnpksgrmafqcmcahckkyhpledlevnhkntvgtltlenfgtycerlllikp.deleilckach 107
+                            + rll+ k     f+c c +c    pl +l +  + t+   t +n +  c  +l + p ++++ +c  ch
+  sp|Q54R14|Y3443_DICDI 319 NDRLLHLKE-IYYFECKCKRCT-LPPLSNLSLEIEKTIENYTCKNQSIKCTGILYLPPfNKIQRICNFCH 386
+                            457787776.467********7.68*****************************99996689*******9 PP
+
+>> sp|Q980L7|ATGT_SACS2  tRNA-guanine(15) transglycosylase OS=Saccharolobus solfataricus (strain ATCC 35092 / DSM 1617 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.5   0.2   1.2e-05      0.84      51      91 ..     275     315 ..     264     324 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 1.2e-05
+        NFECIMNI_00023  51 afqcmcahckkyhpledlevnhkntvgtltlenfgtycerl 91 
+                            f c c  c ky p + le+n+k     l + n+ t  e++
+  sp|Q980L7|ATGT_SACS2 275 YFPCSCPICSKYTPKDLLEMNEKERTKALAIHNLYTILEEF 315
+                           599******************************99998876 PP
+
+>> sp|F4JL28|EBS_ARATH  Chromatin remodeling protein EBS OS=Arabidopsis thaliana OX=3702 GN=EBS PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.5   0.1   1.2e-05      0.82      71     124 ..     132     184 ..     102     219 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 1.2e-05
+       NFECIMNI_00023  71 nhkntvgtltlenfgtycerlllikpdeleilckacheivtyqersgmtaeeaa 124
+                           +k   g +t +  + yc+  +   pd+l + c+ c +   +    gmt eea 
+  sp|F4JL28|EBS_ARATH 132 EYKAATGAFTPDRVAVYCKCEMPYNPDDLMVQCEGCKDWY-HPACVGMTIEEAK 184
+                          678999******************************9864.66788***99984 PP
+
+>> sp|P46190|RS15_MESHY  Small ribosomal subunit protein uS15 (Fragment) OS=Mesomycoplasma hyorhinis OX=2100 GN=rpsO PE=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.1   1.6e-05       1.1     112     174 ..      17      76 ..       1      81 [] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 1.6e-05
+        NFECIMNI_00023 112 yqersgmtaeeaaiekkiiaffnkypaveqkrrfelagmvpaknqaerrlqlreylrekarns 174
+                            q+++g t  + ai  + i  + k+ av +k +  + g++   nq +r   l  yl+ek  n+
+  sp|P46190|RS15_MESHY  17 SQKNTGDTRVQIAILTEDIESLKKHFAVNKKDKHSMRGFIAKVNQRKR---LLAYLKEKDFNA 76 
+                           5889999999******************************99998665...557999998776 PP
+
+>> sp|B3EUF4|RS7_AMOA5  Small ribosomal subunit protein uS7 OS=Amoebophilus asiaticus (strain 5a2) OX=452471 GN=rpsG PE=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   6.6e-05       4.7     122     180 ..      55     116 ..      41     117 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 6.6e-05
+       NFECIMNI_00023 122 eaaiekkiiaffnkypaveqkrrfelag...mvpaknqaerrlqlr.eylrekarnsgvrsiq 180
+                          e+ +e    a+ n +p+ve krr    g   +vp + + err+ l  +++ e+ar  g +++q
+  sp|B3EUF4|RS7_AMOA5  55 ESGLEVWKKALSNVFPSVEVKRRRVG-GatlQVPIEVRPERRISLGiKWMLEQARLRGEKTMQ 116
+                          555665556889*******9988543.312369***********9648999****99999887 PP
+
+>> sp|Q46G12|TFE_METBF  Transcription factor E OS=Methanosarcina barkeri (strain Fusaro / DSM 804) OX=269797 GN=tfe PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.4   0.2     0.015     1e+03       4      52 ..      61     107 ..      58     116 .. 0.78
+   2 ?    6.0   0.1    0.0046   3.3e+02      88     116 ..     120     148 ..     114     159 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 4.4 bits;  conditional E-value: 0.015
+       NFECIMNI_00023   4 ygyckser.ayigwlrsvtrkiwakhpirlemlkenrkrllnpksgrmaf 52 
+                          ++ c+ er +  gwl  + r  ++   i+ +++ke +k l n k+ r+ f
+  sp|Q46G12|TFE_METBF  61 FAICRRERdSNSGWLTYLWRLDFS--DIEHQLMKEKKKLLRNLKT-RLEF 107
+                          678999984568***999998776..6888999999888888775.6666 PP
+
+  == domain 2  score: 6.0 bits;  conditional E-value: 0.0046
+       NFECIMNI_00023  88 cerlllikpdeleilckacheivtyqers 116
+                          c rll+ +  e e+lc  c e + + ++s
+  sp|Q46G12|TFE_METBF 120 CVRLLFDEATETEFLCPMCGEDLVFYDNS 148
+                          99*****************9987777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (182 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     16139  (0.0282217); expected 11437.3 (0.02)
+Passed bias filter:                    12486  (0.0218339); expected 11437.3 (0.02)
+Passed Vit filter:                       728  (0.00127303); expected 571.9 (0.001)
+Passed Fwd filter:                         8  (1.39893e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               8  [number of targets reported over threshold]
+# CPU time: 1.95u 0.58s 00:00:02.52 Elapsed: 00:00:01.19
+# Mc/sec: 31499.57
+//
+[ok]

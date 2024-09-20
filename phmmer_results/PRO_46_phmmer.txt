@@ -1,0 +1,102 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_46.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00046  [L=76]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+        2.5   13.6   0.1        8.2   12.0   0.1    1.8  2  sp|Q8VZ37|AP3S_ARATH  AP-3 complex subunit sigma OS=Arabidops
+          4   13.0   0.0    3.2e+02    7.0   0.0    2.3  2  sp|B3EPX3|AROK_CHLPB  Shikimate kinase OS=Chlorobium phaeobac
+          4   12.9   0.3      5e+02    6.4   0.1    3.2  3  sp|A5EYG3|DNAK_DICNV  Chaperone protein DnaK OS=Dichelobacter
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q8VZ37|AP3S_ARATH  AP-3 complex subunit sigma OS=Arabidopsis thaliana OX=3702 GN=At3g50860 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0      0.77   1.5e+05      27      48 ..       4      25 ..       2      39 .. 0.72
+   2 ?   12.0   0.1   4.3e-05       8.2       8      73 ..      89     153 ..      81     155 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.77
+        NFECIMNI_00046 27 allaadtkmiprlgefvankti 48
+                          a++  +t+  prl++f     +
+  sp|Q8VZ37|AP3S_ARATH  4 AVMMMNTQGKPRLAKFYDYLPV 25
+                          5667788888999998765555 PP
+
+  == domain 2  score: 12.0 bits;  conditional E-value: 4.3e-05
+        NFECIMNI_00046   8 eqvliamldsgtitentchalla.adtkmiprlgefvanktisnkqanaimksmrelakaeaanasm 73 
+                            qvl+  ld      n c+  +    +km   l e+v    +    +  +mk+++e++k eaa+ s+
+  sp|Q8VZ37|AP3S_ARATH  89 IQVLVETLDK--CFSNVCELDIVfNYSKMHAVLDEIVFGGQVLETSSAEVMKAVEEISKLEAASNSI 153
+                           5788888886..5679999765515689999******999999999999*************98775 PP
+
+>> sp|B3EPX3|AROK_CHLPB  Shikimate kinase OS=Chlorobium phaeobacteroides (strain BS1) OX=331678 GN=aroK PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.0   0.0    0.0017   3.2e+02      10      59 ..      75     125 ..      66     132 .. 0.80
+   2 ?    3.9   0.0     0.016   3.1e+03       3      43 ..     132     172 ..     130     192 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.0017
+        NFECIMNI_00046  10 vliamldsgtitentchallaadtkmi.prlgefvanktisnkqanaimks 59 
+                            l+  l  g +  n c +l+ +   m+  + + ++  k +s+k    +mk 
+  sp|B3EPX3|AROK_CHLPB  75 ELVVSLGGGALQNNDCFSLIISSGTMVyLHSSPLILAKRMSHKTDRPLMKG 125
+                           5788999**********9987665555167788999999999999998886 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.016
+        NFECIMNI_00046   3 tnemleqvliamldsgtitentchallaadtkmiprlgefv 43 
+                           ++e +e+ ++a+l+       t++ ++  dtk i    e +
+  sp|B3EPX3|AROK_CHLPB 132 SSEEIEKKILALLEHREPRYKTAQIMVETDTKRIGTTVEEL 172
+                           56889999************************887665554 PP
+
+>> sp|A5EYG3|DNAK_DICNV  Chaperone protein DnaK OS=Dichelobacter nodosus (strain VCS1703A) OX=246195 GN=dnaK PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.0       2.3   4.3e+05      18      35 ..      10      25 ..       4      33 .. 0.70
+   2 ?    2.6   0.0      0.04   7.6e+03       6      45 ..     316     355 ..     312     369 .. 0.84
+   3 ?    6.4   0.1    0.0026     5e+02      21      71 ..     535     583 ..     529     587 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 2.3
+        NFECIMNI_00046 18 gtitentchallaadtkm 35
+                          g  t n+c a++  d+  
+  sp|A5EYG3|DNAK_DICNV 10 G--TTNSCVAVMDGDSAK 25
+                          4..568999999888754 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.04
+        NFECIMNI_00046   6 mleqvliamldsgtitentchallaadtkmiprlgefvan 45 
+                            le   iam d+g    +    +l      +p++ e v n
+  sp|A5EYG3|DNAK_DICNV 316 SLEPCRIAMKDAGLSNSDITDVILVGGQTRMPKVQEAVKN 355
+                           688999*******999999999888887788999998877 PP
+
+  == domain 3  score: 6.4 bits;  conditional E-value: 0.0026
+        NFECIMNI_00046  21 tentchallaadtkmiprlgefvanktisnkqanaimksmrelakaeaana 71 
+                           t+n++++++    k i +lg+ v +     ++  a +k++re+ k e ++a
+  sp|A5EYG3|DNAK_DICNV 535 TKNSAESMINGVEKAISELGDEVTSDE--KEKTEAAIKALREVMKGEDSDA 583
+                           8899999999999********998654..55678899********998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (76 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     16841  (0.0294493); expected 11437.3 (0.02)
+Passed bias filter:                    15175  (0.026536); expected 11437.3 (0.02)
+Passed Vit filter:                       903  (0.00157905); expected 571.9 (0.001)
+Passed Fwd filter:                         3  (5.246e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 1.67u 0.51s 00:00:02.17 Elapsed: 00:00:01.24
+# Mc/sec: 12600.74
+//
+[ok]

@@ -1,0 +1,55 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_63.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00063  [L=117]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+        2.4   13.1   0.1          9   11.3   0.0    2.0  2  sp|P54602|YHCR_BACSU  Endonuclease YhcR OS=Bacillus subtilis 
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P54602|YHCR_BACSU  Endonuclease YhcR OS=Bacillus subtilis (strain 168) OX=224308 GN=yhcR PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   1.6e-05         9      76     116 ..     148     188 ..     133     188 .. 0.90
+   2 ?   -2.8   0.0      0.38   2.2e+05      60     105 ..     994    1039 ..     989    1044 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.6e-05
+        NFECIMNI_00063  76 sttgvksvdslslradtktrlltvsftatsaygqistevtv 116
+                           +ttg+k+v s+++  dtkt       t   a g+++ evt+
+  sp|P54602|YHCR_BACSU 148 NTTGLKNVQSMNVTDDTKTPPAEQQVTINEARGRLNEEVTI 188
+                           79*************************************96 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 0.38
+        NFECIMNI_00063   60 sydisamkfavhntiqsttgvksvdslslradtktrlltvsftats 105 
+                             y is + +           +k  d   ++ d    l   +f at+
+  sp|P54602|YHCR_BACSU  994 DYSISGFTYTWDKETGKAVDMKMADGTEIQPDATYTLTVNNFMATA 1039
+                            5777777777777777788899999999999986666555677765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (117 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                      9469  (0.0165581); expected 11437.3 (0.02)
+Passed bias filter:                     8610  (0.015056); expected 11437.3 (0.02)
+Passed Vit filter:                       393  (0.000687226); expected 571.9 (0.001)
+Passed Fwd filter:                         1  (1.74867e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 1.75u 0.39s 00:00:02.14 Elapsed: 00:00:01.23
+# Mc/sec: 19568.58
+//
+[ok]

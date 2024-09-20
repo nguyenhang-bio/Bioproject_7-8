@@ -1,0 +1,415 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_21.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00021  [L=169]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
+    3.2e-06   31.8   0.0    8.7e-06   30.4   0.0    1.8  1  sp|G3FFN4|DATPH_BPVC8      dATP triphosphohydrolase OS=Vibrio
+    6.5e-06   30.8   0.1    9.2e-06   30.3   0.1    1.2  1  sp|A0A7U3TCA2|DATPH_BPS2L  dATP triphosphohydrolase OS=Cyanop
+    6.8e-05   27.5   0.2    0.00047   24.8   0.2    2.0  1  sp|A0A2L0V156|DATPH_BPPMB  dATP triphosphohydrolase OS=Salmon
+  ------ inclusion threshold ------
+      0.064   17.8   0.0      0.097   17.2   0.0    1.5  1  sp|Q9CMR5|5DNU_PASMU       5'-deoxynucleotidase PM0747 OS=Pas
+       0.37   15.3   0.0       0.52   14.9   0.0    1.4  1  sp|Q6LNX0|5DNU_PHOPR       5'-deoxynucleotidase PBPRA2627 OS=
+       0.81   14.2   0.0          2   12.9   0.0    1.7  1  sp|P42506|Y048_RHOCB       Uncharacterized protein RCAP_rcc00
+       0.85   14.1   0.0        1.2   13.7   0.0    1.4  1  sp|Q87R72|5DNU_VIBPA       5'-deoxynucleotidase VP0926 OS=Vib
+        1.5   13.4   0.0        1.9   13.0   0.0    1.4  1  sp|Q7N2I4|5DNU_PHOLL       5'-deoxynucleotidase plu3092 OS=Ph
+        1.6   13.3   0.0        2.4   12.7   0.0    1.4  1  sp|Q7MMF9|5DNU_VIBVY       5'-deoxynucleotidase VV1113 OS=Vib
+        1.6   13.2   0.0        3.1   12.3   0.0    1.4  1  sp|A0LRQ7|GLMM_ACIC1       Phosphoglucosamine mutase OS=Acido
+        1.8   13.1   0.0        3.1   12.3   0.0    1.4  1  sp|Q8GLH5|5DNU_PHOTE       5'-deoxynucleotidase yfbR OS=Photo
+          2   12.9   0.0        3.6   12.1   0.0    1.7  1  sp|Q668Z7|5DNU_YERPS       5'-deoxynucleotidase YPTB2590 OS=Y
+        2.1   12.9   0.0        3.8   12.0   0.0    1.7  1  sp|A4TM39|5DNU_YERPP       5'-deoxynucleotidase YPDSF_1968 OS
+        2.1   12.9   0.0        3.8   12.0   0.0    1.7  1  sp|A7FGQ0|5DNU_YERP3       5'-deoxynucleotidase YpsIP31758_14
+        2.1   12.9   0.0        3.8   12.0   0.0    1.7  1  sp|A9R6M4|5DNU_YERPG       5'-deoxynucleotidase YpAngola_A182
+        2.1   12.9   0.0        3.8   12.0   0.0    1.7  1  sp|B1JGL0|5DNU_YERPY       5'-deoxynucleotidase YPK_1557 OS=Y
+        2.1   12.9   0.0        3.8   12.0   0.0    1.7  1  sp|B2K824|5DNU_YERPB       5'-deoxynucleotidase YPTS_2685 OS=
+        2.1   12.9   0.0        3.8   12.0   0.0    1.7  1  sp|Q1C6A6|5DNU_YERPA       5'-deoxynucleotidase YPA_2050 OS=Y
+        2.1   12.9   0.0        3.8   12.0   0.0    1.7  1  sp|Q1CHP8|5DNU_YERPN       5'-deoxynucleotidase YPN_2153 OS=Y
+        2.1   12.9   0.0        3.8   12.0   0.0    1.7  1  sp|Q8ZDK3|5DNU_YERPE       5'-deoxynucleotidase YPO2559 OS=Ye
+        2.2   12.8   0.1         17   10.0   0.0    2.2  2  sp|Q5HNI8|EZRA_STAEQ       Septation ring formation regulator
+        2.2   12.8   0.1         17   10.0   0.0    2.1  2  sp|Q8CNW5|EZRA_STAES       Septation ring formation regulator
+        2.4   12.7   0.0        3.5   12.2   0.0    1.6  1  sp|A1JLF1|5DNU_YERE8       5'-deoxynucleotidase YE1340 OS=Yer
+        2.6   12.6   0.0        4.4   11.8   0.0    1.5  1  sp|Q9KQM0|5DNU_VIBCH       5'-deoxynucleotidase VC_1978 OS=Vi
+        3.3   12.2   0.0        4.7   11.7   0.0    1.4  1  sp|B7VHZ1|5DNU_VIBA3       5'-deoxynucleotidase VS_2195 OS=Vi
+        3.9   12.0   0.0        8.9   10.8   0.0    1.5  1  sp|E5Y379|ADHE_BILW3       Acetaldehyde dehydrogenase (acetyl
+        4.6   11.8   0.0        8.4   10.9   0.0    1.4  1  sp|O74834|UNG_SCHPO        Uracil-DNA glycosylase OS=Schizosa
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|G3FFN4|DATPH_BPVC8  dATP triphosphohydrolase OS=Vibrio phage phiVC8 OX=1076759 GN=datZ PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.4   0.0   4.1e-10   8.7e-06       1      73 [.       2      80 ..       2     136 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 30.4 bits;  conditional E-value: 4.1e-10
+         NFECIMNI_00021  1 mdiqaalrsgkvrryhaqpdipaqstaehmwgvamlvmmfyptasv......tllkaalshdcgevglgdmpsptkqat 73
+                           m iq  lr+g v r++       qs aehm++va++   +     +       ++  al+hd  ev lgdmp+ tkq  
+  sp|G3FFN4|DATPH_BPVC8  2 MQIQNILRAGHVPRWQLCDTTRTQSIAEHMFNVALIARHMCAHIGIngdemnEIVVQALTHDMDEVILGDMPTVTKQRL 80
+                           68999******************************98765554443112122577899******************963 PP
+
+>> sp|A0A7U3TCA2|DATPH_BPS2L  dATP triphosphohydrolase OS=Cyanophage S-2L OX=260586 GN=datZ PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.3   0.1   4.3e-10   9.2e-06       7     120 ..      12     127 ..       7     147 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 30.3 bits;  conditional E-value: 4.3e-10
+             NFECIMNI_00021   7 lrsgkvrryhaqpdipaqstaehmwgvamlvmmfyptasv...tl...lkaalshdcgevglgdmpsptkqatpgmreilkdme 84 
+                                lr++ + r+        q+ aehmw v +l   +   a +   t+    + al hd +e+  gd p+p k  tp ++e+l  +e
+  sp|A0A7U3TCA2|DATPH_BPS2L  12 LRASHISRWGIVQTTYPQNIAEHMWRVWLLCRDWGAAAGMpqhTVrqaCEFALVHDLAEIRTGDAPTPHK--TPELKELLAGIE 93 
+                                7888888888766677799**********99887766654222331114569************998876..9*********** PP
+
+             NFECIMNI_00021  85 hdnmsslglepweehlsptektalkicdvleglqyt 120
+                                   +  +     e  ++p  +   k+cd  e++ + 
+  sp|A0A7U3TCA2|DATPH_BPS2L  94 AQIVPEV--AELEATMAPEARELWKFCDTAEAVLFL 127
+                                9988876..467999**************9987664 PP
+
+>> sp|A0A2L0V156|DATPH_BPPMB  dATP triphosphohydrolase OS=Salmonella phage PMBT28 OX=2081904 GN=datZ PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.8   0.2   2.2e-08   0.00047       7     124 ..      10     135 ..       4     160 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 24.8 bits;  conditional E-value: 2.2e-08
+             NFECIMNI_00021   7 lrsgkvrryhaqpdipaqstaehmwgvamlvmmfy.......ptas...vtllk...aalshdcgevglgdmpsptkqatpgmr 77 
+                                +r+  v r++  p   +qs a+h w+vaml m ++       p  +   v l k    al hd+ ev  gd+ +ptk    +  
+  sp|A0A2L0V156|DATPH_BPPMB  10 MRAQYVTRWQIVPTTRSQSVAQHSWAVAMLAMNLWcrrtggqPGEAatdVELGKiavMALWHDAPEVFTGDINTPTKIFLNA-S 92 
+                                6888899************************987644333334333112555552224789****************87655.5 PP
+
+             NFECIMNI_00021  78 eilkdmehdnmsslg.lepweehlsptektalkicdvleglqytarhv 124
+                                  l ++e+   +  g le  +       +t +ki+d le++ +  +h 
+  sp|A0A2L0V156|DATPH_BPPMB  93 NALDELEN--TAGDGyLESMD---GGPIRTCVKIADFLEAMYWLMEHG 135
+                                56777764..33333144444...344689*********999988774 PP
+
+>> sp|Q9CMR5|5DNU_PASMU  5'-deoxynucleotidase PM0747 OS=Pasteurella multocida (strain Pm70) OX=272843 GN=PM0747 PE=3 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   17.2   0.0   4.6e-06     0.097      48     125 ..      61     131 ..       9     165 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 4.6e-06
+        NFECIMNI_00021  48 llkaalshdcgevglgdmpsptkqatpgmreilkdmehdnmsslglepweehlsptektalkicdvleglqytarhvh 125
+                           +   a+ hd +e+  gd+p+p k   p + +  k++e+   + l        l p e  a  ++  l++ q++a++ h
+  sp|Q9CMR5|5DNU_PASMU  61 IAVMAMYHDTSEIFTGDLPTPIKYFNPKITQAYKEIENAAEAHL------LALLPKELQA-DFAPYLDSTQFSAQEKH 131
+                           4556899***************************9997544332......2233433332.34555555555555555 PP
+
+>> sp|Q6LNX0|5DNU_PHOPR  5'-deoxynucleotidase PBPRA2627 OS=Photobacterium profundum (strain SS9) OX=298386 GN=PBPRA2627 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.9   0.0   2.4e-05      0.52      51      85 ..      64      98 ..      11     124 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 2.4e-05
+        NFECIMNI_00021 51 aalshdcgevglgdmpsptkqatpgmreilkdmeh 85
+                            + hd +ev  gdmp+p k   p++ e  k +e 
+  sp|Q6LNX0|5DNU_PHOPR 64 LGMFHDTSEVLTGDMPTPIKYYNPAIAEEYKKIEL 98
+                          4678***********************99998874 PP
+
+>> sp|P42506|Y048_RHOCB  Uncharacterized protein RCAP_rcc00048 OS=Rhodobacter capsulatus (strain ATCC BAA-309 / NBRC 165
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.0   9.6e-05         2      22      73 ..      47      98 ..      22     109 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 9.6e-05
+        NFECIMNI_00021 22 paqstaehmwgvamlvmmfyptasvtllkaalshdcgevglgdmpsptkqat 73
+                           a s aeh   v  l     p        aal hd+ e  lgdm +p k a 
+  sp|P42506|Y048_RHOCB 47 YAYSVAEHSLLVEELFARANPGIGERWRLAALLHDAPEYVLGDMITPVKAAI 98
+                          578999**999999999999999999999*******************9875 PP
+
+>> sp|Q87R72|5DNU_VIBPA  5'-deoxynucleotidase VP0926 OS=Vibrio parahaemolyticus serotype O3:K6 (strain RIMD 2210633) OX=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.0   5.6e-05       1.2      50      85 ..      63      98 ..      11     123 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 5.6e-05
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdmeh 85
+                            a+ hd +ev  gd+p+p k   p + +  k +e 
+  sp|Q87R72|5DNU_VIBPA 63 LLAMYHDSSEVLTGDLPTPVKYYNPEIAKEYKKIEA 98
+                          45899********************98766665542 PP
+
+>> sp|Q7N2I4|5DNU_PHOLL  5'-deoxynucleotidase plu3092 OS=Photorhabdus laumondii subsp. laumondii (strain DSM 15139 / CIP
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   9.1e-05       1.9      50      85 ..      61      96 ..      12     135 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 9.1e-05
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdmeh 85
+                            a+ hd++ev  gd+p+p k   p +    k +e 
+  sp|Q7N2I4|5DNU_PHOLL 61 LLAMYHDASEVITGDLPTPVKYHNPHIAREYKKIEK 96
+                          45899********************98766666664 PP
+
+>> sp|Q7MMF9|5DNU_VIBVY  5'-deoxynucleotidase VV1113 OS=Vibrio vulnificus (strain YJ016) OX=196600 GN=VV1113 PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.0   0.00011       2.4      51      85 ..      64      98 ..      10     123 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 0.00011
+        NFECIMNI_00021 51 aalshdcgevglgdmpsptkqatpgmreilkdmeh 85
+                           a+ hd +ev  gd+p+p k   p + +  k +e 
+  sp|Q7MMF9|5DNU_VIBVY 64 LAMYHDSSEVLTGDLPTPVKYYNPEIAKEYKKIEA 98
+                          5899********************98877777664 PP
+
+>> sp|A0LRQ7|GLMM_ACIC1  Phosphoglucosamine mutase OS=Acidothermus cellulolyticus (strain ATCC 43068 / DSM 8971 / 11B) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.0   0.00015       3.1      32     128 ..      86     182 ..      76     197 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 0.00015
+        NFECIMNI_00021  32 gvamlvmmfyptasvtllkaalshdcgev.glgdmpsp...tkqatpgmreilkdmehdnmsslglepweehlsptektalkicdvleg 116
+                           gv +l +   pt +v  l aal  d g v + +  p p    k    g +++  d+e    + lg epw     p  +   ++ d  eg
+  sp|A0LRQ7|GLMM_ACIC1  86 GVDVLRLGVLPTPAVAYLTAALDADLGVVlSASHNPMPdngIKFLARGGHKLPDDIEDAVAARLG-EPWT---RPVGRFVGRVRDYPEG 170
+                           7888889999*****************87334445555222467788999999999977777787.9**7...58889999******** PP
+
+        NFECIMNI_00021 117 lqytarhvhatg 128
+                           l    +hv at+
+  sp|A0LRQ7|GLMM_ACIC1 171 LDQYVEHVLATS 182
+                           *9999***9996 PP
+
+>> sp|Q8GLH5|5DNU_PHOTE  5'-deoxynucleotidase yfbR OS=Photorhabdus temperata OX=574560 GN=yfbR PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.0   0.00015       3.1      50      84 ..      61      95 ..      12     117 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 0.00015
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd++ev  gd+p+p k   p +    k +e
+  sp|Q8GLH5|5DNU_PHOTE 61 LLAMYHDASEVITGDLPTPIKYHNPHIAREYKKIE 95
+                          45899*******************99876666665 PP
+
+>> sp|Q668Z7|5DNU_YERPS  5'-deoxynucleotidase YPTB2590 OS=Yersinia pseudotuberculosis serotype I (strain IP32953) OX=273
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   0.00017       3.6      50      84 ..      61      95 ..      13     153 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00017
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd++ev  gd+p+p k   p +    k +e
+  sp|Q668Z7|5DNU_YERPS 61 LLAMYHDASEVITGDLPTPIKYHNPKIAHEYKKIE 95
+                          45899******************999887777666 PP
+
+>> sp|A4TM39|5DNU_YERPP  5'-deoxynucleotidase YPDSF_1968 OS=Yersinia pestis (strain Pestoides F) OX=386656 GN=YPDSF_1968
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00018       3.8      50      84 ..      61      95 ..      15     149 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00018
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd++ev  gd+p+p k   p +    k +e
+  sp|A4TM39|5DNU_YERPP 61 LLAMYHDASEVITGDLPTPIKYHNPKIAHEYKKIE 95
+                          45899******************999887777666 PP
+
+>> sp|A7FGQ0|5DNU_YERP3  5'-deoxynucleotidase YpsIP31758_1449 OS=Yersinia pseudotuberculosis serotype O:1b (strain IP 31
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00018       3.8      50      84 ..      61      95 ..      15     149 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00018
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd++ev  gd+p+p k   p +    k +e
+  sp|A7FGQ0|5DNU_YERP3 61 LLAMYHDASEVITGDLPTPIKYHNPKIAHEYKKIE 95
+                          45899******************999887777666 PP
+
+>> sp|A9R6M4|5DNU_YERPG  5'-deoxynucleotidase YpAngola_A1820 OS=Yersinia pestis bv. Antiqua (strain Angola) OX=349746 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00018       3.8      50      84 ..      61      95 ..      15     149 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00018
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd++ev  gd+p+p k   p +    k +e
+  sp|A9R6M4|5DNU_YERPG 61 LLAMYHDASEVITGDLPTPIKYHNPKIAHEYKKIE 95
+                          45899******************999887777666 PP
+
+>> sp|B1JGL0|5DNU_YERPY  5'-deoxynucleotidase YPK_1557 OS=Yersinia pseudotuberculosis serotype O:3 (strain YPIII) OX=502
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00018       3.8      50      84 ..      61      95 ..      15     149 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00018
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd++ev  gd+p+p k   p +    k +e
+  sp|B1JGL0|5DNU_YERPY 61 LLAMYHDASEVITGDLPTPIKYHNPKIAHEYKKIE 95
+                          45899******************999887777666 PP
+
+>> sp|B2K824|5DNU_YERPB  5'-deoxynucleotidase YPTS_2685 OS=Yersinia pseudotuberculosis serotype IB (strain PB1/+) OX=502
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00018       3.8      50      84 ..      61      95 ..      15     149 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00018
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd++ev  gd+p+p k   p +    k +e
+  sp|B2K824|5DNU_YERPB 61 LLAMYHDASEVITGDLPTPIKYHNPKIAHEYKKIE 95
+                          45899******************999887777666 PP
+
+>> sp|Q1C6A6|5DNU_YERPA  5'-deoxynucleotidase YPA_2050 OS=Yersinia pestis bv. Antiqua (strain Antiqua) OX=360102 GN=YPA_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00018       3.8      50      84 ..      61      95 ..      15     149 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00018
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd++ev  gd+p+p k   p +    k +e
+  sp|Q1C6A6|5DNU_YERPA 61 LLAMYHDASEVITGDLPTPIKYHNPKIAHEYKKIE 95
+                          45899******************999887777666 PP
+
+>> sp|Q1CHP8|5DNU_YERPN  5'-deoxynucleotidase YPN_2153 OS=Yersinia pestis bv. Antiqua (strain Nepal516) OX=377628 GN=YPN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00018       3.8      50      84 ..      61      95 ..      15     149 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00018
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd++ev  gd+p+p k   p +    k +e
+  sp|Q1CHP8|5DNU_YERPN 61 LLAMYHDASEVITGDLPTPIKYHNPKIAHEYKKIE 95
+                          45899******************999887777666 PP
+
+>> sp|Q8ZDK3|5DNU_YERPE  5'-deoxynucleotidase YPO2559 OS=Yersinia pestis OX=632 GN=YPO2559 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00018       3.8      50      84 ..      61      95 ..      15     149 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00018
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd++ev  gd+p+p k   p +    k +e
+  sp|Q8ZDK3|5DNU_YERPE 61 LLAMYHDASEVITGDLPTPIKYHNPKIAHEYKKIE 95
+                          45899******************999887777666 PP
+
+>> sp|Q5HNI8|EZRA_STAEQ  Septation ring formation regulator EzrA OS=Staphylococcus epidermidis (strain ATCC 35984 / RP62
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0       1.1   2.4e+04      84     123 ..      65     104 ..      55     112 .. 0.86
+   2 ?   10.0   0.0   0.00079        17      93     138 ..     361     406 ..     346     417 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 1.1
+        NFECIMNI_00021  84 ehdnmsslglepweehlsptektalkicdvleglqytarh 123
+                           ++d m   + e   ++l+p e+      ++le +++ta +
+  sp|Q5HNI8|EZRA_STAEQ  65 KYDAMKKDNTETTNKYLAPVEEKIQNAEELLEKFKFTAAQ 104
+                           578888888899999******99999999*****999976 PP
+
+  == domain 2  score: 10.0 bits;  conditional E-value: 0.00079
+        NFECIMNI_00021  93 lepweehlsptektalkicdvleglqytarhvhatgygedtlrnwi 138
+                           +  +++ l  t k+a++  +v ++lqy   hv   +  +d l+n +
+  sp|Q5HNI8|EZRA_STAEQ 361 ISVYDDILKETSKSAVRYSEVQDNLQYLEDHVSVINKEQDKLQNHL 406
+                           5668999***********************************9965 PP
+
+>> sp|Q8CNW5|EZRA_STAES  Septation ring formation regulator EzrA OS=Staphylococcus epidermidis (strain ATCC 12228 / FDA 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0       1.1   2.4e+04      84     123 ..      65     104 ..      55     112 .. 0.86
+   2 ?   10.0   0.0   0.00079        17      93     138 ..     361     406 ..     346     417 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 1.1
+        NFECIMNI_00021  84 ehdnmsslglepweehlsptektalkicdvleglqytarh 123
+                           ++d m   + e   ++l+p e+      ++le +++ta +
+  sp|Q8CNW5|EZRA_STAES  65 KYDAMKKDNTETTNKYLAPVEEKIQNAEELLEKFKFTAAQ 104
+                           578888888899999******99999999*****999976 PP
+
+  == domain 2  score: 10.0 bits;  conditional E-value: 0.00079
+        NFECIMNI_00021  93 lepweehlsptektalkicdvleglqytarhvhatgygedtlrnwi 138
+                           +  +++ l  t k+a++  +v ++lqy   hv   +  +d l+n +
+  sp|Q8CNW5|EZRA_STAES 361 ISVYDDILKETSKSAVRYSEVQDNLQYLEDHVSVINKEQDKLQNHL 406
+                           5668999***********************************9965 PP
+
+>> sp|A1JLF1|5DNU_YERE8  5'-deoxynucleotidase YE1340 OS=Yersinia enterocolitica serotype O:8 / biotype 1B (strain NCTC 1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   0.00016       3.5      51      85 ..      62      96 ..      13     146 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.00016
+        NFECIMNI_00021 51 aalshdcgevglgdmpsptkqatpgmreilkdmeh 85
+                           a+ hd++ev  gd+p+p k   p +    k +e 
+  sp|A1JLF1|5DNU_YERE8 62 LAMYHDASEVITGDLPTPIKYYNPQIAHEYKKIEK 96
+                          5899*******************998877777765 PP
+
+>> sp|Q9KQM0|5DNU_VIBCH  5'-deoxynucleotidase VC_1978 OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00021       4.4      50      84 ..      63      97 ..      10     113 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00021
+        NFECIMNI_00021 50 kaalshdcgevglgdmpsptkqatpgmreilkdme 84
+                            a+ hd +ev  gd+p+p k   p + +  k +e
+  sp|Q9KQM0|5DNU_VIBCH 63 LLAMYHDTSEVLTGDLPTPIKYFNPEIAKEYKKIE 97
+                          45899******************998877666655 PP
+
+>> sp|B7VHZ1|5DNU_VIBA3  5'-deoxynucleotidase VS_2195 OS=Vibrio atlanticus (strain LGP32) OX=575788 GN=VS_2195 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   0.00022       4.7      52      85 ..      65      98 ..      11     120 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00022
+        NFECIMNI_00021 52 alshdcgevglgdmpsptkqatpgmreilkdmeh 85
+                           + hd +ev  gd+p+p k   p + +  k +e 
+  sp|B7VHZ1|5DNU_VIBA3 65 GMYHDTSEVLTGDLPTPVKYYNPDIAQEYKKIEA 98
+                          578********************99988887774 PP
+
+>> sp|E5Y379|ADHE_BILW3  Acetaldehyde dehydrogenase (acetylating) OS=Bilophila wadsworthia (strain 3_1_6) OX=563192 GN=a
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   0.00042       8.9      34      75 ..      16      57 ..       2      74 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.00042
+        NFECIMNI_00021 34 amlvmmfyptasvtllkaalshdcgevglgdmpsptkqatpg 75
+                             +m   pta+ t + aa   dcg+ gl d      qa  +
+  sp|E5Y379|ADHE_BILW3 16 LKKMMSDQPTAAATTVVAASGCDCGDFGLFDRLEDAVQAAEA 57
+                          45567789**********************998887777655 PP
+
+>> sp|O74834|UNG_SCHPO  Uracil-DNA glycosylase OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=ung1 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0   0.00039       8.4      70     118 ..      35      86 ..      28      94 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.00039
+       NFECIMNI_00021  70 kqatpgmr..eilkdmehdnmsslglepweehlsptektalki.cdvleglq 118
+                            ++p+++  ++l + e++++s ++ e w e+l+p ++  l++  d le+  
+  sp|O74834|UNG_SCHPO  35 NTSSPALKdtQVLDNKENNSVSKFNKEKWAENLTPAQRKLLQLeIDTLESSW 86 
+                          5566776522689999*********************999987468887655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (169 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     12994  (0.0227222); expected 11437.3 (0.02)
+Passed bias filter:                    12182  (0.0213023); expected 11437.3 (0.02)
+Passed Vit filter:                       768  (0.00134298); expected 571.9 (0.001)
+Passed Fwd filter:                        27  (4.7214e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              27  [number of targets reported over threshold]
+# CPU time: 2.07u 0.54s 00:00:02.61 Elapsed: 00:00:01.21
+# Mc/sec: 28747.07
+//
+[ok]

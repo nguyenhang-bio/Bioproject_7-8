@@ -1,0 +1,956 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_27.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00027  [L=105]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+    4.6e-08   38.0  13.8        2.3   13.3   0.1    6.9  7  sp|Q5SF94|AAAP_ANAML      Appendage-associated protein OS=Ana
+    0.00014   26.8  13.4    1.3e+02    7.8   0.1    6.9  7  sp|Q5SF93|AAAP_ANAMV      Appendage-associated protein OS=Ana
+    0.00018   26.5  13.6    1.1e+02    7.9   0.0    6.8  7  sp|Q5SF95|AAAP_ANAMF      Appendage-associated protein OS=Ana
+    0.00032   25.7  22.3    2.3e+02    6.9   0.1    8.6  9  sp|Q5SF96|AAAP_ANAMM      Appendage-associated protein OS=Ana
+  ------ inclusion threshold ------
+       0.15   17.1  11.5        4.1   12.5   1.9    3.2  3  sp|Q9KD71|DNAJ_HALH5      Chaperone protein DnaJ OS=Halalkali
+       0.25   16.4   9.2        7.9   11.6   0.9    3.0  3  sp|A7Z6W0|DNAJ_BACVZ      Chaperone protein DnaJ OS=Bacillus 
+        0.3   16.2   0.0       0.64   15.1   0.0    1.5  1  sp|Q1MRV5|SYFA_LAWIP      Phenylalanine--tRNA ligase alpha su
+       0.31   16.1   8.8        1.3   14.2   0.8    2.8  2  sp|A8FFD1|DNAJ_BACP2      Chaperone protein DnaJ OS=Bacillus 
+       0.35   15.9   4.5        7.7   11.6   0.5    2.6  2  sp|A7IC67|DNAJ_XANP2      Chaperone protein DnaJ OS=Xanthobac
+       0.36   15.9   0.6       0.36   15.9   0.6    1.9  2  sp|Q09926|PCR1_SCHPO      Transcription factor pcr1 OS=Schizo
+       0.39   15.8  12.1         17   10.6   1.8    3.1  3  sp|Q65H55|DNAJ_BACLD      Chaperone protein DnaJ OS=Bacillus 
+       0.41   15.7   0.0         33    9.6   0.0    2.2  2  sp|O67738|Y1900_AQUAE     Uncharacterized protein aq_1900 OS=
+       0.41   15.7   8.6        5.2   12.2   0.9    3.0  3  sp|P17631|DNAJ_BACSU      Chaperone protein DnaJ OS=Bacillus 
+       0.52   15.4   8.6        1.9   13.6   0.6    2.5  2  sp|C5D4U0|DNAJ_GEOSW      Chaperone protein DnaJ OS=Geobacill
+        0.8   14.8   0.5         19   10.3   0.0    2.5  2  sp|P14289|YPOB_STYLE      Uncharacterized 22 kDa protein in o
+       0.92   14.6   0.3        8.9   11.4   0.3    2.3  2  sp|C4YLG6|EXO5_CANAW      Exonuclease V, mitochondrial OS=Can
+       0.96   14.5   0.3        8.9   11.4   0.3    2.2  2  sp|Q59ZZ6|EXO5_CANAL      Exonuclease V, mitochondrial OS=Can
+        1.2   14.2   3.9        9.5   11.4   0.3    2.3  2  sp|Q5HNW7|DNAJ_STAEQ      Chaperone protein DnaJ OS=Staphyloc
+        1.2   14.2   3.9        9.5   11.4   0.3    2.3  2  sp|Q8CP18|DNAJ_STAES      Chaperone protein DnaJ OS=Staphyloc
+        1.3   14.2   9.1        2.5   13.2   1.1    3.1  3  sp|Q5WHG0|DNAJ_SHOC1      Chaperone protein DnaJ OS=Shouchell
+        1.3   14.1   0.0        3.9   12.6   0.0    1.8  1  sp|Q740Y1|CPFC_MYCPA      Coproporphyrin III ferrochelatase O
+        1.3   14.1   8.3        1.8   13.6   0.5    2.5  2  sp|A7GT07|DNAJ_BACCN      Chaperone protein DnaJ OS=Bacillus 
+        1.5   13.9   0.3        3.4   12.8   0.1    1.6  1  sp|Q31NH0|RECR_SYNE7      Recombination protein RecR OS=Synec
+        1.5   13.9   0.3        3.4   12.8   0.1    1.6  1  sp|Q5N5P2|RECR_SYNP6      Recombination protein RecR OS=Synec
+        1.7   13.8   0.0        2.5   13.2   0.0    1.2  1  sp|P00306|PHCA_GALSU      C-phycocyanin alpha chain OS=Galdie
+        1.8   13.7   0.0        4.3   12.4   0.0    1.7  1  sp|Q1GTW7|ILVD_SPHAL      Dihydroxy-acid dehydratase OS=Sphin
+        1.8   13.7   0.0        1.8   13.7   0.0    1.1  1  sp|Q9LYF6|AGP15_ARATH     Arabinogalactan protein 15 OS=Arabi
+          2   13.5   0.2        4.7   12.3   0.1    1.6  1  sp|Q9BE65|PEX26_MACFA     Peroxisome assembly protein 26 OS=M
+        2.1   13.5   9.5        4.1   12.5   1.0    2.5  2  sp|Q9KWS6|DNAJ_PARTM      Chaperone protein DnaJ OS=Parageoba
+        2.1   13.4   4.3         23   10.1   0.4    2.4  2  sp|B0U833|DNAJ_METS4      Chaperone protein DnaJ OS=Methyloba
+        2.6   13.2   0.2    5.6e+02    5.7   0.0    2.3  2  sp|A0A0Q3PY21|VRN2_BRADI  Protein VERNALIZATION 2 OS=Brachypo
+        3.1   12.9   6.3         10   11.2   0.8    2.5  2  sp|C4L424|DNAJ_EXISA      Chaperone protein DnaJ OS=Exiguobac
+        3.8   12.6   0.0        9.5   11.3   0.0    1.6  1  sp|Q0VCA7|OXSM_BOVIN      3-oxoacyl-[acyl-carrier-protein] sy
+        3.9   12.6   0.0        5.4   12.1   0.0    1.2  1  sp|P59858|PHCA_POLUR      R-phycocyanin alpha chain OS=Polysi
+        4.1   12.5   0.0        9.5   11.4   0.0    1.5  1  sp|O60810|PRAM4_HUMAN     PRAME family member 4 OS=Homo sapie
+        4.3   12.5   0.1        6.1   12.0   0.1    1.3  1  sp|Q5SRR4|LY65C_HUMAN     Lymphocyte antigen 6 complex locus 
+        4.6   12.4   0.1        9.5   11.3   0.1    1.5  1  sp|B8AIC3|STAD3_ORYSI     Acyl-[acyl-carrier-protein] desatur
+        4.6   12.3   0.1        9.5   11.3   0.1    1.5  1  sp|B9F058|STAD3_ORYSJ     Acyl-[acyl-carrier-protein] desatur
+        5.2   12.2   0.6         24   10.1   0.1    2.3  2  sp|Q13287|NMI_HUMAN       N-myc-interactor OS=Homo sapiens OX
+        5.6   12.1   6.8         49    9.1   0.6    3.0  2  sp|A8IPT0|DNAJ_AZOC5      Chaperone protein DnaJ OS=Azorhizob
+        8.3   11.5   7.2         21   10.2   0.9    2.4  2  sp|Q49Y21|DNAJ_STAS1      Chaperone protein DnaJ OS=Staphyloc
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q5SF94|AAAP_ANAML  Appendage-associated protein OS=Anaplasma marginale (strain Illinois) OX=403778 GN=aaaP PE=4 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   0.1     0.013   1.8e+02      38      57 ..      72      91 ..      63      96 .. 0.86
+   2 ?    1.5   0.0      0.81   1.1e+04      42      56 ..      96     110 ..      91     115 .. 0.84
+   3 !   13.3   0.1   0.00016       2.3      33      57 ..     117     141 ..     112     154 .. 0.87
+   4 ?    6.6   0.1      0.02   2.8e+02      32      55 ..     153     176 ..     141     199 .. 0.81
+   5 ?    6.1   0.1      0.03   4.1e+02      40      57 ..     211     228 ..     199     234 .. 0.83
+   6 ?    0.2   0.0       2.1   2.9e+04      39      55 ..     240     256 ..     230     264 .. 0.83
+   7 ?    6.1   0.1     0.029   4.1e+02      39      58 ..     270     289 ..     257     300 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.013
+        NFECIMNI_00027 38 rmsaelaaeleavdagwqpq 57
+                          +  ael  el+a+da w+p 
+  sp|Q5SF94|AAAP_ANAML 72 KARAELRKELDAIDAEWRPV 91
+                          6679**************95 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.81
+        NFECIMNI_00027  42 elaaeleavdagwqp 56 
+                            l  el+a+da wq 
+  sp|Q5SF94|AAAP_ANAML  96 SLRKELKAIDAQWQH 110
+                           5788*********95 PP
+
+  == domain 3  score: 13.3 bits;  conditional E-value: 0.00016
+        NFECIMNI_00027  33 vsnivrmsaelaaeleavdagwqpq 57 
+                           +s  + +s el+ el+a+dagw+p 
+  sp|Q5SF94|AAAP_ANAML 117 ISRAIVVSIELSKELKAIDAGWEPV 141
+                           6777889****************95 PP
+
+  == domain 4  score: 6.6 bits;  conditional E-value: 0.02
+        NFECIMNI_00027  32 lvsnivrmsaelaaeleavdagwq 55 
+                               + ++  el ael a+da w+
+  sp|Q5SF94|AAAP_ANAML 153 REERVAQVRRELRAELRAIDAEWR 176
+                           4567888999*************7 PP
+
+  == domain 5  score: 6.1 bits;  conditional E-value: 0.03
+        NFECIMNI_00027  40 saelaaeleavdagwqpq 57 
+                             el+ el+a+da w+p 
+  sp|Q5SF94|AAAP_ANAML 211 RMELSKELKAIDAEWRPA 228
+                           5699************96 PP
+
+  == domain 6  score: 0.2 bits;  conditional E-value: 2.1
+        NFECIMNI_00027  39 msaelaaeleavdagwq 55 
+                            s el+ el+a+da  q
+  sp|Q5SF94|AAAP_ANAML 240 GSIELSKELKAIDAETQ 256
+                           5789*********9776 PP
+
+  == domain 7  score: 6.1 bits;  conditional E-value: 0.029
+        NFECIMNI_00027  39 msaelaaeleavdagwqpqs 58 
+                              el+ el+a+da w p+ 
+  sp|Q5SF94|AAAP_ANAML 270 GRIELSRELKAIDAEWAPRI 289
+                           45799************975 PP
+
+>> sp|Q5SF93|AAAP_ANAMV  Appendage-associated protein OS=Anaplasma marginale (strain Virginia) OX=403779 GN=aaaP PE=3 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.8   0.1     0.009   1.3e+02      38      57 ..      41      60 ..      32      67 .. 0.86
+   2 ?    2.1   0.0      0.53   7.3e+03      42      55 ..      65      78 ..      60      82 .. 0.83
+   3 !    7.7   0.0    0.0095   1.3e+02      34      56 ..      87     109 ..      84     112 .. 0.85
+   4 ?    3.8   0.0      0.15   2.1e+03      42      57 ..     115     130 ..     110     138 .. 0.82
+   5 ?    0.3   0.0       1.9   2.7e+04      39      55 ..     142     158 ..     133     164 .. 0.82
+   6 ?    6.1   0.1     0.029   4.1e+02      39      57 ..     172     190 ..     160     196 .. 0.82
+   7 ?    1.6   0.1      0.76   1.1e+04      37      58 ..     198     219 ..     192     234 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 0.009
+        NFECIMNI_00027 38 rmsaelaaeleavdagwqpq 57
+                          ++  el ael+a+da w+p 
+  sp|Q5SF93|AAAP_ANAMV 41 QVRKELRAELKAIDAEWRPV 60
+                          56789*************95 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.53
+        NFECIMNI_00027 42 elaaeleavdagwq 55
+                           l  el+a+da wq
+  sp|Q5SF93|AAAP_ANAMV 65 SLRKELDAIDAEWQ 78
+                          5789*********9 PP
+
+  == domain 3  score: 7.7 bits;  conditional E-value: 0.0095
+        NFECIMNI_00027  34 snivrmsaelaaeleavdagwqp 56 
+                           s  +  s el+ el+a+da w+p
+  sp|Q5SF93|AAAP_ANAMV  87 SRAIIGSIELSKELDAIDAEWRP 109
+                           55666799**************9 PP
+
+  == domain 4  score: 3.8 bits;  conditional E-value: 0.15
+        NFECIMNI_00027  42 elaaeleavdagwqpq 57 
+                            l  el+a+da w+p 
+  sp|Q5SF93|AAAP_ANAMV 115 SLRKELKAIDAEWRPA 130
+                           5789**********96 PP
+
+  == domain 5  score: 0.3 bits;  conditional E-value: 1.9
+        NFECIMNI_00027  39 msaelaaeleavdagwq 55 
+                            s el+ el+a+da  q
+  sp|Q5SF93|AAAP_ANAMV 142 GSIELSKELKAIDAETQ 158
+                           5789*********9766 PP
+
+  == domain 6  score: 6.1 bits;  conditional E-value: 0.029
+        NFECIMNI_00027  39 msaelaaeleavdagwqpq 57 
+                              el+ el+a+da w p+
+  sp|Q5SF93|AAAP_ANAMV 172 GRIELSRELKAIDAEWAPR 190
+                           45799************97 PP
+
+  == domain 7  score: 1.6 bits;  conditional E-value: 0.76
+        NFECIMNI_00027  37 vrmsaelaaeleavdagwqpqs 58 
+                            +    l  el  +da w p+ 
+  sp|Q5SF93|AAAP_ANAMV 198 AQARESLRKELNDIDAEWAPKI 219
+                           555667899**********974 PP
+
+>> sp|Q5SF95|AAAP_ANAMF  Appendage-associated protein OS=Anaplasma marginale (strain Florida) OX=320483 GN=aaaP1 PE=3 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   0.1    0.0091   1.3e+02      38      57 ..      45      64 ..      36      71 .. 0.86
+   2 ?    2.1   0.0      0.53   7.5e+03      42      55 ..      69      82 ..      64      86 .. 0.83
+   3 !    7.9   0.0     0.008   1.1e+02      34      57 ..      91     114 ..      88     121 .. 0.85
+   4 ?    3.8   0.0      0.15   2.1e+03      42      57 ..     119     134 ..     114     143 .. 0.82
+   5 ?    0.2   0.0         2   2.8e+04      39      55 ..     146     162 ..     137     167 .. 0.82
+   6 ?    6.3   0.1     0.025   3.5e+02      39      58 ..     176     195 ..     164     206 .. 0.82
+   7 ?    1.8   0.1      0.64   8.9e+03      37      58 ..     202     223 ..     195     244 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.0091
+        NFECIMNI_00027 38 rmsaelaaeleavdagwqpq 57
+                          ++  el ael+a+da w+p 
+  sp|Q5SF95|AAAP_ANAMF 45 QVRKELRAELKAIDAEWRPV 64
+                          56789*************95 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.53
+        NFECIMNI_00027 42 elaaeleavdagwq 55
+                           l  el+a+da wq
+  sp|Q5SF95|AAAP_ANAMF 69 SLRKELDAIDAEWQ 82
+                          5789*********9 PP
+
+  == domain 3  score: 7.9 bits;  conditional E-value: 0.008
+        NFECIMNI_00027  34 snivrmsaelaaeleavdagwqpq 57 
+                           s  +  s el+ el+a+da w+p 
+  sp|Q5SF95|AAAP_ANAMF  91 SRAIIGSIELSKELDAIDAEWRPV 114
+                           55666799**************95 PP
+
+  == domain 4  score: 3.8 bits;  conditional E-value: 0.15
+        NFECIMNI_00027  42 elaaeleavdagwqpq 57 
+                            l  el+a+da w+p 
+  sp|Q5SF95|AAAP_ANAMF 119 SLRKELKAIDAEWRPA 134
+                           5789**********96 PP
+
+  == domain 5  score: 0.2 bits;  conditional E-value: 2
+        NFECIMNI_00027  39 msaelaaeleavdagwq 55 
+                            s el+ el+a+da  q
+  sp|Q5SF95|AAAP_ANAMF 146 GSIELSKELKAIDAETQ 162
+                           5789*********9766 PP
+
+  == domain 6  score: 6.3 bits;  conditional E-value: 0.025
+        NFECIMNI_00027  39 msaelaaeleavdagwqpqs 58 
+                              el+ el+a+da w p+ 
+  sp|Q5SF95|AAAP_ANAMF 176 GRIELSRELKAIDAEWAPRI 195
+                           45799************975 PP
+
+  == domain 7  score: 1.8 bits;  conditional E-value: 0.64
+        NFECIMNI_00027  37 vrmsaelaaeleavdagwqpqs 58 
+                            +    l  el  +da w p+ 
+  sp|Q5SF95|AAAP_ANAMF 202 AQARESLRKELNDIDAEWAPKI 223
+                           5555678899999999999974 PP
+
+>> sp|Q5SF96|AAAP_ANAMM  Appendage-associated protein OS=Anaplasma marginale (strain St. Maries) OX=234826 GN=aaaP PE=1 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.1     0.019   2.7e+02      36      57 ..      63      84 ..      28      86 .. 0.67
+   2 ?    6.4   0.1     0.024   3.4e+02      42      57 ..      86     101 ..      84     106 .. 0.89
+   3 ?    4.4   0.1     0.099   1.4e+03      41      57 ..     115     131 ..     105     133 .. 0.86
+   4 ?    6.9   0.1     0.016   2.3e+02      42      57 ..     133     148 ..     131     157 .. 0.89
+   5 ?    4.7   0.1     0.079   1.1e+03      42      57 ..     163     178 ..     156     187 .. 0.86
+   6 ?    1.6   0.1      0.77   1.1e+04      42      55 ..     183     196 ..     178     200 .. 0.83
+   7 ?    4.3   0.0      0.11   1.5e+03      34      55 ..     205     226 ..     202     240 .. 0.85
+   8 ?    0.7   0.0       1.4     2e+04      37      58 ..     245     266 ..     231     281 .. 0.82
+   9 ?   -1.3   0.2       6.1   8.4e+04      77      95 ..     371     389 ..     319     393 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.019
+        NFECIMNI_00027 36 ivrmsaelaaeleavdagwqpq 57
+                           +  + el  el+a+da w p+
+  sp|Q5SF96|AAAP_ANAMM 63 AIDATIELRKELDAIDAEWAPK 84
+                          345667999**********997 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.024
+        NFECIMNI_00027  42 elaaeleavdagwqpq 57 
+                           el+ael a+da w+p 
+  sp|Q5SF96|AAAP_ANAMM  86 ELSAELRAIDAEWRPA 101
+                           99************96 PP
+
+  == domain 3  score: 4.4 bits;  conditional E-value: 0.099
+        NFECIMNI_00027  41 aelaaeleavdagwqpq 57 
+                            el  el+a+da w p+
+  sp|Q5SF96|AAAP_ANAMM 115 IELRKELDAIDAEWAPK 131
+                           5899***********97 PP
+
+  == domain 4  score: 6.9 bits;  conditional E-value: 0.016
+        NFECIMNI_00027  42 elaaeleavdagwqpq 57 
+                           el+ael+a+da w+p 
+  sp|Q5SF96|AAAP_ANAMM 133 ELSAELKAIDAEWRPA 148
+                           99************96 PP
+
+  == domain 5  score: 4.7 bits;  conditional E-value: 0.079
+        NFECIMNI_00027  42 elaaeleavdagwqpq 57 
+                           el+ el+a+da w+p 
+  sp|Q5SF96|AAAP_ANAMM 163 ELSKELKAIDAEWRPA 178
+                           899***********96 PP
+
+  == domain 6  score: 1.6 bits;  conditional E-value: 0.77
+        NFECIMNI_00027  42 elaaeleavdagwq 55 
+                            l  el+a+da wq
+  sp|Q5SF96|AAAP_ANAMM 183 SLRKELDAIDAEWQ 196
+                           4788*********9 PP
+
+  == domain 7  score: 4.3 bits;  conditional E-value: 0.11
+        NFECIMNI_00027  34 snivrmsaelaaeleavdagwq 55 
+                           s  +  s el+ el+a+da w+
+  sp|Q5SF96|AAAP_ANAMM 205 SRAIIGSIELSKELKAIDAKWK 226
+                           55566789*************7 PP
+
+  == domain 8  score: 0.7 bits;  conditional E-value: 1.4
+        NFECIMNI_00027  37 vrmsaelaaeleavdagwqpqs 58 
+                            +   el  el  +da w+  s
+  sp|Q5SF96|AAAP_ANAMM 245 AKAREELRKELNDIDAKWKSAS 266
+                           56678999**********9766 PP
+
+  == domain 9  score: -1.3 bits;  conditional E-value: 6.1
+        NFECIMNI_00027  77 vsggtreqvclvcggtgkl 95 
+                            s+g++ q    cgg g l
+  sp|Q5SF96|AAAP_ANAMM 371 QSAGSESQRPTECGGGGTL 389
+                           3566666777777777765 PP
+
+>> sp|Q9KD71|DNAJ_HALH5  Chaperone protein DnaJ OS=Halalkalibacterium halodurans (strain ATCC BAA-125 / DSM 18197 / FERM
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   1.9   0.00029       4.1      69      99 ..     138     171 ..     129     176 .. 0.87
+   2 ?    6.6   1.5     0.021   2.9e+02      71      95 ..     183     207 ..     171     212 .. 0.86
+   3 ?    1.9   0.0       0.6   8.4e+03      17      44 ..     322     349 ..     320     357 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 0.00029
+        NFECIMNI_00027  69 evqchaclvsg...gtreqvclvcggtgklsidm 99 
+                           e  ch c  sg   gt+ + c  cgg+g+l+i++
+  sp|Q9KD71|DNAJ_HALH5 138 EETCHTCSGSGakpGTKPESCPHCGGSGQLNIEQ 171
+                           678****99987779****************985 PP
+
+  == domain 2  score: 6.6 bits;  conditional E-value: 0.021
+        NFECIMNI_00027  71 qchaclvsggtreqvclvcggtgkl 95 
+                            ch c  +g   +  c  cgg gk+
+  sp|Q9KD71|DNAJ_HALH5 183 VCHHCEGTGKYIKHKCATCGGKGKV 207
+                           4**********************97 PP
+
+  == domain 3  score: 1.9 bits;  conditional E-value: 0.6
+        NFECIMNI_00027  17 shlqvrsvspeqskklvsnivrmsaela 44 
+                            h+qvr ++p+q  +    ++r  a+++
+  sp|Q9KD71|DNAJ_HALH5 322 QHVQVRVITPKQLSEKEKELLREFAQMS 349
+                           59********998877777777776664 PP
+
+>> sp|A7Z6W0|DNAJ_BACVZ  Chaperone protein DnaJ OS=Bacillus velezensis (strain DSM 23117 / BGSC 10A6 / LMG 26770 / FZB42
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.9   0.00056       7.9      61      99 ..     138     175 ..     104     181 .. 0.71
+   2 ?    7.7   1.6    0.0094   1.3e+02      71      95 ..     187     211 ..     175     215 .. 0.88
+   3 ?   -0.8   0.0       4.1   5.7e+04      18      47 ..     327     356 ..     324     361 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 0.00056
+        NFECIMNI_00027  61 pqprptstevqchaclvsg...gtreqvclvcggtgklsidm 99 
+                             pr       c+ c  sg   gt+   c  cgg+g+l++++
+  sp|A7Z6W0|DNAJ_BACVZ 138 EIPREE----NCETCKGSGakpGTKPDTCSHCGGSGQLNVEQ 175
+                           555544....4555555544449***************9985 PP
+
+  == domain 2  score: 7.7 bits;  conditional E-value: 0.0094
+        NFECIMNI_00027  71 qchaclvsggtreqvclvcggtgkl 95 
+                            ch c  +g   +  c  cggtgk+
+  sp|A7Z6W0|DNAJ_BACVZ 187 VCHHCEGTGKIIKNKCSDCGGTGKV 211
+                           5**********************97 PP
+
+  == domain 3  score: -0.8 bits;  conditional E-value: 4.1
+        NFECIMNI_00027  18 hlqvrsvspeqskklvsnivrmsaelaael 47 
+                           h+ vr v+p        +i+r  ae++  l
+  sp|A7Z6W0|DNAJ_BACVZ 327 HIVVRVVTPTNLTDKQKDIIREFAEVSGNL 356
+                           999999999999888999999999988766 PP
+
+>> sp|Q1MRV5|SYFA_LAWIP  Phenylalanine--tRNA ligase alpha subunit OS=Lawsonia intracellularis (strain PHE/MN1-00) OX=363
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.1   0.0   4.6e-05      0.64      63      96 ..     253     286 ..     231     289 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 4.6e-05
+        NFECIMNI_00027  63 prptstevqchaclvsggtreqvclvcggtgkls 96 
+                                 ++ ch c  +g  + ++c +c g+g + 
+  sp|Q1MRV5|SYFA_LAWIP 253 EPSAEMDISCHPCNNTGYVKNEICRICKGSGWIE 286
+                           33356799**********************9876 PP
+
+>> sp|A8FFD1|DNAJ_BACP2  Chaperone protein DnaJ OS=Bacillus pumilus (strain SAFR-032) OX=315750 GN=dnaJ PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.2   0.8     9e-05       1.3      49      99 ..     128     177 ..     106     182 .. 0.79
+   2 ?    5.3   1.7     0.052   7.3e+02      71      95 ..     189     213 ..     176     217 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 9e-05
+        NFECIMNI_00027  49 avdagwqpqsqppqprptstevqchaclvsggtreqvclvcggtgklsidm 99 
+                             +a++  ++    pr  s e  ch      gt  + c  cgg+g+l++++
+  sp|A8FFD1|DNAJ_BACP2 128 FEEAAFGKEATIEIPREESCET-CHGSGAKPGTDAKTCSHCGGSGQLNVEQ 177
+                           4566666777777899999985.************************9986 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.052
+        NFECIMNI_00027  71 qchaclvsggtreqvclvcggtgkl 95 
+                            c+ c  +g   +  c  cgg+gk+
+  sp|A8FFD1|DNAJ_BACP2 189 VCNYCSGTGKQIDHKCSTCGGSGKV 213
+                           377777777777888********97 PP
+
+>> sp|A7IC67|DNAJ_XANP2  Chaperone protein DnaJ OS=Xanthobacter autotrophicus (strain ATCC BAA-1158 / Py2) OX=78245 GN=d
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.5   0.00055       7.7      67      95 ..     142     173 ..     123     177 .. 0.81
+   2 ?    5.2   0.3     0.056   7.8e+02      69      96 ..     183     210 ..     180     215 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 0.00055
+        NFECIMNI_00027  67 stevqchaclvsg...gtreqvclvcggtgkl 95 
+                            t v c+ c  +g   gt+ + c +cgg gk+
+  sp|A7IC67|DNAJ_XANP2 142 PTSVSCETCSGTGakpGTQPKACRMCGGAGKI 173
+                           35678888876665559*************97 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.056
+        NFECIMNI_00027  69 evqchaclvsggtreqvclvcggtgkls 96 
+                           e  c  c   g+  e  c  cgg g+++
+  sp|A7IC67|DNAJ_XANP2 183 ERTCPNCQGRGSVIEDPCSDCGGAGRVT 210
+                           667999*99****************986 PP
+
+>> sp|Q09926|PCR1_SCHPO  Transcription factor pcr1 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=p
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.2       3.8   5.3e+04      25      30 ..      45      50 ..       3      74 .. 0.61
+   2 ?   15.9   0.6   2.6e-05      0.36      11      79 ..      92     162 ..      83     167 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 3.8
+        NFECIMNI_00027 25 speqsk 30
+                          + eqsk
+  sp|Q09926|PCR1_SCHPO 45 AFEQSK 50
+                          223333 PP
+
+  == domain 2  score: 15.9 bits;  conditional E-value: 2.6e-05
+        NFECIMNI_00027  11 aqkil.lshlqvrsvspeqskklvsnivrms.aelaaeleavdagwqpqsqppqprptstevqchaclvsg 79 
+                           a   l   h+  r v p     ++ ++v +s  ++   l+ +  +  pq  p   +p s +vq h    +g
+  sp|Q09926|PCR1_SCHPO  92 AHNALhSQHMAYRPVQPPPGDNMLESVVSVSpTQMHPSLQGLPPNQHPQMPPSSQQPNSDDVQQHMFSAAG 162
+                           4444414699******************998458999****************************887766 PP
+
+>> sp|Q65H55|DNAJ_BACLD  Chaperone protein DnaJ OS=Bacillus licheniformis (strain ATCC 14580 / DSM 13 / JCM 2505 / CCUG 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   1.8    0.0012        17      63      99 ..     140     175 ..     108     180 .. 0.72
+   2 ?    9.1   1.9    0.0034        47      71      95 ..     187     211 ..     174     216 .. 0.84
+   3 ?    0.4   0.0       1.8   2.5e+04      18      46 ..     327     355 ..     325     361 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 0.0012
+        NFECIMNI_00027  63 prptstevqchaclvsg...gtreqvclvcggtgklsidm 99 
+                           pr       c+ c  sg   gt+ + c  cgg+g+l++++
+  sp|Q65H55|DNAJ_BACLD 140 PREE----TCETCSGSGakpGTKPETCSHCGGSGQLNMEQ 175
+                           4443....4555555444449***************9875 PP
+
+  == domain 2  score: 9.1 bits;  conditional E-value: 0.0034
+        NFECIMNI_00027  71 qchaclvsggtreqvclvcggtgkl 95 
+                            ch c  +g   +  c  cggtgk+
+  sp|Q65H55|DNAJ_BACLD 187 VCHYCNGTGKQIKHKCSTCGGTGKV 211
+                           599999999999999********97 PP
+
+  == domain 3  score: 0.4 bits;  conditional E-value: 1.8
+        NFECIMNI_00027  18 hlqvrsvspeqskklvsnivrmsaelaae 46 
+                           h+ vr v+p    +   ni+r  ae++  
+  sp|Q65H55|DNAJ_BACLD 327 HIVVRVVTPTNLTENQKNILREFAEVSGN 355
+                           999*******999999*****99998865 PP
+
+>> sp|O67738|Y1900_AQUAE  Uncharacterized protein aq_1900 OS=Aquifex aeolicus (strain VF5) OX=224324 GN=aq_1900 PE=4 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.6   0.0    0.0024        33      23      59 ..      18      54 ..       9      61 .. 0.91
+   2 ?    3.9   0.1      0.14     2e+03      22      50 ..     134     161 ..     117     165 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 0.0024
+         NFECIMNI_00027 23 svspeqskklvsnivrmsaelaaeleavdagwqpqsq 59
+                           s+spe+ k+l+ +i ++ a l   +e  d  +q  +q
+  sp|O67738|Y1900_AQUAE 18 SLSPEEEKQLIRDIAEIKATLKTFMEQTDKRFQDLNQ 54
+                           89**************************999987665 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.14
+         NFECIMNI_00027  22 rsvspeqskklvsnivrmsaelaaeleav 50 
+                            + + pe+ kkl+ n +r  a+   elea+
+  sp|O67738|Y1900_AQUAE 134 KELRPEKFKKLL-NALREKAKTDKELEAI 161
+                            6788******97.78899********997 PP
+
+>> sp|P17631|DNAJ_BACSU  Chaperone protein DnaJ OS=Bacillus subtilis (strain 168) OX=224308 GN=dnaJ PE=2 SV=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.9   0.00037       5.2      48      99 ..     125     175 ..     104     181 .. 0.72
+   2 ?    6.1   1.3      0.03   4.2e+02      71      95 ..     187     211 ..     177     216 .. 0.89
+   3 ?   -0.8   0.0       4.1   5.7e+04      18      47 ..     327     356 ..     324     361 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.00037
+        NFECIMNI_00027  48 eavdagwqpqsqppqprptstevqchaclvsggtreqvclvcggtgklsidm 99 
+                              da++  ++    pr  + e  c       gt+ + c  cgg+g+l++++
+  sp|P17631|DNAJ_BACSU 125 SFEDAAFGKETTIEIPREETCE-TCKGSGAKPGTNPETCSHCGGSGQLNVEQ 175
+                           4556666666666667765554.3666666779***************9985 PP
+
+  == domain 2  score: 6.1 bits;  conditional E-value: 0.03
+        NFECIMNI_00027  71 qchaclvsggtreqvclvcggtgkl 95 
+                            ch c  +g   +  c  cgg gk+
+  sp|P17631|DNAJ_BACSU 187 VCHHCEGTGKIIKNKCADCGGKGKI 211
+                           5**********************98 PP
+
+  == domain 3  score: -0.8 bits;  conditional E-value: 4.1
+        NFECIMNI_00027  18 hlqvrsvspeqskklvsnivrmsaelaael 47 
+                           h+ vr v+p        +i+r  ae++  l
+  sp|P17631|DNAJ_BACSU 327 HIVVRVVTPTNLTDKQKDIIREFAEVSGNL 356
+                           999999999999888999999999988766 PP
+
+>> sp|C5D4U0|DNAJ_GEOSW  Chaperone protein DnaJ OS=Geobacillus sp. (strain WCH70) OX=471223 GN=dnaJ PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.6   0.00014       1.9      56      99 ..     136     178 ..     112     184 .. 0.77
+   2 ?    5.4   2.2     0.047   6.6e+02      70      95 ..     186     214 ..     176     218 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.00014
+        NFECIMNI_00027  56 pqsqppqprptstevqchaclvsggtreqvclvcggtgklsidm 99 
+                            ++    pr  + +  ch      gt+++ c  c gtg++s ++
+  sp|C5D4U0|DNAJ_GEOSW 136 KETDIEIPREETCD-TCHGTGAKPGTKKETCSYCHGTGQISTEQ 178
+                           55555566665444.6************************9875 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.047
+        NFECIMNI_00027  70 vqchaclvsggtre...qvclvcggtgkl 95 
+                           v  + c   ggt +   + c  cggtg++
+  sp|C5D4U0|DNAJ_GEOSW 186 VNRRTCPYCGGTGQyikEKCTTCGGTGRV 214
+                           5556666667776411167********87 PP
+
+>> sp|P14289|YPOB_STYLE  Uncharacterized 22 kDa protein in overamplified macronuclear DNA POB4 OS=Stylonychia lemnae OX=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0    0.0014        19      74     104 ..      23      52 ..      11      52 .. 0.79
+   2 ?    2.1   0.2      0.53   7.4e+03      67      96 ..      83     112 ..      63     120 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.0014
+        NFECIMNI_00027  74 aclvsggtreqvclvcggtgklsidmpprrp 104
+                           a +vsg  + q c +c g g l+  +pp+ p
+  sp|P14289|YPOB_STYLE  23 AQFVSG-LERQECAICFGWGHLANSVPPKPP 52 
+                           556665.55678****************977 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.53
+        NFECIMNI_00027  67 stevqchaclvsggtreqvclvcggtgkls 96 
+                            t ++ch     gg r    +  g  g  +
+  sp|P14289|YPOB_STYLE  83 PTRLRCHPGPAMGGRRSGGRICLGDPGAAA 112
+                           58899*********9986555455555554 PP
+
+>> sp|C4YLG6|EXO5_CANAW  Exonuclease V, mitochondrial OS=Candida albicans (strain WO-1) OX=294748 GN=EXO5 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.3   0.00064       8.9      14      49 ..      19      54 ..       9      64 .. 0.88
+   2 ?   -0.0   0.0       2.4   3.3e+04      41      81 ..     541     584 ..     524     593 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00064
+        NFECIMNI_00027 14 illshlqvrsvspeqskklvsnivrmsaelaaelea 49
+                          +   h qv+s+s e+s+ l sn +++sa+   +le+
+  sp|C4YLG6|EXO5_CANAW 19 VTSEHEQVQSISKEESRSLSSNDLNLSADSELQLES 54
+                          56789***********************99888886 PP
+
+  == domain 2  score: -0.0 bits;  conditional E-value: 2.4
+        NFECIMNI_00027  41 aelaaeleavdagwqpqsqppqprptstevqch...aclvsggt 81 
+                           +e+ ae+e+    w  + +    +  s    c+    c+v+gg 
+  sp|C4YLG6|EXO5_CANAW 541 SEFQAEVESASKFWNGEREVIPTEDLSRCSYCEfqsKCMVAGGK 584
+                           57888999999999877654322222222222111146666664 PP
+
+>> sp|Q59ZZ6|EXO5_CANAL  Exonuclease V, mitochondrial OS=Candida albicans (strain SC5314 / ATCC MYA-2876) OX=237561 GN=D
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.3   0.00064       8.9      14      49 ..      36      71 ..      26      82 .. 0.88
+   2 ?   -0.1   0.0       2.5   3.4e+04      41      81 ..     558     601 ..     541     610 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00064
+        NFECIMNI_00027 14 illshlqvrsvspeqskklvsnivrmsaelaaelea 49
+                          +   h qv+s+s e+s+ l sn +++sa+   +le+
+  sp|Q59ZZ6|EXO5_CANAL 36 VTSEHEQVQSISKEESRSLSSNDLNLSADSELQLES 71
+                          56789***********************99888886 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 2.5
+        NFECIMNI_00027  41 aelaaeleavdagwqpqsqppqprptstevqch...aclvsggt 81 
+                           +e+ ae+e+    w  + +    +  s    c+    c+v+gg 
+  sp|Q59ZZ6|EXO5_CANAL 558 SEFQAEVESASKFWNGEREVIPTEDLSRCSYCEfqsKCMVAGGK 601
+                           57888999999999877654322222222222111146666664 PP
+
+>> sp|Q5HNW7|DNAJ_STAEQ  Chaperone protein DnaJ OS=Staphylococcus epidermidis (strain ATCC 35984 / RP62A) OX=176279 GN=d
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.3   0.00068       9.5      68      99 ..     139     173 ..     132     176 .. 0.86
+   2 ?    3.7   0.3      0.17   2.3e+03      67      94 ..     181     208 ..     177     217 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00068
+        NFECIMNI_00027  68 tevqchaclvsg...gtreqvclvcggtgklsidm 99 
+                            +v ch c   g   gt ++ c  c+g g++s+++
+  sp|Q5HNW7|DNAJ_STAEQ 139 KDVTCHTCNGDGakpGTSKKTCSYCNGAGRVSVEQ 173
+                           5799****97765559****************985 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.17
+        NFECIMNI_00027  67 stevqchaclvsggtreqvclvcggtgk 94 
+                            te  c  c  sg   e+ c  c g g 
+  sp|Q5HNW7|DNAJ_STAEQ 181 RTEQVCPKCEGSGQEFEEPCPTCKGKGT 208
+                           5788899999999999999999999875 PP
+
+>> sp|Q8CP18|DNAJ_STAES  Chaperone protein DnaJ OS=Staphylococcus epidermidis (strain ATCC 12228 / FDA PCI 1200) OX=1762
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.3   0.00068       9.5      68      99 ..     139     173 ..     132     176 .. 0.86
+   2 ?    3.7   0.3      0.17   2.3e+03      67      94 ..     181     208 ..     177     217 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00068
+        NFECIMNI_00027  68 tevqchaclvsg...gtreqvclvcggtgklsidm 99 
+                            +v ch c   g   gt ++ c  c+g g++s+++
+  sp|Q8CP18|DNAJ_STAES 139 KDVTCHTCNGDGakpGTSKKTCSYCNGAGRVSVEQ 173
+                           5799****97765559****************985 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.17
+        NFECIMNI_00027  67 stevqchaclvsggtreqvclvcggtgk 94 
+                            te  c  c  sg   e+ c  c g g 
+  sp|Q8CP18|DNAJ_STAES 181 RTEQVCPKCEGSGQEFEEPCPTCKGKGT 208
+                           5788899999999999999999999875 PP
+
+>> sp|Q5WHG0|DNAJ_SHOC1  Chaperone protein DnaJ OS=Shouchella clausii (strain KSM-K16) OX=66692 GN=dnaJ PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   1.1   0.00018       2.5      54      99 ..     128     172 ..     111     178 .. 0.76
+   2 ?    4.1   1.0      0.13   1.8e+03      71      95 ..     184     208 ..     172     213 .. 0.80
+   3 ?   -0.8   0.0       4.2   5.9e+04      18      37 ..     324     343 ..     322     358 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 0.00018
+        NFECIMNI_00027  54 wqpqsqppqprptstevqchaclvsggtreqvclvcggtgklsidm 99 
+                           +  +++   pr   t   ch      gt+   c  cgg+g+l++++
+  sp|Q5WHG0|DNAJ_SHOC1 128 FGKETEIEIPREE-TCGTCHGSGAKPGTKPDTCSHCGGSGQLNVEQ 172
+                           4455555556653.445799999999****************9985 PP
+
+  == domain 2  score: 4.1 bits;  conditional E-value: 0.13
+        NFECIMNI_00027  71 qchaclvsggtreqvclvcggtgkl 95 
+                            c+ c  +g   +q c  c+g gk+
+  sp|Q5WHG0|DNAJ_SHOC1 184 VCNYCEGTGKIIKQKCATCSGKGKV 208
+                           4888999999999999999999986 PP
+
+  == domain 3  score: -0.8 bits;  conditional E-value: 4.2
+        NFECIMNI_00027  18 hlqvrsvspeqskklvsniv 37 
+                           h+qvr v+p+   +    ++
+  sp|Q5WHG0|DNAJ_SHOC1 324 HVQVRVVTPKNLTENEKELM 343
+                           99999999965433333333 PP
+
+>> sp|Q740Y1|CPFC_MYCPA  Coproporphyrin III ferrochelatase OS=Mycolicibacterium paratuberculosis (strain ATCC BAA-968 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   0.00028       3.9      30      87 ..     188     245 ..     163     254 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 0.00028
+        NFECIMNI_00027  30 kklvsnivrmsaelaaeleavdagwqpqsqppqprptstevqcha.clvsggtreqvcl 87 
+                            + v+   r+ a  a      d  wq +s ppq r    +v  h  +l  +gtr  +  
+  sp|Q740Y1|CPFC_MYCPA 188 SRQVAYAARLVAAAA-GYAEHDLVWQSRSGPPQVRWLEPDVADHLrALAESGTRAVIVC 245
+                           344445555555443.34456999******************99637888999976433 PP
+
+>> sp|A7GT07|DNAJ_BACCN  Chaperone protein DnaJ OS=Bacillus cytotoxicus (strain DSM 22905 / CIP 110041 / 391-98 / NVH 39
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.5   0.00013       1.8      61      99 ..     136     171 ..     100     175 .. 0.76
+   2 ?    3.9   1.9      0.14   1.9e+03      71      95 ..     183     207 ..     170     211 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.00013
+        NFECIMNI_00027  61 pqprptstevqchaclvsggtreqvclvcggtgklsidm 99 
+                           p   p  t   ch      gt ++ c  c+gtg++s+++
+  sp|A7GT07|DNAJ_BACCN 136 PVEDPCDT---CHGSGAKPGTTKETCKYCSGTGQISVEQ 171
+                           44455444...99999999*****************985 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.14
+        NFECIMNI_00027  71 qchaclvsggtreqvclvcggtgkl 95 
+                            c+ c  +g   ++ c  c gtgk+
+  sp|A7GT07|DNAJ_BACCN 183 TCRHCSGTGQMIKEKCTTCHGTGKV 207
+                           588899999999999********97 PP
+
+>> sp|Q31NH0|RECR_SYNE7  Recombination protein RecR OS=Synechococcus elongatus (strain ATCC 33912 / PCC 7942 / FACHB-805
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.1   0.00024       3.4      15      91 ..      11      89 ..       3      99 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 0.00024
+        NFECIMNI_00027 15 llshlq.vrsvspeqskklvsniv.rmsaelaaeleavdagwqpqsqppqprptstevqchaclvsggtreqvclvcgg 91
+                          l+ hlq +  v p+ +++l  +++ r  ae+aa  ea+ a+ q      +    s+e  c+ c       + +c+v+  
+  sp|Q31NH0|RECR_SYNE7 11 LIEHLQkLPGVGPKTAQRLALHLIqRPEAEIAAFAEALLAAKQQVGHCQRCFHLSSEDLCNICRDPKRDAQTICVVADP 89
+                          7899984578*********988763789***************9999999999**********9999999999999765 PP
+
+>> sp|Q5N5P2|RECR_SYNP6  Recombination protein RecR OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.1   0.00024       3.4      15      91 ..      11      89 ..       3      99 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 0.00024
+        NFECIMNI_00027 15 llshlq.vrsvspeqskklvsniv.rmsaelaaeleavdagwqpqsqppqprptstevqchaclvsggtreqvclvcgg 91
+                          l+ hlq +  v p+ +++l  +++ r  ae+aa  ea+ a+ q      +    s+e  c+ c       + +c+v+  
+  sp|Q5N5P2|RECR_SYNP6 11 LIEHLQkLPGVGPKTAQRLALHLIqRPEAEIAAFAEALLAAKQQVGHCQRCFHLSSEDLCNICRDPKRDAQTICVVADP 89
+                          7899984578*********988763789***************9999999999**********9999999999999765 PP
+
+>> sp|P00306|PHCA_GALSU  C-phycocyanin alpha chain OS=Galdieria sulphuraria OX=130081 GN=cpcA PE=1 SV=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.0   0.00018       2.5       5      95 ..      17     107 ..      14     111 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 0.00018
+        NFECIMNI_00027   5 qfvqdtaqkillshlqvrsvspeqskklvsnivrmsaelaaeleavdagwqpqsqppqprptstevqchaclvsggt..r.eqvclvcg 90 
+                           +f+ +t  + +  + q  + s e ++ l sn  r+        +av + +   sq p p+  s+ v    c    g   r    clv g
+  sp|P00306|PHCA_GALSU  17 RFLSNTELQAVNGRYQRAAASLEAARSLTSNAERLIN---GAAQAVYSKFPYTSQMPGPQYASSAVGKAKCARDIGYylRmVTYCLVVG 102
+                           5777888788888889899999**********99864...445799999999************99999998776641121456***** PP
+
+        NFECIMNI_00027  91 gtgkl 95 
+                           gtg +
+  sp|P00306|PHCA_GALSU 103 GTGPM 107
+                           ***86 PP
+
+>> sp|Q1GTW7|ILVD_SPHAL  Dihydroxy-acid dehydratase OS=Sphingopyxis alaskensis (strain DSM 13593 / LMG 18877 / RB2256) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   0.00031       4.3      40      84 ..     565     608 ..     550     618 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 0.00031
+        NFECIMNI_00027  40 saelaaeleav.dagwqpqsqppqprptstevqchaclvsggtreq 84 
+                            ae  a +ea  da+wqp    p+pr  s  +q++a++ +++ r  
+  sp|Q1GTW7|ILVD_SPHAL 565 LAERRAAMEAKgDAAWQPA--KPRPRKVSVALQAYAAMTTSAARGA 608
+                           4666777777449****96..599*************999887765 PP
+
+>> sp|Q9LYF6|AGP15_ARATH  Arabinogalactan protein 15 OS=Arabidopsis thaliana OX=3702 GN=AGP15 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.0   0.00013       1.8      55      91 ..      21      57 ..       3      61 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 0.00013
+         NFECIMNI_00027 55 qpqsqppqprptstevqchaclvsggtreqvclvcgg 91
+                             qs+ p p pts      a +vs+g     +lv g+
+  sp|Q9LYF6|AGP15_ARATH 21 SAQSEAPAPSPTSGSSAISASFVSAGVAAVAALVFGS 57
+                           5799************************999999986 PP
+
+>> sp|Q9BE65|PEX26_MACFA  Peroxisome assembly protein 26 OS=Macaca fascicularis OX=9541 GN=PEX26 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.1   0.00034       4.7      38      78 ..      46      89 ..      28      96 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 0.00034
+         NFECIMNI_00027 38 rmsaelaaeleavdagwqp...qsqppqprptstevqchaclvs 78
+                            +  ++ a le  + +wq     + p +p  ts ev+c  c+v 
+  sp|Q9BE65|PEX26_MACFA 46 VVHLDFRAALETCERAWQSlanHALPEEPAGTSLEVKCSLCVVG 89
+                           556678899*********8222456999*************985 PP
+
+>> sp|Q9KWS6|DNAJ_PARTM  Chaperone protein DnaJ OS=Parageobacillus thermoglucosidasius OX=1426 GN=dnaJ PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   1.0   0.00029       4.1      63      99 ..     143     178 ..     113     182 .. 0.80
+   2 ?    5.2   2.0     0.056   7.7e+02      70      95 ..     186     214 ..     177     218 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 0.00029
+        NFECIMNI_00027  63 prptstevqchaclvsggtreqvclvcggtgklsidm 99 
+                           pr   t   ch      gt+++ c  c gtg++s ++
+  sp|Q9KWS6|DNAJ_PARTM 143 PREE-TCNTCHGTGAKPGTKKETCSYCHGTGQISTEQ 178
+                           4433.334699999999****************9875 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.056
+        NFECIMNI_00027  70 vqchaclvsggtreqv...clvcggtgkl 95 
+                           v  + c   ggt + +   c  cggtg++
+  sp|Q9KWS6|DNAJ_PARTM 186 VNRRTCPYCGGTGQYIkerCTTCGGTGRV 214
+                           5556666677776543333********87 PP
+
+>> sp|B0U833|DNAJ_METS4  Chaperone protein DnaJ OS=Methylobacterium sp. (strain 4-46) OX=426117 GN=dnaJ PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.4    0.0017        23      67      95 ..     148     179 ..     129     183 .. 0.84
+   2 ?    4.3   0.3      0.11   1.5e+03      69      96 ..     189     216 ..     186     221 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 0.0017
+        NFECIMNI_00027  67 stevqchaclvsg...gtreqvclvcggtgkl 95 
+                            t v c+ c  sg   g++ +vc  cgg g++
+  sp|B0U833|DNAJ_METS4 148 PTSVTCEVCAGSGakaGSKPRVCPTCGGYGRV 179
+                           4678899999887555899**********986 PP
+
+  == domain 2  score: 4.3 bits;  conditional E-value: 0.11
+        NFECIMNI_00027  69 evqchaclvsggtreqvclvcggtgkls 96 
+                           e  c  c   g   +  c  cgg g+++
+  sp|B0U833|DNAJ_METS4 189 ERTCPNCQGRGEIIDDPCAACGGAGRVT 216
+                           56789999999999***********986 PP
+
+>> sp|A0A0Q3PY21|VRN2_BRADI  Protein VERNALIZATION 2 OS=Brachypodium distachyon OX=15368 GN=VRN2 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.3   0.0     0.051   7.1e+02      51      83 ..      46      77 ..      39      84 .. 0.83
+   2 ?    5.7   0.0      0.04   5.6e+02      55      81 ..     181     207 ..     148     214 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 5.3 bits;  conditional E-value: 0.051
+            NFECIMNI_00027 51 dagwqpqsqppqprptstevqchaclvsggtre 83
+                               a+w     pp p+p   + q+ a ++ gg r 
+  sp|A0A0Q3PY21|VRN2_BRADI 46 AAAWLRLDNPPLPQPAEHD-QAAAGMIHGGHRH 77
+                              6899999********8765.8889999999885 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.04
+            NFECIMNI_00027  55 qpqsqppqprptstevqchaclvsggt 81 
+                                  + pp p p+   +   +c+ s+gt
+  sp|A0A0Q3PY21|VRN2_BRADI 181 PGSAAPPSPPPSGPRIYIASCFKSNGT 207
+                               45678*******************998 PP
+
+>> sp|C4L424|DNAJ_EXISA  Chaperone protein DnaJ OS=Exiguobacterium sp. (strain ATCC BAA-1283 / AT1b) OX=360911 GN=dnaJ P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.8   0.00073        10      67      98 ..     134     168 ..     122     171 .. 0.87
+   2 ?    3.9   0.5      0.14   1.9e+03      71      95 ..     181     205 ..     175     211 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00073
+        NFECIMNI_00027  67 stevqchaclvsg...gtreqvclvcggtgklsid 98 
+                             ev+c  c+ sg   gt+ + c  cgg+g  +++
+  sp|C4L424|DNAJ_EXISA 134 EIEVECDTCMGSGakpGTKPETCNRCGGSGVETVE 168
+                           579*******9997779************987665 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.14
+        NFECIMNI_00027  71 qchaclvsggtreqvclvcggtgkl 95 
+                            c  c  sg t ++ c  c g+g +
+  sp|C4L424|DNAJ_EXISA 181 PCSQCHGSGKTIKEKCPTCHGSGHV 205
+                           5888999**************9976 PP
+
+>> sp|Q0VCA7|OXSM_BOVIN  3-oxoacyl-[acyl-carrier-protein] synthase, mitochondrial OS=Bos taurus OX=9913 GN=OXSM PE=2 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   0.00068       9.5      39      63 ..     121     145 ..     102     154 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00068
+        NFECIMNI_00027  39 msaelaaeleavdagwqpqsqppqp 63 
+                           + a  aael   dagw pqs+  q 
+  sp|Q0VCA7|OXSM_BOVIN 121 VMAIAAAELALKDAGWHPQSEADQA 145
+                           3466799*************98875 PP
+
+>> sp|P59858|PHCA_POLUR  R-phycocyanin alpha chain OS=Polysiphonia urceolata OX=65404 GN=rpcA PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   0.00039       5.4       4      95 ..      16     107 ..      13     112 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00039
+        NFECIMNI_00027   4 kqfvqdtaqkillshlqvrsvspeqskklvsnivrmsaelaaeleavdagwqpqsqppqprptstevqchaclvsggt..r.eqvclvc 89 
+                            +f+ +t  +++  +    + s e +k l +n  r+ +       av + +   +q p p+ +st +    c    g   r    clv 
+  sp|P59858|PHCA_POLUR  16 GRFLSNTELQVVNGRYNRATSSLEAAKALTANADRLISG---AANAVYSKFPYTTQMPGPNYSSTAIGKAKCARDIGYylRmVTYCLVV 101
+                           5688888888888777777788899999****9998654...457999999999************9999998776641121456**** PP
+
+        NFECIMNI_00027  90 ggtgkl 95 
+                           ggtg +
+  sp|P59858|PHCA_POLUR 102 GGTGPM 107
+                           ****86 PP
+
+>> sp|O60810|PRAM4_HUMAN  PRAME family member 4 OS=Homo sapiens OX=9606 GN=PRAMEF4 PE=2 SV=5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   0.00068       9.5      11      37 ..     236     263 ..     232     273 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00068
+         NFECIMNI_00027  11 aqkillshlqv.rsvspeqskklvsniv 37 
+                             qk++lsh+ v r vspeq k++v+ + 
+  sp|O60810|PRAM4_HUMAN 236 LQKLILSHMDVsRYVSPEQKKEIVTQFT 263
+                            69*******99688*********99876 PP
+
+>> sp|Q5SRR4|LY65C_HUMAN  Lymphocyte antigen 6 complex locus protein G5c OS=Homo sapiens OX=9606 GN=LY6G5C PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00044       6.1      58      88 ..      48      76 ..      22      91 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00044
+         NFECIMNI_00027 58 sqppqprptstevqchaclvsggtreqvclv 88
+                            +ppqp p    ++c+ cl+   t+e  cl+
+  sp|Q5SRR4|LY65C_HUMAN 48 WEPPQPLPFPKYLRCYRCLLE--TKELGCLL 76
+                           379****************96..88888886 PP
+
+>> sp|B8AIC3|STAD3_ORYSI  Acyl-[acyl-carrier-protein] desaturase 3, chloroplastic OS=Oryza sativa subsp. indica OX=39946
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.1   0.00068       9.5      21      69 ..      62     111 ..      58     138 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00068
+         NFECIMNI_00027  21 vrsvspeqskklvsnivrmsae.laaeleavdagwqpqsqppqprptste 69 
+                            v    p + k++  ++   +a+ +   l+ v+ +wqpq   p pr  s  
+  sp|B8AIC3|STAD3_ORYSI  62 VTHTLPPEKKEVFDSLEGWAADtILPYLKPVEESWQPQDHLPDPRSPSFG 111
+                            5556677778888888888887355789*****************87754 PP
+
+>> sp|B9F058|STAD3_ORYSJ  Acyl-[acyl-carrier-protein] desaturase 3, chloroplastic OS=Oryza sativa subsp. japonica OX=399
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.1   0.00068       9.5      21      69 ..      62     111 ..      58     138 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00068
+         NFECIMNI_00027  21 vrsvspeqskklvsnivrmsae.laaeleavdagwqpqsqppqprptste 69 
+                            v    p + k++  ++   +a+ +   l+ v+ +wqpq   p pr  s  
+  sp|B9F058|STAD3_ORYSJ  62 VTHTLPPEKKEVFDSLEGWAADtILPYLKPVEESWQPQDHLPDPRSPSFG 111
+                            5556677778888888888887355789*****************87754 PP
+
+>> sp|Q13287|NMI_HUMAN  N-myc-interactor OS=Homo sapiens OX=9606 GN=NMI PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.1    0.0017        24       8      59 ..       5      56 ..       2      75 .. 0.87
+   2 ?   -1.7   0.0       8.2   1.1e+05      13      32 ..     120     139 ..     107     154 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 0.0017
+       NFECIMNI_00027  8 qdtaqkillshlqvrsvspeqskklvsnivrmsaelaaeleavdagwqpqsq 59
+                         +d  q+il  h   + +  eq+k l+  i + + +l  e++ ++   q  ++
+  sp|Q13287|NMI_HUMAN  5 KDDTQQILKEHSPDEFIKDEQNKGLIDEITKKNIQLKKEIQKLETELQEATK 56
+                         578899**********************************999987776655 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 8.2
+       NFECIMNI_00027  13 killshlqvrsvspeqskkl 32 
+                           +   h+q++ v+ e + k 
+  sp|Q13287|NMI_HUMAN 120 SMSKHHVQIKDVNLEVTAKP 139
+                          33445777777777766554 PP
+
+>> sp|A8IPT0|DNAJ_AZOC5  Chaperone protein DnaJ OS=Azorhizobium caulinodans (strain ATCC 43989 / DSM 5975 / JCM 20966 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.1   0.6    0.0035        49      67      95 ..     144     175 ..     129     179 .. 0.81
+   2 ?    5.4   0.2      0.05   6.9e+02      69      96 ..     185     212 ..     181     218 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 9.1 bits;  conditional E-value: 0.0035
+        NFECIMNI_00027  67 stevqchaclvsg...gtreqvclvcggtgkl 95 
+                            t + c+ c  sg   gt+ + c  c+g gk+
+  sp|A8IPT0|DNAJ_AZOC5 144 PTSISCEVCSGSGakaGTQPKTCRTCNGAGKI 175
+                           35678888887765559*************97 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.05
+        NFECIMNI_00027  69 evqchaclvsggtreqvclvcggtgkls 96 
+                           e  c +c   g   e  c  cgg g+++
+  sp|A8IPT0|DNAJ_AZOC5 185 ERTCPSCQGRGTVIEDPCPNCGGAGRVT 212
+                           66799********************986 PP
+
+>> sp|Q49Y21|DNAJ_STAS1  Chaperone protein DnaJ OS=Staphylococcus saprophyticus subsp. saprophyticus (strain ATCC 15305 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.9    0.0015        21      68      99 ..     144     178 ..     137     182 .. 0.86
+   2 ?    4.2   0.8      0.11   1.6e+03      68      94 ..     187     213 ..     183     221 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 0.0015
+        NFECIMNI_00027  68 tevqchaclvsg...gtreqvclvcggtgklsidm 99 
+                            +v ch c   g   gt+++ c  c+g+g +s+++
+  sp|Q49Y21|DNAJ_STAS1 144 KDVACHTCDGEGakpGTKKKTCHYCNGSGHVSVEQ 178
+                           5799****87765559***************9975 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.11
+        NFECIMNI_00027  68 tevqchaclvsggtreqvclvcggtgk 94 
+                           te  c  c  sg   e+ c  c g g 
+  sp|Q49Y21|DNAJ_STAS1 187 TEKVCPVCSGSGQEFEEPCPTCHGKGT 213
+                           778899999999999999999988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (105 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     19168  (0.0335185); expected 11437.3 (0.02)
+Passed bias filter:                    15172  (0.0265308); expected 11437.3 (0.02)
+Passed Vit filter:                      1316  (0.00230125); expected 571.9 (0.001)
+Passed Fwd filter:                       226  (0.000395199); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              41  [number of targets reported over threshold]
+# CPU time: 2.23u 0.49s 00:00:02.72 Elapsed: 00:00:01.29
+# Mc/sec: 16771.80
+//
+[ok]

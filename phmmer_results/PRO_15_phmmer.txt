@@ -1,0 +1,186 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_15.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00015  [L=676]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    1.9e-27  100.7   0.0    3.7e-27   99.8   0.0    1.4  1  sp|Q9P9T5|Y1569_XYLFA  Uncharacterized protein XF_1569/XF_167
+  ------ inclusion threshold ------
+        1.4   12.0   0.0        1.5   11.8   0.0    1.0  1  sp|B3R7S2|RL4_CUPTR    Large ribosomal subunit protein uL4 OS
+        1.4   12.0   0.0        1.5   11.8   0.0    1.0  1  sp|Q46WE5|RL4_CUPPJ    Large ribosomal subunit protein uL4 OS
+        1.6   11.8   0.0        1.8   11.6   0.0    1.0  1  sp|Q1LI38|RL4_CUPMC    Large ribosomal subunit protein uL4 OS
+        1.7   11.7   0.2        2.5   11.1   0.0    1.3  2  sp|Q11IJ6|PYRH_CHESB   Uridylate kinase OS=Chelativorans sp. 
+        3.7   10.5   0.0        4.4   10.3   0.0    1.0  1  sp|Q0K620|RL4_CUPNH    Large ribosomal subunit protein uL4 OS
+        4.5   10.3   0.0        5.4   10.0   0.0    1.0  1  sp|A6TSK3|YBEY_ALKMQ   Endoribonuclease YbeY OS=Alkaliphilus 
+        4.9   10.1   0.0        5.7    9.9   0.0    1.0  1  sp|Q112E8|PSB28_TRIEI  Photosystem II reaction center Psb28 p
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q9P9T5|Y1569_XYLFA  Uncharacterized protein XF_1569/XF_1674 OS=Xylella fastidiosa (strain 9a5c) OX=160492 GN=XF_15
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   99.8   0.0   5.1e-32   3.7e-27     170     481 ..      23     314 ..       6     316 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 99.8 bits;  conditional E-value: 5.1e-32
+         NFECIMNI_00015 170 eifskwcfeiqmgfkfqmqdfhaiifefcqkivngeidrgivcipprhsktqilsiflplysfcnnpsshniitsyaddvvaessgyi 257
+                             +f+++ f+ ++ ++f++   h +i      ++ g     ++ +pp  skt++++i +    ++ np ++ +  sy+dd+   +s   
+  sp|Q9P9T5|Y1569_XYLFA  23 LFFTRYFFKQRQQLRFRVNWHHHVIAGVVDDVIAGRRKDVVINVPPGSSKTELVAINVMARGLALNPYARFLHISYSDDLALLNSETA 110
+                            57999*******************************9999************************************************ PP
+
+         NFECIMNI_00015 258 rqimldslfqkvfpavridqnkrslerwgtt....rsgvmhavptggkmtgkgagslstvysgcfvvddaikpkdaysnqvrkeindr 341
+                            r+i+    ++ ++p  +i  + +s +rw+      ++g ++av  gg++tg  ag ++  + g++++dd +k +days   r + n +
+  sp|Q9P9T5|Y1569_XYLFA 111 REIVQSDEYRALWPL-EIADDAKSKKRWNVVvdgkKAGGVYAVSLGGQVTGFRAGHMAPGWQGAIIIDDPLKVEDAYSKTGRSKANRK 197
+                            *************96.566677899***975333377899************************************************ PP
+
+         NFECIMNI_00015 342 fdntfmsrlandgvvtaddgslvkcprtpmviimqrvhdedlvgyllrggssdkytylnipgivtpecgtekwyntlctkqaythavp 429
+                            + +t  sr a               p tp+++imqr+  +d  g++  gg    +  + ip+++         y +   +    +   
+  sp|Q9P9T5|Y1569_XYLFA 198 LVSTVKSRKA--------------SPDTPIIVIMQRLAQDDPTGFIQSGGFPGAWECIEIPALIDDA------YVSRLPEHVQGQV-- 263
+                            9999999976..............489***********************************99643......4444444444444.. PP
+
+         NFECIMNI_00015 430 ylydlkrgagesalwpsrksleslismrsatpytfnsqymgdptargtglic 481
+                             + d +   g  + wp ++ l  l+++++   y f+ qy+  p+  g g+i 
+  sp|Q9P9T5|Y1569_XYLFA 264 -VRDAQDQDGRYSYWPYKEPLAELLALEATDRYVFSGQYQQRPSPLGGGIIK 314
+                            .568888899**************************************9985 PP
+
+>> sp|B3R7S2|RL4_CUPTR  Large ribosomal subunit protein uL4 OS=Cupriavidus taiwanensis (strain DSM 17343 / BCRC 17206 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   2.1e-05       1.5     274     399 ..      38     164 ..      16     185 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 2.1e-05
+       NFECIMNI_00015 274 ridqnkrslerwgttrsgvmhav..ptggkmtgkgag..slstvysgcfvvddaikpkdaysnqvrkeindrfdntfmsrlandgvvtad 359
+                              n rs  r    r  v h    p   k tg++ +  s s ++ g   +     p++ +s +v+k++      ++ s+la +g +   
+  sp|B3R7S2|RL4_CUPTR  38 AYQANARSGNRKQKDREEVKHTTkkPWRQKGTGRARAgmSSSPLWRGGGRIF-PNSPEENFSQKVNKKMFRAGMRSIYSQLAREGRINVV 126
+                          4567888999999999999998623555666776544123345676665554.347999**********999999*************** PP
+
+       NFECIMNI_00015 360 dgslvkcprtpmviimqrvhdedlvgyllrggssdkytyl 399
+                          dg  v +p+t ++    +     l + l+   s d+  yl
+  sp|B3R7S2|RL4_CUPTR 127 DGFTVDAPKTKLLADKFKAM--GLDSVLIITDSLDENLYL 164
+                          **********9876544444..344445555556655555 PP
+
+>> sp|Q46WE5|RL4_CUPPJ  Large ribosomal subunit protein uL4 OS=Cupriavidus pinatubonensis (strain JMP 134 / LMG 1197) OX
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   2.1e-05       1.5     274     399 ..      38     164 ..      16     185 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 2.1e-05
+       NFECIMNI_00015 274 ridqnkrslerwgttrsgvmhav..ptggkmtgkgag..slstvysgcfvvddaikpkdaysnqvrkeindrfdntfmsrlandgvvtad 359
+                              n rs  r    r  v h    p   k tg++ +  s s ++ g   +     p++ +s +v+k++      ++ s+la +g +   
+  sp|Q46WE5|RL4_CUPPJ  38 AYQANARSGNRKQKDREEVKHTTkkPWRQKGTGRARAgmSSSPLWRGGGRIF-PNSPEENFSQKVNKKMFRAGMRSIYSQLAREGRINVV 126
+                          4567888999999999999998623555666776544123345676665554.347999**********999999*************** PP
+
+       NFECIMNI_00015 360 dgslvkcprtpmviimqrvhdedlvgyllrggssdkytyl 399
+                          dg  v +p+t ++    +     l + l+   s d+  yl
+  sp|Q46WE5|RL4_CUPPJ 127 DGFTVDAPKTKLLADKFKAM--GLDSVLIITDSLDENLYL 164
+                          **********9876544444..344445555556655555 PP
+
+>> sp|Q1LI38|RL4_CUPMC  Large ribosomal subunit protein uL4 OS=Cupriavidus metallidurans (strain ATCC 43123 / DSM 2839 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   2.5e-05       1.8     274     379 ..      38     146 ..      15     184 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2.5e-05
+       NFECIMNI_00015 274 ridqnkrslerwgttrsgvmhav..ptggkmtgkgag..slstvysgcfvvddaikpkdaysnqvrkeindrfdntfmsrlandgvvtad 359
+                              n rs  r    r  v h    p   k tg++ +  s s ++ g   +     p++ +s +v+k++      ++ s+la +g +   
+  sp|Q1LI38|RL4_CUPMC  38 AYQANARSGNRKQKDREEVKHTTkkPWRQKGTGRARAgmSSSPLWRGGGRIF-PNSPEENFSQKVNKKMFRAGMRSIYSQLAREGRINVV 126
+                          4567889999999999999998723556666776544123345676665554.347999**********999999*************** PP
+
+       NFECIMNI_00015 360 dgslvkcprtpmviimqrvh 379
+                          dg  v +p+t ++    +  
+  sp|Q1LI38|RL4_CUPMC 127 DGFAVDAPKTKLLADKFKAM 146
+                          **********9876544444 PP
+
+>> sp|Q11IJ6|PYRH_CHESB  Uridylate kinase OS=Chelativorans sp. (strain BNC1) OX=266779 GN=pyrH PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.6   0.1         1   7.2e+04     288     315 ..      56      83 ..      29      87 .. 0.80
+   2 ?   11.1   0.0   3.5e-05       2.5     303     392 ..     140     230 ..     111     235 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -3.6 bits;  conditional E-value: 1
+        NFECIMNI_00015 288 trsgvmhavptggkmtgkgagslstvys 315
+                              gv  a   g ++tg   g l+tv +
+  sp|Q11IJ6|PYRH_CHESB  56 IFRGVAVASKGGDRVTGDHMGMLATVIN 83 
+                           5567777888888999999999999875 PP
+
+  == domain 2  score: 11.1 bits;  conditional E-value: 3.5e-05
+        NFECIMNI_00015 303 tgkgagslstvysgcfvvddaikpkdaysnqvrkeind.rfdntfmsrlandgvvtaddgslvkcprtpmviimqrvhdedlvgyllrg 390
+                           t  +a++l     g+  +    +    ys   rk+ n  r+d+    ++  dg+   d +++  + +  + ii+  +h+    g +lrg
+  sp|Q11IJ6|PYRH_CHESB 140 TTDSAAALRAAEIGADALFKGTQVDGVYSADPRKDANAvRYDHITHDQVIRDGLAIMDTAAIALARENNIPIIVFSIHEAGGFGAILRG 228
+                           555666777777777777777788889*********9659*********************999999999999**************** PP
+
+        NFECIMNI_00015 391 gs 392
+                           g 
+  sp|Q11IJ6|PYRH_CHESB 229 GG 230
+                           96 PP
+
+>> sp|Q0K620|RL4_CUPNH  Large ribosomal subunit protein uL4 OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   6.1e-05       4.4     275     399 ..      39     164 ..      25     185 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 6.1e-05
+       NFECIMNI_00015 275 idqnkrslerwgttrsgvmhav..ptggkmtgkgag..slstvysgcfvvddaikpkdaysnqvrkeindrfdntfmsrlandgvvtadd 360
+                             n rs  r    r  v h    p   k tg++ +  s s ++ g   +     p++ ++ +v+k++      ++ s+la +g +   d
+  sp|Q0K620|RL4_CUPNH  39 YQANARSGNRKQKDREEVKHTTkkPWRQKGTGRARAgmSSSPLWRGGGRIF-PNSPEENFTQKVNKKMFRAGMRSIYSQLAREGRINVVD 127
+                          566888888999999999998622555666666543123345666655543.34699999999999999999999*************** PP
+
+       NFECIMNI_00015 361 gslvkcprtpmviimqrvhdedlvgyllrggssdkytyl 399
+                          g  v +p+t ++    +     l + l+   s d+  yl
+  sp|Q0K620|RL4_CUPNH 128 GFTVDAPKTKLLADKFKAM--GLDSVLIITDSLDENLYL 164
+                          *********9876544444..344445555556655555 PP
+
+>> sp|A6TSK3|YBEY_ALKMQ  Endoribonuclease YbeY OS=Alkaliphilus metalliredigens (strain QYMF) OX=293826 GN=ybeY PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   7.5e-05       5.4     122     200 ..      54     133 ..      41     145 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 7.5e-05
+        NFECIMNI_00015 122 eavsraiqgkpsmveeilsspltvdvdqitvedanrvretllcpekgfeifskw..cfeiqmgfkfqmqdfhaiifefcqk 200
+                           + ++r  +gk     ++ls pl  d d + + +   + + ++  ek+ e   ++   fe +mgf +    fh + ++  ++
+  sp|A6TSK3|YBEY_ALKMQ  54 QNLNRTYRGKDY-ATDVLSFPLVDDTDGFPMGEEKLLGDVVISVEKAVEQAKEYqhSFEREMGFLMVHSLFHLMGYDHLEE 133
+                           557899999975.678*********************************988764479*******9999999998887665 PP
+
+>> sp|Q112E8|PSB28_TRIEI  Photosystem II reaction center Psb28 protein OS=Trichodesmium erythraeum (strain IMS101) OX=20
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.0     8e-05       5.7     568     629 ..      32      90 ..      23     103 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 8e-05
+         NFECIMNI_00015 568 talyledkssgqflnqqftrdgnihvmpvpkdktsgdkiarflnsvpywaqgkfvmpaehkh 629
+                            t ++ + k+ gq + q++t    ++++      ts d  arf+n  p + +g +vm  +++ 
+  sp|Q112E8|PSB28_TRIEI  32 TLIFEDPKALGQDVTQEIT---GMYMIDEEGQITSRDVKARFVNGQPKFLEGLYVMKTKQEW 90 
+                            6667777899999999998...47888889999***********************987654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (676 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     12724  (0.02225); expected 11437.3 (0.02)
+Passed bias filter:                    11605  (0.0202933); expected 11437.3 (0.02)
+Passed Vit filter:                       786  (0.00137445); expected 571.9 (0.001)
+Passed Fwd filter:                         8  (1.39893e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               8  [number of targets reported over threshold]
+# CPU time: 6.21u 0.39s 00:00:06.60 Elapsed: 00:00:02.70
+# Mc/sec: 51656.93
+//
+[ok]

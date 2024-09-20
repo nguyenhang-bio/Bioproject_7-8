@@ -1,0 +1,210 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_37.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00037  [L=58]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+       0.87   14.8  13.3    6.2e+03    2.8   0.1    6.8  7  sp|P21787|P320_TRYBB  Microtubule-associated protein P320 (Fr
+       0.87   14.8   0.2    4.3e+02    6.4   0.1    3.0  2  sp|Q02473|PRSA_LACPA  Foldase protein PrsA OS=Lacticaseibacil
+        1.1   14.5   0.0         10   11.4   0.1    2.5  2  sp|Q8L633|RNZ2_ARATH  tRNase Z TRZ2, chloroplastic OS=Arabido
+        1.6   14.0   0.1        8.3   11.7   0.0    2.3  2  sp|O49413|IWS2_ARATH  Protein IWS1 homolog 2 OS=Arabidopsis t
+        3.5   12.9   0.1    4.2e+02    6.4   0.0    3.0  2  sp|P0C2B5|PRSA_LACLC  Foldase protein PrsA OS=Lactococcus lac
+        3.7   12.8   0.1    4.2e+02    6.4   0.0    3.0  2  sp|Q02VE3|PRSA_LACLS  Foldase protein PrsA OS=Lactococcus lac
+        4.7   12.5   0.0      1e+03    5.2   0.0    2.6  2  sp|Q310Z1|RNC_OLEA2   Ribonuclease 3 OS=Oleidesulfovibrio ala
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P21787|P320_TRYBB  Microtubule-associated protein P320 (Fragment) OS=Trypanosoma brucei brucei OX=5702 PE=4 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.8   0.1     0.075   6.2e+03      27      52 ..      28      53 ..       3      58 .. 0.84
+   2 ?    2.4   0.0       0.1   8.2e+03      28      52 ..      67      91 ..      59      96 .. 0.85
+   3 ?    2.4   0.0       0.1   8.2e+03      28      52 ..     105     129 ..      97     134 .. 0.85
+   4 ?    2.5   0.0     0.097   7.9e+03      28      52 ..     143     167 ..     135     172 .. 0.84
+   5 ?    2.4   0.0       0.1   8.2e+03      28      52 ..     181     205 ..     173     210 .. 0.85
+   6 ?    2.4   0.0       0.1   8.2e+03      28      52 ..     219     243 ..     211     248 .. 0.85
+   7 ?    2.4   0.0      0.11   8.6e+03      28      52 ..     257     281 ..     249     285 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 2.8 bits;  conditional E-value: 0.075
+        NFECIMNI_00037 27 fahqkykrsqgvqyreskvvdkpntt 52
+                            h+ yk     +yr+ + v +  tt
+  sp|P21787|P320_TRYBB 28 TTHEAYKPIDPSEYRQKRTVGEEVTT 53
+                          479***************99887776 PP
+
+  == domain 2  score: 2.4 bits;  conditional E-value: 0.1
+        NFECIMNI_00037 28 ahqkykrsqgvqyreskvvdkpntt 52
+                           h+ yk     +yr+ + v +  tt
+  sp|P21787|P320_TRYBB 67 THEAYKPIDPSEYRQKRTVGEEVTT 91
+                          799**************99888777 PP
+
+  == domain 3  score: 2.4 bits;  conditional E-value: 0.1
+        NFECIMNI_00037  28 ahqkykrsqgvqyreskvvdkpntt 52 
+                            h+ yk     +yr+ + v +  tt
+  sp|P21787|P320_TRYBB 105 THEAYKPIDPSEYRQKRTVGEEVTT 129
+                           799**************99888777 PP
+
+  == domain 4  score: 2.5 bits;  conditional E-value: 0.097
+        NFECIMNI_00037  28 ahqkykrsqgvqyreskvvdkpntt 52 
+                            h+ yk     +yr+ + v +  tt
+  sp|P21787|P320_TRYBB 143 THEAYKPIDPSEYRQKRTVGEEVTT 167
+                           799**************99887776 PP
+
+  == domain 5  score: 2.4 bits;  conditional E-value: 0.1
+        NFECIMNI_00037  28 ahqkykrsqgvqyreskvvdkpntt 52 
+                            h+ yk     +yr+ + v +  tt
+  sp|P21787|P320_TRYBB 181 THEAYKPIDPSEYRQKRTVGEEVTT 205
+                           799**************99888777 PP
+
+  == domain 6  score: 2.4 bits;  conditional E-value: 0.1
+        NFECIMNI_00037  28 ahqkykrsqgvqyreskvvdkpntt 52 
+                            h+ yk     +yr+ + v +  tt
+  sp|P21787|P320_TRYBB 219 THEAYKPIDPSEYRQKRTVGEEVTT 243
+                           799**************99888777 PP
+
+  == domain 7  score: 2.4 bits;  conditional E-value: 0.11
+        NFECIMNI_00037  28 ahqkykrsqgvqyreskvvdkpntt 52 
+                            h+ yk     +yr+ + v +  tt
+  sp|P21787|P320_TRYBB 257 THEAYKPIDPSEYRQKRTVGEEVTT 281
+                           799**************99887776 PP
+
+>> sp|Q02473|PRSA_LACPA  Foldase protein PrsA OS=Lacticaseibacillus paracasei OX=1597 GN=prsA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   0.0     0.013   1.1e+03      10      40 ..     188     218 ..     179     228 .. 0.76
+   2 ?    6.4   0.1    0.0053   4.3e+02       8      46 ..     234     273 ..     229     283 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.013
+        NFECIMNI_00037  10 nkqgkvlfsstrk.ldtvfahqkykrsqgvqy 40 
+                           +  gk+ f s +k ld  f    yk   g  y
+  sp|Q02473|PRSA_LACPA 188 DNGGKISFESNNKtLDATFKDAAYKLKNGD-Y 218
+                           5679**998765549*********998874.4 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.0053
+        NFECIMNI_00037   8 lvnkqgkvlfsstrkldtvfahqkykrsqgvqyre.skvv 46 
+                           ++n  +k  f+s++k  t   + k+ r  ++  r  s+v+
+  sp|Q02473|PRSA_LACPA 234 MINHPAKGTFTSSKKALTASVYAKWSRDSSIMQRViSQVL 273
+                           789999*********************9999887524444 PP
+
+>> sp|Q8L633|RNZ2_ARATH  tRNase Z TRZ2, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=TRZ2 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0         2   1.7e+05      12      42 ..     115     145 ..     113     155 .. 0.78
+   2 ?   11.4   0.1   0.00013        10       5      40 ..     200     235 ..     197     246 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 2
+        NFECIMNI_00037  12 qgkvlfsstrkldtvfahqkykrsqgvqyre 42 
+                           q k lf +   ld +     y  s+g+   e
+  sp|Q8L633|RNZ2_ARATH 115 QQKFLFITHAHLDHIGGLPMYVASRGLYNLE 145
+                           5688999999999999999999999986655 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 0.00013
+        NFECIMNI_00037   5 nhelvnkqgkvlfsstrkldtvfahqkykrsqgvqy 40 
+                            h ++  qg v++s  +kl   +ah k k+ + ++ 
+  sp|Q8L633|RNZ2_ARATH 200 THHVIPSQGYVIYSVRKKLQKQYAHLKGKQIEKIKK 235
+                           689999*********************999887765 PP
+
+>> sp|O49413|IWS2_ARATH  Protein IWS1 homolog 2 OS=Arabidopsis thaliana OX=3702 GN=IWS2 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.6   0.0         7   5.7e+05       9      24 ..     164     179 ..     161     192 .. 0.70
+   2 ?   11.7   0.0    0.0001       8.3       4      51 ..     269     317 ..     266     322 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -3.6 bits;  conditional E-value: 7
+        NFECIMNI_00037   9 vnkqgkvlfsstrkld 24 
+                            n++gk  ++   kl 
+  sp|O49413|IWS2_ARATH 164 CNREGKPAINKLMKLP 179
+                           5788887777777765 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 0.0001
+        NFECIMNI_00037   4 inhelvnkqgkvlfsstrkldtvfahqkykrsqgv.qyreskvvdkpnt 51 
+                           + ++++nk g+++++ + + d +f +++  + + +   r++k   k + 
+  sp|O49413|IWS2_ARATH 269 LANDIINKWGRIIYNKSTRYDNMFTQEELDEQRQIlLRRQTKTAPKVSG 317
+                           66899********************999876655515667787777554 PP
+
+>> sp|P0C2B5|PRSA_LACLC  Foldase protein PrsA OS=Lactococcus lactis subsp. cremoris OX=1359 GN=prsA PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.1   0.0     0.061     5e+03      10      41 ..     188     219 ..     179     231 .. 0.73
+   2 ?    6.4   0.0    0.0052   4.2e+02       8      46 ..     234     273 ..     229     283 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 3.1 bits;  conditional E-value: 0.061
+        NFECIMNI_00037  10 nkqgkvlfsst.rkldtvfahqkykrsqgvqyr 41 
+                           +  gk+ f    + ld  f    yk   g  y 
+  sp|P0C2B5|PRSA_LACLC 188 DNGGKISFELNnKTLDATFKDAAYKLKNGD-YT 219
+                           567999998651669*********998884.44 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.0052
+        NFECIMNI_00037   8 lvnkqgkvlfsstrkldtvfahqkykrsqgvqyre.skvv 46 
+                           ++n  +k  f+s++k  t   + k+ r  ++  r  s+v+
+  sp|P0C2B5|PRSA_LACLC 234 MINHPAKGTFTSSKKALTASVYAKWSRDSSIMQRViSQVL 273
+                           789999*********************9999887524444 PP
+
+>> sp|Q02VE3|PRSA_LACLS  Foldase protein PrsA OS=Lactococcus lactis subsp. cremoris (strain SK11) OX=272622 GN=prsA PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.1   0.0     0.061     5e+03      10      41 ..     188     219 ..     179     231 .. 0.73
+   2 ?    6.4   0.0    0.0052   4.2e+02       8      46 ..     234     273 ..     229     283 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 3.1 bits;  conditional E-value: 0.061
+        NFECIMNI_00037  10 nkqgkvlfsst.rkldtvfahqkykrsqgvqyr 41 
+                           +  gk+ f    + ld  f    yk   g  y 
+  sp|Q02VE3|PRSA_LACLS 188 DNGGKISFELNnKTLDATFKDAAYKLKNGD-YT 219
+                           567999998651669*********998884.44 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.0052
+        NFECIMNI_00037   8 lvnkqgkvlfsstrkldtvfahqkykrsqgvqyre.skvv 46 
+                           ++n  +k  f+s++k  t   + k+ r  ++  r  s+v+
+  sp|Q02VE3|PRSA_LACLS 234 MINHPAKGTFTSSKKALTASVYAKWSRDSSIMQRViSQVL 273
+                           789999*********************9999887524444 PP
+
+>> sp|Q310Z1|RNC_OLEA2  Ribonuclease 3 OS=Oleidesulfovibrio alaskensis (strain ATCC BAA-1058 / DSM 17464 / G20) OX=20755
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.2   0.0     0.012     1e+03      17      42 ..      13      38 ..       4      46 .. 0.86
+   2 ?    4.5   0.0     0.022   1.8e+03       6      47 ..      75     116 ..      70     120 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 5.2 bits;  conditional E-value: 0.012
+       NFECIMNI_00037 17 fsstrkldtvfahqkykrsqgvqyre 42
+                         f+  r l+t + h  y + +g + + 
+  sp|Q310Z1|RNC_OLEA2 13 FADVRLLETALTHSSYANERGTEIEH 38
+                         8899*************999988765 PP
+
+  == domain 2  score: 4.5 bits;  conditional E-value: 0.022
+       NFECIMNI_00037   6 helvnkqgkvlfsstrkldtvfahqkykrsqgvqyreskvvd 47 
+                            lv+k +   ++   kldt +   k ++sqg + r s + d
+  sp|Q310Z1|RNC_OLEA2  75 ARLVSKPSLAELARELKLDTYLLLGKGEESQGGRTRSSVLSD 116
+                          5688888888889999****************9999887655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (58 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     10934  (0.0191199); expected 11437.3 (0.02)
+Passed bias filter:                     8907  (0.0155754); expected 11437.3 (0.02)
+Passed Vit filter:                       543  (0.000949526); expected 571.9 (0.001)
+Passed Fwd filter:                         7  (1.22407e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 1.51u 0.47s 00:00:01.98 Elapsed: 00:00:01.24
+# Mc/sec: 9645.78
+//
+[ok]

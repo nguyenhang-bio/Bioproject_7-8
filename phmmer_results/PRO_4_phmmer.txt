@@ -1,0 +1,147 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_4.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00004  [L=152]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
+  ------ inclusion threshold ------
+        1.3   13.9   0.1        2.8   12.9   0.1    1.5  1  sp|P75120|FTSH_MYCPN       ATP-dependent zinc metalloprotease
+        1.3   13.9   0.0          2   13.3   0.0    1.3  1  sp|Q5N3N8|RL1_SYNP6        Large ribosomal subunit protein uL
+        1.3   13.9   0.0          2   13.3   0.0    1.3  1  sp|Q31QK4|RL1_SYNE7        Large ribosomal subunit protein uL
+        1.4   13.8   3.5        3.8   12.4   0.1    3.5  4  sp|A0A401ETL2|EXGAL_BIFL2  Exo-beta-1,6-galactobiohydrolase O
+        1.9   13.4   0.0        2.7   12.9   0.0    1.3  1  sp|B0CAD0|RL1_ACAM1        Large ribosomal subunit protein uL
+        3.6   12.5   0.0        5.2   12.0   0.0    1.2  1  sp|G3XD30|PILN_PSEAE       Type IV pilus inner membrane compo
+        4.5   12.2   0.0        8.3   11.3   0.0    1.5  1  sp|Q8DM27|RL1_THEVB        Large ribosomal subunit protein uL
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P75120|FTSH_MYCPN  ATP-dependent zinc metalloprotease FtsH OS=Mycoplasma pneumoniae (strain ATCC 29342 / M129 / Su
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.1   3.4e-05       2.8      54     129 ..      80     152 ..      64     159 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 3.4e-05
+        NFECIMNI_00004  54 dksgtvtfdllqtsdsnrwlqlramqthdagtsggtdvflpvqlmmndkmgrtvatgvngiitmqpgvqrgtglat 129
+                           + s  vt d+lq s s + +    +  h a   +g  +f    l +n   g+ +   vng++t+     +gt la+
+  sp|P75120|FTSH_MYCPN  80 NNSTYVTDDILQVSISFQGINPIVVTAHKATNGSGETIFNIANLSINQSTGKAI---VNGMMTQDQKSNNGTELAS 152
+                           567789************************9999*****************988...7999999999999999986 PP
+
+>> sp|Q5N3N8|RL1_SYNP6  Large ribosomal subunit protein uL1 OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 14
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.0   2.5e-05         2      15      80 ..     102     168 ..      94     205 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 2.5e-05
+       NFECIMNI_00004  15 gevmegfsdsnaiitasrdapqhgkvmdargkmvaitsadksgtvtfdllqtsdsnr..wlqlramqt 80 
+                           e+ +gf d + +i      pq +k+    g    +  + k gtvtfdl q  +  +   l++ra +t
+  sp|Q5N3N8|RL1_SYNP6 102 EEISKGFLDFDLLIATPDVMPQVAKLGRQLGPRG-LMPSPKGGTVTFDLEQAVNEFKagKLEFRADRT 168
+                          4899*******999988889**999988888764.55678*********9986654311355566555 PP
+
+>> sp|Q31QK4|RL1_SYNE7  Large ribosomal subunit protein uL1 OS=Synechococcus elongatus (strain ATCC 33912 / PCC 7942 / F
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.0   2.5e-05         2      15      80 ..     102     168 ..      94     206 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 2.5e-05
+       NFECIMNI_00004  15 gevmegfsdsnaiitasrdapqhgkvmdargkmvaitsadksgtvtfdllqtsdsnr..wlqlramqt 80 
+                           e+ +gf d + +i      pq +k+    g    +  + k gtvtfdl q  +  +   l++ra +t
+  sp|Q31QK4|RL1_SYNE7 102 EEISKGFLDFDLLIATPDVMPQVAKLGRQLGPRG-LMPSPKGGTVTFDLEQAINEFKagKLEFRADRT 168
+                          4899*******999988889**999988888764.55678*********9987654411355566555 PP
+
+>> sp|A0A401ETL2|EXGAL_BIFL2  Exo-beta-1,6-galactobiohydrolase OS=Bifidobacterium longum subsp. longum (strain ATCC 1570
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.1       2.4     2e+05      53      92 ..     738     778 ..     718     791 .. 0.63
+   2 ?   -3.1   0.0       2.9   2.4e+05      81     136 ..     811     870 ..     790     873 .. 0.67
+   3 ?   -0.5   0.0      0.45   3.7e+04      10      25 ..    1290    1305 ..    1287    1309 .. 0.86
+   4 ?   12.4   0.1   4.7e-05       3.8       6      63 ..    1307    1366 ..    1303    1378 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 2.4
+             NFECIMNI_00004  53 adksgtvtfdllqtsdsnrwlqlram.qth.dagtsggtdvf 92 
+                                a ks      +l tsd + +  l+a  +t+ d   ++gt v 
+  sp|A0A401ETL2|EXGAL_BIFL2 738 AAKSDPAAKWILNTSDGSTYQLLNAAtKTNlDV-DNSGTTVG 778
+                                566667777788999988887776541444222.23333333 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 2.9
+             NFECIMNI_00004  81 hdagtsggtdvflpvqlmmndkmgrtvatgvng....iitmqpgvqrgtglatdtwvmqf 136
+                                 +  t+ +    lpv++ +    g+  at  n     +   + g  ++t+ atd +  +f
+  sp|A0A401ETL2|EXGAL_BIFL2 811 VNVQTAVNEKAVLPVEVTLYYTWGEGKATVANWdtskVDVAKEGAYEATATATDVYGNEF 870
+                                555566666677888888887777766665553111144567788888888888876666 PP
+
+  == domain 3  score: -0.5 bits;  conditional E-value: 0.45
+             NFECIMNI_00004   10 dliidgevmegfsdsn 25  
+                                 dl +dge +egf  s 
+  sp|A0A401ETL2|EXGAL_BIFL2 1290 DLRLDGETVEGFDPSK 1305
+                                 899*********9876 PP
+
+  == domain 4  score: 12.4 bits;  conditional E-value: 4.7e-05
+             NFECIMNI_00004    6 fysvdliidge...vmegfsdsn.aiitasrdapqhgkvmdargkmvaitsadksgtvtfdl 63  
+                                  y+vdl +d+e   v+++f+  n a +  + da ++gk+       + +tsad+s t t+ +
+  sp|A0A401ETL2|EXGAL_BIFL2 1307 DYTVDLPVDAEanpVLQAFATDNaAAVKVTGDAVENGKLGGK--AAITVTSADESETKTYTV 1366
+                                 699******985557999987661578899********8532..35899******9998865 PP
+
+>> sp|B0CAD0|RL1_ACAM1  Large ribosomal subunit protein uL1 OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=rpl
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.0   3.3e-05       2.7      15      81 ..     102     169 ..      91     206 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 3.3e-05
+       NFECIMNI_00004  15 gevmegfsdsnaiitasrdapqhgkvmdargkmvaitsadksgtvtfdllqtsdsnr..wlqlramqth 81 
+                           e+++g  d + +i      pq +kv    g    +  + k+gtvtfdl q  +  +   l++ra +t 
+  sp|B0CAD0|RL1_ACAM1 102 TEIQQGRMDFDLLIATPDMMPQVAKVGRILGPRG-LMPSPKAGTVTFDLPQAIEEFKagKLEFRADRTG 169
+                          4899999999999988888999988877777764.44568*********99887654124666666665 PP
+
+>> sp|G3XD30|PILN_PSEAE  Type IV pilus inner membrane component PilN OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   6.4e-05       5.2      43     100 ..     120     177 ..     105     195 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 6.4e-05
+        NFECIMNI_00004  43 argkmvaitsadksgtvtfdllqtsdsnrwlqlramqthdagtsggtdvflpvqlmmn 100
+                             gk +ai  a +s+    +l++  d+++wl    +    a t g+ d     ql + 
+  sp|G3XD30|PILN_PSEAE 120 MTGKNIAIAGAAESNNRVSNLMRNMDASEWLTAPTLNEVKAVTQGAVDQANVFQLTVQ 177
+                           579*******************************************998877777654 PP
+
+>> sp|Q8DM27|RL1_THEVB  Large ribosomal subunit protein uL1 OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-27
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0    0.0001       8.3      13      67 ..     100     152 ..      91     189 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.0001
+       NFECIMNI_00004  13 idgevmegfsdsnaiitasrdapqhgkvmdargkmvaitsadksgtvtfdllqts 67 
+                          id e+++g  d + +i      pq +kv    g    +  + k+gtvtfdl q  
+  sp|Q8DM27|RL1_THEVB 100 ID-EIQKGRMDFDLLIATPDMMPQVAKVGRILGPRG-LMPSPKAGTVTFDLPQAI 152
+                          44.899999999999988888999988877777764.44568*********9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13307  (0.0232695); expected 11437.3 (0.02)
+Passed bias filter:                    11426  (0.0199803); expected 11437.3 (0.02)
+Passed Vit filter:                       618  (0.00108068); expected 571.9 (0.001)
+Passed Fwd filter:                         7  (1.22407e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 1.93u 0.42s 00:00:02.35 Elapsed: 00:00:01.19
+# Mc/sec: 26237.04
+//
+[ok]

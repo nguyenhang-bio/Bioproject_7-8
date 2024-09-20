@@ -1,0 +1,122 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_12.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00012  [L=367]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    9.3e-17   66.5   6.1    7.9e-16   63.4   0.0    2.3  2  sp|P44180|Y1405_HAEIN  Uncharacterized protein HI_1405 OS=Hae
+  ------ inclusion threshold ------
+       0.41   15.1   0.0       0.56   14.6   0.0    1.1  1  sp|A4IQK7|NAMA_GEOTN   NADPH dehydrogenase OS=Geobacillus the
+        1.5   13.3   0.0          2   12.8   0.0    1.1  1  sp|Q5KXG9|NAMA_GEOKA   NADPH dehydrogenase OS=Geobacillus kau
+        3.2   12.1   0.0        7.2   11.0   0.0    1.6  1  sp|Q8RCF9|LEU12_CALS4  2-isopropylmalate synthase 2 OS=Caldan
+        4.6   11.6   0.0        6.3   11.2   0.0    1.1  1  sp|Q8TWZ3|TRUA_METKA   tRNA pseudouridine synthase A OS=Metha
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P44180|Y1405_HAEIN  Uncharacterized protein HI_1405 OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   63.4   0.0   6.9e-21   7.9e-16      24     208 ..       3     178 ..       1     184 [. 0.84
+   2 ?    0.7   6.2     0.085   9.7e+03     197     296 ..     212     310 ..     193     351 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 63.4 bits;  conditional E-value: 6.9e-21
+         NFECIMNI_00012  24 lldrsyelpsqrkfkangamiapatiartgimeysagqlgklfedmpptqlikvmtreedlfcadslesyrgapitighpdddvtpen 111
+                            + d++ +  +qr +  +g ++ pati++ g+++y a +lg l ed     + kv   e+ lf  ++++s+++a +t+gh  d v  +n
+  sp|P44180|Y1405_HAEIN   3 FTDKTTQADTQRTITKDGFLVVPATISKVGVFDYLATELG-LKED----GIKKVARTEKSLFSDETIKSFENATLTVGHLKDGVNAKN 85 
+                            678999999******************************9.5566....4678999999***************************** PP
+
+         NFECIMNI_00012 112 aaelqhgnldgiplrdgeqlagmlvl.ntekvlalvkagidqlssgheaklvrlsdedaarlgyhayktnircnhiavvpagra.gsa 197
+                              +l  g + ++  r g++l +   + + + +  + + g++qls g++  +   + +da    ++   + +  nh+a+v  gr  gs 
+  sp|P44180|Y1405_HAEIN  86 WKQLSVGVVRNVK-RVGDELTAEAWIyDEQAIKTVQEHGVEQLSCGYDCDIKPSTVQDAD---FE--MSPMIGNHVAIVAKGRCgGSV 167
+                            *********9996.777777666555055555666678***********99888888874...32..355678**********73589 PP
+
+         NFECIMNI_00012 198 riadeeeqgsg 208
+                            ++ade++   g
+  sp|P44180|Y1405_HAEIN 168 KLADEDKTIMG 178
+                            *****987655 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 0.085
+         NFECIMNI_00012 197 ariadeeeqgsgepqetpaeqevkmydqdhvsgleaklaaaeenvaaltikladanakltdeaievhvkkrleflteaaqftdadltg 284
+                             +  + + +   +p+e  +e e k  d  +   le  l a +e +  l    a  +a++   a+    k  ++ +  a   t  ++  
+  sp|P44180|Y1405_HAEIN 212 EEGKEPKGEQPTKPKEKKSEPENKKEDDVEKEELEKSLKAKDEEIQQLKDAQAKRDAEVKQAAVLADAKTAFKEVNFADNATVREIQE 299
+                            4433334444557888888999999998889999999999999999998888888888888888888887777777777777777766 PP
+
+         NFECIMNI_00012 285 mtvvaakrvalk 296
+                              vva + +  k
+  sp|P44180|Y1405_HAEIN 300 SAVVA-QGIFTK 310
+                            65554.344444 PP
+
+>> sp|A4IQK7|NAMA_GEOTN  NADPH dehydrogenase OS=Geobacillus thermodenitrificans (strain NG80-2) OX=420246 GN=namA PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.6   0.0   4.9e-06      0.56     182     255 ..      38     110 ..      31     157 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 4.9e-06
+        NFECIMNI_00012 182 rcnhiavvpagragsariadeeeqgsgepqetpaeqevkmydqdhvsgleaklaaaeenvaaltikladanakl 255
+                           r  h    pa   g   +   e  g   pq   +e ++ ++d dh+ gl   +   +e+ aa+ i+la a  k 
+  sp|A4IQK7|NAMA_GEOTN  38 RTWHKIHYPARAIGQVGLIIVEATGV-TPQGRISEHDLGIWDDDHIHGLHELVGLVKEHGAAIGIQLAHAGRKS 110
+                           55566666777777777777666664.79999************************************998774 PP
+
+>> sp|Q5KXG9|NAMA_GEOKA  NADPH dehydrogenase OS=Geobacillus kaustophilus (strain HTA426) OX=235909 GN=namA PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.0   1.7e-05         2     185     254 ..      41     109 ..      32     150 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 1.7e-05
+        NFECIMNI_00012 185 hiavvpagragsariadeeeqgsgepqetpaeqevkmydqdhvsgleaklaaaeenvaaltikladanak 254
+                           h    pa   g   +   e  g   pq   +e+++ ++  dh++gl   +   +e+ aa+ i+la a  k
+  sp|Q5KXG9|NAMA_GEOKA  41 HKIHYPARAVGQVGLIIVEATGV-TPQGRISERDLGIWSDDHIAGLRELVGLVKEHGAAIGIQLAHAGRK 109
+                           55566777777777777666664.79999************************************99876 PP
+
+>> sp|Q8RCF9|LEU12_CALS4  2-isopropylmalate synthase 2 OS=Caldanaerobacter subterraneus subsp. tengcongensis (strain DSM
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   6.3e-05       7.2     124     158 ..      15      52 ..      10      89 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 6.3e-05
+         NFECIMNI_00012 124 plrdgeqlagmlvlntekvl.a..lvkagidqlssghe 158
+                             lrdgeq ag++  n ek+  a  l + gidql  g  
+  sp|Q8RCF9|LEU12_CALS4  15 TLRDGEQTAGVVFANNEKIRiAqmLDEIGIDQLEVGIP 52 
+                            69****************8522336789*****98864 PP
+
+>> sp|Q8TWZ3|TRUA_METKA  tRNA pseudouridine synthase A OS=Methanopyrus kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBR
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   5.6e-05       6.3     286     352 ..      25      92 ..      19     105 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 5.6e-05
+        NFECIMNI_00012 286 tvvaakrvalkdalgld...yaskddafintrysimveegapekd.tdltqalrdaannpqlaaetelkse 352
+                           t+  a r al + lgl+   yas+ da  + ry ++v eg pe    d   a      + ++ a+te+  e
+  sp|Q8TWZ3|TRUA_METKA  25 TIEGALRKALSE-LGLElvgYASRTDAGAHARYQVVVVEGDPELAqPDPINAR--LPKDIRVIAKTEVHEE 92 
+                           566777778765.66644449*********************96413333332..2344556666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (367 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     18851  (0.0329641); expected 11437.3 (0.02)
+Passed bias filter:                    11288  (0.019739); expected 11437.3 (0.02)
+Passed Vit filter:                       635  (0.0011104); expected 571.9 (0.001)
+Passed Fwd filter:                         6  (1.0492e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 3.71u 0.46s 00:00:04.17 Elapsed: 00:00:01.51
+# Mc/sec: 50105.12
+//
+[ok]

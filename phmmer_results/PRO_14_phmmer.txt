@@ -1,0 +1,75 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_14.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00014  [L=61]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+        3.7   13.1   0.2         33   10.1   0.1    2.3  2  sp|A7GTC9|MINC_BACCN  Probable septum site-determining protei
+        4.7   12.8   0.0    4.7e+02    6.5   0.0    2.7  2  sp|B3EGG9|QUEA_CHLL2  S-adenosylmethionine:tRNA ribosyltransf
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|A7GTC9|MINC_BACCN  Probable septum site-determining protein MinC OS=Bacillus cytotoxicus (strain DSM 22905 / CIP 1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.1   0.00011        33      14      43 ..      77     106 ..      67     114 .. 0.89
+   2 ?   -0.2   0.0      0.24   6.9e+04      15      43 ..     160     188 ..     153     205 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 0.00011
+        NFECIMNI_00014  14 nnrflivdsvtgevvarisavsskveveie 43 
+                           n + l+vds+ ++v+ +  a++ k e ei 
+  sp|A7GTC9|MINC_BACCN  77 NKKNLVVDSIESDVITKAEAIAWKEETEIV 106
+                           7788*********************99985 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.24
+        NFECIMNI_00014  15 nrflivdsvtgevvarisavsskveveie 43 
+                              +i  sv + +  ris v+++   e e
+  sp|A7GTC9|MINC_BACCN 160 KDAVIAASVMNPMQLRISDVTTRAPEEKE 188
+                           55677788888899999999888765544 PP
+
+>> sp|B3EGG9|QUEA_CHLL2  S-adenosylmethionine:tRNA ribosyltransferase-isomerase OS=Chlorobium limicola (strain DSM 245 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.1   0.0     0.021   6.1e+03       9      27 ..      20      38 ..      13      48 .. 0.82
+   2 ?    6.5   0.0    0.0017   4.7e+02      13      34 ..     107     128 ..      97     138 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 3.1 bits;  conditional E-value: 0.021
+        NFECIMNI_00014  9 qrsegnnrflivdsvtgev 27
+                              g  r+l++d  tge 
+  sp|B3EGG9|QUEA_CHLL2 20 PAERGTTRLLVLDPATGET 38
+                          567899***********97 PP
+
+  == domain 2  score: 6.5 bits;  conditional E-value: 0.0017
+        NFECIMNI_00014  13 gnnrflivdsvtgevvarisav 34 
+                           ++++ l+v+ +tg+ var+sa 
+  sp|B3EGG9|QUEA_CHLL2 107 AHSEELLVEEITGQGVARLSAS 128
+                           5677899************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (61 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13536  (0.02367); expected 11437.3 (0.02)
+Passed bias filter:                    12151  (0.0212481); expected 11437.3 (0.02)
+Passed Vit filter:                       564  (0.000986248); expected 571.9 (0.001)
+Passed Fwd filter:                         2  (3.49734e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 1.46u 0.47s 00:00:01.93 Elapsed: 00:00:01.22
+# Mc/sec: 10320.18
+//
+[ok]

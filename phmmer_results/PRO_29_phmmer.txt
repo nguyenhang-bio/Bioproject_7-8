@@ -1,0 +1,551 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_29.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00029  [L=566]
+Description: DNA primase/helicase
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    7.9e-32  115.3   0.0    1.1e-31  114.8   0.0    1.1  1  sp|P20315|HELIC_BPT3   DNA helicase/primase OS=Enterobacteria
+      2e-30  110.7   0.1    2.7e-30  110.2   0.1    1.1  1  sp|P03692|HELIC_BPT7   DNA helicase/primase OS=Escherichia ph
+  ------ inclusion threshold ------
+      0.036   17.4   0.0        4.4   10.4   0.0    2.2  2  sp|Q93D97|Y1934_STRMU  Putative ABC transporter ATP-binding p
+      0.069   16.4   0.0      0.087   16.1   0.0    1.2  1  sp|O64248|VG57_BPMD2   Gene 57 protein OS=Mycobacterium phage
+      0.076   16.3   0.0        5.8   10.1   0.0    2.1  2  sp|Q737I0|Y2668_BACC1  Putative ABC transporter ATP-binding p
+       0.13   15.5   0.0       0.16   15.2   0.0    1.2  1  sp|O27728|RADB_METTH   DNA repair and recombination protein R
+       0.33   14.2   0.0       0.55   13.4   0.0    1.2  1  sp|A1D4C8|PLPL_NEOFI   Patatin-like phospholipase domain-cont
+       0.39   13.9   0.0       0.65   13.2   0.0    1.2  1  sp|Q4WJS4|PLPL_ASPFU   Patatin-like phospholipase domain-cont
+       0.46   13.7   0.0       0.54   13.5   0.0    1.2  1  sp|Q05270|VG57_BPML5   Gene 57 protein OS=Mycobacterium phage
+       0.59   13.3   0.0       0.86   12.8   0.0    1.2  1  sp|Q0W896|CYAS_METAR   Cysteate synthase OS=Methanocella arvo
+       0.74   13.0   0.0       0.74   13.0   0.0    1.1  1  sp|Q837A8|RNM5_ENTFA   Ribonuclease M5 OS=Enterococcus faecal
+          1   12.5   0.0        1.3   12.2   0.0    1.2  1  sp|A8YU29|URK_LACH4    Uridine kinase OS=Lactobacillus helvet
+        1.2   12.3   0.0        1.4   12.1   0.0    1.0  1  sp|A6UPX1|RPO10_METVS  DNA-directed RNA polymerase subunit Rp
+        1.3   12.2   0.0    1.3e+02    5.7   0.0    2.2  2  sp|Q81PZ8|Y2641_BACAN  Putative ABC transporter ATP-binding p
+        1.4   12.1   0.0        2.4   11.4   0.0    1.3  1  sp|A5FUW3|ENO_ACICJ    Enolase OS=Acidiphilium cryptum (strai
+        1.6   11.9   0.0        2.7   11.2   0.0    1.3  1  sp|Q1XDF3|DNAB_NEOYE   Probable replicative DNA helicase OS=N
+          2   11.6   0.0        3.5   10.8   0.0    1.3  1  sp|P73860|KAIC2_SYNY3  Circadian clock protein KaiC2 OS=Synec
+        2.3   11.4   0.0         37    7.4   0.0    2.1  2  sp|Q8DQY5|Y430_STRR6   Putative ABC transporter ATP-binding p
+        2.4   11.3   0.0        2.9   11.1   0.0    1.2  1  sp|A5UKT8|RADB_METS3   DNA repair and recombination protein R
+        2.4   11.3   0.0    2.4e+02    4.7   0.0    2.2  2  sp|Q6HI76|Y2424_BACHK  Putative ABC transporter ATP-binding p
+          3   11.0   0.0        4.3   10.5   0.0    1.2  1  sp|D1Z042|CYAS_METPS   Cysteate synthase OS=Methanocella palu
+          3   11.0   0.0        5.8   10.1   0.0    1.4  1  sp|Q8CIW5|PEO1_MOUSE   Twinkle mtDNA helicase OS=Mus musculus
+        3.4   10.8   0.0        5.4   10.2   0.0    1.3  1  sp|P23886|CYDC_ECOLI   Glutathione/L-cysteine transport syste
+        3.4   10.8   0.3        3.3   10.9   0.3    1.2  1  sp|Q5FUN5|RL32_GLUOX   Large ribosomal subunit protein bL32 O
+        3.5   10.8   0.4        3.6   10.8   0.4    1.0  1  sp|P59283|RPO12_METJA  DNA-directed RNA polymerase subunit Rp
+        3.7   10.7   0.0         59    6.7   0.0    2.1  2  sp|Q97SA3|Y483_STRPN   Putative ABC transporter ATP-binding p
+        4.1   10.6   0.1        4.7   10.4   0.1    1.0  1  sp|A6VGR3|RPO10_METM7  DNA-directed RNA polymerase subunit Rp
+        5.1   10.3   0.0        5.6   10.1   0.0    1.1  1  sp|Q9ZB77|Y255A_MYCGE  Uncharacterized protein MG255.1 OS=Myc
+        5.1   10.3   0.0         54    6.9   0.0    2.0  2  sp|Q8E3S6|Y1680_STRA3  Putative ABC transporter ATP-binding p
+        5.1   10.2   0.0         54    6.9   0.0    2.0  2  sp|Q8DY60|Y1633_STRA5  Putative ABC transporter ATP-binding p
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P20315|HELIC_BPT3  DNA helicase/primase OS=Enterobacteria phage T3 OX=10759 GN=4 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  114.8   0.0   5.6e-36   1.1e-31      83     552 ..      81     542 ..      76     548 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 114.8 bits;  conditional E-value: 5.6e-36
+        NFECIMNI_00029  83 thrgiekddwhtfgvrvilsqsdgktpyaighpytrdgklvgfkikliarktmwnvgdvkgadlygwelakrvggstlyitegeedaia 171
+                           t rgi k+  +  g    l++ d++  y ++    ++g +v+ k++    k +   g  k+  l+   l    gg  + +tege da+ 
+  sp|P20315|HELIC_BPT3  81 TARGISKETCQKAGY--WLAKVDNR-MYQVADYRDQNGSIVSQKVRD-KDKNFKTTGSHKSDALFLKHLW--SGGKKIVVTEGEIDALT 163
+                           677788777777775..46677765.578888788899999999985.5677888899998888877765..59************987 PP
+
+        NFECIMNI_00029 172 lrkilrtmstsdkydypvvslpagtdsvakcigrmaaeiqqrfksvvlvydddepgrkavretrkiipnak..vavlpekdandcllkg 258
+                           + ++       d   ypvvsl  g  +  k       e   +f+ ++l++d d+ grkav+e  +++p  k  vavlp kdan+c + g
+  sp|P20315|HELIC_BPT3 164 VMEL------QD-CKYPVVSLGHGASAAKKTC-AANYEYFDQFEQIILMFDMDDAGRKAVEEAAQVLPAGKvrVAVLPCKDANECHIMG 244
+                           6543......34.579********97766654.455688899**************************87622699************* PP
+
+        NFECIMNI_00029 259 rlkatrdacifqadkpvd...tptksvrdcrkeimd.ppvmgksypw.ptltkltfgqrkgehisigggtgcgk.tlighelsawnate 341
+                           + ka  +  ++ a+  v        s++d  ke m     +g  +     l   t+g r ge + + +g+g gk t++ ++  aw    
+  sp|P20315|HELIC_BPT3 245 EDKAILEQ-VWNANPWVPdgvVSALSLKDRVKEAMTsEDAVGLLFDGcQGLNDRTLGARGGEVVMVTSGSGMGKsTFVRQQALAWGKRM 332
+                           ****9986.677776554112345689999999986257899999752789**********************9567888999**9887 PP
+
+        NFECIMNI_00029 342 hkwrtlmimmeetnaetfravagkidnfpyhvpeedsglapdmeqldktldriepyit..vwdiealedpestweqiehfirtqghlyd 428
+                            k r  + m+ee+  +t++ + g  +    +  +e      +  ++d+  d++    t  ++d  a  + +    ++  ++rt g   d
+  sp|P20315|HELIC_BPT3 333 GK-RVGLAMLEESVEDTIQDMMGLNNKVRLRQSDEVKKAIAEDGRFDEWYDELFGDDTfhLYDSFAEAEADRLLAKLA-YMRT-GLGCD 418
+                           77.788899**************98888888877766555555789*****997666611555555555555556654.5566.7789* PP
+
+        NFECIMNI_00029 429 vvmidnattlsegltaserndflgkvnselaklakkfdfmsimfshlnappssqrshehggkvlesqftgsraamryshmiigfernkh 517
+                           v+++d+ + +  +   s++  ++ ++ ++l  +ak    + +++ hl  p    ++he+g  v  + + gs a  + s  ii++ern++
+  sp|P20315|HELIC_BPT3 419 VIVLDHISIVVSASEESDERKMIDRLMTKLKGFAKSTGVVLVVICHLKNPE-KGKAHEEGRAVSITDLRGSGALRQLSDTIIALERNQQ 506
+                           ******999888888888888999***********************9875.5689********************************* PP
+
+        NFECIMNI_00029 518 aecphcsyitciknrkygrtgrfk.tfytertgrlq 552
+                            + p+   +  +k r  g tg      y  +tg l+
+  sp|P20315|HELIC_BPT3 507 GDMPNLVLVRLLKCRFTGDTGIAGyMEYNRETGWLE 542
+                           ********************9754144777777765 PP
+
+>> sp|P03692|HELIC_BPT7  DNA helicase/primase OS=Escherichia phage T7 OX=10760 GN=4 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  110.2   0.1   1.4e-34   2.7e-30      82     556 ..      81     547 ..      70     556 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 110.2 bits;  conditional E-value: 1.4e-34
+        NFECIMNI_00029  82 fthrgiekddwhtfgvrvilsqsdgktpyaighpytrdgklvgfkikliarktmwnvgdvkgadlygwelakrvggstlyitegeedai 170
+                           +t rgi k+  +  g    +++ dg   y ++    ++g +v+ k++    k +   g  k+  l+g  l    gg  + +tege d +
+  sp|P03692|HELIC_BPT7  81 LTARGISKETCQKAGYW--IAKVDGV-MYQVADYRDQNGNIVSQKVRD-KDKNFKTTGSHKSDALFGKHLWN--GGKKIVVTEGEIDML 163
+                           68899999999988875..4678985.6999998999********996.56888999**********99975..9**********9976 PP
+
+        NFECIMNI_00029 171 alrkilrtmstsdkydypvvslpagtdsvakcigrmaaeiqqrfksvvlvydddepgrkavretrkiipnak..vavlpekdandcllk 257
+                            +      m   d   ypvvsl  g  +  k       e   +f+ ++l++d de grkav+e  +++p  k  vavlp kdan+c l 
+  sp|P03692|HELIC_BPT7 164 TV------MELQD-CKYPVVSLGHGASAAKKTC-AANYEYFDQFEQIILMFDMDEAGRKAVEEAAQVLPAGKvrVAVLPCKDANECHLN 244
+                           55......44444.579********97766654.455688899**************************87622699************ PP
+
+        NFECIMNI_00029 258 grlkatrdacifqadkpvdtp...tksvrd.crkeimdppvmgksypwpt.ltkltfgqrkgehisigggtgcgk.tlighelsawnat 340
+                           g+ +   +  ++ a   +        s+r+  r+ +     +g  +   t +   t+g r ge i + +g+g gk t++ ++   w   
+  sp|P03692|HELIC_BPT7 245 GHDREIMEQ-VWNAGPWIPDGvvsALSLRErIREHLSSEESVGLLFSGCTgINDKTLGARGGEVIMVTSGSGMGKsTFVRQQALQWGTA 332
+                           *99888775.566665554430013456652455566778899999876647899*******************945677778889877 PP
+
+        NFECIMNI_00029 341 ehkwrtlmimmeetnaetfravagkidnfpyhvpeedsglap..dmeqldktldriepyitvwdiealedpestweqiehfirtqghly 427
+                             k +  + m+ee+  et + + g  +     + + ds      +  ++d+ +d++    t    +++ + e+     +      g   
+  sp|P03692|HELIC_BPT7 333 MGK-KVGLAMLEESVEETAEDLIGLHNRVR--LRQSDSLKREiiENGKFDQWFDELFGNDTFHLYDSFAEAETDRLLAKLAYMRSGLGC 418
+                           666.6777899*************877655..55666654440045579******9888777666666666655444444444568889 PP
+
+        NFECIMNI_00029 428 dvvmidnattlsegltaserndflgkvnselaklakkfdfmsimfshlnappssqrshehggkvlesqftgsraamryshmiigfernk 516
+                           dv+++d+ + +  +   s++  ++  + ++l  +ak    + +++ hl  p    ++he+g  v  + + gs a  + s  ii++ern+
+  sp|P03692|HELIC_BPT7 419 DVIILDHISIVVSASGESDERKMIDNLMTKLKGFAKSTGVVLVVICHLKNPD-KGKAHEEGRPVSITDLRGSGALRQLSDTIIALERNQ 506
+                           *******99998888888889999************************9875.5689******************************** PP
+
+        NFECIMNI_00029 517 haecphcsyitciknrkygrtgrfk.tfytertgrlqeriw 556
+                           + + p+   +  +k r  g tg      y ++tg l+   +
+  sp|P03692|HELIC_BPT7 507 QGDMPNLVLVRILKCRFTGDTGIAGyMEYNKETGWLEPSSY 547
+                           **********************7641558889998887655 PP
+
+>> sp|Q93D97|Y1934_STRMU  Putative ABC transporter ATP-binding protein SMU_1934c OS=Streptococcus mutans serotype c (str
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   0.00023       4.4     301     335 ..      19      53 ..       8      64 .. 0.90
+   2 ?    4.6   0.0     0.014   2.7e+02     300     334 ..     307     341 ..     294     347 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 0.00023
+         NFECIMNI_00029 301 wptltkltfgqrkgehisigggtgcgktlighels 335
+                             ptl ++t++ +kge + i g +g gk+ igh l+
+  sp|Q93D97|Y1934_STRMU  19 EPTLKEITLSIEKGEKVLIIGPSGSGKSTIGHCLN 53 
+                            69******************************886 PP
+
+  == domain 2  score: 4.6 bits;  conditional E-value: 0.014
+         NFECIMNI_00029 300 pwptltkltfgqrkgehisigggtgcgktlighel 334
+                              p l  l+f  +kge+++i g  g+gk+ ++  l
+  sp|Q93D97|Y1934_STRMU 307 ERPILKNLSFTLNKGERLAIVGKNGAGKSTLAKAL 341
+                            569999**********************9887655 PP
+
+>> sp|O64248|VG57_BPMD2  Gene 57 protein OS=Mycobacterium phage D29 OX=28369 GN=57 PE=4 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   16.1   0.0   4.5e-06     0.087     209     255 ..      93     139 ..      45     149 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 16.1 bits;  conditional E-value: 4.5e-06
+        NFECIMNI_00029 209 eiqqrfksvvlvydddepgrkavretrkiipnakvavlpekdandcl 255
+                           e+   +++v ++ d depg +  +   k +pna++  +pe +  + l
+  sp|O64248|VG57_BPMD2  93 ELFLGYRNVNILADGDEPGMEFAKSVAKTLPNARIIPMPEGEDVNSL 139
+                           56667899999****************************96544444 PP
+
+>> sp|Q737I0|Y2668_BACC1  Putative ABC transporter ATP-binding protein BCE_2668 OS=Bacillus cereus (strain ATCC 10987 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.9   0.0     0.022   4.3e+02     300     335 ..      18      53 ..      12      69 .. 0.89
+   2 ?   10.1   0.0    0.0003       5.8     285     343 ..     295     355 ..     285     402 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.022
+         NFECIMNI_00029 300 pwptltkltfgqrkgehisigggtgcgktlighels 335
+                              pt+  +tf    ge + i+g +g gk+ ++h ++
+  sp|Q737I0|Y2668_BACC1  18 AQPTVKDVTFHIYPGEKVLIAGRSGSGKSTLAHCMN 53 
+                            579***************************999765 PP
+
+  == domain 2  score: 10.1 bits;  conditional E-value: 0.0003
+         NFECIMNI_00029 285 crkeimdppvmgksyp..wptltkltfgqrkgehisigggtgcgktlighelsawnatehk 343
+                             +ke++    ++ syp     l  + f+  kge +++ g  g+gk+ ++h l   n t++ 
+  sp|Q737I0|Y2668_BACC1 295 TKKELLKVENLSFSYPnkQKVLDNVNFSLFKGEIVALLGHNGAGKSTLAHSLIGINKTKND 355
+                            4688888888888998333578999*****************************9999764 PP
+
+>> sp|O27728|RADB_METTH  DNA repair and recombination protein RadB OS=Methanothermobacter thermautotrophicus (strain ATC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.2   0.0   8.5e-06      0.16     389     475 ..      81     169 ..      52     194 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 8.5e-06
+        NFECIMNI_00029 389 ktldriepyitvwdiealedpestweqiehfirtqghlydvvmidnattl...segltaserndflgkvnselaklakkfdfmsimfsh 474
+                             +dr+   i v++  ++ +     ++   f++t g   d+v++d+a  l    eg  as  n  lg+    l ++a++fd+ +++ ++
+  sp|O27728|RADB_METTH  81 DIFDRVADSIIVFEPSSFTEQGEALQRTFSFLKTHGDSTDLVVLDSAVALyrlKEG-NASSFNLDLGRQMFLLLQMARRFDLAAVITNQ 168
+                           45799999999**9999999888999999******************975222677.567778889****************9998776 PP
+
+        NFECIMNI_00029 475 l 475
+                           +
+  sp|O27728|RADB_METTH 169 I 169
+                           5 PP
+
+>> sp|A1D4C8|PLPL_NEOFI  Patatin-like phospholipase domain-containing protein NFIA_019760 OS=Neosartorya fischeri (strai
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   0.0   2.9e-05      0.55      28      96 ..     193     263 ..     172     281 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 2.9e-05
+        NFECIMNI_00029  28 lnddntfsgycfscqkfvkdpyg..dnppdpkdihvktpeeiqeeidevkscirvpfthrgiekddwhtfg 96 
+                           l+d       cf  +  vk+ ++  +np    + +  t + +qe idev scir+ +  + i  +d + f 
+  sp|A1D4C8|PLPL_NEOFI 193 LSDPPAVEELCFLLEACVKNNFAgvENPRLYSETYSGTKDLVQEYIDEVHSCIRLVLDSKQISNEDKYQFF 263
+                           6777888889*********9986457999999******************************999988875 PP
+
+>> sp|Q4WJS4|PLPL_ASPFU  Patatin-like phospholipase domain-containing protein AFUA_1G04970 OS=Aspergillus fumigatus (str
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.0   3.4e-05      0.65      28      96 ..     193     263 ..     175     281 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 3.4e-05
+        NFECIMNI_00029  28 lnddntfsgycfscqkfvkdpyg..dnppdpkdihvktpeeiqeeidevkscirvpfthrgiekddwhtfg 96 
+                           l+d       cf  +  vk+ ++  +np    + +  t + +qe idev scir+ +  + i  +d + f 
+  sp|Q4WJS4|PLPL_ASPFU 193 LSDPPAVEELCFLLEACVKNNFAgvENPRLYSETYSGTKDLVQEYIDEVHSCIRLVLDSKQISNEDKYQFF 263
+                           6677778889*********9986457999999******************************999988875 PP
+
+>> sp|Q05270|VG57_BPML5  Gene 57 protein OS=Mycobacterium phage L5 OX=31757 GN=57 PE=4 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   0.0   2.8e-05      0.54     208     259 ..      92     143 ..      26     150 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 2.8e-05
+        NFECIMNI_00029 208 aeiqqrfksvvlvydddepgrkavretrkiipnakvavlpekdandcllkgr 259
+                            e+   +++v ++ d d+ g +  r   k +pna++  +pe +  + l+ ++
+  sp|Q05270|VG57_BPML5  92 RELFLGYRNVNILADGDDAGMEFARSVAKTLPNARIIPMPEGEDVNSLVTSQ 143
+                           566777999999****************************976555555554 PP
+
+>> sp|Q0W896|CYAS_METAR  Cysteate synthase OS=Methanocella arvoryzae (strain DSM 22066 / NBRC 105507 / MRE50) OX=351160 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.0   4.5e-05      0.86     460     512 ..      91     142 ..      48     146 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 4.5e-05
+        NFECIMNI_00029 460 klakkfdfmsimfshlnappssqrshehggkvlesqftgsra.amryshmiigf 512
+                           +l    d+ +  f +l app+  r+ ehggk +     g+ a a+ y   i gf
+  sp|Q0W896|CYAS_METAR  91 ELG--ADMKTCSFKELEAPPTIVRAKEHGGKAMVLASAGNTArAFSYLSTITGF 142
+                           554..4778889*******************99888888765367777788887 PP
+
+>> sp|Q837A8|RNM5_ENTFA  Ribonuclease M5 OS=Enterococcus faecalis (strain ATCC 700802 / V583) OX=226185 GN=rnmV PE=3 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   3.9e-05      0.74     209     286 ..      43     122 ..      19     182 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 3.9e-05
+        NFECIMNI_00029 209 eiqqrfksvvlvydddepgrkavretrkiipnakvavlpekdandcllkgrl..katrdacifqadkpvdtptksvrdcr 286
+                           e  q+ + v++  d d  g+k  +   +++p+ak a l  k a      g l  +   d +i++a k v tp ++ +d +
+  sp|Q837A8|RNM5_ENTFA  43 EHAQETRGVIIFTDPDYSGEKIRKTIMEVVPDAKHAFLSRKVAVPKKNGGSLgvEHASDEAIIEALKKVVTPVQADEDYQ 122
+                           445788999999999****99888889***************9999988887224567999***********99988864 PP
+
+>> sp|A8YU29|URK_LACH4  Uridine kinase OS=Lactobacillus helveticus (strain DPC 4571) OX=405566 GN=udk PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0     7e-05       1.3     316     355 ..      10      46 ..       2      95 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 7e-05
+       NFECIMNI_00029 316 hisigggtgcgktlighelsawnatehkwrtlmimmeetn 355
+                           i i+gg+g gkt i+he+ a n  eh    +mim +++ 
+  sp|A8YU29|URK_LACH4  10 IIGIAGGSGSGKTTIAHEI-ANNINEHD--RIMIMSQDSY 46 
+                          5889**************9.57999997..4777777654 PP
+
+>> sp|A6UPX1|RPO10_METVS  DNA-directed RNA polymerase subunit Rpo10 OS=Methanococcus vannielii (strain ATCC 35089 / DSM 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   7.4e-05       1.4      37      88 ..       6      55 ..       2      63 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 7.4e-05
+         NFECIMNI_00029 37 ycfscqkfvkdpygdnppdpkdihvktpeeiqeeidevkscirvpfthrgie 88
+                            cfsc   + + y +     +  +v++peei  ++   k c r  f  + +e
+  sp|A6UPX1|RPO10_METVS  6 RCFSCGNVISEVYDEYKT--RLSNVESPEEILNDLGVTKYCCRRMFASHRLE 55
+                           7************88764..667899***************99999766565 PP
+
+>> sp|Q81PZ8|Y2641_BACAN  Putative ABC transporter ATP-binding protein BA_2641/GBAA_2641/BAS2461 OS=Bacillus anthracis O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.2   0.0     0.018   3.4e+02     300     334 ..      18      52 ..      12      61 .. 0.89
+   2 ?    5.7   0.0    0.0066   1.3e+02     286     343 ..     296     355 ..     285     399 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 4.2 bits;  conditional E-value: 0.018
+         NFECIMNI_00029 300 pwptltkltfgqrkgehisigggtgcgktlighel 334
+                              pt+  +tf    ge + i+g +g gk+ ++h +
+  sp|Q81PZ8|Y2641_BACAN  18 AQPTVKDITFHIYPGEKVLIAGRSGSGKSTLAHCM 52 
+                            579***************************99966 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.0066
+         NFECIMNI_00029 286 rkeimdppvmgksyp..wptltkltfgqrkgehisigggtgcgktlighelsawnatehk 343
+                            +ke++    ++ syp     l  + ++  +ge +++ g  g+gk+ ++h l   n t++ 
+  sp|Q81PZ8|Y2641_BACAN 296 KKELLKVENLSFSYPnkQKALENVNLSIYEGEIVALLGHNGAGKSTLAHSLIGINKTKNS 355
+                            57888888888888833356888999999************************9999764 PP
+
+>> sp|A5FUW3|ENO_ACICJ  Enolase OS=Acidiphilium cryptum (strain JF-5) OX=349163 GN=eno PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   0.00012       2.4     400     466 ..     278     349 ..     254     376 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00012
+       NFECIMNI_00029 400 vwdiealedp..estweqiehfirtqghlydvv....midnattlsegltaserndflgkvnselaklakkfd 466
+                           + i ++edp  e  we   hf  t g    vv    ++ n t l  g+ a   n +l kvn  +  l++ ++
+  sp|A5FUW3|ENO_ACICJ 278 SFPIISVEDPlsEDDWEGWAHFTSTLGGAMQVVgddlFVTNPTRLRRGIAAKSANSILIKVNQ-IGTLSETLE 349
+                          566778899855678***********98876653332788*********************94.566665555 PP
+
+>> sp|Q1XDF3|DNAB_NEOYE  Probable replicative DNA helicase OS=Neopyropia yezoensis OX=2788 GN=dnaB PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   0.00014       2.7     303     477 ..     169     342 ..     151     362 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00014
+        NFECIMNI_00029 303 tltkltfgqrkgehisigggtgcgktlighelsawnatehkwrtlmimmeetnaetfravagkidnfpyhvpeedsg.lapd....meq 386
+                            l  +t g +k++ i ++g  + gkt ++  ++ +   + +   +++ +e +  + +r + ++  n+  +  +  sg l  d    + q
+  sp|Q1XDF3|DNAB_NEOYE 169 ELDSITQGFKKSDLIILAGRPSMGKTAFAINITRYVINQKRSYVILFSLEMSTEQLLRRILAQECNLNGQKIQ--SGqLNNDewqyVIQ 255
+                           5788999****************************99999999999999999999999999888887654333..33133331111456 PP
+
+        NFECIMNI_00029 387 ldktldriepyitvwdiealedpestweqiehfirtqghlydvvmidnattlsegltaserndflgkvnselaklakkfdfmsimfshl 475
+                             ktl ++  yi      a    + t +    f++ qg   ++++id    l e+  +  r+  l+ +   l  lak + +  + +s+l
+  sp|Q1XDF3|DNAB_NEOYE 256 KSKTLANLNLYID---DSAKISTD-TIKTKVKFFKLQGKNIELIIIDYLQLLQESRQSDNRSQELSLITRSLKILAKDLSLPILALSQL 340
+                           7889998888874...33433444.4555556889********************************************9999999999 PP
+
+        NFECIMNI_00029 476 na 477
+                           n 
+  sp|Q1XDF3|DNAB_NEOYE 341 NR 342
+                           96 PP
+
+>> sp|P73860|KAIC2_SYNY3  Circadian clock protein KaiC2 OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=ka
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   0.00018       3.5     311     368 ..      28      85 ..      20      98 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.00018
+         NFECIMNI_00029 311 qrkgehisigggtgcgktlighelsawnatehkwrtlmimmeetnaetfravagkidn 368
+                              +g    i g+ gcgktl+g e+    a e+    +++ +ee+  e ++ va+   n
+  sp|P73860|KAIC2_SYNY3  28 LPQGRPTLICGSAGCGKTLFGVEFLVRGAVEYGEPGVLVSFEESAKEIIQNVASLGWN 85 
+                            5567788899**********************************99999999876555 PP
+
+>> sp|Q8DQY5|Y430_STRR6  Putative ABC transporter ATP-binding protein spr0430 OS=Streptococcus pneumoniae (strain ATCC B
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.4   0.0      0.13   2.5e+03     301     336 ..      20      55 ..       9      72 .. 0.85
+   2 ?    7.4   0.0    0.0019        37     301     344 ..     309     352 ..     297     374 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 1.4 bits;  conditional E-value: 0.13
+        NFECIMNI_00029 301 wptltkltfgqrkgehisigggtgcgktlighelsa 336
+                            ptl  + +   kge + i g +g gk+ +g+ l+ 
+  sp|Q8DQY5|Y430_STRR6  20 EPTLQGIDLTIYKGEKVLIVGPSGSGKSTLGQCLNG 55 
+                           689999999999******************987765 PP
+
+  == domain 2  score: 7.4 bits;  conditional E-value: 0.0019
+        NFECIMNI_00029 301 wptltkltfgqrkgehisigggtgcgktlighelsawnatehkw 344
+                            p l  l +  +kge i+i g  g+gk+ ++  ls++  te ++
+  sp|Q8DQY5|Y430_STRR6 309 RPILKSLHLDIKKGEKIAIVGKNGAGKSTLAKALSSFIQTEGRY 352
+                           47888999999**************************9999764 PP
+
+>> sp|A5UKT8|RADB_METS3  DNA repair and recombination protein RadB OS=Methanobrevibacter smithii (strain ATCC 35061 / DS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   0.00015       2.9     398     476 ..      90     170 ..      63     231 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.00015
+        NFECIMNI_00029 398 itvwdiealedpestweqiehfirtqghlydvvmidnattls..egltaserndflgkvnselaklakkfdfmsimfshln 476
+                           i v++  ++ +     + ie +ir      d+ ++d+a  l   + + +s  n  lgk    lak+a+ +d   ++ +++ 
+  sp|A5UKT8|RADB_METS3  90 IIVFEPTSFLEQNENLKTIELWIRKHHDDVDLCVLDSAVALYrvDDMKSSRLNKELGKQMGILAKIARNYDVAVVLTNQIY 170
+                           5555555544455567899*****99999*********99963378999**********************9888776654 PP
+
+>> sp|Q6HI76|Y2424_BACHK  Putative ABC transporter ATP-binding protein BT9727_2424 OS=Bacillus thuringiensis subsp. konk
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.3   0.0     0.017   3.3e+02     300     334 ..      18      52 ..      12      63 .. 0.89
+   2 ?    4.7   0.0     0.013   2.4e+02     286     343 ..     296     355 ..     285     385 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.017
+         NFECIMNI_00029 300 pwptltkltfgqrkgehisigggtgcgktlighel 334
+                              pt+  +tf    ge + i+g +g gk+ ++h +
+  sp|Q6HI76|Y2424_BACHK  18 AQPTVKDITFHIYPGEKVLIAGRSGSGKSTLAHCM 52 
+                            579***************************99976 PP
+
+  == domain 2  score: 4.7 bits;  conditional E-value: 0.013
+         NFECIMNI_00029 286 rkeimdppvmgksypwp..tltkltfgqrkgehisigggtgcgktlighelsawnatehk 343
+                            +ke++    ++ syp     l  + ++  +ge +++ g  g+gk+ ++h l   n t++ 
+  sp|Q6HI76|Y2424_BACHK 296 KKELLKVENLSFSYPNKqkGLENVNLSIYEGEIVALLGHNGAGKSTLAHSLIGINKTKNS 355
+                            57777777777788754115788899999************************9999764 PP
+
+>> sp|D1Z042|CYAS_METPS  Cysteate synthase OS=Methanocella paludicola (strain DSM 17711 / JCM 13418 / NBRC 101707 / SANA
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   0.00022       4.3     452     512 ..      85     144 ..      38     153 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 0.00022
+        NFECIMNI_00029 452 gkvnselaklakkfdfmsimfshlnappssqrshehggkvlesqftgsra.amryshmiigf 512
+                              n    ++  ++d     f +l app+  r++ehgg+ +     g+ a a+ y   + gf
+  sp|D1Z042|CYAS_METPS  85 ISFNGYWPEMGARMDTC--SFKELEAPPTIVRAREHGGRAMVLASVGNTArAFAYLSTLTGF 144
+                           45666666777777755..599*****************98887777665366777777777 PP
+
+>> sp|Q8CIW5|PEO1_MOUSE  Twinkle mtDNA helicase OS=Mus musculus OX=10090 GN=Twnk PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0    0.0003       5.8     167     335 ..     259     430 ..     247     466 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 0.0003
+        NFECIMNI_00029 167 edaialrkilrtmstsdkydypvvslpagtdsvakcigrmaaeiqqrfksvvlvydddepgrkavr.etrkiipnakvavlpekdandc 254
+                            + +   + l +++ s     p +slp gt     c+        ++f+ +v+   dd  + +a +   rk+ p     v p       
+  sp|Q8CIW5|PEO1_MOUSE 259 TEVVVTSRELDSLALSQSTGLPTLSLPRGTV----CLPPALLPYLEQFRRIVFWLGDDLRSWEAAKlFARKLNPKRCSLVRPGNQQPR- 342
+                           4556666677888889999999999999985....66666666677888888877777666665552689999988878888665443. PP
+
+        NFECIMNI_00029 255 llkgrlkatrdacifqadkpv.dtptksvrdcrkeimdp.....pvmgksy.pwptltkltfgqrkgehisigggtgcgktlighels 335
+                            l++  +      i++   p       s r  r+e++          g  +  +p l +l  g rkge   + g tg gkt +  e +
+  sp|Q8CIW5|PEO1_MOUSE 343 PLEALNQGLSLPRILRTALPAwHKSIVSFRQLREEVLGElsnveQAAGVRWsRFPDLNRLLKGHRKGELTVFTGPTGSGKTTFISEYA 430
+                           34444444444445555555524566788999999876421111233433314699************************98766654 PP
+
+>> sp|P23886|CYDC_ECOLI  Glutathione/L-cysteine transport system ATP-binding/permease protein CydC OS=Escherichia coli (
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   0.00029       5.4     307     340 ..     359     393 ..     327     427 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 0.00029
+        NFECIMNI_00029 307 ltfgqrkgehisigggtgcgktlighels.awnat 340
+                           +++  + gehi+i g tgcgk+ + ++l+ aw+  
+  sp|P23886|CYDC_ECOLI 359 ISLQVNAGEHIAILGRTGCGKSTLLQQLTrAWDPQ 393
+                           5666788*************977666664389765 PP
+
+>> sp|Q5FUN5|RL32_GLUOX  Large ribosomal subunit protein bL32 OS=Gluconobacter oxydans (strain 621H) OX=290633 GN=rpmF P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.3   0.00018       3.3     495     525 ..       7      35 ..       2      62 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.00018
+        NFECIMNI_00029 495 qftgsraamryshmiigfernkhaecphcsy 525
+                           + t sr  mr sh+ +g e   haec +c  
+  sp|Q5FUN5|RL32_GLUOX   7 KTTPSRRGMRRSHQALGVE--AHAECSNCGE 35 
+                           6789*************99..59******85 PP
+
+>> sp|P59283|RPO12_METJA  DNA-directed RNA polymerase subunit Rpo12 OS=Methanocaldococcus jannaschii (strain ATCC 43067 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.4   0.00019       3.6     512     532 ..      16      36 ..       5      42 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.00019
+         NFECIMNI_00029 512 fernkhaecphcsyitciknr 532
+                             e  k+a cphcsy   +k r
+  sp|P59283|RPO12_METJA  16 EELGKRARCPHCSYKILVKLR 36 
+                            4678**********9999977 PP
+
+>> sp|Q97SA3|Y483_STRPN  Putative ABC transporter ATP-binding protein SP_0483 OS=Streptococcus pneumoniae serotype 4 (st
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.4   0.0      0.13   2.4e+03     301     336 ..      20      55 ..       9      70 .. 0.85
+   2 ?    6.7   0.0    0.0031        59     302     344 ..     310     352 ..     299     377 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 1.4 bits;  conditional E-value: 0.13
+        NFECIMNI_00029 301 wptltkltfgqrkgehisigggtgcgktlighelsa 336
+                            ptl  + +   kge + i g +g gk+ +g+ l+ 
+  sp|Q97SA3|Y483_STRPN  20 EPTLQGIDLTIYKGEKVLIVGPSGSGKSTLGQCLNG 55 
+                           689999999999******************987765 PP
+
+  == domain 2  score: 6.7 bits;  conditional E-value: 0.0031
+        NFECIMNI_00029 302 ptltkltfgqrkgehisigggtgcgktlighelsawnatehkw 344
+                           p l  l +  +kge i+i g  g+gk+ ++  +s++  te ++
+  sp|Q97SA3|Y483_STRPN 310 PILKSLHLDIKKGEKIAIVGKNGAGKSTLAKAISSFIQTEGRY 352
+                           7888999999**************************9999764 PP
+
+>> sp|A6VGR3|RPO10_METM7  DNA-directed RNA polymerase subunit Rpo10 OS=Methanococcus maripaludis (strain C7 / ATCC BAA-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.1   0.00025       4.7      37      90 ..       6      57 ..       2      64 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 0.00025
+         NFECIMNI_00029 37 ycfscqkfvkdpygdnppdpkdihvktpeeiqeeidevkscirvpfthrgiekd 90
+                            cfsc   + + y +     kd   + peei  +++  k c r  f  + ++ d
+  sp|A6VGR3|RPO10_METM7  6 RCFSCGAVISEVYEEYRTRLKDG--ENPEEILNDLEVKKYCCRRMFASHRLDND 57
+                           7***************9999995..79*********99*9*9999987667665 PP
+
+>> sp|Q9ZB77|Y255A_MYCGE  Uncharacterized protein MG255.1 OS=Mycoplasma genitalium (strain ATCC 33530 / DSM 19775 / NCTC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   0.00029       5.6      10      59 ..      18      67 ..      14     118 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 0.00029
+         NFECIMNI_00029 10 khddpkcissspkslqvflnddntfsgycfscqkfvkdpygdnppdpkdi 59
+                           ++d p   +   +slq f  +   +    fs qk+ kd yg n  +  ++
+  sp|Q9ZB77|Y255A_MYCGE 18 EYDKPNITAFFNRSLQFFQENSLVLKPELFSLQKYTKDVYGLNVINQLNL 67
+                           689999999999********99*******************997766555 PP
+
+>> sp|Q8E3S6|Y1680_STRA3  Putative ABC transporter ATP-binding protein gbs1680 OS=Streptococcus agalactiae serotype III 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   0.0    0.0028        54     302     345 ..      20      63 ..      13      77 .. 0.88
+   2 ?    0.8   0.0       0.2   3.7e+03     303     335 ..     310     342 ..     294     372 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.0028
+         NFECIMNI_00029 302 ptltkltfgqrkgehisigggtgcgktlighelsawnatehkwr 345
+                            ptl  + ++  kge + i g +g gk+ +gh l+      hk +
+  sp|Q8E3S6|Y1680_STRA3  20 PTLKGINLSIPKGEKVLILGPSGSGKSTLGHCLNGIIPNTHKGQ 63 
+                            999999999***********************999888888765 PP
+
+  == domain 2  score: 0.8 bits;  conditional E-value: 0.2
+         NFECIMNI_00029 303 tltkltfgqrkgehisigggtgcgktlighels 335
+                            tl  ++f   kg++++i g  g+gk+ ++  l 
+  sp|Q8E3S6|Y1680_STRA3 310 TLDDVSFDLYKGQRLAIVGKNGAGKSTLAKALC 342
+                            788999*******************99887665 PP
+
+>> sp|Q8DY60|Y1633_STRA5  Putative ABC transporter ATP-binding protein SAG1633 OS=Streptococcus agalactiae serotype V (s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   0.0    0.0028        54     302     345 ..      20      63 ..      13      77 .. 0.88
+   2 ?    0.8   0.0       0.2   3.7e+03     303     335 ..     310     342 ..     294     372 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.0028
+         NFECIMNI_00029 302 ptltkltfgqrkgehisigggtgcgktlighelsawnatehkwr 345
+                            ptl  + ++  kge + i g +g gk+ +gh l+      hk +
+  sp|Q8DY60|Y1633_STRA5  20 PTLKGINLSIPKGEKVLILGPSGSGKSTLGHCLNGIIPNTHKGQ 63 
+                            999999999***********************999888888765 PP
+
+  == domain 2  score: 0.8 bits;  conditional E-value: 0.2
+         NFECIMNI_00029 303 tltkltfgqrkgehisigggtgcgktlighels 335
+                            tl  ++f   kg++++i g  g+gk+ ++  l 
+  sp|Q8DY60|Y1633_STRA5 310 TLDDVSFDLYKGQRLAIVGKNGAGKSTLAKALC 342
+                            788999*******************99887665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (566 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     16534  (0.0289125); expected 11437.3 (0.02)
+Passed bias filter:                    14536  (0.0254186); expected 11437.3 (0.02)
+Passed Vit filter:                      1462  (0.00255655); expected 571.9 (0.001)
+Passed Fwd filter:                        30  (5.246e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              30  [number of targets reported over threshold]
+# CPU time: 6.20u 0.39s 00:00:06.59 Elapsed: 00:00:02.81
+# Mc/sec: 41657.78
+//
+[ok]

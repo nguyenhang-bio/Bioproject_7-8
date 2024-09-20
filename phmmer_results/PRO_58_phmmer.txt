@@ -1,0 +1,61 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_58.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00058  [L=628]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+        3.6   10.8   0.0        5.1   10.4   0.0    1.1  1  sp|Q9CL21|RECQ_PASMU  ATP-dependent DNA helicase RecQ OS=Past
+        7.9    9.7   0.0         11    9.3   0.0    1.1  1  sp|Q1LSV3|DXR_BAUCH   1-deoxy-D-xylulose 5-phosphate reductoi
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q9CL21|RECQ_PASMU  ATP-dependent DNA helicase RecQ OS=Pasteurella multocida (strain Pm70) OX=272843 GN=recQ PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   1.8e-05       5.1     332     375 ..     320     363 ..     304     368 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 1.8e-05
+        NFECIMNI_00058 332 yglrvdvarrsesvhaaagekgaidlperasiryrdgdsawmhq 375
+                           + ++ d+ r  es +   g  g  dlp +a + y+ +d aw+h+
+  sp|Q9CL21|RECQ_PASMU 320 FVVHFDLPRSIESYYQETGRAGRDDLPAEAVLFYEPADYAWLHK 363
+                           45678999***********************************7 PP
+
+>> sp|Q1LSV3|DXR_BAUCH  1-deoxy-D-xylulose 5-phosphate reductoisomerase OS=Baumannia cicadellinicola subsp. Homalodisca 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   0.0   3.8e-05        11     271     310 ..     160     198 ..     152     218 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 3.8e-05
+       NFECIMNI_00058 271 cpetmqntvgclswnqfgnshvifdasagrdprgttidav 310
+                           pe +q  +gcls +++g s++i+  s g   r t +da+
+  sp|Q1LSV3|DXR_BAUCH 160 LPEPIQRQLGCLSLSKYGVSQIILTGSGGP-FRQTPLDAL 198
+                          69**********************998774.688999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (628 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     14453  (0.0252735); expected 11437.3 (0.02)
+Passed bias filter:                     9663  (0.0168974); expected 11437.3 (0.02)
+Passed Vit filter:                       587  (0.00102647); expected 571.9 (0.001)
+Passed Fwd filter:                         2  (3.49734e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 5.59u 0.53s 00:00:06.12 Elapsed: 00:00:02.50
+# Mc/sec: 51810.75
+//
+[ok]

@@ -1,0 +1,603 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_51.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00051  [L=845]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+      0.092   15.6   0.1        0.1   15.4   0.1    1.0  1  sp|A6W3A1|RL10_MARMS   Large ribosomal subunit protein uL10 O
+        1.7   11.4   0.0         53    6.4   0.0    2.1  2  sp|Q8L6J2|RPO2A_TOBAC  DNA-directed RNA polymerase 2A (Fragme
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|A1AIF7|RL10_ECOK1   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|A7ZUJ8|RL10_ECO24   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|A8A784|RL10_ECOHS   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B1IUR2|RL10_ECOLC   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B1LNT7|RL10_ECOSM   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B1XBY7|RL10_ECODH   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B2TWH1|RL10_SHIB3   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B5Z081|RL10_ECO5E   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B6I5J5|RL10_ECOSE   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B7LA78|RL10_ECO55   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B7LUL7|RL10_ESCF3   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B7M732|RL10_ECO8A   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B7MIX1|RL10_ECO45   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B7MR71|RL10_ECO81   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B7NFS5|RL10_ECOLU   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B7NRR3|RL10_ECO7I   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|B7UPE0|RL10_ECO27   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|C5A0S5|RL10_ECOBW   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|P0A7J3|RL10_ECOLI   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|P0A7J4|RL10_ECOL6   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|P0A7J5|RL10_ECO57   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|P0A7J6|RL10_SHIFL   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|Q0SY15|RL10_SHIF8   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|Q0TA80|RL10_ECOL5   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|Q1R5V0|RL10_ECOUT   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|Q31U12|RL10_SHIBS   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|Q32AF7|RL10_SHIDS   Large ribosomal subunit protein uL10 O
+        2.4   10.9   0.1        2.7   10.7   0.1    1.0  1  sp|Q3YUZ9|RL10_SHISS   Large ribosomal subunit protein uL10 O
+          3   10.5   0.0        9.2    8.9   0.0    1.7  1  sp|P33540|RPOP_NEUCS   Probable DNA-directed RNA polymerase O
+        7.6    9.2   0.0         11    8.7   0.0    1.1  1  sp|Q8G7Q3|KUP2_BIFLO   Probable potassium transport system pr
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|A6W3A1|RL10_MARMS  Large ribosomal subunit protein uL10 OS=Marinomonas sp. (strain MWYL1) OX=400668 GN=rplJ PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.4   0.1   5.7e-06       0.1     106     226 ..      13     134 ..       4     157 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 5.7e-06
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfiatalv.halekdgfytqmynaeid 193
+                           +ev +va t    v+ +    t   +te +k+are    vr  +     + ++ +d+e  + +f+   l+  + e  g   ++  a + 
+  sp|A6W3A1|RL10_MARMS  13 AEVSEVAKTALSAVVADSRGVTVSSMTELRKEAREAGVYVRVVRNTLARRAVEGTDFECLAESFVGPTLIaFSNEHPGAAARLLKA-FA 100
+                           6999999999999998888888999********************9999****************877652678889999999887.56 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfidq 226
+                           k n  f  ka  f+ + +    +   + lp  d+
+  sp|A6W3A1|RL10_MARMS 101 KTNSKFEVKAlAFNGELIPAGDIDRLATLPTYDE 134
+                           7888888887346666666666666666776665 PP
+
+>> sp|Q8L6J2|RPO2A_TOBAC  DNA-directed RNA polymerase 2A (Fragment) OS=Nicotiana tabacum OX=4097 GN=RPOT2-SYL PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.9   0.0     0.034   6.1e+02     523     576 ..      24      75 ..       3      93 .. 0.73
+   2 ?    6.4   0.0    0.0029        53     731     787 ..     223     277 ..     202     301 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.034
+         NFECIMNI_00051 523 gitrlgfgpdakcsgaqifsilagcekiaaacglvtgfgdnkpkdpyy.lsaqev 576
+                            +++++    d  c+g q ++ l   +  aaa +lv g    kp d y  ++a+ +
+  sp|Q8L6J2|RPO2A_TOBAC  24 SVSHIPVHQDGSCNGLQHYAALGRDKLGAAAVNLVAG---EKPADVYSgIAARVL 75 
+                            567777889**********998555445677788877...699999962444444 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.0029
+         NFECIMNI_00051 731 gilqrrnfcyyfpvhfiqgldavmarkialgakkaglrgystihdqfracindaprl 787
+                             ++ +r     fp +fi +ld       a++ ++agl+ ++ +hd +     d  +l
+  sp|Q8L6J2|RPO2A_TOBAC 223 KVMVKRQR-TAFPPNFIHSLDGSHMMMTAVACRRAGLN-FAGVHDSYWTHACDVDKL 277
+                            55555544.4699**********999**********95.899***995444444333 PP
+
+>> sp|A1AIF7|RL10_ECOK1  Large ribosomal subunit protein uL10 OS=Escherichia coli O1:K1 / APEC OX=405955 GN=rplJ PE=3 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|A1AIF7|RL10_ECOK1  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|A1AIF7|RL10_ECOK1 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|A7ZUJ8|RL10_ECO24  Large ribosomal subunit protein uL10 OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=33
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|A7ZUJ8|RL10_ECO24  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|A7ZUJ8|RL10_ECO24 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|A8A784|RL10_ECOHS  Large ribosomal subunit protein uL10 OS=Escherichia coli O9:H4 (strain HS) OX=331112 GN=rplJ PE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|A8A784|RL10_ECOHS  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|A8A784|RL10_ECOHS 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B1IUR2|RL10_ECOLC  Large ribosomal subunit protein uL10 OS=Escherichia coli (strain ATCC 8739 / DSM 1576 / NBRC 39
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B1IUR2|RL10_ECOLC  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B1IUR2|RL10_ECOLC 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B1LNT7|RL10_ECOSM  Large ribosomal subunit protein uL10 OS=Escherichia coli (strain SMS-3-5 / SECEC) OX=439855 GN=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B1LNT7|RL10_ECOSM  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B1LNT7|RL10_ECOSM 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B1XBY7|RL10_ECODH  Large ribosomal subunit protein uL10 OS=Escherichia coli (strain K12 / DH10B) OX=316385 GN=rplJ
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B1XBY7|RL10_ECODH  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B1XBY7|RL10_ECODH 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B2TWH1|RL10_SHIB3  Large ribosomal subunit protein uL10 OS=Shigella boydii serotype 18 (strain CDC 3083-94 / BS512
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B2TWH1|RL10_SHIB3  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B2TWH1|RL10_SHIB3 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B5Z081|RL10_ECO5E  Large ribosomal subunit protein uL10 OS=Escherichia coli O157:H7 (strain EC4115 / EHEC) OX=4444
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B5Z081|RL10_ECO5E  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B5Z081|RL10_ECO5E 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B6I5J5|RL10_ECOSE  Large ribosomal subunit protein uL10 OS=Escherichia coli (strain SE11) OX=409438 GN=rplJ PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B6I5J5|RL10_ECOSE  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B6I5J5|RL10_ECOSE 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B7LA78|RL10_ECO55  Large ribosomal subunit protein uL10 OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=rpl
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B7LA78|RL10_ECO55  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B7LA78|RL10_ECO55 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B7LUL7|RL10_ESCF3  Large ribosomal subunit protein uL10 OS=Escherichia fergusonii (strain ATCC 35469 / DSM 13698 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B7LUL7|RL10_ESCF3  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B7LUL7|RL10_ESCF3 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B7M732|RL10_ECO8A  Large ribosomal subunit protein uL10 OS=Escherichia coli O8 (strain IAI1) OX=585034 GN=rplJ PE=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B7M732|RL10_ECO8A  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B7M732|RL10_ECO8A 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B7MIX1|RL10_ECO45  Large ribosomal subunit protein uL10 OS=Escherichia coli O45:K1 (strain S88 / ExPEC) OX=585035 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B7MIX1|RL10_ECO45  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B7MIX1|RL10_ECO45 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B7MR71|RL10_ECO81  Large ribosomal subunit protein uL10 OS=Escherichia coli O81 (strain ED1a) OX=585397 GN=rplJ PE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B7MR71|RL10_ECO81  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B7MR71|RL10_ECO81 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B7NFS5|RL10_ECOLU  Large ribosomal subunit protein uL10 OS=Escherichia coli O17:K52:H18 (strain UMN026 / ExPEC) OX
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B7NFS5|RL10_ECOLU  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B7NFS5|RL10_ECOLU 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B7NRR3|RL10_ECO7I  Large ribosomal subunit protein uL10 OS=Escherichia coli O7:K1 (strain IAI39 / ExPEC) OX=585057
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B7NRR3|RL10_ECO7I  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B7NRR3|RL10_ECO7I 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|B7UPE0|RL10_ECO27  Large ribosomal subunit protein uL10 OS=Escherichia coli O127:H6 (strain E2348/69 / EPEC) OX=57
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|B7UPE0|RL10_ECO27  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|B7UPE0|RL10_ECO27 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|C5A0S5|RL10_ECOBW  Large ribosomal subunit protein uL10 OS=Escherichia coli (strain K12 / MC4100 / BW2952) OX=5954
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|C5A0S5|RL10_ECOBW  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|C5A0S5|RL10_ECOBW 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|P0A7J3|RL10_ECOLI  Large ribosomal subunit protein uL10 OS=Escherichia coli (strain K12) OX=83333 GN=rplJ PE=1 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|P0A7J3|RL10_ECOLI  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|P0A7J3|RL10_ECOLI 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|P0A7J4|RL10_ECOL6  Large ribosomal subunit protein uL10 OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / U
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|P0A7J4|RL10_ECOL6  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|P0A7J4|RL10_ECOL6 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|P0A7J5|RL10_ECO57  Large ribosomal subunit protein uL10 OS=Escherichia coli O157:H7 OX=83334 GN=rplJ PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|P0A7J5|RL10_ECO57  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|P0A7J5|RL10_ECO57 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|P0A7J6|RL10_SHIFL  Large ribosomal subunit protein uL10 OS=Shigella flexneri OX=623 GN=rplJ PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|P0A7J6|RL10_SHIFL  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|P0A7J6|RL10_SHIFL 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|Q0SY15|RL10_SHIF8  Large ribosomal subunit protein uL10 OS=Shigella flexneri serotype 5b (strain 8401) OX=373384 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|Q0SY15|RL10_SHIF8  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|Q0SY15|RL10_SHIF8 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|Q0TA80|RL10_ECOL5  Large ribosomal subunit protein uL10 OS=Escherichia coli O6:K15:H31 (strain 536 / UPEC) OX=3626
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|Q0TA80|RL10_ECOL5  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|Q0TA80|RL10_ECOL5 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|Q1R5V0|RL10_ECOUT  Large ribosomal subunit protein uL10 OS=Escherichia coli (strain UTI89 / UPEC) OX=364106 GN=rpl
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|Q1R5V0|RL10_ECOUT  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|Q1R5V0|RL10_ECOUT 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|Q31U12|RL10_SHIBS  Large ribosomal subunit protein uL10 OS=Shigella boydii serotype 4 (strain Sb227) OX=300268 GN=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|Q31U12|RL10_SHIBS  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|Q31U12|RL10_SHIBS 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|Q32AF7|RL10_SHIDS  Large ribosomal subunit protein uL10 OS=Shigella dysenteriae serotype 1 (strain Sd197) OX=30026
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|Q32AF7|RL10_SHIDS  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|Q32AF7|RL10_SHIDS 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|Q3YUZ9|RL10_SHISS  Large ribosomal subunit protein uL10 OS=Shigella sonnei (strain Ss046) OX=300269 GN=rplJ PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   0.00015       2.7     106     225 ..      13     133 ..       4     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00015
+        NFECIMNI_00051 106 sevfdvavtpkltvieekpvttkkelteeqkkarefsaivrekqercvaknidlsdierkssgfia.talvhalekdgfytqmynaeid 193
+                           +ev +va      v+ +    t  ++te +k  re    +r  +   + + ++ + +e    +f+  t + +++e  g   +++  e+ 
+  sp|Q3YUZ9|RL10_SHISS  13 AEVSEVAKGALSAVVADSRGVTVDKMTELRKAGREAGVYMRVVRNTLLRRAVEGTPFECLKDAFVGpTLIAYSMEHPGAAARLFK-EFA 100
+                           56777777666666666666666779**************************************98255669*********9996.899 PP
+
+        NFECIMNI_00051 194 krnyffscka.dfdnrrvallavqlagvlpfid 225
+                           k n  f  ka  f+ + +    +   + lp  +
+  sp|Q3YUZ9|RL10_SHISS 101 KANAKFEVKAaAFEGELIPASQIDRLATLPTYE 133
+                           9**999999626888888877777777777665 PP
+
+>> sp|P33540|RPOP_NEUCS  Probable DNA-directed RNA polymerase OS=Neurospora crassa OX=5141 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.9   0.0   0.00052       9.2     393     439 ..     414     459 ..     408     633 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 0.00052
+        NFECIMNI_00051 393 vihgatqmrdvaelfseyfmdlrgrmyqfahcgpnpqasdmskalcy 439
+                           +i  a  m+dv e++   f+d rgr+y  + c+ n q  +++++l  
+  sp|P33540|RPOP_NEUCS 414 IISIAKLMKDVKEFYMTVFIDWRGRFYT-SSCALNIQGGELARSLLL 459
+                           6777889******************997.67**********999865 PP
+
+>> sp|Q8G7Q3|KUP2_BIFLO  Probable potassium transport system protein Kup 2 OS=Bifidobacterium longum (strain NCC 2705) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.7   0.0    0.0006        11     196     262 ..     489     555 ..     471     566 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 8.7 bits;  conditional E-value: 0.0006
+        NFECIMNI_00051 196 nyffsckadfdnrrvallavqlagvlpfidqeydfemvannavfrrrfrdiaranqfipgvynnmmd 262
+                           + ffs  ad   r  a  av +      + +ey  e    n ++r rfr   + +q ip+  + +m 
+  sp|Q8G7Q3|KUP2_BIFLO 489 DIFFSIFADHPKRARAWWAVSVETTDEPFTREYSVEDFGTNYIYRVRFRLGFKVSQSIPAYIHQIMH 555
+                           689*****************99988766689****************************98777664 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (845 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     15090  (0.0263874); expected 11437.3 (0.02)
+Passed bias filter:                    12116  (0.0211869); expected 11437.3 (0.02)
+Passed Vit filter:                       872  (0.00152484); expected 571.9 (0.001)
+Passed Fwd filter:                        32  (5.59574e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              32  [number of targets reported over threshold]
+# CPU time: 7.84u 0.59s 00:00:08.43 Elapsed: 00:00:03.59
+# Mc/sec: 48685.22
+//
+[ok]

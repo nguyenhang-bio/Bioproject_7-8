@@ -1,0 +1,61 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_7.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00007  [L=155]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+        1.6   13.6   0.1        3.6   12.5   0.1    1.6  1  sp|A4HW65|NNR_LEIIN   Bifunctional NAD(P)H-hydrate repair enz
+        3.6   12.4   0.0        7.4   11.4   0.0    1.4  1  sp|Q8X7J8|YEGI_ECO57  Protein kinase YegI OS=Escherichia coli
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|A4HW65|NNR_LEIIN  Bifunctional NAD(P)H-hydrate repair enzyme OS=Leishmania infantum OX=5671 GN=LINJ_14_1270 PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.1   1.3e-05       3.6     107     132 ..     115     140 ..     107     161 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.3e-05
+       NFECIMNI_00007 107 agfwaavgatdttadpgqplpypehf 132
+                             w avg t+tt +pg pl  p   
+  sp|A4HW65|NNR_LEIIN 115 QHAWKAVGGTETTMNPGAPLQLPADV 140
+                          457*****************999765 PP
+
+>> sp|Q8X7J8|YEGI_ECO57  Protein kinase YegI OS=Escherichia coli O157:H7 OX=83334 GN=yegI PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   2.6e-05       7.4      97     148 ..     342     389 ..     332     393 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.6e-05
+        NFECIMNI_00007  97 kithegdyhaagfwaavgatdttadpgqplpypehfavlygkrevpvsrmlr 148
+                            it  gd+  a  wa v a+   a p+  lp p+hf      r +p+  + r
+  sp|Q8X7J8|YEGI_ECO57 342 VITTSGDFVLAKVWAMVMAS--VAPPALQLPLPDHFQPT--GRPLPLGLLRR 389
+                           48999***********9885..899***********864..36677765444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (155 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                      9988  (0.0174657); expected 11437.3 (0.02)
+Passed bias filter:                     8311  (0.0145332); expected 11437.3 (0.02)
+Passed Vit filter:                       403  (0.000704713); expected 571.9 (0.001)
+Passed Fwd filter:                         2  (3.49734e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 1.96u 0.45s 00:00:02.41 Elapsed: 00:00:01.23
+# Mc/sec: 25949.53
+//
+[ok]

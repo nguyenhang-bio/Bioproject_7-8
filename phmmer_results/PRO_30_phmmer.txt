@@ -1,0 +1,443 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_30.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00030  [L=123]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+       0.27   16.4   1.7       0.27   16.4   1.7    2.8  3  sp|B8J7V5|BIOD_ANAD2  ATP-dependent dethiobiotin synthetase B
+       0.56   15.4   0.0        8.7   11.6   0.0    2.4  2  sp|Q5WTG8|AMPA_LEGPL  Probable cytosol aminopeptidase OS=Legi
+       0.82   14.8   0.0        1.7   13.9   0.0    1.5  1  sp|A7NJF9|BCHN_ROSCS  Light-independent protochlorophyllide r
+          1   14.5   0.4          4   12.6   0.0    2.0  2  sp|B2HQX7|TRPC_MYCMM  Indole-3-glycerol phosphate synthase OS
+        1.2   14.3   1.9        3.5   12.8   0.2    2.6  3  sp|Q031S8|CH60_LACLS  Chaperonin GroEL OS=Lactococcus lactis 
+        1.3   14.2   2.0        3.2   12.9   0.2    2.6  3  sp|P37282|CH60_LACLA  Chaperonin GroEL OS=Lactococcus lactis 
+          2   13.6   0.0        3.2   12.9   0.0    1.4  1  sp|Q55842|PURS_SYNY3  Phosphoribosylformylglycinamidine synth
+        2.7   13.2   8.3        6.2   12.0   2.2    2.9  3  sp|B4UKM8|BIOD_ANASK  ATP-dependent dethiobiotin synthetase B
+        2.9   13.1   0.0          5   12.3   0.0    1.3  1  sp|Q0ARS7|QUEC_MARMM  7-cyano-7-deazaguanine synthase OS=Mari
+        2.9   13.1   0.0        6.5   12.0   0.0    1.5  1  sp|B0JSX3|GATA_MICAN  Glutamyl-tRNA(Gln) amidotransferase sub
+          3   13.1   1.0    1.3e+02    7.8   0.2    2.7  2  sp|A7NJA5|AROA_ROSCS  3-phosphoshikimate 1-carboxyvinyltransf
+          3   13.0   2.3        7.3   11.8   0.2    2.6  3  sp|Q9AEP7|CH60_LACLM  Chaperonin GroEL OS=Lactococcus lactis 
+        3.2   13.0   1.0    1.6e+02    7.4   0.1    2.8  3  sp|P50160|TS2_MAIZE   Sex determination protein tasselseed-2 
+        3.7   12.8   0.2         17   10.6   0.0    1.9  2  sp|C1D6Y0|COAX_LARHH  Type III pantothenate kinase OS=Laribac
+        3.8   12.7   0.7         28    9.9   0.1    2.7  3  sp|Q5WJN4|CH60_SHOC1  Chaperonin GroEL OS=Shouchella clausii 
+        3.9   12.7   0.0        7.6   11.7   0.0    1.4  1  sp|B2VER0|ARAA_ERWT9  L-arabinose isomerase OS=Erwinia tasman
+        4.6   12.4   0.0        9.7   11.4   0.0    1.5  1  sp|A5UUJ6|BCHN_ROSS1  Light-independent protochlorophyllide r
+        4.8   12.4   4.3         18   10.6   0.5    2.5  2  sp|A7H6E5|BIOD_ANADF  ATP-dependent dethiobiotin synthetase B
+        6.1   12.1   0.0         11   11.3   0.0    1.3  1  sp|Q02QZ9|RNT_PSEAB   Ribonuclease T OS=Pseudomonas aeruginos
+        6.1   12.1   0.0         11   11.3   0.0    1.3  1  sp|Q9HY82|RNT_PSEAE   Ribonuclease T OS=Pseudomonas aeruginos
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|B8J7V5|BIOD_ANAD2  ATP-dependent dethiobiotin synthetase BioD OS=Anaeromyxobacter dehalogenans (strain 2CP-1 / ATC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.0       1.8   5.1e+04     101     119 ..      33      51 ..      21      53 .. 0.78
+   2 ?   16.4   1.7   9.4e-06      0.27      24      84 ..      51     112 ..      28     132 .. 0.81
+   3 ?    0.9   0.2      0.61   1.7e+04     103     118 ..     172     187 ..     134     191 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 1.8
+        NFECIMNI_00030 101 adamrpkedpkvpveptet 119
+                           a  m+p +   vp ep++ 
+  sp|B8J7V5|BIOD_ANAD2  33 AVGMKPAQSGHVPGEPSDA 51 
+                           5679999999999999875 PP
+
+  == domain 2  score: 16.4 bits;  conditional E-value: 9.4e-06
+        NFECIMNI_00030  24 dhtfhtapdeesalqqlcrmcpgvpanavrrtymegrnallsqaantarallrahg.vvieg 84 
+                            + ++ a d    l+ +c    g p        +egr   l++    aral   h+ vv+eg
+  sp|B8J7V5|BIOD_ANAD2  51 AERLREASDRVEPLEAICPYTFGAPLAPAAAARLEGREVSLARVVEAARALAARHAaVVVEG 112
+                           5567789999999************99999999******************99996266776 PP
+
+  == domain 3  score: 0.9 bits;  conditional E-value: 0.61
+        NFECIMNI_00030 103 amrpkedpkvpvepte 118
+                              p++dp vp+   e
+  sp|B8J7V5|BIOD_ANAD2 172 RTGPEDDPSVPLNAAE 187
+                           3457778888776655 PP
+
+>> sp|Q5WTG8|AMPA_LEGPL  Probable cytosol aminopeptidase OS=Legionella pneumophila (strain Lens) OX=297245 GN=pepA PE=3 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0    0.0003       8.7       5      86 ..       9      94 ..       5     117 .. 0.68
+   2 ?    1.0   0.0       0.6   1.7e+04      39      64 ..     170     195 ..     146     209 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 0.0003
+        NFECIMNI_00030  5 ptvntkpaaimlamldssvdhtfhtapdee..salqqlcrmcpgvpanavrrtymegrnallsqaan....tarallrahgvviegil 86
+                          p++n     ++  + d +    f ta d e    +++lc+  p  p n v +t +eg++ l+ q       +a++l +  g + e+++
+  sp|Q5WTG8|AMPA_LEGPL  9 PSLNMSECLVLGVFSDLA-LPDFATAIDNEqqGLIKKLCQRVP-EPGNTVWQTDVEGHSLLIIQCGKkegfSANSLQKRVGEITEALI 94
+                          666666555444444444.456888887652156899**9999.59***************998764222246666666666666655 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.6
+        NFECIMNI_00030  39 qlcrmcpgvpanavrrtymegrnall 64 
+                           ++cr   ++pan    ty+  +   l
+  sp|Q5WTG8|AMPA_LEGPL 170 EFCRDLANMPANICTPTYLGEQAISL 195
+                           68****************95544444 PP
+
+>> sp|A7NJF9|BCHN_ROSCS  Light-independent protochlorophyllide reductase subunit N OS=Roseiflexus castenholzii (strain D
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.9   0.0   5.8e-05       1.7      11      75 ..     117     179 ..     111     192 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 5.8e-05
+        NFECIMNI_00030  11 paaimlamldssvdhtfhtapdeesalqqlcrmcpgvpanavrrtymegrnallsqaantarall 75 
+                           p   +l +  s +d+tf  a  e+s lq l  +cp  pa+  r  ++ + n  ++   +t  a l
+  sp|A7NJF9|BCHN_ROSCS 117 PNLPVLFVPASGLDYTFSQA--EDSVLQALLPFCPVAPADDRRVVFLGSVNDAIADDFHTEAARL 179
+                           555566677899*****987..679***************9999999888888887777766654 PP
+
+>> sp|B2HQX7|TRPC_MYCMM  Indole-3-glycerol phosphate synthase OS=Mycobacterium marinum (strain ATCC BAA-535 / M) OX=2165
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0       2.3   6.7e+04      45      70 ..      52      77 ..       8     107 .. 0.58
+   2 ?   12.6   0.0   0.00014         4      40      84 ..     203     249 ..     194     269 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 2.3
+        NFECIMNI_00030 45 pgvpanavrrtymegrnallsqaant 70
+                           gv a   r +   g  a ++  a  
+  sp|B2HQX7|TRPC_MYCMM 52 IGVIAEVKRASPSAGSLAPITDPAKL 77
+                          33333333333344444444444444 PP
+
+  == domain 2  score: 12.6 bits;  conditional E-value: 0.00014
+        NFECIMNI_00030  40 lcrmcpgvpanavr..rtymegrnallsqaantarallrahgvvieg 84 
+                           ++r++pg+p+n +r  ++ + g n ll+ a   a a+l  +g+v  g
+  sp|B2HQX7|TRPC_MYCMM 203 FARIAPGLPSNVIRiaESGVRGTNDLLAYAGAGADAVLVGEGLVKSG 249
+                           5799********983356789*********************99877 PP
+
+>> sp|Q031S8|CH60_LACLS  Chaperonin GroEL OS=Lactococcus lactis subsp. cremoris (strain SK11) OX=272622 GN=groEL PE=3 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0       5.5   1.6e+05      75     108 ..     293     326 ..     285     334 .. 0.67
+   2 ?   12.8   0.2   0.00012       3.5      17     103 ..     345     433 ..     333     438 .. 0.77
+   3 ?   -1.9   0.1       4.8   1.4e+05      80     105 ..     505     530 ..     474     536 .. 0.50
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 5.5
+        NFECIMNI_00030  75 lrahgvviegillpnavgaiellnqaadamrpke 108
+                           l    v+ e + l    + +e l qaa a   k+
+  sp|Q031S8|CH60_LACLS 293 LTGGTVITEELGLDLKDATLEALGQAAKATVDKD 326
+                           5555566666666666677888888888876665 PP
+
+  == domain 2  score: 12.8 bits;  conditional E-value: 0.00012
+        NFECIMNI_00030  17 amldssvdhtfhtapdeesalqqlcrmcpgvp...anavrrtymegrnallsqaantarallrahgvvi.egillpnavgaiellnqaa 101
+                           a++ + ++ t     d e   ++l++++ gv      a  +t +++   l+  a n  ra ++  g+v   g  l na++a++ l++  
+  sp|Q031S8|CH60_LACLS 345 AIIKAQIEKTTS-DFDREKLQERLAKLAGGVAvvkVGAATETELKAMKLLIEDALNATRAAVEE-GIVSgGGTALVNAIAALDKLSEEG 431
+                           555555665543.34777777889999998752226788999******************9986.665516799***********9988 PP
+
+        NFECIMNI_00030 102 da 103
+                           d 
+  sp|Q031S8|CH60_LACLS 432 DI 433
+                           85 PP
+
+  == domain 3  score: -1.9 bits;  conditional E-value: 4.8
+        NFECIMNI_00030  80 vviegillpnavgaiellnqaadamr 105
+                             + g++l            aa am 
+  sp|Q031S8|CH60_LACLS 505 ASVAGLILTTEAVVANKPEPAAPAMP 530
+                           22234333332222333344444443 PP
+
+>> sp|P37282|CH60_LACLA  Chaperonin GroEL OS=Lactococcus lactis subsp. lactis (strain IL1403) OX=272623 GN=groEL PE=3 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0       4.4   1.2e+05      75     109 ..     293     327 ..     284     339 .. 0.68
+   2 ?   12.9   0.2   0.00011       3.2      17     103 ..     345     433 ..     334     446 .. 0.78
+   3 ?   -2.0   0.1         5   1.4e+05      80     105 ..     505     530 ..     476     536 .. 0.50
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 4.4
+        NFECIMNI_00030  75 lrahgvviegillpnavgaiellnqaadamrpked 109
+                           l    v+ e + l    + +e l qaa a   k+ 
+  sp|P37282|CH60_LACLA 293 LTGGTVITEELGLDLKDATLEALGQAAKATVDKDH 327
+                           55555666666666666778888888888766654 PP
+
+  == domain 2  score: 12.9 bits;  conditional E-value: 0.00011
+        NFECIMNI_00030  17 amldssvdhtfhtapdeesalqqlcrmcpgvp...anavrrtymegrnallsqaantarallrahgvvi.egillpnavgaiellnqaa 101
+                           a++ + ++ t     d e   ++l++++ gv      a  +t +++   l+  a n  ra ++  g+v   g  l na++a++ l++  
+  sp|P37282|CH60_LACLA 345 AIIKAQIEKTTS-DFDREKLQERLAKLAGGVAvvkVGAATETELKAMKLLIEDALNATRAAVEE-GIVSgGGTALVNAIAALDKLSEEG 431
+                           555555665543.34777777889999998752226788999******************9986.665516799***********9988 PP
+
+        NFECIMNI_00030 102 da 103
+                           d 
+  sp|P37282|CH60_LACLA 432 DI 433
+                           85 PP
+
+  == domain 3  score: -2.0 bits;  conditional E-value: 5
+        NFECIMNI_00030  80 vviegillpnavgaiellnqaadamr 105
+                             + g++l            aa am 
+  sp|P37282|CH60_LACLA 505 ASVAGLILTTEAVVANKPEPAAPAMP 530
+                           22234333332222333344444443 PP
+
+>> sp|Q55842|PURS_SYNY3  Phosphoribosylformylglycinamidine synthase subunit PurS OS=Synechocystis sp. (strain PCC 6803 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.0   0.00011       3.2      29      57 ..      60      88 ..      45      99 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 0.00011
+        NFECIMNI_00030 29 tapdeesalqqlcrmcpgvpanavrrtym 57
+                           apde +a qql  mc  + an v + y 
+  sp|Q55842|PURS_SYNY3 60 EAPDEATASQQLDTMCDQLLANTVIENYC 88
+                          59*********************999886 PP
+
+>> sp|B4UKM8|BIOD_ANASK  ATP-dependent dethiobiotin synthetase BioD OS=Anaeromyxobacter sp. (strain K) OX=447217 GN=bioD
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.0       1.8   5.2e+04     101     119 ..      33      51 ..      21      54 .. 0.79
+   2 ?   12.0   2.2   0.00022       6.2      27      84 ..      54     112 ..      29     136 .. 0.77
+   3 ?    3.6   0.4     0.091   2.6e+03     103     119 ..     172     188 ..     134     190 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 1.8
+        NFECIMNI_00030 101 adamrpkedpkvpveptet 119
+                           a  m+p +   vp ep++ 
+  sp|B4UKM8|BIOD_ANASK  33 AVGMKPAQSGHVPGEPSDA 51 
+                           5579999999999999875 PP
+
+  == domain 2  score: 12.0 bits;  conditional E-value: 0.00022
+        NFECIMNI_00030  27 fhtapdeesalqqlcrmcpgvpanavrrtymegrnallsqaantarallrahg.vvieg 84 
+                           ++ a d    l+ +c    + p        +egr   l++    aral   h+ vv+eg
+  sp|B4UKM8|BIOD_ANASK  54 LREASDCVEPLEAICPYTFAAPLAPAAAARLEGREVSLARVVEVARALAARHAaVVVEG 112
+                           5566677777888888877778777778889*****************99996266776 PP
+
+  == domain 3  score: 3.6 bits;  conditional E-value: 0.091
+        NFECIMNI_00030 103 amrpkedpkvpveptet 119
+                              p++dp vp+ p e 
+  sp|B4UKM8|BIOD_ANASK 172 RTGPEDDPSVPLNPAEI 188
+                           45699********9986 PP
+
+>> sp|Q0ARS7|QUEC_MARMM  7-cyano-7-deazaguanine synthase OS=Maricaulis maris (strain MCS10) OX=394221 GN=queC PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.0   0.00017         5      47     105 ..     101     158 ..      88     162 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 0.00017
+        NFECIMNI_00030  47 vpanavrrtymegrnallsqaantarallrahgvviegillpnavgaiellnqaadamr 105
+                           + an +  t++ grn ++   a +a a  r hgv++ g+   +  g  +      dam+
+  sp|Q0ARS7|QUEC_MARMM 101 MQANGLPSTFVPGRNLVFLTVA-SALAYRRGHGVLVGGMCETDFSGYPDCRRNTIDAMQ 158
+                           579999*********8877666.58899**********998888888888777777775 PP
+
+>> sp|B0JSX3|GATA_MICAN  Glutamyl-tRNA(Gln) amidotransferase subunit A OS=Microcystis aeruginosa (strain NIES-843 / IAM 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00023       6.5      38      89 ..     246     297 ..     215     304 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00023
+        NFECIMNI_00030  38 qqlcrmcpgvpanavrrtymegrnallsqaantarallrahgvviegillpn 89 
+                           q l     g+    +++t+ eg + ++++a n a a l+a g  i+ i  p 
+  sp|B0JSX3|GATA_MICAN 246 QFLKTSLKGLKIGVIKETFGEGLDQVVAEAVNQALAQLKALGATIKEISCPR 297
+                           4455567899999********************************9998875 PP
+
+>> sp|A7NJA5|AROA_ROSCS  3-phosphoshikimate 1-carboxyvinyltransferase OS=Roseiflexus castenholzii (strain DSM 13941 / HL
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.1   0.1      0.13   3.7e+03      28      52 ..     217     241 ..     196     298 .. 0.80
+   2 ?    7.8   0.2    0.0045   1.3e+02      76     101 ..     302     327 ..     282     335 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 3.1 bits;  conditional E-value: 0.13
+        NFECIMNI_00030  28 htapdeesalqqlcrmcpgvpanav 52 
+                            t pd   al  l    pg p++a 
+  sp|A7NJA5|AROA_ROSCS 217 LTPPDRSEALHPLSLRVPGDPSSAT 241
+                           47899999*************9885 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.0045
+        NFECIMNI_00030  76 rahgvviegillpnavgaiellnqaa 101
+                             hg+vieg l+p  +  + +l  aa
+  sp|A7NJA5|AROA_ROSCS 302 SLHGIVIEGALIPRLIDELPVLALAA 327
+                           46**************9999887776 PP
+
+>> sp|Q9AEP7|CH60_LACLM  Chaperonin GroEL OS=Lactococcus lactis subsp. cremoris (strain MG1363) OX=416870 GN=groEL PE=3 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0       4.5   1.3e+05      75     108 ..     293     326 ..     284     339 .. 0.67
+   2 ?   11.8   0.2   0.00026       7.3      32     103 ..     359     433 ..     339     439 .. 0.78
+   3 ?   -1.9   0.1       4.8   1.4e+05      80     105 ..     505     530 ..     474     536 .. 0.50
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 4.5
+        NFECIMNI_00030  75 lrahgvviegillpnavgaiellnqaadamrpke 108
+                           l    v+ e + l    + +e l qaa a   k+
+  sp|Q9AEP7|CH60_LACLM 293 LTGGTVITEELGLDLKDATLEALGQAAKATVDKD 326
+                           5555556666666666667888888888776665 PP
+
+  == domain 2  score: 11.8 bits;  conditional E-value: 0.00026
+        NFECIMNI_00030  32 deesalqqlcrmcpgvp...anavrrtymegrnallsqaantarallrahgvvi.egillpnavgaiellnqaada 103
+                           d e   ++l++++ gv      a  +t +++   l+  a n  ra ++  g+v   g  l na++a++ l++  d 
+  sp|Q9AEP7|CH60_LACLM 359 DREKLQERLAKLAGGVAvvkVGAATETELKAMKLLIEDALNATRAAVEE-GIVSgGGTALVNAIAALDKLSEEGDI 433
+                           667777788888888752116788999******************9986.665516799***********998885 PP
+
+  == domain 3  score: -1.9 bits;  conditional E-value: 4.8
+        NFECIMNI_00030  80 vviegillpnavgaiellnqaadamr 105
+                             + g++l            aa am 
+  sp|Q9AEP7|CH60_LACLM 505 ASVAGLILTTEAVVANKPEPAAPAMP 530
+                           22234333332222333344444443 PP
+
+>> sp|P50160|TS2_MAIZE  Sex determination protein tasselseed-2 OS=Zea mays OX=4577 GN=TS2 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.4   0.1    0.0058   1.6e+02      63     108 ..     140     185 ..     129     197 .. 0.87
+   2 ?    2.9   0.0      0.15   4.2e+03      55      97 ..     206     246 ..     197     271 .. 0.77
+   3 ?   -1.2   0.0       2.8   7.9e+04      62      84 ..     304     325 ..     254     335 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 7.4 bits;  conditional E-value: 0.0058
+       NFECIMNI_00030  63 llsqaantarallrahgvviegillpnavgaiellnqaadamrpke 108
+                          +l +    ar++l   +  ++ +l  na+ga   +  aa am p+ 
+  sp|P50160|TS2_MAIZE 140 VLGRQTRAARSILSFDAAEFDRVLRVNALGAALGMKHAARAMAPRR 185
+                          67788899************************************86 PP
+
+  == domain 2  score: 2.9 bits;  conditional E-value: 0.15
+       NFECIMNI_00030  55 tymegrnallsqaantarallrahgvviegillpnavgaiell 97 
+                           y  +++a++    n a   lrahgv +   + p  v+   l+
+  sp|P50160|TS2_MAIZE 206 AYTASKHAIVGLTKNAA-CELRAHGVRVNC-VSPFGVATPMLI 246
+                          57778889998887765.678****98864.456666555555 PP
+
+  == domain 3  score: -1.2 bits;  conditional E-value: 2.8
+       NFECIMNI_00030  62 allsqaantarallrahgvvieg 84 
+                          a+l  a++ ar  +  h++v++g
+  sp|P50160|TS2_MAIZE 304 AVLFLASDEARY-ISGHNLVVDG 325
+                          555556666654.4566666665 PP
+
+>> sp|C1D6Y0|COAX_LARHH  Type III pantothenate kinase OS=Laribacter hongkongensis (strain HLHK9) OX=557598 GN=coaX PE=3 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   0.00061        17      20      69 ..      19      69 ..       9      97 .. 0.78
+   2 ?   -0.4   0.0       1.6   4.5e+04      47      91 ..     185     227 ..     158     235 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 0.00061
+        NFECIMNI_00030 20 dssvdhtfhtapdee.salqqlcrmcpgvpanavrrtymegrnallsqaan 69
+                          +    ht h +p  + +al+q cr+ p         t  e ++a+++    
+  sp|C1D6Y0|COAX_LARHH 19 EGPARHTVHASPHHDlTALEQACRITPPRRVLGASVTSSERNSAIMAAVGR 69
+                          56678*******876489*********877777777777777777665555 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 1.6
+        NFECIMNI_00030  47 vpanavrrtymegrnallsqaantarallrahgvviegillpnav 91 
+                           + a   r   + gr   l+ a   a  ll a+ + i+g ++ n v
+  sp|C1D6Y0|COAX_LARHH 185 IEAQVARFGSQLGRPVRLTLAGGDAP-LL-AQHLAIDGTIVDNLV 227
+                           44555555666678877877776654.33.444677787777765 PP
+
+>> sp|Q5WJN4|CH60_SHOC1  Chaperonin GroEL OS=Shouchella clausii (strain KSM-K16) OX=66692 GN=groEL PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0       5.1   1.5e+05      48      68 ..      22      43 ..       8      64 .. 0.67
+   2 ?   -2.2   0.0       5.9   1.7e+05      73     110 ..     291     328 ..     281     335 .. 0.76
+   3 ?    9.9   0.1   0.00099        28      22     102 ..     350     432 ..     340     447 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 5.1
+        NFECIMNI_00030 48 panavrrty.megrnallsqaa 68
+                           anav+ t   +grn +l +  
+  sp|Q5WJN4|CH60_SHOC1 22 LANAVKVTLgPKGRNVVLEKKF 43
+                          4788888863579998887654 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 5.9
+        NFECIMNI_00030  73 allrahgvviegillpnavgaiellnqaadamrpkedp 110
+                           a+l    v+ e + l    + ie l +aa  +  ke+ 
+  sp|Q5WJN4|CH60_SHOC1 291 AILTGGQVITEDLGLDLKSATIESLGRAAKVVVTKENT 328
+                           55666667778887887888899999999988888875 PP
+
+  == domain 3  score: 9.9 bits;  conditional E-value: 0.00099
+        NFECIMNI_00030  22 svdhtfhtapdeesalqqlcrmcpgvp...anavrrtymegrnallsqaantarallrahgvviegillpnavgaiellnqaad 102
+                            v++t  +  d+e   ++l++++ gv      a  +t m+ r   +  a n+ ra ++   v   g  l n + a++ ++   d
+  sp|Q5WJN4|CH60_SHOC1 350 QVEETT-SEFDKEKLQERLAKLAGGVAvlkVGAATETEMKERKLRIEDALNSTRAAVEEGIVAGGGTALVNVIKAVKAVDATGD 432
+                           555554.34578888889999999986222578899*******************99865555678999***999998877666 PP
+
+>> sp|B2VER0|ARAA_ERWT9  L-arabinose isomerase OS=Erwinia tasmaniensis (strain DSM 17950 / CFBP 7177 / CIP 109463 / NCPP
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   0.00027       7.6      23     114 ..     333     424 ..     321     431 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00027
+        NFECIMNI_00030  23 vdhtfhtapdeesal.qqlcrmcpgvpanavrrtymegrnallsqaantarallrah.gvviegillpnavgaiellnqaadamrp.ke 108
+                            d+t+h apd +  l   + ++cp++ + a  r  ++ +   +   a+ ar ++ a  g  + + ++ +    + ll    da++p + 
+  sp|B2VER0|ARAA_ERWT9 333 EDYTYHFAPDNDLVLgSHMLEVCPSIASEA--RPLLDVQPLGIGGKADPARLIFAAKaGRAVNASVI-DMGDRFRLLVNVLDAVEPpRA 418
+                           59**********99945799******8876..77888888889999999999988862556665555.455678888889999876256 PP
+
+        NFECIMNI_00030 109 dpkvpv 114
+                            pk+pv
+  sp|B2VER0|ARAA_ERWT9 419 LPKLPV 424
+                           799998 PP
+
+>> sp|A5UUJ6|BCHN_ROSS1  Light-independent protochlorophyllide reductase subunit N OS=Roseiflexus sp. (strain RS-1) OX=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   0.00034       9.7      11      74 ..     117     178 ..     112     192 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00034
+        NFECIMNI_00030  11 paaimlamldssvdhtfhtapdeesalqqlcrmcpgvpanavrrtymegrnallsqaantaral 74 
+                           p   +l +  s +d+tf  a  e+s lq l  +cp  p +  r  ++ + n  ++    t  a 
+  sp|A5UUJ6|BCHN_ROSS1 117 PNLPVLFVPASGLDYTFSQA--EDSVLQALLPFCPVAPPDDRRVVFLGSVNDAIADDFRTEAAR 178
+                           555566677799*****987..679**************9988888888887776666655544 PP
+
+>> sp|A7H6E5|BIOD_ANADF  ATP-dependent dethiobiotin synthetase BioD OS=Anaeromyxobacter sp. (strain Fw109-5) OX=404589 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.5   0.00061        18       8      84 ..      35     112 ..      28     124 .. 0.79
+   2 ?    3.0   0.3      0.14   3.9e+03      82     118 ..     155     187 ..     120     191 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 0.00061
+        NFECIMNI_00030   8 ntkpaaimlamldssvdhtfhtapdeesalqqlcrmcpgvpanavrrtymegrnallsqaantarallrah.gvvieg 84 
+                             kpa   +a  + +    +h a d    l+ lc    + p        +egr   +    +  ral   h +v++eg
+  sp|A7H6E5|BIOD_ANADF  35 PMKPAQSGVAPGEPTDADRLHAACDGAEPLEVLCPYSFAAPLAPAVAARLEGRQVSFGAIVDGVRALAARHeAVLVEG 112
+                           56777777777776666789**************9988888776667789*****************98882456676 PP
+
+  == domain 2  score: 3.0 bits;  conditional E-value: 0.14
+        NFECIMNI_00030  82 iegillpnavgaiellnqaadamrpkedpkvpvepte 118
+                           +e++     v    +lnqa +     +dp vp  p e
+  sp|A7H6E5|BIOD_ANADF 155 VEALRARGLVLTAIVLNQACE----TDDPSVPYNPAE 187
+                           444444444444445666665....367777777766 PP
+
+>> sp|Q02QZ9|RNT_PSEAB  Ribonuclease T OS=Pseudomonas aeruginosa (strain UCBPP-PA14) OX=208963 GN=rnt PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   0.00038        11       8      64 ..      81     136 ..      76     151 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00038
+       NFECIMNI_00030   8 ntkpaaimlamldssvdhtfhtapdeesalqqlcr.mcpgvpanavrrtymegrnall 64 
+                          n +paa+ +      +dh ++ a  ee+al ++ r +  ++ an  +r  + g+n+ +
+  sp|Q02QZ9|RNT_PSEAB  81 NIEPAALEFT--GIKLDHPLRMAVQEEAALTEIFRgIRKALKANGCKRAILVGHNSSF 136
+                          7788887654..5689*****************99345789************99865 PP
+
+>> sp|Q9HY82|RNT_PSEAE  Ribonuclease T OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   0.00038        11       8      64 ..      81     136 ..      76     151 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00038
+       NFECIMNI_00030   8 ntkpaaimlamldssvdhtfhtapdeesalqqlcr.mcpgvpanavrrtymegrnall 64 
+                          n +paa+ +      +dh ++ a  ee+al ++ r +  ++ an  +r  + g+n+ +
+  sp|Q9HY82|RNT_PSEAE  81 NIEPAALEFT--GIKLDHPLRMAVQEEAALTEIFRgIRKALKANGCKRAILVGHNSSF 136
+                          7788887654..5689*****************99345789************99865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (123 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     15972  (0.0279297); expected 11437.3 (0.02)
+Passed bias filter:                    13379  (0.0233954); expected 11437.3 (0.02)
+Passed Vit filter:                       869  (0.00151959); expected 571.9 (0.001)
+Passed Fwd filter:                        21  (3.6722e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              20  [number of targets reported over threshold]
+# CPU time: 1.92u 0.49s 00:00:02.41 Elapsed: 00:00:01.18
+# Mc/sec: 21440.75
+//
+[ok]

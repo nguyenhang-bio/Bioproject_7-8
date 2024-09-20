@@ -1,0 +1,280 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_57.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00057  [L=135]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+       0.13   17.4   0.0       0.28   16.3   0.0    1.6  1  sp|P12612|TCPA_YEAST  T-complex protein 1 subunit alpha OS=Sa
+       0.54   15.4   0.3       0.81   14.9   0.3    1.2  1  sp|P26699|TFA_BPP2    Probable tail fiber assembly protein OS
+       0.62   15.3   0.3       0.92   14.7   0.3    1.2  1  sp|Q71TD6|U1_BPP1     Tail fiber assembly protein U OS=Escher
+       0.63   15.2   0.3       0.95   14.6   0.3    1.2  1  sp|Q9T1U9|U1_BPMU     Tail fiber assembly protein U OS=Escher
+        1.4   14.1   0.0         36    9.5   0.0    2.9  3  sp|P19110|POLG_JAEV5  Genome polyprotein OS=Japanese encephal
+        1.4   14.1   0.0         36    9.5   0.0    2.9  3  sp|P32886|POLG_JAEVJ  Genome polyprotein OS=Japanese encephal
+        1.4   14.1   0.0         36    9.5   0.0    2.9  3  sp|P27395|POLG_JAEV1  Genome polyprotein OS=Japanese encephal
+        1.7   13.9   0.0         21   10.3   0.0    2.7  3  sp|P05769|POLG_MVEV5  Genome polyprotein OS=Murray valley enc
+        1.7   13.8   0.0         36    9.5   0.0    2.8  3  sp|G3FEX6|POLG_JAEVM  Genome polyprotein OS=Japanese encephal
+        3.3   12.9   0.1        8.1   11.6   0.1    1.6  1  sp|Q2IWF8|SYR_RHOP2   Arginine--tRNA ligase OS=Rhodopseudomon
+        3.5   12.8   0.0    3.9e+02    6.2   0.0    3.8  3  sp|Q9LYN8|EMS1_ARATH  Leucine-rich repeat receptor protein ki
+        5.6   12.2   0.0        7.7   11.7   0.0    1.2  1  sp|P56132|Y274_HELPY  Uncharacterized protein HP_0274 OS=Heli
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P12612|TCPA_YEAST  T-complex protein 1 subunit alpha OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   16.3   0.0     6e-06      0.28       2     119 ..     165     279 ..     164     289 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 6e-06
+        NFECIMNI_00057   2 sinvlsarspewanqektavnllvrfqhidgeipftasacdv.eahgkklygravsggygdispycgptaedi.aaisfanekasildk 88 
+                           s  ++ a s  ++n    a+ l v+ q+  gei +   a +v +ahgk      +  gy+     c   ++ +   i+  n k + ld 
+  sp|P12612|TCPA_YEAST 165 SSKIIGADSDFFSNMVVDAL-LAVKTQNSKGEIKYPVKAVNVlKAHGKSATESLLVPGYAL---NCTVASQAMpKRIAGGNVKIACLDL 249
+                           56677788877888776665.889***************99758*******9999999974...3544444441468899*******96 PP
+
+        NFECIMNI_00057  89 verrialleraqrlgiadpaeleelrrlevy 119
+                             +  a +    +++i dp +le++r+ e  
+  sp|P12612|TCPA_YEAST 250 NLQ-KARMAMGVQINIDDPEQLEQIRKREAG 279
+                           554.466677889*************99864 PP
+
+>> sp|P26699|TFA_BPP2  Probable tail fiber assembly protein OS=Escherichia phage P2 OX=2905681 GN=G PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.9   0.3   1.7e-05      0.81      79     126 ..     116     163 ..     106     169 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.7e-05
+      NFECIMNI_00057  79 anekasildkverrialleraqrlgiadpaeleelrrlevysvelarc 126
+                          ++ka++l + e+ i  lera rl++a   e   l+  e ysv ++r 
+  sp|P26699|TFA_BPP2 116 ESQKAALLSEAENVIQPLERAVRLNMATDEERARLESWERYSVLVSRV 163
+                         579****************************************99886 PP
+
+>> sp|Q71TD6|U1_BPP1  Tail fiber assembly protein U OS=Escherichia phage P1 OX=2886926 GN=U PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.7   0.3   1.9e-05      0.92      79     127 ..     116     164 ..     106     169 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.9e-05
+     NFECIMNI_00057  79 anekasildkverrialleraqrlgiadpaeleelrrlevysvelarcq 127
+                         ++ka++l + e  i  lera rl++a   e   l+  e ysv ++r  
+  sp|Q71TD6|U1_BPP1 116 ESQKAALLSEAESVIQPLERAVRLNMATDEERTRLEAWERYSVLVSRVD 164
+                        579****************************************999875 PP
+
+>> sp|Q9T1U9|U1_BPMU  Tail fiber assembly protein U OS=Escherichia phage Mu OX=2681603 GN=U PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.6   0.3     2e-05      0.95      79     127 ..     116     164 ..     106     169 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 2e-05
+     NFECIMNI_00057  79 anekasildkverrialleraqrlgiadpaeleelrrlevysvelarcq 127
+                         ++ka++l + e  i  lera rl++a   e   l+  e ysv ++r  
+  sp|Q9T1U9|U1_BPMU 116 ESQKAALLSEAESVIQPLERAVRLNMATDEERARLESWERYSVLVSRVD 164
+                        579****************************************999875 PP
+
+>> sp|P19110|POLG_JAEV5  Genome polyprotein OS=Japanese encephalitis virus (strain SA(v)) OX=11074 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.0      0.52   2.5e+04      52      75 ..    1559    1582 ..    1554    1586 .. 0.87
+   2 ?    9.5   0.0   0.00076        36      36      98 ..    1830    1892 ..    1824    1896 .. 0.85
+   3 ?   -2.7   0.0       4.8   2.3e+05      58      91 ..    1972    2005 ..    1953    2013 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.52
+        NFECIMNI_00057   52 gravsggygdispycgptaediaa 75  
+                            g a+ +g g ++py g   ed  a
+  sp|P19110|POLG_JAEV5 1559 GAAIMSGEGKLTPYWGSVREDRIA 1582
+                            8999**************999655 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 0.00076
+        NFECIMNI_00057   36 ftasacdveahgkklygravsggygdispycgptaediaaisfanekasildkverrialler 98  
+                            f  s + +     ++  ra s+gy  i+ y+g t   +a++ + ne a  l +  +++  l r
+  sp|P19110|POLG_JAEV5 1830 FPDSNAPIHDLQDEIPDRAWSSGYEWITEYAGKTVWFVASVKMGNEIAMCLQRAGKKVIQLNR 1892
+                            55555555555667889*************************************999988877 PP
+
+  == domain 3  score: -2.7 bits;  conditional E-value: 4.8
+        NFECIMNI_00057   58 gygdispycgptaediaaisfanekasildkver 91  
+                              gd   y g t+ed + ++   e   +ld +  
+  sp|P19110|POLG_JAEV5 1972 QVGDEYHYGGATSEDDSNLAHWTEAKIMLDNIHM 2005
+                            5799999**********99999999999998865 PP
+
+>> sp|P32886|POLG_JAEVJ  Genome polyprotein OS=Japanese encephalitis virus (strain Jaoars982) OX=11075 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.0      0.52   2.5e+04      52      75 ..    1559    1582 ..    1554    1586 .. 0.87
+   2 ?    9.5   0.0   0.00076        36      36      98 ..    1830    1892 ..    1824    1896 .. 0.85
+   3 ?   -2.7   0.0       4.8   2.3e+05      58      91 ..    1972    2005 ..    1953    2013 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.52
+        NFECIMNI_00057   52 gravsggygdispycgptaediaa 75  
+                            g a+ +g g ++py g   ed  a
+  sp|P32886|POLG_JAEVJ 1559 GAAIMSGEGKLTPYWGSVKEDRIA 1582
+                            8999**************999655 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 0.00076
+        NFECIMNI_00057   36 ftasacdveahgkklygravsggygdispycgptaediaaisfanekasildkverrialler 98  
+                            f  s + +     ++  ra s+gy  i+ y+g t   +a++ + ne a  l +  +++  l r
+  sp|P32886|POLG_JAEVJ 1830 FPDSNAPIHDLQDEIPDRAWSSGYEWITEYAGKTVWFVASVKMGNEIAMCLQRAGKKVIQLNR 1892
+                            55555555555667889*************************************999988877 PP
+
+  == domain 3  score: -2.7 bits;  conditional E-value: 4.8
+        NFECIMNI_00057   58 gygdispycgptaediaaisfanekasildkver 91  
+                              gd   y g t+ed + ++   e   +ld +  
+  sp|P32886|POLG_JAEVJ 1972 QVGDEYHYGGATSEDDSNLAHWTEAKIMLDNIHM 2005
+                            5799999**********99999999999998865 PP
+
+>> sp|P27395|POLG_JAEV1  Genome polyprotein OS=Japanese encephalitis virus (strain SA-14) OX=11073 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.0      0.52   2.5e+04      52      75 ..    1559    1582 ..    1554    1586 .. 0.87
+   2 ?    9.5   0.0   0.00076        36      36      98 ..    1830    1892 ..    1824    1896 .. 0.85
+   3 ?   -2.7   0.0       4.8   2.3e+05      58      91 ..    1972    2005 ..    1953    2013 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.52
+        NFECIMNI_00057   52 gravsggygdispycgptaediaa 75  
+                            g a+ +g g ++py g   ed  a
+  sp|P27395|POLG_JAEV1 1559 GAAIMSGEGKLTPYWGSVREDRIA 1582
+                            8999**************999655 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 0.00076
+        NFECIMNI_00057   36 ftasacdveahgkklygravsggygdispycgptaediaaisfanekasildkverrialler 98  
+                            f  s + +     ++  ra s+gy  i+ y+g t   +a++ + ne a  l +  +++  l r
+  sp|P27395|POLG_JAEV1 1830 FPDSNAPIHDLQDEIPDRAWSSGYEWITEYAGKTVWFVASVKMGNEIAMCLQRAGKKVIQLNR 1892
+                            55555555555667889*************************************999988877 PP
+
+  == domain 3  score: -2.7 bits;  conditional E-value: 4.8
+        NFECIMNI_00057   58 gygdispycgptaediaaisfanekasildkver 91  
+                              gd   y g t+ed + ++   e   +ld +  
+  sp|P27395|POLG_JAEV1 1972 QVGDEYHYGGATSEDDSNLAHWTEAKIMLDNIHM 2005
+                            5799999**********99999999999998865 PP
+
+>> sp|P05769|POLG_MVEV5  Genome polyprotein OS=Murray valley encephalitis virus (strain MVE-1-51) OX=301478 PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0       1.6   7.5e+04      52      73 ..    1558    1579 ..    1554    1585 .. 0.87
+   2 ?   10.3   0.0   0.00044        21      40      98 ..    1833    1891 ..    1821    1895 .. 0.86
+   3 ?   -2.5   0.0       4.1     2e+05      52      90 ..    1966    2003 ..    1948    2011 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 1.6
+        NFECIMNI_00057   52 gravsggygdispycgptaedi 73  
+                            g a+ +g g ++py g   ed 
+  sp|P05769|POLG_MVEV5 1558 GAAIMSGEGRLTPYWGNVKEDR 1579
+                            88999***********999995 PP
+
+  == domain 2  score: 10.3 bits;  conditional E-value: 0.00044
+        NFECIMNI_00057   40 acdveahgkklygravsggygdispycgptaediaaisfanekasildkverrialler 98  
+                               v   + ++  ra s+g+  i+ y+g t   +a++ ++ne a  l +  +r+  l r
+  sp|P05769|POLG_MVEV5 1833 NSPVHDVSSEIPDRAWSSGFEWITDYAGKTVWFVASVKMSNEIAQCLQRAGKRVIQLNR 1891
+                            5555556678889****************************************998887 PP
+
+  == domain 3  score: -2.5 bits;  conditional E-value: 4.1
+        NFECIMNI_00057   52 gravsggygdispycgptaediaaisfanekasildkve 90  
+                            gr  s   gd   y g t+ed   ++   e   +ld + 
+  sp|P05769|POLG_MVEV5 1966 GRNPS-QIGDEYHYGGGTSEDDTMLAHWTEAKILLDNIH 2003
+                            55544.5799999**********9999999999999876 PP
+
+>> sp|G3FEX6|POLG_JAEVM  Genome polyprotein OS=Japanese encephalitis virus (strain M28) OX=2555554 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.0   0.0       0.7   3.3e+04      52      73 ..    1559    1580 ..    1554    1586 .. 0.86
+   2 ?    9.5   0.0   0.00076        36      36      98 ..    1830    1892 ..    1824    1896 .. 0.85
+   3 ?   -2.7   0.0       4.8   2.3e+05      58      91 ..    1972    2005 ..    1953    2013 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -0.0 bits;  conditional E-value: 0.7
+        NFECIMNI_00057   52 gravsggygdispycgptaedi 73  
+                            g a+ +g g ++py g   ed 
+  sp|G3FEX6|POLG_JAEVM 1559 GAAIMSGEGKLTPYWGSVKEDR 1580
+                            8999*************99995 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 0.00076
+        NFECIMNI_00057   36 ftasacdveahgkklygravsggygdispycgptaediaaisfanekasildkverrialler 98  
+                            f  s + +     ++  ra s+gy  i+ y+g t   +a++ + ne a  l +  +++  l r
+  sp|G3FEX6|POLG_JAEVM 1830 FPDSNAPIHDLQDEIPDRAWSSGYEWITEYAGKTVWFVASVKMGNEIAMCLQRAGKKVIQLNR 1892
+                            55555555555667889*************************************999988877 PP
+
+  == domain 3  score: -2.7 bits;  conditional E-value: 4.8
+        NFECIMNI_00057   58 gygdispycgptaediaaisfanekasildkver 91  
+                              gd   y g t+ed + ++   e   +ld +  
+  sp|G3FEX6|POLG_JAEVM 1972 QVGDEYHYGGATSEDDSNLAHWTEAKIMLDNIHM 2005
+                            5799999**********99999999999998865 PP
+
+>> sp|Q2IWF8|SYR_RHOP2  Arginine--tRNA ligase OS=Rhodopseudomonas palustris (strain HaA2) OX=316058 GN=argS PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.1   0.00017       8.1      85     120 ..     482     517 ..     470     529 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 0.00017
+       NFECIMNI_00057  85 ildkverrialleraqrlgiadpaeleelrrlevys 120
+                          + d  e ria+l+ a    + dp+el+ lrrl ++ 
+  sp|Q2IWF8|SYR_RHOP2 482 LPDATEARIAFLKDANAERLTDPSELDLLRRLALFP 517
+                          56899***************************9874 PP
+
+>> sp|Q9LYN8|EMS1_ARATH  Leucine-rich repeat receptor protein kinase EMS1 OS=Arabidopsis thaliana OX=3702 GN=EMS1 PE=1 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   0.0    0.0083   3.9e+02       4      57 ..     315     367 ..     312     393 .. 0.84
+   2 ?    0.9   0.0      0.35   1.7e+04       2      40 ..     588     626 ..     587     650 .. 0.83
+   3 ?   -0.6   0.0       1.1   5.1e+04      72     121 ..     706     755 ..     659     765 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.0083
+        NFECIMNI_00057   4 nvlsarspewanqektavnllvrfqhidgeipftasacdveahgkklygravsg 57 
+                           n ls   p w  + k   +ll+   ++ geip     c +  h   l ++ +sg
+  sp|Q9LYN8|EMS1_ARATH 315 NQLSGSLPSWMGKWKVLDSLLLANNRFSGEIPHEIEDCPMLKHL-SLASNLLSG 367
+                           789999********************************998874.355555555 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 0.35
+        NFECIMNI_00057   2 sinvlsarspewanqektavnllvrfqhidgeipftasa 40 
+                           s n ls   pe   +    v + +   h+ geip + s 
+  sp|Q9LYN8|EMS1_ARATH 588 SYNRLSGPIPEELGECLVLVEISLSNNHLSGEIPASLSR 626
+                           678899999999999999999999**********98775 PP
+
+  == domain 3  score: -0.6 bits;  conditional E-value: 1.1
+        NFECIMNI_00057  72 diaaisfanekasildkverrialleraqrlgiadpaeleelrrlevysv 121
+                           d++  +++ e +s l  +e+ + l  +  ++    p+el  l +le   v
+  sp|Q9LYN8|EMS1_ARATH 706 DLSFNNLSGELSSELSTMEKLVGLYIEQNKFTGEIPSELGNLTQLEYLDV 755
+                           66666677788888888888888876666666677888888888887655 PP
+
+>> sp|P56132|Y274_HELPY  Uncharacterized protein HP_0274 OS=Helicobacter pylori (strain ATCC 700392 / 26695) OX=85962 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   0.00016       7.7      85     131 ..      53     100 ..      32     102 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00016
+        NFECIMNI_00057  85 ildkverrialler.aqrlgiadpaeleelrrlevysvelarcqslpl 131
+                            + kv  +++lle+ a++lg+a      e ++ ++ysv   +cq++p+
+  sp|P56132|Y274_HELPY  53 YVKKVGYKFSLLEKdAKELGLACVFLDLETKKCQIYSVRPKQCQTFPF 100
+                           5678999999**985899****987666899**************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (135 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     15190  (0.0265623); expected 11437.3 (0.02)
+Passed bias filter:                    13703  (0.023962); expected 11437.3 (0.02)
+Passed Vit filter:                       850  (0.00148637); expected 571.9 (0.001)
+Passed Fwd filter:                        12  (2.0984e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              12  [number of targets reported over threshold]
+# CPU time: 2.17u 0.38s 00:00:02.54 Elapsed: 00:00:01.20
+# Mc/sec: 23103.65
+//
+[ok]

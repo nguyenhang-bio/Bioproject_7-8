@@ -1,0 +1,48 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_32.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00032  [L=233]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+       0.37   15.1   0.2       0.53   14.6   0.2    1.2  1  sp|O02323|FABP7_CAEEL  Fatty acid-binding protein homolog 7 O
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|O02323|FABP7_CAEEL  Fatty acid-binding protein homolog 7 OS=Caenorhabditis elegans OX=6239 GN=lbp-7 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.6   0.2   9.2e-07      0.53     163     216 ..      61     115 ..      53     122 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 9.2e-07
+         NFECIMNI_00032 163 rngllryglqesnfeekrnsktynnrytyrengklkq.aiciklahksg.lktwtk 216
+                            +n  l + l e   e   + +tyn+ +t+ engkl      ik  hks+ l tw +
+  sp|O02323|FABP7_CAEEL  61 KNTKLSFKLGEEFVENSPDDRTYNSLFTF-ENGKLTHrQNKIKENHKSSvLTTWLE 115
+                            67788999999999999***********9.89**97515789*****873678875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (233 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     15047  (0.0263122); expected 11437.3 (0.02)
+Passed bias filter:                    12270  (0.0214562); expected 11437.3 (0.02)
+Passed Vit filter:                       721  (0.00126079); expected 571.9 (0.001)
+Passed Fwd filter:                         1  (1.74867e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 2.58u 0.48s 00:00:03.06 Elapsed: 00:00:01.23
+# Mc/sec: 39163.61
+//
+[ok]

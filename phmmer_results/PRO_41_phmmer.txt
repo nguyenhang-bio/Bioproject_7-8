@@ -1,0 +1,159 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_41.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00041  [L=87]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+        1.8   13.6   0.0        2.5   13.2   0.0    1.3  1  sp|P08058|THIO_CERSP   Thioredoxin OS=Cereibacter sphaeroides
+        2.9   13.0   0.0          4   12.5   0.0    1.3  1  sp|P96132|THIO_THIRO   Thioredoxin (Fragment) OS=Thiocapsa ro
+        3.4   12.8   0.0        5.3   12.1   0.0    1.3  1  sp|E9PB15|PTG3L_HUMAN  Putative protein PTGES3L OS=Homo sapie
+        4.1   12.5   0.0        7.1   11.7   0.0    1.4  1  sp|Q7XKD0|TRXX_ORYSJ   Thioredoxin X, chloroplastic OS=Oryza 
+        4.2   12.4   0.0         10   11.2   0.0    1.7  1  sp|A0QX86|IMPA_MYCS2   Inositol-1-monophosphatase ImpA OS=Myc
+        4.6   12.3   0.0    1.9e+02    7.2   0.0    2.2  2  sp|Q4A666|MRAZ_MYCS5   Transcriptional regulator MraZ OS=Myco
+        4.7   12.3   0.2        9.2   11.4   0.1    1.5  1  sp|P0C0M8|KGUA_STAEP   Guanylate kinase (Fragment) OS=Staphyl
+        4.7   12.3   0.0        7.4   11.7   0.0    1.4  1  sp|Q5JMR9|TRXY_ORYSJ   Thioredoxin Y, chloroplastic OS=Oryza 
+        5.4   12.1   0.0        6.6   11.8   0.0    1.1  1  sp|B6JJ31|RL31_AFIC5   Large ribosomal subunit protein bL31 O
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P08058|THIO_CERSP  Thioredoxin OS=Cereibacter sphaeroides OX=1063 GN=trxA PE=1 SV=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.0     4e-05       2.5      36      73 ..       7      45 ..       3      60 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 4e-05
+        NFECIMNI_00041 36 tkspfdaeikrkvfpitvdqysdwlng.tpiqyampels 73
+                          t + fd e+++   p+ vd +++w      i  a+ els
+  sp|P08058|THIO_CERSP  7 TDATFDTEVRKSDVPVVVDFWAEWCGPcRQIGPALEELS 45
+                          7789********************964134556666666 PP
+
+>> sp|P96132|THIO_THIRO  Thioredoxin (Fragment) OS=Thiocapsa roseopersicina OX=1058 GN=trxA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0   6.3e-05         4      30      62 ..       3      35 ..       1      52 [. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 6.3e-05
+        NFECIMNI_00041 30 dgieiftkspfdaeikrkvfpitvdqysdwlng 62
+                          d+i   t   f+ e+ + + p+ vd ++dw   
+  sp|P96132|THIO_THIRO  3 DSIVHVTDDSFEDEVLKSLEPVLVDYWADWCGP 35
+                          6677789999********************863 PP
+
+>> sp|E9PB15|PTG3L_HUMAN  Putative protein PTGES3L OS=Homo sapiens OX=9606 GN=PTGES3L PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   8.3e-05       5.3      17      69 ..      76     130 ..      64     143 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 8.3e-05
+         NFECIMNI_00041  17 avdravvravvrqdgieiftkspfdaeikrkvfpitv..dqysdwlngtpiqyam 69 
+                              d+ +v +  + dg+e++ +  f a++  k   ++v  d + dw     ++ a 
+  sp|E9PB15|PTG3L_HUMAN  76 IEDHRIVFSCKNADGVELYNEIEFYAKVNSKPVWLSVdfDNWRDWEGDEEMELAH 130
+                            458889999999****************999766665226889998777766665 PP
+
+>> sp|Q7XKD0|TRXX_ORYSJ  Thioredoxin X, chloroplastic OS=Oryza sativa subsp. japonica OX=39947 GN=TRX-X PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   0.00011       7.1      23      63 ..      59     100 ..      46     119 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00011
+        NFECIMNI_00041  23 vravvrqd.gieiftkspfdaeikrkvfpitvdqysdwlngt 63 
+                             a vr   ++ ++ +s f+ae+ +  +p+ vd  +dw    
+  sp|Q7XKD0|TRXX_ORYSJ  59 ASARVRCGaAVRFIGQSEFEAEVLQSDLPVLVDFVADWCGPC 100
+                           5555554314667789**********************8654 PP
+
+>> sp|A0QX86|IMPA_MYCS2  Inositol-1-monophosphatase ImpA OS=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   0.00016        10      11      86 ..      48     123 ..      44     123 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00016
+        NFECIMNI_00041  11 avgtdlavdravvravvrqdgiei....ftkspfdaeikrkvfpitvdqysdwlngtpiqyampelsaddrellitgmsw 86 
+                           a   dla++r vvra+ +  gi +    f   p+d+ +   + pi  d   ++  g+p+   +  l ad +   + g++w
+  sp|A0QX86|IMPA_MYCS2  48 ATEVDLAIERQVVRALTEATGIGVhgeeFGGEPIDSPLVWVLDPI--DGTFNYAAGSPMAAILLGLLADGEP--VAGLTW 123
+                           5678*****************966222266778888887777775..6777888899988888888887654..456555 PP
+
+>> sp|Q4A666|MRAZ_MYCS5  Transcriptional regulator MraZ OS=Mycoplasmopsis synoviae (strain 53) OX=262723 GN=mraZ PE=3 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.2   0.0     0.053   3.4e+03      35      47 ..      56      68 ..      32      90 .. 0.71
+   2 ?    7.2   0.0    0.0029   1.9e+02      26      55 ..     110     138 ..      96     144 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 3.2 bits;  conditional E-value: 0.053
+        NFECIMNI_00041 35 ftkspfdaeikrk 47
+                            k+pfda+i++ 
+  sp|Q4A666|MRAZ_MYCS5 56 DQKNPFDAKIRQI 68
+                          4699***987643 PP
+
+  == domain 2  score: 7.2 bits;  conditional E-value: 0.0029
+        NFECIMNI_00041  26 vvrqdgieiftkspfdaeikrkvfpitvdq 55 
+                           v  +d +ei++ks f+a + +kv p+ +++
+  sp|Q4A666|MRAZ_MYCS5 110 VGAKDYVEIWSKSKFEA-LNEKVTPVGLEK 138
+                           556899*********98.789999998776 PP
+
+>> sp|P0C0M8|KGUA_STAEP  Guanylate kinase (Fragment) OS=Staphylococcus epidermidis OX=1282 GN=gmk PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.1   0.00014       9.2      30      71 ..      27      69 ..      15      80 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00014
+        NFECIMNI_00041 30 dgieif..tkspfdaeikrkvfpitvdqysdwlngtpiqyampe 71
+                          dg++ f  tk  f+a ik   f i   qy     gtp+qy    
+  sp|P0C0M8|KGUA_STAEP 27 DGVDYFfkTKEEFEALIKDDQF-IEYAQYVGNYYGTPVQYVKDT 69
+                          899988557889******9999.78889999999******8755 PP
+
+>> sp|Q5JMR9|TRXY_ORYSJ  Thioredoxin Y, chloroplastic OS=Oryza sativa subsp. japonica OX=39947 GN=Os01g0963400 PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   0.00012       7.4      35      73 ..      64     100 ..      36     110 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00012
+        NFECIMNI_00041  35 ftkspfdaeikrkvfpitvdqysdwlngtpiqyampels 73 
+                            t s fd  +++   p+ vd y+ w    p qy +p l 
+  sp|Q5JMR9|TRXY_ORYSJ  64 QTFSSFDELLEKSEKPVLVDFYATWCG--PCQYMVPILQ 100
+                           46789********************85..99***99876 PP
+
+>> sp|B6JJ31|RL31_AFIC5  Large ribosomal subunit protein bL31 OS=Afipia carboxidovorans (strain ATCC 49405 / DSM 1227 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0    0.0001       6.6      25      63 ..      13      51 ..       3      57 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.0001
+        NFECIMNI_00041 25 avvrqdgieiftkspfdaeikrkvfpitvdqysdwlngt 63
+                           vv  dg e ft+s + ae     + i    +  w  gt
+  sp|B6JJ31|RL31_AFIC5 13 KVVMTDGTEYFTRSTYGAEGDTLNLDIDSKSHPAWTGGT 51
+                          37789**************99888888888889999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (87 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13954  (0.0244009); expected 11437.3 (0.02)
+Passed bias filter:                    13317  (0.023287); expected 11437.3 (0.02)
+Passed Vit filter:                       905  (0.00158254); expected 571.9 (0.001)
+Passed Fwd filter:                         9  (1.5738e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               9  [number of targets reported over threshold]
+# CPU time: 1.70u 0.46s 00:00:02.16 Elapsed: 00:00:01.19
+# Mc/sec: 15057.35
+//
+[ok]

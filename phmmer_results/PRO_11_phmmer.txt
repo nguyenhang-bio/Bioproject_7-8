@@ -1,0 +1,126 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_11.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00011  [L=170]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+       0.15   16.4   0.0       0.28   15.6   0.0    1.4  1  sp|G9M9M0|F6H11_IPOBA  Feruloyl CoA ortho-hydroxylase F6H1-1 
+       0.19   16.2   0.0       0.33   15.3   0.0    1.4  1  sp|G9M9M1|F6H12_IPOBA  Feruloyl CoA ortho-hydroxylase F6H1-2 
+       0.21   16.0   0.0       0.33   15.3   0.0    1.3  1  sp|G9M9M2|F6H13_IPOBA  Feruloyl CoA ortho-hydroxylase F6H1-3 
+       0.35   15.3   0.7       0.57   14.6   0.7    1.3  1  sp|Q9ET58|KLF2_RAT     Krueppel-like factor 2 OS=Rattus norve
+        1.7   13.0   0.1        4.1   11.8   0.1    1.6  1  sp|Q6Q873|SIRT_LEPMC   Thioredoxin reductase sirT OS=Leptosph
+        4.4   11.7   0.0        6.7   11.1   0.0    1.3  1  sp|Q1IXA0|RL17_DEIGD   Large ribosomal subunit protein bL17 O
+        5.5   11.4   0.1         12   10.3   0.1    1.5  1  sp|Q07947|BEDB_PSEPU   Benzene 1,2-dioxygenase system ferredo
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|G9M9M0|F6H11_IPOBA  Feruloyl CoA ortho-hydroxylase F6H1-1 OS=Ipomoea batatas OX=4120 GN=F6H1-1 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.6   0.0   3.4e-06      0.28      61     119 ..     244     308 ..     226     318 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 3.4e-06
+         NFECIMNI_00011  61 hvagisvrqidrepl.n.rpsngtivfkkgealpllsdgr...invrvakagtmkr.gepvfvda 119
+                            ++ g+ vr++d +   +  p ng iv+  g+al +ls+gr   i  rv   g+  r + p+fv+ 
+  sp|G9M9M0|F6H11_IPOBA 244 QIGGLYVRKLDSDEWvHvPPINGAIVINVGDALQILSNGRyksIEHRVIANGSNNRiSVPIFVNP 308
+                            578999****98764132589******************94444567777776655367999875 PP
+
+>> sp|G9M9M1|F6H12_IPOBA  Feruloyl CoA ortho-hydroxylase F6H1-2 OS=Ipomoea batatas OX=4120 GN=F6H1-2 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.3   0.0   4.1e-06      0.33      61     119 ..     244     308 ..     226     318 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 4.1e-06
+         NFECIMNI_00011  61 hvagisvrqidrepln..rpsngtivfkkgealpllsdgr...invrvakagtmkr.gepvfvda 119
+                            ++ g+ vr++d +      p ng iv+  g+al +ls+gr   i  rv   g+  r + p+fv+ 
+  sp|G9M9M1|F6H12_IPOBA 244 QIGGLYVRKLDSDTWVhvPPINGAIVINVGDALQILSNGRyksIEHRVIANGSNNRiSVPIFVNP 308
+                            578999****99975412589******************94444567777776655367999876 PP
+
+>> sp|G9M9M2|F6H13_IPOBA  Feruloyl CoA ortho-hydroxylase F6H1-3 OS=Ipomoea batatas OX=4120 GN=F6H1-3 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.3   0.0   4.1e-06      0.33      61     119 ..     244     308 ..     226     318 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 4.1e-06
+         NFECIMNI_00011  61 hvagisvrqidrepln..rpsngtivfkkgealpllsdgr...invrvakagtmkr.gepvfvda 119
+                            ++ g+ vr++d +      p ng iv+  g+al +ls+gr   i  rv   g+  r + p+fv+ 
+  sp|G9M9M2|F6H13_IPOBA 244 QIGGLYVRKLDSDTWVhvPPINGAIVINVGDALQILSNGRyksIEHRVIANGSNNRiSVPIFVNP 308
+                            578999****99975412589******************94444567777776655367999876 PP
+
+>> sp|Q9ET58|KLF2_RAT  Krueppel-like factor 2 OS=Rattus norvegicus OX=10116 GN=Klf2 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.6   0.7   6.9e-06      0.57      34      69 ..     125     160 ..     105     178 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 6.9e-06
+      NFECIMNI_00011  34 edadgigfgvackvgvgprgvklggaahvagisvrq 69 
+                          + dg g+g a+ ++ gprg+kl ga    g  +r 
+  sp|Q9ET58|KLF2_RAT 125 PEVDGGGYGCAAGLARGPRGLKLEGALGATGACMRG 160
+                         678************************999988875 PP
+
+>> sp|Q6Q873|SIRT_LEPMC  Thioredoxin reductase sirT OS=Leptosphaeria maculans OX=5022 GN=sirT PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.1     5e-05       4.1      98     161 ..     259     323 ..     240     327 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 5e-05
+        NFECIMNI_00011  98 rinvrvakagtmkrgepvfvdaatgefgatg.tlkctnvvwglsgtvamgdvvhvvitnadvaap 161
+                           ++ +++ +ag +k   p +  +  g f+a    +    vvw++s  v+ g  v+     ad+aa 
+  sp|Q6Q873|SIRT_LEPMC 259 QLGLELTEAGDVKTTPPFYETSVKGVFAAGDcAVPLKQVVWAVSTGVSAGSGVNFQCLGADMAAR 323
+                           5778899**********99999*****98652577899***********************9985 PP
+
+>> sp|Q1IXA0|RL17_DEIGD  Large ribosomal subunit protein bL17 OS=Deinococcus geothermalis (strain DSM 11300 / AG-3a) OX=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   8.2e-05       6.7      74     119 ..       9      55 ..       5      70 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 8.2e-05
+        NFECIMNI_00011  74 plnrpsngtivfkkgealpllsdgrinvrvakagtmkrg.epvfvda 119
+                            lnr s++ + + +++a  ll +gri   + ka  ++   e ++  a
+  sp|Q1IXA0|RL17_DEIGD   9 KLNRNSSARVALARAQATALLREGRIQTTLTKAKELRPYvEKLITTA 55 
+                           69******************************998875414444444 PP
+
+>> sp|Q07947|BEDB_PSEPU  Benzene 1,2-dioxygenase system ferredoxin subunit OS=Pseudomonas putida OX=303 GN=bedB PE=3 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.1   0.00014        12     112     152 ..      24      63 ..      12      71 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.00014
+        NFECIMNI_00011 112 gepvfvdaatgefgatgtlkctnvvwglsgtvamgdvvhvv 152
+                           +epv+v    gef a     ct+  w+ls     gdvv+  
+  sp|Q07947|BEDB_PSEPU  24 SEPVMVCNVDGEFFAVQD-TCTHGDWALSEGYLDGDVVECT 63 
+                           59***********99875.6*****************9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (170 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     15010  (0.0262475); expected 11437.3 (0.02)
+Passed bias filter:                    10725  (0.0187545); expected 11437.3 (0.02)
+Passed Vit filter:                       744  (0.00130101); expected 571.9 (0.001)
+Passed Fwd filter:                         7  (1.22407e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 2.21u 0.36s 00:00:02.57 Elapsed: 00:00:01.20
+# Mc/sec: 29140.39
+//
+[ok]

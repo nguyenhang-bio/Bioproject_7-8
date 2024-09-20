@@ -1,0 +1,322 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_24.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00024  [L=320]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
+    0.00042   24.5   0.0    0.00062   23.9   0.0    1.2  1  sp|A6WL18|XNI_SHEB8        Flap endonuclease Xni OS=Shewanell
+    0.00043   24.5   0.0    0.00082   23.5   0.0    1.4  1  sp|P00638|EXRN_BPT7        Exonuclease OS=Escherichia phage T
+    0.00086   23.5   0.0     0.0016   22.6   0.0    1.5  1  sp|P20321|EXRN_BPT3        Exodeoxyribonuclease OS=Enterobact
+      0.001   23.2   0.0     0.0015   22.7   0.0    1.2  1  sp|A3D2C6|XNI_SHEB5        Flap endonuclease Xni OS=Shewanell
+     0.0016   22.6   0.0     0.0024   22.0   0.0    1.2  1  sp|B8EAT2|XNI_SHEB2        Flap endonuclease Xni OS=Shewanell
+     0.0022   22.1   0.0     0.0033   21.5   0.0    1.2  1  sp|A9KTM9|XNI_SHEB9        Flap endonuclease Xni OS=Shewanell
+  ------ inclusion threshold ------
+      0.073   17.1   0.1       0.11   16.5   0.1    1.3  1  sp|Q8K9D0|EX53_BUCAP       5'-3' exonuclease OS=Buchnera aphi
+      0.091   16.8   0.0       0.37   14.8   0.0    1.8  2  sp|P80194|DPO1_THECA       DNA polymerase I, thermostable OS=
+      0.092   16.8   0.0       0.16   16.0   0.0    1.4  1  sp|Q9PQ75|EX53_UREPA       5'-3' exonuclease OS=Ureaplasma pa
+       0.35   14.9   0.0       0.51   14.4   0.0    1.2  1  sp|A4Y4Y4|XNI_SHEPC        Flap endonuclease Xni OS=Shewanell
+        0.5   14.4   0.0       0.73   13.9   0.0    1.2  1  sp|A1RLT6|XNI_SHESW        Flap endonuclease Xni OS=Shewanell
+        1.1   13.3   0.1          2   12.4   0.1    1.4  1  sp|A7EEA6|SHE9_SCLS1       Sensitive to high expression prote
+        1.9   12.5   0.0          2   12.4   0.0    1.1  1  sp|A0A0B4J272|TVA24_HUMAN  T cell receptor alpha variable 24 
+        1.9   12.5   0.0        2.8   11.9   0.0    1.2  1  sp|Q2FYD8|PH_STAA8         Probable autolysin PH OS=Staphyloc
+        3.6   11.6   0.0        5.2   11.0   0.0    1.2  1  sp|Q8AXQ4|SOX12_XENLA      Transcription factor Sox-12 OS=Xen
+        4.2   11.4   0.0         24    8.9   0.0    1.8  2  sp|Q3AXI3|PCYA_SYNS9       Phycocyanobilin:ferredoxin oxidore
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|A6WL18|XNI_SHEB8  Flap endonuclease Xni OS=Shewanella baltica (strain OS185) OX=402882 GN=xni PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.9   0.0   1.7e-08   0.00062      41     159 ..      17     143 ..       3     162 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 23.9 bits;  conditional E-value: 1.7e-08
+       NFECIMNI_00024  41 ygrspeeytlqeiltniegriaamkrrlrarkvrifftakd.nfryrildtykanrkea..wlpenldaakshimtmfhgemapgleadd 127
+                          y+  p+e  +q +   + +    + r  r   v i +   + ++r ++   yk  rk     l + l a + h+  m  g +  + eadd
+  sp|A6WL18|XNI_SHEB8  17 YAAIPDETDMQSLTERVSSACTKLLRVHRPSHVAIVWDGDEiSWRKQLYPDYKKGRKPMpePLAQGLVALQDHLTAMHIGSIYAAAEADD 106
+                          66779*******9999*999999999999999*99998765389999*********97611466899*********************** PP
+
+       NFECIMNI_00024 128 lla...i.nqkldgstiiatidkdipqvrgmhy.rwe 159
+                          ++a   i   k  g  ii + dk + q++  h  +w+
+  sp|A6WL18|XNI_SHEB8 107 VIAtlaIkTAKAQGEAIIVSTDKGFSQLNHRHIsQWD 143
+                          976222435799****************999962464 PP
+
+>> sp|P00638|EXRN_BPT7  Exonuclease OS=Escherichia phage T7 OX=10760 GN=6 PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.5   0.0   2.3e-08   0.00082       2     160 ..       2     175 ..       1     189 [. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 23.5 bits;  conditional E-value: 2.3e-08
+       NFECIMNI_00024   2 alptiekqydddeqcteykfeellidgdllvfsscaaveygrspeeytlqeiltn......iegriaamkrrlra...rkvrifftakdn 82 
+                          al  +++ y+  e c +     l++dgd lvf + +a e+  s ee        +      +e  i + + r +a     + + ft   n
+  sp|P00638|EXRN_BPT7   2 ALLDLKQFYELREGCDDKG--ILVMDGDWLVFQAMSAAEFDASWEEEIWHRCCDHakarqiLEDSIKSYETRKKAwagAPIVLAFTDSVN 89 
+                          6666777778888887754..4899******************99987666555411111144455555555444212678899****** PP
+
+       NFECIMNI_00024  83 fryrild.tykanrkeawlp....enldaakshimtmfhgemapgleaddllai...nqkldgs..tiiatidkdipqvrgmhyrwet 160
+                          +r +++d  ykanrk    p    e lda        f+    p le dd++ +   n    g+   +i + dkd+  + +  + w t
+  sp|P00638|EXRN_BPT7  90 WRKELVDpNYKANRKAVKKPvgyfEFLDALFE--REEFYCIREPMLEGDDVMGViasNPSAFGArkAVIISCDKDFKTIPNCDFLWCT 175
+                          *****9956******99998333345666543..45789999999***998654222778877533689999****999999999976 PP
+
+>> sp|P20321|EXRN_BPT3  Exodeoxyribonuclease OS=Enterobacteria phage T3 OX=10759 GN=6 PE=4 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.6   0.0   4.4e-08    0.0016       2     160 ..       2     175 ..       1     209 [. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 22.6 bits;  conditional E-value: 4.4e-08
+       NFECIMNI_00024   2 alptiekqydddeqcteykfeellidgdllvfsscaaveygrspeeytlqeiltn......iegriaamkrrlra...rkvrifftakdn 82 
+                          al  +++ y+  e c +     l++dgd lvf + +a e+  s ee        +      +e  i + + r +a     + + ft   n
+  sp|P20321|EXRN_BPT3   2 ALLDLKQFYELREGCDDKG--ILVMDGDWLVFQAMSAAEFDASWEEEIWHRCCDHakarqiLEDSIKSYETRKKAwvgAPIVLAFTDSVN 89 
+                          6666777778888887754..4899******************99987766655511111144555555555554222567889****** PP
+
+       NFECIMNI_00024  83 fryrild.tykanrkeawlpenldaakshi..mtmfhgemapgleaddllai...nqkldgs..tiiatidkdipqvrgmhyrwet 160
+                          +r +++d  ykanrk    p         +     f+    p le dd++ +   n    g+   +i + dkd+  + +  + w t
+  sp|P20321|EXRN_BPT3  90 WRKELVDpNYKANRKATKKPVGYFEFLEALfeREEFYCIREPMLEGDDVMGViasNPSAFGArkAVIISCDKDFKTIPNCDFLWCT 175
+                          *****9956*******9999765444333311457899999******98654222777777533689999***9999999999976 PP
+
+>> sp|A3D2C6|XNI_SHEB5  Flap endonuclease Xni OS=Shewanella baltica (strain OS155 / ATCC BAA-1091) OX=325240 GN=xni PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.7   0.0   4.2e-08    0.0015      41     159 ..      17     143 ..       3     162 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 22.7 bits;  conditional E-value: 4.2e-08
+       NFECIMNI_00024  41 ygrspeeytlqeiltniegriaamkrrlrarkvrifftakd.nfryrildtykanrkea..wlpenldaakshimtmfhgemapgleadd 127
+                          y+  p+e  +q +   + +    + r  r   v i +   + ++r ++   yk  rk     l + l a + h+  m  g +  + eadd
+  sp|A3D2C6|XNI_SHEB5  17 YAAIPDETDMQSLTERVISACTKLLRVHRPTHVAIVWDGHEiSWRKQLYPDYKKGRKPMpePLAQGLVALQDHLTAMHIGSIYAAAEADD 106
+                          66679999999999888888888888888889999888765489************97611466899*********************** PP
+
+       NFECIMNI_00024 128 lla...i.nqkldgstiiatidkdipqvrgmhy.rwe 159
+                          ++a   i   k  g  ii + dk + q++  h  +w+
+  sp|A3D2C6|XNI_SHEB5 107 VIAtlaIkTAKAQGEAIIVSTDKGFSQLNHRHIsQWD 143
+                          976222435799****************999962464 PP
+
+>> sp|B8EAT2|XNI_SHEB2  Flap endonuclease Xni OS=Shewanella baltica (strain OS223) OX=407976 GN=xni PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.0   0.0   6.8e-08    0.0024      41     155 ..      17     138 ..       3     160 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 22.0 bits;  conditional E-value: 6.8e-08
+       NFECIMNI_00024  41 ygrspeeytlqeiltniegriaamkrrlrarkvrifftakd.nfryrildtykanrkea..wlpenldaakshimtmfhgemapgleadd 127
+                          y+  p+e  +q +   + +    + r  r   v i +   + ++r ++   yk  rk     l + l a + h+  m  g +  + eadd
+  sp|B8EAT2|XNI_SHEB2  17 YAAIPDETDMQSLTERVSSACTKLLRVHRPTHVAIVWDGDEiSWRKQLYPNYKKGRKPMpePLAQGLVALQDHLTAMHIGSIYAAAEADD 106
+                          66779*******9999*999999999999999*99998765489999*********97611466899*********************** PP
+
+       NFECIMNI_00024 128 lla...i.nqkldgstiiatidkdipqvrgmh 155
+                          ++a   i   k  g  ii + dk + q++  +
+  sp|B8EAT2|XNI_SHEB2 107 VIAtlaIkTAKAQGEAIIVSTDKGFSQLNHRQ 138
+                          976222435799************99987544 PP
+
+>> sp|A9KTM9|XNI_SHEB9  Flap endonuclease Xni OS=Shewanella baltica (strain OS195) OX=399599 GN=xni PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   0.0   9.4e-08    0.0033      41     155 ..      17     138 ..       3     160 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 9.4e-08
+       NFECIMNI_00024  41 ygrspeeytlqeiltniegriaamkrrlrarkvrifftakd.nfryrildtykanrkea..wlpenldaakshimtmfhgemapgleadd 127
+                          y+  p+e  +q +   + +    + r  r   v i +   + ++r ++   yk  rk     l + l a + h+  m  g +  + eadd
+  sp|A9KTM9|XNI_SHEB9  17 YAAIPDETDMQSLTERVSSACTKLLRVHRPTHVAIVWDGDEiSWRKQLYPDYKKGRKPMpePLAQGLVALQDHLTAMHIGSIYAAAEADD 106
+                          66779*******9999*999999999999999*99998765489999*********97611466899*********************** PP
+
+       NFECIMNI_00024 128 lla...i.nqkldgstiiatidkdipqvrgmh 155
+                          ++a   i   k  g  ii + dk + q++  +
+  sp|A9KTM9|XNI_SHEB9 107 VIAtlaIkTAKAQGEAIIVSTDKGFSQLNHRQ 138
+                          976222435799************99987544 PP
+
+>> sp|Q8K9D0|EX53_BUCAP  5'-3' exonuclease OS=Buchnera aphidicola subsp. Schizaphis graminum (strain Sg) OX=198804 GN=po
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   16.5   0.1   3.1e-06      0.11      24     151 ..      10     145 ..       3     203 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 3.1e-06
+        NFECIMNI_00024  24 llidgdllvfsscaaveygrspeeytlqeiltniegriaamkrrlrarkvriff.takdnfryrildtykanrkeawlpenldaakshi 111
+                           +++dg l ++ s    +  +s ee     i   ++     + ++ +++k+ i+f ++k nfr  i+  yk+nr    +p  l      +
+  sp|Q8K9D0|EX53_BUCAP  10 IIVDGSLYLYRSYFTFQNFNSNEENPSGAIYGMLKTIQNILNKNYNSKKIIIIFdSSKKNFRNTIFKEYKSNRSA--MPNKLYVQIQPL 96 
+                           7899******999999999999999888888877777778899999999876652789**************964..788887766555 PP
+
+        NFECIMNI_00024 112 mtmfh..g...emapgleaddlla.inqkld..gs.tiiatidkdipqv 151
+                           + +++  g       g+eadd++  +  kl+  g   +i + dkd+ q+
+  sp|Q8K9D0|EX53_BUCAP  97 FKILEeiGiktLSILGIEADDIIGsLAYKLEqkGEqVLIVSHDKDMIQL 145
+                           5544311211123469999998742455554224315667788887665 PP
+
+>> sp|P80194|DPO1_THECA  DNA polymerase I, thermostable OS=Thermus caldophilus OX=272 GN=polA PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.8   0.0     1e-05      0.37      20     151 ..      11     149 ..       6     161 .. 0.76
+   2 ?   -1.4   0.0      0.89   3.2e+04     196     215 ..     182     201 ..     174     220 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 1e-05
+        NFECIMNI_00024  20 kfeellidgdllvfsscaaveygrspeeytlqeiltniegriaamkrrlrarkvrifftak.dnfryrildtykanrkea..wlpenld 105
+                           k   ll+dg  l + +  a++   +     +q +    ++ + a+k+    + v + f ak  +fr++  + yka r      +p  l 
+  sp|P80194|DPO1_THECA  11 KGRVLLVDGHHLAYRTFFALKGLTTSRGEPVQAVYGFAKSLLKALKEDG-YKAVFVVFDAKaPSFRHEAYEAYKAGRAPTpeDFPRQLA 98 
+                           5667899999999999999887777777788988888888899988764.45677777777379************9754225788888 PP
+
+        NFECIMNI_00024 106 aakshimtm.fhgemapgleaddllai...nqkldgsti.iatidkdipqv 151
+                             k  +  + f     pg eadd+la    n + +g  + i t d+d+ q+
+  sp|P80194|DPO1_THECA  99 LIKELVDLLgFTRLEVPGYEADDVLATlakNPEKEGYEVrILTADRDLDQL 149
+                           8888775542666678*******9865233777788665489999999886 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.89
+        NFECIMNI_00024 196 cyqlligdptdgvmgcgklv 215
+                            ++ l+gdp+d++ g   + 
+  sp|P80194|DPO1_THECA 182 DFRALVGDPSDNLPGVKGIG 201
+                           57899*****9777654443 PP
+
+>> sp|Q9PQ75|EX53_UREPA  5'-3' exonuclease OS=Ureaplasma parvum serovar 3 (strain ATCC 700970) OX=273119 GN=polA PE=3 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   16.0   0.0   4.6e-06      0.16      24     211 ..       5     197 ..       2     218 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 4.6e-06
+        NFECIMNI_00024  24 llidgdllvfsscaaveygrspeeytlqeiltniegriaamkrrlrark.vr....ifftakdnfryrildtykanrk..eawlpenld 105
+                           ++idg+ l++ +  a  y ++      q + tn    +a+m  ++  ++        +  +k  fr +    yka rk  +a l   l 
+  sp|Q9PQ75|EX53_UREPA   5 IVIDGNSLIYRAFHA-TYKQAEWAVEKQLMPTNAIKLVASMIFKILNQEqFTygliAMDASKQTFRAQEYAAYKATRKpmDAKLIVQLP 92 
+                           567777777776655.355554444555556777777777765544333122111023457899*************955689999999 PP
+
+        NFECIMNI_00024 106 aakshimtm.fhgemapgleaddlla....inqkldgstiiatidkdipqvrgmhyrwetqhkgeavfevsgngelkkeihnkktkitg 189
+                             k  ++ m f+    pg+eadd++     +  k+d  t i + d+d+ q+ + + + +    g +v+         +ei+     + +
+  sp|Q9PQ75|EX53_UREPA  93 YLKKLFVAMgFRIISQPGIEADDFVGsfsnLMNKFDVDTTIYSSDRDMLQLINKNTKLKLLKTGTSVM---------QEINLTNFSLLN 172
+                           9888777764777889*******986333355799999**********99998887777766666654.........566667777788 PP
+
+        NFECIMNI_00024 190 ngi...rffcyqlligdptdgvmgc 211
+                           ngi   +++ y+ l+gd +d+++g 
+  sp|Q9PQ75|EX53_UREPA 173 NGIlpyQIIEYKGLVGDSSDNLIGV 197
+                           8873334567888999999988876 PP
+
+>> sp|A4Y4Y4|XNI_SHEPC  Flap endonuclease Xni OS=Shewanella putrefaciens (strain CN-32 / ATCC BAA-453) OX=319224 GN=xni 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.0   1.4e-05      0.51      41     154 ..      17     137 ..       3     158 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 1.4e-05
+       NFECIMNI_00024  41 ygrspeeytlqeiltniegriaamkrrlrarkvrifftakd.nfryrildtykanrkea..wlpenldaakshimtmfhgemapgleadd 127
+                          y+  p+e  ++ +   + +    + r  +   + i +   + ++r ++   yk  rk     l + l a + h+ t+  + +  + eadd
+  sp|A4Y4Y4|XNI_SHEPC  17 YAAIPDENDMESLKERVTSACTKLLRVHHPSHIAIVWDGDEiSWRKQLYPDYKKGRKPMpePLAQGLRALQEHLATLNIASIYAAAEADD 106
+                          455577777777777777766666666677777777766443789999********9761156799************************ PP
+
+       NFECIMNI_00024 128 llai....nqkldgstiiatidkdipqvrgm 154
+                          ++a       k  g  ii + dk + q++  
+  sp|A4Y4Y4|XNI_SHEPC 107 VIATlavkTAKAQGEAIIVSTDKGFSQLNHP 137
+                          976422235799************9998644 PP
+
+>> sp|A1RLT6|XNI_SHESW  Flap endonuclease Xni OS=Shewanella sp. (strain W3-18-1) OX=351745 GN=xni PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.9   0.0     2e-05      0.73      44     154 ..      20     137 ..       3     158 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 2e-05
+       NFECIMNI_00024  44 speeytlqeiltniegriaamkrrlrarkvrifftakd.nfryrildtykanrkea..wlpenldaakshimtmfhgemapgleaddlla 130
+                           p e  ++ +   + +    + r  +   + i +   + ++r ++   yk  rk     l + l a + h+ t+  + +  + eadd++a
+  sp|A1RLT6|XNI_SHESW  20 IPNENDMESLKERVTSACTKLLRVHHPSHIAIVWDGDEiSWRKQLYPDYKKGRKPMpePLAQGLRALQEHLATLNIASIYAAAEADDVIA 109
+                          4555555555555555555555555666677766654437899999*******9761156799************************976 PP
+
+       NFECIMNI_00024 131 i....nqkldgstiiatidkdipqvrgm 154
+                                 k  g  ii + dk + q++  
+  sp|A1RLT6|XNI_SHESW 110 TlavkTAKAQGEAIIVSTDKGFSQLNHP 137
+                          422235799************9998644 PP
+
+>> sp|A7EEA6|SHE9_SCLS1  Sensitive to high expression protein 9 homolog, mitochondrial OS=Sclerotinia sclerotiorum (stra
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.1   5.7e-05         2      49     121 ..     211     282 ..     187     301 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 5.7e-05
+        NFECIMNI_00024  49 tlqeiltniegriaamkrrlrarkvrifftakdnfryrildtykanrkeawlpenldaakshimtmfhgemap 121
+                            l+  +tn+e+++a+ k+ +r+ +++   t  d    +   t    rk+ w p +l+   +h+  m h     
+  sp|A7EEA6|SHE9_SCLS1 211 ALKNKITNLEAQVASSKELVRSTRLHYKTTVADRASSQREVTTLLARKDTWTPADLER-FTHLYRMDHTNEQA 282
+                           467789*********************99*99998766666666779*********97.58999999965444 PP
+
+>> sp|A0A0B4J272|TVA24_HUMAN  T cell receptor alpha variable 24 OS=Homo sapiens OX=9606 GN=TRAV24 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   5.6e-05         2     154     194 ..      55      96 ..      30     109 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 5.6e-05
+             NFECIMNI_00024 154 mh.yrwetqhkgeavfevsgngelkkeihnkktkitgngirf 194
+                                +h yrwet    ea+f ++ ng+ kk+ +   t  t  g  +
+  sp|A0A0B4J272|TVA24_HUMAN  55 LHwYRWETAKSPEALFVMTLNGDEKKKGRISATLNTKEGYSY 96 
+                                5549*********************99887777777777654 PP
+
+>> sp|Q2FYD8|PH_STAA8  Probable autolysin PH OS=Staphylococcus aureus (strain NCTC 8325 / PS 47) OX=93061 GN=SAOUHSC_015
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   7.9e-05       2.8      47     167 ..     294     417 ..     280     455 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 7.9e-05
+      NFECIMNI_00024  47 eytlqeiltniegriaamkrrlrarkvrifftakdnfryrildt.ykanrke.awlpenldaakshimtmfhgemapgleaddll..ainq 133
+                         + ++q+++ n  g+i  +  r     v++  +a+ n++yr+ +  +  n+ +  w+ +n d     i   +hg+   gl a ++   a nq
+  sp|Q2FYD8|PH_STAA8 294 DKSIQDVIKNNLGQIRGVTPRNDLLNVNV--SAEININYRLSELgFITNKNDmDWIKKNYDLYSKLIAGAIHGKPIGGLVAGNVKtsAKNQ 382
+                         668999999999***99998877766665..67778888877752556665536***************************9875227788 PP
+
+      NFECIMNI_00024 134 kldgstiiatidkd.ipqvrgmhyrwetqhkgeav 167
+                         k        t+dk+ +p  +   y      kg  v
+  sp|Q2FYD8|PH_STAA8 383 KNPPVPAGYTLDKNnVPYKKETGYYTVANVKGNNV 417
+                         88888888899985377777666666666666655 PP
+
+>> sp|Q8AXQ4|SOX12_XENLA  Transcription factor Sox-12 OS=Xenopus laevis OX=8355 GN=sox12 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   0.00015       5.2     132     177 ..     190     235 ..     175     239 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 0.00015
+         NFECIMNI_00024 132 nqkldgstiiatidkdipqvrgmhyrwetqhkgeavfevsgngelk 177
+                            ++ l+g +++  +dk++p   g h+++      e +  +sg+g l+
+  sp|Q8AXQ4|SOX12_XENLA 190 HEGLEGGSLVIPVDKEVPPHSGSHFEFPDHCTPEVMEMISGSGLLE 235
+                            56799**********************9888888888899999775 PP
+
+>> sp|Q3AXI3|PCYA_SYNS9  Phycocyanobilin:ferredoxin oxidoreductase OS=Synechococcus sp. (strain CC9902) OX=316279 GN=pcy
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.9   0.0   0.00066        24     117     154 ..      31      66 ..      18      79 .. 0.85
+   2 ?    0.1   0.0      0.32   1.2e+04      18      74 ..     167     219 ..     160     234 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 0.00066
+        NFECIMNI_00024 117 gemapgleaddllainqkldgstiiatidkdipqvrgm 154
+                            e+ap   addl ai+ +ldg t++  i  ++ q rg+
+  sp|Q3AXI3|PCYA_SYNS9  31 PELAPLCTADDLKAIHGELDGETLF--IGNELYQCRGF 66 
+                           589********************96..67788888885 PP
+
+  == domain 2  score: 0.1 bits;  conditional E-value: 0.32
+        NFECIMNI_00024  18 eykfeellidgdllvfsscaaveygrspeeytlqeiltniegriaamkrrlrarkvr 74 
+                           e  f +++id  l v+s ca+     +pe  t    +   eg++    ++ r  k r
+  sp|Q3AXI3|PCYA_SYNS9 167 EALFNQVVID-YLEVLSDCASR---ANPESPTTVSTINRYEGQLNYCLQQKRNDKTR 219
+                           5568888888.48899999985...46777777888899999987655555544443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (320 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     14098  (0.0246527); expected 11437.3 (0.02)
+Passed bias filter:                    11543  (0.0201849); expected 11437.3 (0.02)
+Passed Vit filter:                       695  (0.00121532); expected 571.9 (0.001)
+Passed Fwd filter:                        16  (2.79787e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              16  [number of targets reported over threshold]
+# CPU time: 3.31u 0.52s 00:00:03.83 Elapsed: 00:00:01.37
+# Mc/sec: 48240.16
+//
+[ok]

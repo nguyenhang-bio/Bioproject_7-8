@@ -1,0 +1,1250 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_19.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00019  [L=195]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+      0.035   18.9   0.2        1.1   14.0   0.1    2.3  2  sp|Q87FP9|RSGA2_VIBPA  Small ribosomal subunit biogenesis GTP
+      0.035   18.9   0.0         11   10.7   0.0    2.3  2  sp|Q7VEJ4|RSGA_PROMA   Small ribosomal subunit biogenesis GTP
+       0.16   16.7   0.0       0.27   16.0   0.0    1.3  1  sp|Q31I51|ZNUC_HYDCU   Zinc import ATP-binding protein ZnuC O
+       0.22   16.2   0.1       0.44   15.3   0.1    1.5  1  sp|B4S5I1|RUVB_PROA2   Holliday junction branch migration com
+       0.27   16.0   0.0       0.47   15.2   0.0    1.4  1  sp|C4LJV6|CLPX_CORK4   ATP-dependent Clp protease ATP-binding
+       0.38   15.5   0.0       0.67   14.7   0.0    1.3  1  sp|Q6A7F1|CLPX_CUTAK   ATP-dependent Clp protease ATP-binding
+       0.45   15.2   0.0          1   14.1   0.0    1.6  1  sp|Q4ULW6|RUVB_RICFE   Holliday junction branch migration com
+       0.47   15.2   0.0       0.86   14.3   0.0    1.4  1  sp|Q9ZDE5|RUVB_RICPR   Holliday junction branch migration com
+       0.48   15.2   0.0       0.94   14.2   0.0    1.5  1  sp|Q68WZ0|RUVB_RICTY   Holliday junction branch migration com
+       0.48   15.2   0.0        1.1   14.0   0.0    1.5  1  sp|A8GN97|RUVB_RICAH   Holliday junction branch migration com
+       0.51   15.1   0.0       0.89   14.3   0.0    1.3  1  sp|Q7PBU9|ISPT_RICS2   Isoprenyl transferase OS=Rickettsia si
+       0.55   15.0   0.0        1.1   14.0   0.0    1.5  1  sp|A8GWC4|RUVB_RICB8   Holliday junction branch migration com
+       0.55   15.0   0.0        1.1   14.0   0.0    1.5  1  sp|Q1RHZ9|RUVB_RICBR   Holliday junction branch migration com
+       0.55   15.0   0.0       0.99   14.1   0.0    1.3  1  sp|Q92I30|ISPT_RICCN   Isoprenyl transferase OS=Rickettsia co
+       0.65   14.7   0.0        1.4   13.7   0.0    1.5  1  sp|A8GRW7|RUVB_RICRS   Holliday junction branch migration com
+       0.65   14.7   0.0        1.4   13.7   0.0    1.5  1  sp|C4K2D4|RUVB_RICPU   Holliday junction branch migration com
+       0.66   14.7   0.0        1.3   13.7   0.0    1.5  1  sp|A8F1F7|RUVB_RICM5   Holliday junction branch migration com
+       0.66   14.7   0.0        1.4   13.7   0.0    1.5  1  sp|C3PNA6|RUVB_RICAE   Holliday junction branch migration com
+       0.67   14.7   0.0        1.4   13.7   0.0    1.5  1  sp|Q92I87|RUVB_RICCN   Holliday junction branch migration com
+       0.72   14.6   0.0        1.4   13.6   0.0    1.5  1  sp|A7GHT8|RUVB_CLOBL   Holliday junction branch migration com
+       0.72   14.6   0.0        1.4   13.6   0.0    1.5  1  sp|B1IMF3|RUVB_CLOBK   Holliday junction branch migration com
+       0.72   14.6   0.0        1.4   13.6   0.0    1.5  1  sp|C1FKG1|RUVB_CLOBJ   Holliday junction branch migration com
+       0.72   14.6   0.0        1.4   13.6   0.0    1.5  1  sp|C3KTD2|RUVB_CLOB6   Holliday junction branch migration com
+        0.8   14.4   0.0        1.5   13.5   0.0    1.5  1  sp|B1L0B2|RUVB_CLOBM   Holliday junction branch migration com
+        0.8   14.4   0.0        1.5   13.5   0.0    1.5  1  sp|A5I6F1|RUVB_CLOBH   Holliday junction branch migration com
+        0.8   14.4   0.0        1.5   13.5   0.0    1.5  1  sp|A7FY19|RUVB_CLOB1   Holliday junction branch migration com
+       0.99   14.1   0.1        2.2   13.0   0.0    1.7  1  sp|A8ABE2|NTPTH_IGNH4  Nucleoside-triphosphatase THEP1 OS=Ign
+          1   14.1   0.0        8.7   11.0   0.0    2.1  2  sp|A8EVP9|RUVB_ALIB4   Holliday junction branch migration com
+        1.1   14.0   0.0        1.9   13.2   0.0    1.4  1  sp|Q7M879|RUVB_WOLSU   Holliday junction branch migration com
+        1.1   14.0   0.0        2.5   12.8   0.0    1.6  1  sp|Q4ULR6|ISPT_RICFE   Isoprenyl transferase OS=Rickettsia fe
+        1.1   14.0   0.0        2.2   13.0   0.0    1.7  1  sp|Q4A8U3|KCY_MESH7    Cytidylate kinase OS=Mesomycoplasma hy
+        1.1   14.0   0.0        2.2   13.0   0.0    1.7  1  sp|Q4AAR2|KCY_MESHJ    Cytidylate kinase OS=Mesomycoplasma hy
+        1.1   14.0   0.0        2.2   13.0   0.0    1.7  1  sp|Q601X7|KCY_MESH2    Cytidylate kinase OS=Mesomycoplasma hy
+        1.1   13.9   0.0        1.7   13.4   0.0    1.3  1  sp|Q3MH62|PSTB1_TRIV2  Phosphate import ATP-binding protein P
+        1.2   13.9   0.0         26    9.5   0.0    2.4  2  sp|Q7MGA2|RSGA2_VIBVY  Small ribosomal subunit biogenesis GTP
+        1.2   13.8   0.0        2.9   12.6   0.0    1.6  1  sp|Q30PX6|RUVB_SULDN   Holliday junction branch migration com
+        1.4   13.6   0.0         26    9.5   0.0    2.2  2  sp|Q8D4Q0|RSGA2_VIBVU  Small ribosomal subunit biogenesis GTP
+        1.5   13.6   0.2        3.4   12.4   0.2    1.6  1  sp|B3QM27|RUVB_CHLP8   Holliday junction branch migration com
+        1.5   13.6   0.2         41    8.8   0.1    2.3  2  sp|B1IM76|KCY_CLOBK    Cytidylate kinase OS=Clostridium botul
+        1.5   13.6   0.2         41    8.8   0.1    2.2  2  sp|A5I2T0|KCY_CLOBH    Cytidylate kinase OS=Clostridium botul
+        1.5   13.6   0.2         41    8.8   0.1    2.2  2  sp|A7FUL8|KCY_CLOB1    Cytidylate kinase OS=Clostridium botul
+        1.5   13.6   0.2         41    8.8   0.1    2.2  2  sp|C1FNU7|KCY_CLOBJ    Cytidylate kinase OS=Clostridium botul
+        1.6   13.5   0.0        7.2   11.3   0.0    1.9  2  sp|A4WLK1|NTPTH_PYRAR  Nucleoside-triphosphatase THEP1 OS=Pyr
+        1.6   13.5   0.0        3.7   12.3   0.0    1.6  1  sp|Q8ZTE6|NTPTH_PYRAE  Nucleoside-triphosphatase THEP1 OS=Pyr
+        1.9   13.2   0.0        2.9   12.6   0.0    1.3  1  sp|Q8TH18|NTPTH_PYRFU  Nucleoside-triphosphatase THEP1 OS=Pyr
+        1.9   13.2   0.0          4   12.2   0.0    1.5  1  sp|Q97GT1|RUVB_CLOAB   Holliday junction branch migration com
+        1.9   13.2   0.0        3.7   12.2   0.0    1.4  1  sp|A0RN84|RUVB_CAMFF   Holliday junction branch migration com
+          2   13.2   0.2         21    9.8   0.2    2.1  2  sp|Q3IRZ3|UREG_NATPD   Urease accessory protein UreG OS=Natro
+        2.1   13.1   0.1         14   10.3   0.0    2.0  2  sp|Q72MK0|RSGA_LEPIC   Small ribosomal subunit biogenesis GTP
+        2.1   13.1   0.1        5.6   11.7   0.0    1.7  1  sp|A5FJE5|RUVB_FLAJ1   Holliday junction branch migration com
+        2.3   12.9   0.3         69    8.1   0.1    2.1  2  sp|A8ET01|UREG_ALIB4   Urease accessory protein UreG OS=Aliar
+        2.4   12.9   0.2        5.6   11.7   0.1    1.6  1  sp|B1ZUH7|RSGA_OPITP   Small ribosomal subunit biogenesis GTP
+        2.6   12.7   0.1    1.5e+02    7.0   0.0    2.3  2  sp|Q9YB42|Y1753_AERPE  UPF0200 protein APE_1753.1 OS=Aeropyru
+        2.6   12.7   0.0          7   11.4   0.0    1.8  1  sp|Q5UYP1|CDC6C_HALMA  ORC1-type DNA replication protein 3 OS
+        2.6   12.7   0.2        7.1   11.3   0.2    1.8  1  sp|Q07PZ0|PHNC1_RHOP5  Phosphonates import ATP-binding protei
+        2.7   12.7   0.1         13   10.5   0.0    2.1  2  sp|Q9HN34|CDC66_HALSA  ORC1-type DNA replication protein 6 OS
+        2.8   12.6   0.0        5.3   11.7   0.0    1.5  1  sp|A8YUS4|CLPX_LACH4   ATP-dependent Clp protease ATP-binding
+          3   12.5   0.0        5.2   11.8   0.0    1.3  1  sp|Q83G50|CLPX_TROWT   ATP-dependent Clp protease ATP-binding
+        3.1   12.5   0.0         11   10.7   0.0    1.8  1  sp|A6QC28|RUVB_SULNB   Holliday junction branch migration com
+        3.1   12.5   0.0        4.5   12.0   0.0    1.4  1  sp|Q8A853|PSTB_BACTN   Phosphate import ATP-binding protein P
+        3.1   12.5   0.6    1.8e+02    6.7   0.0    2.1  2  sp|Q5HLV8|UREG_STAEQ   Urease accessory protein UreG OS=Staph
+        3.1   12.5   0.0        5.2   11.8   0.0    1.3  1  sp|Q83MI6|CLPX_TROW8   ATP-dependent Clp protease ATP-binding
+        3.2   12.5   0.4    2.7e+02    6.2   0.0    2.1  2  sp|Q8CNC6|UREG_STAES   Urease accessory protein UreG OS=Staph
+        3.3   12.4   0.0        4.7   11.9   0.0    1.3  1  sp|Q5LBQ4|PSTB_BACFN   Phosphate import ATP-binding protein P
+        3.3   12.4   0.0        4.7   11.9   0.0    1.3  1  sp|Q64SM5|PSTB_BACFR   Phosphate import ATP-binding protein P
+        3.4   12.4   0.0        7.8   11.2   0.0    1.6  1  sp|C0R250|RUVB_BRAHW   Holliday junction branch migration com
+        3.5   12.3   0.2        6.5   11.5   0.2    1.4  1  sp|A1BDZ8|RUVB_CHLPD   Holliday junction branch migration com
+        3.5   12.3   0.3      3e+02    6.1   0.1    2.2  2  sp|Q0VA52|AFG2B_XENTR  ATPase family gene 2 protein homolog B
+        3.6   12.3   0.0        7.2   11.3   0.0    1.5  1  sp|Q8XJ14|RUVB_CLOPE   Holliday junction branch migration com
+        3.6   12.3   0.1        5.5   11.7   0.1    1.4  1  sp|A6VMS2|TORD_ACTSZ   Chaperone protein TorD OS=Actinobacill
+        3.6   12.3   0.0        7.3   11.3   0.0    1.5  1  sp|Q0TP13|RUVB_CLOP1   Holliday junction branch migration com
+        3.7   12.2   0.0        8.4   11.1   0.0    1.6  1  sp|A6Q1X7|RUVB_NITSB   Holliday junction branch migration com
+        3.9   12.2   0.1        7.6   11.2   0.1    1.5  1  sp|A8MB70|NTPTH_CALMQ  Nucleoside-triphosphatase THEP1 OS=Cal
+          4   12.2   0.0        7.7   11.2   0.0    1.4  1  sp|A7I1C5|RUVB_CAMHC   Holliday junction branch migration com
+        4.1   12.1   0.0         14   10.4   0.0    1.8  1  sp|Q8EZ61|RSGA_LEPIN   Small ribosomal subunit biogenesis GTP
+        4.2   12.1   0.0        8.2   11.1   0.0    1.4  1  sp|Q8G5R1|CLPX_BIFLO   ATP-dependent Clp protease ATP-binding
+        4.3   12.0   0.0        6.3   11.5   0.0    1.2  1  sp|Q95001|CHLE2_BRALA  Cholinesterase 2 (Fragment) OS=Branchi
+        4.4   12.0   0.0        9.3   11.0   0.0    1.5  1  sp|Q2JMJ0|PSTB1_SYNJB  Phosphate import ATP-binding protein P
+        4.4   12.0   0.0        7.1   11.3   0.0    1.4  1  sp|Q1R3F6|PHNC_ECOUT   Phosphonates import ATP-binding protei
+        4.5   12.0   0.0        7.1   11.3   0.0    1.3  1  sp|Q8FAV1|PHNC_ECOL6   Phosphonates import ATP-binding protei
+          5   11.8   0.0        7.9   11.2   0.0    1.2  1  sp|Q7UP21|PSTB_RHOBA   Phosphate import ATP-binding protein P
+          5   11.8   0.0         10   10.8   0.0    1.4  1  sp|Q72L58|GATA_THET2   Glutamyl-tRNA(Gln) amidotransferase su
+          5   11.8   0.0         10   10.8   0.0    1.4  1  sp|Q9LCX3|GATA_THET8   Glutamyl-tRNA(Gln) amidotransferase su
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q87FP9|RSGA2_VIBPA  Small ribosomal subunit biogenesis GTPase RsgA 2 OS=Vibrio parahaemolyticus serotype O3:K6 (st
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.0   0.1   0.00016       1.1     103     186 ..      86     168 ..      80     174 .. 0.82
+   2 ?    2.2   0.0      0.65   4.5e+03      10      26 ..     199     215 ..     194     223 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 0.00016
+         NFECIMNI_00019 103 faremvqhksfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvklvhpnavnmpfivnrgdadgdarraletiqr 186
+                            f r + +   f     g k   q +a  vd ++iv   + df++sr  r y+ lvh   v   ++++++d   d  +    +q+
+  sp|Q87FP9|RSGA2_VIBPA  86 FVRLLDRLSLFSRKAAGSKVAEQLIAANVDTVFIVCSLNHDFNLSRIER-YLALVHEADVEPVIVLSKADLCDDVDELKSQVQK 168
+                            6666666666777888999999********9988876677******987.9******999999999999998888776666666 PP
+
+  == domain 2  score: 2.2 bits;  conditional E-value: 0.65
+         NFECIMNI_00019  10 vafngppgigkdtlvkm 26 
+                            vaf g  g+gk tlv  
+  sp|Q87FP9|RSGA2_VIBPA 199 VAFIGSSGVGKSTLVNA 215
+                            89************975 PP
+
+>> sp|Q7VEJ4|RSGA_PROMA  Small ribosomal subunit biogenesis GTPase RsgA OS=Prochlorococcus marinus (strain SARG / CCMP13
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   0.0     0.046   3.2e+02     127     165 ..      96     133 ..      91     152 .. 0.78
+   2 ?   10.7   0.0    0.0016        11       4      76 ..     180     246 ..     177     276 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.046
+        NFECIMNI_00019 127 ladevdlliivqlehpdfdfsrdsrgyvklvhpnavnmp 165
+                           +a+  d++i+v l  p fd+++ sr  +k      + + 
+  sp|Q7VEJ4|RSGA_PROMA  96 VANVTDVIIVVSLLDPSFDLNQVSRFLMKAE-ETGLKVT 133
+                           67889*******************9887754.3444555 PP
+
+  == domain 2  score: 10.7 bits;  conditional E-value: 0.0016
+        NFECIMNI_00019   4 eskkigvafngppgigkdtlvkmindlvpg.gikvgtlanmiradasmyyridnffelsthrdtkdvkcpgfnm 76 
+                           +s k+gv   gp g+gk +l+   n l+p  +i +g l+  ++       +++ f   s + d+     pgfn 
+  sp|Q7VEJ4|RSGA_PROMA 180 KSMKLGVL-CGPSGVGKSSLI---NYLLPKiSIPIGKLSKKLKRGRHTTRHVELF---SIYSDSFIADTPGFNK 246
+                           67899985.69******9986...5566643899*****9999877665555544...3344555555555553 PP
+
+>> sp|Q31I51|ZNUC_HYDCU  Zinc import ATP-binding protein ZnuC OS=Hydrogenovibrio crunogenus (strain DSM 25203 / XCL-2) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   16.0   0.0   3.9e-05      0.27      10      68 ..      35     102 ..      29     124 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 3.9e-05
+        NFECIMNI_00019  10 vafngppgigkdtlvkmindlv.p..g......gikvgtlanmiradasmyyridnffelsthrdtkd 68 
+                           v + gp g gk tl+k++ +l+ p  g      g+++g +   i+ dasm   +  f+el   r ++ 
+  sp|Q31I51|ZNUC_HYDCU  35 VTLIGPNGAGKSTLLKILLNLIqPtsGevtrktGLRIGFMPQKIQVDASMPLSVQRFLELGLARQSQT 102
+                           5677************9877763343244444489*************************99988765 PP
+
+>> sp|B4S5I1|RUVB_PROA2  Holliday junction branch migration complex subunit RuvB OS=Prosthecochloris aestuarii (strain D
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.3   0.1   6.4e-05      0.44       9      38 ..      55      84 ..      47      99 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 6.4e-05
+        NFECIMNI_00019  9 gvafngppgigkdtlvkmindlvpggikvg 38
+                           v f+gppg+gk tl  +i   + gg+k+ 
+  sp|B4S5I1|RUVB_PROA2 55 HVLFSGPPGLGKTTLAHIIASELGGGLKIT 84
+                          589************************984 PP
+
+>> sp|C4LJV6|CLPX_CORK4  ATP-dependent Clp protease ATP-binding subunit ClpX OS=Corynebacterium kroppenstedtii (strain D
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.2   0.0   6.9e-05      0.47      94     157 ..     126     187 ..     111     219 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 6.9e-05
+        NFECIMNI_00019  94 lgkdyfakkfaremvqhksfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvklv 157
+                            gk y+a+ +ar +     f mtd     ea  + ++v+ +++  l+  dfd  r  rg + + 
+  sp|C4LJV6|CLPX_CORK4 126 SGKTYLAQTLARML--DVPFAMTDATSLTEAGYVGEDVENILLKLLQAADFDVDRAQRGIIYID 187
+                           599*******9965..568****************************************88765 PP
+
+>> sp|Q6A7F1|CLPX_CUTAK  ATP-dependent Clp protease ATP-binding subunit ClpX OS=Cutibacterium acnes (strain DSM 16379 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.7   0.0   9.7e-05      0.67      94     156 ..     129     189 ..     119     222 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 9.7e-05
+        NFECIMNI_00019  94 lgkdyfakkfaremvqhksfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvkl 156
+                            gk y+a+ +ar++  +  f m d     ea  + ++v+ +++  l+  dfd  r  rg v +
+  sp|Q6A7F1|CLPX_CUTAK 129 CGKTYLAQTMARQL--NVPFAMADATALTEAGYVGEDVENILLKLLQAADFDVKRAERGIVYI 189
+                           69**********98..678****************************************8865 PP
+
+>> sp|Q4ULW6|RUVB_RICFE  Holliday junction branch migration complex subunit RuvB OS=Rickettsia felis (strain ATCC VR-152
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.0   0.00015         1      11      39 ..      54      82 ..      45     105 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 0.00015
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikvgt 39
+                           f gppg+gk tl k+i++ + g++k  +
+  sp|Q4ULW6|RUVB_RICFE 54 LFYGPPGLGKTTLAKIISNEIGGNFKSTS 82
+                          699****************9999998654 PP
+
+>> sp|Q9ZDE5|RUVB_RICPR  Holliday junction branch migration complex subunit RuvB OS=Rickettsia prowazekii (strain Madrid
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.3   0.0   0.00012      0.86      11      45 ..      54      88 ..      45     105 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 0.00012
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikvgtlanmir 45
+                           f gppg+gk tl k+i++ + g++k      +i+
+  sp|Q9ZDE5|RUVB_RICPR 54 LFYGPPGLGKTTLAKIISNEIGGNFKSTAGPAIIK 88
+                          699******************99998654444444 PP
+
+>> sp|Q68WZ0|RUVB_RICTY  Holliday junction branch migration complex subunit RuvB OS=Rickettsia typhi (strain ATCC VR-144
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.2   0.0   0.00014      0.94      11      43 ..      54      86 ..      45     103 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 0.00014
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikvgtlanm 43
+                           f gppg+gk tl k+i++ + g++k      +
+  sp|Q68WZ0|RUVB_RICTY 54 LFYGPPGLGKTTLAKIISNEIGGNFKSTAGPAI 86
+                          699*****************9999986544444 PP
+
+>> sp|A8GN97|RUVB_RICAH  Holliday junction branch migration complex subunit RuvB OS=Rickettsia akari (strain Hartford) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.0   0.0   0.00015       1.1      11      39 ..      54      82 ..      45     104 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 0.00015
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikvgt 39
+                           f gppg+gk tl k+i++ + g++k  +
+  sp|A8GN97|RUVB_RICAH 54 LFYGPPGLGKTTLAKIISNEIGGNFKSTS 82
+                          699****************9999998654 PP
+
+>> sp|Q7PBU9|ISPT_RICS2  Isoprenyl transferase OS=Rickettsia sibirica (strain ATCC VR-151 / 246) OX=272951 GN=uppS PE=3 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.3   0.0   0.00013      0.89      26      91 ..      82     146 ..      75     162 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 0.00013
+        NFECIMNI_00019  26 mindlvpggikvgtlanmiradasmyyridnffelsthrdtkdvkcpgfnmtprqmlidysenvik 91 
+                            +n+l  +g+k+  +  +    +s+  +i+n +el+  ++ k   c +f+   rq ++d    +i 
+  sp|Q7PBU9|ISPT_RICS2  82 ELNNLHKNGVKIKVIGRLTLLSSSLQKQINNAIELTK-NNNKITLCIAFSYGSRQEIVDACTKIIT 146
+                           589999****************************965.6789999**************9888875 PP
+
+>> sp|A8GWC4|RUVB_RICB8  Holliday junction branch migration complex subunit RuvB OS=Rickettsia bellii (strain OSU 85-389
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.0   0.0   0.00016       1.1      11      39 ..      54      82 ..      46     111 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 0.00016
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikvgt 39
+                           f gppg+gk tl k+i++ + g++k  +
+  sp|A8GWC4|RUVB_RICB8 54 LFYGPPGLGKTTLAKIISNEIGGNFKSTS 82
+                          699****************9999998654 PP
+
+>> sp|Q1RHZ9|RUVB_RICBR  Holliday junction branch migration complex subunit RuvB OS=Rickettsia bellii (strain RML369-C) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.0   0.0   0.00016       1.1      11      39 ..      54      82 ..      46     111 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 0.00016
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikvgt 39
+                           f gppg+gk tl k+i++ + g++k  +
+  sp|Q1RHZ9|RUVB_RICBR 54 LFYGPPGLGKTTLAKIISNEIGGNFKSTS 82
+                          699****************9999998654 PP
+
+>> sp|Q92I30|ISPT_RICCN  Isoprenyl transferase OS=Rickettsia conorii (strain ATCC VR-613 / Malish 7) OX=272944 GN=uppS P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.0   0.00014      0.99      26      91 ..      91     155 ..      85     171 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 0.00014
+        NFECIMNI_00019  26 mindlvpggikvgtlanmiradasmyyridnffelsthrdtkdvkcpgfnmtprqmlidysenvik 91 
+                            +n+l  +g+k+  +  +    +s+  +i+n +el+  ++ k   c +f+   rq ++d    +i 
+  sp|Q92I30|ISPT_RICCN  91 ELNNLHKNGVKIKVIGRLTLLSSSLQKQINNAIELTK-NNNKITLCIAFSYGSRQEIVDACTKIIT 155
+                           589999****************************965.6789999**************9888875 PP
+
+>> sp|A8GRW7|RUVB_RICRS  Holliday junction branch migration complex subunit RuvB OS=Rickettsia rickettsii (strain Sheila
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.0    0.0002       1.4      11      37 ..      54      80 ..      45     104 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 0.0002
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikv 37
+                           f gppg+gk tl k+i++ + g++k 
+  sp|A8GRW7|RUVB_RICRS 54 LFYGPPGLGKTTLAKIISNEIGGNFKS 80
+                          699****************99999885 PP
+
+>> sp|C4K2D4|RUVB_RICPU  Holliday junction branch migration complex subunit RuvB OS=Rickettsia peacockii (strain Rustic)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.0    0.0002       1.4      11      37 ..      54      80 ..      45     104 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 0.0002
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikv 37
+                           f gppg+gk tl k+i++ + g++k 
+  sp|C4K2D4|RUVB_RICPU 54 LFYGPPGLGKTTLAKIISNEIGGNFKS 80
+                          699****************99999885 PP
+
+>> sp|A8F1F7|RUVB_RICM5  Holliday junction branch migration complex subunit RuvB OS=Rickettsia massiliae (strain Mtu5) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.0   0.00019       1.3      11      37 ..      65      91 ..      56     123 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 0.00019
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikv 37
+                           f gppg+gk tl k+i++ + g++k 
+  sp|A8F1F7|RUVB_RICM5 65 LFYGPPGLGKTTLAKIISNEIGGNFKS 91
+                          699****************99999885 PP
+
+>> sp|C3PNA6|RUVB_RICAE  Holliday junction branch migration complex subunit RuvB OS=Rickettsia africae (strain ESF-5) OX
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.0    0.0002       1.4      11      37 ..      54      80 ..      45     104 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 0.0002
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikv 37
+                           f gppg+gk tl k+i++ + g++k 
+  sp|C3PNA6|RUVB_RICAE 54 LFYGPPGLGKTTLAKIISNEIGGNFKS 80
+                          699****************99999885 PP
+
+>> sp|Q92I87|RUVB_RICCN  Holliday junction branch migration complex subunit RuvB OS=Rickettsia conorii (strain ATCC VR-6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.0    0.0002       1.4      11      37 ..      54      80 ..      45     104 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 0.0002
+        NFECIMNI_00019 11 afngppgigkdtlvkmindlvpggikv 37
+                           f gppg+gk tl k+i++ + g++k 
+  sp|Q92I87|RUVB_RICCN 54 LFYGPPGLGKTTLAKIISNEIGGNFKS 80
+                          699****************99999885 PP
+
+>> sp|A7GHT8|RUVB_CLOBL  Holliday junction branch migration complex subunit RuvB OS=Clostridium botulinum (strain Langel
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.0    0.0002       1.4       9      39 ..      54      84 ..      46     109 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.0002
+        NFECIMNI_00019  9 gvafngppgigkdtlvkmindlvpggikvgt 39
+                           v f gppg+gk tl  +i + + g++kv +
+  sp|A7GHT8|RUVB_CLOBL 54 HVLFYGPPGLGKTTLANIIANEMTGNLKVTS 84
+                          589****************99999***9964 PP
+
+>> sp|B1IMF3|RUVB_CLOBK  Holliday junction branch migration complex subunit RuvB OS=Clostridium botulinum (strain Okra /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.0    0.0002       1.4       9      39 ..      54      84 ..      46     109 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.0002
+        NFECIMNI_00019  9 gvafngppgigkdtlvkmindlvpggikvgt 39
+                           v f gppg+gk tl  +i + + g++kv +
+  sp|B1IMF3|RUVB_CLOBK 54 HVLFYGPPGLGKTTLANIIANEMTGNLKVTS 84
+                          589****************99999***9964 PP
+
+>> sp|C1FKG1|RUVB_CLOBJ  Holliday junction branch migration complex subunit RuvB OS=Clostridium botulinum (strain Kyoto 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.0    0.0002       1.4       9      39 ..      54      84 ..      46     109 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.0002
+        NFECIMNI_00019  9 gvafngppgigkdtlvkmindlvpggikvgt 39
+                           v f gppg+gk tl  +i + + g++kv +
+  sp|C1FKG1|RUVB_CLOBJ 54 HVLFYGPPGLGKTTLANIIANEMTGNLKVTS 84
+                          589****************99999***9964 PP
+
+>> sp|C3KTD2|RUVB_CLOB6  Holliday junction branch migration complex subunit RuvB OS=Clostridium botulinum (strain 657 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.0    0.0002       1.4       9      39 ..      54      84 ..      46     109 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.0002
+        NFECIMNI_00019  9 gvafngppgigkdtlvkmindlvpggikvgt 39
+                           v f gppg+gk tl  +i + + g++kv +
+  sp|C3KTD2|RUVB_CLOB6 54 HVLFYGPPGLGKTTLANIIANEMTGNLKVTS 84
+                          589****************99999***9964 PP
+
+>> sp|B1L0B2|RUVB_CLOBM  Holliday junction branch migration complex subunit RuvB OS=Clostridium botulinum (strain Loch M
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   0.0   0.00022       1.5       9      39 ..      54      84 ..      46     109 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 0.00022
+        NFECIMNI_00019  9 gvafngppgigkdtlvkmindlvpggikvgt 39
+                           v f gppg+gk tl  +i + + g++kv +
+  sp|B1L0B2|RUVB_CLOBM 54 HVLFYGPPGLGKTTLANIIANEMTGNLKVTS 84
+                          589****************99999***9964 PP
+
+>> sp|A5I6F1|RUVB_CLOBH  Holliday junction branch migration complex subunit RuvB OS=Clostridium botulinum (strain Hall /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   0.0   0.00022       1.5       9      39 ..      54      84 ..      46     109 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 0.00022
+        NFECIMNI_00019  9 gvafngppgigkdtlvkmindlvpggikvgt 39
+                           v f gppg+gk tl  +i + + g++kv +
+  sp|A5I6F1|RUVB_CLOBH 54 HVLFYGPPGLGKTTLANIIANEMTGNLKVTS 84
+                          589****************99999***9964 PP
+
+>> sp|A7FY19|RUVB_CLOB1  Holliday junction branch migration complex subunit RuvB OS=Clostridium botulinum (strain ATCC 1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   0.0   0.00022       1.5       9      39 ..      54      84 ..      46     109 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 0.00022
+        NFECIMNI_00019  9 gvafngppgigkdtlvkmindlvpggikvgt 39
+                           v f gppg+gk tl  +i + + g++kv +
+  sp|A7FY19|RUVB_CLOB1 54 HVLFYGPPGLGKTTLANIIANEMTGNLKVTS 84
+                          589****************99999***9964 PP
+
+>> sp|A8ABE2|NTPTH_IGNH4  Nucleoside-triphosphatase THEP1 OS=Ignicoccus hospitalis (strain KIN4/I / DSM 18386 / JCM 1412
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   0.00032       2.2      11      42 ..       5      38 ..       3      92 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 0.00032
+         NFECIMNI_00019 11 afngppgigkdtlv.kmindlvpggikv.gtlan 42
+                           a+ gppg gk tl  k++ +l  +g+kv gt   
+  sp|A8ABE2|NTPTH_IGNH4  5 AITGPPGAGKSTLArKVVEELKKAGLKVcGTSCP 38
+                           789**********8467899*******8566555 PP
+
+>> sp|A8EVP9|RUVB_ALIB4  Holliday junction branch migration complex subunit RuvB OS=Aliarcobacter butzleri (strain RM401
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0    0.0013       8.7       9      47 ..      55      92 ..      47     107 .. 0.79
+   2 ?    0.4   0.0       2.3   1.6e+04      30      61 ..     155     186 ..     131     199 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 0.0013
+        NFECIMNI_00019  9 gvafngppgigkdtlvkmindlvpggikvgtlanmirad 47
+                           + f gppg+gk tl  +i++ +  +ikv t   mi+  
+  sp|A8EVP9|RUVB_ALIB4 55 HILFYGPPGLGKTTLSYLISNEMNTNIKV-TAGPMIEKS 92
+                          5789***************9999999998.556666655 PP
+
+  == domain 2  score: 0.4 bits;  conditional E-value: 2.3
+        NFECIMNI_00019  30 lvpggikvgtlanmiradasmyyridnffels 61 
+                           l+ +  + g l+n +r    m++r+  + e+ 
+  sp|A8EVP9|RUVB_ALIB4 155 LIGATTRAGMLSNPLRERFGMHFRMQFYTEIE 186
+                           555667899***************99888775 PP
+
+>> sp|Q7M879|RUVB_WOLSU  Holliday junction branch migration complex subunit RuvB OS=Wolinella succinogenes (strain ATCC 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.0   0.00028       1.9      10      46 ..      55      90 ..      46     105 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 0.00028
+        NFECIMNI_00019 10 vafngppgigkdtlvkmindlvpggikvgtlanmira 46
+                          + f gppg+gk tl  +i+  + ++ikv t a mi+ 
+  sp|Q7M879|RUVB_WOLSU 55 ILFFGPPGLGKTTLAHIISHEMGANIKVTT-APMIEK 90
+                          6799***********************976.566654 PP
+
+>> sp|Q4ULR6|ISPT_RICFE  Isoprenyl transferase OS=Rickettsia felis (strain ATCC VR-1525 / URRWXCal2) OX=315456 GN=uppS P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.0   0.00036       2.5      27      91 ..      92     155 ..      85     171 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 0.00036
+        NFECIMNI_00019  27 indlvpggikvgtlanmiradasmyyridnffelsthrdtkdvkcpgfnmtprqmlidysenvik 91 
+                           +n l  +g+k+  +  +    +s+  +i+n +el+  ++ k   c +f+   rq ++d    +i 
+  sp|Q4ULR6|ISPT_RICFE  92 LNSLHKNGVKIKVIGRLNLLSSSLQKQINNAIELTK-NNNKITLCIAFSYGSRQEIVDACTKIIA 155
+                           799999***********99**************965.6789999**************9988875 PP
+
+>> sp|Q4A8U3|KCY_MESH7  Cytidylate kinase OS=Mesomycoplasma hyopneumoniae (strain 7448) OX=262722 GN=cmk PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   0.00032       2.2       6      29 ..       4      27 ..       1      84 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 0.00032
+       NFECIMNI_00019  6 kkigvafngppgigkdtlvkmind 29
+                         kki++a++gp g+gk t+ k+i +
+  sp|Q4A8U3|KCY_MESH7  4 KKINIAIDGPSGVGKSTIAKQIAN 27
+                         9*******************9854 PP
+
+>> sp|Q4AAR2|KCY_MESHJ  Cytidylate kinase OS=Mesomycoplasma hyopneumoniae (strain J / ATCC 25934 / NCTC 10110) OX=262719
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   0.00032       2.2       6      29 ..       4      27 ..       1      84 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 0.00032
+       NFECIMNI_00019  6 kkigvafngppgigkdtlvkmind 29
+                         kki++a++gp g+gk t+ k+i +
+  sp|Q4AAR2|KCY_MESHJ  4 KKINIAIDGPSGVGKSTIAKQIAN 27
+                         9*******************9854 PP
+
+>> sp|Q601X7|KCY_MESH2  Cytidylate kinase OS=Mesomycoplasma hyopneumoniae (strain 232) OX=295358 GN=cmk PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   0.00032       2.2       6      29 ..       4      27 ..       1      84 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 0.00032
+       NFECIMNI_00019  6 kkigvafngppgigkdtlvkmind 29
+                         kki++a++gp g+gk t+ k+i +
+  sp|Q601X7|KCY_MESH2  4 KKINIAIDGPSGVGKSTIAKQIAN 27
+                         9*******************9854 PP
+
+>> sp|Q3MH62|PSTB1_TRIV2  Phosphate import ATP-binding protein PstB 1 OS=Trichormus variabilis (strain ATCC 29413 / PCC 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   0.0   0.00025       1.7       7      40 ..      48      83 ..      42     101 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 0.00025
+         NFECIMNI_00019  7 kigvafngppgigkdtlvkm...indlvpggikvgtl 40
+                           +i +af gp g gk tl++    +ndl+pg+   g l
+  sp|Q3MH62|PSTB1_TRIV2 48 EI-IAFIGPSGCGKSTLLRCfnrMNDLIPGAKVEGRL 83
+                           43.89************98622268****98666655 PP
+
+>> sp|Q7MGA2|RSGA2_VIBVY  Small ribosomal subunit biogenesis GTPase RsgA 2 OS=Vibrio vulnificus (strain YJ016) OX=196600
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.5   0.0    0.0038        26     103     187 ..      81     164 ..      75     169 .. 0.81
+   2 ?    1.5   0.0         1   7.2e+03       9      26 ..     193     210 ..     188     228 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 9.5 bits;  conditional E-value: 0.0038
+         NFECIMNI_00019 103 faremvqhksfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvklvhpnavnmpfivnrgdadgdarraletiqri 187
+                            f r + ++  +     g k   q +a  vd l+iv   + df++sr  r y+ +     +    ++ ++d    a++ +  +q++
+  sp|Q7MGA2|RSGA2_VIBVY  81 FKRLLERQSELSRKAAGSKIAEQLIATNVDTLFIVCSLNDDFNLSRIER-YLSIAKEAHIEPVVVLTKADLSPQAEQNITQVQQL 164
+                            55555555555666789999999************999********987.89998888888778889999999998888888775 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 1
+         NFECIMNI_00019   9 gvafngppgigkdtlvkm 26 
+                             vaf g  g+gk tl   
+  sp|Q7MGA2|RSGA2_VIBVY 193 TVAFIGSSGVGKSTLTNT 210
+                            599***********9865 PP
+
+>> sp|Q30PX6|RUVB_SULDN  Holliday junction branch migration complex subunit RuvB OS=Sulfurimonas denitrificans (strain A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   0.00042       2.9      10      50 ..      55      94 ..      46     106 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 0.00042
+        NFECIMNI_00019 10 vafngppgigkdtlvkmindlvpggikvgtlanmiradasm 50
+                          v f gppg+gk tl  +i + + ++ikv t a mi+    +
+  sp|Q30PX6|RUVB_SULDN 55 VLFYGPPGLGKTTLALIIANEMNANIKV-TAAPMIEKSGDL 94
+                          889***************999999***9.678888776655 PP
+
+>> sp|Q8D4Q0|RSGA2_VIBVU  Small ribosomal subunit biogenesis GTPase RsgA 2 OS=Vibrio vulnificus (strain CMCP6) OX=216895
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.5   0.0    0.0037        26     103     187 ..      77     160 ..      71     165 .. 0.81
+   2 ?    1.6   0.0         1   7.1e+03       9      26 ..     189     206 ..     184     224 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 9.5 bits;  conditional E-value: 0.0037
+         NFECIMNI_00019 103 faremvqhksfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvklvhpnavnmpfivnrgdadgdarraletiqri 187
+                            f r + ++  +     g k   q +a  vd l+iv   + df++sr  r y+ +     +    ++ ++d    a++ +  +q++
+  sp|Q8D4Q0|RSGA2_VIBVU  77 FKRLLERQSELSRKAAGSKIAEQLIATNVDTLFIVCSLNDDFNLSRIER-YLSIAKEAHIEPVVVLTKADLSPQAEQNITQVQQL 160
+                            55555555555666789999999************999********987.89998888888778889999999998888888775 PP
+
+  == domain 2  score: 1.6 bits;  conditional E-value: 1
+         NFECIMNI_00019   9 gvafngppgigkdtlvkm 26 
+                             vaf g  g+gk tl   
+  sp|Q8D4Q0|RSGA2_VIBVU 189 TVAFIGSSGVGKSTLTNT 206
+                            599***********9865 PP
+
+>> sp|B3QM27|RUVB_CHLP8  Holliday junction branch migration complex subunit RuvB OS=Chlorobaculum parvum (strain DSM 263
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.2   0.00049       3.4      10      38 ..      56      84 ..      48      98 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 0.00049
+        NFECIMNI_00019 10 vafngppgigkdtlvkmindlvpggikvg 38
+                          v ++gppg+gk tl  +i   + ggik+ 
+  sp|B3QM27|RUVB_CHLP8 56 VLLSGPPGLGKTTLAHIIAAEMGGGIKIT 84
+                          6789***********************95 PP
+
+>> sp|B1IM76|KCY_CLOBK  Cytidylate kinase OS=Clostridium botulinum (strain Okra / Type B1) OX=498213 GN=cmk PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   0.1     0.006        41       8      31 ..       4      27 ..       2      91 .. 0.83
+   2 ?    3.0   0.0      0.36   2.5e+03      32      87 ..     122     174 ..     102     198 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 0.006
+       NFECIMNI_00019  8 igvafngppgigkdtlvkmindlv 31
+                         i++a++gp g gk t+ k+i + +
+  sp|B1IM76|KCY_CLOBK  4 ISIAIDGPAGAGKSTIAKIIGNKL 27
+                         789****************97643 PP
+
+  == domain 2  score: 3.0 bits;  conditional E-value: 0.36
+       NFECIMNI_00019  32 pggikvgtlanmiradasmyyridnffelsthrdtkdvkcpgfnmtprqmlidyse 87 
+                            g  +gt   ++  da   + i    e+   r  k++k  g+n+  r +l +  e
+  sp|B1IM76|KCY_CLOBK 122 MDGRDIGT---VVLKDAPYKFFITASAEVRAKRRLKELKEKGININFRDVLKEIKE 174
+                          45556666...4678999999999999*******************9999987766 PP
+
+>> sp|A5I2T0|KCY_CLOBH  Cytidylate kinase OS=Clostridium botulinum (strain Hall / ATCC 3502 / NCTC 13319 / Type A) OX=44
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   0.1     0.006        41       8      31 ..       4      27 ..       2      91 .. 0.83
+   2 ?    3.0   0.0      0.36   2.5e+03      32      87 ..     122     174 ..     102     198 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 0.006
+       NFECIMNI_00019  8 igvafngppgigkdtlvkmindlv 31
+                         i++a++gp g gk t+ k+i + +
+  sp|A5I2T0|KCY_CLOBH  4 ISIAIDGPAGAGKSTIAKIIGNKL 27
+                         789****************97643 PP
+
+  == domain 2  score: 3.0 bits;  conditional E-value: 0.36
+       NFECIMNI_00019  32 pggikvgtlanmiradasmyyridnffelsthrdtkdvkcpgfnmtprqmlidyse 87 
+                            g  +gt   ++  da   + i    e+   r  k++k  g+n+  r +l +  e
+  sp|A5I2T0|KCY_CLOBH 122 MDGRDIGT---VVLKDAPYKFFITASAEVRAKRRLKELKEKGININFRDVLKEIKE 174
+                          45556666...4678999999999999*******************9999987766 PP
+
+>> sp|A7FUL8|KCY_CLOB1  Cytidylate kinase OS=Clostridium botulinum (strain ATCC 19397 / Type A) OX=441770 GN=cmk PE=3 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   0.1     0.006        41       8      31 ..       4      27 ..       2      91 .. 0.83
+   2 ?    3.0   0.0      0.36   2.5e+03      32      87 ..     122     174 ..     102     198 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 0.006
+       NFECIMNI_00019  8 igvafngppgigkdtlvkmindlv 31
+                         i++a++gp g gk t+ k+i + +
+  sp|A7FUL8|KCY_CLOB1  4 ISIAIDGPAGAGKSTIAKIIGNKL 27
+                         789****************97643 PP
+
+  == domain 2  score: 3.0 bits;  conditional E-value: 0.36
+       NFECIMNI_00019  32 pggikvgtlanmiradasmyyridnffelsthrdtkdvkcpgfnmtprqmlidyse 87 
+                            g  +gt   ++  da   + i    e+   r  k++k  g+n+  r +l +  e
+  sp|A7FUL8|KCY_CLOB1 122 MDGRDIGT---VVLKDAPYKFFITASAEVRAKRRLKELKEKGININFRDVLKEIKE 174
+                          45556666...4678999999999999*******************9999987766 PP
+
+>> sp|C1FNU7|KCY_CLOBJ  Cytidylate kinase OS=Clostridium botulinum (strain Kyoto / Type A2) OX=536232 GN=cmk PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   0.1     0.006        41       8      31 ..       4      27 ..       2      91 .. 0.83
+   2 ?    3.0   0.0      0.36   2.5e+03      32      87 ..     122     174 ..     102     198 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 0.006
+       NFECIMNI_00019  8 igvafngppgigkdtlvkmindlv 31
+                         i++a++gp g gk t+ k+i + +
+  sp|C1FNU7|KCY_CLOBJ  4 ISIAIDGPAGAGKSTIAKIIGNKL 27
+                         789****************97643 PP
+
+  == domain 2  score: 3.0 bits;  conditional E-value: 0.36
+       NFECIMNI_00019  32 pggikvgtlanmiradasmyyridnffelsthrdtkdvkcpgfnmtprqmlidyse 87 
+                            g  +gt   ++  da   + i    e+   r  k++k  g+n+  r +l +  e
+  sp|C1FNU7|KCY_CLOBJ 122 MDGRDIGT---VVLKDAPYKFFITASAEVRAKRRLKELKEKGININFRDVLKEIKE 174
+                          45556666...4678999999999999*******************9999987766 PP
+
+>> sp|A4WLK1|NTPTH_PYRAR  Nucleoside-triphosphatase THEP1 OS=Pyrobaculum arsenaticum (strain DSM 13514 / JCM 11321 / PZ6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0     0.001       7.2       2      37 ..       3      38 ..       2      59 .. 0.84
+   2 ?   -0.3   0.0       3.7   2.6e+04      67      77 ..     110     120 ..      91     144 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.001
+         NFECIMNI_00019  2 qreskkigvafngppgigkdtlvkmindlvpggikv 37
+                            re  ++ + ++g pg+gk tlv  + +l    ++v
+  sp|A4WLK1|NTPTH_PYRAR  3 WRERAEVRIGISGMPGVGKTTLVLKVAELAAKKLRV 38
+                           68888999999*************999998877776 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 3.7
+         NFECIMNI_00019  67 kdvkcpgfnmt 77 
+                             + kcpgf   
+  sp|A4WLK1|NTPTH_PYRAR 110 MEFKCPGFGSD 120
+                            46788888765 PP
+
+>> sp|Q8ZTE6|NTPTH_PYRAE  Nucleoside-triphosphatase THEP1 OS=Pyrobaculum aerophilum (strain ATCC 51768 / DSM 7523 / JCM 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.0   0.00053       3.7       3      38 ..       4      39 ..       2      57 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 0.00053
+         NFECIMNI_00019  3 reskkigvafngppgigkdtlvkmindlvpggikvg 38
+                           re  ++ + ++g pg+gk tlv  i +l  + +kv 
+  sp|Q8ZTE6|NTPTH_PYRAE  4 RERAELRIGISGMPGVGKTTLVLKIAELARSRVKVC 39
+                           67777888899******************9999984 PP
+
+>> sp|Q8TH18|NTPTH_PYRFU  Nucleoside-triphosphatase THEP1 OS=Pyrococcus furiosus (strain ATCC 43587 / DSM 3638 / JCM 842
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   0.00042       2.9       7      48 ..       3      46 ..       1      58 [. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 0.00042
+         NFECIMNI_00019  7 kigvafngppgigkdtlvkmindlv.pggikvgtl.anmirada 48
+                           k+    +g pg+gk tl k i d +   g+kvg +    ir+ a
+  sp|Q8TH18|NTPTH_PYRFU  3 KFRFFVSGMPGVGKTTLAKRIADEIkREGFKVGGIiTQEIRSGA 46
+                           6666679************9988662579***875145577655 PP
+
+>> sp|Q97GT1|RUVB_CLOAB  Holliday junction branch migration complex subunit RuvB OS=Clostridium acetobutylicum (strain A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   0.00057         4      10      40 ..      55      85 ..      44     119 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.00057
+        NFECIMNI_00019 10 vafngppgigkdtlvkmindlvpggikvgtl 40
+                          v f gppg+gk tl  +i   + g++kv + 
+  sp|Q97GT1|RUVB_CLOAB 55 VLFYGPPGLGKTTLANIIAKEMGGNLKVTSG 85
+                          789****************999999999664 PP
+
+>> sp|A0RN84|RUVB_CAMFF  Holliday junction branch migration complex subunit RuvB OS=Campylobacter fetus subsp. fetus (st
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   0.00054       3.7      10      47 ..      55      91 ..      47     106 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.00054
+        NFECIMNI_00019 10 vafngppgigkdtlvkmindlvpggikvgtlanmirad 47
+                          v f gppg+gk tl  +i + + ++ik+++ a mi+  
+  sp|A0RN84|RUVB_CAMFF 55 VLFYGPPGLGKTTLAHIIANEMGANIKISS-APMIEKS 91
+                          789***************9999999**976.5666655 PP
+
+>> sp|Q3IRZ3|UREG_NATPD  Urease accessory protein UreG OS=Natronomonas pharaonis (strain ATCC 35678 / DSM 2160 / CIP 103
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   0.2    0.0031        21      10      47 ..       9      47 ..       3     127 .. 0.86
+   2 ?    2.1   0.0       0.7   4.8e+03      29      99 ..      64     137 ..      54     162 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 0.0031
+        NFECIMNI_00019 10 vafngppgigkdtlvk.mindlvpggikvgtlanmirad 47
+                          v + gp g gk  +vk ++  l  +g  vg +an i   
+  sp|Q3IRZ3|UREG_NATPD  9 VGLGGPVGSGKTAMVKrLVPRLDAAGYNVGVIANDIMTQ 47
+                          6679**********98356778899*********77654 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.7
+        NFECIMNI_00019  29 dlvpggikvgtlan.miradasmyy.ridnffelsthrdtkdvkcpgfnm..tprqmlidysenvikaqlgkdyf 99 
+                           dlv  g++ g   +  ir d sm    id f e     d   ++  g n+  t +  l dy   vi    g d  
+  sp|Q3IRZ3|UREG_NATPD  64 DLVE-GVETGACPHtGIREDPSMNIaAIDEFTESYPDLDVVLLESGGDNLaaTFNPELADYFIFVISVAEGDDIP 137
+                           5554.5777777652599999997526999999999999999999998873244677888888888887777754 PP
+
+>> sp|Q72MK0|RSGA_LEPIC  Small ribosomal subunit biogenesis GTPase RsgA OS=Leptospira interrogans serogroup Icterohaemor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0    0.0021        14     107     179 ..      87     159 ..      76     170 .. 0.78
+   2 ?   -0.0   0.0       3.1   2.2e+04      10      34 ..     197     218 ..     193     228 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.0021
+        NFECIMNI_00019 107 mvqhksfmm.tdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvklvhpnavnmpfivnrgdadgdarr 179
+                           ++ +k+f+  ++ g ++ +qa+a  +dll+++     d+   r  + y+ l   +   + +++n+ d   d ++
+  sp|Q72MK0|RSGA_LEPIC  87 ILPRKTFLRrSNPGKRKGSQAIASNIDLLLVIMGLDNDYSPRRI-ERYLFLAKVSGAQVTIVLNKKDLCMDPEN 159
+                           566788875257799999**********9998866667766555.55999999999999999999998777655 PP
+
+  == domain 2  score: -0.0 bits;  conditional E-value: 3.1
+        NFECIMNI_00019  10 vafngppgigkdtlvkmindlvpgg 34 
+                           +af g  g gk t++   n l+ g 
+  sp|Q72MK0|RSGA_LEPIC 197 IAFLGSSGAGKSTII---NSLLGGE 218
+                           79**********985...5666555 PP
+
+>> sp|A5FJE5|RUVB_FLAJ1  Holliday junction branch migration complex subunit RuvB OS=Flavobacterium johnsoniae (strain AT
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   0.00082       5.6      10      38 ..      58      86 ..      50     108 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00082
+        NFECIMNI_00019 10 vafngppgigkdtlvkmindlvpggikvg 38
+                            f+gppg+gk tl  ++ + +  gik+ 
+  sp|A5FJE5|RUVB_FLAJ1 58 ALFHGPPGLGKTTLANILANELEVGIKIT 86
+                          569*************9988888899984 PP
+
+>> sp|A8ET01|UREG_ALIB4  Urease accessory protein UreG OS=Aliarcobacter butzleri (strain RM4018) OX=367737 GN=ureG PE=3 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1   0.1      0.01        69       6      47 ..       3      42 ..       1      58 [. 0.81
+   2 ?    3.4   0.0      0.28     2e+03      38     107 ..      66     137 ..      48     170 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.01
+        NFECIMNI_00019  6 kkigvafngppgigkdtlvkmindlvpggikvgtlanmirad 47
+                           kig+a  gp g gk +l++ + +l+     +g + n i   
+  sp|A8ET01|UREG_ALIB4  3 LKIGIA--GPVGSGKTSLIESLTNLLKDKYSLGIVTNDIYTT 42
+                          577776..9************************999988654 PP
+
+  == domain 2  score: 3.4 bits;  conditional E-value: 0.28
+        NFECIMNI_00019  38 gtlanmiradasmyyridnffelsthrdtkdvkcpgfnmtp..rqmlidysenvikaqlgkdyfakkfarem 107
+                           g     ir d sm  +    +e   + d   v+  g n++      lidy   vi    g d   kk a  +
+  sp|A8ET01|UREG_ALIB4  66 GCPHTAIRDDISMNQKAVVELEEKFNPDIVFVESGGDNLSAtfSYELIDYYIYVIDVAQGADIPRKKGAGLL 137
+                           444567899999999888888888899999999999888651157899999999999999999988877654 PP
+
+>> sp|B1ZUH7|RSGA_OPITP  Small ribosomal subunit biogenesis GTPase RsgA OS=Opitutus terrae (strain DSM 11246 / JCM 15787
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.1   0.00081       5.6     112     188 ..     101     176 ..      92     179 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00081
+        NFECIMNI_00019 112 sfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvklvhpnavnmpfivnrgdadgdarraletiqrii 188
+                           +f    +g  +  q la  vd +++v     df++ r  r y+ + + +      ++n++d   dar a   ++ri 
+  sp|B1ZUH7|RSGA_OPITP 101 AFTRRAVGDADAEQVLATNVDTVFLVTGLDRDFNLRRIER-YLAVARASEAQPVVVLNKSDLHPDARGAEAEVRRIT 176
+                           6777778889999*********9999988899*9999876.9999999999888999***********999999986 PP
+
+>> sp|Q9YB42|Y1753_AERPE  UPF0200 protein APE_1753.1 OS=Aeropyrum pernix (strain ATCC 700893 / DSM 11879 / JCM 9820 / NB
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.4   0.1      0.28   1.9e+03       7      47 ..       6      44 ..       2      48 .. 0.81
+   2 ?    7.0   0.0     0.022   1.5e+02      83     129 ..      57     103 ..      45     118 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 3.4 bits;  conditional E-value: 0.28
+         NFECIMNI_00019  7 kigvafngppgigkdtlvkmindlvpggikvgtlanmirad 47
+                           ++ va  g pg gk  + +++ + +  g++v  + +++r +
+  sp|Q9YB42|Y1753_AERPE  6 RLIVAVTGLPGSGKSVVARIVAEEL--GLEVKVMGDVVREE 44
+                           567999*************998765..77777788888765 PP
+
+  == domain 2  score: 7.0 bits;  conditional E-value: 0.022
+         NFECIMNI_00019  83 idysenvikaqlgkdyfakkfaremvqhksfmmtdlgfkeeaqalad 129
+                            ++    +++ +lg+   ak +a+ +   +s+++  l   eea+ la 
+  sp|Q9YB42|Y1753_AERPE  57 VERVARMLREELGRAAVAKLLAERLEPGRSYVLDGLRSVEEAEVLAR 103
+                            5666788999*********************************9986 PP
+
+>> sp|Q5UYP1|CDC6C_HALMA  ORC1-type DNA replication protein 3 OS=Haloarcula marismortui (strain ATCC 43049 / DSM 3752 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0     0.001         7       3      58 ..      51     106 ..      49     137 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.001
+         NFECIMNI_00019   3 reskkigvafngppgigkdtlvkmindlvpggikvgtlanmiradasmyyridnff 58 
+                            r s+ ++v   gppg gk t v+++ d + +   v t+    + d++ y  +  +f
+  sp|Q5UYP1|CDC6C_HALMA  51 RGSRPLNVIARGPPGTGKTTAVQILFDELTAQTDVKTVRVNCQMDSTRYAVFSRLF 106
+                            678899999******************99999999999888888988886665544 PP
+
+>> sp|Q07PZ0|PHNC1_RHOP5  Phosphonates import ATP-binding protein PhnC 1 OS=Rhodopseudomonas palustris (strain BisA53) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.2     0.001       7.1      11      39 ..      32      63 ..      26     147 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.001
+         NFECIMNI_00019 11 afngppgigkdtlvkmindlvp...ggikvgt 39
+                            + gp g gk tl++ +n lvp   g+i++g 
+  sp|Q07PZ0|PHNC1_RHOP5 32 GLIGPSGAGKSTLIRCVNRLVPptgGSIRLGD 63
+                           567******************96645566664 PP
+
+>> sp|Q9HN34|CDC66_HALSA  ORC1-type DNA replication protein 6 OS=Halobacterium salinarum (strain ATCC 700922 / JCM 11081
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0    0.0019        13       3      59 ..      51     107 ..      49     122 .. 0.85
+   2 ?   -0.9   0.1       5.9   4.1e+04     120     152 ..     125     156 ..     114     169 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 0.0019
+         NFECIMNI_00019   3 reskkigvafngppgigkdtlvkmindlvpggikvgtlanmiradasmyyridnffe 59 
+                            r s+ ++v   gppg gk t v+ +   + g   v t+    + d++ y  +   fe
+  sp|Q9HN34|CDC66_HALSA  51 RGSRPLNVVARGPPGTGKTTAVQKLFGELSGQPGVQTVRVNCQVDSTRYAVFSRVFE 107
+                            6788999**************988887788988899998888999998887777666 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 5.9
+         NFECIMNI_00019 120 fkeeaqaladevdlliivqlehpdfdfsrdsrg 152
+                            f + a+ +ad+ ++l +v l+  ++ f +d  g
+  sp|Q9HN34|CDC66_HALSA 125 FGQVAERIADDDEVL-VVALDDVNYLFYEDEAG 156
+                            567789999996665.67899999999988877 PP
+
+>> sp|A8YUS4|CLPX_LACH4  ATP-dependent Clp protease ATP-binding subunit ClpX OS=Lactobacillus helveticus (strain DPC 457
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   0.00077       5.3      94     156 ..     120     180 ..      93     213 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00077
+        NFECIMNI_00019  94 lgkdyfakkfaremvqhksfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvkl 156
+                            gk y+a+ +ar  + +  f + d     ea  + ++v+ +++  l++ d+d+ r  rg + +
+  sp|A8YUS4|CLPX_LACH4 120 SGKTYLAQTLAR--ILNVPFAIADATTLTEAGYVGEDVENILLKLLQNADYDLERAQRGIIYI 180
+                           5999****9999..55789****************************************8865 PP
+
+>> sp|Q83G50|CLPX_TROWT  ATP-dependent Clp protease ATP-binding subunit ClpX OS=Tropheryma whipplei (strain Twist) OX=20
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00076       5.2      94     156 ..     129     189 ..     111     222 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00076
+        NFECIMNI_00019  94 lgkdyfakkfaremvqhksfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvkl 156
+                            gk y+a+ +ar +  +  f + d     ea  + d+v+ +++  l+  dfd++r   g v +
+  sp|Q83G50|CLPX_TROWT 129 CGKTYLAQTLARML--RVPFAVADATALTEAGYVGDDVENVLLKLLQDADFDITRAEAGIVCI 189
+                           69********9954..5689***********************************99998865 PP
+
+>> sp|A6QC28|RUVB_SULNB  Holliday junction branch migration complex subunit RuvB OS=Sulfurovum sp. (strain NBC37-1) OX=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0    0.0016        11       3      47 ..      48      91 ..      46     106 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.0016
+        NFECIMNI_00019  3 reskkigvafngppgigkdtlvkmindlvpggikvgtlanmirad 47
+                          re     + f gppg+gk tl  +i   +  +ik  t a mi+  
+  sp|A6QC28|RUVB_SULNB 48 REEALDHILFFGPPGLGKTTLANIIASEMHTNIKT-TAAPMIEKA 91
+                          5555567899***************9999999986.667777654 PP
+
+>> sp|Q8A853|PSTB_BACTN  Phosphate import ATP-binding protein PstB OS=Bacteroides thetaiotaomicron (strain ATCC 29148 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00065       4.5       2      34 ..      27      61 ..      26     116 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00065
+        NFECIMNI_00019  2 qreskkigvafngppgigkdtlvkm...indlvpgg 34
+                          q e k   vaf gp g gk t++++   +ndl+p+ 
+  sp|Q8A853|PSTB_BACTN 27 QIEEKS-VVAFIGPSGCGKSTFLRLfnrMNDLIPAT 61
+                          556555.59************998722256888864 PP
+
+>> sp|Q5HLV8|UREG_STAEQ  Urease accessory protein UreG OS=Staphylococcus epidermidis (strain ATCC 35984 / RP62A) OX=1762
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   0.3      0.12   8.5e+02       7      44 ..       4      41 ..       1      53 [. 0.82
+   2 ?    6.7   0.0     0.026   1.8e+02      38     117 ..      68     149 ..      46     191 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 4.6 bits;  conditional E-value: 0.12
+        NFECIMNI_00019  7 kigvafngppgigkdtlvkmindlvpggikvgtlanmi 44
+                           i + + gp g gk  l++ +   +   + +g + n i
+  sp|Q5HLV8|UREG_STAEQ  4 PIKIGIGGPVGAGKTQLIEKVVKRLAKKMSIGVITNDI 41
+                          5667789**********998888888899999999876 PP
+
+  == domain 2  score: 6.7 bits;  conditional E-value: 0.026
+        NFECIMNI_00019  38 gtlanmiradasmyy.ridnffelsthrdtkdvkcpgfnm..tprqmlidysenvikaqlgkdyfakkfaremvqhksfmmtd 117
+                           g     ir dasm +  id ++e +   +   ++  g n+  t    l+d+s  +i    g+  + +k  + m++   f++  
+  sp|Q5HLV8|UREG_STAEQ  68 GCPHTAIREDASMNFaAIDELLERNDDIELIFIESGGDNLaaTFSPELVDFSIYIIDVAQGEK-IPRKGGQGMIKSDFFIINK 149
+                           3445689******76369******99999999*****99833446789********9998865.6788899999888887644 PP
+
+>> sp|Q83MI6|CLPX_TROW8  ATP-dependent Clp protease ATP-binding subunit ClpX OS=Tropheryma whipplei (strain TW08/27) OX=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00076       5.2      94     156 ..     129     189 ..     111     222 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00076
+        NFECIMNI_00019  94 lgkdyfakkfaremvqhksfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvkl 156
+                            gk y+a+ +ar +  +  f + d     ea  + d+v+ +++  l+  dfd++r   g v +
+  sp|Q83MI6|CLPX_TROW8 129 CGKTYLAQTLARML--RVPFAVADATALTEAGYVGDDVENVLLKLLQDADFDITRAEAGIVCI 189
+                           69********9954..5689***********************************99998865 PP
+
+>> sp|Q8CNC6|UREG_STAES  Urease accessory protein UreG OS=Staphylococcus epidermidis (strain ATCC 12228 / FDA PCI 1200) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   0.3      0.12   8.1e+02       7      44 ..       4      41 ..       1      53 [. 0.82
+   2 ?    6.2   0.0     0.039   2.7e+02      38     116 ..      68     148 ..      50     169 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 4.6 bits;  conditional E-value: 0.12
+        NFECIMNI_00019  7 kigvafngppgigkdtlvkmindlvpggikvgtlanmi 44
+                           i + + gp g gk  l++ +   +   + +g + n i
+  sp|Q8CNC6|UREG_STAES  4 PIKIGIGGPVGAGKTQLIEKVVKRLAKEMSIGVITNDI 41
+                          5667789**********998888888899999999876 PP
+
+  == domain 2  score: 6.2 bits;  conditional E-value: 0.039
+        NFECIMNI_00019  38 gtlanmiradasmyy.ridnffelsthrdtkdvkcpgfnm..tprqmlidysenvikaqlgkdyfakkfaremvqhksfmmt 116
+                           g     ir dasm +  id ++e +   +   ++  g n+  t    l+d+s  +i    g+  + +k  + m++   f++ 
+  sp|Q8CNC6|UREG_STAES  68 GCPHTAIREDASMNFaAIDELLERNDDIELIFIESGGDNLaaTFSPELVDFSIYIIDVAQGEK-IPRKGGQGMIKSDFFIIN 148
+                           3445689*****976369******99999999*****99833446789********9998865.678888889888877764 PP
+
+>> sp|Q5LBQ4|PSTB_BACFN  Phosphate import ATP-binding protein PstB OS=Bacteroides fragilis (strain ATCC 25285 / DSM 2151
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   0.00068       4.7       4      46 ..      30      70 ..      27     117 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00068
+        NFECIMNI_00019  4 eskkigvafngppgigkdtlvkm...indlvpggikvgtlanmira 46
+                          e  k  vaf gp g gk t++++   +ndl+p+      l   ir 
+  sp|Q5LBQ4|PSTB_BACFN 30 EE-KSVVAFIGPSGCGKSTFLRLfnrMNDLIPATR----LTGEIRI 70
+                          44.4559************9987222568888654....4444555 PP
+
+>> sp|Q64SM5|PSTB_BACFR  Phosphate import ATP-binding protein PstB OS=Bacteroides fragilis (strain YCH46) OX=295405 GN=p
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   0.00068       4.7       4      46 ..      30      70 ..      27     117 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00068
+        NFECIMNI_00019  4 eskkigvafngppgigkdtlvkm...indlvpggikvgtlanmira 46
+                          e  k  vaf gp g gk t++++   +ndl+p+      l   ir 
+  sp|Q64SM5|PSTB_BACFR 30 EE-KSVVAFIGPSGCGKSTFLRLfnrMNDLIPATR----LTGEIRI 70
+                          44.4559************9987222568888654....4444555 PP
+
+>> sp|C0R250|RUVB_BRAHW  Holliday junction branch migration complex subunit RuvB OS=Brachyspira hyodysenteriae (strain A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0    0.0011       7.8       6      39 ..      52      84 ..      47     102 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.0011
+        NFECIMNI_00019  6 kkigvafngppgigkdtlvkmindlvpggikvgt 39
+                              + f gppg+gk tl ++i + + ++ik  t
+  sp|C0R250|RUVB_BRAHW 52 SLDHILFYGPPGLGKTTLAQIIANEMGSNIKA-T 84
+                          555689***************99888888885.3 PP
+
+>> sp|A1BDZ8|RUVB_CHLPD  Holliday junction branch migration complex subunit RuvB OS=Chlorobium phaeobacteroides (strain 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.2   0.00094       6.5      10      39 ..      56      85 ..      49      98 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 0.00094
+        NFECIMNI_00019 10 vafngppgigkdtlvkmindlvpggikvgt 39
+                          v ++gppg+gk tl  +i   + g+ikv +
+  sp|A1BDZ8|RUVB_CHLPD 56 VLLSGPPGLGKTTLANIIASEMGGNIKVTS 85
+                          6789***********************954 PP
+
+>> sp|Q0VA52|AFG2B_XENTR  ATPase family gene 2 protein homolog B OS=Xenopus tropicalis OX=8364 GN=afg2b PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.1   0.1     0.043     3e+02       9      29 ..     227     247 ..     224     265 .. 0.82
+   2 ?    4.0   0.0      0.19   1.3e+03       9      27 ..     493     511 ..     488     515 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 6.1 bits;  conditional E-value: 0.043
+         NFECIMNI_00019   9 gvafngppgigkdtlvkmind 29 
+                            gv + gppg+gk  lvk +  
+  sp|Q0VA52|AFG2B_XENTR 227 GVLLIGPPGVGKTLLVKAVAR 247
+                            88999************9865 PP
+
+  == domain 2  score: 4.0 bits;  conditional E-value: 0.19
+         NFECIMNI_00019   9 gvafngppgigkdtlvkmi 27 
+                            gv + gppg +k tlvk +
+  sp|Q0VA52|AFG2B_XENTR 493 GVLLYGPPGCAKTTLVKAV 511
+                            89999***********986 PP
+
+>> sp|Q8XJ14|RUVB_CLOPE  Holliday junction branch migration complex subunit RuvB OS=Clostridium perfringens (strain 13 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0     0.001       7.2       3      39 ..      49      85 ..      47     116 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.001
+        NFECIMNI_00019  3 reskkigvafngppgigkdtlvkmindlvpggikvgt 39
+                          re     v + gppg+gk tl  +i + + g++k+ +
+  sp|Q8XJ14|RUVB_CLOPE 49 REEALDHVILYGPPGLGKTTLANIIANEMGGNLKITS 85
+                          45555567889**************999999999965 PP
+
+>> sp|A6VMS2|TORD_ACTSZ  Chaperone protein TorD OS=Actinobacillus succinogenes (strain ATCC 55618 / DSM 22257 / CCUG 438
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.1   0.00079       5.5      80     150 ..      10      77 ..       4     118 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00079
+        NFECIMNI_00019  80 qmlidysenvikaqlgkdyfakkfaremvqhksfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrds 150
+                            +++++  n++  +l+ + +    a e+ q  +f+  ++gf++++ al  e+  + +  ++hp ++++ d 
+  sp|A6VMS2|TORD_ACTSZ  10 LLILNWLRNLLARELSDEQLQTLQAVEFSQFFAFL-AEIGFEKQSSALQQEIQKIAL--FQHPRLELAADF 77 
+                           56789999999999999999999999999999986.79************9998766..569999988875 PP
+
+>> sp|Q0TP13|RUVB_CLOP1  Holliday junction branch migration complex subunit RuvB OS=Clostridium perfringens (strain ATCC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0    0.0011       7.3       3      39 ..      49      85 ..      47     115 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.0011
+        NFECIMNI_00019  3 reskkigvafngppgigkdtlvkmindlvpggikvgt 39
+                          re     v + gppg+gk tl  +i + + g++k+ +
+  sp|Q0TP13|RUVB_CLOP1 49 REEALDHVILYGPPGLGKTTLANIIANEMGGNLKITS 85
+                          45555567889**************999999999965 PP
+
+>> sp|A6Q1X7|RUVB_NITSB  Holliday junction branch migration complex subunit RuvB OS=Nitratiruptor sp. (strain SB155-2) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0    0.0012       8.4      10      50 ..      55      94 ..      46     106 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.0012
+        NFECIMNI_00019 10 vafngppgigkdtlvkmindlvpggikvgtlanmiradasm 50
+                          v f gppg+gk tl  +i   + ++ik+ t a mi+    +
+  sp|A6Q1X7|RUVB_NITSB 55 VLFFGPPGLGKTTLSLIIASQMEANIKI-TAAPMIEKSGDL 94
+                          7899***********************9.678888776655 PP
+
+>> sp|A8MB70|NTPTH_CALMQ  Nucleoside-triphosphatase THEP1 OS=Caldivirga maquilingensis (strain ATCC 700844 / DSM 13496 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.1    0.0011       7.6       9      37 ..       4      33 ..       2      55 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.0011
+         NFECIMNI_00019  9 gvafngppgigkdtl.vkmindlvpggikv 37
+                           gv   gppg+gk tl vk+ + l   gi++
+  sp|A8MB70|NTPTH_CALMQ  4 GVFVTGPPGVGKTTLiVKVTSRLKERGIRI 33
+                           78899*********8357777788888886 PP
+
+>> sp|A7I1C5|RUVB_CAMHC  Holliday junction branch migration complex subunit RuvB OS=Campylobacter hominis (strain ATCC B
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0    0.0011       7.7      10      50 ..      55      94 ..      47     107 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.0011
+        NFECIMNI_00019 10 vafngppgigkdtlvkmindlvpggikvgtlanmiradasm 50
+                          v f gppg+gk tl  +i + +  +ik+ t a mi+    +
+  sp|A7I1C5|RUVB_CAMHC 55 VLFYGPPGLGKTTLAHIIANEMGVSIKI-TAAPMIEKSGDL 94
+                          789**************99988888998.678888766655 PP
+
+>> sp|Q8EZ61|RSGA_LEPIN  Small ribosomal subunit biogenesis GTPase RsgA OS=Leptospira interrogans serogroup Icterohaemor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0    0.0021        14     107     179 ..      87     159 ..      76     170 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 0.0021
+        NFECIMNI_00019 107 mvqhksfmm.tdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvklvhpnavnmpfivnrgdadgdarr 179
+                           ++ +k+f+  ++ g ++ +qa+a  +dll+++     d+   r  + y+ l   +   + +++n+ d   d ++
+  sp|Q8EZ61|RSGA_LEPIN  87 ILPRKTFLRrSNPGKRKGSQAIASNIDLLLVIMGLDNDYSPRRI-ERYLFLAKVSGAQVTIVLNKKDLCMDPEN 159
+                           566788875257799999**********9998866667766555.55999999999999999999998777655 PP
+
+>> sp|Q8G5R1|CLPX_BIFLO  ATP-dependent Clp protease ATP-binding subunit ClpX OS=Bifidobacterium longum (strain NCC 2705)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0    0.0012       8.2      94     155 ..     158     217 ..     146     238 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.0012
+        NFECIMNI_00019  94 lgkdyfakkfaremvqhksfmmtdlgfkeeaqaladevdlliivqlehpdfdfsrdsrgyvk 155
+                           +gk y+a+ +ar    +  f++td     ea  + d+v+ ++   l+  d d sr  +g + 
+  sp|Q8G5R1|CLPX_BIFLO 158 VGKTYLAQALARV--MNVPFVITDATTLTEAGYVGDDVETVLQRLLQAADGDVSRAQHGIIY 217
+                           79******99995..5789**********************9999**********9999875 PP
+
+>> sp|Q95001|CHLE2_BRALA  Cholinesterase 2 (Fragment) OS=Branchiostoma lanceolatum OX=7740 GN=CHE2 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   0.00091       6.3      12      76 ..     230     297 ..     221     326 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 0.00091
+         NFECIMNI_00019  12 fngppgigkdtlvkmindlvpggikvgtla.nmiradasmyyrid..nffelsthrdtkdvkcpgfnm 76 
+                            + g pg++kdt   +  d    gik++ +  n i  da  +  id  nf + s +rd  d     +n+
+  sp|Q95001|CHLE2_BRALA 230 LYGAPGFSKDTQSLITRDQYLEGIKMSVMGiNDISVDALSFQYIDwvNFDQPSMYRDAIDNLSGDYNF 297
+                            4699***********************995599*****9998888779*********99977777775 PP
+
+>> sp|Q2JMJ0|PSTB1_SYNJB  Phosphate import ATP-binding protein PstB 1 OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0    0.0013       9.3      10      38 ..      50      81 ..      42      89 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 0.0013
+         NFECIMNI_00019 10 vafngppgigkdtlvkm...indlvpggikvg 38
+                            af gp g gk tl++    +ndl+pg+   g
+  sp|Q2JMJ0|PSTB1_SYNJB 50 TAFIGPSGCGKSTLLRCfnrMNDLIPGARVEG 81
+                           69************98622268****986555 PP
+
+>> sp|Q1R3F6|PHNC_ECOUT  Phosphonates import ATP-binding protein PhnC OS=Escherichia coli (strain UTI89 / UPEC) OX=36410
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0     0.001       7.1      10      99 ..      33     117 ..      29     151 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.001
+        NFECIMNI_00019  10 vafngppgigkdtlvkmindlvpggikvgtlanmiradasmyyridnffelsthrdtkdvkcpgfnmtprqmlidysenvikaqlgkdy 98 
+                           va+ gp g gk tl++ ++ l+ g   vg+   ++        r+   +  s  r         fn+  r  +    env+   lg   
+  sp|Q1R3F6|PHNC_ECOUT  33 VALLGPSGSGKSTLLRHLSGLITGDKSVGSHIELLGRTVQREGRLARDIRKS--RAHTGYIFQQFNLVNRLSV---LENVLIGALGSTP 116
+                           7889*************************99988877777777766544433..3333344556666666443...3566666666655 PP
+
+        NFECIMNI_00019  99 f 99 
+                           f
+  sp|Q1R3F6|PHNC_ECOUT 117 F 117
+                           5 PP
+
+>> sp|Q8FAV1|PHNC_ECOL6  Phosphonates import ATP-binding protein PhnC OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 70
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0     0.001       7.1      10      99 ..      33     117 ..      29     151 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.001
+        NFECIMNI_00019  10 vafngppgigkdtlvkmindlvpggikvgtlanmiradasmyyridnffelsthrdtkdvkcpgfnmtprqmlidysenvikaqlgkdy 98 
+                           va+ gp g gk tl++ ++ l+ g   vg+   ++        r+   +  s  r         fn+  r  +    env+   lg   
+  sp|Q8FAV1|PHNC_ECOL6  33 VALLGPSGSGKSTLLRHLSGLITGDKSVGSHIELLGRTVQREGRLARDIRKS--RAHTGYIFQQFNLVNRLSV---LENVLIGALGSTP 116
+                           7889*************************99988877777777766544433..3333344556666666443...3566666666655 PP
+
+        NFECIMNI_00019  99 f 99 
+                           f
+  sp|Q8FAV1|PHNC_ECOL6 117 F 117
+                           5 PP
+
+>> sp|Q7UP21|PSTB_RHOBA  Phosphate import ATP-binding protein PstB OS=Rhodopirellula baltica (strain DSM 10527 / NCIMB 1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0    0.0012       7.9      10      40 ..      64      97 ..      59     107 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.0012
+        NFECIMNI_00019 10 vafngppgigkdtlvkmi...ndlvpggikvgtl 40
+                           af gp g gk tl++ i   nd+vp++   gtl
+  sp|Q7UP21|PSTB_RHOBA 64 TAFIGPSGCGKSTLLRWInrmNDIVPSANSRGTL 97
+                          69************9876333799**99999998 PP
+
+>> sp|Q72L58|GATA_THET2  Glutamyl-tRNA(Gln) amidotransferase subunit A OS=Thermus thermophilus (strain ATCC BAA-163 / DS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0    0.0015        10     120     147 ..     368     395 ..     356     415 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.0015
+        NFECIMNI_00019 120 fkeeaqaladevdlliivqlehpdfdfs 147
+                           +k eaqal  evdll++    hp f f 
+  sp|Q72L58|GATA_THET2 368 LKAEAQALFREVDLLLLPTTPHPAFPFG 395
+                           689**********************996 PP
+
+>> sp|Q9LCX3|GATA_THET8  Glutamyl-tRNA(Gln) amidotransferase subunit A OS=Thermus thermophilus (strain ATCC 27634 / DSM 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0    0.0015        10     120     147 ..     368     395 ..     357     415 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.0015
+        NFECIMNI_00019 120 fkeeaqaladevdlliivqlehpdfdfs 147
+                           +k eaqal  evdll++    hp f f 
+  sp|Q9LCX3|GATA_THET8 368 LKAEAQALFREVDLLLLPTTPHPAFPFG 395
+                           689**********************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (195 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     20501  (0.0358494); expected 11437.3 (0.02)
+Passed bias filter:                    18142  (0.0317243); expected 11437.3 (0.02)
+Passed Vit filter:                      3023  (0.00528622); expected 571.9 (0.001)
+Passed Fwd filter:                        83  (0.000145139); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              83  [number of targets reported over threshold]
+# CPU time: 2.92u 0.49s 00:00:03.41 Elapsed: 00:00:01.34
+# Mc/sec: 29906.83
+//
+[ok]

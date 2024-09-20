@@ -1,0 +1,94 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_38.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00038  [L=61]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+       0.41   15.8   0.0         17   10.7   0.0    2.3  2  sp|P83234|VESP_OPHHA  Ohanin OS=Ophiophagus hannah OX=8665 PE
+        1.1   14.5   0.0        2.9   13.1   0.0    1.7  1  sp|Q7S1R6|RM15_NEUCR  Large ribosomal subunit protein mL57 OS
+        2.2   13.5   0.0        4.4   12.5   0.0    1.5  1  sp|Q3A4Q8|RNC_SYNC1   Ribonuclease 3 OS=Syntrophotalea carbin
+        2.4   13.4   0.0        6.3   12.1   0.0    1.7  1  sp|A7MXD3|MURI_VIBC1  Glutamate racemase OS=Vibrio campbellii
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P83234|VESP_OPHHA  Ohanin OS=Ophiophagus hannah OX=8665 PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   0.00012        17       9      40 ..      12      42 ..       7      55 .. 0.80
+   2 ?    2.7   0.0     0.045   6.4e+03       6      42 ..     103     139 ..      99     152 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00012
+        NFECIMNI_00038  9 rrqggkklaasttnwqkafkkamtcnrgfdkv 40
+                          ++ ggk la+   nwqka    +  n +f+ +
+  sp|P83234|VESP_OPHHA 12 QENGGKALASPPGNWQKADV-TFDSNTAFESL 42
+                          678**************964.56677777765 PP
+
+  == domain 2  score: 2.7 bits;  conditional E-value: 0.045
+        NFECIMNI_00038   6 kamrrqggkklaasttnwqkafkkamtcnrgfdkvma 42 
+                           k+++r+g  +l      wqk +          dk++ 
+  sp|P83234|VESP_OPHHA 103 KSVKRKGYLRLVPEERIWQKGLWWLRRLETDSDKLQK 139
+                           78899**************998666666666666555 PP
+
+>> sp|Q7S1R6|RM15_NEUCR  Large ribosomal subunit protein mL57 OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0     2e-05       2.9       7      50 ..     106     150 ..     102     158 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 2e-05
+        NFECIMNI_00038   7 amrrqggkklaasttnwqkafkkamtc.nrgfdkvmafvgrgiav 50 
+                           a+  qgg ++ +  t w     k++    rg++  +af+gr i  
+  sp|Q7S1R6|RM15_NEUCR 106 AFLGQGGSRMLSEETKWLAVTHKSFDYgRRGYNTRLAFLGRQIIA 150
+                           56679*************999998876268***********8753 PP
+
+>> sp|Q3A4Q8|RNC_SYNC1  Ribonuclease 3 OS=Syntrophotalea carbinolica (strain DSM 2380 / NBRC 103641 / GraBd1) OX=338963 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0   3.1e-05       4.4       6      46 ..     106     146 ..     102     162 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 3.1e-05
+       NFECIMNI_00038   6 kamrrqggkklaasttnwqkafkkamtcnrgfdkvmafvgr 46 
+                          k  +r gg++ ++   n  +a+  a+ c+ gfd v   +  
+  sp|Q3A4Q8|RNC_SYNC1 106 KGEERSGGRQKSSLLANTMEALLGAVFCDGGFDSVRRVIEA 146
+                          66789*****************************9877643 PP
+
+>> sp|A7MXD3|MURI_VIBC1  Glutamate racemase OS=Vibrio campbellii (strain ATCC BAA-1116) OX=2902295 GN=murI PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   4.4e-05       6.3       7      43 ..     227     263 ..     221     268 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 4.4e-05
+        NFECIMNI_00038   7 amrrqggkklaasttnwqkafkkamtcnrgfdkvmaf 43 
+                             r++g+kk+ as   wq+       +n gf+ v+ +
+  sp|A7MXD3|MURI_VIBC1 227 ESREEGSKKIYASAPPWQEDALNTCLANLGFNPVQVY 263
+                           46899**************99999999*****99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (61 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13308  (0.0232713); expected 11437.3 (0.02)
+Passed bias filter:                    10936  (0.0191234); expected 11437.3 (0.02)
+Passed Vit filter:                       570  (0.00099674); expected 571.9 (0.001)
+Passed Fwd filter:                         5  (8.74334e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 1.40u 0.62s 00:00:02.02 Elapsed: 00:00:01.22
+# Mc/sec: 10275.28
+//
+[ok]

@@ -1,0 +1,127 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_9.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00009  [L=164]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+        1.2   14.0   0.0        1.3   13.9   0.0    1.1  1  sp|P14268|CAP9_ADECT   Hexon-interlacing protein OS=Canine ad
+        1.7   13.5   0.1          6   11.7   0.0    1.9  2  sp|O34198|CH60_RICRI   Chaperonin GroEL (Fragment) OS=Rickett
+        2.6   12.9   0.0        5.8   11.8   0.0    1.5  1  sp|Q568M3|CRLF3_DANRE  Cytokine receptor-like factor 3 OS=Dan
+        4.4   12.2   0.0         15   10.4   0.0    1.9  2  sp|Q8UI71|ARGD_AGRFC   Acetylornithine aminotransferase OS=Ag
+        4.5   12.1   0.7        8.2   11.3   0.7    1.4  1  sp|O68562|BAME_PSEAE   Outer membrane protein assembly factor
+        5.5   11.8   0.0        9.6   11.1   0.0    1.3  1  sp|A0JV20|ARGC_ARTS2   N-acetyl-gamma-glutamyl-phosphate redu
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P14268|CAP9_ADECT  Hexon-interlacing protein OS=Canine adenovirus serotype 2 (strain Toronto A 26-61) OX=69152 GN=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.9   0.0   1.3e-05       1.3      18      72 ..      23      77 ..       9      97 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 1.3e-05
+        NFECIMNI_00009 18 nagekvtgydahgneirkdalpqirtvtipplatveledklwhlavkvtsrrqrv 72
+                           a + vtg d +g  +  d l   r +  p + t+  e +l  lav v   + ++
+  sp|P14268|CAP9_ADECT 23 GARQNVTGSDLEGKPVPSDVLESGRPLAAPRIRTLYEEQQLNMLAVNVLLDELKI 77
+                          56789*****************************************997655444 PP
+
+>> sp|O34198|CH60_RICRI  Chaperonin GroEL (Fragment) OS=Rickettsia rickettsii OX=783 GN=groEL PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.3   0.0       2.7   2.5e+05      46      60 ..      54      68 ..      27      82 .. 0.58
+   2 ?   11.7   0.0   6.3e-05         6      15      87 ..     265     338 ..     256     356 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -3.3 bits;  conditional E-value: 2.7
+        NFECIMNI_00009 46 ipplatveledklwh 60
+                          +    ++el+dk+ +
+  sp|O34198|CH60_RICRI 54 VTVAKSIELKDKIRN 68
+                          333344555555544 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 6.3e-05
+        NFECIMNI_00009  15 vrlnagekvtgydahgn.eirkdalpqirtvtipplatveledklwhlavkvtsrrqrvalskdpvqigsdnkn 87 
+                            rl  g kv +  a g  + rk  +  i  +t   l t +l  kl ++++k     +rv +sk+   i   n +
+  sp|O34198|CH60_RICRI 265 NRLRGGLKVAAVKAPGFgDRRKAMMEDIAILTKGELITEDLGMKLENVSIKSLGTAKRVTISKENTVIVDGNGD 338
+                           48999*********9961455666788999*********************************98776544433 PP
+
+>> sp|Q568M3|CRLF3_DANRE  Cytokine receptor-like factor 3 OS=Danio rerio OX=7955 GN=crlf3 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   6.1e-05       5.8      21      81 ..     122     181 ..     106     187 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 6.1e-05
+         NFECIMNI_00009  21 ekvtgydahgneirkdalpqirtvtipplatveledklwhlavkvtsrrqrvalskdpvqi 81 
+                            +k+ ++   + +i+ d+lp++ ++   p  + +l+d l h+     +r+  va s  pvqi
+  sp|Q568M3|CRLF3_DANRE 122 DKLGSFTKKALQIQLDSLPEVPSLVDVPCLSAQLDDSLLHMFRAHVARHGSVA-SHPPVQI 181
+                            466778888899**********999999999**********988888877776.7889998 PP
+
+>> sp|Q8UI71|ARGD_AGRFC  Acetylornithine aminotransferase OS=Agrobacterium fabrum (strain C58 / ATCC 33970) OX=176299 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0      0.85   8.1e+04     107     143 ..     153     189 ..     143     202 .. 0.66
+   2 ?   10.4   0.0   0.00016        15      86     134 ..     347     397 ..     313     399 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.85
+        NFECIMNI_00009 107 npvmdrvkrgdlqiveapksdltleqmraaieeaqgy 143
+                            p ++   +  +  v+a k+ +t e     ie  qg 
+  sp|Q8UI71|ARGD_AGRFC 153 GPKVEGFDQVPFGDVDALKAAITAETAALLIEPIQGE 189
+                           5544444444444467777788888888888887775 PP
+
+  == domain 2  score: 10.4 bits;  conditional E-value: 0.00016
+        NFECIMNI_00009  86 knakaehfittpvgdgvfksfnpvmdrvk..rgdlqiveapksdltleqmr 134
+                           +  +aeh++  p gd+v++ + p++   +  r  l  vea  + lt +q +
+  sp|Q8UI71|ARGD_AGRFC 347 QAMRAEHLLGVPAGDNVIRLLPPLVTTAEeaREGLARVEAAAASLTAKQAK 397
+                           5679*******************987664226679999********99976 PP
+
+>> sp|O68562|BAME_PSEAE  Outer membrane protein assembly factor BamE OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.7   8.6e-05       8.2     115     147 ..     135     167 ..     120     173 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 8.6e-05
+        NFECIMNI_00009 115 rgdlqiveapksdltleqmraaieeaqgypmpk 147
+                           + + q  e pk   tleq++  ++eaq  p+p 
+  sp|O68562|BAME_PSEAE 135 KPEAQKEEPPKPGSTLEQLQREVDEAQPVPVPT 167
+                           45778899********************99996 PP
+
+>> sp|A0JV20|ARGC_ARTS2  N-acetyl-gamma-glutamyl-phosphate reductase OS=Arthrobacter sp. (strain FB24) OX=290399 GN=argC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0    0.0001       9.6      65     141 ..     186     264 ..     181     272 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.0001
+        NFECIMNI_00009  65 vtsrrqrvalskdpvqigsdnkna.kaehfittpvgdgvfksfnpvmdrvkrgdlqiveap.ksdltleqmraaieeaq 141
+                           v     +v  s  p  +g  +++  + e+ +    g++v  sf p +  + rg l    a  k  +t  ++r+a eea 
+  sp|A0JV20|ARGC_ARTS2 186 VNLIGSEVMGSMSPYGVGGGHRHTpEIEQGLGNAAGEAVTVSFTPTLAPMSRGILTTATAKvKPGVTAAELRSAWEEAY 264
+                           555556677788899999888765278999*************************9987753899***********985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (164 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     14947  (0.0261373); expected 11437.3 (0.02)
+Passed bias filter:                    12441  (0.0217552); expected 11437.3 (0.02)
+Passed Vit filter:                       660  (0.00115412); expected 571.9 (0.001)
+Passed Fwd filter:                         6  (1.0492e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 2.18u 0.50s 00:00:02.68 Elapsed: 00:00:01.25
+# Mc/sec: 27078.14
+//
+[ok]

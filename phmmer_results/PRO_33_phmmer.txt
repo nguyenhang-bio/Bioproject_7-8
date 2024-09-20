@@ -1,0 +1,61 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_33.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00033  [L=115]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+  ------ inclusion threshold ------
+        1.9   13.7   0.0        3.9   12.7   0.0    1.4  1  sp|A0A1U8QFC3|ALND_EMENI  Cytochrome P450 monooxygenase alnD 
+        3.1   13.0   0.0        7.1   11.9   0.0    1.6  1  sp|A1A6H3|RBSK_ARATH      Ribokinase OS=Arabidopsis thaliana 
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|A0A1U8QFC3|ALND_EMENI  Cytochrome P450 monooxygenase alnD OS=Emericella nidulans (strain FGSC A4 / ATCC 38163 / CB
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.0   1.4e-05       3.9       7      61 ..     304     356 ..     299     363 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 1.4e-05
+            NFECIMNI_00033   7 rlagvfgaspipqaglnaqlmmdkyllgahirdqhgkmvrhfyy.qdglkpiglgf 61 
+                               +  g  g  pi  a+l+a  ++d yl  a+  d+hg  +rh y   + l  +g gf
+  sp|A0A1U8QFC3|ALND_EMENI 304 KNGGTTGDLPIQTAALHATCLVD-YL--ARATDEHGNKLRHEYIlSNTLALVGAGF 356
+                               56789999************999.77..5678*********997256688899998 PP
+
+>> sp|A1A6H3|RBSK_ARATH  Ribokinase OS=Arabidopsis thaliana OX=3702 GN=RBSK PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   2.5e-05       7.1       8      70 ..     103     161 ..      97     182 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 2.5e-05
+        NFECIMNI_00033   8 lagvfgaspipqaglnaqlmmdkyllgahirdqhgkmvrhfyyqdglkpiglgfrkkrdaept 70 
+                           lag  ga    qa+  a+lm   y++g   +d hgk++ +    dg   + l + +  + ept
+  sp|A1A6H3|RBSK_ARATH 103 LAGGKGA---NQAACGAKLMYPTYFVGRLGEDAHGKLIAEALGDDGC-GVHLDYVRSVNNEPT 161
+                           4554444...5999**************************9999997.467777777777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (115 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                      9951  (0.017401); expected 11437.3 (0.02)
+Passed bias filter:                     9040  (0.015808); expected 11437.3 (0.02)
+Passed Vit filter:                       411  (0.000718702); expected 571.9 (0.001)
+Passed Fwd filter:                         2  (3.49734e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 1.76u 0.47s 00:00:02.23 Elapsed: 00:00:01.20
+# Mc/sec: 19744.02
+//
+[ok]

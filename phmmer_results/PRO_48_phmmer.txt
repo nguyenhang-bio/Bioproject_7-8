@@ -1,0 +1,100 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_48.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00048  [L=62]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+          2   13.9   0.4        4.1   12.9   0.4    1.5  1  sp|Q9SAZ5|AHP3_ARATH  Histidine-containing phosphotransfer pr
+        2.6   13.5   1.4        2.9   13.4   1.4    1.2  1  sp|P60267|SCX6_CENSU  Beta-toxin Css6 OS=Centruroides suffusu
+        2.7   13.5   1.4          3   13.3   1.4    1.2  1  sp|C0HM15|SCX2_CENHU  Beta-toxin Chui2 (Fragment) OS=Centruro
+        3.2   13.2   1.6          5   12.6   1.6    1.4  1  sp|P45662|SCX4_CENNO  Beta-toxin Cn4 OS=Centruroides noxius O
+        3.8   13.0   1.5        4.3   12.9   1.5    1.2  1  sp|P0DL83|SCX8_CENSU  Toxin Css8 OS=Centruroides suffusus OX=
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q9SAZ5|AHP3_ARATH  Histidine-containing phosphotransfer protein 3 OS=Arabidopsis thaliana OX=3702 GN=AHP3 PE=1 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.4   3.6e-05       4.1       9      47 ..      73     111 ..      66     121 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 3.6e-05
+        NFECIMNI_00048   9 vyqlve.speplkgmceqcegnrtqglclalgaeccsavn 47 
+                            ++lv  s   lkg      + r +glc+ l  ecc + n
+  sp|Q9SAZ5|AHP3_ARATH  73 DFKLVGsSVHQLKGSSSSVGAKRVKGLCVTL-KECCDSQN 111
+                           56676515679******************99.69**9877 PP
+
+>> sp|P60267|SCX6_CENSU  Beta-toxin Css6 OS=Centruroides suffusus OX=6880 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   1.4   2.5e-05       2.9      19      57 ..      25      63 ..      11      66 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 2.5e-05
+        NFECIMNI_00048 19 lkgmceqcegnrtqglclalgaeccsavnktkvwlikek 57
+                           k  c+q  g  + g c a+g  c     +  vw +  k
+  sp|P60267|SCX6_CENSU 25 CKRECKQQYGKSSGGYCYAFGCWCTHLYEQAVVWPLPNK 63
+                          5788******************************98777 PP
+
+>> sp|C0HM15|SCX2_CENHU  Beta-toxin Chui2 (Fragment) OS=Centruroides huichol OX=2911785 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   1.4   2.6e-05         3      22      58 ..      28      64 ..      10      66 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 2.6e-05
+        NFECIMNI_00048 22 mceqcegnrtqglclalgaeccsavnktkvwlikeks 58
+                           c q  g    g c a+g  c     +  vw +k k+
+  sp|C0HM15|SCX2_CENHU 28 ECRQQYGKGAGGYCYAFGCWCTHLYEQAVVWPLKNKT 64
+                          599999***************************9986 PP
+
+>> sp|P45662|SCX4_CENNO  Beta-toxin Cn4 OS=Centruroides noxius OX=6878 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   1.6   4.4e-05         5      22      58 ..      47      83 ..      29      86 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 4.4e-05
+        NFECIMNI_00048 22 mceqcegnrtqglclalgaeccsavnktkvwlikeks 58
+                           c+q  g    g c a+g  c     +  vw +k k+
+  sp|P45662|SCX4_CENNO 47 ECKQQYGKGAGGYCYAFGCWCTHLYEQAVVWPLKNKT 83
+                          599999****************************986 PP
+
+>> sp|P0DL83|SCX8_CENSU  Toxin Css8 OS=Centruroides suffusus OX=6880 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   1.5   3.7e-05       4.3      19      57 ..      25      63 ..      11      66 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 3.7e-05
+        NFECIMNI_00048 19 lkgmceqcegnrtqglclalgaeccsavnktkvwlikek 57
+                           k  c+q  g  + g c a+g  c     +  vw +  k
+  sp|P0DL83|SCX8_CENSU 25 CKRECKQQYGKGSGGYCYAFGCWCTHLYEQAVVWPLPNK 63
+                          5788******************************98777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (62 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13241  (0.0231541); expected 11437.3 (0.02)
+Passed bias filter:                    11245  (0.0196638); expected 11437.3 (0.02)
+Passed Vit filter:                       658  (0.00115062); expected 571.9 (0.001)
+Passed Fwd filter:                         6  (1.0492e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 1.51u 0.54s 00:00:02.04 Elapsed: 00:00:01.25
+# Mc/sec: 10234.63
+//
+[ok]

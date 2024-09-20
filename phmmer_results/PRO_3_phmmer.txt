@@ -1,0 +1,168 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_3.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00003  [L=143]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+      0.021   19.5   0.2      0.041   18.5   0.2    1.6  1  sp|Q2V4B2|PQL3_ARATH   PsbQ-like protein 3, chloroplastic OS=
+       0.36   15.5   0.4         13   10.5   0.0    2.9  3  sp|Q9GLZ9|NF2IP_MACFA  NFATC2-interacting protein OS=Macaca f
+       0.56   14.9   0.0        2.2   13.0   0.0    1.9  2  sp|P28759|SODF_SOYBN   Superoxide dismutase [Fe], chloroplast
+       0.87   14.3   0.4         13   10.5   0.0    2.6  3  sp|Q8NCF5|NF2IP_HUMAN  NFATC2-interacting protein OS=Homo sap
+        2.6   12.7   0.0        4.4   12.0   0.0    1.4  1  sp|Q3YR47|SECB_EHRCJ   Protein-export protein SecB OS=Ehrlich
+        4.6   11.9   0.0         10   10.8   0.0    1.6  1  sp|Q6LM58|CYSJ_PHOPR   Sulfite reductase [NADPH] flavoprotein
+        4.6   11.9   0.1         13   10.4   0.0    1.7  2  sp|Q58660|PURL_METJA   Phosphoribosylformylglycinamidine synt
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q2V4B2|PQL3_ARATH  PsbQ-like protein 3, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=PQL3 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   18.5   0.2   5.1e-07     0.041     108     134 ..      63      89 ..      28      95 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 5.1e-07
+        NFECIMNI_00003 108 evnyrdffaegapppepdqseeleqed 134
+                             n  dff  gapppep+++ el qe 
+  sp|Q2V4B2|PQL3_ARATH  63 SANAADFFNFGAPPPEPERTVELAQEG 89 
+                           57999*******************985 PP
+
+>> sp|Q9GLZ9|NF2IP_MACFA  NFATC2-interacting protein OS=Macaca fascicularis OX=9541 GN=NFATC2IP PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.1      0.21   1.7e+04     114     141 ..     152     179 ..     143     180 .. 0.87
+   2 ?    0.2   0.0      0.23   1.9e+04     105     135 ..     207     238 ..     199     242 .. 0.72
+   3 ?   10.5   0.0   0.00015        13      18      51 ..     356     389 ..     344     397 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.21
+         NFECIMNI_00003 114 ffaegapppepdqseeleqedqlekklt 141
+                            ++ eg+p p      +l  +d+ ekk t
+  sp|Q9GLZ9|NF2IP_MACFA 152 LYHEGSPSPGSPWKTKLRTKDKEEKKKT 179
+                            688******9999999********9976 PP
+
+  == domain 2  score: 0.2 bits;  conditional E-value: 0.23
+         NFECIMNI_00003 105 fvcevnyrdffaegapppepdqseele.qedq 135
+                             + evn r     +   pep q +e + qed+
+  sp|Q9GLZ9|NF2IP_MACFA 207 KLSEVNKRLQDLRSCLSPEPPQGQEQQgQEDE 238
+                            56788888777788888999998775426776 PP
+
+  == domain 3  score: 10.5 bits;  conditional E-value: 0.00015
+         NFECIMNI_00003  18 rqwpastalenlsealalfgnqlaffidgsyqfg 51 
+                            r  p  t + +  ea+ l g +l+ff+dg+   g
+  sp|Q9GLZ9|NF2IP_MACFA 356 RDSPLKTLMSHYEEAMGLSGRKLSFFFDGTKLSG 389
+                            778999***********************97666 PP
+
+>> sp|P28759|SODF_SOYBN  Superoxide dismutase [Fe], chloroplastic OS=Glycine max OX=3847 GN=SODB PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   2.7e-05       2.2      66     121 ..      60     112 ..      48     129 .. 0.79
+   2 ?   -1.4   0.0      0.71   5.8e+04     112     130 ..     160     179 ..     152     181 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 2.7e-05
+        NFECIMNI_00003  66 tavirkfviaasvdgksvqetmfnaeyngdlyrifrtfafvcevnyrdffaegapp 121
+                              ++k v+   +dgks++e +  +   gd+   f+  a v     +dff e   p
+  sp|P28759|SODF_SOYBN  60 VENLKKQVVGTELDGKSLEEIIVTSYNKGDILPAFNNAAQV---WNHDFFWECMKP 112
+                           5568999**************9999888**99988887655...557888876655 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.71
+        NFECIMNI_00003 112 rdffaeg.apppepdqseel 130
+                           r f  e+ a pp pd+  +l
+  sp|P28759|SODF_SOYBN 160 RKFDGENvANPPSPDEDNKL 179
+                           5555554378999*998765 PP
+
+>> sp|Q8NCF5|NF2IP_HUMAN  NFATC2-interacting protein OS=Homo sapiens OX=9606 GN=NFATC2IP PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.2   0.1      0.24   1.9e+04     114     141 ..     163     190 ..     156     191 .. 0.88
+   2 ?   -1.6   0.0      0.81   6.7e+04     106     135 ..     219     249 ..     212     252 .. 0.63
+   3 ?   10.5   0.0   0.00016        13      18      51 ..     367     400 ..     355     408 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 0.2 bits;  conditional E-value: 0.24
+         NFECIMNI_00003 114 ffaegapppepdqseeleqedqlekklt 141
+                            ++ eg+p p      +l  +d+ ekk t
+  sp|Q8NCF5|NF2IP_HUMAN 163 LYHEGSPSPGSPWKTKLRTKDKEEKKKT 190
+                            6889*****9999999********9976 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.81
+         NFECIMNI_00003 106 vcevnyrdffaegapppepdqseele.qedq 135
+                            + evn r     +   p+p q +e + qed+
+  sp|Q8NCF5|NF2IP_HUMAN 219 LSEVNKRLQDLRSCLSPKPPQGQEQQgQEDE 249
+                            5677777666666667777776654327776 PP
+
+  == domain 3  score: 10.5 bits;  conditional E-value: 0.00016
+         NFECIMNI_00003  18 rqwpastalenlsealalfgnqlaffidgsyqfg 51 
+                            r  p  t + +  ea+ l g +l+ff+dg+   g
+  sp|Q8NCF5|NF2IP_HUMAN 367 RDSPLKTLMSHYEEAMGLSGRKLSFFFDGTKLSG 400
+                            778999***********************97666 PP
+
+>> sp|Q3YR47|SECB_EHRCJ  Protein-export protein SecB OS=Ehrlichia canis (strain Jake) OX=269484 GN=secB PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   5.4e-05       4.4      92     137 ..      74     116 ..      49     121 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 5.4e-05
+        NFECIMNI_00003  92 yngdlyrifrtfafvcevnyrdffaegapppepdqseeleqedqle 137
+                            n++  r+  t af+cev y   f+      +    eel q+d  +
+  sp|Q3YR47|SECB_EHRCJ  74 VNAE-ARVGTTVAFICEVKYCGVFSV--ENSDASNGEELSQQDMRD 116
+                           4544.48999**********999974..445778899999999765 PP
+
+>> sp|Q6LM58|CYSJ_PHOPR  Sulfite reductase [NADPH] flavoprotein alpha-component OS=Photobacterium profundum (strain SS9)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   0.00013        10      47      84 ..     275     316 ..     264     349 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.00013
+        NFECIMNI_00003  47 syqfgdilavmhrndpkaltavirkfviaa....svdgksvq 84 
+                           +yq gd l v ++ndp+   a++ k  ++      vdg+ +q
+  sp|Q6LM58|CYSJ_PHOPR 275 TYQAGDALGVWYENDPELALAIVAKVGLSGeeliDVDGEHIQ 316
+                           69****************9****9988764222246777666 PP
+
+>> sp|Q58660|PURL_METJA  Phosphoribosylformylglycinamidine synthase subunit PurL OS=Methanocaldococcus jannaschii (strai
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   0.00016        13      60     132 ..     313     384 ..     296     393 .. 0.73
+   2 ?   -4.0   0.0       4.7   3.8e+05      53      75 ..     672     694 ..     665     702 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 0.00016
+        NFECIMNI_00003  60 ndpkaltavirkfviaasvdgksvqetmfnaeyngdlyrifrtfafvcevnyrdffaegapppepdqseeleq 132
+                              + +  +++k+ + asv gk++ e  + a+y g++  +   + ++ce    d   +     + d  e+++ 
+  sp|Q58660|PURL_METJA 313 GSEEEIIEIFKKYELPASVIGKTIPEKRIIAKYKGEVV-VDLPLDLLCEAPLYDREGKEDLKEKEDDKEKIKM 384
+                           4445677899**************************86.5567888999887776554444444555555555 PP
+
+  == domain 2  score: -4.0 bits;  conditional E-value: 4.7
+        NFECIMNI_00003  53 ilavmhrndpkaltavirkfvia 75 
+                           ilav  +n  k l+ +   ++i 
+  sp|Q58660|PURL_METJA 672 ILAVRDENKDKVLSKLSSAYIIG 694
+                           78999999999999888877764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (143 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     15096  (0.0263979); expected 11437.3 (0.02)
+Passed bias filter:                    13896  (0.0242995); expected 11437.3 (0.02)
+Passed Vit filter:                       883  (0.00154407); expected 571.9 (0.001)
+Passed Fwd filter:                         8  (1.39893e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 1.87u 0.55s 00:00:02.42 Elapsed: 00:00:01.19
+# Mc/sec: 24811.67
+//
+[ok]

@@ -1,0 +1,263 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_45.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00045  [L=85]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+       0.28   16.5   0.0       0.68   15.3   0.0    1.6  1  sp|Q6DFF9|MABP1_XENLA  Mitogen-activated protein kinase-bindi
+        1.7   14.0   0.0          4   12.8   0.0    1.6  1  sp|Q48QS8|SYD_STRPM    Aspartate--tRNA ligase OS=Streptococcu
+        1.8   14.0   0.0        4.4   12.7   0.0    1.6  1  sp|B9DW80|SYD_STRU0    Aspartate--tRNA ligase OS=Streptococcu
+        2.1   13.8   0.0        4.9   12.6   0.0    1.6  1  sp|A2RGY0|SYD_STRPG    Aspartate--tRNA ligase OS=Streptococcu
+        2.8   13.3   0.0        7.6   12.0   0.0    1.7  1  sp|A4VYB8|SYD_STRSY    Aspartate--tRNA ligase OS=Streptococcu
+        2.8   13.3   0.0        7.6   12.0   0.0    1.7  1  sp|A4W4L2|SYD_STRS2    Aspartate--tRNA ligase OS=Streptococcu
+        3.6   13.0   0.0        8.5   11.8   0.0    1.5  1  sp|Q03IB4|SYD_STRTD    Aspartate--tRNA ligase OS=Streptococcu
+        3.6   13.0   0.0        8.5   11.8   0.0    1.5  1  sp|Q5M283|SYD_STRT2    Aspartate--tRNA ligase OS=Streptococcu
+        3.6   13.0   0.0        8.5   11.8   0.0    1.5  1  sp|Q5LXN1|SYD_STRT1    Aspartate--tRNA ligase OS=Streptococcu
+        3.6   13.0   0.0        8.8   11.8   0.0    1.6  1  sp|Q99XL0|SYD_STRP1    Aspartate--tRNA ligase OS=Streptococcu
+        3.7   13.0   0.0        8.8   11.8   0.0    1.6  1  sp|P0DG30|SYD_STRP3    Aspartate--tRNA ligase OS=Streptococcu
+        3.7   13.0   0.0        8.8   11.8   0.0    1.6  1  sp|P0DG31|SYD_STRPQ    Aspartate--tRNA ligase OS=Streptococcu
+        3.7   13.0   0.0        8.8   11.8   0.0    1.6  1  sp|B5XJ82|SYD_STRPZ    Aspartate--tRNA ligase OS=Streptococcu
+        3.7   13.0   0.0        8.8   11.8   0.0    1.6  1  sp|Q8NZ20|SYD_STRP8    Aspartate--tRNA ligase OS=Streptococcu
+        3.7   13.0   0.0        8.8   11.8   0.0    1.6  1  sp|Q5X9E6|SYD_STRP6    Aspartate--tRNA ligase OS=Streptococcu
+        4.9   12.6   0.0         11   11.4   0.0    1.5  1  sp|Q3JYL7|SYD_STRA1    Aspartate--tRNA ligase OS=Streptococcu
+          6   12.3   0.2         46    9.5   0.1    2.5  2  sp|Q2G7C4|G6PI_NOVAD   Glucose-6-phosphate isomerase OS=Novos
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q6DFF9|MABP1_XENLA  Mitogen-activated protein kinase-binding protein 1 OS=Xenopus laevis OX=8355 GN=mapkbp1 PE=2 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.3   0.0     2e-05      0.68      31      74 ..     802     845 ..     795     856 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 2e-05
+         NFECIMNI_00045  31 vtgatsqfaakaiywavvngcnsatveklcitkspeyavnwahg 74 
+                             ++a+s f     yw +  g n+++    c++k p   v w++ 
+  sp|Q6DFF9|MABP1_XENLA 802 ASSASSSFGRSNSYWEMARGTNTSSERSNCLSKMPRQRVRWSQP 845
+                            567999***********************************864 PP
+
+>> sp|Q48QS8|SYD_STRPM  Aspartate--tRNA ligase OS=Streptococcus pyogenes serotype M28 (strain MGAS6180) OX=319701 GN=asp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.0   0.00012         4       8      63 ..     314     370 ..     310     387 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 0.00012
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywa.vvngcnsatveklcitk 63 
+                           p ++ i++k    +++  +i  +t    qf ak + w  v +g  +  v k+ i  
+  sp|Q48QS8|SYD_STRPM 314 APAVKAIVVKGNADRYSRKDIDKLTEFAKQFGAKGLAWVkVTDGQLAGPVAKFLIAI 370
+                          5899**********************************8245677777788777665 PP
+
+>> sp|B9DW80|SYD_STRU0  Aspartate--tRNA ligase OS=Streptococcus uberis (strain ATCC BAA-854 / 0140J) OX=218495 GN=aspS P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.0   0.00013       4.4       8      49 ..     314     355 ..     310     373 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 0.00013
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywavvn 49 
+                           p+++ i++k    +++  +i  +t    qf ak + w  v+
+  sp|B9DW80|SYD_STRU0 314 APVVKAIVVKGNADRYSRKDIDKMTEFAKQFGAKGLAWIKVD 355
+                          59************************************8775 PP
+
+>> sp|A2RGY0|SYD_STRPG  Aspartate--tRNA ligase OS=Streptococcus pyogenes serotype M5 (strain Manfredo) OX=160491 GN=aspS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   0.00015       4.9       8      59 ..     314     366 ..     310     382 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 0.00015
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywa.vvngcnsatvekl 59 
+                           p ++ i++k    +++  +i  +t    qf ak + w  v +g  s  v k+
+  sp|A2RGY0|SYD_STRPG 314 APAVKAIVVKGNADRYSRKDIDKLTEFAKQFGAKGLAWVkVTDGQFSGPVAKF 366
+                          5899**********************************835567777777775 PP
+
+>> sp|A4VYB8|SYD_STRSY  Aspartate--tRNA ligase OS=Streptococcus suis (strain 05ZYH33) OX=391295 GN=aspS PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00022       7.6       8      50 ..     314     356 ..     310     381 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00022
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywavvng 50 
+                           p+++ i++k     ++  +i  +t    qf ak + w  v+ 
+  sp|A4VYB8|SYD_STRSY 314 APVVKAIVVKGAADSYSRKDIDKLTDYAKQFGAKGLAWVKVDK 356
+                          59************************************98764 PP
+
+>> sp|A4W4L2|SYD_STRS2  Aspartate--tRNA ligase OS=Streptococcus suis (strain 98HAH33) OX=391296 GN=aspS PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   0.00022       7.6       8      50 ..     314     356 ..     310     381 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00022
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywavvng 50 
+                           p+++ i++k     ++  +i  +t    qf ak + w  v+ 
+  sp|A4W4L2|SYD_STRS2 314 APVVKAIVVKGAADSYSRKDIDKLTDYAKQFGAKGLAWVKVDK 356
+                          59************************************98764 PP
+
+>> sp|Q03IB4|SYD_STRTD  Aspartate--tRNA ligase OS=Streptococcus thermophilus (strain ATCC BAA-491 / LMD-9) OX=322159 GN=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00025       8.5       9      58 ..     315     365 ..     311     377 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00025
+       NFECIMNI_00045   9 piirriiikhkvrkfaideiqsvtgatsqfaakaiywa.vvngcnsatvek 58 
+                          p ++ i++k    k++   i  +t    qf ak + w  + +g  +  v k
+  sp|Q03IB4|SYD_STRTD 315 PAVKAIVVKGNADKYSRKSIDKLTDFAKQFGAKGLAWVkMTDGVLAGPVAK 365
+                          899**********************************72456666666655 PP
+
+>> sp|Q5M283|SYD_STRT2  Aspartate--tRNA ligase OS=Streptococcus thermophilus (strain ATCC BAA-250 / LMG 18311) OX=264199
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00025       8.5       9      58 ..     315     365 ..     311     377 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00025
+       NFECIMNI_00045   9 piirriiikhkvrkfaideiqsvtgatsqfaakaiywa.vvngcnsatvek 58 
+                          p ++ i++k    k++   i  +t    qf ak + w  + +g  +  v k
+  sp|Q5M283|SYD_STRT2 315 PAVKAIVVKGNADKYSRKSIDKLTDFAKQFGAKGLAWVkMTDGVLAGPVAK 365
+                          899**********************************72456666666655 PP
+
+>> sp|Q5LXN1|SYD_STRT1  Aspartate--tRNA ligase OS=Streptococcus thermophilus (strain CNRZ 1066) OX=299768 GN=aspS PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00025       8.5       9      58 ..     315     365 ..     311     377 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00025
+       NFECIMNI_00045   9 piirriiikhkvrkfaideiqsvtgatsqfaakaiywa.vvngcnsatvek 58 
+                          p ++ i++k    k++   i  +t    qf ak + w  + +g  +  v k
+  sp|Q5LXN1|SYD_STRT1 315 PAVKAIVVKGNADKYSRKSIDKLTDFAKQFGAKGLAWVkMTDGVLAGPVAK 365
+                          899**********************************72456666666655 PP
+
+>> sp|Q99XL0|SYD_STRP1  Aspartate--tRNA ligase OS=Streptococcus pyogenes serotype M1 OX=301447 GN=aspS PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00026       8.8       8      57 ..     314     364 ..     310     378 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00026
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywavv.ngcnsatve 57 
+                           p ++ i++k    +++  +i  +t    qf ak + w  v +g  +  v 
+  sp|Q99XL0|SYD_STRP1 314 APAVKAIVVKGNADRYSRKDIDKLTEFAKQFGAKGLAWVKVtDGQLAGPVA 364
+                          5899**********************************8651455555555 PP
+
+>> sp|P0DG30|SYD_STRP3  Aspartate--tRNA ligase OS=Streptococcus pyogenes serotype M3 (strain ATCC BAA-595 / MGAS315) OX=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00026       8.8       8      57 ..     314     364 ..     310     378 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00026
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywavv.ngcnsatve 57 
+                           p ++ i++k    +++  +i  +t    qf ak + w  v +g  +  v 
+  sp|P0DG30|SYD_STRP3 314 APAVKAIVVKGNADRYSRKDIDKLTEFAKQFGAKGLAWVKVtDGQLAGPVA 364
+                          5899**********************************8651455555555 PP
+
+>> sp|P0DG31|SYD_STRPQ  Aspartate--tRNA ligase OS=Streptococcus pyogenes serotype M3 (strain SSI-1) OX=193567 GN=aspS PE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00026       8.8       8      57 ..     314     364 ..     310     378 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00026
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywavv.ngcnsatve 57 
+                           p ++ i++k    +++  +i  +t    qf ak + w  v +g  +  v 
+  sp|P0DG31|SYD_STRPQ 314 APAVKAIVVKGNADRYSRKDIDKLTEFAKQFGAKGLAWVKVtDGQLAGPVA 364
+                          5899**********************************8651455555555 PP
+
+>> sp|B5XJ82|SYD_STRPZ  Aspartate--tRNA ligase OS=Streptococcus pyogenes serotype M49 (strain NZ131) OX=471876 GN=aspS P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00026       8.8       8      57 ..     314     364 ..     310     378 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00026
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywavv.ngcnsatve 57 
+                           p ++ i++k    +++  +i  +t    qf ak + w  v +g  +  v 
+  sp|B5XJ82|SYD_STRPZ 314 APAVKAIVVKGNADRYSRKDIDKLTEFAKQFGAKGLAWVKVtDGQLAGPVA 364
+                          5899**********************************8651455555555 PP
+
+>> sp|Q8NZ20|SYD_STRP8  Aspartate--tRNA ligase OS=Streptococcus pyogenes serotype M18 (strain MGAS8232) OX=186103 GN=asp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00026       8.8       8      57 ..     314     364 ..     310     378 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00026
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywavv.ngcnsatve 57 
+                           p ++ i++k    +++  +i  +t    qf ak + w  v +g  +  v 
+  sp|Q8NZ20|SYD_STRP8 314 APAVKAIVVKGNADRYSRKDIDKLTEFAKQFGAKGLAWVKVtDGQLAGPVA 364
+                          5899**********************************8651455555555 PP
+
+>> sp|Q5X9E6|SYD_STRP6  Aspartate--tRNA ligase OS=Streptococcus pyogenes serotype M6 (strain ATCC BAA-946 / MGAS10394) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00026       8.8       8      57 ..     314     364 ..     310     378 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00026
+       NFECIMNI_00045   8 lpiirriiikhkvrkfaideiqsvtgatsqfaakaiywavv.ngcnsatve 57 
+                           p ++ i++k    +++  +i  +t    qf ak + w  v +g  +  v 
+  sp|Q5X9E6|SYD_STRP6 314 APAVKAIVVKGNADRYSRKDIDKLTEFAKQFGAKGLAWVKVtDGQLAGPVA 364
+                          5899**********************************8651455555555 PP
+
+>> sp|Q3JYL7|SYD_STRA1  Aspartate--tRNA ligase OS=Streptococcus agalactiae serotype Ia (strain ATCC 27591 / A909 / CDC S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   0.00033        11      10      47 ..     316     353 ..     311     372 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00033
+       NFECIMNI_00045  10 iirriiikhkvrkfaideiqsvtgatsqfaakaiywav 47 
+                          +++ i++k+k  k++   i  +t    q+ ak + w  
+  sp|Q3JYL7|SYD_STRA1 316 VVKAIVVKNKADKYSRKNIDKLTEIAKQYGAKGLAWLK 353
+                          8999********************************64 PP
+
+>> sp|Q2G7C4|G6PI_NOVAD  Glucose-6-phosphate isomerase OS=Novosphingobium aromaticivorans (strain ATCC 700278 / DSM 1244
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.5   0.1    0.0014        46      31      72 ..     195     236 ..     182     244 .. 0.86
+   2 ?   -1.6   0.0       4.3   1.4e+05      40      56 ..     301     317 ..     288     330 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 9.5 bits;  conditional E-value: 0.0014
+        NFECIMNI_00045  31 vtgatsqfaakaiywavvngcnsatveklcitkspeyavnwa 72 
+                            t  t   aa a+ w   ng      + +++t +pe av w 
+  sp|Q2G7C4|G6PI_NOVAD 195 TTTETMTNAASALEWLRENGVADPYGQVVALTAAPEKAVEWG 236
+                           455677789********************************7 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 4.3
+        NFECIMNI_00045  40 akaiywavvngcnsatv 56 
+                              +y+  v gc +  v
+  sp|Q2G7C4|G6PI_NOVAD 301 FADLYYTQVRGCQTRAV 317
+                           445899999***98665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (85 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     10340  (0.0180812); expected 11437.3 (0.02)
+Passed bias filter:                     9662  (0.0168956); expected 11437.3 (0.02)
+Passed Vit filter:                       494  (0.000863842); expected 571.9 (0.001)
+Passed Fwd filter:                        17  (2.97273e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              17  [number of targets reported over threshold]
+# CPU time: 1.50u 0.42s 00:00:01.92 Elapsed: 00:00:01.18
+# Mc/sec: 14849.76
+//
+[ok]

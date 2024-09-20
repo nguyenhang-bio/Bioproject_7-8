@@ -1,0 +1,101 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_60.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00060  [L=408]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+     0.0069   20.4   8.7       0.15   16.0   1.2    2.2  2  sp|O31966|YOMR_BACSU   SPbeta prophage-derived uncharacterize
+  ------ inclusion threshold ------
+       0.93   13.4   0.1       0.97   13.3   0.1    1.0  1  sp|Q8LGD1|SP1L5_ARATH  Protein SPIRAL1-like 5 OS=Arabidopsis 
+        1.5   12.7   0.5         52    7.6   0.1    2.1  2  sp|Q14623|IHH_HUMAN    Indian hedgehog protein OS=Homo sapien
+        3.4   11.5   0.1        4.3   11.2   0.1    1.1  1  sp|A1BGM7|THIE_CHLPD   Thiamine-phosphate synthase OS=Chlorob
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|O31966|YOMR_BACSU  SPbeta prophage-derived uncharacterized protein YomR OS=Bacillus subtilis (strain 168) OX=22430
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   1.2   1.1e-06      0.15     128     197 ..      42     106 ..      13     117 .. 0.76
+   2 !    8.5   1.3    0.0002        29     134     187 ..     143     193 ..     112     207 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 1.1e-06
+        NFECIMNI_00060 128 semdsgynst.nkkytdhetrrdnphgvtyedvggyskqqiddlvkaeqtdvdnhvkntsdphevtpeqln 197
+                           + +   y     kk+td    + nph vt e vg      + + v+a + + d h+ +t +ph vt  q+ 
+  sp|O31966|YOMR_BACSU  42 TNLFMEYQQNeLKKHTDD---KSNPHLVTKEQVGLG---NVLNNVQATKEEFDEHLNDTLNPHSVTKSQVG 106
+                           444445543303666665...68**********954...45667899999****************99975 PP
+
+  == domain 2  score: 8.5 bits;  conditional E-value: 0.0002
+        NFECIMNI_00060 134 ynstnkkytd.hetrrdnphgvtyedvggyskqqiddlvkaeqtdvdnhvkntsd 187
+                             s +kkytd h  + +nph vt   vg  +     +  +a + + d h+k+  +
+  sp|O31966|YOMR_BACSU 143 AESNSKKYTDaHSQNTNNPHKVTAIQVGLGNL---TNDKQATKLEFDAHIKDN-E 193
+                           46789****966777899******99985433...333467777888888874.3 PP
+
+>> sp|Q8LGD1|SP1L5_ARATH  Protein SPIRAL1-like 5 OS=Arabidopsis thaliana OX=3702 GN=SP1L5 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.1   6.8e-06      0.97     202     280 ..       3      78 ..       1      97 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 6.8e-06
+         NFECIMNI_00060 202 sggafseavsllkmvfgaggeirrlsdgfelyipdnggarfgihtktkeaqlngepmltdvnygrirqrnawkfvapsa 280
+                             gg+f    s l  +fg+ +ei +        +    +  +g+ +  ++ + + +p +++ ny r++ +n+  fv    
+  sp|Q8LGD1|SP1L5_ARATH   3 RGGSFGGGQSSLGYLFGSDNEIPKTPAP---PVAPKPAPPYGVDSTEEDHEADQKPKISNNNYQRVQGQNSGNFVTDRP 78 
+                            699*******************997643...344456789*****9999*************************97544 PP
+
+>> sp|Q14623|IHH_HUMAN  Indian hedgehog protein OS=Homo sapiens OX=9606 GN=IHH PE=1 SV=4
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.2   0.0    0.0081   1.2e+03     295     348 ..     173     226 ..     167     240 .. 0.72
+   2 ?    7.6   0.1   0.00036        52      36      99 ..     338     400 ..     326     409 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 3.2 bits;  conditional E-value: 0.0081
+       NFECIMNI_00060 295 ssfggveyestaeihytdksgnaqvaapg..ypgfgkfglelragtnqslvapfpa 348
+                          + f  v yes a +h + ks ++  a  g  +p+ ++    l++g   +l a  p 
+  sp|Q14623|IHH_HUMAN 173 AGFDWVYYESKAHVHCSVKSEHSAAAKTGgcFPAGAQVR--LESGARVALSAVRPG 226
+                          678999**************9998888773455555544..445555555555554 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.00036
+       NFECIMNI_00060  36 qvpeqytagwfvspgdeevkqphqwnnawlqsidwqlwswyigrstwhpeltyahgavvyvdgk 99 
+                           v e   a+ f + +d  + q   w    + s+ w  w+   g   w+p+l y  g ++  +g 
+  sp|Q14623|IHH_HUMAN 338 LVVEDVVASCFAAVADHHLAQLAFWPLRLFHSLAWGSWTPGEG-VHWYPQLLYRLGRLLLEEGS 400
+                          577889999**************************87766555.36**********99988875 PP
+
+>> sp|A1BGM7|THIE_CHLPD  Thiamine-phosphate synthase OS=Chlorobium phaeobacteroides (strain DSM 266 / SMG 266 / 2430) OX
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.1     3e-05       4.3     314     383 ..     113     177 ..      91     185 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 3e-05
+        NFECIMNI_00060 314 sgnaqvaapgypgfgkfglelragtnqslvapfpangvqgtvfgvldglpavgvgplnqsnlleyfptgt 383
+                           + na+ a   y gfg +   ++ g+   l ap+ + ++ + v  +  ++p v++g +n+ n++e +  g 
+  sp|A1BGM7|THIE_CHLPD 113 ALNAERAGADYIGFGHI---FQTGSKNKLSAPLGSAAISAVVQRI--SIPLVAIGGINKMNMMETIAAGA 177
+                           56899999999999875...789************9999998876..69***************998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (408 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     15107  (0.0264171); expected 11437.3 (0.02)
+Passed bias filter:                    12550  (0.0219458); expected 11437.3 (0.02)
+Passed Vit filter:                      1729  (0.00302345); expected 571.9 (0.001)
+Passed Fwd filter:                         4  (6.99467e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 5.03u 0.45s 00:00:05.48 Elapsed: 00:00:02.08
+# Mc/sec: 40604.03
+//
+[ok]

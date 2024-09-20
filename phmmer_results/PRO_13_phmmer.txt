@@ -1,0 +1,240 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_13.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00013  [L=442]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+    2.7e-47  166.1   0.0    3.8e-47  165.6   0.0    1.1  1  sp|P0DTK9|ACB1_CAUSR      Anti-CBASS protein Acb1 OS=Caulobac
+    1.3e-43  154.0   0.0    1.8e-43  153.5   0.0    1.1  1  sp|A0A494TJG7|ACB1_SPHPE  Anti-CBASS protein Acb1 OS=Sphingom
+    1.7e-31  114.0   0.1    2.1e-31  113.7   0.1    1.0  1  sp|P44183|Y1409_HAEIN     Uncharacterized protein HI_1409 OS=
+  ------ inclusion threshold ------
+        2.1   11.6   0.0    2.2e+02    4.9   0.0    2.1  2  sp|Q8Y4R7|G6PI_LISMO      Glucose-6-phosphate isomerase OS=Li
+        2.6   11.3   0.0        3.8   10.7   0.0    1.2  1  sp|Q6BKD4|THG1_DEBHA      tRNA(His) guanylyltransferase OS=De
+        3.5   10.9   0.0    2.9e+02    4.6   0.0    2.1  2  sp|Q71X61|G6PI_LISMF      Glucose-6-phosphate isomerase OS=Li
+        3.5   10.9   0.0    2.9e+02    4.6   0.0    2.1  2  sp|Q928R6|G6PI_LISIN      Glucose-6-phosphate isomerase OS=Li
+        5.5   10.2   0.0        8.3    9.6   0.0    1.2  1  sp|Q7M8A0|DNLJ_WOLSU      DNA ligase OS=Wolinella succinogene
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P0DTK9|ACB1_CAUSR  Anti-CBASS protein Acb1 OS=Caulobacter sp. (strain RHG1) OX=2545762 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  165.6   0.0   5.3e-52   3.8e-47      22     370 ..       5     372 ..       2     418 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 165.6 bits;  conditional E-value: 5.3e-52
+        NFECIMNI_00013  22 dglenvmtglgtgndknsynqwvrsgrnrdheslivrfrecwvsqkackilpqdmtrewrrcs..tp..eavkadke...lrirdlfre 103
+                           d+l +++tglgt+ dk +   +       d   l    r  w++qk   i+p dmtrewr+     p  e ++a ++   ++++   + 
+  sp|P0DTK9|ACB1_CAUSR   5 DSLRSLVTGLGTSKDKGASASYYFQPLGPD--ELNAMHRGDWLAQKVIDIIPNDMTREWRNWQakQPqiEKIEAVEKaplINLQVKVNL 91 
+                           8899*************9999888777766..56778899********************75411563323334333111455556677 PP
+
+        NFECIMNI_00013 104 ayiwarvfgtaaiildikgsgkantpldlrrlkpgcirslqvvdrtrlmptgtvemnpmdpeygypqhytlg...gstlqihrsrilrf 189
+                           a   ar+ g + i + ikg+   + pld r +  g +  l v+ r ++   g    +     yg p +y ++   g+ +qih sr++rf
+  sp|P0DTK9|ACB1_CAUSR  92 ALKMARLHGGSVIYIGIKGTVDLSEPLDPRSIGRGDLAYLHVLSRYEVTC-GETVTDVTSEFYGQPSYYEVAganGAPVQIHPSRVVRF 179
+                           8899*****************************************99865.55556777888*******9861225679********** PP
+
+        NFECIMNI_00013 190 egtpltryenwknqwysdsillplmttidnfhvaaqsasalvheanadvvtvqglqnlltspigeqalmkrfrmmktmksnhniilldg 278
+                            g p+    +  n  + ds+l  +   + n   a    +al+ ea  d++ + gl  +  +  g   l  rf    tmks  n +lldg
+  sp|P0DTK9|ACB1_CAUSR 180 VGAPVLDRRSVGNDPWGDSVLQAVYDAVRNAGSAQGHIAALIPEAKVDIIHMPGLGEFTKTEAGRAKLTARFTYANTMKSMLNAVLLDG 268
+                           ****999999999999****************99999***************************************************9 PP
+
+        NFECIMNI_00013 279 t.........eeyttktialngvkdliweylriiaaacgvpatrflsaspdgmnatgesdlnnyidlvyaeqgqvfdprlqvidkll.a 357
+                           t         e++  k i++  + +l+  yl i +aa+ +patr+ls sp g+natg+sd+ n+ d   a qg  + p l  +d+++  
+  sp|P0DTK9|ACB1_CAUSR 269 TggagkdaggEKWEQKQISFAQLPELLQSYLSIASAAADIPATRMLSQSPKGLNATGDSDMRNHYDNCTARQGTELSPALNRLDEVIlR 357
+                           87666666667899*******************************************************************99987514 PP
+
+        NFECIMNI_00013 358 ahygid..efeyewn 370
+                           +  g     + yew 
+  sp|P0DTK9|ACB1_CAUSR 358 SALGSRpaAIYYEWA 372
+                           445543114556665 PP
+
+>> sp|A0A494TJG7|ACB1_SPHPE  Anti-CBASS protein Acb1 OS=Sphingomonas paeninsulae OX=2319844 GN=D3Y57_19160 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  153.5   0.0   2.5e-48   1.8e-43      19     377 ..       6     377 ..       2     406 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 153.5 bits;  conditional E-value: 2.5e-48
+            NFECIMNI_00013  19 slkdglenvmtglgtgndknsynqwvrsgrn.rdheslivrfrecwvsqkackilpqdmtrewrrcstp.eav...ka.dkelri 97 
+                               s+ dgl nv++g gt+ dk  +    r g n  d+  +   +r  w+++k   +   dmtrewr      e +   +a +k l +
+  sp|A0A494TJG7|ACB1_SPHPE   6 SFFDGLTNVLSGAGTSVDKRVHA---RYGLNiVDQHQVEASYRTSWLARKIVDMPAHDMTREWRDWKADgELIgkiEAeEKRLCL 87 
+                               678****************9875...567763477788899***********************886542433211442678999 PP
+
+            NFECIMNI_00013  98 rdlfreayiwarvfgtaaiildikgsgkantpldlrrlkpgcirslqvvdrtrlmptgtvemnpmdpeygypqhytlggst.... 178
+                               r+   +a +  r+ g  ai l ikg    + pl +++++pg +  + v  r +l   g    +p d  +g p ++ + +      
+  sp|A0A494TJG7|ACB1_SPHPE  88 RERVTQAIVLGRL-GGGAIYLGIKGDDP-SQPLAVEHIRPGQLSYIAVFSRWQLT-IGQEVSDPEDALFGGPDYFQITSIAnkvg 169
+                               *********9997.55789******975.68********************9985.6877789**********998754321223 PP
+
+            NFECIMNI_00013 179 lqihrsrilrfegtpltry..enwknqwysdsillplmttidnfhvaaqsasalvheanadvvtvqglqnlltspigeqalmkrf 261
+                               ++ih sr++ f+g  + r     w++ ++ d i   +   i n   a  s ++l+ ea  dv+ + gl   l+ p g+  l kr+
+  sp|A0A494TJG7|ACB1_SPHPE 170 VRIHPSRMVIFKGAHVMRGigSQWEDAFWGDPIYQAVGDAIRNADSAQNSFASLIDEATYDVIGIPGLMERLSQPGGDAQLSKRL 254
+                               89*************99953378************************************************************** PP
+
+            NFECIMNI_00013 262 rmmktmksnhniilldg......teeyttktialngvkdliweylriiaaacgvpatrflsaspdgmnatgesdlnnyidlvyae 340
+                                  +  ksnh  i+ld+       e + t+ +   g+ +l+  +l+ +a a  +p tr+l  s  gm+atge d n+y+  +  +
+  sp|A0A494TJG7|ACB1_SPHPE 255 DAARQGKSNHRAIILDSgeggkdAETWVTRQVTWAGMPELMAAFLQTVAGASDIPYTRLLGTSATGMSATGEGDKNDYLSSIATK 339
+                               ***************95222333467899******************************************************** PP
+
+            NFECIMNI_00013 341 qgqvfdprlqvidkllaahygi.defeyewncafpesa 377
+                               q  ++ p++  id ++    gi de+ ++w+  f    
+  sp|A0A494TJG7|ACB1_SPHPE 340 QETMLRPNMVRIDAVMLRSAGIkDELWFDWSPLFEMGE 377
+                               ****************9999*97899****99986543 PP
+
+>> sp|P44183|Y1409_HAEIN  Uncharacterized protein HI_1409 OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  113.7   0.1     3e-36   2.1e-31      20     412 ..       3     396 ..       1     406 [. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 113.7 bits;  conditional E-value: 3e-36
+         NFECIMNI_00013  20 lkdglenvmtglgtgndknsynqwvrsgrnrdheslivrfrecwvsqkackilpqdmtrewrrcst........peavkadkelrird 99 
+                            + dg++++   lg+  d+  y + +      d   +   +r+ w++ k c    +dm r wr   +         e  k ++ l++r+
+  sp|P44183|Y1409_HAEIN   3 ILDGIKSLALKLGSKQDQTYYARGLS--LTDDLMQIEALWRDNWIANKVCIKRSEDMVRNWRDIFSndlkseqlDEFTKLERRLKLRE 88 
+                            67999999999999999998887664..456777788899**********************7643112212225778999******* PP
+
+         NFECIMNI_00013 100 lfreayiwarvfgtaaiildikgsgkantpldl.rrlkpgcirslqvvdrtrlmptgtvemnpmdpeygypqhytlggst..lqihrs 184
+                             + +a  w+ ++g   +++ +  +    +pl   +r     ++ l ++ + ++ ptg  + + + p +g   +yt+ g t  + +h+s
+  sp|P44183|Y1409_HAEIN  89 TLTKALQWSSLYGAVGLLV-VTDTINITSPLQPtER-----LKRLIILPKWKISPTGQRDDDVFSPNFGRYSEYTITGGTqsVSVHHS 170
+                            *************988755.6777778888864134.....5678899*********************9999999776523789*** PP
+
+         NFECIMNI_00013 185 rilrfeg..tpltryenwknqwysdsillplmttidnfhvaaqsasalvheanadvvtvqglqnlltspigeqalmkrfrmmktmksn 270
+                            r+l + +   pl+  + w       s l  ++  +  f  a+ +   l+ e+  d+  + gl + +++ + e  +   +  ++++ks 
+  sp|P44183|Y1409_HAEIN 171 RLLIINAndAPLSDNDIW-----GVSDLEKIIDVLKRFDSASANVGDLIFESKIDIFKIAGLSDKISAGL-ENDVAHVISAVQSIKSA 252
+                            *98776511566655544.....455678899999******************************99988.55667789999****** PP
+
+         NFECIMNI_00013 271 hniilldgteeyttktialngvkdliweylriiaaacgvpatrflsaspdgmnatgesdlnnyidlvyaeqgqvfdprlqvidkllaa 358
+                             n +lld+  ey  k +++ g+kdl+ e+ + +a a+ +p t ++  s  g+ a+g+ d+ ny + ++  q   + p l+v+d ll  
+  sp|P44183|Y1409_HAEIN 253 TNSLLLDAENEYDRKELSFGGLKDLLTEFRNAVAGAADMPVTILFGQSVSGL-ASGDEDIQNYHESIHRLQETRLRPVLEVLDTLLCN 339
+                            ***************************************************8.89*******************************98 PP
+
+         NFECIMNI_00013 359 hygidefeyewncafpesalqkeerrnkl...adslnklvtgrviqgqaaidilene 412
+                            +    + +  w   +p + +++e++ n l   a + n l+ + v+      + l   
+  sp|P44183|Y1409_HAEIN 340 ELFGGQPDDWWFEFLPLTVVKQEQQVNMLntfATAANTLIQNGVVNEYQVANELRES 396
+                            765555555566677888888887765542228889999887776544433434444 PP
+
+>> sp|Q8Y4R7|G6PI_LISMO  Glucose-6-phosphate isomerase OS=Listeria monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   0.0     0.004   2.9e+02       7      44 ..      14      48 ..      10      67 .. 0.83
+   2 ?    4.9   0.0    0.0031   2.2e+02     240     377 ..     154     292 ..     119     319 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 4.6 bits;  conditional E-value: 0.004
+        NFECIMNI_00013  7 tfaereqkfleaslkdglenvmtglgtgndknsynqwv 44
+                           f ere  +le ++k + +++  g g gnd      w+
+  sp|Q8Y4R7|G6PI_LISMO 14 FFEERELDYLEPAVKAAHDSLHNGTGAGNDALG---WI 48
+                          589**************************9754...55 PP
+
+  == domain 2  score: 4.9 bits;  conditional E-value: 0.0031
+        NFECIMNI_00013 240 tvqglqnlltspigeqalmkrfrmmktmksnhniilldgteeyttktia..lngvkdliweylriiaaacgvpatrflsaspdgmnatg 326
+                             + ++ ll    ge+   kr+    t k+   +  l   e y t  +   + g   ++     +  a  gv    +++ +  +     
+  sp|Q8Y4R7|G6PI_LISMO 154 AFRVFKELLIKKYGEEGAKKRIY-ATTDKAKGALKTLSDNEGYETFVVPddVGGRFSVLTAVGLLPIAVSGVDIDALMNGAAAASKDFD 241
+                           55567789999999999999875.46788888899999999999988762245555555555555567889999999999999999999 PP
+
+        NFECIMNI_00013 327 esdlnnyidlvyaeqgqvfdprlqvidkllaahygidefeyewncafpesa 377
+                           + +l n i   ya    v+  + +v + l++ + g+  f   w   f es 
+  sp|Q8Y4R7|G6PI_LISMO 242 KPELKNNIAYQYAAARNVLYRKGKVTELLISYEPGLQYFNEWWKQLFGESE 292
+                           9***************************************99**9999985 PP
+
+>> sp|Q6BKD4|THG1_DEBHA  tRNA(His) guanylyltransferase OS=Debaryomyces hansenii (strain ATCC 36239 / CBS 767 / BCRC 2139
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   5.4e-05       3.8     311     381 ..      58     124 ..      43     131 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 5.4e-05
+        NFECIMNI_00013 311 atrflsaspdgmnatgesdlnnyidlvyaeqgqvfdprlqvidkllaahygidefeyewncafpesalqke 381
+                           a ++++  pd m a g+sd  ++  l    +  +f+ r   +   +a+  +++ + yewn  fpe  ++ e
+  sp|Q6BKD4|THG1_DEBHA  58 AKNLMAQFPDIMMAYGDSDEYSF--L-LRRKCSLFERREMKLVSTFASFISVN-YLYEWNLEFPEKQIRLE 124
+                           55677788********9996554..3.5678899**99988888999988886.78*********988765 PP
+
+>> sp|Q71X61|G6PI_LISMF  Glucose-6-phosphate isomerase OS=Listeria monocytogenes serotype 4b (strain F2365) OX=265669 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   0.0     0.004   2.9e+02       7      44 ..      14      48 ..      10      67 .. 0.83
+   2 ?    4.2   0.0    0.0052   3.7e+02     241     377 ..     155     292 ..     120     319 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 4.6 bits;  conditional E-value: 0.004
+        NFECIMNI_00013  7 tfaereqkfleaslkdglenvmtglgtgndknsynqwv 44
+                           f ere  +le ++k + +++  g g gnd      w+
+  sp|Q71X61|G6PI_LISMF 14 FFEERELDYLEPAVKAAHDSLHNGTGAGNDALG---WI 48
+                          589**************************9754...55 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.0052
+        NFECIMNI_00013 241 vqglqnlltspigeqalmkrfrmmktmksnhniilldgteeyttktia..lngvkdliweylriiaaacgvpatrflsaspdgmnatge 327
+                            + ++ ll    ge+   kr+    t k+   +  l   e y t  +   + g   ++     +  a  gv    +++ +  +     +
+  sp|Q71X61|G6PI_LISMF 155 FRVFKELLIKKYGEEGAKKRIYA-TTDKAKGALKTLADNEGYETFVVPddVGGRFSVLTAVGLLPIAVSGVDIDALMNGAAAASKDFDK 242
+                           55567888889999999888754.57788888888888888888877522455555555555555678899999999999999999999 PP
+
+        NFECIMNI_00013 328 sdlnnyidlvyaeqgqvfdprlqvidkllaahygidefeyewncafpesa 377
+                            +l n i   ya    v+  + +v + l++ + g+  f   w   f es 
+  sp|Q71X61|G6PI_LISMF 243 PELKNNIAYQYAAARNVLYRKGKVTELLISYEPGLQYFNEWWKQLFGESE 292
+                           9**************************************99**9999985 PP
+
+>> sp|Q928R6|G6PI_LISIN  Glucose-6-phosphate isomerase OS=Listeria innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   0.0     0.004   2.9e+02       7      44 ..      14      48 ..      10      67 .. 0.83
+   2 ?    4.2   0.0    0.0052   3.7e+02     241     377 ..     155     292 ..     120     319 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 4.6 bits;  conditional E-value: 0.004
+        NFECIMNI_00013  7 tfaereqkfleaslkdglenvmtglgtgndknsynqwv 44
+                           f ere  +le ++k + +++  g g gnd      w+
+  sp|Q928R6|G6PI_LISIN 14 FFEERELDYLEPAVKAAHDSLHNGTGAGNDALG---WI 48
+                          589**************************9754...55 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.0052
+        NFECIMNI_00013 241 vqglqnlltspigeqalmkrfrmmktmksnhniilldgteeyttktia..lngvkdliweylriiaaacgvpatrflsaspdgmnatge 327
+                            + ++ ll    ge+   kr+    t k+   +  l   e y t  +   + g   ++     +  a  gv    +++ +  +     +
+  sp|Q928R6|G6PI_LISIN 155 FRVFKELLIKKYGEEGAKKRIYA-TTDKAKGALKTLADNEGYETFVVPddVGGRFSVLTAVGLLPIAVSGVDIDALMNGAAAASKDFDK 242
+                           55567888889999999888754.57788888888888888888877522455555555555555678899999999999999999999 PP
+
+        NFECIMNI_00013 328 sdlnnyidlvyaeqgqvfdprlqvidkllaahygidefeyewncafpesa 377
+                            +l n i   ya    v+  + +v + l++ + g+  f   w   f es 
+  sp|Q928R6|G6PI_LISIN 243 PELKNNIAYQYAAARNVLYRKGKVTELLISYEPGLQYFNEWWKQLFGESE 292
+                           9**************************************99**9999985 PP
+
+>> sp|Q7M8A0|DNLJ_WOLSU  DNA ligase OS=Wolinella succinogenes (strain ATCC 29543 / DSM 1740 / CCUG 13145 / JCM 31913 / L
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.6   0.0   0.00012       8.3     206     303 ..     403     502 ..     382     518 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 0.00012
+        NFECIMNI_00013 206 sdsillplmttidnfhvaaqsasalvheanadvvtvqglqnlltspigeqalmkrfrmmktmksnhniilldgteeyttkti..alngv 292
+                           s+ ++  ++    n+   a+  ++l+h a+   + + gl   +   + e  l+k+f+ + ++   ++++ l+g +e   + +  a+ gv
+  sp|Q7M8A0|DNLJ_WOLSU 403 SELLVEEVLIKCQNLSCPARIKNSLIHFASKKALNIDGLGEKIIEQLFEAGLIKEFEDLFSLT-KESLLSLEGFKEKKAQNLldAIQGV 490
+                           555555667778899999999************************************998875.578999***9998887654589999 PP
+
+        NFECIMNI_00013 293 kdl.iweylrii 303
+                           +   +w +++ +
+  sp|Q7M8A0|DNLJ_WOLSU 491 RGCdLWRFINAL 502
+                           975478888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (442 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     14207  (0.0248433); expected 11437.3 (0.02)
+Passed bias filter:                    12848  (0.0224669); expected 11437.3 (0.02)
+Passed Vit filter:                       647  (0.00113139); expected 571.9 (0.001)
+Passed Fwd filter:                         8  (1.39893e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               8  [number of targets reported over threshold]
+# CPU time: 4.54u 0.50s 00:00:05.04 Elapsed: 00:00:01.88
+# Mc/sec: 48568.11
+//
+[ok]

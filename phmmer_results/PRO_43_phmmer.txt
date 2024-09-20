@@ -1,0 +1,88 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_43.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00043  [L=232]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+       0.96   13.9   0.1        4.7   11.6   0.1    2.0  2  sp|B7JW76|TIG_RIPO1   Trigger factor OS=Rippkaea orientalis (
+        1.5   13.3   0.0        1.7   13.1   0.0    1.1  1  sp|Q9T1W0|GP35_BPMU   Uncharacterized protein gp35 OS=Escheri
+        1.6   13.1   0.1        8.9   10.7   0.0    2.1  2  sp|A4T5N5|COAX_MYCGI  Type III pantothenate kinase OS=Mycolic
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|B7JW76|TIG_RIPO1  Trigger factor OS=Rippkaea orientalis (strain PCC 8801 / RF-1) OX=41431 GN=tig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.1   2.5e-05       4.7     130     208 ..     259     340 ..     252     351 .. 0.79
+   2 ?    1.6   0.0     0.028   5.4e+03     121     151 ..     328     358 ..     320     381 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2.5e-05
+       NFECIMNI_00043 130 mevngldidflfyapeiatlpemfetfnsplnkfa...lssvvhdelivenfgfcpkd.pnyiynapvgtdalmeradkmyqr 208
+                           e+  ld df     e+at+ e+ e++   + + a       +hd +i + + +cp d pn +    v t  l + a +m q 
+  sp|B7JW76|TIG_RIPO1 259 KELPELDDDFAEEVSEFATIAELRESLEKQFTEEAqeaTKKSIHDAMITQLLEICPVDlPNTLIEDEV-TQVLTQTAMQMEQM 340
+                          577789*******************999988766511156679*************997888877665.77888888777776 PP
+
+  == domain 2  score: 1.6 bits;  conditional E-value: 0.028
+       NFECIMNI_00043 121 qdrlalvmqmevngldidflfyapeiatlpe 151
+                          q      mqme  g+di  lf    i  l e
+  sp|B7JW76|TIG_RIPO1 328 QVLTQTAMQMEQMGIDIRQLFVKENIPKLRE 358
+                          5556678**************9988776655 PP
+
+>> sp|Q9T1W0|GP35_BPMU  Uncharacterized protein gp35 OS=Escherichia phage Mu OX=2681603 GN=Mup35 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   8.7e-06       1.7      21      83 ..      36     100 ..      20     118 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 8.7e-06
+       NFECIMNI_00043  21 lrlgdnvraivldqlqniggdqvvavvaggaardywaatmygldlqgsgdidi....cvlgfdvfdf 83 
+                          +  g+n   +  +ql  i +d v++vv++++a+    a   gld+ g gd++      v g+d  + 
+  sp|Q9T1W0|GP35_BPMU  36 FTRGENTVEVTEEQLAIIRADSVLSVVSASSAET--LAEAGGLDVLGVGDLNTriraTVAGLDKANP 100
+                          567999999******************9999876..46778*********97511114455555555 PP
+
+>> sp|A4T5N5|COAX_MYCGI  Type III pantothenate kinase OS=Mycolicibacterium gilvum (strain PYR-GCK) OX=350054 GN=coaX PE=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   4.7e-05       8.9     106     163 ..      23      81 ..       3     113 .. 0.80
+   2 ?   -1.0   0.1      0.18   3.4e+04      31      51 ..     209     229 ..     183     234 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 4.7e-05
+        NFECIMNI_00043 106 vdkaqhhwnieyehq..qdrlalvmqmevngldidflfyapeiatlpemfetfnsplnkf 163
+                             k +hhw i  e +   d+lal +   + g d ++l  a  ++t+p ++      l ++
+  sp|A4T5N5|COAX_MYCGI  23 HGKVEHHWRIRTESEvtADELALTIDG-LIGDDAELLTGAAGLSTVPSVLHEVRVMLEQY 81 
+                           4699*****977665227999999876.5588***************9987776666655 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.18
+        NFECIMNI_00043  31 vldqlqniggdqvvavvagga 51 
+                           + + +  +ggd v  v  g +
+  sp|A4T5N5|COAX_MYCGI 209 IREDVDGFGGDDVTVVATGHS 229
+                           567788999999988877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (232 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13452  (0.0235231); expected 11437.3 (0.02)
+Passed bias filter:                    12042  (0.0210575); expected 11437.3 (0.02)
+Passed Vit filter:                       736  (0.00128702); expected 571.9 (0.001)
+Passed Fwd filter:                         3  (5.246e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 2.65u 0.43s 00:00:03.08 Elapsed: 00:00:01.24
+# Mc/sec: 38721.86
+//
+[ok]

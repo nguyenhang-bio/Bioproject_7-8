@@ -1,0 +1,291 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_49.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00049  [L=60]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
+  ------ inclusion threshold ------
+          2   13.8   0.1         17   10.8   0.0    2.5  3  sp|A8LLD9|RNC_DINSH        Ribonuclease 3 OS=Dinoroseobacter 
+        2.1   13.7   0.2        5.3   12.4   0.1    1.7  2  sp|B3E3Q8|RLMH_TRIL1       Ribosomal RNA large subunit methyl
+        3.5   13.0   0.2         13   11.3   0.2    2.0  1  sp|P0DTV1|APOA1_NANGA      Apolipoprotein A-I OS=Nannospalax 
+          4   12.8   0.1         21   10.6   0.0    2.2  2  sp|Q5SH15|ISPT_THET8       Isoprenyl transferase OS=Thermus t
+        4.1   12.8   0.1         21   10.5   0.0    2.2  2  sp|O87197|ISPT_THET2       Isoprenyl transferase OS=Thermus t
+        4.7   12.6   0.5         31   10.1   0.0    2.6  3  sp|Q0A8Z1|RNC_ALKEH        Ribonuclease 3 OS=Alkalilimnicola 
+        5.5   12.4   0.7    1.2e+02    8.2   0.1    3.2  3  sp|Q3SHI2|Y1951_THIDA      Probable RNA methyltransferase Tbd
+        7.4   12.0   2.9    3.2e+02    6.9   0.1    4.1  5  sp|O46409|APOA4_PIG        Apolipoprotein A-IV OS=Sus scrofa 
+        8.4   11.8   1.6    4.5e+02    6.4   0.1    3.9  4  sp|A0A2U3YVN9|APOA4_LEPWE  Apolipoprotein A-IV OS=Leptonychot
+        8.6   11.8   1.5      4e+02    6.6   0.1    3.8  3  sp|A0A2Y9HKB5|APOA4_NEOSC  Apolipoprotein A-IV OS=Neomonachus
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|A8LLD9|RNC_DINSH  Ribonuclease 3 OS=Dinoroseobacter shibae (strain DSM 16493 / NCIMB 14021 / DFL 12) OX=398580 GN=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0       2.1   1.2e+05      27      47 ..      13      33 ..       8      43 .. 0.79
+   2 ?   -3.8   0.0        10   5.7e+05      24      33 ..     103     112 ..      99     116 .. 0.67
+   3 ?   10.8   0.0   0.00031        17       9      41 ..     188     219 ..     182     227 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 2.1
+       NFECIMNI_00049 27 ragsrrkaeellkrmlpnaeq 47
+                         r g r    ell r l +a +
+  sp|A8LLD9|RNC_DINSH 13 RIGHRFDRPELLVRALTHASR 33
+                         678888889999999988865 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 10
+       NFECIMNI_00049  24 sqvragsrrk 33 
+                          s++  g rrk
+  sp|A8LLD9|RNC_DINSH 103 SEMLTGGRRK 112
+                          5566777777 PP
+
+  == domain 3  score: 10.8 bits;  conditional E-value: 0.00031
+       NFECIMNI_00049   9 qvytisyrlggvwcssqvragsrrkaeellkrm 41 
+                           v+tis rl    c+ + +ags+r+ae+   + 
+  sp|A8LLD9|RNC_DINSH 188 PVFTISARLETGACA-EAQAGSKRQAEQAAAKA 219
+                          599******987775.789********976443 PP
+
+>> sp|B3E3Q8|RLMH_TRIL1  Ribosomal RNA large subunit methyltransferase H OS=Trichlorobacter lovleyi (strain ATCC BAA-115
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.1   9.3e-05       5.3      26      55 ..      46      74 ..      42      78 .. 0.82
+   2 ?   -2.7   0.0       6.5   3.7e+05      15      28 ..      99     113 ..      90     121 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 9.3e-05
+        NFECIMNI_00049 26 vragsrrkaeellkrmlpnaeqvglspkra 55
+                          ++ g rr+ e llk++ pna  v+l   r 
+  sp|B3E3Q8|RLMH_TRIL1 46 LEEGRRREGERLLKQLSPNAVLVALDE-RG 74
+                          56899****************999974.44 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 6.5
+        NFECIMNI_00049  15 yrlggvw.cssqvra 28 
+                           + +gg +  s +vr+
+  sp|B3E3Q8|RLMH_TRIL1  99 FAIGGSYgFSDEVRS 113
+                           556665513455554 PP
+
+>> sp|P0DTV1|APOA1_NANGA  Apolipoprotein A-I OS=Nannospalax galili OX=1026970 GN=Apoa1 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.2   0.00022        13      22      48 ..     145     171 ..     128     180 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00022
+         NFECIMNI_00049  22 cssqvragsrrkaeellkrmlpnaeqv 48 
+                              +q+r g+r+k eel k+++p  e +
+  sp|P0DTV1|APOA1_NANGA 145 LGAQLREGARQKLEELQKQLVPLGEDL 171
+                            5689******************98865 PP
+
+>> sp|Q5SH15|ISPT_THET8  Isoprenyl transferase OS=Thermus thermophilus (strain ATCC 27634 / DSM 579 / HB8) OX=300852 GN=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0         5   2.8e+05      45      57 ..      44      56 ..      34      57 .. 0.76
+   2 ?   10.6   0.0   0.00037        21      19      57 ..     150     188 ..     140     189 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 5
+        NFECIMNI_00049 45 aeqvglspkrare 57
+                          a  +glsp + +e
+  sp|Q5SH15|ISPT_THET8 44 ARALGLSPTKGHE 56
+                          5678999988765 PP
+
+  == domain 2  score: 10.6 bits;  conditional E-value: 0.00037
+        NFECIMNI_00049  19 gvwcssqvragsrrkaeellkrmlpnaeqvglspkrare 57 
+                           g++ +  +  g r++  + +kr+l  ae  glspk+  e
+  sp|Q5SH15|ISPT_THET8 150 GMFLNIAMGYGGREEIVDAVKRLLLEAEARGLSPKEVAE 188
+                           55666667789999999******************8765 PP
+
+>> sp|O87197|ISPT_THET2  Isoprenyl transferase OS=Thermus thermophilus (strain ATCC BAA-163 / DSM 7039 / HB27) OX=262724
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0         5   2.8e+05      45      57 ..      44      56 ..      34      57 .. 0.76
+   2 ?   10.5   0.0   0.00037        21      19      57 ..     150     188 ..     140     189 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 5
+        NFECIMNI_00049 45 aeqvglspkrare 57
+                          a  +glsp + +e
+  sp|O87197|ISPT_THET2 44 ARALGLSPTKGHE 56
+                          5678999988765 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 0.00037
+        NFECIMNI_00049  19 gvwcssqvragsrrkaeellkrmlpnaeqvglspkrare 57 
+                           g++ +  +  g r++  + +kr+l  ae  glspk+  e
+  sp|O87197|ISPT_THET2 150 GMFLNIALGYGGREEIVDAVKRLLLEAEARGLSPKEVAE 188
+                           55666667789999999******************8765 PP
+
+>> sp|Q0A8Z1|RNC_ALKEH  Ribonuclease 3 OS=Alkalilimnicola ehrlichii (strain ATCC BAA-1101 / DSM 17681 / MLHE-1) OX=18727
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0       2.9   1.6e+05      25      49 ..       9      33 ..       7      40 .. 0.73
+   2 ?   -2.7   0.1       6.3   3.6e+05      16      33 ..      94     108 ..      90     114 .. 0.53
+   3 ?   10.1   0.0   0.00054        31       8      44 ..     184     221 ..     178     227 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 2.9
+       NFECIMNI_00049 25 qvragsrrkaeellkrmlpnaeqvg 49
+                         q r g r +  ell + l +    g
+  sp|Q0A8Z1|RNC_ALKEH  9 QDRLGYRFRRPELLDEALTHRSVTG 33
+                         5688888888999988887766555 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 6.3
+       NFECIMNI_00049  16 rlggvwcssqvra.gsrrk 33 
+                          rlgg     ++++ g rrk
+  sp|Q0A8Z1|RNC_ALKEH  94 RLGGG----EMKSgGQRRK 108
+                          55553....3333044444 PP
+
+  == domain 3  score: 10.1 bits;  conditional E-value: 0.00054
+       NFECIMNI_00049   8 pqvytisyrlggvwcssqvragsrrkaeel.lkrmlpn 44 
+                           q + ++ rl     +++ +agsrrkae+   ++ml  
+  sp|Q0A8Z1|RNC_ALKEH 184 DQTFRVACRLQDAAVTAEGEAGSRRKAEQQaAEQMLKR 221
+                          688999999*9999*************97514555554 PP
+
+>> sp|Q3SHI2|Y1951_THIDA  Probable RNA methyltransferase Tbd_1951 OS=Thiobacillus denitrificans (strain ATCC 25259) OX=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.0   0.0      0.91   5.2e+04      20      45 ..      26      51 ..      19      59 .. 0.81
+   2 ?   -1.4   0.0       2.5   1.5e+05      36      48 ..     211     223 ..     189     230 .. 0.69
+   3 ?    8.2   0.1    0.0022   1.2e+02      24      57 ..     324     357 ..     315     359 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -0.0 bits;  conditional E-value: 0.91
+         NFECIMNI_00049 20 vwcssqvragsrrkaeellkrmlpna 45
+                            w + +   + r++ae++l   l na
+  sp|Q3SHI2|Y1951_THIDA 26 AWVAGRPLDNRRQRAEDFLPLRLRNA 51
+                           68888888889999***999888887 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 2.5
+         NFECIMNI_00049  36 ellkrmlpnaeqv 48 
+                             l +r+lp a  +
+  sp|Q3SHI2|Y1951_THIDA 211 ALRRRLLPRAPDI 223
+                            3556788988765 PP
+
+  == domain 3  score: 8.2 bits;  conditional E-value: 0.0022
+         NFECIMNI_00049  24 sqvragsrrkaeellkrmlpnaeqvglspkrare 57 
+                             q+ra +   a  l +r lp+ae  + spk a  
+  sp|Q3SHI2|Y1951_THIDA 324 GQLRARALDAAPVLARRPLPSAETPAASPKAAAS 357
+                            5899999999999*****************9875 PP
+
+>> sp|O46409|APOA4_PIG  Apolipoprotein A-IV OS=Sus scrofa OX=9823 GN=APOA4 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.5   0.0        10   5.7e+05      24      38 ..      36      50 ..      25      56 .. 0.59
+   2 ?    6.9   0.1    0.0055   3.2e+02      24      49 ..      96     121 ..      82     132 .. 0.85
+   3 ?   -2.1   0.0       4.1   2.3e+05      27      47 ..     143     163 ..     123     171 .. 0.67
+   4 ?   -0.2   0.0         1   5.8e+04      25      46 ..     207     228 ..     182     239 .. 0.64
+   5 ?    1.6   0.0      0.26   1.5e+04      25      48 ..     251     274 ..     232     280 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: -3.5 bits;  conditional E-value: 10
+       NFECIMNI_00049 24 sqvragsrrkaeell 38
+                         sq+ +++++  e l 
+  sp|O46409|APOA4_PIG 36 SQLGSNAKKAVEHLQ 50
+                         445444444445554 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.0055
+       NFECIMNI_00049  24 sqvragsrrkaeellkrmlpnaeqvg 49 
+                           +++   rr+ eel  r+lp+a +v+
+  sp|O46409|APOA4_PIG  96 EKLKEEIRRELEELRARLLPHATEVS 121
+                          56777889**************9986 PP
+
+  == domain 3  score: -2.1 bits;  conditional E-value: 4.1
+       NFECIMNI_00049  27 ragsrrkaeellkrmlpnaeq 47 
+                          r   + + ++l +++ p ae+
+  sp|O46409|APOA4_PIG 143 RTQVNTQVQQLQRQLKPYAER 163
+                          444455667777777787776 PP
+
+  == domain 4  score: -0.2 bits;  conditional E-value: 1
+       NFECIMNI_00049  25 qvragsrrkaeellkrmlpnae 46 
+                          +++a   +  eel + + p a+
+  sp|O46409|APOA4_PIG 207 ELKAKIDQNVEELRRSLAPYAQ 228
+                          4444445555666666666555 PP
+
+  == domain 5  score: 1.6 bits;  conditional E-value: 0.26
+       NFECIMNI_00049  25 qvragsrrkaeellkrmlpnaeqv 48 
+                          +++a     a+el ++++p ae v
+  sp|O46409|APOA4_PIG 251 ELKAKISANADELRQKLVPVAENV 274
+                          455555667778888888877766 PP
+
+>> sp|A0A2U3YVN9|APOA4_LEPWE  Apolipoprotein A-IV OS=Leptonychotes weddellii OX=9713 GN=APOA4 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.4   0.1    0.0078   4.5e+02      25      49 ..      97     121 ..      90     130 .. 0.86
+   2 ?   -1.5   0.0       2.7   1.6e+05       4      23 ..     140     159 ..     137     192 .. 0.47
+   3 ?   -1.9   0.0       3.6     2e+05      25      48 ..     185     208 ..     171     217 .. 0.73
+   4 ?    1.2   0.0      0.35     2e+04      25      47 ..     251     273 ..     231     284 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 6.4 bits;  conditional E-value: 0.0078
+             NFECIMNI_00049  25 qvragsrrkaeellkrmlpnaeqvg 49 
+                                +++   r++ eel  r+lp+a++v+
+  sp|A0A2U3YVN9|APOA4_LEPWE  97 KLKEEIRKELEELRARLLPHADEVS 121
+                                566778999*************986 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 2.7
+             NFECIMNI_00049   4 rerkpqvytisyrlggvwcs 23 
+                                +e + qv t + rl +   +
+  sp|A0A2U3YVN9|APOA4_LEPWE 140 EELRTQVNTHAERLRNQLTA 159
+                                55556666666665443322 PP
+
+  == domain 3  score: -1.9 bits;  conditional E-value: 3.6
+             NFECIMNI_00049  25 qvragsrrkaeellkrmlpnaeqv 48 
+                                +++a   +  eel  ++ p a+++
+  sp|A0A2U3YVN9|APOA4_LEPWE 185 ELKAKIDQNVEELKGHLTPYADEL 208
+                                455666667778877777877765 PP
+
+  == domain 4  score: 1.2 bits;  conditional E-value: 0.35
+             NFECIMNI_00049  25 qvragsrrkaeellkrmlpnaeq 47 
+                                +++a     a+el ++++p ae 
+  sp|A0A2U3YVN9|APOA4_LEPWE 251 ELKAKISANADELRQKLVPVAEV 273
+                                45555556677777777777775 PP
+
+>> sp|A0A2Y9HKB5|APOA4_NEOSC  Apolipoprotein A-IV OS=Neomonachus schauinslandi OX=29088 GN=APOA4 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.6   0.1     0.007     4e+02      24      49 ..      96     121 ..      78     130 .. 0.88
+   2 ?   -1.9   0.0       3.6   2.1e+05      25      48 ..     185     208 ..     175     221 .. 0.74
+   3 ?    1.3   0.0      0.35     2e+04      25      48 ..     251     274 ..     233     286 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 6.6 bits;  conditional E-value: 0.007
+             NFECIMNI_00049  24 sqvragsrrkaeellkrmlpnaeqvg 49 
+                                 +++   r++ eel  r+lp+a++v+
+  sp|A0A2Y9HKB5|APOA4_NEOSC  96 EKLKEEIRKELEELRARLLPHADEVS 121
+                                5567778999*************986 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 3.6
+             NFECIMNI_00049  25 qvragsrrkaeellkrmlpnaeqv 48 
+                                +++a   +  eel  ++ p a+++
+  sp|A0A2Y9HKB5|APOA4_NEOSC 185 ELKAKIDQNVEELKGHLTPYADEL 208
+                                455666677788888888887765 PP
+
+  == domain 3  score: 1.3 bits;  conditional E-value: 0.35
+             NFECIMNI_00049  25 qvragsrrkaeellkrmlpnaeqv 48 
+                                +++a     a+el ++++p ae v
+  sp|A0A2Y9HKB5|APOA4_NEOSC 251 ELKAKISANADELRQKLVPVAEVV 274
+                                455555566777777777777755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (60 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     12605  (0.022042); expected 11437.3 (0.02)
+Passed bias filter:                    11025  (0.0192791); expected 11437.3 (0.02)
+Passed Vit filter:                       584  (0.00102122); expected 571.9 (0.001)
+Passed Fwd filter:                        11  (1.92353e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              10  [number of targets reported over threshold]
+# CPU time: 1.62u 0.53s 00:00:02.15 Elapsed: 00:00:01.23
+# Mc/sec: 10043.60
+//
+[ok]

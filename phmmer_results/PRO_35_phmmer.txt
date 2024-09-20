@@ -1,0 +1,163 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_35.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00035  [L=47]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+  ------ inclusion threshold ------
+        1.2   14.6   0.6        4.5   12.8   0.6    2.1  1  sp|D5DQW6|SP2G_PRIM1      Sporulation sigma-E factor-processi
+        4.2   12.9   2.4    1.7e+03    4.8   0.1    3.7  3  sp|P51473|OPSV_XENLA      Violet-sensitive opsin OS=Xenopus l
+        6.2   12.4   4.0         13   11.4   0.4    3.1  3  sp|A0A4P8GFD0|EUPM_PHOSX  MFS-type transporter eupM OS=Phoma 
+        7.4   12.1   2.9         24   10.5   0.1    3.3  4  sp|Q0RF16|KDPA_FRAAA      Potassium-transporting ATPase potas
+        7.4   12.1   0.2        7.4   12.1   0.2    2.7  3  sp|P17413|FRDC_WOLSU      Fumarate reductase cytochrome b sub
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|D5DQW6|SP2G_PRIM1  Sporulation sigma-E factor-processing peptidase OS=Priestia megaterium (strain ATCC 12872 / QMB
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.6   3.9e-05       4.5      20      41 ..      30      51 ..      13      56 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 3.9e-05
+        NFECIMNI_00035 20 hmtwwqtllglfigmiiipllv 41
+                          +  ww+ llg fig +i+ l+ 
+  sp|D5DQW6|SP2G_PRIM1 30 NYKWWRLLLGGFIGSLIVLLMF 51
+                          568************9998765 PP
+
+>> sp|P51473|OPSV_XENLA  Violet-sensitive opsin OS=Xenopus laevis OX=8355 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.8   0.1     0.015   1.7e+03      16      37 ..      23      44 ..      11      55 .. 0.82
+   2 ?    4.5   0.0     0.019   2.1e+03       1      28 [.     134     158 ..     134     169 .. 0.83
+   3 ?    0.8   0.2      0.29   3.3e+04       5      44 ..     182     216 ..     179     218 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 4.8 bits;  conditional E-value: 0.015
+        NFECIMNI_00035 16 vynvhmtwwqtllglfigmiii 37
+                           y++   w  tl ++f+gm+++
+  sp|P51473|OPSV_XENLA 23 QYHIAPKWAFTLQAIFMGMVFL 44
+                          4888899************975 PP
+
+  == domain 2  score: 4.5 bits;  conditional E-value: 0.019
+        NFECIMNI_00035   1 mckhcgndhfdsmygvynvhmtwwqtll 28 
+                           +ck  gn +f s +++  v  tw    +
+  sp|P51473|OPSV_XENLA 134 ICKPMGNFNFSSSHALAVVICTWI---I 158
+                           6***************99999994...4 PP
+
+  == domain 3  score: 0.8 bits;  conditional E-value: 0.29
+        NFECIMNI_00035   5 cgndhfdsmygvynvhmtwwqtllglfigmiiipllviay 44 
+                           cg d +       + + tw+     +fi  ++ipl +i +
+  sp|P51473|OPSV_XENLA 182 CGPDWYTVGTKYRSEYYTWF-----IFIFCFVIPLSLICF 216
+                           55555544333334455554.....677778888877765 PP
+
+>> sp|A0A4P8GFD0|EUPM_PHOSX  MFS-type transporter eupM OS=Phoma sp. OX=1707701 GN=eupM PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.1   0.2      0.48   5.5e+04      21      33 ..     160     174 ..     145     193 .. 0.64
+   2 ?   -1.9   0.0       2.1   2.4e+05      19      34 ..     187     202 ..     180     204 .. 0.76
+   3 ?   11.4   0.4   0.00011        13      16      42 ..     222     249 ..     208     252 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 0.1 bits;  conditional E-value: 0.48
+            NFECIMNI_00035  21 mtwwqtll..glfig 33 
+                                 +wq ll  g++ig
+  sp|A0A4P8GFD0|EUPM_PHOSX 160 EEFWQVLLaqGFLIG 174
+                               567887763334444 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 2.1
+            NFECIMNI_00035  19 vhmtwwqtllglfigm 34 
+                               +  t++ t +gl  g+
+  sp|A0A4P8GFD0|EUPM_PHOSX 187 ILPTYFSTKIGLATGI 202
+                               5568899999998875 PP
+
+  == domain 3  score: 11.4 bits;  conditional E-value: 0.00011
+            NFECIMNI_00035  16 vynvhmtwwqtllglf.igmiiipllvi 42 
+                               +yn+ + w   +lg++ +gm++ip++v+
+  sp|A0A4P8GFD0|EUPM_PHOSX 222 MYNIGFAWTTRVLGFIsLGMLLIPIIVM 249
+                               69***********96439*******986 PP
+
+>> sp|Q0RF16|KDPA_FRAAA  Potassium-transporting ATPase potassium-binding subunit OS=Frankia alni (strain DSM 45986 / CEC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0       1.7     2e+05      22      44 ..     198     219 ..     184     221 .. 0.67
+   2 ?   -2.7   0.0       3.7   4.3e+05      21      34 ..     280     293 ..     266     298 .. 0.65
+   3 ?   10.5   0.1   0.00021        24      11      42 ..     498     530 ..     491     534 .. 0.70
+   4 ?   -3.7   0.0         5   5.7e+05      25      37 ..     558     569 ..     548     573 .. 0.49
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 1.7
+        NFECIMNI_00035  22 twwqtllglfigmiiipllviay 44 
+                            +w  l    i  i++p+ via 
+  sp|Q0RF16|KDPA_FRAAA 198 NFWVDLTRTVI-RILLPVCVIAA 219
+                           56666665555.57889999885 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 3.7
+        NFECIMNI_00035  21 mtwwqtllglfigm 34 
+                            t w  l+ +f+ +
+  sp|Q0RF16|KDPA_FRAAA 280 PTSWTNLVEIFLLL 293
+                           46788888887654 PP
+
+  == domain 3  score: 10.5 bits;  conditional E-value: 0.00021
+        NFECIMNI_00035  11 dsmygvynvhmtwwqtllgl..figmiiipllvi 42 
+                            s +g  +v+ tw+ t lgl  ++g + +p+l++
+  sp|Q0RF16|KDPA_FRAAA 498 GSAFGGISVNTTWYNTALGLamLFGRL-LPMLLV 530
+                           5789999************83234655.455443 PP
+
+  == domain 4  score: -3.7 bits;  conditional E-value: 5
+        NFECIMNI_00035  25 qtllglfigmiii 37 
+                             +lg  i++ii+
+  sp|Q0RF16|KDPA_FRAAA 558 AGMLGA-IALIIV 569
+                           333332.333333 PP
+
+>> sp|P17413|FRDC_WOLSU  Fumarate reductase cytochrome b subunit OS=Wolinella succinogenes (strain ATCC 29543 / DSM 1740
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.2   6.5e-05       7.4      21      38 ..      26      43 ..      21      51 .. 0.84
+   2 ?   -1.4   0.2       1.5   1.7e+05      23      30 ..     126     134 ..     114     149 .. 0.59
+   3 ?   -3.0   0.1       4.8   5.5e+05      26      40 ..     214     226 ..     208     232 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 6.5e-05
+        NFECIMNI_00035 21 mtwwqtllglfigmiiip 38
+                          + wwq+  glf+g+++i 
+  sp|P17413|FRDC_WOLSU 26 LDWWQSATGLFLGLFMIG 43
+                          78************9885 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 1.5
+        NFECIMNI_00035  23 ww.qtllgl 30 
+                           ww q + g+
+  sp|P17413|FRDC_WOLSU 126 WWiQAMTGF 134
+                           553666664 PP
+
+  == domain 3  score: -3.0 bits;  conditional E-value: 4.8
+        NFECIMNI_00035  26 tllglfigmiiipll 40 
+                           tl++ f+  i++ ll
+  sp|P17413|FRDC_WOLSU 214 TLMSAFL--IVLGLL 226
+                           5555553..444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (47 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     18487  (0.0323276); expected 11437.3 (0.02)
+Passed bias filter:                    13816  (0.0241596); expected 11437.3 (0.02)
+Passed Vit filter:                       991  (0.00173293); expected 571.9 (0.001)
+Passed Fwd filter:                        50  (8.74334e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 1.43u 0.47s 00:00:01.90 Elapsed: 00:00:01.22
+# Mc/sec: 7959.97
+//
+[ok]

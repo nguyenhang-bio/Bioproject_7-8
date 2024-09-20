@@ -1,0 +1,74 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_64.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00064  [L=225]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+       0.67   14.6   0.0        1.1   13.9   0.0    1.3  1  sp|Q12UG6|PGP_METBU    Phosphoglycolate phosphatase OS=Methan
+        2.1   12.9   0.1        3.1   12.4   0.1    1.2  1  sp|Q9UKA8|RCAN3_HUMAN  Calcipressin-3 OS=Homo sapiens OX=9606
+        2.4   12.8   0.0        3.5   12.2   0.0    1.3  1  sp|Q9JKK0|RCAN3_MOUSE  Calcipressin-3 OS=Mus musculus OX=1009
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q12UG6|PGP_METBU  Phosphoglycolate phosphatase OS=Methanococcoides burtonii (strain DSM 6242 / NBRC 107633 / OCM 4
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.9   0.0   5.7e-06       1.1     167     209 ..      47      88 ..      32     101 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 5.7e-06
+       NFECIMNI_00064 167 inmeakmvningltidqagaakspvgfdgpsmkaagkeladhk 209
+                          ++  ak++ i+g+ i + g   s  gfd+ps+ a gke  +  
+  sp|Q12UG6|PGP_METBU  47 VHAAAKLIGISGIVIAENGGVIS-TGFDSPSIIADGKEECEKA 88 
+                          67889***********9999876.7************987765 PP
+
+>> sp|Q9UKA8|RCAN3_HUMAN  Calcipressin-3 OS=Homo sapiens OX=9606 GN=RCAN3 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.1   1.6e-05       3.1      41     108 ..      35     106 ..      23     113 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.6e-05
+         NFECIMNI_00064  41 nvdaav.lvdvpvefprcgafvqtfpvrpgd...dciveffeqgithwlyenrreyrvergrpeaaarrkfs 108
+                            ++d  + l d+p  +  c+     f  r      +++  +++  +t  l+++ r  r+  ++peaaar ++ 
+  sp|Q9UKA8|RCAN3_HUMAN  35 DLDEMMdLSDLPTSLFACSVHEAVFEAREQKerfEALFTIYDDQVTFQLFKSFRRVRINFSKPEAAARARIE 106
+                            555443278999999999999999999876512257788899**************************8865 PP
+
+>> sp|Q9JKK0|RCAN3_MOUSE  Calcipressin-3 OS=Mus musculus OX=10090 GN=Rcan3 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   1.8e-05       3.5      47     108 ..      42     106 ..      12     116 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.8e-05
+         NFECIMNI_00064  47 lvdvpvefprcgafvqtfpvrpgd...dciveffeqgithwlyenrreyrvergrpeaaarrkfs 108
+                            l d+p  +  c+     f v+      +++  +++  +t  l+++ r  r+  ++peaaar ++ 
+  sp|Q9JKK0|RCAN3_MOUSE  42 LSDLPTSLFACSVHEAVFEVQEQKerfEALFTLYDDQVTFQLFKSFRRVRINFSKPEAAARARIE 106
+                            779999999999999999997665122577888999*************************9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     12350  (0.021596); expected 11437.3 (0.02)
+Passed bias filter:                    11136  (0.0194732); expected 11437.3 (0.02)
+Passed Vit filter:                       684  (0.00119609); expected 571.9 (0.001)
+Passed Fwd filter:                         3  (5.246e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 2.67u 0.54s 00:00:03.21 Elapsed: 00:00:01.34
+# Mc/sec: 34662.66
+//
+[ok]

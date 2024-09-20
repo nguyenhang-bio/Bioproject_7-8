@@ -1,0 +1,142 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_47.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00047  [L=76]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+       0.81   15.0   0.0        2.1   13.7   0.0    1.7  1  sp|Q8W4C3|PARNL_ARATH  Poly(A)-specific ribonuclease PARN-lik
+        1.4   14.3   0.3    8.3e+02    5.4   0.0    4.1  5  sp|D0NRQ7|RXLRR_PHYIT  RxLR effector protein PITG_15127 OS=Ph
+        3.7   12.9   0.1         10   11.5   0.0    1.8  2  sp|P45275|Y1618_HAEIN  Uncharacterized ABC transporter ATP-bi
+        3.7   12.9   0.1        9.2   11.6   0.0    1.6  2  sp|P83962|ANFV_ACITR   Ventricular natriuretic peptide OS=Aci
+        6.1   12.2   0.0        8.5   11.7   0.0    1.2  1  sp|A6Q7I8|GATC_SULNB   Aspartyl/glutamyl-tRNA(Asn/Gln) amidot
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q8W4C3|PARNL_ARATH  Poly(A)-specific ribonuclease PARN-like OS=Arabidopsis thaliana OX=3702 GN=At3g25430 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.0   1.8e-05       2.1      19      63 ..     286     330 ..     269     339 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 1.8e-05
+         NFECIMNI_00047  19 spkksvlkrllktlgyredrngrgfldevsfcfsgqkggfarlfl 63 
+                               k ++kr lk l  +e+r  rgf + v f  s+qk   ++ +l
+  sp|Q8W4C3|PARNL_ARATH 286 KEDKDLFKRELKDLEKEENRRVRGFREVVDFISSSQKPVVSQNYL 330
+                            345789******************************987776665 PP
+
+>> sp|D0NRQ7|RXLRR_PHYIT  RxLR effector protein PITG_15127 OS=Phytophthora infestans (strain T30-4) OX=403677 GN=PITG_15
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0       1.5   1.7e+05      14      34 ..      88     108 ..      79     142 .. 0.62
+   2 ?    2.0   0.0     0.088     1e+04       9      30 ..     195     216 ..     190     221 .. 0.85
+   3 ?   -0.6   0.0      0.56   6.5e+04      16      36 ..     220     240 ..     213     245 .. 0.82
+   4 ?   -1.0   0.0      0.78     9e+04      19      54 ..     388     423 ..     381     427 .. 0.85
+   5 ?    5.4   0.0    0.0072   8.3e+02      37      65 ..     438     466 ..     425     470 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 1.5
+         NFECIMNI_00047  14 ymafespkksvlkrllktlgy 34 
+                            +++ + p + +l+r+  t g 
+  sp|D0NRQ7|RXLRR_PHYIT  88 WISKDPPAEPILRRFKLTNGM 108
+                            555556666666665544443 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.088
+         NFECIMNI_00047   9 lesasymafespkksvlkrllk 30 
+                            l s  y+a+ spk  vl   +k
+  sp|D0NRQ7|RXLRR_PHYIT 195 LRSDGYLALASPKMEVLDDYIK 216
+                            78899***********988776 PP
+
+  == domain 3  score: -0.6 bits;  conditional E-value: 0.56
+         NFECIMNI_00047  16 afespkksvlkrllktlgyre 36 
+                            + +s k s+lk l k +g +e
+  sp|D0NRQ7|RXLRR_PHYIT 220 STKSTKDSLLKTLTKGFGGKE 240
+                            557889999999999999877 PP
+
+  == domain 4  score: -1.0 bits;  conditional E-value: 0.78
+         NFECIMNI_00047  19 spkksvlkrllktlgyredrngrgfldevsfcfsgq 54 
+                            +pk   l   l tl+ +    ++g+l  vs  f g+
+  sp|D0NRQ7|RXLRR_PHYIT 388 NPKFDTLSGYLATLSNKNLLYNEGMLRAVSKGFGGE 423
+                            788899999999999999999999999999999886 PP
+
+  == domain 5  score: 5.4 bits;  conditional E-value: 0.0072
+         NFECIMNI_00047  37 drngrgfldevsfcfsgqkggfarlflrk 65 
+                             rng + lde+s++   q+  f r f rk
+  sp|D0NRQ7|RXLRR_PHYIT 438 IRNGYADLDEISIATEYQRMLFGRWFKRK 466
+                            49************************998 PP
+
+>> sp|P45275|Y1618_HAEIN  Uncharacterized ABC transporter ATP-binding protein HI_1618 OS=Haemophilus influenzae (strain 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0     9e-05        10      18      60 ..       4      45 ..       1      57 [. 0.74
+   2 ?   -3.1   0.0       3.6   4.1e+05      35      52 ..      78      95 ..      64      99 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 9e-05
+         NFECIMNI_00047 18 espkksvlkrllktlgyredrngrgfldevsfcfsgqkggfar 60
+                            s k+    ++l   +   +rngr+++ ++sf + gqk  f +
+  sp|P45275|Y1618_HAEIN  4 SSAKRE-KNNMLAVNNLCIERNGRAIIQDLSFTLEGQKRLFVQ 45
+                           555544.3455566666779******************87765 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 3.6
+         NFECIMNI_00047 35 redrngrgfldevsfcfs 52
+                           r++++   f   + +cf 
+  sp|P45275|Y1618_HAEIN 78 RKEKDFAPFRGTIGICFQ 95
+                           566666677777788875 PP
+
+>> sp|P83962|ANFV_ACITR  Ventricular natriuretic peptide OS=Acipenser transmontanus OX=7904 GN=vnp PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0       1.9   2.2e+05      19      32 ..      37      50 ..      23      59 .. 0.59
+   2 ?   11.6   0.0   8.1e-05       9.2      15      69 ..      75     129 ..      68     132 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 1.9
+        NFECIMNI_00047 19 spkksvlkrllktl 32
+                          s  k +l+rl + l
+  sp|P83962|ANFV_ACITR 37 SSLKDLLERLEEKL 50
+                          33455555555544 PP
+
+  == domain 2  score: 11.6 bits;  conditional E-value: 8.1e-05
+        NFECIMNI_00047  15 mafespkksvlkrllktlgyredrngrgfldevsfcfsgqkggfarlflrkggwa 69 
+                           + +++ +k   k++ k  g+r+++  rg l  ++    +  g f + + r g+w+
+  sp|P83962|ANFV_ACITR  75 LILDNVRKQAEKEFYKPAGFRDENLQRGRLRSIATSARSMNGCFGNRIERIGSWS 129
+                           55678899999*******************************************7 PP
+
+>> sp|A6Q7I8|GATC_SULNB  Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit C OS=Sulfurovum sp. (strain NBC37-1) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   7.5e-05       8.5       9      58 ..      11      60 ..       6      65 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 7.5e-05
+        NFECIMNI_00047  9 lesasymafe.spkksvlkrllktlgyredrngrgfldevsfcfsgqkggf 58
+                          le  s++ ++ s k+ v+ +l + lgy ++ n  +  d +  +fs  kgg 
+  sp|A6Q7I8|GATC_SULNB 11 LEKLSHLRIDdSKKEEVMGQLSEILGYIDNLNELN-TDHLDAAFSTLKGGT 60
+                          7888898876155668999*********9999765.799999******995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (76 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13936  (0.0243694); expected 11437.3 (0.02)
+Passed bias filter:                    12621  (0.0220699); expected 11437.3 (0.02)
+Passed Vit filter:                       743  (0.00129926); expected 571.9 (0.001)
+Passed Fwd filter:                         5  (8.74334e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 1.75u 0.42s 00:00:02.17 Elapsed: 00:00:01.24
+# Mc/sec: 12653.75
+//
+[ok]

@@ -1,0 +1,191 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_26.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00026  [L=676]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    2.1e-05   27.8   0.1     0.0001   25.6   0.0    1.8  2  sp|B0FIL5|DPOL_BPE32   DNA-directed DNA polymerase OS=Escheri
+  ------ inclusion threshold ------
+       0.14   15.2   0.0        0.2   14.7   0.0    1.1  1  sp|O30993|FTSQ_RHIME   Cell division protein FtsQ OS=Rhizobiu
+       0.44   13.6   0.1       0.53   13.3   0.1    1.1  1  sp|P37543|YABB_BACSU   Probable RNA methyltransferase YabB OS
+       0.62   13.1   0.0         47    6.9   0.0    2.5  3  sp|Q9ZJE9|DPO1_HELPJ   DNA polymerase I OS=Helicobacter pylor
+       0.64   13.0   0.0       0.85   12.6   0.0    1.2  1  sp|P0DC14|LACD1_STRP3  Tagatose 1,6-diphosphate aldolase 1 OS
+       0.64   13.0   0.0       0.85   12.6   0.0    1.2  1  sp|P0DC15|LACD1_STRPQ  Tagatose 1,6-diphosphate aldolase 1 OS
+       0.64   13.0   0.0       0.85   12.6   0.0    1.2  1  sp|Q5XAI4|LACD1_STRP6  Tagatose 1,6-diphosphate aldolase 1 OS
+       0.64   13.0   0.0       0.85   12.6   0.0    1.2  1  sp|P63703|LACD1_STRP1  Tagatose 1,6-diphosphate aldolase 1 OS
+       0.64   13.0   0.0       0.85   12.6   0.0    1.2  1  sp|P63704|LACD1_STRP8  Tagatose 1,6-diphosphate aldolase 1 OS
+          4   10.4   0.0        5.7    9.9   0.0    1.1  1  sp|Q936X3|ATZE_PSESD   1-carboxybiuret hydrolase subunit AtzE
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|B0FIL5|DPOL_BPE32  DNA-directed DNA polymerase OS=Escherichia phage Phieco32 OX=2679905 GN=53 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.0      0.15   8.7e+03     230     314 ..      50     129 ..      43     144 .. 0.72
+   2 !   25.6   0.0   1.8e-09    0.0001     356     419 ..     249     313 ..     206     323 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 0.15
+        NFECIMNI_00026 230 kelievmprmpvwktkkrcekpwkmngalsshgegwlkfcmlygvdfesh.qeytyqdgtvegnpnspqqvkdwlfslgwepetwe 314
+                           +eli ++p+m +        kp+k +gal    ++   +c   g+  e     +t  +  v+ +p+   +vk+ l+  g+ p  + 
+  sp|B0FIL5|DPOL_BPE32  50 RELIPLLPKMRLDG--STYMKPFKKSGALQKWPQA---YCDRVGLKREDIgGAFTCVE-YVDFDPSKDARVKEALMDEGFLPPEFN 129
+                           68888888887754..45789********987665...67777777665413566554.688899999999999999888776554 PP
+
+  == domain 2  score: 25.6 bits;  conditional E-value: 1.8e-09
+        NFECIMNI_00026 356 lkglgivkhrigivngwi.rdhidgkviaraag.ftntlrlrhaevvnvpsarvpyghelrsllia 419
+                           lk   +  hr+g+++g i +++ dgk+ a+a +  t t+r++h  vvn+ps r  +ghe rsl+ +
+  sp|B0FIL5|DPOL_BPE32 249 LKRRVVAAHRLGLISGLIaKEREDGKLSAEANScATPTFRFKHRIVVNIPS-RGLFGHECRSLFES 313
+                           55666889********9846889******99762689*************8.667*******9754 PP
+
+>> sp|O30993|FTSQ_RHIME  Cell division protein FtsQ OS=Rhizobium meliloti (strain 1021) OX=266834 GN=ftsQ PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.7   0.0   3.6e-06       0.2     379     455 ..     219     292 ..     209     299 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 3.6e-06
+        NFECIMNI_00026 379 gkviaraagftntlrlrhaevvnvpsarvpyghelrslliahddnhqllgsdlssledrckhhyqlpldpeyvksqq 455
+                            k + r ag    lrl++  vv +p   v       s+l    d hqll  d+++++ r + +  + l pe vk ++
+  sp|O30993|FTSQ_RHIME 219 VKAFVRVAGRRWDLRLNNGVVVKLPEKDVAR---AMSVLAGMQDTHQLLERDIAAVDLRLEDRTTVQLTPEAVKRRE 292
+                           478899********************99975...5789999********************************9876 PP
+
+>> sp|P37543|YABB_BACSU  Probable RNA methyltransferase YabB OS=Bacillus subtilis (strain 168) OX=224308 GN=yabB PE=3 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.1   9.3e-06      0.53     420     477 ..      93     154 ..      48     164 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 9.3e-06
+        NFECIMNI_00026 420 hddnhqllgsdlssledrckhh.yq.lpldpeyvks.qqte.gydphmriarmgglctiede 477
+                            dd  q++  dl ++ ++  h+ y  +  +p y k+ +qte + + h+riar    ct+ed 
+  sp|P37543|YABB_BACSU  93 LDDQIQIIHDDLKNMPEKLGHNrYDvVTCNPPYFKTpKQTEqNMNEHLRIARHEIHCTLEDV 154
+                           59999*************999636525789***997456763789***************95 PP
+
+>> sp|Q9ZJE9|DPO1_HELPJ  DNA polymerase I OS=Helicobacter pylori (strain J99 / ATCC 700824) OX=85963 GN=polA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0      0.65   3.7e+04     102     150 ..     421     471 ..     397     488 .. 0.58
+   2 ?    3.3   0.0    0.0098   5.6e+02     391     447 ..     639     694 ..     622     715 .. 0.77
+   3 ?    6.9   0.0   0.00082        47     502     632 ..     720     857 ..     707     871 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.65
+        NFECIMNI_00026 102 iskvkmldtlylawyleplrnryg..laeygeefgipkpviddwqnlsqee 150
+                           +  +++ dt  la+   p +  +   l ey +e  ip   i d++  s+ e
+  sp|Q9ZJE9|DPO1_HELPJ 421 LENIRIQDTQILAFLKNPEKVGFDevLKEYLKEDLIPHEKIKDFKTKSKAE 471
+                           445556666666666666554443225566666666666666666666555 PP
+
+  == domain 2  score: 3.3 bits;  conditional E-value: 0.0098
+        NFECIMNI_00026 391 tlrlrhaevvnvpsarvpyghelrslliahddnhqllgsdlssledrckhhyqlpld 447
+                            l  +   + n+p  r p g  +r  +ia    + llg d s +e r   h+    d
+  sp|Q9ZJE9|DPO1_HELPJ 639 RLSSHSPNLQNIP-VRSPKGLLIRKGFIASSKEYCLLGVDYSQIELRLLAHFSQDKD 694
+                           4444455677888.699*******************************999975444 PP
+
+  == domain 3  score: 6.9 bits;  conditional E-value: 0.00082
+        NFECIMNI_00026 502 kpirgkgkpinygcqygqrpagiarsakmplamaetlfnaywelnwsinkiaest..e.vksangc....nwqrnpvsgiwyylktnkd 583
+                           k  r+ +k in+g  yg     ++++  +pl+ a++ + ay++   si         e +k++ +      ++    +g+  y+k n  
+  sp|Q9ZJE9|DPO1_HELPJ 720 KEKRSIAKSINFGLVYGMGSKKLSETLSIPLSEAKSYIEAYFKRFPSIKDYLNGMreEiLKTSKAFtllgRYRVFDFTGVNDYVKGNYL 808
+                           55677899*********************************987777654433211121233333211113444566788888888854 PP
+
+        NFECIMNI_00026 584 r..fstlcqgtgayafdiwveqifqiceerwnrep..llngqfhdeviltvrk 632
+                           r   + + qg+++   d+    ++++ e r+ + p   l  q hde+i+ +++
+  sp|Q9ZJE9|DPO1_HELPJ 809 RegVNAIFQGSAS---DLLKLGMLKVSE-RFKNNPsvRLLLQVHDELIFEIEE 857
+                           4115566666544...444444555543.444444113456788888877754 PP
+
+>> sp|P0DC14|LACD1_STRP3  Tagatose 1,6-diphosphate aldolase 1 OS=Streptococcus pyogenes serotype M3 (strain ATCC BAA-595
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   1.5e-05      0.85     463     509 ..     143     189 ..     126     218 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.5e-05
+         NFECIMNI_00026 463 mriarmgglctiedeefyiaceldqvemtdenkarykklkpirgkgk 509
+                              i r+g+ ct ed  f++        ++d n a y klkp +  g 
+  sp|P0DC14|LACD1_STRP3 143 AYIERIGSECTAEDIPFFLELLSYDERISDNNSAAYAKLKPHKVNGA 189
+                            5689***************987777789*************887775 PP
+
+>> sp|P0DC15|LACD1_STRPQ  Tagatose 1,6-diphosphate aldolase 1 OS=Streptococcus pyogenes serotype M3 (strain SSI-1) OX=19
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   1.5e-05      0.85     463     509 ..     143     189 ..     126     218 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.5e-05
+         NFECIMNI_00026 463 mriarmgglctiedeefyiaceldqvemtdenkarykklkpirgkgk 509
+                              i r+g+ ct ed  f++        ++d n a y klkp +  g 
+  sp|P0DC15|LACD1_STRPQ 143 AYIERIGSECTAEDIPFFLELLSYDERISDNNSAAYAKLKPHKVNGA 189
+                            5689***************987777789*************887775 PP
+
+>> sp|Q5XAI4|LACD1_STRP6  Tagatose 1,6-diphosphate aldolase 1 OS=Streptococcus pyogenes serotype M6 (strain ATCC BAA-946
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   1.5e-05      0.85     463     509 ..     143     189 ..     126     218 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.5e-05
+         NFECIMNI_00026 463 mriarmgglctiedeefyiaceldqvemtdenkarykklkpirgkgk 509
+                              i r+g+ ct ed  f++        ++d n a y klkp +  g 
+  sp|Q5XAI4|LACD1_STRP6 143 AYIERIGSECTAEDIPFFLELLSYDERISDNNSAAYAKLKPHKVNGA 189
+                            5689***************987777789*************887775 PP
+
+>> sp|P63703|LACD1_STRP1  Tagatose 1,6-diphosphate aldolase 1 OS=Streptococcus pyogenes serotype M1 OX=301447 GN=lacD1 P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   1.5e-05      0.85     463     509 ..     143     189 ..     126     218 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.5e-05
+         NFECIMNI_00026 463 mriarmgglctiedeefyiaceldqvemtdenkarykklkpirgkgk 509
+                              i r+g+ ct ed  f++        ++d n a y klkp +  g 
+  sp|P63703|LACD1_STRP1 143 AYIERIGSECTAEDIPFFLELLSYDERISDNNSAAYAKLKPHKVNGA 189
+                            5689***************987777789*************887775 PP
+
+>> sp|P63704|LACD1_STRP8  Tagatose 1,6-diphosphate aldolase 1 OS=Streptococcus pyogenes serotype M18 (strain MGAS8232) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   1.5e-05      0.85     463     509 ..     143     189 ..     126     218 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.5e-05
+         NFECIMNI_00026 463 mriarmgglctiedeefyiaceldqvemtdenkarykklkpirgkgk 509
+                              i r+g+ ct ed  f++        ++d n a y klkp +  g 
+  sp|P63704|LACD1_STRP8 143 AYIERIGSECTAEDIPFFLELLSYDERISDNNSAAYAKLKPHKVNGA 189
+                            5689***************987777789*************887775 PP
+
+>> sp|Q936X3|ATZE_PSESD  1-carboxybiuret hydrolase subunit AtzE OS=Pseudomonas sp. (strain ADP) OX=47660 GN=atzE PE=1 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.0   9.9e-05       5.7     357     407 ..     248     296 ..     226     311 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 9.9e-05
+        NFECIMNI_00026 357 kglgivkhrigivngwirdhidgkviaraagftntlrlrhaevvnvpsarv 407
+                            + gi   rig++ gw+rd+      araa     l l  +evv  p a++
+  sp|Q936X3|ATZE_PSESD 248 LSQGIAGLRIGVLGGWFRDNAG--PAARAAVDVAALTLGASEVVMWPDAEI 296
+                           45799999***********864..5799**99***************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (676 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     14584  (0.0255026); expected 11437.3 (0.02)
+Passed bias filter:                    11769  (0.0205801); expected 11437.3 (0.02)
+Passed Vit filter:                       975  (0.00170495); expected 571.9 (0.001)
+Passed Fwd filter:                        10  (1.74867e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              10  [number of targets reported over threshold]
+# CPU time: 6.46u 0.47s 00:00:06.93 Elapsed: 00:00:02.84
+# Mc/sec: 49124.68
+//
+[ok]

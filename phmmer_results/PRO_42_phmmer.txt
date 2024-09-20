@@ -1,0 +1,107 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_42.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00042  [L=260]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+          1   13.6   0.0        1.6   13.0   0.0    1.2  1  sp|P54549|YQJL_BACSU   Uncharacterized protein YqjL OS=Bacill
+        2.8   12.2   0.1    4.1e+02    5.1   0.0    2.2  2  sp|O67379|DIPPS_AQUAE  Bifunctional IPC transferase and DIPP 
+        4.8   11.4   0.0        6.8   11.0   0.0    1.3  1  sp|C1A9H6|EFP_GEMAT    Elongation factor P OS=Gemmatimonas au
+        7.3   10.9   0.0         11   10.3   0.0    1.2  1  sp|B2FKI7|MTNA_STRMK   Methylthioribose-1-phosphate isomerase
+        7.4   10.8   0.0         11   10.3   0.0    1.2  1  sp|B4SP84|MTNA_STRM5   Methylthioribose-1-phosphate isomerase
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P54549|YQJL_BACSU  Uncharacterized protein YqjL OS=Bacillus subtilis (strain 168) OX=224308 GN=yqjL PE=4 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   1.4e-05       1.6      25      95 ..     131     203 ..     125     217 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 1.4e-05
+        NFECIMNI_00042  25 dgrtltivrhdmde.hriryvydgdtremsksfdtf.erelrqgnirvvnvapkampcrfqagqfwesvhsac 95 
+                           d  ++t++ ++m + h  + + +g   e+sks+  + +r+++ gn+ ++ ++      +f a q w+++hs+ 
+  sp|P54549|YQJL_BACSU 131 DCASFTFIPEEMHKsHTRKMMLEGTHAEFSKSLQELkKRQVHLGNMPLLVLSSGERTEKFAAEQEWQNLHSSI 203
+                           6677888888887526667889**********98762689*********9999999**************974 PP
+
+>> sp|O67379|DIPPS_AQUAE  Bifunctional IPC transferase and DIPP synthase OS=Aquifex aeolicus (strain VF5) OX=224324 GN=s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   0.0    0.0036   4.1e+02     162     244 ..      17      95 ..      14     105 .. 0.78
+   2 ?    5.0   0.0    0.0039   4.5e+02      56     123 ..     173     246 ..     115     254 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.0036
+         NFECIMNI_00042 162 kpmtrivnvflmdktaglkanermigkienfasdsndntllllelsmehdlkgmlhehnkrrktitnqdilnrvgktvylqpi 244
+                            kp+t+ v   l+ k ag +   r i ++++       n ++++   +e  +k++l ehn + + i n+    + g ++yl   
+  sp|O67379|DIPPS_AQUAE  17 KPLTEEVPKALL-KVAGRELLYRTIKQLQDV---GVKNFVIVVNKKFEGKVKAFLKEHNFEAEVIPNEHPEKENGYSLYLAKG 95 
+                            566666665554.677776666666666655...45688999999***********************999999999998765 PP
+
+  == domain 2  score: 5.0 bits;  conditional E-value: 0.0039
+         NFECIMNI_00042  56 fdtferelr.qgnirvvnvapka.mpcrfqagqfwesvhsacplelgvrf....eitsvgngkvyyrydgksst 123
+                            f+  e+ l+ q  + +  +a +a +pc   +g fw  v +   +e + ++     i  vg+g +  + + k st
+  sp|O67379|DIPPS_AQUAE 173 FEVAEEALKeQKKLTMSELAKRAqIPCTEVSGYFWMDVDTPEDVEKAKKYlvktAIKGVGDGFISRNLNRKVST 246
+                            6777777762456777788888747*************999988877655111155667777777666666666 PP
+
+>> sp|C1A9H6|EFP_GEMAT  Elongation factor P OS=Gemmatimonas aurantiaca (strain DSM 14586 / JCM 11422 / NBRC 100505 / T-2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0     6e-05       6.8       8      60 ..      35      93 ..      32     138 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 6e-05
+       NFECIMNI_00042  8 rapvgsqwktkssgaffdgr...tltivrhdmdehriryvyd.gdtremsks..fdtfe 60
+                         ra v ++ k   +g+ f+ r     tiv+ dm+ h+++++y  gdt  +  s  +d +e
+  sp|C1A9H6|EFP_GEMAT 35 RAMVQAKLKNLRTGSNFEHRfraADTIVKADMETHELEFMYQgGDTYHFMNSenYDQLE 93
+                         56677777888888888877322459***************835887764440144433 PP
+
+>> sp|B2FKI7|MTNA_STRMK  Methylthioribose-1-phosphate isomerase OS=Stenotrophomonas maltophilia (strain K279a) OX=522373
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   9.7e-05        11      24      83 ..     174     233 ..     156     245 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 9.7e-05
+        NFECIMNI_00042  24 fdgrtltivrhdmdehriryvydgdtremsksfdtferelrqgnirvvnvapkampcrfq 83 
+                             g  l ++r  m +hri  v+ g+tr   +       el+q  i    +a  a    ++
+  sp|B2FKI7|MTNA_STRMK 174 GFGTALGVIRAGMAQHRIARVFAGETRPWLQGARLTVWELQQDGIDATLIADSAASHLMK 233
+                           448899**********************99999999999999999998888887665555 PP
+
+>> sp|B4SP84|MTNA_STRM5  Methylthioribose-1-phosphate isomerase OS=Stenotrophomonas maltophilia (strain R551-3) OX=39100
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   9.7e-05        11      24      83 ..     174     233 ..     156     245 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 9.7e-05
+        NFECIMNI_00042  24 fdgrtltivrhdmdehriryvydgdtremsksfdtferelrqgnirvvnvapkampcrfq 83 
+                             g  l ++r  m +hri  v+ g+tr   +       el+q  i    +a  a    ++
+  sp|B4SP84|MTNA_STRM5 174 GFGTALGVIRAGMAQHRIARVFAGETRPWLQGARLTVWELQQDGIDATLIADSAASHLMK 233
+                           448899**********************99999999999999999998888887665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (260 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     12373  (0.0216363); expected 11437.3 (0.02)
+Passed bias filter:                    10708  (0.0187247); expected 11437.3 (0.02)
+Passed Vit filter:                       603  (0.00105445); expected 571.9 (0.001)
+Passed Fwd filter:                         8  (1.39893e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 2.84u 0.45s 00:00:03.29 Elapsed: 00:00:01.24
+# Mc/sec: 43266.58
+//
+[ok]

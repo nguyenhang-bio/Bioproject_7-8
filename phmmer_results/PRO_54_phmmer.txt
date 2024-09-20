@@ -1,0 +1,88 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_54.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00054  [L=57]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+        2.6   13.4   0.4         20   10.7   0.1    2.7  2  sp|B7IFA6|CH60_THEAB  Chaperonin GroEL OS=Thermosipho african
+        5.8   12.3   0.0         16   11.0   0.0    1.7  1  sp|A9R047|DEOB_YERPG  Phosphopentomutase OS=Yersinia pestis b
+        6.2   12.3   1.0         52    9.4   0.1    3.1  2  sp|B5YJN3|CH60_THEYD  Chaperonin GroEL OS=Thermodesulfovibrio
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|B7IFA6|CH60_THEAB  Chaperonin GroEL OS=Thermosipho africanus (strain TCF52B) OX=484019 GN=groEL PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1    0.0001        20       4      50 ..     106     152 ..     103     156 .. 0.90
+   2 ?   -2.9   0.0       2.6     5e+05      32      45 ..     311     324 ..     291     330 .. 0.51
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.0001
+        NFECIMNI_00054   4 vvagllktlasralmalleagveelkkredntvdqndvdrvkfikdn 50 
+                           v ag    l  r +   + agvee+kk        nd+ +v  i  n
+  sp|B7IFA6|CH60_THEAB 106 VTAGANPILVKRGIEKAVAAGVEEIKKISKKLSSTNDIAHVASISAN 152
+                           7889999999****************************999988776 PP
+
+  == domain 2  score: -2.9 bits;  conditional E-value: 2.6
+        NFECIMNI_00054  32 edntvdqndvdrvk 45 
+                             n + + dv rvk
+  sp|B7IFA6|CH60_THEAB 311 TLNDLGRADVVRVK 324
+                           33344444444444 PP
+
+>> sp|A9R047|DEOB_YERPG  Phosphopentomutase OS=Yersinia pestis bv. Antiqua (strain Angola) OX=349746 GN=deoB PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   8.6e-05        16       7      37 ..     268     298 ..     264     308 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 8.6e-05
+        NFECIMNI_00054   7 gllktlasralmalleagveelkkredntvd 37 
+                           g+ + + +  l al++a +ee+kk  dnt+ 
+  sp|A9R047|DEOB_YERPG 268 GITQKVKATGLDALFDATIEEMKKAGDNTIV 298
+                           67777888899*****************974 PP
+
+>> sp|B5YJN3|CH60_THEYD  Chaperonin GroEL OS=Thermodesulfovibrio yellowstonii (strain ATCC 51303 / DSM 11347 / YP87) OX=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.4   0.1   0.00027        52      13      51 ..     116     154 ..     104     157 .. 0.84
+   2 ?   -2.2   0.1       1.6     3e+05      21      45 ..     342     364 ..     339     367 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 0.00027
+        NFECIMNI_00054  13 asralmalleagveelkkredntvdqndvdrvkfikdnn 51 
+                             r +   +ea veelkk     vd+ ++ +v  i  nn
+  sp|B5YJN3|CH60_THEYD 116 LKRGIDKAVEAVVEELKKISKPVVDKKEIAQVGTISANN 154
+                           567888899***********************9999887 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 1.6
+        NFECIMNI_00054  21 leagveelkkredntvdqndvdrvk 45 
+                           ++a ++++k + d t      dr k
+  sp|B5YJN3|CH60_THEYD 342 IQARIKQIKVQIDETTSD--YDREK 364
+                           578889999999988754..44444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (57 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     19907  (0.0348107); expected 11437.3 (0.02)
+Passed bias filter:                    16719  (0.029236); expected 11437.3 (0.02)
+Passed Vit filter:                      1258  (0.00219982); expected 571.9 (0.001)
+Passed Fwd filter:                         4  (6.99467e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 1.56u 0.39s 00:00:01.95 Elapsed: 00:00:01.20
+# Mc/sec: 9796.98
+//
+[ok]

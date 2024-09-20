@@ -1,0 +1,68 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_39.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00039  [L=60]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+        2.8   13.6   0.0         11   11.7   0.0    1.9  2  sp|Q54Y72|GACA_DICDI  Rho GTPase-activating protein gacA OS=D
+        4.2   13.0   0.1         12   11.7   0.1    1.8  1  sp|P19992|HSD_STREX   3-alpha-(or 20-beta)-hydroxysteroid deh
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q54Y72|GACA_DICDI  Rho GTPase-activating protein gacA OS=Dictyostelium discoideum OX=44689 GN=gacA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.0      0.67   1.9e+05      40      55 ..     116     131 ..      88     135 .. 0.69
+   2 ?   11.7   0.0     4e-05        11      16      58 ..     295     337 ..     283     338 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.67
+        NFECIMNI_00039  40 snnrkvvvrrrqsaay 55 
+                           + n+kvv+r +  a++
+  sp|Q54Y72|GACA_DICDI 116 NTNHKVVLRVEGGASH 131
+                           4578888887766655 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 4e-05
+        NFECIMNI_00039  16 mgfesdaarqgvcrgsrmahlihrsnnrkvvvrrrqsaayeiv 58 
+                               s    +g+  + +  +++h+  ++kv v++r+s aye++
+  sp|Q54Y72|GACA_DICDI 295 YDVSSSNPMEGLVLSQKCVQFLHNVLSHKVAVHKRESVAYEVL 337
+                           55666777899999999************************86 PP
+
+>> sp|P19992|HSD_STREX  3-alpha-(or 20-beta)-hydroxysteroid dehydrogenase OS=Streptomyces exfoliatus OX=1905 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.1   4.1e-05        12       7      34 ..       7      34 ..       1      57 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 4.1e-05
+       NFECIMNI_00039  7 esrivaggrmgfesdaarqgvcrgsrma 34
+                         ++ i+ gg  g+ ++aarq+v+ g+r+ 
+  sp|P19992|HSD_STREX  7 KTVIITGGARGLGAEAARQAVAAGARVV 34
+                         56699********************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (60 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     12169  (0.0212795); expected 11437.3 (0.02)
+Passed bias filter:                    10171  (0.0177857); expected 11437.3 (0.02)
+Passed Vit filter:                       471  (0.000823622); expected 571.9 (0.001)
+Passed Fwd filter:                         2  (3.49734e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 1.50u 0.43s 00:00:01.93 Elapsed: 00:00:01.24
+# Mc/sec: 9977.19
+//
+[ok]

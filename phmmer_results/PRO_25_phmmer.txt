@@ -1,0 +1,2462 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_25.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00025  [L=261]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    8.8e-16   63.2  10.4         59    8.1   0.0   10.1 10  sp|P0CG71|UBIQ1_CAEEL  Polyubiquitin-A OS=Caenorhabditis eleg
+      1e-15   62.9   8.1    1.1e+02    7.2   0.0   10.0 10  sp|Q63429|UBC_RAT      Polyubiquitin-C OS=Rattus norvegicus O
+    8.5e-15   59.9   6.6         52    8.2   0.1    9.0  9  sp|P0CG50|UBC_MOUSE    Polyubiquitin-C OS=Mus musculus OX=100
+      3e-14   58.1   5.5    2.8e+02    5.8   0.0    9.2  9  sp|P0CG69|UBIQP_DROME  Polyubiquitin OS=Drosophila melanogast
+    3.2e-14   58.1   5.6    2.6e+02    5.9   0.0    9.2  9  sp|P0CG61|UBC_PONPY    Polyubiquitin-C OS=Pongo pygmaeus OX=9
+    3.2e-14   58.1   5.6    2.6e+02    5.9   0.0    9.2  9  sp|P0CG64|UBC_PANTR    Polyubiquitin-C OS=Pan troglodytes OX=
+    5.9e-13   53.9   4.2    2.4e+02    6.0   0.0    8.2  8  sp|P0CG48|UBC_HUMAN    Polyubiquitin-C OS=Homo sapiens OX=960
+    6.6e-13   53.8   5.0    2.3e+02    6.1   0.0    8.0  8  sp|P62976|UBIQP_CRIGR  Polyubiquitin OS=Cricetulus griseus OX
+    1.2e-12   52.9   4.6    2.6e+02    6.0   0.0    8.2  8  sp|P0CH28|UBC_BOVIN    Polyubiquitin-C OS=Bos taurus OX=9913 
+    1.5e-11   49.3   2.9    2.1e+02    6.3   0.0    7.2  7  sp|P0CG66|UBC_GORGO    Polyubiquitin-C OS=Gorilla gorilla gor
+    7.4e-10   43.8   2.0    1.9e+02    6.4   0.0    6.3  6  sp|P0CG68|UBC_PIG      Polyubiquitin-C OS=Sus scrofa OX=9823 
+    4.3e-09   41.3   1.4      3e+02    5.8   0.0    6.2  6  sp|P0CG78|UBIQF_DICDI  Polyubiquitin-F OS=Dictyostelium disco
+    2.6e-08   38.7   4.3         69    7.8   0.0    5.3  5  sp|P42740|UBIQP_AGLNE  Polyubiquitin OS=Aglaothamnion neglect
+    2.6e-08   38.7   2.0    1.2e+02    7.0   0.0    5.4  5  sp|P59669|UBIQP_GEOCY  Polyubiquitin OS=Geodia cydonium OX=60
+    3.7e-08   38.2   3.8         99    7.3   0.0    5.3  5  sp|P42739|UBIQP_ACEPE  Polyubiquitin (Fragment) OS=Acetabular
+    4.7e-08   37.9   3.1    1.4e+02    6.9   0.0    5.3  5  sp|P0CG85|UBI1P_NICSY  Polyubiquitin OS=Nicotiana sylvestris 
+    4.7e-08   37.9   3.1    1.4e+02    6.9   0.0    5.3  5  sp|Q8H159|UBQ10_ARATH  Polyubiquitin 10 OS=Arabidopsis thalia
+    5.5e-08   37.7   3.4    1.1e+02    7.2   0.0    5.3  5  sp|P0CH04|UBI1P_PETCR  Polyubiquitin OS=Petroselinum crispum 
+    5.5e-08   37.7   3.4    1.1e+02    7.2   0.0    5.3  5  sp|P0CH05|UBI2P_PETCR  Polyubiquitin OS=Petroselinum crispum 
+    7.1e-07   34.0   1.8         68    7.9   0.0    4.3  4  sp|P0CG75|UBI4P_KLULA  Polyubiquitin OS=Kluyveromyces lactis 
+    7.2e-07   34.0   1.8         68    7.9   0.0    4.3  4  sp|P0CG63|UBI4P_YEAST  Polyubiquitin OS=Saccharomyces cerevis
+    7.9e-07   33.8   1.4         72    7.8   0.0    4.1  4  sp|P69315|UBIQP_LINUS  Polyubiquitin (Fragment) OS=Linum usit
+      9e-07   33.7   2.1         77    7.7   0.0    4.4  4  sp|P0CG72|UBI4P_SCHPO  Polyubiquitin OS=Schizosaccharomyces p
+    1.3e-06   33.1   1.1         92    7.4   0.0    4.3  4  sp|P0CG82|UBIQP_TETPY  Polyubiquitin OS=Tetrahymena pyriformi
+    1.8e-06   32.7   1.7         97    7.4   0.0    4.4  4  sp|P0CG84|UBI4P_NICSY  Polyubiquitin (Fragment) OS=Nicotiana 
+      2e-06   32.5   1.6    1.1e+02    7.2   0.0    4.3  4  sp|P0CH32|UBQ4_ARATH   Polyubiquitin 4 OS=Arabidopsis thalian
+    2.1e-06   32.5   1.8         99    7.3   0.0    4.4  4  sp|P69322|UBIQP_PEA    Polyubiquitin OS=Pisum sativum OX=3888
+    2.5e-06   32.2   1.9    1.1e+02    7.2   0.0    4.3  4  sp|Q58G87|UBQ3_ORYSJ   Polyubiquitin 3 OS=Oryza sativa subsp.
+    5.7e-06   31.0   0.6    1.5e+02    6.7   0.0    4.3  4  sp|P0CG76|UBIQA_DICDI  Polyubiquitin-A OS=Dictyostelium disco
+      8e-06   30.6   0.4    1.8e+02    6.5   0.0    4.4  4  sp|P0CG79|UBIQG_DICDI  Polyubiquitin-G OS=Dictyostelium disco
+    8.3e-06   30.5   0.4    1.8e+02    6.5   0.0    4.3  4  sp|P0CG81|UBIQH_DICDI  Polyubiquitin-H OS=Dictyostelium disco
+    4.8e-05   28.0   0.6         44    8.5   0.0    3.4  3  sp|P0CG70|UBI4P_NEUCR  Polyubiquitin OS=Neurospora crassa (st
+    6.2e-05   27.6   0.9         53    8.2   0.0    3.5  3  sp|P0CG74|UBI4P_CANAX  Polyubiquitin OS=Candida albicans OX=5
+    0.00013   26.6   0.6         72    7.8   0.0    3.5  3  sp|P69325|UBIQP_SOYBN  Polyubiquitin OS=Glycine max OX=3847 G
+    0.00013   26.6   0.6         72    7.8   0.0    3.5  3  sp|Q3E7T8|UBQ14_ARATH  Polyubiquitin 14 OS=Arabidopsis thalia
+    0.00014   26.4   0.6         72    7.8   0.0    3.4  3  sp|P69309|UBIQP_AVEFA  Polyubiquitin OS=Avena fatua OX=4499 P
+    0.00015   26.4   0.2         76    7.7   0.0    3.4  3  sp|P0CG49|UBB_MOUSE    Polyubiquitin-B OS=Mus musculus OX=100
+    0.00015   26.4   0.2         76    7.7   0.0    3.4  3  sp|P0CG51|UBB_RAT      Polyubiquitin-B OS=Rattus norvegicus O
+    0.00015   26.4   0.2         76    7.7   0.0    3.4  3  sp|P0CG62|UBB_CHICK    Polyubiquitin-B OS=Gallus gallus OX=90
+    0.00015   26.4   0.2         76    7.7   0.0    3.4  3  sp|P0CG53|UBB_BOVIN    Polyubiquitin-B OS=Bos taurus OX=9913 
+    0.00015   26.4   0.7         77    7.7   0.0    3.4  3  sp|Q1EC66|UBQ3_ARATH   Polyubiquitin 3 OS=Arabidopsis thalian
+    0.00015   26.4   0.2         65    7.9   0.0    3.4  3  sp|P0CG54|UBB_CAVPO    Polyubiquitin-B OS=Cavia porcellus OX=
+    0.00015   26.4   0.2         80    7.6   0.0    3.4  3  sp|Q8MKD1|UBB_HORSE    Polyubiquitin-B OS=Equus caballus OX=9
+    0.00015   26.3   0.2         76    7.7   0.0    3.4  3  sp|P0CG55|UBB_SHEEP    Polyubiquitin-B OS=Ovis aries OX=9940 
+    0.00059   24.4   0.2    1.2e+02    7.1   0.0    3.4  3  sp|P0CG80|UBIQI_DICDI  Polyubiquitin-I OS=Dictyostelium disco
+    0.00059   24.4   0.2    1.2e+02    7.1   0.0    3.4  3  sp|P0CG88|UBIQJ_DICDI  Polyubiquitin-J OS=Dictyostelium disco
+     0.0013   23.3   0.5        9.3   10.7   0.0    2.7  3  sp|P23324|UBIQP_EUPEU  Polyubiquitin OS=Euplotes eurystomus O
+     0.0054   21.3   0.2         17    9.9   0.0    2.6  3  sp|P0CG73|UBI1P_CANAX  Polyubiquitin OS=Candida albicans OX=5
+       0.01   20.4   0.2         31    9.0   0.0    2.6  3  sp|C4YP88|UBI4P_CANAW  Ubiquitin-like domain-containing prote
+       0.01   20.4   0.2         31    9.0   0.0    2.6  3  sp|Q5ADS0|UBI4P_CANAL  Polyubiquitin OS=Candida albicans (str
+  ------ inclusion threshold ------
+      0.015   19.9   0.3         27    9.2   0.0    3.1  3  sp|Q9FHQ6|UBQ9_ARATH   Polyubiquitin 9 OS=Arabidopsis thalian
+      0.019   19.5   0.2         48    8.4   0.0    2.6  3  sp|P0CH33|UBQ11_ARATH  Polyubiquitin 11 OS=Arabidopsis thalia
+      0.025   19.1   0.1         43    8.5   0.0    2.5  3  sp|P0CG47|UBB_HUMAN    Polyubiquitin-B OS=Homo sapiens OX=960
+      0.025   19.1   0.1         43    8.5   0.0    2.5  3  sp|P0CG60|UBB_PONPY    Polyubiquitin-B OS=Pongo pygmaeus OX=9
+      0.025   19.1   0.1         43    8.5   0.0    2.5  3  sp|P0CG65|UBB_PANTR    Polyubiquitin-B OS=Pan troglodytes OX=
+      0.025   19.1   0.1         43    8.5   0.0    2.5  3  sp|P0CG67|UBB_GORGO    Polyubiquitin-B OS=Gorilla gorilla gor
+      0.026   19.1   0.1         46    8.4   0.0    2.5  3  sp|P22589|UBIQP_PHYIN  Polyubiquitin OS=Phytophthora infestan
+      0.064   17.8   0.1         74    7.7   0.0    2.5  3  sp|P0CG77|UBIQD_DICDI  Polyubiquitin-D OS=Dictyostelium disco
+      0.083   17.4   0.2         38    8.7   0.0    2.3  2  sp|Q3E7K8|UBQ12_ARATH  Polyubiquitin 12 OS=Arabidopsis thalia
+       0.13   16.8   0.4         23    9.4   0.0    2.5  3  sp|P0CG83|UBIQP_HORVU  Polyubiquitin (Fragment) OS=Hordeum vu
+       0.32   15.5   0.2         23    9.4   0.0    2.5  3  sp|P62972|UBIQP_XENLA  Polyubiquitin (Fragment) OS=Xenopus la
+       0.57   14.7   0.1        2.5   12.5   0.0    2.0  2  sp|Q8R5N8|HPRK_FUSNN   Putative HPr kinase/phosphorylase OS=F
+        1.1   13.7   0.3         98    7.3   0.0    3.0  3  sp|Q39256|UBQ8_ARATH   Polyubiquitin 8 OS=Arabidopsis thalian
+          4   11.9   0.0        6.4   11.2   0.0    1.3  1  sp|B9DRJ3|HPRK_STRU0   HPr kinase/phosphorylase OS=Streptococ
+        4.8   11.6   0.0        8.1   10.9   0.0    1.3  1  sp|A2RFS6|HPRK_STRPG   HPr kinase/phosphorylase OS=Streptococ
+        4.8   11.6   0.0        8.1   10.9   0.0    1.3  1  sp|P68898|HPRK_STRP1   HPr kinase/phosphorylase OS=Streptococ
+        4.8   11.6   0.0        8.1   10.9   0.0    1.3  1  sp|P68899|HPRK_STRP8   HPr kinase/phosphorylase OS=Streptococ
+        4.8   11.6   0.0        8.1   10.9   0.0    1.3  1  sp|Q5XD71|HPRK_STRP6   HPr kinase/phosphorylase OS=Streptococ
+        4.8   11.6   0.0        8.1   10.9   0.0    1.3  1  sp|P0DD52|HPRK_STRP3   HPr kinase/phosphorylase OS=Streptococ
+        4.8   11.6   0.0        8.1   10.9   0.0    1.3  1  sp|P0DD53|HPRK_STRPQ   HPr kinase/phosphorylase OS=Streptococ
+        5.4   11.5   0.0        5.8   11.4   0.0    1.2  1  sp|A8GWC2|RUVA_RICB8   Holliday junction branch migration com
+          6   11.3   0.0        8.9   10.8   0.0    1.2  1  sp|Q7VNA7|PSD_HAEDU    Phosphatidylserine decarboxylase proen
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P0CG71|UBIQ1_CAEEL  Polyubiquitin-A OS=Caenorhabditis elegans OX=6239 GN=ubq-1 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.6   0.0     0.043   3.4e+02      71     125 ..      47      93 ..      22     106 .. 0.71
+   2 ?    5.8   0.0     0.037     3e+02      71     126 ..     123     170 ..      98     188 .. 0.71
+   3 ?    5.6   0.0     0.042   3.3e+02      71     126 ..     199     246 ..     175     261 .. 0.72
+   4 ?    5.8   0.0     0.037     3e+02      71     126 ..     275     322 ..     248     339 .. 0.71
+   5 !    8.1   0.0    0.0075        59      71     126 ..     351     398 ..     326     416 .. 0.71
+   6 ?    5.7   0.0     0.039   3.1e+02      71     126 ..     427     474 ..     403     492 .. 0.72
+   7 ?    5.6   0.0     0.042   3.3e+02      71     126 ..     503     550 ..     479     565 .. 0.72
+   8 ?    5.8   0.0     0.037   2.9e+02      71     126 ..     579     626 ..     555     649 .. 0.72
+   9 ?    5.7   0.0      0.04   3.2e+02      71     126 ..     655     702 ..     631     719 .. 0.72
+  10 ?    5.7   0.0     0.038     3e+02      71     126 ..     731     778 ..     707     797 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.043
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG71|UBIQ1_CAEEL  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 93 
+                            44444444.........444441345689*********************999875 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.037
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG71|UBIQ1_CAEEL 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                            44444444.........444441345689*********************9998754 PP
+
+  == domain 3  score: 5.6 bits;  conditional E-value: 0.042
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG71|UBIQ1_CAEEL 199 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                            44444444444433........345689*********************9998754 PP
+
+  == domain 4  score: 5.8 bits;  conditional E-value: 0.037
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG71|UBIQ1_CAEEL 275 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 322
+                            4444444.........4444441345689*********************9998754 PP
+
+  == domain 5  score: 8.1 bits;  conditional E-value: 0.0075
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tligk  t+ + 
+  sp|P0CG71|UBIQ1_CAEEL 351 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLIGKTITLEVE 398
+                            44444444.........444441345689*********************9998764 PP
+
+  == domain 6  score: 5.7 bits;  conditional E-value: 0.039
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG71|UBIQ1_CAEEL 427 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 474
+                            44444444444433........345689*********************9998754 PP
+
+  == domain 7  score: 5.6 bits;  conditional E-value: 0.042
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG71|UBIQ1_CAEEL 503 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 550
+                            44444444444433........345689*********************9998754 PP
+
+  == domain 8  score: 5.8 bits;  conditional E-value: 0.037
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG71|UBIQ1_CAEEL 579 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 626
+                            44444444444433........345689*********************9998764 PP
+
+  == domain 9  score: 5.7 bits;  conditional E-value: 0.04
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG71|UBIQ1_CAEEL 655 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 702
+                            44444444444433........345689*********************9998754 PP
+
+  == domain 10  score: 5.7 bits;  conditional E-value: 0.038
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG71|UBIQ1_CAEEL 731 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 778
+                            44444444444433........345689*********************9998764 PP
+
+>> sp|Q63429|UBC_RAT  Polyubiquitin-C OS=Rattus norvegicus OX=10116 GN=Ubc PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.6   0.0     0.041   3.3e+02      71     126 ..      47      94 ..      22     112 .. 0.72
+   2 ?    5.3   0.0     0.051   4.1e+02      71     125 ..     123     169 ..      99     181 .. 0.72
+   3 ?    5.6   0.0     0.043   3.5e+02      71     126 ..     199     246 ..     174     262 .. 0.72
+   4 ?    5.5   0.0     0.046   3.7e+02      71     125 ..     275     321 ..     247     334 .. 0.72
+   5 ?    5.5   0.0     0.046   3.7e+02      71     125 ..     351     397 ..     327     413 .. 0.72
+   6 ?    5.7   0.0     0.039   3.1e+02      71     126 ..     427     474 ..     402     497 .. 0.73
+   7 ?    5.5   0.0     0.045   3.6e+02      71     126 ..     503     550 ..     480     568 .. 0.73
+   8 ?    5.2   0.0     0.054   4.3e+02      71     125 ..     579     625 ..     555     635 .. 0.72
+   9 ?    5.6   0.0     0.042   3.3e+02      71     126 ..     655     702 ..     632     726 .. 0.74
+  10 ?    7.2   0.0     0.014   1.1e+02      71     143 ..     731     794 ..     705     804 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.041
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|Q63429|UBC_RAT  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                        44444444.........444441345689*********************9998764 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.051
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                        gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +
+  sp|Q63429|UBC_RAT 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 169
+                        44444444444433........345689*********************999875 PP
+
+  == domain 3  score: 5.6 bits;  conditional E-value: 0.043
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|Q63429|UBC_RAT 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                        44444444.........444441345689*********************9998764 PP
+
+  == domain 4  score: 5.5 bits;  conditional E-value: 0.046
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                        gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|Q63429|UBC_RAT 275 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 321
+                        4444444.........4454441345689*********************999876 PP
+
+  == domain 5  score: 5.5 bits;  conditional E-value: 0.046
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                        gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +
+  sp|Q63429|UBC_RAT 351 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 397
+                        44444444444433........345689*********************999876 PP
+
+  == domain 6  score: 5.7 bits;  conditional E-value: 0.039
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|Q63429|UBC_RAT 427 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 474
+                        44444444.........444441345689*********************9999765 PP
+
+  == domain 7  score: 5.5 bits;  conditional E-value: 0.045
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|Q63429|UBC_RAT 503 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 550
+                        44444444444443........345689*********************9998764 PP
+
+  == domain 8  score: 5.2 bits;  conditional E-value: 0.054
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                        gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +
+  sp|Q63429|UBC_RAT 579 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 625
+                        44444444444433........345689*********************999875 PP
+
+  == domain 9  score: 5.6 bits;  conditional E-value: 0.042
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|Q63429|UBC_RAT 655 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 702
+                        44444444444443........345689*********************9999765 PP
+
+  == domain 10  score: 7.2 bits;  conditional E-value: 0.014
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqkatktdatkfynkvtg 143
+                        gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + + +  t   k  +  t 
+  sp|Q63429|UBC_RAT 731 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV-EPSVNTKKVKQEDTRTF 794
+                        44444444.........444441345689**********************99975.55556655555554444 PP
+
+>> sp|P0CG50|UBC_MOUSE  Polyubiquitin-C OS=Mus musculus OX=10090 GN=Ubc PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.7   0.0     0.038     3e+02      71     126 ..      47      94 ..      22     110 .. 0.72
+   2 ?    5.9   0.0     0.035   2.8e+02      71     126 ..     123     170 ..      99     194 .. 0.73
+   3 ?    5.7   0.0     0.038     3e+02      71     126 ..     199     246 ..     175     264 .. 0.72
+   4 ?    5.8   0.0     0.038     3e+02      71     126 ..     275     322 ..     250     339 .. 0.72
+   5 ?    5.7   0.0     0.039   3.1e+02      71     126 ..     351     398 ..     326     413 .. 0.72
+   6 ?    5.8   0.0     0.038     3e+02      71     126 ..     427     474 ..     402     491 .. 0.72
+   7 ?    5.8   0.0     0.036   2.8e+02      71     126 ..     503     550 ..     478     569 .. 0.72
+   8 ?    5.8   0.0     0.037   2.9e+02      71     126 ..     579     626 ..     554     644 .. 0.72
+   9 !    8.2   0.1    0.0066        52      71     148 ..     655     723 ..     631     728 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 5.7 bits;  conditional E-value: 0.038
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG50|UBC_MOUSE  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 2  score: 5.9 bits;  conditional E-value: 0.035
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG50|UBC_MOUSE 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          44444444444433........345689*********************9999765 PP
+
+  == domain 3  score: 5.7 bits;  conditional E-value: 0.038
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG50|UBC_MOUSE 199 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                          44444444444433........345689*********************9998764 PP
+
+  == domain 4  score: 5.8 bits;  conditional E-value: 0.038
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG50|UBC_MOUSE 275 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 322
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 5  score: 5.7 bits;  conditional E-value: 0.039
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG50|UBC_MOUSE 351 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 398
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 6  score: 5.8 bits;  conditional E-value: 0.038
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG50|UBC_MOUSE 427 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 474
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 7  score: 5.8 bits;  conditional E-value: 0.036
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG50|UBC_MOUSE 503 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 550
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 8  score: 5.8 bits;  conditional E-value: 0.037
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG50|UBC_MOUSE 579 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 626
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 9  score: 8.2 bits;  conditional E-value: 0.0066
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkatktdatkfynkvtgvtamr 148
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   +  t   k  ++ t +t + 
+  sp|P0CG50|UBC_MOUSE 655 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLDVE-PSVTTKKVKQEDRRTFLTTVS 723
+                          44444444444433........345689***********************99864.455566677777777666655 PP
+
+>> sp|P0CG69|UBIQP_DROME  Polyubiquitin OS=Drosophila melanogaster OX=7227 GN=Ubi-p63E PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.7   0.0     0.038     3e+02      71     126 ..      47      94 ..      22     112 .. 0.72
+   2 ?    5.8   0.0     0.036   2.8e+02      71     126 ..     123     170 ..      98     194 .. 0.73
+   3 ?    5.8   0.0     0.038     3e+02      71     126 ..     199     246 ..     174     265 .. 0.72
+   4 ?    5.7   0.0     0.038   3.1e+02      71     126 ..     275     322 ..     250     340 .. 0.72
+   5 ?    5.7   0.0     0.039   3.1e+02      71     126 ..     351     398 ..     326     415 .. 0.72
+   6 ?    5.5   0.0     0.044   3.5e+02      71     125 ..     427     473 ..     402     486 .. 0.72
+   7 ?    5.7   0.0     0.039   3.1e+02      71     126 ..     503     550 ..     477     567 .. 0.72
+   8 ?    5.6   0.0     0.041   3.3e+02      71     125 ..     579     625 ..     554     641 .. 0.72
+   9 ?    5.8   0.0     0.037   2.9e+02      71     126 ..     655     702 ..     630     722 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 5.7 bits;  conditional E-value: 0.038
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG69|UBIQP_DROME  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                            44444444.........444441345689*********************9998764 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.036
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG69|UBIQP_DROME 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                            44444444.........444441345689*********************9999765 PP
+
+  == domain 3  score: 5.8 bits;  conditional E-value: 0.038
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG69|UBIQP_DROME 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                            44444444.........444441345689*********************9998764 PP
+
+  == domain 4  score: 5.7 bits;  conditional E-value: 0.038
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG69|UBIQP_DROME 275 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 322
+                            44444444.........444441345689*********************9998764 PP
+
+  == domain 5  score: 5.7 bits;  conditional E-value: 0.039
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG69|UBIQP_DROME 351 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 398
+                            44444444.........444441345689*********************9998764 PP
+
+  == domain 6  score: 5.5 bits;  conditional E-value: 0.044
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG69|UBIQP_DROME 427 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 473
+                            44444444.........444441345689*********************999876 PP
+
+  == domain 7  score: 5.7 bits;  conditional E-value: 0.039
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG69|UBIQP_DROME 503 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 550
+                            44444444.........444441345689*********************9998764 PP
+
+  == domain 8  score: 5.6 bits;  conditional E-value: 0.041
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG69|UBIQP_DROME 579 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 625
+                            44444444.........444441345689*********************999876 PP
+
+  == domain 9  score: 5.8 bits;  conditional E-value: 0.037
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG69|UBIQP_DROME 655 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 702
+                            44444444.........444441345689*********************9998764 PP
+
+>> sp|P0CG61|UBC_PONPY  Polyubiquitin-C OS=Pongo pygmaeus OX=9600 GN=UBC PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.7   0.0      0.04   3.2e+02      71     126 ..      47      94 ..      22     110 .. 0.72
+   2 ?    5.9   0.0     0.033   2.6e+02      71     126 ..     123     170 ..      93     194 .. 0.73
+   3 ?    5.8   0.0     0.037   2.9e+02      71     126 ..     199     246 ..     174     266 .. 0.72
+   4 ?    5.7   0.0      0.04   3.2e+02      71     126 ..     275     322 ..     251     340 .. 0.72
+   5 ?    5.6   0.0     0.041   3.3e+02      71     125 ..     351     397 ..     326     413 .. 0.72
+   6 ?    5.7   0.0     0.038     3e+02      71     126 ..     427     474 ..     402     492 .. 0.72
+   7 ?    5.6   0.0     0.043   3.4e+02      71     125 ..     503     549 ..     477     563 .. 0.72
+   8 ?    5.5   0.0     0.047   3.7e+02      71     126 ..     579     626 ..     561     644 .. 0.74
+   9 ?    5.7   0.0     0.038     3e+02      71     126 ..     655     702 ..     631     722 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 5.7 bits;  conditional E-value: 0.04
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG61|UBC_PONPY  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 2  score: 5.9 bits;  conditional E-value: 0.033
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG61|UBC_PONPY 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          4444444.........4454451345689*********************9999765 PP
+
+  == domain 3  score: 5.8 bits;  conditional E-value: 0.037
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG61|UBC_PONPY 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 4  score: 5.7 bits;  conditional E-value: 0.04
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG61|UBC_PONPY 275 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 322
+                          44444444444433........345689*********************9998764 PP
+
+  == domain 5  score: 5.6 bits;  conditional E-value: 0.041
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG61|UBC_PONPY 351 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 397
+                          44444444.........444441345689*********************999876 PP
+
+  == domain 6  score: 5.7 bits;  conditional E-value: 0.038
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG61|UBC_PONPY 427 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 474
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 7  score: 5.6 bits;  conditional E-value: 0.043
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG61|UBC_PONPY 503 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 549
+                          44444444.........444441345689*********************999876 PP
+
+  == domain 8  score: 5.5 bits;  conditional E-value: 0.047
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG61|UBC_PONPY 579 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 626
+                          45555555555443........346789*********************9998764 PP
+
+  == domain 9  score: 5.7 bits;  conditional E-value: 0.038
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG61|UBC_PONPY 655 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 702
+                          44444444444433........345689*********************9998764 PP
+
+>> sp|P0CG64|UBC_PANTR  Polyubiquitin-C OS=Pan troglodytes OX=9598 GN=UBC PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.7   0.0      0.04   3.2e+02      71     126 ..      47      94 ..      22     110 .. 0.72
+   2 ?    5.9   0.0     0.033   2.6e+02      71     126 ..     123     170 ..      93     194 .. 0.73
+   3 ?    5.8   0.0     0.037   2.9e+02      71     126 ..     199     246 ..     174     266 .. 0.72
+   4 ?    5.7   0.0      0.04   3.2e+02      71     126 ..     275     322 ..     251     340 .. 0.72
+   5 ?    5.6   0.0     0.041   3.3e+02      71     125 ..     351     397 ..     326     413 .. 0.72
+   6 ?    5.7   0.0     0.038     3e+02      71     126 ..     427     474 ..     402     492 .. 0.72
+   7 ?    5.6   0.0     0.043   3.4e+02      71     125 ..     503     549 ..     477     563 .. 0.72
+   8 ?    5.5   0.0     0.047   3.7e+02      71     126 ..     579     626 ..     561     644 .. 0.74
+   9 ?    5.7   0.0     0.038     3e+02      71     126 ..     655     702 ..     631     722 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 5.7 bits;  conditional E-value: 0.04
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG64|UBC_PANTR  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 2  score: 5.9 bits;  conditional E-value: 0.033
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG64|UBC_PANTR 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          4444444.........4454451345689*********************9999765 PP
+
+  == domain 3  score: 5.8 bits;  conditional E-value: 0.037
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG64|UBC_PANTR 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 4  score: 5.7 bits;  conditional E-value: 0.04
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG64|UBC_PANTR 275 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 322
+                          44444444444433........345689*********************9998764 PP
+
+  == domain 5  score: 5.6 bits;  conditional E-value: 0.041
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG64|UBC_PANTR 351 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 397
+                          44444444.........444441345689*********************999876 PP
+
+  == domain 6  score: 5.7 bits;  conditional E-value: 0.038
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG64|UBC_PANTR 427 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 474
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 7  score: 5.6 bits;  conditional E-value: 0.043
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG64|UBC_PANTR 503 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 549
+                          44444444.........444441345689*********************999876 PP
+
+  == domain 8  score: 5.5 bits;  conditional E-value: 0.047
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG64|UBC_PANTR 579 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 626
+                          45555555555443........346789*********************9998764 PP
+
+  == domain 9  score: 5.7 bits;  conditional E-value: 0.038
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG64|UBC_PANTR 655 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 702
+                          44444444444433........345689*********************9998764 PP
+
+>> sp|P0CG48|UBC_HUMAN  Polyubiquitin-C OS=Homo sapiens OX=9606 GN=UBC PE=1 SV=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.9   0.0     0.033   2.6e+02      71     126 ..      47      94 ..      22     112 .. 0.72
+   2 ?    5.9   0.0     0.035   2.8e+02      71     126 ..     123     170 ..      99     188 .. 0.72
+   3 ?    6.0   0.0     0.031   2.4e+02      71     126 ..     199     246 ..     174     270 .. 0.73
+   4 ?    5.8   0.0     0.038     3e+02      71     126 ..     275     322 ..     252     338 .. 0.73
+   5 ?    5.8   0.0     0.036   2.8e+02      71     126 ..     351     398 ..     326     413 .. 0.72
+   6 ?    5.8   0.0     0.037     3e+02      71     126 ..     427     474 ..     403     489 .. 0.72
+   7 ?    5.9   0.0     0.033   2.7e+02      71     126 ..     503     550 ..     478     568 .. 0.72
+   8 ?    6.0   0.0     0.033   2.6e+02      71     126 ..     579     626 ..     555     648 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 5.9 bits;  conditional E-value: 0.033
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG48|UBC_HUMAN  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 2  score: 5.9 bits;  conditional E-value: 0.035
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG48|UBC_HUMAN 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          44444444444433........345689*********************9998764 PP
+
+  == domain 3  score: 6.0 bits;  conditional E-value: 0.031
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG48|UBC_HUMAN 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                          44444444.........444441345689*********************9999765 PP
+
+  == domain 4  score: 5.8 bits;  conditional E-value: 0.038
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG48|UBC_HUMAN 275 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 322
+                          44444444444443........345689*********************9998764 PP
+
+  == domain 5  score: 5.8 bits;  conditional E-value: 0.036
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG48|UBC_HUMAN 351 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 398
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 6  score: 5.8 bits;  conditional E-value: 0.037
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG48|UBC_HUMAN 427 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 474
+                          44444444444433........345689*********************9998764 PP
+
+  == domain 7  score: 5.9 bits;  conditional E-value: 0.033
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG48|UBC_HUMAN 503 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 550
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 8  score: 6.0 bits;  conditional E-value: 0.033
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG48|UBC_HUMAN 579 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 626
+                          44444444444433........345689*********************9999764 PP
+
+>> sp|P62976|UBIQP_CRIGR  Polyubiquitin OS=Cricetulus griseus OX=10029 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.8   0.0     0.038     3e+02      71     125 ..      47      93 ..      22     105 .. 0.72
+   2 ?    6.0   0.0     0.031   2.5e+02      71     126 ..     123     170 ..      98     189 .. 0.72
+   3 ?    6.0   0.0     0.032   2.6e+02      71     126 ..     199     246 ..     175     265 .. 0.72
+   4 ?    6.1   0.0     0.031   2.4e+02      71     126 ..     275     322 ..     245     339 .. 0.72
+   5 ?    5.9   0.0     0.035   2.7e+02      71     126 ..     351     398 ..     327     414 .. 0.72
+   6 ?    6.0   0.0     0.033   2.6e+02      71     126 ..     427     474 ..     403     492 .. 0.72
+   7 ?    6.0   0.0     0.033   2.6e+02      71     126 ..     503     550 ..     479     568 .. 0.72
+   8 ?    6.1   0.0     0.029   2.3e+02      71     127 ..     579     627 ..     562     651 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 5.8 bits;  conditional E-value: 0.038
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P62976|UBIQP_CRIGR  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 93 
+                            44444444.........444441345689*********************999875 PP
+
+  == domain 2  score: 6.0 bits;  conditional E-value: 0.031
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P62976|UBIQP_CRIGR 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                            44444444.........444441345689*********************9998764 PP
+
+  == domain 3  score: 6.0 bits;  conditional E-value: 0.032
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P62976|UBIQP_CRIGR 199 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                            44444444444433........345689*********************9998764 PP
+
+  == domain 4  score: 6.1 bits;  conditional E-value: 0.031
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P62976|UBIQP_CRIGR 275 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 322
+                            4444444.........4454551345689*********************9998764 PP
+
+  == domain 5  score: 5.9 bits;  conditional E-value: 0.035
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P62976|UBIQP_CRIGR 351 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 398
+                            44444444444433........345689*********************9998764 PP
+
+  == domain 6  score: 6.0 bits;  conditional E-value: 0.033
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P62976|UBIQP_CRIGR 427 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 474
+                            44444444444433........345689*********************9998764 PP
+
+  == domain 7  score: 6.0 bits;  conditional E-value: 0.033
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P62976|UBIQP_CRIGR 503 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 550
+                            44444444444433........345689*********************9998764 PP
+
+  == domain 8  score: 6.1 bits;  conditional E-value: 0.029
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P62976|UBIQP_CRIGR 579 GKQLEDGRTLSDYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 627
+                            566666666655543........46789*********************99987533 PP
+
+>> sp|P0CH28|UBC_BOVIN  Polyubiquitin-C OS=Bos taurus OX=9913 GN=UBC PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.3   0.0     0.054   4.3e+02      71     126 ..      47      94 ..      30     109 .. 0.79
+   2 ?    5.6   0.0     0.041   3.3e+02      71     125 ..     123     169 ..      98     180 .. 0.72
+   3 ?    5.8   0.0     0.036   2.9e+02      71     126 ..     199     246 ..     176     264 .. 0.73
+   4 ?    5.9   0.0     0.035   2.8e+02      71     126 ..     275     322 ..     251     340 .. 0.72
+   5 ?    5.9   0.0     0.034   2.7e+02      71     126 ..     351     398 ..     327     418 .. 0.72
+   6 ?    6.0   0.0     0.033   2.6e+02      71     126 ..     427     474 ..     402     494 .. 0.72
+   7 ?    5.9   0.0     0.035   2.8e+02      71     126 ..     503     550 ..     478     567 .. 0.72
+   8 ?    5.9   0.0     0.033   2.6e+02      71     126 ..     579     626 ..     553     644 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 5.3 bits;  conditional E-value: 0.054
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CH28|UBC_BOVIN  47 GKQLEDGRTLSDYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          566666666655543........46789*********************9998764 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.041
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CH28|UBC_BOVIN 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 169
+                          44444444.........444441345689*********************999875 PP
+
+  == domain 3  score: 5.8 bits;  conditional E-value: 0.036
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CH28|UBC_BOVIN 199 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                          44444444444443........345689*********************9998764 PP
+
+  == domain 4  score: 5.9 bits;  conditional E-value: 0.035
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CH28|UBC_BOVIN 275 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 322
+                          44444444444433........345689*********************9998764 PP
+
+  == domain 5  score: 5.9 bits;  conditional E-value: 0.034
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CH28|UBC_BOVIN 351 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 398
+                          44444444444433........345689*********************9998764 PP
+
+  == domain 6  score: 6.0 bits;  conditional E-value: 0.033
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CH28|UBC_BOVIN 427 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 474
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 7  score: 5.9 bits;  conditional E-value: 0.035
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CH28|UBC_BOVIN 503 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 550
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 8  score: 5.9 bits;  conditional E-value: 0.033
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CH28|UBC_BOVIN 579 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 626
+                          44444444.........444441345689*********************9998764 PP
+
+>> sp|P0CG66|UBC_GORGO  Polyubiquitin-C OS=Gorilla gorilla gorilla OX=9595 GN=UBC PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   0.0     0.027   2.2e+02      71     126 ..      47      94 ..      22     114 .. 0.72
+   2 ?    6.3   0.0     0.026   2.1e+02      71     126 ..     123     170 ..      98     194 .. 0.72
+   3 ?    6.3   0.0     0.026   2.1e+02      71     126 ..     199     246 ..     174     270 .. 0.72
+   4 ?    5.7   0.0     0.039   3.1e+02      71     126 ..     275     322 ..     258     337 .. 0.75
+   5 ?    6.2   0.0     0.028   2.2e+02      71     126 ..     351     398 ..     326     417 .. 0.72
+   6 ?    6.1   0.0      0.03   2.4e+02      71     126 ..     427     474 ..     403     492 .. 0.72
+   7 ?    6.2   0.0     0.028   2.2e+02      71     126 ..     503     550 ..     479     573 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.027
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG66|UBC_GORGO  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          44444444.........444441345689*********************9999764 PP
+
+  == domain 2  score: 6.3 bits;  conditional E-value: 0.026
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG66|UBC_GORGO 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          44444444.........444441345689*********************9999765 PP
+
+  == domain 3  score: 6.3 bits;  conditional E-value: 0.026
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG66|UBC_GORGO 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                          44444444.........444441345689*********************9999765 PP
+
+  == domain 4  score: 5.7 bits;  conditional E-value: 0.039
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG66|UBC_GORGO 275 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 322
+                          55555555555543........346789*********************9998764 PP
+
+  == domain 5  score: 6.2 bits;  conditional E-value: 0.028
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG66|UBC_GORGO 351 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 398
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 6  score: 6.1 bits;  conditional E-value: 0.03
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG66|UBC_GORGO 427 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 474
+                          44444444444433........345689*********************9998764 PP
+
+  == domain 7  score: 6.2 bits;  conditional E-value: 0.028
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG66|UBC_GORGO 503 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 550
+                          44444444444433........345689*********************9999765 PP
+
+>> sp|P0CG68|UBC_PIG  Polyubiquitin-C OS=Sus scrofa OX=9823 GN=UBC PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   0.0     0.032   2.6e+02      71     126 ..      47      94 ..      29     118 .. 0.79
+   2 ?    6.4   0.0     0.024   1.9e+02      71     126 ..     123     170 ..      98     187 .. 0.72
+   3 ?    6.4   0.0     0.024   1.9e+02      71     126 ..     199     246 ..     174     264 .. 0.72
+   4 ?    6.4   0.0     0.025     2e+02      71     126 ..     275     322 ..     251     340 .. 0.72
+   5 ?    6.4   0.0     0.024   1.9e+02      71     126 ..     351     398 ..     327     417 .. 0.72
+   6 ?    6.4   0.0     0.025     2e+02      71     126 ..     427     474 ..     403     492 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.032
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG68|UBC_PIG  47 GKQLEDGRTLSDYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                        566666665555543........46789*********************9999765 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.024
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG68|UBC_PIG 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                        44444444.........444441345689*********************9998764 PP
+
+  == domain 3  score: 6.4 bits;  conditional E-value: 0.024
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG68|UBC_PIG 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                        44444444.........444441345689*********************9998764 PP
+
+  == domain 4  score: 6.4 bits;  conditional E-value: 0.025
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG68|UBC_PIG 275 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 322
+                        44444444444433........345689*********************9998764 PP
+
+  == domain 5  score: 6.4 bits;  conditional E-value: 0.024
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG68|UBC_PIG 351 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 398
+                        44444444444433........345689*********************9998764 PP
+
+  == domain 6  score: 6.4 bits;  conditional E-value: 0.025
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG68|UBC_PIG 427 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 474
+                        44444444444433........345689*********************9998764 PP
+
+>> sp|P0CG78|UBIQF_DICDI  Polyubiquitin-F OS=Dictyostelium discoideum OX=44689 GN=ubqF PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.7   0.0     0.039   3.1e+02      71     125 ..      47      93 ..      24     109 .. 0.75
+   2 ?    5.7   0.0     0.039   3.1e+02      71     125 ..     123     169 ..      98     181 .. 0.73
+   3 ?    5.7   0.0     0.041   3.2e+02      71     124 ..     199     244 ..     175     256 .. 0.73
+   4 ?    5.7   0.0     0.039   3.1e+02      71     125 ..     275     321 ..     251     334 .. 0.73
+   5 ?    5.6   0.0     0.042   3.3e+02      71     124 ..     351     396 ..     327     407 .. 0.73
+   6 ?    5.8   0.0     0.038     3e+02      71     125 ..     427     473 ..     403     489 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 5.7 bits;  conditional E-value: 0.039
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG78|UBIQF_DICDI  47 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 93 
+                            44444444444443........345689*********************999864 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.039
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG78|UBIQF_DICDI 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 169
+                            44444444.........444441345689*********************999864 PP
+
+  == domain 3  score: 5.7 bits;  conditional E-value: 0.041
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactis 124
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ 
+  sp|P0CG78|UBIQF_DICDI 199 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLE 244
+                            44444444444433........345689*********************99986 PP
+
+  == domain 4  score: 5.7 bits;  conditional E-value: 0.039
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG78|UBIQF_DICDI 275 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 321
+                            44444444444433........345689*********************999864 PP
+
+  == domain 5  score: 5.6 bits;  conditional E-value: 0.042
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactis 124
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ 
+  sp|P0CG78|UBIQF_DICDI 351 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLE 396
+                            44444444444433........345689*********************99986 PP
+
+  == domain 6  score: 5.8 bits;  conditional E-value: 0.038
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG78|UBIQF_DICDI 427 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 473
+                            44444444444433........345689*********************999864 PP
+
+>> sp|P42740|UBIQP_AGLNE  Polyubiquitin OS=Aglaothamnion neglectum OX=2765 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.8   0.0    0.0087        69      67     130 ..      31      98 ..      20     118 .. 0.72
+   2 ?    6.3   0.0     0.026   2.1e+02      71     130 ..     123     174 ..     105     189 .. 0.71
+   3 ?    7.6   0.0      0.01        80      71     130 ..     199     250 ..     173     269 .. 0.70
+   4 !    7.7   0.0    0.0094        75      71     130 ..     275     326 ..     251     346 .. 0.70
+   5 !    7.7   0.0    0.0099        79      71     130 ..     351     402 ..     326     422 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 0.0087
+         NFECIMNI_00025  67 hdeegkeledqprif...dyevsynldgymsek.ssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            +d+eg   + q  if     e    l  y ++k s++h v++   g+ + + tl gk  t+ +    t
+  sp|P42740|UBIQP_AGLNE  31 QDKEGIPPDQQRLIFagkQLEDGRTLSDYNNQKeSTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 98 
+                            5666666655555663323456677888887763679*********************9998765554 PP
+
+  == domain 2  score: 6.3 bits;  conditional E-value: 0.026
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led   + dy         + ++s++h v++   g+ + + t+ gk  t+ +    t
+  sp|P42740|UBIQP_AGLNE 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTITGKTITLEVESSDT 174
+                            45555555555443........346789**********************9998765544 PP
+
+  == domain 3  score: 7.6 bits;  conditional E-value: 0.01
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|P42740|UBIQP_AGLNE 199 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 250
+                            4444444.........4454441345689**********************9998765544 PP
+
+  == domain 4  score: 7.7 bits;  conditional E-value: 0.0094
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|P42740|UBIQP_AGLNE 275 GKQLEDG---------RTLSDYnLQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 326
+                            4444444.........4444441456789**********************9998765554 PP
+
+  == domain 5  score: 7.7 bits;  conditional E-value: 0.0099
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|P42740|UBIQP_AGLNE 351 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 402
+                            44444444.........444441345689**********************9998765554 PP
+
+>> sp|P59669|UBIQP_GEOCY  Polyubiquitin OS=Geodia cydonium OX=6047 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   0.0     0.016   1.3e+02      71     126 ..      47      94 ..      22     112 .. 0.71
+   2 ?    6.9   0.0     0.016   1.3e+02      71     126 ..     123     170 ..      96     187 .. 0.71
+   3 ?    7.0   0.0     0.016   1.2e+02      71     126 ..     199     246 ..     175     270 .. 0.72
+   4 ?    6.1   0.0      0.03   2.4e+02      71     126 ..     275     322 ..     257     337 .. 0.73
+   5 ?    7.0   0.0     0.016   1.3e+02      71     126 ..     351     398 ..     326     417 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.016
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P59669|UBIQP_GEOCY  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                            44444444.........444441345689*********************9998764 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.016
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P59669|UBIQP_GEOCY 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                            4444444.........4454441345689*********************9998754 PP
+
+  == domain 3  score: 7.0 bits;  conditional E-value: 0.016
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P59669|UBIQP_GEOCY 199 GKQLEDGRT---------LSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                            444444444.........44441345689*********************9998764 PP
+
+  == domain 4  score: 6.1 bits;  conditional E-value: 0.03
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P59669|UBIQP_GEOCY 275 GKQLEDGRTLSDYN--------IQKESTLHLVVRLRGGMQIFVKTLTGKTITLEVE 322
+                            45555555555443........346789*********************9998754 PP
+
+  == domain 5  score: 7.0 bits;  conditional E-value: 0.016
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P59669|UBIQP_GEOCY 351 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 398
+                            44444444.........444441345689*********************9998764 PP
+
+>> sp|P42739|UBIQP_ACEPE  Polyubiquitin (Fragment) OS=Acetabularia peniculus OX=35862 PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.0     0.019   1.5e+02      71     129 ..      12      62 ..       8      78 .. 0.77
+   2 ?    7.3   0.0     0.013     1e+02      71     130 ..      88     139 ..      64     159 .. 0.70
+   3 ?    7.3   0.0     0.013     1e+02      71     130 ..     164     215 ..     139     232 .. 0.73
+   4 ?    7.3   0.0     0.012        99      71     130 ..     240     291 ..     216     311 .. 0.74
+   5 ?    7.3   0.0     0.013     1e+02      71     130 ..     316     367 ..     293     387 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.019
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P42739|UBIQP_ACEPE  12 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVQSSD 62 
+                            677777776666644........46799*********************9999864443 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 0.013
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|P42739|UBIQP_ACEPE  88 GKQLEDG---------LTLADYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 139
+                            3444444.........4444441356789*********************99998765544 PP
+
+  == domain 3  score: 7.3 bits;  conditional E-value: 0.013
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|P42739|UBIQP_ACEPE 164 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 215
+                            45555555554443........346789*********************99998755544 PP
+
+  == domain 4  score: 7.3 bits;  conditional E-value: 0.012
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|P42739|UBIQP_ACEPE 240 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 291
+                            55555555555543........346789*********************99998765544 PP
+
+  == domain 5  score: 7.3 bits;  conditional E-value: 0.013
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|P42739|UBIQP_ACEPE 316 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 367
+                            55555555555543........346789*********************99998765544 PP
+
+>> sp|P0CG85|UBI1P_NICSY  Polyubiquitin OS=Nicotiana sylvestris OX=4096 GN=UBI11 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.0     0.019   1.5e+02      71     127 ..      47      95 ..      27     111 .. 0.75
+   2 ?    6.8   0.0     0.019   1.5e+02      71     128 ..     123     172 ..     105     189 .. 0.76
+   3 ?    6.6   0.0      0.02   1.6e+02      71     127 ..     199     247 ..     181     262 .. 0.76
+   4 ?    6.9   0.0     0.017   1.4e+02      71     128 ..     275     324 ..     256     346 .. 0.76
+   5 ?    6.6   0.0      0.02   1.6e+02      71     127 ..     351     399 ..     333     414 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.019
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG85|UBI1P_NICSY  47 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 95 
+                            556666555555443........46799*********************99997644 PP
+
+  == domain 2  score: 6.8 bits;  conditional E-value: 0.019
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CG85|UBI1P_NICSY 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            566666655555543........46799*********************999986444 PP
+
+  == domain 3  score: 6.6 bits;  conditional E-value: 0.02
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG85|UBI1P_NICSY 199 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 247
+                            566666655555543........46799*********************99997644 PP
+
+  == domain 4  score: 6.9 bits;  conditional E-value: 0.017
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CG85|UBI1P_NICSY 275 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 324
+                            566666555555543........46799*********************999986544 PP
+
+  == domain 5  score: 6.6 bits;  conditional E-value: 0.02
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG85|UBI1P_NICSY 351 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 399
+                            566666655555543........46799*********************99997644 PP
+
+>> sp|Q8H159|UBQ10_ARATH  Polyubiquitin 10 OS=Arabidopsis thaliana OX=3702 GN=UBQ10 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.0     0.019   1.5e+02      71     127 ..      47      95 ..      27     111 .. 0.75
+   2 ?    6.8   0.0     0.019   1.5e+02      71     128 ..     123     172 ..     105     189 .. 0.76
+   3 ?    6.6   0.0      0.02   1.6e+02      71     127 ..     199     247 ..     181     262 .. 0.76
+   4 ?    6.9   0.0     0.017   1.4e+02      71     128 ..     275     324 ..     256     346 .. 0.76
+   5 ?    6.6   0.0      0.02   1.6e+02      71     127 ..     351     399 ..     333     414 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.019
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|Q8H159|UBQ10_ARATH  47 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 95 
+                            556666555555443........46799*********************99997644 PP
+
+  == domain 2  score: 6.8 bits;  conditional E-value: 0.019
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q8H159|UBQ10_ARATH 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            566666655555543........46799*********************999986444 PP
+
+  == domain 3  score: 6.6 bits;  conditional E-value: 0.02
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|Q8H159|UBQ10_ARATH 199 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 247
+                            566666655555543........46799*********************99997644 PP
+
+  == domain 4  score: 6.9 bits;  conditional E-value: 0.017
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q8H159|UBQ10_ARATH 275 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 324
+                            566666555555543........46799*********************999986544 PP
+
+  == domain 5  score: 6.6 bits;  conditional E-value: 0.02
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|Q8H159|UBQ10_ARATH 351 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 399
+                            566666655555543........46799*********************99997644 PP
+
+>> sp|P0CH04|UBI1P_PETCR  Polyubiquitin OS=Petroselinum crispum OX=4043 GN=PCUBI4-1 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8   0.0     0.018   1.5e+02      71     128 ..      47      96 ..      28     113 .. 0.75
+   2 ?    6.9   0.0     0.017   1.4e+02      71     128 ..     123     172 ..     104     194 .. 0.76
+   3 ?    6.7   0.0     0.019   1.5e+02      71     128 ..     199     248 ..     181     264 .. 0.76
+   4 ?    7.0   0.0     0.016   1.3e+02      71     128 ..     275     324 ..     251     346 .. 0.76
+   5 ?    7.2   0.0     0.014   1.1e+02      71     130 ..     351     402 ..     330     457 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.018
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH04|UBI1P_PETCR  47 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                            566666555555543........46799*********************999986444 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.017
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH04|UBI1P_PETCR 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            566666555555543........46799*********************999986544 PP
+
+  == domain 3  score: 6.7 bits;  conditional E-value: 0.019
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH04|UBI1P_PETCR 199 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 248
+                            566666655555543........46799*********************999976444 PP
+
+  == domain 4  score: 7.0 bits;  conditional E-value: 0.016
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH04|UBI1P_PETCR 275 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 324
+                            55555555555543........346789*********************999986544 PP
+
+  == domain 5  score: 7.2 bits;  conditional E-value: 0.014
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|P0CH04|UBI1P_PETCR 351 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 402
+                            55555555555543........346799*********************99998654443 PP
+
+>> sp|P0CH05|UBI2P_PETCR  Polyubiquitin OS=Petroselinum crispum OX=4043 GN=PCUBI4-2 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8   0.0     0.018   1.5e+02      71     128 ..      47      96 ..      28     113 .. 0.75
+   2 ?    6.9   0.0     0.017   1.4e+02      71     128 ..     123     172 ..     104     194 .. 0.76
+   3 ?    6.7   0.0     0.019   1.5e+02      71     128 ..     199     248 ..     181     264 .. 0.76
+   4 ?    7.0   0.0     0.016   1.3e+02      71     128 ..     275     324 ..     251     346 .. 0.76
+   5 ?    7.2   0.0     0.014   1.1e+02      71     130 ..     351     402 ..     330     457 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.018
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH05|UBI2P_PETCR  47 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                            566666555555543........46799*********************999986444 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.017
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH05|UBI2P_PETCR 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            566666555555543........46799*********************999986544 PP
+
+  == domain 3  score: 6.7 bits;  conditional E-value: 0.019
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH05|UBI2P_PETCR 199 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 248
+                            566666655555543........46799*********************999976444 PP
+
+  == domain 4  score: 7.0 bits;  conditional E-value: 0.016
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH05|UBI2P_PETCR 275 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 324
+                            55555555555543........346789*********************999986544 PP
+
+  == domain 5  score: 7.2 bits;  conditional E-value: 0.014
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|P0CH05|UBI2P_PETCR 351 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 402
+                            55555555555543........346799*********************99998654443 PP
+
+>> sp|P0CG75|UBI4P_KLULA  Polyubiquitin OS=Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / N
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.9   0.0    0.0086        68      71     129 ..      47      97 ..      22     118 .. 0.71
+   2 ?    7.3   0.0     0.013     1e+02      71     127 ..     123     171 ..     104     185 .. 0.72
+   3 ?    7.4   0.0     0.012        94      71     127 ..     199     247 ..     178     261 .. 0.71
+   4 !    7.9   0.0    0.0087        69      71     129 ..     275     325 ..     250     346 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.0086
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG75|UBI4P_KLULA  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 97 
+                            44444444.........444441345689*********************9999865444 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 0.013
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG75|UBI4P_KLULA 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 171
+                            45555554444443........346789*********************99997644 PP
+
+  == domain 3  score: 7.4 bits;  conditional E-value: 0.012
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG75|UBI4P_KLULA 199 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 247
+                            44444444444443........346689*********************99997644 PP
+
+  == domain 4  score: 7.9 bits;  conditional E-value: 0.0087
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG75|UBI4P_KLULA 275 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 325
+                            44444444.........444441345689*********************9999865444 PP
+
+>> sp|P0CG63|UBI4P_YEAST  Polyubiquitin OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UBI4 PE=1 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.9   0.0    0.0086        68      71     129 ..      47      97 ..      22     118 .. 0.71
+   2 ?    7.3   0.0     0.013     1e+02      71     127 ..     123     171 ..     104     185 .. 0.72
+   3 ?    7.4   0.0     0.012        94      71     127 ..     199     247 ..     178     261 .. 0.71
+   4 !    7.9   0.0    0.0087        69      71     129 ..     275     325 ..     250     346 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.0086
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG63|UBI4P_YEAST  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 97 
+                            44444444.........444441345689*********************9999865444 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 0.013
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG63|UBI4P_YEAST 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 171
+                            45555554444443........346789*********************99997644 PP
+
+  == domain 3  score: 7.4 bits;  conditional E-value: 0.012
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG63|UBI4P_YEAST 199 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 247
+                            44444444444443........346689*********************99997644 PP
+
+  == domain 4  score: 7.9 bits;  conditional E-value: 0.0087
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG63|UBI4P_YEAST 275 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 325
+                            44444444.........444441345689*********************9999865444 PP
+
+>> sp|P69315|UBIQP_LINUS  Polyubiquitin (Fragment) OS=Linum usitatissimum OX=4006 PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   0.0      0.01        79      71     128 ..      12      61 ..       8      83 .. 0.79
+   2 ?    7.6   0.0      0.01        82      71     128 ..      88     137 ..      70     153 .. 0.75
+   3 !    7.8   0.0    0.0091        72      71     128 ..     164     213 ..     145     235 .. 0.76
+   4 ?    7.5   0.0     0.011        87      71     127 ..     240     288 ..     221     302 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.01
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69315|UBIQP_LINUS  12 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFLKTLTGKTITLEVESS 61 
+                            677777777766644........46799*********************999986544 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.01
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69315|UBIQP_LINUS  88 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 137
+                            566666655555543........46799*********************999986444 PP
+
+  == domain 3  score: 7.8 bits;  conditional E-value: 0.0091
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69315|UBIQP_LINUS 164 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 213
+                            566666555555543........46799*********************999986544 PP
+
+  == domain 4  score: 7.5 bits;  conditional E-value: 0.011
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P69315|UBIQP_LINUS 240 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 288
+                            566666555555543........46799*********************99997644 PP
+
+>> sp|P0CG72|UBI4P_SCHPO  Polyubiquitin OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=ubi4 PE=1 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   0.0    0.0096        77      71     128 ..      47      96 ..      22     112 .. 0.70
+   2 !    7.7   0.0    0.0097        77      71     128 ..     123     172 ..      99     189 .. 0.70
+   3 ?    7.6   0.0      0.01        81      71     129 ..     199     249 ..     180     270 .. 0.72
+   4 ?    7.6   0.0      0.01        82      71     129 ..     275     325 ..     255     344 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.0096
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CG72|UBI4P_SCHPO  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                            44444444.........444441345689*********************999986544 PP
+
+  == domain 2  score: 7.7 bits;  conditional E-value: 0.0097
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CG72|UBI4P_SCHPO 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            44444444.........444441345689*********************999986544 PP
+
+  == domain 3  score: 7.6 bits;  conditional E-value: 0.01
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG72|UBI4P_SCHPO 199 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 249
+                            45555554444443........346789*********************9999865444 PP
+
+  == domain 4  score: 7.6 bits;  conditional E-value: 0.01
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG72|UBI4P_SCHPO 275 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 325
+                            44555544444443........346689*********************9999865444 PP
+
+>> sp|P0CG82|UBIQP_TETPY  Polyubiquitin OS=Tetrahymena pyriformis OX=5908 GN=TU20 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.4   0.0     0.012        98      71     126 ..      47      94 ..      22     113 .. 0.71
+   2 ?    7.0   0.0     0.015   1.2e+02      71     125 ..     123     169 ..      98     181 .. 0.71
+   3 ?    7.2   0.0     0.013   1.1e+02      71     126 ..     199     246 ..     172     261 .. 0.71
+   4 ?    7.4   0.0     0.012        92      71     127 ..     275     323 ..     250     346 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 7.4 bits;  conditional E-value: 0.012
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG82|UBIQP_TETPY  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLDVE 94 
+                            4444444.........4444441345689*********************9998764 PP
+
+  == domain 2  score: 7.0 bits;  conditional E-value: 0.015
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG82|UBIQP_TETPY 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLDV 169
+                            4444444.........4444441345689*********************999875 PP
+
+  == domain 3  score: 7.2 bits;  conditional E-value: 0.013
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG82|UBIQP_TETPY 199 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLDVE 246
+                            4444444.........4454451345689*********************9998754 PP
+
+  == domain 4  score: 7.4 bits;  conditional E-value: 0.012
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG82|UBIQP_TETPY 275 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLDVEA 323
+                            4444444.........4444441345689*********************99987644 PP
+
+>> sp|P0CG84|UBI4P_NICSY  Polyubiquitin (Fragment) OS=Nicotiana sylvestris OX=4096 GN=UBI4 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.1   0.0     0.015   1.2e+02      71     127 ..      43      91 ..      24     106 .. 0.75
+   2 ?    7.0   0.0     0.016   1.3e+02      71     127 ..     119     167 ..      99     180 .. 0.75
+   3 ?    7.2   0.0     0.014   1.1e+02      71     128 ..     195     244 ..     175     260 .. 0.75
+   4 ?    7.4   0.0     0.012        97      71     128 ..     271     320 ..     246     338 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 7.1 bits;  conditional E-value: 0.015
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG84|UBI4P_NICSY  43 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 91 
+                            566666555555543........46799*********************99997644 PP
+
+  == domain 2  score: 7.0 bits;  conditional E-value: 0.016
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG84|UBI4P_NICSY 119 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 167
+                            556666555555443........46799*********************99987644 PP
+
+  == domain 3  score: 7.2 bits;  conditional E-value: 0.014
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CG84|UBI4P_NICSY 195 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 244
+                            556666555555443........46799*********************999976444 PP
+
+  == domain 4  score: 7.4 bits;  conditional E-value: 0.012
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CG84|UBI4P_NICSY 271 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 320
+                            55555555555543........346789*********************999986544 PP
+
+>> sp|P0CH32|UBQ4_ARATH  Polyubiquitin 4 OS=Arabidopsis thaliana OX=3702 GN=UBQ4 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.2   0.0     0.014   1.1e+02      71     128 ..      47      96 ..      26     112 .. 0.75
+   2 ?    7.2   0.0     0.014   1.1e+02      71     128 ..     123     172 ..     105     193 .. 0.76
+   3 ?    7.2   0.0     0.014   1.1e+02      71     128 ..     199     248 ..     182     271 .. 0.77
+   4 ?    7.2   0.0     0.014   1.1e+02      71     128 ..     275     324 ..     255     341 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 7.2 bits;  conditional E-value: 0.014
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH32|UBQ4_ARATH  47 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                           55555555555543........346799*********************999976444 PP
+
+  == domain 2  score: 7.2 bits;  conditional E-value: 0.014
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH32|UBQ4_ARATH 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                           566666655555543........46799*********************999986544 PP
+
+  == domain 3  score: 7.2 bits;  conditional E-value: 0.014
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH32|UBQ4_ARATH 199 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 248
+                           566666666655543........46799*********************999986544 PP
+
+  == domain 4  score: 7.2 bits;  conditional E-value: 0.014
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH32|UBQ4_ARATH 275 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 324
+                           556666555555443........46799*********************999986444 PP
+
+>> sp|P69322|UBIQP_PEA  Polyubiquitin OS=Pisum sativum OX=3888 GN=PU1 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   0.0     0.012        99      71     128 ..      47      96 ..      26     118 .. 0.76
+   2 ?    7.1   0.0     0.015   1.2e+02      71     128 ..     123     172 ..     106     189 .. 0.76
+   3 ?    7.1   0.0     0.015   1.2e+02      71     127 ..     199     247 ..     180     263 .. 0.75
+   4 ?    7.2   0.0     0.013   1.1e+02      71     128 ..     275     324 ..     254     342 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.012
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69322|UBIQP_PEA  47 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                          55555555555543........346799*********************999986544 PP
+
+  == domain 2  score: 7.1 bits;  conditional E-value: 0.015
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                          gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69322|UBIQP_PEA 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                          566666666655543........46799*********************999986444 PP
+
+  == domain 3  score: 7.1 bits;  conditional E-value: 0.015
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                          gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P69322|UBIQP_PEA 199 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 247
+                          566666555555543........46799*********************99997644 PP
+
+  == domain 4  score: 7.2 bits;  conditional E-value: 0.013
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                          gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69322|UBIQP_PEA 275 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 324
+                          55555555555543........346799*********************999986544 PP
+
+>> sp|Q58G87|UBQ3_ORYSJ  Polyubiquitin 3 OS=Oryza sativa subsp. japonica OX=39947 GN=UBQ3 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.2   0.0     0.014   1.1e+02      71     128 ..      47      96 ..      26     112 .. 0.75
+   2 ?    7.1   0.0     0.014   1.1e+02      71     128 ..     123     172 ..     106     190 .. 0.76
+   3 ?    6.9   0.0     0.016   1.3e+02      71     127 ..     199     247 ..     182     261 .. 0.76
+   4 ?    7.2   0.0     0.013   1.1e+02      71     128 ..     275     324 ..     257     346 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 7.2 bits;  conditional E-value: 0.014
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q58G87|UBQ3_ORYSJ  47 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                           55555555555543........346799*********************999976444 PP
+
+  == domain 2  score: 7.1 bits;  conditional E-value: 0.014
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q58G87|UBQ3_ORYSJ 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                           566666666655543........46799*********************999986544 PP
+
+  == domain 3  score: 6.9 bits;  conditional E-value: 0.016
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                           gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|Q58G87|UBQ3_ORYSJ 199 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVES 247
+                           566666666655543........46799*********************99997644 PP
+
+  == domain 4  score: 7.2 bits;  conditional E-value: 0.013
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q58G87|UBQ3_ORYSJ 275 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 324
+                           566666655555543........46799*********************999986544 PP
+
+>> sp|P0CG76|UBIQA_DICDI  Polyubiquitin-A OS=Dictyostelium discoideum OX=44689 GN=ubqA PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.0     0.019   1.5e+02      71     125 ..      47      93 ..      23     113 .. 0.72
+   2 ?    6.5   0.0     0.022   1.7e+02      71     125 ..     123     169 ..     100     185 .. 0.73
+   3 ?    6.3   0.0     0.027   2.1e+02      71     124 ..     199     244 ..     175     254 .. 0.73
+   4 ?    6.7   0.0     0.019   1.5e+02      71     125 ..     275     321 ..     251     341 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.019
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG76|UBIQA_DICDI  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 93 
+                            44444444.........444441345689*********************999875 PP
+
+  == domain 2  score: 6.5 bits;  conditional E-value: 0.022
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG76|UBIQA_DICDI 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 169
+                            44444444444443........345689*********************999865 PP
+
+  == domain 3  score: 6.3 bits;  conditional E-value: 0.027
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactis 124
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ 
+  sp|P0CG76|UBIQA_DICDI 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLE 244
+                            44444444.........444441345689*********************99986 PP
+
+  == domain 4  score: 6.7 bits;  conditional E-value: 0.019
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG76|UBIQA_DICDI 275 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 321
+                            44444444.........444441345689*********************999875 PP
+
+>> sp|P0CG79|UBIQG_DICDI  Polyubiquitin-G OS=Dictyostelium discoideum OX=44689 GN=ubqG PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.5   0.0     0.022   1.8e+02      71     125 ..      47      93 ..      23     112 .. 0.74
+   2 ?    6.3   0.0     0.025     2e+02      71     125 ..     123     169 ..     100     182 .. 0.74
+   3 ?    6.4   0.0     0.024   1.9e+02      71     125 ..     199     245 ..     176     261 .. 0.74
+   4 ?    6.5   0.0     0.022   1.8e+02      71     125 ..     275     321 ..     250     338 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 6.5 bits;  conditional E-value: 0.022
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG79|UBIQG_DICDI  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 93 
+                            44444444.........444441345689*********************999864 PP
+
+  == domain 2  score: 6.3 bits;  conditional E-value: 0.025
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG79|UBIQG_DICDI 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 169
+                            44444444444443........345689*********************999864 PP
+
+  == domain 3  score: 6.4 bits;  conditional E-value: 0.024
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG79|UBIQG_DICDI 199 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 245
+                            44444444444443........345689*********************999864 PP
+
+  == domain 4  score: 6.5 bits;  conditional E-value: 0.022
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG79|UBIQG_DICDI 275 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 321
+                            44444444.........444441345689*********************999864 PP
+
+>> sp|P0CG81|UBIQH_DICDI  Polyubiquitin-H OS=Dictyostelium discoideum OX=44689 GN=ubqH PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.4   0.0     0.024   1.9e+02      71     125 ..      47      93 ..      23     106 .. 0.73
+   2 ?    6.3   0.0     0.025     2e+02      71     125 ..     123     169 ..     100     182 .. 0.74
+   3 ?    6.5   0.0     0.023   1.8e+02      71     125 ..     199     245 ..     174     261 .. 0.74
+   4 ?    6.4   0.0     0.024   1.9e+02      71     125 ..     275     321 ..     250     338 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 6.4 bits;  conditional E-value: 0.024
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG81|UBIQH_DICDI  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 93 
+                            44444444.........444441345689*********************999864 PP
+
+  == domain 2  score: 6.3 bits;  conditional E-value: 0.025
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG81|UBIQH_DICDI 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 169
+                            44444444444443........345689*********************999864 PP
+
+  == domain 3  score: 6.5 bits;  conditional E-value: 0.023
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG81|UBIQH_DICDI 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 245
+                            44444444.........444441345689*********************999864 PP
+
+  == domain 4  score: 6.4 bits;  conditional E-value: 0.024
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG81|UBIQH_DICDI 275 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 321
+                            44444444.........444441345689*********************999864 PP
+
+>> sp|P0CG70|UBI4P_NEUCR  Polyubiquitin OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / F
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.5   0.0    0.0056        44      71     129 ..      47      97 ..      20     116 .. 0.69
+   2 !    8.3   0.0    0.0062        50      71     128 ..     123     172 ..      97     188 .. 0.69
+   3 !    8.5   0.0    0.0056        45      71     129 ..     199     249 ..     174     270 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.0056
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgym.sekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+l         e    l  y   ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG70|UBI4P_NEUCR  47 GKQL---------EDGRTLSDYNiQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 97 
+                            3333.........4444555554045688*********************9999865444 PP
+
+  == domain 2  score: 8.3 bits;  conditional E-value: 0.0062
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgym.sekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+l         e    l  y   ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CG70|UBI4P_NEUCR 123 GKQL---------EDGRTLSDYNiQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            3344.........4444555554045688*********************999986544 PP
+
+  == domain 3  score: 8.5 bits;  conditional E-value: 0.0056
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgym.sekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+le             l  y   ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG70|UBI4P_NEUCR 199 GKQLE---------DGRTLSDYNiQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 249
+                            34444.........444555554045689*********************9999865444 PP
+
+>> sp|P0CG74|UBI4P_CANAX  Polyubiquitin OS=Candida albicans OX=5476 GN=UBI4 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.2   0.0    0.0067        53      71     128 ..      47      96 ..      22     112 .. 0.70
+   2 !    8.2   0.0    0.0069        55      71     128 ..     123     172 ..      97     187 .. 0.70
+   3 !    8.1   0.0    0.0071        56      71     129 ..     199     249 ..     180     270 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 8.2 bits;  conditional E-value: 0.0067
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CG74|UBI4P_CANAX  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                            44444444.........444441345689*********************999986544 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.0069
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CG74|UBI4P_CANAX 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            4444444.........4454441345689*********************999986444 PP
+
+  == domain 3  score: 8.1 bits;  conditional E-value: 0.0071
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG74|UBI4P_CANAX 199 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 249
+                            45555554444443........346789*********************9999865444 PP
+
+>> sp|P69325|UBIQP_SOYBN  Polyubiquitin OS=Glycine max OX=3847 GN=SUBI-1 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   0.0    0.0097        77      71     128 ..      47      96 ..      26     112 .. 0.75
+   2 !    7.8   0.0    0.0091        72      71     128 ..     123     172 ..     104     194 .. 0.76
+   3 !    7.7   0.0    0.0097        77      71     128 ..     199     248 ..     181     267 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.0097
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69325|UBIQP_SOYBN  47 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                            55555555555543........346799*********************999986444 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.0091
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69325|UBIQP_SOYBN 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            566666555555543........46799*********************999986544 PP
+
+  == domain 3  score: 7.7 bits;  conditional E-value: 0.0097
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69325|UBIQP_SOYBN 199 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 248
+                            566666655555543........46799*********************999986544 PP
+
+>> sp|Q3E7T8|UBQ14_ARATH  Polyubiquitin 14 OS=Arabidopsis thaliana OX=3702 GN=UBQ14 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   0.0    0.0097        77      71     128 ..      47      96 ..      26     112 .. 0.75
+   2 !    7.8   0.0    0.0091        72      71     128 ..     123     172 ..     104     194 .. 0.76
+   3 !    7.7   0.0    0.0097        77      71     128 ..     199     248 ..     181     267 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.0097
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q3E7T8|UBQ14_ARATH  47 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                            55555555555543........346799*********************999986444 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.0091
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q3E7T8|UBQ14_ARATH 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            566666555555543........46799*********************999986544 PP
+
+  == domain 3  score: 7.7 bits;  conditional E-value: 0.0097
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q3E7T8|UBQ14_ARATH 199 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 248
+                            566666655555543........46799*********************999986544 PP
+
+>> sp|P69309|UBIQP_AVEFA  Polyubiquitin OS=Avena fatua OX=4499 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.8   0.0    0.0091        72      71     128 ..      47      96 ..      24     113 .. 0.75
+   2 ?    7.6   0.0      0.01        79      71     128 ..     123     172 ..     105     189 .. 0.75
+   3 !    7.8   0.0    0.0093        74      71     128 ..     199     248 ..     178     266 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 0.0091
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69309|UBIQP_AVEFA  47 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                            55555555555543........346789*********************999986444 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.01
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69309|UBIQP_AVEFA 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            566666655555543........46799*********************999986444 PP
+
+  == domain 3  score: 7.8 bits;  conditional E-value: 0.0093
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P69309|UBIQP_AVEFA 199 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 248
+                            55555555555543........346799*********************999986544 PP
+
+>> sp|P0CG49|UBB_MOUSE  Polyubiquitin-B OS=Mus musculus OX=10090 GN=Ubb PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.6   0.0      0.01        79      71     126 ..      47      94 ..      22     112 .. 0.71
+   2 ?    7.5   0.0     0.011        88      71     126 ..     123     170 ..      99     186 .. 0.72
+   3 !    7.7   0.0    0.0096        76      71     127 ..     199     247 ..     175     270 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.01
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG49|UBB_MOUSE  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          4444444.........4454441345689*********************9998764 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.011
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG49|UBB_MOUSE 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 3  score: 7.7 bits;  conditional E-value: 0.0096
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliq 127
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG49|UBB_MOUSE 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 247
+                          44444444.........444441345689*********************99997654 PP
+
+>> sp|P0CG51|UBB_RAT  Polyubiquitin-B OS=Rattus norvegicus OX=10116 GN=Ubb PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.6   0.0      0.01        79      71     126 ..      47      94 ..      22     112 .. 0.71
+   2 ?    7.5   0.0     0.011        88      71     126 ..     123     170 ..      99     186 .. 0.72
+   3 !    7.7   0.0    0.0096        76      71     127 ..     199     247 ..     175     270 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.01
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG51|UBB_RAT  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                        4444444.........4454441345689*********************9998764 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.011
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                        gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG51|UBB_RAT 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                        44444444.........444441345689*********************9998764 PP
+
+  == domain 3  score: 7.7 bits;  conditional E-value: 0.0096
+     NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliq 127
+                        gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG51|UBB_RAT 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 247
+                        44444444.........444441345689*********************99997654 PP
+
+>> sp|P0CG62|UBB_CHICK  Polyubiquitin-B OS=Gallus gallus OX=9031 GN=UBB PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.6   0.0      0.01        79      71     126 ..      47      94 ..      22     112 .. 0.71
+   2 ?    7.5   0.0     0.011        88      71     126 ..     123     170 ..      99     186 .. 0.72
+   3 !    7.7   0.0    0.0096        76      71     127 ..     199     247 ..     175     270 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.01
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG62|UBB_CHICK  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          4444444.........4454441345689*********************9998764 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.011
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG62|UBB_CHICK 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          44444444.........444441345689*********************9998764 PP
+
+  == domain 3  score: 7.7 bits;  conditional E-value: 0.0096
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliq 127
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG62|UBB_CHICK 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 247
+                          44444444.........444441345689*********************99997654 PP
+
+>> sp|P0CG53|UBB_BOVIN  Polyubiquitin-B OS=Bos taurus OX=9913 GN=UBB PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   0.0     0.011        84      71     126 ..      47      94 ..      22     110 .. 0.71
+   2 ?    7.5   0.0     0.011        86      71     126 ..     123     170 ..      98     185 .. 0.71
+   3 !    7.7   0.0    0.0096        76      71     126 ..     199     246 ..     174     266 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.011
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG53|UBB_BOVIN  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          4444444.........4454441345689*********************9998764 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.011
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG53|UBB_BOVIN 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          4444444.........4454441345689*********************9998764 PP
+
+  == domain 3  score: 7.7 bits;  conditional E-value: 0.0096
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG53|UBB_BOVIN 199 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                          4444444.........4454441345689*********************9999765 PP
+
+>> sp|Q1EC66|UBQ3_ARATH  Polyubiquitin 3 OS=Arabidopsis thaliana OX=3702 GN=UBQ3 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   0.0    0.0097        77      71     128 ..      47      96 ..      26     112 .. 0.75
+   2 ?    7.6   0.0      0.01        80      71     128 ..     123     172 ..     104     188 .. 0.75
+   3 ?    7.6   0.0      0.01        80      71     128 ..     199     248 ..     181     265 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.0097
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q1EC66|UBQ3_ARATH  47 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                           55555555555543........346799*********************999986444 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.01
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q1EC66|UBQ3_ARATH 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                           566666555555543........46799*********************999986444 PP
+
+  == domain 3  score: 7.6 bits;  conditional E-value: 0.01
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q1EC66|UBQ3_ARATH 199 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 248
+                           566666655555543........46799*********************999986444 PP
+
+>> sp|P0CG54|UBB_CAVPO  Polyubiquitin-B OS=Cavia porcellus OX=10141 GN=UBB PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.5   0.0     0.011        87      71     126 ..      47      94 ..      22     110 .. 0.71
+   2 ?    7.6   0.0      0.01        81      71     126 ..     123     170 ..      97     188 .. 0.71
+   3 !    7.9   0.0    0.0082        65      71     127 ..     199     247 ..     175     306 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 7.5 bits;  conditional E-value: 0.011
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG54|UBB_CAVPO  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          4444444.........4454441345689*********************9998764 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.01
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG54|UBB_CAVPO 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          4444444.........4454451345689*********************9998764 PP
+
+  == domain 3  score: 7.9 bits;  conditional E-value: 0.0082
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliq 127
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG54|UBB_CAVPO 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 247
+                          44444444.........444441345689*********************99998654 PP
+
+>> sp|Q8MKD1|UBB_HORSE  Polyubiquitin-B OS=Equus caballus OX=9796 GN=UBB PE=2 SV=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   0.0      0.01        82      71     126 ..      47      94 ..      22     111 .. 0.71
+   2 ?    7.6   0.0      0.01        80      71     126 ..     123     170 ..      99     190 .. 0.72
+   3 ?    7.5   0.0     0.011        88      71     127 ..     199     247 ..     180     271 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.01
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|Q8MKD1|UBB_HORSE  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          4444444.........4454441345689*********************9998764 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.01
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|Q8MKD1|UBB_HORSE 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          44444444.........444441345689*********************9999765 PP
+
+  == domain 3  score: 7.5 bits;  conditional E-value: 0.011
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                          gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +  
+  sp|Q8MKD1|UBB_HORSE 199 GKQLEDGRTLSDYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 247
+                          556666555555543........46789*********************99997654 PP
+
+>> sp|P0CG55|UBB_SHEEP  Polyubiquitin-B OS=Ovis aries OX=9940 GN=UBB PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   0.0     0.011        84      71     126 ..      47      94 ..      22     110 .. 0.71
+   2 ?    7.5   0.0     0.011        86      71     126 ..     123     170 ..      98     185 .. 0.71
+   3 !    7.7   0.0    0.0096        76      71     126 ..     199     246 ..     174     266 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.011
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG55|UBB_SHEEP  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRMRGGMQIFVKTLTGKTITLEVE 94 
+                          4444444.........4454441345689*********************9998764 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.011
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG55|UBB_SHEEP 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 170
+                          4444444.........4454441345689*********************9998764 PP
+
+  == domain 3  score: 7.7 bits;  conditional E-value: 0.0096
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG55|UBB_SHEEP 199 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 246
+                          4444444.........4454441345689*********************9999765 PP
+
+>> sp|P0CG80|UBIQI_DICDI  Polyubiquitin-I OS=Dictyostelium discoideum OX=44689 GN=ubqI PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.1   0.0     0.015   1.2e+02      71     125 ..      47      93 ..      23     114 .. 0.74
+   2 ?    6.8   0.0     0.018   1.4e+02      71     125 ..     123     169 ..      99     180 .. 0.73
+   3 ?    7.0   0.0     0.016   1.3e+02      71     125 ..     199     245 ..     175     263 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 7.1 bits;  conditional E-value: 0.015
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG80|UBIQI_DICDI  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 93 
+                            44444444.........444441345689*********************999865 PP
+
+  == domain 2  score: 6.8 bits;  conditional E-value: 0.018
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG80|UBIQI_DICDI 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 169
+                            44444444.........444441345689*********************999864 PP
+
+  == domain 3  score: 7.0 bits;  conditional E-value: 0.016
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG80|UBIQI_DICDI 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 245
+                            44444444.........444441345689*********************999864 PP
+
+>> sp|P0CG88|UBIQJ_DICDI  Polyubiquitin-J OS=Dictyostelium discoideum OX=44689 GN=ubqJ PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.1   0.0     0.015   1.2e+02      71     125 ..      47      93 ..      23     114 .. 0.74
+   2 ?    6.8   0.0     0.018   1.4e+02      71     125 ..     123     169 ..      99     180 .. 0.73
+   3 ?    7.0   0.0     0.016   1.3e+02      71     125 ..     199     245 ..     175     263 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 7.1 bits;  conditional E-value: 0.015
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG88|UBIQJ_DICDI  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 93 
+                            44444444.........444441345689*********************999865 PP
+
+  == domain 2  score: 6.8 bits;  conditional E-value: 0.018
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG88|UBIQJ_DICDI 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 169
+                            44444444.........444441345689*********************999864 PP
+
+  == domain 3  score: 7.0 bits;  conditional E-value: 0.016
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG88|UBIQJ_DICDI 199 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 245
+                            44444444.........444441345689*********************999864 PP
+
+>> sp|P23324|UBIQP_EUPEU  Polyubiquitin OS=Euplotes eurystomus OX=5941 PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.7   0.0    0.0012       9.3      71     133 ..      47     101 ..      22     119 .. 0.74
+   2 !   10.5   0.1    0.0014        11      71     133 ..     123     177 ..     105     195 .. 0.75
+   3 ?   -1.5   0.0       6.1   4.8e+04      71      86 ..     199     214 ..     178     229 .] 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.0012
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkatktd 133
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ + q  t  +
+  sp|P23324|UBIQP_EUPEU  47 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLDVEQSDTIDN 101
+                            55555555555543........346789*************************9988877544 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 0.0014
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkatktd 133
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ + q  t  +
+  sp|P23324|UBIQP_EUPEU 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLDVEQSDTIDN 177
+                            566666655555543........46799*************************9988877544 PP
+
+  == domain 3  score: -1.5 bits;  conditional E-value: 6.1
+         NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                            gk+led   + dy + 
+  sp|P23324|UBIQP_EUPEU 199 GKQLEDGRTLADYNIQ 214
+                            7777777777777654 PP
+
+>> sp|P0CG73|UBI1P_CANAX  Polyubiquitin OS=Candida albicans OX=5476 GN=UBI1 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.9   0.0    0.0021        17      71     128 ..      47      96 ..      22     112 .. 0.70
+   2 !    8.8   0.0    0.0044        35      71     130 ..     123     174 ..     105     194 .. 0.72
+   3 ?   -1.3   0.0       5.2   4.1e+04      71      86 ..     199     214 ..     175     229 .] 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 0.0021
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led            l  y + ++s++h v+++  g+ + + tl gk  t+ +   
+  sp|P0CG73|UBI1P_CANAX  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRSRGGMQIFVKTLTGKTITLEVESS 96 
+                            4444444.........4454441345689*********************999986544 PP
+
+  == domain 2  score: 8.8 bits;  conditional E-value: 0.0044
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|P0CG73|UBI1P_CANAX 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 174
+                            45555555554443........346789*********************99998654443 PP
+
+  == domain 3  score: -1.3 bits;  conditional E-value: 5.2
+         NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                            gk+led   + dy + 
+  sp|P0CG73|UBI1P_CANAX 199 GKQLEDGRTLSDYNIQ 214
+                            6666666666666553 PP
+
+>> sp|C4YP88|UBI4P_CANAW  Ubiquitin-like domain-containing protein OS=Candida albicans (strain WO-1) OX=294748 GN=UBI4 P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.0   0.0     0.004        31      71     128 ..      47      96 ..      22     112 .. 0.70
+   2 !    8.8   0.0    0.0044        35      71     130 ..     123     174 ..     105     194 .. 0.72
+   3 ?   -1.3   0.0       5.2   4.1e+04      71      86 ..     199     214 ..     175     229 .] 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 0.004
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|C4YP88|UBI4P_CANAW  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                            4444444.........4454441345689*********************999986544 PP
+
+  == domain 2  score: 8.8 bits;  conditional E-value: 0.0044
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|C4YP88|UBI4P_CANAW 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 174
+                            45555555554443........346789*********************99998654443 PP
+
+  == domain 3  score: -1.3 bits;  conditional E-value: 5.2
+         NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                            gk+led   + dy + 
+  sp|C4YP88|UBI4P_CANAW 199 GKQLEDGRTLSDYNIQ 214
+                            6666666666666553 PP
+
+>> sp|Q5ADS0|UBI4P_CANAL  Polyubiquitin OS=Candida albicans (strain SC5314 / ATCC MYA-2876) OX=237561 GN=UBI4 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.0   0.0     0.004        31      71     128 ..      47      96 ..      22     112 .. 0.70
+   2 !    8.8   0.0    0.0044        35      71     130 ..     123     174 ..     105     194 .. 0.72
+   3 ?   -1.3   0.0       5.2   4.1e+04      71      86 ..     199     214 ..     175     229 .] 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 0.004
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q5ADS0|UBI4P_CANAL  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                            4444444.........4454441345689*********************999986544 PP
+
+  == domain 2  score: 8.8 bits;  conditional E-value: 0.0044
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkat 130
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +    t
+  sp|Q5ADS0|UBI4P_CANAL 123 GKQLEDGRTLSDYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSDT 174
+                            45555555554443........346789*********************99998654443 PP
+
+  == domain 3  score: -1.3 bits;  conditional E-value: 5.2
+         NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                            gk+led   + dy + 
+  sp|Q5ADS0|UBI4P_CANAL 199 GKQLEDGRTLSDYNIQ 214
+                            6666666666666553 PP
+
+>> sp|Q9FHQ6|UBQ9_ARATH  Polyubiquitin 9 OS=Arabidopsis thaliana OX=3702 GN=UBQ9 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   0.0     0.061   4.8e+02      67     128 ..      33      98 ..      27     114 .. 0.75
+   2 ?    2.5   0.0      0.38     3e+03      72     135 ..     126     180 ..     104     196 .. 0.69
+   3 ?    9.2   0.0    0.0034        27      71     128 ..     201     250 ..     184     308 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.061
+        NFECIMNI_00025  67 hdeegkeledqprifdyev...synldgymsekssi.hkvmkaldgfgvgmdtligkactisliqk 128
+                           +d eg  l+ q  if  ++      l  y  +k si h  ++   g+ + + tl gk  t+ +   
+  sp|Q9FHQ6|UBQ9_ARATH  33 QDIEGIPLDQQRLIFSGKLlddGRTLADYSIQKDSIlHLALRLRGGMQIFVKTLTGKTITLEVESS 98 
+                           57788888888888876552224568888888876549999999*************999986444 PP
+
+  == domain 2  score: 2.5 bits;  conditional E-value: 0.38
+        NFECIMNI_00025  72 keledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqkatktdat 135
+                           k+l+d   + dy         + ++s++h v++   g+ + + tl  k   + + + +  td  
+  sp|Q9FHQ6|UBQ9_ARATH 126 KQLDDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVRTLTRKTIALEV-ESSDTTDNV 180
+                           3444433333332........3567899*****************999777664.445555654 PP
+
+  == domain 3  score: 9.2 bits;  conditional E-value: 0.0034
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led   + dy +         ++s++h v++   g+ + ++tl gk  t+ +   
+  sp|Q9FHQ6|UBQ9_ARATH 201 GKQLEDGRTLADYNI--------QKESTLHLVLRLCGGMQIFVNTLTGKTITLEVESS 250
+                           566666666655543........46799*********************999986444 PP
+
+>> sp|P0CH33|UBQ11_ARATH  Polyubiquitin 11 OS=Arabidopsis thaliana OX=3702 GN=UBQ11 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.0     0.006        48      71     128 ..      47      96 ..      29     113 .. 0.75
+   2 ?    8.3   0.0    0.0062        49      71     128 ..     123     172 ..     105     188 .. 0.75
+   3 ?   -1.8   0.0       7.6     6e+04      71      86 ..     199     214 ..     190     229 .] 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.006
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH33|UBQ11_ARATH  47 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 96 
+                            566666655555543........46799*********************999986544 PP
+
+  == domain 2  score: 8.3 bits;  conditional E-value: 0.0062
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +   
+  sp|P0CH33|UBQ11_ARATH 123 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            566666655555543........46799*********************999986444 PP
+
+  == domain 3  score: -1.8 bits;  conditional E-value: 7.6
+         NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                            gk+led   + dy + 
+  sp|P0CH33|UBQ11_ARATH 199 GKQLEDGRTLADYNIQ 214
+                            8888888888888764 PP
+
+>> sp|P0CG47|UBB_HUMAN  Polyubiquitin-B OS=Homo sapiens OX=9606 GN=UBB PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.0    0.0058        46      71     126 ..      47      94 ..      22     113 .. 0.71
+   2 ?    8.5   0.0    0.0054        43      71     127 ..     123     171 ..      98     194 .. 0.72
+   3 ?   -2.1   0.0       9.8   7.7e+04      71      86 ..     199     214 ..     178     224 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.0058
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG47|UBB_HUMAN  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          4444444.........4454451345689*********************9999765 PP
+
+  == domain 2  score: 8.5 bits;  conditional E-value: 0.0054
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliq 127
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG47|UBB_HUMAN 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 171
+                          4444444.........4454451345689*********************99997654 PP
+
+  == domain 3  score: -2.1 bits;  conditional E-value: 9.8
+       NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                          gk+led   + dy + 
+  sp|P0CG47|UBB_HUMAN 199 GKQLEDGRTLSDYNIQ 214
+                          8888888888888765 PP
+
+>> sp|P0CG60|UBB_PONPY  Polyubiquitin-B OS=Pongo pygmaeus OX=9600 GN=UBB PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.0    0.0058        46      71     126 ..      47      94 ..      22     113 .. 0.71
+   2 ?    8.5   0.0    0.0054        43      71     127 ..     123     171 ..      98     194 .. 0.72
+   3 ?   -2.1   0.0       9.8   7.7e+04      71      86 ..     199     214 ..     178     224 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.0058
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG60|UBB_PONPY  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          4444444.........4454451345689*********************9999765 PP
+
+  == domain 2  score: 8.5 bits;  conditional E-value: 0.0054
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliq 127
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG60|UBB_PONPY 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 171
+                          4444444.........4454451345689*********************99997654 PP
+
+  == domain 3  score: -2.1 bits;  conditional E-value: 9.8
+       NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                          gk+led   + dy + 
+  sp|P0CG60|UBB_PONPY 199 GKQLEDGRTLSDYNIQ 214
+                          8888888888888765 PP
+
+>> sp|P0CG65|UBB_PANTR  Polyubiquitin-B OS=Pan troglodytes OX=9598 GN=UBB PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.0    0.0058        46      71     126 ..      47      94 ..      22     113 .. 0.71
+   2 ?    8.5   0.0    0.0054        43      71     127 ..     123     171 ..      98     194 .. 0.72
+   3 ?   -2.1   0.0       9.8   7.7e+04      71      86 ..     199     214 ..     178     224 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.0058
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG65|UBB_PANTR  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          4444444.........4454451345689*********************9999765 PP
+
+  == domain 2  score: 8.5 bits;  conditional E-value: 0.0054
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliq 127
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG65|UBB_PANTR 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 171
+                          4444444.........4454451345689*********************99997654 PP
+
+  == domain 3  score: -2.1 bits;  conditional E-value: 9.8
+       NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                          gk+led   + dy + 
+  sp|P0CG65|UBB_PANTR 199 GKQLEDGRTLSDYNIQ 214
+                          8888888888888765 PP
+
+>> sp|P0CG67|UBB_GORGO  Polyubiquitin-B OS=Gorilla gorilla gorilla OX=9595 GN=UBB PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.0    0.0058        46      71     126 ..      47      94 ..      22     113 .. 0.71
+   2 ?    8.5   0.0    0.0054        43      71     127 ..     123     171 ..      98     194 .. 0.72
+   3 ?   -2.1   0.0       9.8   7.7e+04      71      86 ..     199     214 ..     178     224 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.0058
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisli 126
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ + 
+  sp|P0CG67|UBB_GORGO  47 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVE 94 
+                          4444444.........4454451345689*********************9999765 PP
+
+  == domain 2  score: 8.5 bits;  conditional E-value: 0.0054
+       NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliq 127
+                          gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P0CG67|UBB_GORGO 123 GKQLEDG---------RTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 171
+                          4444444.........4454451345689*********************99997654 PP
+
+  == domain 3  score: -2.1 bits;  conditional E-value: 9.8
+       NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                          gk+led   + dy + 
+  sp|P0CG67|UBB_GORGO 199 GKQLEDGRTLSDYNIQ 214
+                          8888888888888765 PP
+
+>> sp|P22589|UBIQP_PHYIN  Polyubiquitin OS=Phytophthora infestans OX=4787 PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.0    0.0058        46      71     125 ..      47      93 ..      22     112 .. 0.70
+   2 ?    8.3   0.0    0.0065        51      71     125 ..     123     169 ..      99     185 .. 0.70
+   3 ?   -2.2   0.0       9.8   7.8e+04      71      86 ..     199     214 ..     179     224 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.0058
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgym.sekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+le             l  y   ++s++h v++   g+ + + tl gk  t+ +
+  sp|P22589|UBIQP_PHYIN  47 GKQLE---------DGRTLSDYNiQKESTLHLVLRLRGGMQIFVKTLTGKTITLDV 93 
+                            34444.........444555554045688*********************999875 PP
+
+  == domain 2  score: 8.3 bits;  conditional E-value: 0.0065
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgym.sekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y   ++s++h v++   g+ + + tl gk  t+ +
+  sp|P22589|UBIQP_PHYIN 123 GKQLED---------GRTLSDYNiQKESTLHLVLRLRGGMQIFVKTLTGKTITLDV 169
+                            344444.........44555554045689*********************999875 PP
+
+  == domain 3  score: -2.2 bits;  conditional E-value: 9.8
+         NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                            gk+led   + dy + 
+  sp|P22589|UBIQP_PHYIN 199 GKQLEDGRTLSDYNIQ 214
+                            8888888888888765 PP
+
+>> sp|P0CG77|UBIQD_DICDI  Polyubiquitin-D OS=Dictyostelium discoideum OX=44689 GN=ubqD PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.7   0.0    0.0095        75      71     125 ..      47      93 ..      23     111 .. 0.73
+   2 ?    7.7   0.0    0.0093        74      71     125 ..     123     169 ..      99     188 .. 0.73
+   3 ?   -2.1   0.0       9.4   7.5e+04      71      86 ..     199     214 ..     179     225 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.0095
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG77|UBIQD_DICDI  47 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 93 
+                            44444444.........444441345689*********************999864 PP
+
+  == domain 2  score: 7.7 bits;  conditional E-value: 0.0093
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisl 125
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +
+  sp|P0CG77|UBIQD_DICDI 123 GKQLEDGR---------TLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEV 169
+                            44444444.........444441345689*********************999864 PP
+
+  == domain 3  score: -2.1 bits;  conditional E-value: 9.4
+         NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                            gk+led   + dy + 
+  sp|P0CG77|UBIQD_DICDI 199 GKQLEDGRTLSDYNIQ 214
+                            8888888888888765 PP
+
+>> sp|Q3E7K8|UBQ12_ARATH  Polyubiquitin 12 OS=Arabidopsis thaliana OX=3702 GN=UBQ12 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.0      0.02   1.6e+02      71     127 ..      47      95 ..      38     112 .. 0.81
+   2 ?    8.7   0.0    0.0048        38      71     128 ..     123     172 ..      99     190 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.02
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led   + dy v         e s++h +++   g+ + + tl gk  t+ +  
+  sp|Q3E7K8|UBQ12_ARATH  47 GKQLEDGRTLADYNV--------QEDSTLHLLLRFRGGMQIFVKTLTGKTITLEVES 95 
+                            788888777777765........5889**********************99997644 PP
+
+  == domain 2  score: 8.7 bits;  conditional E-value: 0.0048
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqk 128
+                            gk+led   + dy         + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q3E7K8|UBQ12_ARATH 123 GKQLEDGRTLADYN--------IQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESS 172
+                            55555555555443........346789*********************999986544 PP
+
+>> sp|P0CG83|UBIQP_HORVU  Polyubiquitin (Fragment) OS=Hordeum vulgare OX=4513 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.4   0.0     0.047   3.7e+02      94     129 ..       4      39 ..       1      61 [. 0.81
+   2 ?    9.4   0.0    0.0029        23      71     129 ..      65     115 ..      45     136 .. 0.75
+   3 ?   -1.7   0.0       7.1   5.6e+04      71      86 ..     141     156 ..     125     166 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 5.4 bits;  conditional E-value: 0.047
+         NFECIMNI_00025  94 sekssihkvmkaldgfgvgmdtligkactisliqka 129
+                             ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG83|UBIQP_HORVU   4 QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 39 
+                            46799*********************9999865444 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 0.0029
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisliqka 129
+                            gk+led   + dy +         ++s++h v++   g+ + + tl gk  t+ +    
+  sp|P0CG83|UBIQP_HORVU  65 GKQLEDGRTLADYNI--------QKESTLHLVLRLRGGMQIFVKTLTGKTITLEVESSD 115
+                            555666555555433........46799*********************9999865444 PP
+
+  == domain 3  score: -1.7 bits;  conditional E-value: 7.1
+         NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                            gk+led   + dy + 
+  sp|P0CG83|UBIQP_HORVU 141 GKQLEDGRTLADYNIQ 156
+                            8999999999999875 PP
+
+>> sp|P62972|UBIQP_XENLA  Polyubiquitin (Fragment) OS=Xenopus laevis OX=8355 PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.9   0.0      0.13   1.1e+03      96     127 ..       3      34 ..       1      53 [. 0.84
+   2 ?    9.4   0.0    0.0029        23      71     127 ..      62     110 ..      37     129 .. 0.71
+   3 ?   -1.6   0.0       6.6   5.2e+04      71      86 ..     138     153 ..     121     163 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.13
+         NFECIMNI_00025  96 kssihkvmkaldgfgvgmdtligkactisliq 127
+                            +s++h v++   g+ + + tl gk  t+ +  
+  sp|P62972|UBIQP_XENLA   3 ESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 34 
+                            689*********************99997654 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 0.0029
+         NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliq 127
+                            gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +  
+  sp|P62972|UBIQP_XENLA  62 GKQLED---------GRTLSDYnIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEP 110
+                            444444.........44455551345689*********************99997654 PP
+
+  == domain 3  score: -1.6 bits;  conditional E-value: 6.6
+         NFECIMNI_00025  71 gkeledqprifdyevs 86 
+                            gk+led   + dy + 
+  sp|P62972|UBIQP_XENLA 138 GKQLEDGRTLSDYNIQ 153
+                            8899999888888775 PP
+
+>> sp|Q8R5N8|HPRK_FUSNN  Putative HPr kinase/phosphorylase OS=Fusobacterium nucleatum subsp. nucleatum (strain ATCC 2558
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0       8.9   7.1e+04     150     214 ..      76     139 ..      67     146 .. 0.75
+   2 ?   12.5   0.0   0.00032       2.5      88     149 ..     453     520 ..     443     535 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 8.9
+        NFECIMNI_00025 150 kdaerygplqlesyifnldgsatkemfdklstrggdysqqnkikgslslhkdapqlaealgiekr 214
+                           k   +y  l + + if  d+  t+e++      + +    +  k+s++++k    l++al+ie++
+  sp|Q8R5N8|HPRK_FUSNN  76 KVISEYMSLDFPALIFTKDAIITEEFYYYAKRYNKNIL-LSNEKASVTVRKIKFFLSKALSIEEE 139
+                           55677888999999999999999998765554444444.44458899999998899999988875 PP
+
+  == domain 2  score: 12.5 bits;  conditional E-value: 0.00032
+        NFECIMNI_00025  88 nldgymsekssihkvmkaldgfgvgmd..tligkact.isliqkatk...tdatkfynkvtgvtamrs 149
+                            ld+++se +s+h v+  l gfgv +   + igk+ t + li +  +    d  kfy    g    +s
+  sp|Q8R5N8|HPRK_FUSNN 453 YLDSFFSETTSVHGVLVELFGFGVLLTgkSGIGKSETaLELIHRGHRliaDDMVKFYRNTQGDVVGKS 520
+                           49*********************97752256899865378998876522268899*999888766555 PP
+
+>> sp|Q39256|UBQ8_ARATH  Polyubiquitin 8 OS=Arabidopsis thaliana OX=3702 GN=UBQ8 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   0.0     0.012        98      71     128 ..      49      98 ..      28     120 .. 0.69
+   2 ?    2.5   0.0      0.38     3e+03      71     131 ..     125     178 ..     108     198 .. 0.77
+   3 ?   -0.6   0.0       3.4   2.7e+04      89     125 ..     532     568 ..     507     584 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.012
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgy.msekssihkvmkaldgfgvgmdtligkactisliqk 128
+                           gk+led            l  y + ++s++h v++   g+ + + tl gk  t+ +   
+  sp|Q39256|UBQ8_ARATH  49 GKQLED---------GLTLADYnIQKESTLHLVLRLRGGMQIFVQTLTGKTITLEVKSS 98 
+                           344444.........44444441346789*********************999876444 PP
+
+  == domain 2  score: 2.5 bits;  conditional E-value: 0.38
+        NFECIMNI_00025  71 gkeledqprifdyevsynldgymsekssihkvmkaldgfgvgmdtligkactisli.qkatk 131
+                           gk+led   + dy +         ++s++h v++   g+ + + t+ gk  t   +  k   
+  sp|Q39256|UBQ8_ARATH 125 GKQLEDGRTLADYNI--------QKESTLHLVLRLCGGMQIFVSTFSGKNFTSDTLtLKVES 178
+                           667777666666543........46799*********************9886544044444 PP
+
+  == domain 3  score: -0.6 bits;  conditional E-value: 3.4
+        NFECIMNI_00025  89 ldgymsekssihkvmkaldgfgvgmdtligkactisl 125
+                           ld  + + s+ih+++    g+ + + tl gk   + +
+  sp|Q39256|UBQ8_ARATH 532 LDYNIQKGSTIHQLFLQRGGMQIFIKTLTGKTIILEV 568
+                           4445566789********************9876654 PP
+
+>> sp|B9DRJ3|HPRK_STRU0  HPr kinase/phosphorylase OS=Streptococcus uberis (strain ATCC BAA-854 / 0140J) OX=218495 GN=hpr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0    0.0008       6.4      84     127 ..     122     168 ..     102     185 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.0008
+        NFECIMNI_00025  84 evsynldgymsekssihkvmkaldgfgvgm..dtligkact.isliq 127
+                            +sy ld+ ++e++s+h v+  + g+gv +  d+ igk+ t + l++
+  sp|B9DRJ3|HPRK_STRU0 122 SISYYLDALLAERTSVHGVLMDIYGMGVLIqgDSGIGKSETgLELVK 168
+                           69******************999999985433888998866355555 PP
+
+>> sp|A2RFS6|HPRK_STRPG  HPr kinase/phosphorylase OS=Streptococcus pyogenes serotype M5 (strain Manfredo) OX=160491 GN=h
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0     0.001       8.1      83     127 ..     121     168 ..     102     184 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.001
+        NFECIMNI_00025  83 yevsynldgymsekssihkvmkaldgfgvgm..dtligkact.isliq 127
+                            e+sy ld+ ++e++s+h v+  + g+gv +  d+ igk+ t + l++
+  sp|A2RFS6|HPRK_STRPG 121 GEMSYFLDASLAERTSVHGVLMDIYGMGVLIqgDSGIGKSETgLELVK 168
+                           589******************999999985433888998866355555 PP
+
+>> sp|P68898|HPRK_STRP1  HPr kinase/phosphorylase OS=Streptococcus pyogenes serotype M1 OX=301447 GN=hprK PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0     0.001       8.1      83     127 ..     121     168 ..     102     184 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.001
+        NFECIMNI_00025  83 yevsynldgymsekssihkvmkaldgfgvgm..dtligkact.isliq 127
+                            e+sy ld+ ++e++s+h v+  + g+gv +  d+ igk+ t + l++
+  sp|P68898|HPRK_STRP1 121 GEMSYFLDASLAERTSVHGVLMDIYGMGVLIqgDSGIGKSETgLELVK 168
+                           589******************999999985433888998866355555 PP
+
+>> sp|P68899|HPRK_STRP8  HPr kinase/phosphorylase OS=Streptococcus pyogenes serotype M18 (strain MGAS8232) OX=186103 GN=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0     0.001       8.1      83     127 ..     121     168 ..     102     184 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.001
+        NFECIMNI_00025  83 yevsynldgymsekssihkvmkaldgfgvgm..dtligkact.isliq 127
+                            e+sy ld+ ++e++s+h v+  + g+gv +  d+ igk+ t + l++
+  sp|P68899|HPRK_STRP8 121 GEMSYFLDASLAERTSVHGVLMDIYGMGVLIqgDSGIGKSETgLELVK 168
+                           589******************999999985433888998866355555 PP
+
+>> sp|Q5XD71|HPRK_STRP6  HPr kinase/phosphorylase OS=Streptococcus pyogenes serotype M6 (strain ATCC BAA-946 / MGAS10394
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0     0.001       8.1      83     127 ..     121     168 ..     102     184 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.001
+        NFECIMNI_00025  83 yevsynldgymsekssihkvmkaldgfgvgm..dtligkact.isliq 127
+                            e+sy ld+ ++e++s+h v+  + g+gv +  d+ igk+ t + l++
+  sp|Q5XD71|HPRK_STRP6 121 GEMSYFLDASLAERTSVHGVLMDIYGMGVLIqgDSGIGKSETgLELVK 168
+                           589******************999999985433888998866355555 PP
+
+>> sp|P0DD52|HPRK_STRP3  HPr kinase/phosphorylase OS=Streptococcus pyogenes serotype M3 (strain ATCC BAA-595 / MGAS315) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0     0.001       8.1      83     127 ..     121     168 ..     102     184 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.001
+        NFECIMNI_00025  83 yevsynldgymsekssihkvmkaldgfgvgm..dtligkact.isliq 127
+                            e+sy ld+ ++e++s+h v+  + g+gv +  d+ igk+ t + l++
+  sp|P0DD52|HPRK_STRP3 121 GEMSYFLDASLAERTSVHGVLMDIYGMGVLIqgDSGIGKSETgLELVK 168
+                           589******************999999985433888998866355555 PP
+
+>> sp|P0DD53|HPRK_STRPQ  HPr kinase/phosphorylase OS=Streptococcus pyogenes serotype M3 (strain SSI-1) OX=193567 GN=hprK
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0     0.001       8.1      83     127 ..     121     168 ..     102     184 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.001
+        NFECIMNI_00025  83 yevsynldgymsekssihkvmkaldgfgvgm..dtligkact.isliq 127
+                            e+sy ld+ ++e++s+h v+  + g+gv +  d+ igk+ t + l++
+  sp|P0DD53|HPRK_STRPQ 121 GEMSYFLDASLAERTSVHGVLMDIYGMGVLIqgDSGIGKSETgLELVK 168
+                           589******************999999985433888998866355555 PP
+
+>> sp|A8GWC2|RUVA_RICB8  Holliday junction branch migration complex subunit RuvA OS=Rickettsia bellii (strain OSU 85-389
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   0.00073       5.8      85     155 ..      55     123 ..      26     189 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.00073
+        NFECIMNI_00025  85 vsynldgyms.ekssihkvmkaldgfgvgmdtligkactisliqkatktdatkfynkvtgvtamrskdaery 155
+                              nl g++s e+ s+  ++++++g+g  m   i  a t + iq a   +   ++  ++gv a     aer 
+  sp|A8GWC2|RUVA_RICB8  55 DHINLYGFLSlEEKSFFNLLQSVNGIGTRMALSILSALTPTDIQIAINNEDKNIFKAISGVGAK---LAERI 123
+                           457999999867889999********************************999***99999875...44554 PP
+
+>> sp|Q7VNA7|PSD_HAEDU  Phosphatidylserine decarboxylase proenzyme OS=Haemophilus ducreyi (strain 35000HP / ATCC 700724)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0    0.0011       8.9     124     180 ..     225     281 ..     195     291 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.0011
+       NFECIMNI_00025 124 sliqkatktdatkfynkvtgvtamrskdaerygplqlesyifnldgsatkemfdkls 180
+                           +i      d  ++  + tg ta++ k  ++ g ++l s ++nl   at e+   l 
+  sp|Q7VNA7|PSD_HAEDU 225 GIINPPRSKDVVEYNYQTTGETAIHLKKGDEMGAFRLGSTVINLFPQATVELVSHLQ 281
+                          45666777899999999**********************************988764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (261 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13511  (0.0236262); expected 11437.3 (0.02)
+Passed bias filter:                    10494  (0.0183505); expected 11437.3 (0.02)
+Passed Vit filter:                       677  (0.00118385); expected 571.9 (0.001)
+Passed Fwd filter:                        72  (0.000125904); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              72  [number of targets reported over threshold]
+# CPU time: 3.29u 0.44s 00:00:03.73 Elapsed: 00:00:01.50
+# Mc/sec: 35960.79
+//
+[ok]

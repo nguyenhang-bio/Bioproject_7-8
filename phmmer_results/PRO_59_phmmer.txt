@@ -1,0 +1,184 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_59.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00059  [L=476]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+      0.014   19.5   3.6      0.036   18.1   2.1    1.9  2  sp|O31966|YOMR_BACSU   SPbeta prophage-derived uncharacterize
+        1.4   12.9   0.0        1.4   12.9   0.0    1.1  1  sp|Q17Y77|ATPE_HELAH   ATP synthase epsilon chain OS=Helicoba
+        1.7   12.6   0.1        1.9   12.4   0.1    1.0  1  sp|Q971I5|RL18A_SULTO  Large ribosomal subunit protein eL20 O
+        2.4   12.1   0.0        2.5   12.0   0.0    1.1  1  sp|B5Z8C9|ATPE_HELPG   ATP synthase epsilon chain OS=Helicoba
+        2.6   12.0   0.0        2.7   11.9   0.0    1.1  1  sp|Q1CSD6|ATPE_HELPH   ATP synthase epsilon chain OS=Helicoba
+        2.9   11.8   0.0        3.1   11.7   0.0    1.1  1  sp|P56084|ATPE_HELPY   ATP synthase epsilon chain OS=Helicoba
+          4   11.4   0.0        5.8   10.8   0.0    1.2  1  sp|A0QSY5|FOLD_MYCS2   Bifunctional protein FolD OS=Mycolicib
+        4.3   11.3   0.0        6.4   10.7   0.0    1.2  1  sp|Q6RX33|FOLD_MYCFO   Bifunctional protein FolD OS=Mycolicib
+        4.3   11.3   0.0        4.5   11.2   0.0    1.1  1  sp|B2UUN9|ATPE_HELPS   ATP synthase epsilon chain OS=Helicoba
+        4.8   11.1   0.1         57    7.6   0.1    2.0  2  sp|Q478G7|SELO_DECAR   Protein adenylyltransferase SelO OS=De
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|O31966|YOMR_BACSU  SPbeta prophage-derived uncharacterized protein YomR OS=Bacillus subtilis (strain 168) OX=22430
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   18.1   2.1   6.4e-07     0.036     113     229 ..      43     159 ..      22     172 .. 0.78
+   2 ?    5.0   0.8    0.0058   3.3e+02     107     173 ..     135     197 ..     108     203 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 18.1 bits;  conditional E-value: 6.4e-07
+        NFECIMNI_00059 113 nsflal.nkkiddhvaarndphnvtadqvdtyiksvidskvakvdgdisnhvnrkdnphgvtaaqagavpvtggtytgavtf..naset 198
+                           n f+     ++  h   +++ph vt +qv   + +v+++ v     ++  h+n   nph+vt +q g   v +        f  +a +t
+  sp|O31966|YOMR_BACSU  43 NLFMEYqQNELKKHTDDKSNPHLVTKEQVG--LGNVLNN-VQATKEEFDEHLNDTLNPHSVTKSQVGLANVLNEKQATKTEFdqHAQDT 128
+                           45554414568899999***********97..6788876.555667899**********************99888877777335899* PP
+
+        NFECIMNI_00059 199 kintgagdqavmadanrvalryadaylgirk 229
+                            i+  a+++     a   + +y da+     
+  sp|O31966|YOMR_BACSU 129 IIHITASERTTWNAAESNSKKYTDAHSQNTN 159
+                           **********9999999999****9865444 PP
+
+  == domain 2  score: 5.0 bits;  conditional E-value: 0.0058
+        NFECIMNI_00059 107 stqftmnsflalnkki.ddhvaarndphnvtadqvdtyiksvidskvakvdgdisnhvnrkdnphgvt 173
+                           s + t n+  + +kk  d h    n+ph vta qv        d +  k++ d   h+  kdn + +t
+  sp|O31966|YOMR_BACSU 135 SERTTWNAAESNSKKYtDAHSQNTNNPHKVTAIQVGLG-NLTNDKQATKLEFDA--HI--KDNERHIT 197
+                           44556666666666652558888888888888888643.334455566665553..43..55555555 PP
+
+>> sp|Q17Y77|ATPE_HELAH  ATP synthase epsilon chain OS=Helicobacter acinonychis (strain Sheeba) OX=382638 GN=atpC PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.0   2.5e-05       1.4     353     416 ..      55     120 ..      24     123 .] 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 2.5e-05
+        NFECIMNI_00059 353 tgqtdrvilywdds.aaedyidiaadgavtvkfrdpdnaerkflagnlv.dsgvfrlavsfttqrv 416
+                            +q +++ + w  +    +++di adgav +k +  d  +    a  l+ d++  rlavs    ++
+  sp|Q17Y77|ATPE_HELAH  55 ESQKEHIAISWGYAeVTGEHVDILADGAVFIKKESDDRDDAISRAKRLLeDASSDRLAVSSVLAKI 120
+                           4678888899986515679*************988888887777777652778899**99877666 PP
+
+>> sp|Q971I5|RL18A_SULTO  Large ribosomal subunit protein eL20 OS=Sulfurisphaera tokodaii (strain DSM 16993 / JCM 10545 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.1   3.3e-05       1.9     189     256 ..      11      77 ..       4      84 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 3.3e-05
+         NFECIMNI_00059 189 gavtfnasetkintgagdqavmadanrvalryadaylgirksdkratikvgskeevlmseteyvaara 256
+                            + vtfnas   +      + v a   + al+y  +ylg +   kr  ik+   +e+ + e +    r 
+  sp|Q971I5|RL18A_SULTO  11 AIVTFNASHYPMKQKVV-KYVRALNEKQALEYLYSYLGSKNKVKRYNIKIEEIKEIPVEEAKDKTVRD 77 
+                            5699***9999987765.6788888999************************9999999987666665 PP
+
+>> sp|B5Z8C9|ATPE_HELPG  ATP synthase epsilon chain OS=Helicobacter pylori (strain G27) OX=563041 GN=atpC PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   4.4e-05       2.5     353     416 ..      55     120 ..      25     123 .] 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 4.4e-05
+        NFECIMNI_00059 353 tgqtdrvilywdds.aaedyidiaadgavtvkfrdpdnaerkflagnlv.dsgvfrlavsfttqrv 416
+                            +q +++ + w  +   ++ +di adgav +k +  d  +    a  l+ d++  rlavs    ++
+  sp|B5Z8C9|ATPE_HELPG  55 ENQKEHIAINWGYAeVTKERVDILADGAVFIKKESDDRDDAISRAKKLLeDASSDRLAVSSVLAKI 120
+                           46788899999865267899************988888887777777652778899**99877666 PP
+
+>> sp|Q1CSD6|ATPE_HELPH  ATP synthase epsilon chain OS=Helicobacter pylori (strain HPAG1) OX=357544 GN=atpC PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   4.8e-05       2.7     353     416 ..      55     120 ..      26     123 .] 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 4.8e-05
+        NFECIMNI_00059 353 tgqtdrvilywdds.aaedyidiaadgavtvkfrdpdnaerkflagnlv.dsgvfrlavsfttqrv 416
+                            +q +++ + w  +   ++ +di adgav +k +  d  +    a  l+ d++  rlavs    ++
+  sp|Q1CSD6|ATPE_HELPH  55 ENQKEHIAINWGYAeVTKERVDILADGAVFIKKESDDRDDAISRAKKLLeDASSDRLAVSSVLAKI 120
+                           46788899999865267899************988888887777777652778899**99877666 PP
+
+>> sp|P56084|ATPE_HELPY  ATP synthase epsilon chain OS=Helicobacter pylori (strain ATCC 700392 / 26695) OX=85962 GN=atpC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   5.4e-05       3.1     353     416 ..      55     120 ..      25     123 .] 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 5.4e-05
+        NFECIMNI_00059 353 tgqtdrvilywdds.aaedyidiaadgavtvkfrdpdnaerkflagnlv.dsgvfrlavsfttqrv 416
+                            +q +++ + w  +    + +di adgav +k +  d  +    a  l+ d++  rlavs    ++
+  sp|P56084|ATPE_HELPY  55 ENQKEHIAINWGYAeVTNERVDILADGAVFIKKESDDRDDAISRAKKLLeDASSDRLAVSSVLAKI 120
+                           46788899999865156789************988888887777777652778899**99877666 PP
+
+>> sp|A0QSY5|FOLD_MYCS2  Bifunctional protein FolD OS=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155) OX=246
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0    0.0001       5.8     115     163 ..     197     244 ..     186     281 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.0001
+        NFECIMNI_00059 115 flalnkkiddhvaarndphnvtadqvdtyiksvidskvakvdgdisnhv 163
+                           + al ++ d  +aa   ph vtad v     +v+d  v++vdg ++  v
+  sp|A0QSY5|FOLD_MYCS2 197 LPALTRQADIIIAAVGVPHMVTADMVKPG-AAVVDVGVSRVDGKLTGDV 244
+                           56899999******************986.689**********998776 PP
+
+>> sp|Q6RX33|FOLD_MYCFO  Bifunctional protein FolD OS=Mycolicibacterium fortuitum OX=1766 GN=folD PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   0.00011       6.4     115     163 ..     200     247 ..     189     280 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 0.00011
+        NFECIMNI_00059 115 flalnkkiddhvaarndphnvtadqvdtyiksvidskvakvdgdisnhv 163
+                           + al ++ d  +aa   ph vtad v     +v+d  v++vdg ++  v
+  sp|Q6RX33|FOLD_MYCFO 200 LPALTRQADIIIAAVGVPHMVTADMVKPG-AAVVDVGVSRVDGKLTGDV 247
+                           56899999******************986.689**********998776 PP
+
+>> sp|B2UUN9|ATPE_HELPS  ATP synthase epsilon chain OS=Helicobacter pylori (strain Shi470) OX=512562 GN=atpC PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   7.9e-05       4.5     353     416 ..      55     120 ..      25     123 .] 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 7.9e-05
+        NFECIMNI_00059 353 tgqtdrvilywdds.aaedyidiaadgavtvkfrdpdnaerkflagnlv.dsgvfrlavsfttqrv 416
+                            +q +++ + w  +   ++ +di adgav +k    d  +    a  l+ d++  rlavs    ++
+  sp|B2UUN9|ATPE_HELPS  55 ENQKEHIAINWGYAeVTKERVDILADGAVFIKKGSDDRDDAISRAKKLLeDASSDRLAVSSVLAKI 120
+                           46788899999865267899************988887777777777652778899*999877666 PP
+
+>> sp|Q478G7|SELO_DECAR  Protein adenylyltransferase SelO OS=Dechloromonas aromatica (strain RCB) OX=159087 GN=selO PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   0.1     0.001        57     431     465 ..      55      92 ..      34     100 .. 0.78
+   2 ?    1.1   0.0     0.089   5.1e+03     195     262 ..     119     185 ..     112     196 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.001
+        NFECIMNI_00059 431 tfmpspqyakvylg...fpgpepaggvwhlrqfkawhr 465
+                            +m spq+a+++ g   +pg ep ++v+  +qf  w  
+  sp|Q478G7|SELO_DECAR  55 ELMNSPQFAEIFAGnrlLPGSEPLAAVYSGHQFGVWAG 92 
+                           46789********97767******************75 PP
+
+  == domain 2  score: 1.1 bits;  conditional E-value: 0.089
+        NFECIMNI_00059 195 asetkintgagdqavmadanrvalryadaylgirksdkratikvgskeevlmseteyvaaraliepsy 262
+                           a  t  + ga  +av+  + r  l  ++a  g+     ra   +g+ + v   e e  a  a + p +
+  sp|Q478G7|SELO_DECAR 119 AGRTPYSRGADGRAVLRSSIREFL-CSEAMAGLGVPTTRALCVIGADQPVRREEIETAALVARVAPGF 185
+                           677889999*99****99999776.5788888888999******************999999999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (476 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     11360  (0.0198649); expected 11437.3 (0.02)
+Passed bias filter:                     9226  (0.0161332); expected 11437.3 (0.02)
+Passed Vit filter:                       521  (0.000911056); expected 571.9 (0.001)
+Passed Fwd filter:                        10  (1.74867e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              10  [number of targets reported over threshold]
+# CPU time: 4.96u 0.49s 00:00:05.45 Elapsed: 00:00:02.04
+# Mc/sec: 48294.51
+//
+[ok]

@@ -1,0 +1,778 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_53.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00053  [L=123]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+       0.31   16.1   0.3       0.74   14.8   0.2    1.7  1  sp|B1HTK8|DEOC_LYSSC   Deoxyribose-phosphate aldolase OS=Lysi
+       0.47   15.5   0.4        1.3   14.1   0.2    1.7  1  sp|Q2YUL6|DEOC2_STAAB  Deoxyribose-phosphate aldolase 2 OS=St
+       0.49   15.4   0.3        1.2   14.1   0.3    1.6  1  sp|Q6GCY6|DEOC1_STAAS  Deoxyribose-phosphate aldolase 1 OS=St
+       0.49   15.4   0.3        1.2   14.1   0.3    1.6  1  sp|Q8NYR1|DEOC1_STAAW  Deoxyribose-phosphate aldolase 1 OS=St
+       0.49   15.4   0.3       0.99   14.4   0.3    1.6  1  sp|Q6G7H3|DEOC2_STAAS  Deoxyribose-phosphate aldolase 2 OS=St
+       0.49   15.4   0.3       0.99   14.4   0.3    1.6  1  sp|Q8NVF5|DEOC2_STAAW  Deoxyribose-phosphate aldolase 2 OS=St
+        0.5   15.4   0.3       0.99   14.4   0.3    1.6  1  sp|P61108|DEOC1_STAAM  Deoxyribose-phosphate aldolase 1 OS=St
+        0.5   15.4   0.3       0.99   14.4   0.3    1.6  1  sp|P99102|DEOC1_STAAN  Deoxyribose-phosphate aldolase 1 OS=St
+        0.5   15.4   0.3       0.99   14.4   0.3    1.6  1  sp|Q5HJN0|DEOC1_STAAC  Deoxyribose-phosphate aldolase 1 OS=St
+        0.5   15.4   0.3       0.99   14.4   0.3    1.6  1  sp|Q6GET8|DEOC2_STAAR  Deoxyribose-phosphate aldolase 2 OS=St
+        0.5   15.4   0.3       0.99   14.4   0.3    1.6  1  sp|Q2YUU4|DEOC1_STAAB  Deoxyribose-phosphate aldolase 1 OS=St
+        0.5   15.4   0.4        1.2   14.2   0.3    1.6  1  sp|P61084|DEOC2_STAAM  Deoxyribose-phosphate aldolase 2 OS=St
+        0.5   15.4   0.4        1.2   14.2   0.3    1.6  1  sp|P99174|DEOC2_STAAN  Deoxyribose-phosphate aldolase 2 OS=St
+       0.51   15.4   1.3        2.1   13.4   0.2    2.3  2  sp|B9DMC3|DEOC_STACT   Deoxyribose-phosphate aldolase OS=Stap
+       0.53   15.3   0.3          1   14.4   0.3    1.5  1  sp|Q6GKG7|DEOC1_STAAR  Deoxyribose-phosphate aldolase 1 OS=St
+       0.56   15.2   0.4        1.5   13.9   0.2    1.7  1  sp|A2RK45|DEOC_LACLM   Deoxyribose-phosphate aldolase OS=Lact
+       0.56   15.2   0.4        1.5   13.9   0.2    1.7  1  sp|Q02YD6|DEOC_LACLS   Deoxyribose-phosphate aldolase OS=Lact
+       0.58   15.2   0.4        1.5   13.8   0.3    1.7  1  sp|Q9CFM7|DEOC_LACLA   Deoxyribose-phosphate aldolase OS=Lact
+       0.67   15.0   0.4        1.3   14.1   0.4    1.5  1  sp|Q8EPW8|DEOC1_OCEIH  Deoxyribose-phosphate aldolase 1 OS=Oc
+       0.68   15.0   0.3        1.4   14.0   0.3    1.6  1  sp|Q5HE63|DEOC2_STAAC  Deoxyribose-phosphate aldolase 2 OS=St
+       0.74   14.8   0.2        1.9   13.5   0.2    1.7  1  sp|Q8DU34|DEOC_STRMU   Deoxyribose-phosphate aldolase OS=Stre
+        1.1   14.3   0.2        6.3   11.8   0.1    2.0  2  sp|Q3A247|DEOC_SYNC1   Deoxyribose-phosphate aldolase OS=Synt
+        1.2   14.2   0.3        2.6   13.1   0.3    1.7  1  sp|Q5HM84|DEOC_STAEQ   Deoxyribose-phosphate aldolase OS=Stap
+        1.2   14.2   0.4        2.7   13.0   0.4    1.6  1  sp|Q8CNH7|DEOC_STAES   Deoxyribose-phosphate aldolase OS=Stap
+        1.7   13.7   0.2        3.6   12.6   0.2    1.6  1  sp|Q49Z84|DEOC_STAS1   Deoxyribose-phosphate aldolase OS=Stap
+        2.3   13.3   0.1        2.9   12.9   0.1    1.2  1  sp|A5UDJ4|RL21_HAEIE   Large ribosomal subunit protein bL21 O
+        2.3   13.3   0.1        2.9   12.9   0.1    1.2  1  sp|A5UI25|RL21_HAEIG   Large ribosomal subunit protein bL21 O
+        2.3   13.3   0.1        2.9   12.9   0.1    1.2  1  sp|A3N3T7|RL21_ACTP2   Large ribosomal subunit protein bL21 O
+        2.7   13.0   0.1        3.4   12.7   0.1    1.2  1  sp|P44359|RL21_HAEIN   Large ribosomal subunit protein bL21 O
+        2.9   12.9   0.6        6.6   11.8   0.4    1.6  1  sp|B9DS93|DEOC_STRU0   Deoxyribose-phosphate aldolase OS=Stre
+        3.1   12.8   0.0         12   10.9   0.0    2.0  1  sp|Q2RTS1|ISPDF_RHORT  Bifunctional enzyme IspD/IspF OS=Rhodo
+        3.1   12.8   0.1          4   12.5   0.1    1.2  1  sp|B3GZE5|RL21_ACTP7   Large ribosomal subunit protein bL21 O
+        3.2   12.8   0.1          4   12.5   0.1    1.2  1  sp|Q4QM28|RL21_HAEI8   Large ribosomal subunit protein bL21 O
+        3.2   12.8   0.1          4   12.5   0.1    1.2  1  sp|A6VMT8|RL21_ACTSZ   Large ribosomal subunit protein bL21 O
+        3.7   12.6   0.0         13   10.8   0.0    1.8  1  sp|P54604|YHCT_BACSU   Uncharacterized RNA pseudouridine synt
+        3.8   12.6   0.8         73    8.4   0.0    2.8  2  sp|F4K5L5|TBL16_ARATH  Protein trichome birefringence-like 16
+        3.8   12.5   1.3        4.7   12.3   0.2    1.8  1  sp|Q4L819|DEOC_STAHJ   Deoxyribose-phosphate aldolase OS=Stap
+        4.2   12.4   0.6         10   11.2   0.6    1.7  1  sp|B4U2S5|DEOC_STREM   Deoxyribose-phosphate aldolase OS=Stre
+        4.2   12.4   0.6         10   11.2   0.6    1.7  1  sp|C0M9B0|DEOC_STRE4   Deoxyribose-phosphate aldolase OS=Stre
+        4.2   12.4   0.6         10   11.2   0.6    1.7  1  sp|C0MG52|DEOC_STRS7   Deoxyribose-phosphate aldolase OS=Stre
+        4.3   12.4   0.1         10   11.2   0.1    1.7  1  sp|C3KVW7|DEOC_CLOB6   Deoxyribose-phosphate aldolase OS=Clos
+        4.9   12.2   0.3        9.9   11.2   0.1    1.7  1  sp|C1FN33|DEOC_CLOBJ   Deoxyribose-phosphate aldolase OS=Clos
+          5   12.2   0.1         10   11.2   0.1    1.6  1  sp|A5I237|DEOC_CLOBH   Deoxyribose-phosphate aldolase OS=Clos
+          5   12.2   0.1         10   11.2   0.1    1.6  1  sp|A7FU73|DEOC_CLOB1   Deoxyribose-phosphate aldolase OS=Clos
+        5.1   12.1   0.2         14   10.8   0.1    1.7  1  sp|Q6MGR8|DEOC_BDEBA   Deoxyribose-phosphate aldolase OS=Bdel
+        5.3   12.1   0.4         11   11.1   0.2    1.7  1  sp|B1ILA1|DEOC_CLOBK   Deoxyribose-phosphate aldolase OS=Clos
+        6.8   11.7   0.6         16   10.5   0.5    1.8  1  sp|Q5WHF4|DEOC_SHOC1   Deoxyribose-phosphate aldolase OS=Shou
+        7.6   11.6   1.3         19   10.3   0.8    1.9  1  sp|Q8Y5R1|DEOC_LISMO   Deoxyribose-phosphate aldolase OS=List
+        8.1   11.5   1.3         19   10.3   0.8    1.9  1  sp|C1KWT9|DEOC_LISMC   Deoxyribose-phosphate aldolase OS=List
+        8.1   11.5   1.3         19   10.3   0.8    1.9  1  sp|B8DBT6|DEOC_LISMH   Deoxyribose-phosphate aldolase OS=List
+        8.1   11.5   1.3         19   10.3   0.8    1.9  1  sp|Q71Y27|DEOC_LISMF   Deoxyribose-phosphate aldolase OS=List
+        8.8   11.4   1.3         19   10.3   0.7    1.8  1  sp|C4L415|DEOC_EXISA   Deoxyribose-phosphate aldolase OS=Exig
+        8.9   11.4   1.5         18   10.4   0.5    1.9  1  sp|A0AKA1|DEOC_LISW6   Deoxyribose-phosphate aldolase OS=List
+        9.1   11.3   1.5         19   10.3   0.8    1.9  1  sp|Q92A19|DEOC_LISIN   Deoxyribose-phosphate aldolase OS=List
+        9.7   11.2   1.7         29    9.7   0.9    2.1  2  sp|B1YKT7|DEOC_EXIS2   Deoxyribose-phosphate aldolase OS=Exig
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|B1HTK8|DEOC_LYSSC  Deoxyribose-phosphate aldolase OS=Lysinibacillus sphaericus (strain C3-41) OX=444177 GN=deoC PE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.8   0.2   7.2e-05      0.74      72     108 ..     176     212 ..     164     217 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 7.2e-05
+        NFECIMNI_00053  72 agtavdikvsggaerleiikigiefgatgigvangfv 108
+                            g  + +k sgg   le +k  +e gat ig ++g  
+  sp|B1HTK8|DEOC_LYSSC 176 VGPELGVKASGGVRSLEDMKSMVEAGATRIGASSGVA 212
+                           688899**************************99975 PP
+
+>> sp|Q2YUL6|DEOC2_STAAB  Deoxyribose-phosphate aldolase 2 OS=Staphylococcus aureus (strain bovine RF122 / ET3-1) OX=273
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.2   0.00012       1.3      69     107 ..     170     208 ..     160     217 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 0.00012
+         NFECIMNI_00053  69 qhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                            +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|Q2YUL6|DEOC2_STAAB 170 KDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            5678999***************************98875 PP
+
+>> sp|Q6GCY6|DEOC1_STAAS  Deoxyribose-phosphate aldolase 1 OS=Staphylococcus aureus (strain MSSA476) OX=282459 GN=deoC1 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.3   0.00012       1.2      69     107 ..     170     208 ..     156     217 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 0.00012
+         NFECIMNI_00053  69 qhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                            +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|Q6GCY6|DEOC1_STAAS 170 KDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            5678999***************************98875 PP
+
+>> sp|Q8NYR1|DEOC1_STAAW  Deoxyribose-phosphate aldolase 1 OS=Staphylococcus aureus (strain MW2) OX=196620 GN=deoC1 PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.3   0.00012       1.2      69     107 ..     170     208 ..     156     217 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 0.00012
+         NFECIMNI_00053  69 qhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                            +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|Q8NYR1|DEOC1_STAAW 170 KDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            5678999***************************98875 PP
+
+>> sp|Q6G7H3|DEOC2_STAAS  Deoxyribose-phosphate aldolase 2 OS=Staphylococcus aureus (strain MSSA476) OX=282459 GN=deoC2 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.3   9.5e-05      0.99      68     107 ..     169     208 ..     137     217 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 9.5e-05
+         NFECIMNI_00053  68 gqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                             +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|Q6G7H3|DEOC2_STAAS 169 MKDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            55678999***************************98875 PP
+
+>> sp|Q8NVF5|DEOC2_STAAW  Deoxyribose-phosphate aldolase 2 OS=Staphylococcus aureus (strain MW2) OX=196620 GN=deoC2 PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.3   9.5e-05      0.99      68     107 ..     169     208 ..     137     217 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 9.5e-05
+         NFECIMNI_00053  68 gqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                             +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|Q8NVF5|DEOC2_STAAW 169 MKDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            55678999***************************98875 PP
+
+>> sp|P61108|DEOC1_STAAM  Deoxyribose-phosphate aldolase 1 OS=Staphylococcus aureus (strain Mu50 / ATCC 700699) OX=15887
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.3   9.5e-05      0.99      68     107 ..     169     208 ..     137     217 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 9.5e-05
+         NFECIMNI_00053  68 gqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                             +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|P61108|DEOC1_STAAM 169 MKDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            55678999***************************98875 PP
+
+>> sp|P99102|DEOC1_STAAN  Deoxyribose-phosphate aldolase 1 OS=Staphylococcus aureus (strain N315) OX=158879 GN=deoC1 PE=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.3   9.5e-05      0.99      68     107 ..     169     208 ..     137     217 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 9.5e-05
+         NFECIMNI_00053  68 gqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                             +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|P99102|DEOC1_STAAN 169 MKDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            55678999***************************98875 PP
+
+>> sp|Q5HJN0|DEOC1_STAAC  Deoxyribose-phosphate aldolase 1 OS=Staphylococcus aureus (strain COL) OX=93062 GN=deoC1 PE=3 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.3   9.5e-05      0.99      68     107 ..     169     208 ..     137     217 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 9.5e-05
+         NFECIMNI_00053  68 gqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                             +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|Q5HJN0|DEOC1_STAAC 169 MKDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            55678999***************************98875 PP
+
+>> sp|Q6GET8|DEOC2_STAAR  Deoxyribose-phosphate aldolase 2 OS=Staphylococcus aureus (strain MRSA252) OX=282458 GN=deoC2 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.3   9.5e-05      0.99      68     107 ..     169     208 ..     137     217 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 9.5e-05
+         NFECIMNI_00053  68 gqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                             +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|Q6GET8|DEOC2_STAAR 169 MKDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            55678999***************************98875 PP
+
+>> sp|Q2YUU4|DEOC1_STAAB  Deoxyribose-phosphate aldolase 1 OS=Staphylococcus aureus (strain bovine RF122 / ET3-1) OX=273
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.3   9.5e-05      0.99      68     107 ..     169     208 ..     137     217 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 9.5e-05
+         NFECIMNI_00053  68 gqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                             +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|Q2YUU4|DEOC1_STAAB 169 MKDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            55678999***************************98875 PP
+
+>> sp|P61084|DEOC2_STAAM  Deoxyribose-phosphate aldolase 2 OS=Staphylococcus aureus (strain Mu50 / ATCC 700699) OX=15887
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.2   0.3   0.00011       1.2      69     107 ..     170     208 ..     151     217 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 0.00011
+         NFECIMNI_00053  69 qhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                            +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|P61084|DEOC2_STAAM 170 KDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            5678999***************************98875 PP
+
+>> sp|P99174|DEOC2_STAAN  Deoxyribose-phosphate aldolase 2 OS=Staphylococcus aureus (strain N315) OX=158879 GN=deoC2 PE=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.2   0.3   0.00011       1.2      69     107 ..     170     208 ..     151     217 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 0.00011
+         NFECIMNI_00053  69 qhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                            +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|P99174|DEOC2_STAAN 170 KDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            5678999***************************98875 PP
+
+>> sp|B9DMC3|DEOC_STACT  Deoxyribose-phosphate aldolase OS=Staphylococcus carnosus (strain TM300) OX=396513 GN=deoC PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0       3.7   3.8e+04      65     108 ..     114     157 ..      96     164 .. 0.73
+   2 ?   13.4   0.2   0.00021       2.1      72     107 ..     173     208 ..     161     216 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 3.7
+        NFECIMNI_00053  65 skpgqhnagtavdikvsggaerleiikigiefgatgigvangfv 108
+                              g h     ++  +    e+ +  +i+ e ga  +  + gf 
+  sp|B9DMC3|DEOC_STACT 114 KASGDHTVKVIIETVLLTDEEKRKASEISKEAGADFVKTSTGFA 157
+                           55677777777777777777777777777777777777777764 PP
+
+  == domain 2  score: 13.4 bits;  conditional E-value: 0.00021
+        NFECIMNI_00053  72 agtavdikvsggaerleiikigiefgatgigvangf 107
+                            g  +++k sgg  +le +k  i+ gat +g + g 
+  sp|B9DMC3|DEOC_STACT 173 VGDDLEVKASGGVRNLEDFKAMIDAGATRVGASAGV 208
+                           688899*************************98875 PP
+
+>> sp|Q6GKG7|DEOC1_STAAR  Deoxyribose-phosphate aldolase 1 OS=Staphylococcus aureus (strain MRSA252) OX=282458 GN=deoC1 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.3   9.6e-05         1      68     107 ..     169     208 ..     138     217 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 9.6e-05
+         NFECIMNI_00053  68 gqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                             +   g  v++k sgg  +le +   +e gat ig + g 
+  sp|Q6GKG7|DEOC1_STAAR 169 MKDTVGADVEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            55678999***************************98875 PP
+
+>> sp|A2RK45|DEOC_LACLM  Deoxyribose-phosphate aldolase OS=Lactococcus lactis subsp. cremoris (strain MG1363) OX=416870 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.9   0.2   0.00014       1.5      71     108 ..     172     209 ..     163     217 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 0.00014
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfv 108
+                             g  + +k sgg  +le  k  i+ gat +gv+ g  
+  sp|A2RK45|DEOC_LACLM 172 TVGPDMGVKASGGVHNLEEAKAMIDAGATRLGVSAGVA 209
+                           6788899**************************99976 PP
+
+>> sp|Q02YD6|DEOC_LACLS  Deoxyribose-phosphate aldolase OS=Lactococcus lactis subsp. cremoris (strain SK11) OX=272622 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.9   0.2   0.00014       1.5      71     108 ..     172     209 ..     163     217 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 0.00014
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfv 108
+                             g  + +k sgg  +le  k  i+ gat +gv+ g  
+  sp|Q02YD6|DEOC_LACLS 172 TVGPDMGVKASGGVHNLEEAKAMIDAGATRLGVSAGVA 209
+                           6788899**************************99976 PP
+
+>> sp|Q9CFM7|DEOC_LACLA  Deoxyribose-phosphate aldolase OS=Lactococcus lactis subsp. lactis (strain IL1403) OX=272623 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.8   0.3   0.00015       1.5      71     108 ..     172     209 ..     163     216 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 0.00015
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfv 108
+                             g  + +k sgg  +le  k  i+ gat +gv+ g  
+  sp|Q9CFM7|DEOC_LACLA 172 TVGPDMGVKASGGVHNLEEAKAMIDAGATRLGVSAGVA 209
+                           6788899**************************99976 PP
+
+>> sp|Q8EPW8|DEOC1_OCEIH  Deoxyribose-phosphate aldolase 1 OS=Oceanobacillus iheyensis (strain DSM 14371 / CIP 107618 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.4   0.00013       1.3      71     115 ..     173     217 ..     154     220 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 0.00013
+         NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfvhldwrqd 115
+                              g  + +k sgg   le  +  ie gat ig ++g   +  +q 
+  sp|Q8EPW8|DEOC1_OCEIH 173 TVGPEMGVKASGGVRDLEQTEAMIEAGATRIGASSGVAIVSGEQG 217
+                            6788999*****************************987777665 PP
+
+>> sp|Q5HE63|DEOC2_STAAC  Deoxyribose-phosphate aldolase 2 OS=Staphylococcus aureus (strain COL) OX=93062 GN=deoC2 PE=3 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.0   0.3   0.00013       1.4      68     107 ..     169     208 ..     137     217 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 0.00013
+         NFECIMNI_00053  68 gqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                             +   g  +++k sgg  +le +   +e gat ig + g 
+  sp|Q5HE63|DEOC2_STAAC 169 MKDTVGADIEVKASGGVRNLEDFNKMVEAGATRIGASAGV 208
+                            55678999***************************98875 PP
+
+>> sp|Q8DU34|DEOC_STRMU  Deoxyribose-phosphate aldolase OS=Streptococcus mutans serotype c (strain ATCC 700610 / UA159) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   0.2   0.00019       1.9      71     114 ..     172     215 ..     166     219 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 0.00019
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfvhldwrq 114
+                             g  v +k +gg   le  +  ie gat ig + g   ++ +q
+  sp|Q8DU34|DEOC_STRMU 172 TVGPDVGVKAAGGTRSLEDAQAFIEAGATRIGTSAGVTIMEGKQ 215
+                           5788999****************************999888777 PP
+
+>> sp|Q3A247|DEOC_SYNC1  Deoxyribose-phosphate aldolase OS=Syntrophotalea carbinolica (strain DSM 2380 / NBRC 103641 / G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0       3.4   3.6e+04      83     108 ..     133     158 ..     123     167 .. 0.83
+   2 ?   11.8   0.1   0.00061       6.3      71     117 ..     173     219 ..     163     221 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 3.4
+        NFECIMNI_00053  83 gaerleiikigiefgatgigvangfv 108
+                           +a ++e++++  e ga  +  + gf 
+  sp|Q3A247|DEOC_SYNC1 133 NARKVELVELLAEAGADYVKTSTGFA 158
+                           57789999999999999998888885 PP
+
+  == domain 2  score: 11.8 bits;  conditional E-value: 0.00061
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfvhldwrqdtp 117
+                            ag  + +k +gg    e  +i ++ ga  +g +ng   +   q+ p
+  sp|Q3A247|DEOC_SYNC1 173 AAGGRIKVKAAGGVRDWETCRIMLKAGAHRVGTSNGVQIIQQWQEAP 219
+                           478999******************************87665555555 PP
+
+>> sp|Q5HM84|DEOC_STAEQ  Deoxyribose-phosphate aldolase OS=Staphylococcus epidermidis (strain ATCC 35984 / RP62A) OX=176
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.3   0.00025       2.6      70     107 ..     171     208 ..     143     217 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 0.00025
+        NFECIMNI_00053  70 hnagtavdikvsggaerleiikigiefgatgigvangf 107
+                              g  +++k sgg  +le +   ie gat ig + g 
+  sp|Q5HM84|DEOC_STAEQ 171 DTVGDRLEVKASGGVRNLEDFNNMIEAGATRIGASAGV 208
+                           5689999**************************98885 PP
+
+>> sp|Q8CNH7|DEOC_STAES  Deoxyribose-phosphate aldolase OS=Staphylococcus epidermidis (strain ATCC 12228 / FDA PCI 1200)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.4   0.00026       2.7      70     107 ..     171     208 ..     144     217 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 0.00026
+        NFECIMNI_00053  70 hnagtavdikvsggaerleiikigiefgatgigvangf 107
+                              g  +++k sgg  +le +   ie gat ig + g 
+  sp|Q8CNH7|DEOC_STAES 171 DTVGDRLEVKASGGVRNLEDFNNMIEAGATRIGASAGV 208
+                           5689999**************************98885 PP
+
+>> sp|Q49Z84|DEOC_STAS1  Deoxyribose-phosphate aldolase OS=Staphylococcus saprophyticus subsp. saprophyticus (strain ATC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.2   0.00034       3.6      60     107 ..     164     208 ..     136     217 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 0.00034
+        NFECIMNI_00053  60 eeakkskpgqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                           e+ k  k      g  +++k sgg  +le +   +e gat ig + g 
+  sp|Q49Z84|DEOC_STAS1 164 EDVKLMK---DTVGDDLEVKASGGVRNLEDFNHMLEAGATRIGASAGV 208
+                           5554444...568999***************************98875 PP
+
+>> sp|A5UDJ4|RL21_HAEIE  Large ribosomal subunit protein bL21 OS=Haemophilus influenzae (strain PittEE) OX=374930 GN=rpl
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.1   0.00028       2.9      24      92 ..      10      77 ..       5      92 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 0.00028
+        NFECIMNI_00053 24 qphkmnqgvmerveairvrlgrpltlnsayrcanhpeeakkskpgqhnagtavdikvsggaerleiiki 92
+                          + h++++g + r+e +++  g  + ++s     n  e+ k   p    a    ++   g  e+++i+k+
+  sp|A5UDJ4|RL21_HAEIE 10 KQHRVSEGQVVRLEKLELATGATVEFDSVLMVVN-GEDVKIGAPVVAGAKVVAEVVAQGRGEKVKIVKF 77
+                          469**************************99988.5899***************************996 PP
+
+>> sp|A5UI25|RL21_HAEIG  Large ribosomal subunit protein bL21 OS=Haemophilus influenzae (strain PittGG) OX=374931 GN=rpl
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.1   0.00028       2.9      24      92 ..      10      77 ..       5      92 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 0.00028
+        NFECIMNI_00053 24 qphkmnqgvmerveairvrlgrpltlnsayrcanhpeeakkskpgqhnagtavdikvsggaerleiiki 92
+                          + h++++g + r+e +++  g  + ++s     n  e+ k   p    a    ++   g  e+++i+k+
+  sp|A5UI25|RL21_HAEIG 10 KQHRVSEGQVVRLEKLELATGATVEFDSVLMVVN-GEDVKIGAPVVAGAKVVAEVVAQGRGEKVKIVKF 77
+                          469**************************99988.5899***************************996 PP
+
+>> sp|A3N3T7|RL21_ACTP2  Large ribosomal subunit protein bL21 OS=Actinobacillus pleuropneumoniae serotype 5b (strain L20
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.1   0.00028       2.9      24      92 ..      10      77 ..       5      92 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 0.00028
+        NFECIMNI_00053 24 qphkmnqgvmerveairvrlgrpltlnsayrcanhpeeakkskpgqhnagtavdikvsggaerleiiki 92
+                          + h++++g + r+e +++  g+ + ++s     n  e+ k   p    a    ++   g  ++++i+k+
+  sp|A3N3T7|RL21_ACTP2 10 KQHRVSEGQVVRLEKLEIATGEKVEFDSVLMVVN-GEDVKIGAPVVAGAKVVAEVVAQGRGDKVKIVKF 77
+                          469**************************99988.5899***************************996 PP
+
+>> sp|P44359|RL21_HAEIN  Large ribosomal subunit protein bL21 OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.1   0.00033       3.4      24      92 ..      10      77 ..       5      92 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 0.00033
+        NFECIMNI_00053 24 qphkmnqgvmerveairvrlgrpltlnsayrcanhpeeakkskpgqhnagtavdikvsggaerleiiki 92
+                          + h++++g + r+e +++  g  + ++s     n  e+ k   p    a    ++   g  e+++i+k+
+  sp|P44359|RL21_HAEIN 10 KQHRVSEGQVVRLEKLELATGATVEFDSXLMVVN-GEDVKIGAPVVAGAKVVAEVVAQGRGEKVKIVKF 77
+                          469**************************99988.5899***************************996 PP
+
+>> sp|B9DS93|DEOC_STRU0  Deoxyribose-phosphate aldolase OS=Streptococcus uberis (strain ATCC BAA-854 / 0140J) OX=218495 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.4   0.00063       6.6      70     107 ..     171     208 ..     161     214 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00063
+        NFECIMNI_00053  70 hnagtavdikvsggaerleiikigiefgatgigvangf 107
+                           +  g  + +k +gga  le     ie gat ig + g 
+  sp|B9DS93|DEOC_STRU0 171 QTVGPEIGVKAAGGARSLEDALAFIEAGATRIGTSAGV 208
+                           5689999**************************99885 PP
+
+>> sp|Q2RTS1|ISPDF_RHORT  Bifunctional enzyme IspD/IspF OS=Rhodospirillum rubrum (strain ATCC 11170 / ATH 1.1.1 / DSM 46
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0    0.0012        12      53      96 ..      50      92 ..      25     108 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 0.0012
+         NFECIMNI_00053 53 yrcanhpeeakkskpgqhnagtavdikvsggaerleiikigief 96
+                            r+  hpe+      + h  +t +d  v ggaer + +++g+e 
+  sp|Q2RTS1|ISPDF_RHORT 50 VRAIIHPEDRDLYGAAAHGLATLLDA-VEGGAERQDSVRLGLES 92
+                           57788****9999999********95.99*************94 PP
+
+>> sp|B3GZE5|RL21_ACTP7  Large ribosomal subunit protein bL21 OS=Actinobacillus pleuropneumoniae serotype 7 (strain AP76
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.1   0.00038         4      24      92 ..      10      77 ..       5      92 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 0.00038
+        NFECIMNI_00053 24 qphkmnqgvmerveairvrlgrpltlnsayrcanhpeeakkskpgqhnagtavdikvsggaerleiiki 92
+                          + h++++g + r+e +++  g+ + ++s     n  e+ k   p    a    ++   g  ++++i+k+
+  sp|B3GZE5|RL21_ACTP7 10 KQHRVSEGQVVRLEKLEIATGEKFEFDSVLMVVN-GEDVKIGAPVVAGAKVVAEVVAQGRGDKVKIVKF 77
+                          469**************************99988.5899***************************996 PP
+
+>> sp|Q4QM28|RL21_HAEI8  Large ribosomal subunit protein bL21 OS=Haemophilus influenzae (strain 86-028NP) OX=281310 GN=r
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.1   0.00039         4      24      92 ..      10      77 ..       5      92 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 0.00039
+        NFECIMNI_00053 24 qphkmnqgvmerveairvrlgrpltlnsayrcanhpeeakkskpgqhnagtavdikvsggaerleiiki 92
+                          + h++++g + r+e +++  g  + ++s     n  e+ k   p    a    ++   g  e+++i+k+
+  sp|Q4QM28|RL21_HAEI8 10 KQHRVSEGQVVRLEKLELATGATVEFDSVLMVVN-GEDVKIGAPVVAGAKVVAEVIAQGRGEKVKIVKF 77
+                          469**************************99988.5899***************************996 PP
+
+>> sp|A6VMT8|RL21_ACTSZ  Large ribosomal subunit protein bL21 OS=Actinobacillus succinogenes (strain ATCC 55618 / DSM 22
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.1   0.00039         4      24      92 ..      10      77 ..       5      92 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 0.00039
+        NFECIMNI_00053 24 qphkmnqgvmerveairvrlgrpltlnsayrcanhpeeakkskpgqhnagtavdikvsggaerleiiki 92
+                          + h++++g + r+e +++  g+ + ++s     n  e+ k   p    a    ++   g  ++++i+k+
+  sp|A6VMT8|RL21_ACTSZ 10 KQHRVSEGQVVRLEKLELATGETVEFDSVLMVVN-GEDVKIGAPVVSGAKVVAEVVAQGRGDKVKIVKF 77
+                          469**************************99988.5899***************************996 PP
+
+>> sp|P54604|YHCT_BACSU  Uncharacterized RNA pseudouridine synthase YhcT OS=Bacillus subtilis (strain 168) OX=224308 GN=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0    0.0013        13      48      99 ..     184     235 ..     171     243 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.0013
+        NFECIMNI_00053  48 tlnsay.rcanhpeeakkskpgqhnagtavdikvsggaerleiikigiefgat 99 
+                           t+ns   r  +hp   +   pg + a t   +  s++ erl ++++ +e g t
+  sp|P54604|YHCT_BACSU 184 TINSPIgRDRSHPTRRR-VSPGGQTAVTHFKVMASNAKERLSLVELELETGRT 235
+                           67765437889998755.5688889************************9987 PP
+
+>> sp|F4K5L5|TBL16_ARATH  Protein trichome birefringence-like 16 OS=Arabidopsis thaliana OX=3702 GN=TBL16 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.0     0.007        73      79      98 ..     300     319 ..     290     339 .. 0.86
+   2 ?    1.2   0.0       1.2   1.2e+04       3      35 ..     453     484 ..     451     498 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.007
+         NFECIMNI_00053  79 kvsggaerleiikigiefga 98 
+                             +sgg erl+++ +g efg 
+  sp|F4K5L5|TBL16_ARATH 300 MISGGKERLDVLDVGPEFGF 319
+                            69****************95 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 1.2
+         NFECIMNI_00053   3 qstphfkasewacrcsrcnkqqphkmnqgvmer 35 
+                             s  hf   ew      cn   p  + + v+++
+  sp|F4K5L5|TBL16_ARATH 453 LSPRHFVGGEWNTG-GSCNNTTPMSIGKEVLQE 484
+                            5678*******976.56******9999988865 PP
+
+>> sp|Q4L819|DEOC_STAHJ  Deoxyribose-phosphate aldolase OS=Staphylococcus haemolyticus (strain JCSC1435) OX=279808 GN=de
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.2   0.00045       4.7      60     107 ..     164     208 ..     135     217 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 0.00045
+        NFECIMNI_00053  60 eeakkskpgqhnagtavdikvsggaerleiikigiefgatgigvangf 107
+                           e+ k  k      g  +++k sgg   le +   i+ gat ig + g 
+  sp|Q4L819|DEOC_STAHJ 164 EDVKLMK---DTVGDELEVKASGGVRSLEDFNKMIDAGATRIGASAGV 208
+                           5554444...578999***************************98885 PP
+
+>> sp|B4U2S5|DEOC_STREM  Deoxyribose-phosphate aldolase OS=Streptococcus equi subsp. zooepidemicus (strain MGCS10565) OX
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.6   0.00096        10      70     107 ..     171     208 ..     134     214 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00096
+        NFECIMNI_00053  70 hnagtavdikvsggaerleiikigiefgatgigvangf 107
+                           +  g  + +k +gga  le     +e gat ig + g 
+  sp|B4U2S5|DEOC_STREM 171 QTVGPDIGVKAAGGARSLEDALAFVEAGATRIGTSAGV 208
+                           56799999*************************99886 PP
+
+>> sp|C0M9B0|DEOC_STRE4  Deoxyribose-phosphate aldolase OS=Streptococcus equi subsp. equi (strain 4047) OX=553482 GN=deo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.6   0.00096        10      70     107 ..     171     208 ..     134     214 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00096
+        NFECIMNI_00053  70 hnagtavdikvsggaerleiikigiefgatgigvangf 107
+                           +  g  + +k +gga  le     +e gat ig + g 
+  sp|C0M9B0|DEOC_STRE4 171 QTVGPDIGVKAAGGARSLEDALAFVEAGATRIGTSAGV 208
+                           56799999*************************99886 PP
+
+>> sp|C0MG52|DEOC_STRS7  Deoxyribose-phosphate aldolase OS=Streptococcus equi subsp. zooepidemicus (strain H70) OX=55348
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.6   0.00096        10      70     107 ..     171     208 ..     134     214 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00096
+        NFECIMNI_00053  70 hnagtavdikvsggaerleiikigiefgatgigvangf 107
+                           +  g  + +k +gga  le     +e gat ig + g 
+  sp|C0MG52|DEOC_STRS7 171 QTVGPDIGVKAAGGARSLEDALAFVEAGATRIGTSAGV 208
+                           56799999*************************99886 PP
+
+>> sp|C3KVW7|DEOC_CLOB6  Deoxyribose-phosphate aldolase OS=Clostridium botulinum (strain 657 / Type Ba4) OX=515621 GN=de
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.1   0.00097        10      69     106 ..     170     207 ..     134     211 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00097
+        NFECIMNI_00053  69 qhnagtavdikvsggaerleiikigiefgatgigvang 106
+                           ++  g  + +k sgg    e +++ ie gat ig + g
+  sp|C3KVW7|DEOC_CLOB6 170 RETVGKDMGVKASGGIHTREEMEVMIENGATRIGASCG 207
+                           567899999*************************9877 PP
+
+>> sp|C1FN33|DEOC_CLOBJ  Deoxyribose-phosphate aldolase OS=Clostridium botulinum (strain Kyoto / Type A2) OX=536232 GN=d
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.1   0.00096       9.9      69     106 ..     170     207 ..     133     211 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00096
+        NFECIMNI_00053  69 qhnagtavdikvsggaerleiikigiefgatgigvang 106
+                           ++  g  + +k sgg    e +++ ie gat ig + g
+  sp|C1FN33|DEOC_CLOBJ 170 RETVGKNMGVKASGGIHTREEMEVMIENGATRIGASCG 207
+                           567899999*************************9877 PP
+
+>> sp|A5I237|DEOC_CLOBH  Deoxyribose-phosphate aldolase OS=Clostridium botulinum (strain Hall / ATCC 3502 / NCTC 13319 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.1   0.00096        10      69     106 ..     170     207 ..     133     211 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00096
+        NFECIMNI_00053  69 qhnagtavdikvsggaerleiikigiefgatgigvang 106
+                           ++  g  + +k sgg    e +++ ie gat ig + g
+  sp|A5I237|DEOC_CLOBH 170 RETVGKDMGVKASGGIHTREEMEVMIENGATRIGASCG 207
+                           567899999*************************9877 PP
+
+>> sp|A7FU73|DEOC_CLOB1  Deoxyribose-phosphate aldolase OS=Clostridium botulinum (strain ATCC 19397 / Type A) OX=441770 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.1   0.00096        10      69     106 ..     170     207 ..     133     211 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00096
+        NFECIMNI_00053  69 qhnagtavdikvsggaerleiikigiefgatgigvang 106
+                           ++  g  + +k sgg    e +++ ie gat ig + g
+  sp|A7FU73|DEOC_CLOB1 170 RETVGKDMGVKASGGIHTREEMEVMIENGATRIGASCG 207
+                           567899999*************************9877 PP
+
+>> sp|Q6MGR8|DEOC_BDEBA  Deoxyribose-phosphate aldolase OS=Bdellovibrio bacteriovorus (strain ATCC 15356 / DSM 50701 / N
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.1    0.0013        14      72     108 ..     173     209 ..     165     214 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.0013
+        NFECIMNI_00053  72 agtavdikvsggaerleiikigiefgatgigvangfv 108
+                            g+++++k sgg +  +  k  i+ gat +g ++g+ 
+  sp|Q6MGR8|DEOC_BDEBA 173 VGSSMEVKASGGIKDAQQAKSMIDAGATRLGTSSGIT 209
+                           6999*****************************9976 PP
+
+>> sp|B1ILA1|DEOC_CLOBK  Deoxyribose-phosphate aldolase OS=Clostridium botulinum (strain Okra / Type B1) OX=498213 GN=de
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.2     0.001        11      69     106 ..     170     207 ..     141     211 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.001
+        NFECIMNI_00053  69 qhnagtavdikvsggaerleiikigiefgatgigvang 106
+                           ++  g  + +k sgg    e +++ ie gat ig + g
+  sp|B1ILA1|DEOC_CLOBK 170 RETVGKNMGVKASGGIHTREEMEVMIENGATRIGASCG 207
+                           567899999*************************9877 PP
+
+>> sp|Q5WHF4|DEOC_SHOC1  Deoxyribose-phosphate aldolase OS=Shouchella clausii (strain KSM-K16) OX=66692 GN=deoC PE=3 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.5    0.0016        16      72     107 ..     177     212 ..     138     218 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 0.0016
+        NFECIMNI_00053  72 agtavdikvsggaerleiikigiefgatgigvangf 107
+                            g  v +k sgg   l  +   +e gat ig + g 
+  sp|Q5WHF4|DEOC_SHOC1 177 VGADVGVKASGGIRDLAAVNAMVEAGATRIGASAGV 212
+                           688899*************************99885 PP
+
+>> sp|Q8Y5R1|DEOC_LISMO  Deoxyribose-phosphate aldolase OS=Listeria monocytogenes serovar 1/2a (strain ATCC BAA-679 / EG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.8    0.0018        19      71     108 ..     173     210 ..     142     219 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.0018
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfv 108
+                             g  + +k sgg    e ++  ie gat ig + g  
+  sp|Q8Y5R1|DEOC_LISMO 173 TVGPNIGVKASGGVRTKEDVEKMIEAGATRIGASAGVA 210
+                           5688899*************************998865 PP
+
+>> sp|C1KWT9|DEOC_LISMC  Deoxyribose-phosphate aldolase OS=Listeria monocytogenes serotype 4b (strain CLIP80459) OX=5688
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.8    0.0018        19      71     108 ..     173     210 ..     142     219 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.0018
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfv 108
+                             g  + +k sgg    e ++  ie gat ig + g  
+  sp|C1KWT9|DEOC_LISMC 173 TVGPNIGVKASGGVRTKEDVEKMIEAGATRIGASAGVA 210
+                           5688899*************************998865 PP
+
+>> sp|B8DBT6|DEOC_LISMH  Deoxyribose-phosphate aldolase OS=Listeria monocytogenes serotype 4a (strain HCC23) OX=552536 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.8    0.0018        19      71     108 ..     173     210 ..     142     219 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.0018
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfv 108
+                             g  + +k sgg    e ++  ie gat ig + g  
+  sp|B8DBT6|DEOC_LISMH 173 TVGPNIGVKASGGVRTKEDVEKMIEAGATRIGASAGVA 210
+                           5688899*************************998865 PP
+
+>> sp|Q71Y27|DEOC_LISMF  Deoxyribose-phosphate aldolase OS=Listeria monocytogenes serotype 4b (strain F2365) OX=265669 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.8    0.0018        19      71     108 ..     173     210 ..     142     219 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.0018
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfv 108
+                             g  + +k sgg    e ++  ie gat ig + g  
+  sp|Q71Y27|DEOC_LISMF 173 TVGPNIGVKASGGVRTKEDVEKMIEAGATRIGASAGVA 210
+                           5688899*************************998865 PP
+
+>> sp|C4L415|DEOC_EXISA  Deoxyribose-phosphate aldolase OS=Exiguobacterium sp. (strain ATCC BAA-1283 / AT1b) OX=360911 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.7    0.0018        19      71     108 ..     173     210 ..     164     220 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.0018
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfv 108
+                             g  + +k sgg   +e  k  i+ gat ig + g+ 
+  sp|C4L415|DEOC_EXISA 173 TVGPDIGVKASGGVRDFEGAKAMIDAGATRIGASAGIA 210
+                           6788999*************************999875 PP
+
+>> sp|A0AKA1|DEOC_LISW6  Deoxyribose-phosphate aldolase OS=Listeria welshimeri serovar 6b (strain ATCC 35897 / DSM 20650
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.5    0.0017        18      71     108 ..     173     210 ..     163     219 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 0.0017
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfv 108
+                             g  + +k sgg    e ++  ie gat ig + g  
+  sp|A0AKA1|DEOC_LISW6 173 TVGQNIGVKASGGVRTKEDVEKMIEAGATRIGASAGVA 210
+                           5688899*************************998865 PP
+
+>> sp|Q92A19|DEOC_LISIN  Deoxyribose-phosphate aldolase OS=Listeria innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.8    0.0018        19      71     108 ..     173     210 ..     142     219 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.0018
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangfv 108
+                             g  + +k sgg    e ++  ie gat ig + g  
+  sp|Q92A19|DEOC_LISIN 173 TVGPNIGVKASGGVRTKEDVEKMIEAGATRIGASAGVA 210
+                           5688899*************************998865 PP
+
+>> sp|B1YKT7|DEOC_EXIS2  Deoxyribose-phosphate aldolase OS=Exiguobacterium sibiricum (strain DSM 17290 / CCUG 55495 / CI
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0       9.9     1e+05      77     106 ..     141     160 ..     133     167 .. 0.55
+   2 ?    9.7   0.9    0.0028        29      71     107 ..     173     209 ..     161     217 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 9.9
+        NFECIMNI_00053  77 dikvsggaerleiikigiefgatgigvang 106
+                           ++           +k g +f  t+ g + g
+  sp|B1YKT7|DEOC_EXIS2 141 ELS----------VKAGADFVKTSTGFSTG 160
+                           344..........45555555555554444 PP
+
+  == domain 2  score: 9.7 bits;  conditional E-value: 0.0028
+        NFECIMNI_00053  71 nagtavdikvsggaerleiikigiefgatgigvangf 107
+                             g  + +k sgg   +e  k  i+ gat ig + g+
+  sp|B1YKT7|DEOC_EXIS2 173 TVGPDIGVKASGGVRDFEGAKAMIDAGATRIGASAGI 209
+                           6788999*************************99886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (123 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13208  (0.0230964); expected 11437.3 (0.02)
+Passed bias filter:                    11884  (0.0207812); expected 11437.3 (0.02)
+Passed Vit filter:                       897  (0.00156855); expected 571.9 (0.001)
+Passed Fwd filter:                        55  (9.61767e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              55  [number of targets reported over threshold]
+# CPU time: 1.75u 0.50s 00:00:02.25 Elapsed: 00:00:01.20
+# Mc/sec: 21103.64
+//
+[ok]

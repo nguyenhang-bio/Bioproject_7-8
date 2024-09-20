@@ -1,0 +1,48 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_22.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00022  [L=79]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+        2.4   13.4   0.0        4.8   12.5   0.0    1.4  1  sp|C5D465|ARGR_GEOSW  Arginine repressor OS=Geobacillus sp. (
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|C5D465|ARGR_GEOSW  Arginine repressor OS=Geobacillus sp. (strain WCH70) OX=471223 GN=argR PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0   8.3e-06       4.8      37      75 ..     103     142 ..      96     144 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 8.3e-06
+        NFECIMNI_00022  37 vhavfmhtdtgewvdav.tycdeqtgvmycrraddfakfs 75 
+                            ha+ +  d  +w + v t c + t ++ cr a+d  k s
+  sp|C5D465|ARGR_GEOSW 103 AHAIGVLLDNLDWNEIVgTICGDDTCLIICRTAEDAEKVS 142
+                           69999999*****9987699***************99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (79 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     11631  (0.0203388); expected 11437.3 (0.02)
+Passed bias filter:                    10650  (0.0186233); expected 11437.3 (0.02)
+Passed Vit filter:                       494  (0.000863842); expected 571.9 (0.001)
+Passed Fwd filter:                         2  (3.49734e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 1.56u 0.39s 00:00:01.95 Elapsed: 00:00:01.18
+# Mc/sec: 13827.63
+//
+[ok]

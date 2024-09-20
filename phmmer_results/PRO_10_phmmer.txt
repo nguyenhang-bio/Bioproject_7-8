@@ -1,0 +1,95 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_10.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00010  [L=345]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+  ------ inclusion threshold ------
+      0.092   16.8   1.8         12    9.8   0.1    2.2  2  sp|P42449|ACEA_CORGL  Isocitrate lyase OS=Corynebacterium glu
+       0.35   14.9   0.5        1.6   12.7   0.1    1.8  2  sp|Q6BSD9|LOT5_DEBHA  Protein LOT5 OS=Debaryomyces hansenii (
+        3.7   11.5   2.0    1.1e+02    6.6   0.1    2.2  2  sp|Q8RQN6|ACEA_COREF  Isocitrate lyase OS=Corynebacterium eff
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P42449|ACEA_CORGL  Isocitrate lyase OS=Corynebacterium glutamicum (strain ATCC 13032 / DSM 20300 / JCM 1318 / BCRC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   0.2   0.00079   1.5e+02     118     192 ..      24      95 ..      10     109 .. 0.78
+   2 ?    9.8   0.1   6.2e-05        12     161     199 ..     153     190 ..     131     201 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.00079
+        NFECIMNI_00010 118 vgvaydfdideiaaaqmagmplearktmaarrgyeeyinsvvwrgdeea.glgglftnkeiqrtavaagtdgktgw 192
+                            g+  d+  d++a   + g  +e + t  arrg e   ++v  +gd    +lg+l  n+ +q+          +gw
+  sp|P42449|ACEA_CORGL  24 NGITRDYTADQVAD--LQGSVIEEH-T-LARRGSEILWDAVTQEGDGYInALGALTGNQAVQQVRAGLKAVYLSGW 95 
+                           68999999999975..568888854.4.579***************876268999999999987666555556666 PP
+
+  == domain 2  score: 9.8 bits;  conditional E-value: 6.2e-05
+        NFECIMNI_00010 161 rgdeeaglgglftnkeiqrtavaagtdgktgwadktpde 199
+                            +d eag+gg +   e+q+  +aag  g t w d+   e
+  sp|P42449|ACEA_CORGL 153 VADGEAGFGGALNVYELQKAMIAAGAAG-THWEDQLASE 190
+                           4689*********************988.89*9987665 PP
+
+>> sp|Q6BSD9|LOT5_DEBHA  Protein LOT5 OS=Debaryomyces hansenii (strain ATCC 36239 / CBS 767 / BCRC 21394 / JCM 1990 / NB
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0     0.082   1.6e+04     222     250 ..     114     142 ..     103     168 .. 0.81
+   2 ?   12.7   0.1   8.6e-06       1.6      94     167 ..     206     281 ..     198     287 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.082
+        NFECIMNI_00010 222 keiwmdtlswnyifstprspmsdttigey 250
+                           + +++  ls +yi s p  p   t+  e 
+  sp|Q6BSD9|LOT5_DEBHA 114 QALYLQVLSNDYISSIPTEPTEYTSTVEL 142
+                           5689999***********99988876665 PP
+
+  == domain 2  score: 12.7 bits;  conditional E-value: 8.6e-06
+        NFECIMNI_00010  94 inaratdlpks..disgkeysitvksvgvaydfdideiaaaqm...agmplearktmaarrgyeeyinsvvwrgdeeag 167
+                            na a ++p s  d  g ++ i +k++g a d+++de    ++   +g p+     m    gy   + s+  rg+++ g
+  sp|Q6BSD9|LOT5_DEBHA 206 TNAPALEIPSSwiDDEGHDHDIAIKNIGDADDLELDEEELQRVrdeSGTPV---AGMNVDVGYASIVGSIRKRGEDDMG 281
+                           5899999**994456799*****************9987666511156665...4577788*************99877 PP
+
+>> sp|Q8RQN6|ACEA_COREF  Isocitrate lyase OS=Corynebacterium efficiens (strain DSM 44549 / YS-314 / AJ 12310 / JCM 11189
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.3   0.2    0.0029   5.5e+02     118     192 ..      24      95 ..       9     116 .. 0.77
+   2 ?    6.6   0.1   0.00059   1.1e+02     162     199 ..     154     190 ..     135     201 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.0029
+        NFECIMNI_00010 118 vgvaydfdideiaaaqmagmplearktmaarrgyeeyinsvvwrgdeea.glgglftnkeiqrtavaagtdgktgw 192
+                            g+  d+  +++a  ++ g  +e + t+ a+rg e   ++v  +gd+   +lg+l  n+ +q+          +gw
+  sp|Q8RQN6|ACEA_COREF  24 NGITRDYTAEQVA--ELQGSVVEEH-TL-AKRGAEILWDAVSAEGDDYInALGALTGNQAVQQVRAGLKAVYLSGW 95 
+                           5888888888876..5667777754.54.789*************9986268999999999987766666666677 PP
+
+  == domain 2  score: 6.6 bits;  conditional E-value: 0.00059
+        NFECIMNI_00010 162 gdeeaglgglftnkeiqrtavaagtdgktgwadktpde 199
+                           +d eag+gg +   e+q+  + ag  g t w d+   e
+  sp|Q8RQN6|ACEA_COREF 154 ADGEAGFGGALNVYELQKGMITAGAAG-THWEDQLASE 190
+                           688*********************988.89*9987665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (345 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13082  (0.0228761); expected 11437.3 (0.02)
+Passed bias filter:                    11193  (0.0195728); expected 11437.3 (0.02)
+Passed Vit filter:                       595  (0.00104046); expected 571.9 (0.001)
+Passed Fwd filter:                         3  (5.246e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 3.65u 0.48s 00:00:04.13 Elapsed: 00:00:01.51
+# Mc/sec: 47268.61
+//
+[ok]

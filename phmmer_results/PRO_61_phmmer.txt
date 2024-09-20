@@ -1,0 +1,99 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_61.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00061  [L=215]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+  ------ inclusion threshold ------
+       0.92   14.3   0.0        1.4   13.7   0.0    1.3  1  sp|Q044E4|RIMM_LACGA   Ribosome maturation factor RimM OS=Lac
+        3.6   12.3   0.0        6.8   11.4   0.0    1.4  1  sp|B2VXY5|PURA_PYRTR   Adenylosuccinate synthetase OS=Pyrenop
+        3.9   12.2   0.0        5.3   11.8   0.0    1.2  1  sp|Q74IQ5|RIMM_LACJO   Ribosome maturation factor RimM OS=Lac
+        4.7   12.0   0.1          9   11.0   0.1    1.4  2  sp|Q10931|ATG12_CAEEL  Ubiquitin-like protein atg-12 OS=Caeno
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q044E4|RIMM_LACGA  Ribosome maturation factor RimM OS=Lactobacillus gasseri (strain ATCC 33323 / DSM 20243 / BCRC 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.0   9.8e-06       1.4      28      72 ..      87     133 ..      77     151 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 9.8e-06
+        NFECIMNI_00061  28 ecyaeemdeiyhvltemiecryydkatgerldviasiv..ganrvle 72 
+                           e   +e+ e  + + +++ c  yd  tge+l v+a+i   gan + e
+  sp|Q044E4|RIMM_LACGA  87 ETDQQELPEGSYYFKDILNCPVYDAETGEKLGVLANIEtpGANDIWE 133
+                           555678888888999********************984338887765 PP
+
+>> sp|B2VXY5|PURA_PYRTR  Adenylosuccinate synthetase OS=Pyrenophora tritici-repentis (strain Pt-1C-BFP) OX=426418 GN=PTR
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   4.8e-05       6.8      64     151 ..     235     334 ..     216     346 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 4.8e-05
+        NFECIMNI_00061  64 ivganrvlegvviagnfgylqvaeslgmgrrddpalg.g..plrsikedgv......edvvltdarlk..nwidariiknktacntedt 141
+                           + ++n  l gv+   n+g+  + e +g+ +     +g g  p + + e g        +v +t  r +   w+d  ++k+  acn    
+  sp|B2VXY5|PURA_PYRTR 235 VTSSNTGLGGVITGLNLGWRSLREVIGVVKAYTTRVGsGpfPTEQLNEIGEkmqsvgHEVGVTTGRKRrcGWLDLVVVKHSHACNDYTA 323
+                           56678888999999999999999999999988887774522344555544311111235556665544237****************99 PP
+
+        NFECIMNI_00061 142 iaffkl.lldd 151
+                           i + kl +ldd
+  sp|B2VXY5|PURA_PYRTR 324 INLTKLdILDD 334
+                           99999944555 PP
+
+>> sp|Q74IQ5|RIMM_LACJO  Ribosome maturation factor RimM OS=Lactobacillus johnsonii (strain CNCM I-12250 / La1 / NCC 533
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   3.7e-05       5.3      28      72 ..      87     133 ..      74     153 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 3.7e-05
+        NFECIMNI_00061  28 ecyaeemdeiyhvltemiecryydkatgerldviasi..vganrvle 72 
+                           e   +e+ e  + + +++ c  yd  tge+l v+ +i   gan + e
+  sp|Q74IQ5|RIMM_LACJO  87 ETDQQELPEGSYYFKDILNCPVYDAETGEKLGVLENIetPGANDIWE 133
+                           555678888888999*******************9883358887766 PP
+
+>> sp|Q10931|ATG12_CAEEL  Ubiquitin-like protein atg-12 OS=Caenorhabditis elegans OX=6239 GN=lgg-3 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.1   6.3e-05         9     118     149 ..      30      62 ..      15      74 .. 0.82
+   2 ?   -0.8   0.0      0.26   3.8e+04       9      53 ..      62     105 ..      60     114 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 6.3e-05
+         NFECIMNI_00061 118 darlknwidariiknkt.acntedtiaffklll 149
+                              rl+n  da ++knk    n  dt+a f l l
+  sp|Q10931|ATG12_CAEEL  30 TVRLRNIADAPVLKNKKmVVNPTDTVASFILKL 62 
+                            479************85278*******998766 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.26
+         NFECIMNI_00061   9 lmdllliqyrnspnfikylecyaeemdeiyhvltemiecryydka 53 
+                            l  ll iq +ns  f+     +a   d  ++ l+     +  dk 
+  sp|Q10931|ATG12_CAEEL  62 LRKLLNIQANNS-LFLYIDNTFAPSPDTTFETLSRCYSVKITDKE 105
+                            556777777665.46655668888888888888887777777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (215 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     12184  (0.0213058); expected 11437.3 (0.02)
+Passed bias filter:                    10120  (0.0176965); expected 11437.3 (0.02)
+Passed Vit filter:                       611  (0.00106844); expected 571.9 (0.001)
+Passed Fwd filter:                         4  (6.99467e-06); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 2.65u 0.54s 00:00:03.19 Elapsed: 00:00:01.36
+# Mc/sec: 32598.60
+//
+[ok]

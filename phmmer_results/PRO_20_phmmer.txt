@@ -1,0 +1,927 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_20.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00020  [L=302]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    3.6e-05   28.0   0.0    0.00017   25.8   0.0    1.9  2  sp|Q2IH69|DNLI_ANADE   Probable DNA ligase OS=Anaeromyxobacte
+    3.9e-05   27.9   0.0    0.00013   26.2   0.0    1.9  1  sp|B8JBM1|DNLI_ANAD2   Probable DNA ligase OS=Anaeromyxobacte
+    5.8e-05   27.3   0.0    0.00039   24.6   0.0    2.0  2  sp|B4UIS1|DNLI_ANASK   Probable DNA ligase OS=Anaeromyxobacte
+     0.0008   23.6   0.0     0.0024   22.0   0.0    1.7  2  sp|A9GU24|DNLI_SORC5   Probable DNA ligase OS=Sorangium cellu
+     0.0014   22.8   0.0     0.0026   21.9   0.0    1.4  1  sp|Q826P6|DNLI_STRAW   Probable DNA ligase OS=Streptomyces av
+     0.0031   21.6   0.0      0.015   19.4   0.0    2.0  1  sp|C1AX87|DNLI_RHOOB   Probable DNA ligase OS=Rhodococcus opa
+     0.0054   20.8   0.0      0.014   19.4   0.0    1.8  1  sp|Q0SG75|DNLI_RHOJR   Probable DNA ligase OS=Rhodococcus jos
+     0.0077   20.3   0.0      0.024   18.7   0.0    1.8  2  sp|A7HID3|DNLI_ANADF   Probable DNA ligase OS=Anaeromyxobacte
+  ------ inclusion threshold ------
+      0.026   18.6   0.0      0.047   17.8   0.0    1.4  1  sp|Q5YNY7|DNLI_NOCFA   Probable DNA ligase OS=Nocardia farcin
+      0.028   18.5   0.0      0.074   17.1   0.0    1.7  1  sp|A3CWP1|DNLI_METMJ   DNA ligase OS=Methanoculleus marisnigr
+      0.036   18.1   0.0       0.12   16.4   0.0    1.8  2  sp|C5BW79|DNLI_BEUC1   Probable DNA ligase OS=Beutenbergia ca
+      0.037   18.1   0.0      0.097   16.7   0.0    1.6  2  sp|A6WG40|DNLI_KINRD   Probable DNA ligase OS=Kineococcus rad
+      0.046   17.8   0.0      0.091   16.8   0.0    1.4  1  sp|Q08387|DNLI4_YEAST  DNA ligase 4 OS=Saccharomyces cerevisi
+      0.055   17.5   0.0         15    9.5   0.0    2.2  2  sp|Q0W0X1|DNLI_METAR   DNA ligase OS=Methanocella arvoryzae (
+      0.086   16.9   0.0       0.18   15.9   0.0    1.5  1  sp|B1L3K8|DNLI1_KORCO  DNA ligase 1 OS=Korarchaeum cryptofilu
+      0.095   16.8   0.0        0.2   15.7   0.0    1.5  1  sp|A4F870|DNLI_SACEN   Probable DNA ligase OS=Saccharopolyspo
+       0.12   16.4   0.0       0.24   15.4   0.0    1.5  1  sp|B5YD88|DNLI_DICT6   Probable DNA ligase OS=Dictyoglomus th
+       0.17   15.9   0.0        0.2   15.7   0.0    1.0  1  sp|Q9FZA0|RLF4_ARATH   Protein RALF-like 4 OS=Arabidopsis tha
+       0.21   15.6   0.0       0.46   14.5   0.0    1.5  1  sp|Q75CA4|DNLI4_EREGS  DNA ligase 4 OS=Eremothecium gossypii 
+       0.22   15.5   0.0       0.43   14.6   0.0    1.4  1  sp|A0QJL0|DNLI_MYCA1   Probable DNA ligase OS=Mycobacterium a
+       0.23   15.5   0.0       0.53   14.3   0.0    1.5  1  sp|B8DZX8|DNLI_DICTD   Probable DNA ligase OS=Dictyoglomus tu
+       0.23   15.5   0.1       0.46   14.5   0.1    1.5  1  sp|B6YTR4|DNLI_THEON   DNA ligase OS=Thermococcus onnurineus 
+       0.24   15.4   0.0       0.47   14.5   0.0    1.4  1  sp|Q73V97|DNLI_MYCPA   Probable DNA ligase OS=Mycolicibacteri
+       0.27   15.3   0.0       0.49   14.4   0.0    1.3  1  sp|Q9FCB1|DNLI_STRCO   Probable DNA ligase OS=Streptomyces co
+       0.31   15.1   0.0       0.46   14.5   0.0    1.2  1  sp|Q8Y5G2|PDXS_LISMO   Pyridoxal 5'-phosphate synthase subuni
+       0.32   15.0   0.0       0.48   14.4   0.0    1.2  1  sp|B8DH17|PDXS_LISMH   Pyridoxal 5'-phosphate synthase subuni
+       0.32   15.0   0.0       0.48   14.4   0.0    1.2  1  sp|C1KX53|PDXS_LISMC   Pyridoxal 5'-phosphate synthase subuni
+       0.32   15.0   0.0       0.48   14.4   0.0    1.2  1  sp|Q71XR3|PDXS_LISMF   Pyridoxal 5'-phosphate synthase subuni
+       0.34   14.9   0.0        1.2   13.2   0.0    1.7  2  sp|A1SKL2|DNLI_NOCSJ   Probable DNA ligase OS=Nocardioides sp
+       0.36   14.9   0.0        1.2   13.2   0.0    1.7  2  sp|A1T6P2|DNLI_MYCVP   Probable DNA ligase OS=Mycolicibacteri
+       0.47   14.5   0.0       0.85   13.6   0.0    1.4  1  sp|Q2NHF9|DNLI_METST   DNA ligase OS=Methanosphaera stadtmana
+       0.58   14.2   0.1         39    8.2   0.0    2.7  3  sp|A0R3R7|LIGD_MYCS2   Multifunctional non-homologous end joi
+        0.6   14.1   0.0          1   13.4   0.0    1.4  1  sp|Q9HHC4|DNLI_THEKO   DNA ligase OS=Thermococcus kodakarensi
+       0.66   14.0   0.0        1.7   12.7   0.0    1.6  1  sp|A4TDS2|DNLI_MYCGI   Probable DNA ligase OS=Mycolicibacteri
+       0.74   13.8   0.0        1.3   13.0   0.0    1.4  1  sp|A1UDY9|DNLI_MYCSK   Probable DNA ligase OS=Mycobacterium s
+       0.74   13.8   0.0        1.3   13.0   0.0    1.4  1  sp|A3PXE2|DNLI_MYCSJ   Probable DNA ligase OS=Mycobacterium s
+       0.74   13.8   0.0        1.3   13.0   0.0    1.4  1  sp|Q1BB26|DNLI_MYCSS   Probable DNA ligase OS=Mycobacterium s
+       0.75   13.8   0.0        3.6   11.6   0.0    1.9  2  sp|B8HCE1|DNLI_PSECP   Probable DNA ligase OS=Pseudarthrobact
+       0.78   13.8   0.1        1.7   12.6   0.1    1.5  1  sp|P54875|DNLI_METTF   DNA ligase OS=Methanothermobacter ther
+       0.79   13.7   0.0        1.7   12.7   0.0    1.5  1  sp|A7IAA9|DNLI_METB6   DNA ligase OS=Methanoregula boonei (st
+       0.82   13.7   0.0        1.2   13.1   0.0    1.2  1  sp|A0AKK8|PDXS_LISW6   Pyridoxal 5'-phosphate synthase subuni
+       0.91   13.5   0.0          2   12.4   0.0    1.5  1  sp|D4GYZ4|DNLI_HALVD   DNA ligase OS=Haloferax volcanii (stra
+        1.1   13.3   0.0        1.8   12.6   0.0    1.4  1  sp|Q9HH07|DNLI_THEFM   DNA ligase OS=Thermococcus fumicolans 
+        1.1   13.2   0.0        2.2   12.3   0.0    1.4  1  sp|A2SR38|DNLI_METLZ   DNA ligase OS=Methanocorpusculum labre
+        1.2   13.1   0.0        2.4   12.2   0.0    1.4  1  sp|Q3IPX0|DNLI_NATPD   DNA ligase OS=Natronomonas pharaonis (
+        1.6   12.7   0.0        3.9   11.5   0.0    1.6  1  sp|O93723|DNLI_PYRAE   DNA ligase OS=Pyrobaculum aerophilum (
+        1.7   12.6   0.1        3.3   11.7   0.1    1.4  1  sp|A5UKX2|DNLI_METS3   DNA ligase OS=Methanobrevibacter smith
+          2   12.4   0.0        4.6   11.2   0.0    1.5  1  sp|B2HHE1|DNLI_MYCMM   Probable DNA ligase OS=Mycobacterium m
+        2.2   12.2   0.0        4.4   11.3   0.0    1.4  1  sp|O29632|DNLI_ARCFU   DNA ligase OS=Archaeoglobus fulgidus (
+        2.4   12.2   0.0        4.1   11.4   0.0    1.4  1  sp|B1W5J2|DNLI_STRGG   Probable DNA ligase OS=Streptomyces gr
+        2.5   12.1   0.1        4.4   11.3   0.1    1.4  1  sp|Q8TWN3|DNLI_METKA   DNA ligase OS=Methanopyrus kandleri (s
+        2.9   11.9   0.0        4.3   11.3   0.0    1.2  1  sp|Q929R9|PDXS_LISIN   Pyridoxal 5'-phosphate synthase subuni
+        3.1   11.8   0.0        4.3   11.3   0.0    1.2  1  sp|A0R5T2|LIGC1_MYCS2  DNA ligase C1 OS=Mycolicibacterium sme
+        3.1   11.8   0.0        6.9   10.6   0.0    1.5  1  sp|A0PTC0|DNLI_MYCUA   Probable DNA ligase OS=Mycobacterium u
+        3.3   11.7   0.0         42    8.1   0.0    2.0  2  sp|Q18GX5|DNLI2_HALWD  DNA ligase 2 OS=Haloquadratum walsbyi 
+        4.2   11.3   0.1          9   10.3   0.1    1.5  1  sp|Q50566|DNLI_METTH   DNA ligase OS=Methanothermobacter ther
+        4.3   11.3   0.0        5.1   11.1   0.0    1.3  1  sp|Q60034|DYR_THEMA    Dihydrofolate reductase OS=Thermotoga 
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q2IH69|DNLI_ANADE  Probable DNA ligase OS=Anaeromyxobacter dehalogenans (strain 2CP-C) OX=290397 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.8   0.0   1.6e-08   0.00017     175     219 ..     352     396 ..     339     413 .. 0.87
+   2 ?   -1.1   0.0       2.6   2.6e+04     271     300 ..     471     501 ..     446     502 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 25.8 bits;  conditional E-value: 1.6e-08
+        NFECIMNI_00020 175 pdafglaregiigkaidepyhegkrdftlmkikrdltldllvvgm 219
+                            da++  +eg+++ka+d py+ g+r    +k+kr  tldl+v++ 
+  sp|Q2IH69|DNLI_ANADE 352 EDALARGQEGVVAKALDAPYEAGRRGAAWLKVKRAHTLDLVVLAA 396
+                           6899999*********************************99864 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 2.6
+        NFECIMNI_00020 271 eieamcrlpng.slrearfkairhdktivdi 300
+                            i++  r p g +lr ar k  r+dk   d 
+  sp|Q2IH69|DNLI_ANADE 471 GIQSSPRYPGGlALRFARVKRYREDKRPEDA 501
+                           57788899999679***********987775 PP
+
+>> sp|B8JBM1|DNLI_ANAD2  Probable DNA ligase OS=Anaeromyxobacter dehalogenans (strain 2CP-1 / ATCC BAA-258) OX=455488 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.2   0.0   1.3e-08   0.00013     175     220 ..     352     397 ..     340     502 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 26.2 bits;  conditional E-value: 1.3e-08
+        NFECIMNI_00020 175 pdafglaregiigkaidepyhegkrdftlmkikrdltldllvvgmg 220
+                            da++  +eg+++ka+d py+ g+r    +k+kr  tldl+v++  
+  sp|B8JBM1|DNLI_ANAD2 352 EDALARGQEGVVAKALDAPYEAGRRGAAWLKVKRAHTLDLVVLAAE 397
+                           6899999*********************************998653 PP
+
+>> sp|B4UIS1|DNLI_ANASK  Probable DNA ligase OS=Anaeromyxobacter sp. (strain K) OX=447217 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.6   0.0   3.9e-08   0.00039     176     220 ..     353     397 ..     344     441 .. 0.87
+   2 ?    0.1   0.0       1.1   1.1e+04     270     300 ..     470     501 ..     443     502 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 24.6 bits;  conditional E-value: 3.9e-08
+        NFECIMNI_00020 176 dafglaregiigkaidepyhegkrdftlmkikrdltldllvvgmg 220
+                           +a++  +eg+++ka+d py+ g+r    +k+kr  tldl+v++  
+  sp|B4UIS1|DNLI_ANASK 353 EALARGQEGVVAKALDAPYEAGRRGAAWLKVKRAHTLDLVVLAAE 397
+                           6777889********************************998653 PP
+
+  == domain 2  score: 0.1 bits;  conditional E-value: 1.1
+        NFECIMNI_00020 270 veieamcrlpng.slrearfkairhdktivdi 300
+                             i+a  r p g +lr ar k  r+dk   d 
+  sp|B4UIS1|DNLI_ANASK 470 DGIQASPRYPGGlALRFARVKRYREDKRPEDA 501
+                           4689999***99679***********987776 PP
+
+>> sp|A9GU24|DNLI_SORC5  Probable DNA ligase OS=Sorangium cellulosum (strain So ce56) OX=448385 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.0   0.0   2.4e-07    0.0024     175     220 ..     350     395 ..     341     409 .. 0.87
+   2 ?   -2.5   0.0       7.1   7.1e+04     273     296 ..     470     494 ..     458     498 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 22.0 bits;  conditional E-value: 2.4e-07
+        NFECIMNI_00020 175 pdafglaregiigkaidepyhegkrdftlmkikrdltldllvvgmg 220
+                            da++  +eg+i+k++  py+ g+r  t +k+kr  tldl+v++  
+  sp|A9GU24|DNLI_SORC5 350 ADALAHGHEGVIAKSLAAPYEAGRRRGTWLKVKRARTLDLVVLAAE 395
+                           58888899********************************998653 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 7.1
+        NFECIMNI_00020 273 eamcrlpng.slrearfkairhdkt 296
+                           ++  r p g +lr ar k  r dk 
+  sp|A9GU24|DNLI_SORC5 470 QSSPRYPGGvALRSARVKRYRPDKP 494
+                           566788988579*********9996 PP
+
+>> sp|Q826P6|DNLI_STRAW  Probable DNA ligase OS=Streptomyces avermitilis (strain ATCC 31267 / DSM 46492 / JCM 5070 / NBR
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.9   0.0   2.6e-07    0.0026     175     254 ..     350     433 ..     344     456 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 21.9 bits;  conditional E-value: 2.6e-07
+        NFECIMNI_00020 175 pdafglaregiigkaidepyhegkrdftlmkikrdltldllvvg..mgrglkgtkyent.lgyliveekngqqh.qvsgmtdaq 254
+                            d ++  +eg++ ka+d py  g+r  + +k+k   tldl+v++   g+g +  k  n  lg    +   +       gmtda 
+  sp|Q826P6|DNLI_STRAW 350 ADTLARGHEGVVVKALDAPYSAGRRGASWLKVKPVHTLDLVVLAaeWGHGRRTGKLSNLhLGARAADGSFAMLGkTFKGMTDAM 433
+                           57777889*******************************998762268888888887743666666555544431346777764 PP
+
+>> sp|C1AX87|DNLI_RHOOB  Probable DNA ligase OS=Rhodococcus opacus (strain B4) OX=632772 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.4   0.0   1.5e-06     0.015     173     230 ..     341     399 ..     335     492 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 19.4 bits;  conditional E-value: 1.5e-06
+        NFECIMNI_00020 173 stpdafglaregiigkaidepyhegkrdftlmkikrdltldllvvgmgrgl.kgtkyen 230
+                              da++  +eg++ k++  py  g+r    +k+k + tldl+v+g   g  + t y +
+  sp|C1AX87|DNLI_RHOOB 341 HFDDALAAGHEGVMVKSLTAPYAAGRRGRAWQKVKPEHTLDLVVLGAEWGYgRRTGYLS 399
+                           56799999*************************************98666423455555 PP
+
+>> sp|Q0SG75|DNLI_RHOJR  Probable DNA ligase OS=Rhodococcus jostii (strain RHA1) OX=101510 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.4   0.0   1.4e-06     0.014     173     233 ..     341     402 ..     335     492 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 19.4 bits;  conditional E-value: 1.4e-06
+        NFECIMNI_00020 173 stpdafglaregiigkaidepyhegkrdftlmkikrdltldllvvgmgrgl.kgtkyentlg 233
+                              da++  +eg++ k++  py  g+r    +k+k + tldl+v+g   g  + t y + l 
+  sp|Q0SG75|DNLI_RHOJR 341 HFDDALAAGHEGVMVKSLAAPYAAGRRGRAWQKVKPEHTLDLVVLGAEWGYgRRTGYLSNLH 402
+                           56799999**************************************8766524466666654 PP
+
+>> sp|A7HID3|DNLI_ANADF  Probable DNA ligase OS=Anaeromyxobacter sp. (strain Fw109-5) OX=404589 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.0   2.4e-06     0.024     178     222 ..     353     397 ..     346     441 .. 0.82
+   2 ?   -2.1   0.0       5.2   5.2e+04     272     296 ..     470     495 ..     445     500 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 2.4e-06
+        NFECIMNI_00020 178 fglaregiigkaidepyhegkrdftlmkikrdltldllvvgmgrg 222
+                           ++  +eg+++k++  py+ g+r  + +k+kr  tldl+v++   g
+  sp|A7HID3|DNLI_ANADF 353 LARGHEGLLAKSLTAPYEAGRRGASWLKVKRAHTLDLVVLAAEWG 397
+                           55678********************************99865433 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 5.2
+        NFECIMNI_00020 272 ieamcrlpng.slrearfkairhdkt 296
+                           ++   r p g +lr ar k  r+dk 
+  sp|A7HID3|DNLI_ANADF 470 LQESSRYPGGlALRFARVKRYREDKR 495
+                           66778999986699999999999996 PP
+
+>> sp|Q5YNY7|DNLI_NOCFA  Probable DNA ligase OS=Nocardia farcinica (strain IFM 10152) OX=247156 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   17.8   0.0   4.7e-06     0.047     177     234 ..     366     424 ..     355     455 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 17.8 bits;  conditional E-value: 4.7e-06
+        NFECIMNI_00020 177 afglaregiigkaidepyhegkrdftlmkikrdltldllvvgmgrgl.kgtkyentlgy 234
+                           a++  +eg++ k++  py  g+r  + +kik   tldllv+g   g  + t y + l  
+  sp|Q5YNY7|DNLI_NOCFA 366 ALAAGHEGLMVKSLSAPYAAGRRGRSWQKIKPTHTLDLLVLGAEWGYgRRTGYLSNLHL 424
+                           566789************************************87664244666665554 PP
+
+>> sp|A3CWP1|DNLI_METMJ  DNA ligase OS=Methanoculleus marisnigri (strain ATCC 35101 / DSM 1498 / JR1) OX=368407 GN=lig P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   17.1   0.0   7.4e-06     0.074     176     242 ..     382     448 ..     375     488 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 7.4e-06
+        NFECIMNI_00020 176 dafglaregiigkaidepyhegkrdftlmkikrdl.tldllvvgmgrglkgtkyentlg.yliveekng 242
+                           +a+ l +eg++ k +d py  g r    +k+k  + tldl+vvg   g +g +   t+g +l+  +  g
+  sp|A3CWP1|DNLI_METMJ 382 EALDLGHEGVMVKVLDSPYTPGVRGRLWVKVKPGVeTLDLVVVGAEWG-EGRRA-GTFGsFLLAVQDQG 448
+                           78899***************************98659*******8655.45443.33331455444455 PP
+
+>> sp|C5BW79|DNLI_BEUC1  Probable DNA ligase OS=Beutenbergia cavernae (strain ATCC BAA-8 / DSM 12333 / CCUG 43141 / JCM 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   16.4   0.0   1.2e-05      0.12     181     221 ..     359     399 ..     321     414 .. 0.80
+   2 ?   -1.6   0.0       3.7   3.7e+04     269     301 ..     468     501 ..     445     501 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 1.2e-05
+        NFECIMNI_00020 181 aregiigkaidepyhegkrdftlmkikrdltldllvvgmgr 221
+                            +eg++ ka d py+ g+r    +k+k   tldl+v+++  
+  sp|C5BW79|DNLI_BEUC1 359 GQEGVVVKATDTPYEAGRRGAGWIKVKPRHTLDLVVLAVEW 399
+                           479*******************************9987643 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 3.7
+        NFECIMNI_00020 269 iveieamcrlpng.slrearfkairhdktivdid 301
+                           +  ++   r p g +lr ar    r dkt  + d
+  sp|C5BW79|DNLI_BEUC1 468 FDGLQRSTRYPGGlALRFARVLRYRDDKTAAEAD 501
+                           445677889999966999***9******988765 PP
+
+>> sp|A6WG40|DNLI_KINRD  Probable DNA ligase OS=Kineococcus radiotolerans (strain ATCC BAA-149 / DSM 14245 / SRS30216) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   16.7   0.0   9.7e-06     0.097     178     223 ..     347     392 ..     331     402 .. 0.89
+   2 ?   -2.7   0.0       7.9     8e+04     275     301 ..     466     493 ..     458     493 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 9.7e-06
+        NFECIMNI_00020 178 fglaregiigkaidepyhegkrdftlmkikrdltldllvvgmgrgl 223
+                           ++  +eg++ k +d py  g+r    +k+k   tldl+v+++ rg 
+  sp|A6WG40|DNLI_KINRD 347 LAGGHEGVVVKDLDSPYAAGRRGGAWVKVKPVHTLDLVVLAVERGS 392
+                           55578**********************************9999984 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 7.9
+        NFECIMNI_00020 275 mcrlpng.slrearfkairhdktivdid 301
+                             r p g +lr ar    r+dkt  + d
+  sp|A6WG40|DNLI_KINRD 466 STRYPGGvALRFARVVRYREDKTAAEAD 493
+                           578898857999**********988765 PP
+
+>> sp|Q08387|DNLI4_YEAST  DNA ligase 4 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=DNL4 PE=1 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   16.8   0.0   9.1e-06     0.091     174     291 ..     433     552 ..     416     557 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 9.1e-06
+         NFECIMNI_00020 174 tpdafglaregiigkaidepyhegkrdftlmkikrdl......tldllvvgmgrglkgtkyentlgyliveekngqqhqv..sgmtda 253
+                               a++l  eg++ k  +  y+ + r+   +k+k +        ldl+v+g   g k       lg l+++e+  ++hq   s + d 
+  sp|Q08387|DNLI4_YEAST 433 LEVAISLGSEGVVLKYYNSSYNVASRNNNWIKVKPEYleefgeNLDLIVIGRDSGKKD---SFMLGLLVLDEEEYKKHQGdsSEIVDH 517
+                            45688999*************************9875333343699999998877655...568*********999999622567788 PP
+
+         NFECIMNI_00020 254 qrvewhanpaaikgkiveieamcrlpngslrearfkai 291
+                               e h   +  + ++ +i ++c + ng  +e +fk i
+  sp|Q08387|DNLI4_YEAST 518 SSQEKHIQNS--RRRVKKILSFCSIANGISQE-EFKEI 552
+                            8888887665..66788999*******97655.67776 PP
+
+>> sp|Q0W0X1|DNLI_METAR  DNA ligase OS=Methanocella arvoryzae (strain DSM 22066 / NBRC 105507 / MRE50) OX=351160 GN=lig 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.8   0.0      0.02     2e+02     129     185 ..     234     291 ..     227     300 .. 0.87
+   2 ?    9.5   0.0    0.0015        15     181     243 ..     400     464 ..     341     504 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 5.8 bits;  conditional E-value: 0.02
+        NFECIMNI_00020 129 tfrkrydrlgsvvsf.lnydwlrkaeiicctkdpevwykvfedits.tpdafglaregi 185
+                           ++r+  d +g v  f + yd  r  +i    kd +++ + +ed+t   p+  g  re++
+  sp|Q0W0X1|DNLI_METAR 234 SIREALDTMGGVAEFeMKYDGAR-LQIHKVGKDVKLYSRRLEDLTDaLPEIVGYVRESV 291
+                           679999*******99779**987.68999***************9626********987 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 0.0015
+        NFECIMNI_00020 181 aregiigkaidepyhegkrdftlmkikrdl.tldllvvgm..grglkgtkyentlgyliveekngq 243
+                            +eg++gk ++  y  g r   ++kik  l tldl +v+   g+g k+  +  ++    ++e+ g 
+  sp|Q0W0X1|DNLI_METAR 400 GNEGLMGKDLNATYTPGVRGKKMVKIKSVLdTLDLAIVSAewGHGRKAG-WLTSFEVAALDEETGD 464
+                           689************************998789**99975226666543.3444445555566655 PP
+
+>> sp|B1L3K8|DNLI1_KORCO  DNA ligase 1 OS=Korarchaeum cryptofilum (strain OPF8) OX=374847 GN=lig1 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.9   0.0   1.8e-05      0.18     176     228 ..     375     426 ..     356     471 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 1.8e-05
+         NFECIMNI_00020 176 dafglaregiigkaidepyhegkrdftlmkikrdltldllvvgmgrglkgtky 228
+                            +a+   +eg+i+k ++ py  g r    +k+k+  +ldl++v+  rg  g ++
+  sp|B1L3K8|DNLI1_KORCO 375 EALREGHEGVIAKKLNSPYIPGVRGRYWLKVKETNSLDLVIVAAERGY-GRRH 426
+                            5666789************************************99996.4443 PP
+
+>> sp|A4F870|DNLI_SACEN  Probable DNA ligase OS=Saccharopolyspora erythraea (strain ATCC 11635 / DSM 40517 / JCM 4748 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.7   0.0     2e-05       0.2     175     219 ..     343     387 ..     321     416 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 15.7 bits;  conditional E-value: 2e-05
+        NFECIMNI_00020 175 pdafglaregiigkaidepyhegkrdftlmkikrdltldllvvgm 219
+                            da+   +eg++ k++d  y  g+r  t  k+k   tldl+v++ 
+  sp|A4F870|DNLI_SACEN 343 DDALEAGHEGVMVKSLDSAYAAGRRGRTWRKVKPSHTLDLVVLAA 387
+                           47888999********************************99864 PP
+
+>> sp|B5YD88|DNLI_DICT6  Probable DNA ligase OS=Dictyoglomus thermophilum (strain ATCC 35947 / DSM 3960 / H-6-12) OX=309
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.4   0.0   2.4e-05      0.24     158     227 ..     375     443 ..     313     463 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 2.4e-05
+        NFECIMNI_00020 158 tkdpevwykvfeditstpdafglaregiigkaidepyhegkrdftlmkikrdl......tldllvvgmgrglkgtk 227
+                           t dp+     fe+  +         egi++k +d py+ g r+f  +k+kr        t+d +++g  +g +g +
+  sp|B5YD88|DNLI_DICT6 375 TNDPKEIQSFFEECIT------EGLEGIVAKRLDAPYQAGMRNFNWIKLKRSYqghladTVDCVILGYFKG-RGHR 443
+                           5556555555555432......2459*************************75333344677777776655.3444 PP
+
+>> sp|Q9FZA0|RLF4_ARATH  Protein RALF-like 4 OS=Arabidopsis thaliana OX=3702 GN=RALFL4 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.7   0.0   1.9e-05       0.2      83     159 ..       5      79 ..       2      98 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 15.7 bits;  conditional E-value: 1.9e-05
+        NFECIMNI_00020  83 irlifeaiipgmifkdlngkfnqkkialdgvvcmahdvlfekyphttfrkrydrlgsvvsflnydwlrkaeiicctk 159
+                           + lif  +i +m+ k +n+ +   k  ++g  c+ +d  +e    +  ++r   l+    ++ yd l+k  + c  +
+  sp|Q9FZA0|RLF4_ARATH   5 MLLIFGLLILAMVAKSVNATYPLTKSCINGQGCIGEDDELESLMDSETNRRQ--LARGRRYIGYDALKKNNVPCSRR 79 
+                           5699********************************9999998887766664..4555689********99988655 PP
+
+>> sp|Q75CA4|DNLI4_EREGS  DNA ligase 4 OS=Eremothecium gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-105
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.5   0.0   4.6e-05      0.46     179     291 ..     480     592 ..     466     596 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 4.6e-05
+         NFECIMNI_00020 179 glaregiigkaidepyhegkrdftlmkikrdl......tldllvvgmgrglkgtkyentlgyliveekngqqhqvsgmtdaqrvewha 260
+                            +   egi+ k     y  gkrd + +kik +        +dl+v+g  +g k + +   l+     ekn+     sg  d+   +  +
+  sp|Q75CA4|DNLI4_EREGS 480 AHGSEGIVLKKARSKYSVGKRDDSWIKIKPEYlenfgeNMDLVVIGRDKGRKDS-FICALAVTDDSEKNNPSSYESGS-DS---DSDS 562
+                            45689************************87533334369********999865.67788888888888887777775.33...4578 PP
+
+         NFECIMNI_00020 261 npaaikgkiveieamcrlpngslrearfkai 291
+                             p  ++ ki ++ ++c + ng  +e +fk i
+  sp|Q75CA4|DNLI4_EREGS 563 EPIIVQPKIEKFISFCSIANGISNE-EFKEI 592
+                            9*******************97665.57665 PP
+
+>> sp|A0QJL0|DNLI_MYCA1  Probable DNA ligase OS=Mycobacterium avium (strain 104) OX=243243 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.6   0.0   4.3e-05      0.43     179     230 ..     371     424 ..     347     458 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 4.3e-05
+        NFECIMNI_00020 179 glaregiigkaidepyhegkrdftlmkikrdltldllvvgm..grglkgtkyen 230
+                           +  +eg+++ka   py+ g+r    +k+k   tldl+v+++  g g +  k  n
+  sp|A0QJL0|DNLI_MYCA1 371 AAGHEGVMAKAPGAPYQAGRRGAGWLKVKPVHTLDLVVLAVewGSGRRRGKLSN 424
+                           34689******************************9886542266666666655 PP
+
+>> sp|B8DZX8|DNLI_DICTD  Probable DNA ligase OS=Dictyoglomus turgidum (strain DSM 6724 / Z-1310) OX=515635 GN=lig PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.3   0.0   5.3e-05      0.53     159     226 ..     376     442 ..     318     461 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 5.3e-05
+        NFECIMNI_00020 159 kdpevwykvfeditstpdafglaregiigkaidepyhegkrdftlmkikrdl......tldllvvgmgrglkgt 226
+                            dp+     fe+  +         egi++k +d py+ g r+f  +k+kr        t+d +++g  +g +g 
+  sp|B8DZX8|DNLI_DICTD 376 NDPKEIQAFFEECIT------EGLEGIVAKRLDAPYQAGIRNFNWIKLKRSYqghladTVDCVILGYFKG-RGH 442
+                           555555555555432......2459*************************75333344677777776555.344 PP
+
+>> sp|B6YTR4|DNLI_THEON  DNA ligase OS=Thermococcus onnurineus (strain NA1) OX=523850 GN=lig PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.5   0.1   4.6e-05      0.46     174     273 ..     392     501 ..     332     517 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 4.6e-05
+        NFECIMNI_00020 174 tpdafglaregiigkaidepyhegkrdftlmkikrdl.tldllvvgmgrglkgtkyentlgyliv...eekngqqhqv....sgmtdaq 254
+                              a+ l +eg+++k +d  y+ g r    +kik  +  ldl+++g   g +g +  + lg ++v   +  +g+   v    sg+td  
+  sp|B6YTR4|DNLI_THEON 392 YKKALELGHEGLMAKRLDSVYEPGNRGKKWLKIKPTMeDLDLVIIGAEWG-EGRR-AHLLGSFLVaayDPHSGEFVPVgkvgSGFTDED 478
+                           45688999**************************988459****998766.4544.345555444122344555433333346778877 PP
+
+        NFECIMNI_00020 255 rvewh..anpaai..kgkiveie 273
+                            ve+     p  i  +gk+veie
+  sp|B6YTR4|DNLI_THEON 479 LVEFTkmLKPLIIggEGKFVEIE 501
+                           77775224566553345677776 PP
+
+>> sp|Q73V97|DNLI_MYCPA  Probable DNA ligase OS=Mycolicibacterium paratuberculosis (strain ATCC BAA-968 / K-10) OX=26231
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.5   0.0   4.7e-05      0.47     179     230 ..     364     417 ..     342     451 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 4.7e-05
+        NFECIMNI_00020 179 glaregiigkaidepyhegkrdftlmkikrdltldllvvgm..grglkgtkyen 230
+                           +  +eg+++ka   py+ g+r    +k+k   tldl+v+++  g g +  k  n
+  sp|Q73V97|DNLI_MYCPA 364 AAGHEGVMAKAPGAPYQAGRRGAGWLKVKPVHTLDLVVLAVewGSGRRRGKLSN 417
+                           3468*******************************9886542266666666655 PP
+
+>> sp|Q9FCB1|DNLI_STRCO  Probable DNA ligase OS=Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145) OX=100226 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.0   4.9e-05      0.49     181     238 ..     356     416 ..     343     446 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 4.9e-05
+        NFECIMNI_00020 181 aregiigkaidepyhegkrdftlmkikrdltldllvvg..mgrglkgtkyent.lgylive 238
+                            +eg++ k +d  y  g+r  + +k+k   tldl+v++   g+g +  k  n  lg    +
+  sp|Q9FCB1|DNLI_STRCO 356 GHEGVVVKGLDAAYSAGRRGASWLKVKPVHTLDLVVLAaeWGHGRRTGKLSNLhLGARTAD 416
+                           579*******************************987622588888777777425555554 PP
+
+>> sp|Q8Y5G2|PDXS_LISMO  Pyridoxal 5'-phosphate synthase subunit PdxS OS=Listeria monocytogenes serovar 1/2a (strain ATC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.5   0.0   4.5e-05      0.46     189     279 ..     110     207 ..      88     216 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 4.5e-05
+        NFECIMNI_00020 189 aidepyhegkrdftlmki..krdltldllvvgmgrglkgtkyentlgyli.....veekngqqhqvsgmtdaqrvewhanpaaikgkiv 270
+                             d+ +h  k dft+  +   rd+   l  +g g ++  tk e   g ++     + + ngq +q++gmtd + +    n  a    i 
+  sp|Q8Y5G2|PDXS_LISMO 110 PADDEFHLLKSDFTVPFVcgCRDIGEALRRIGEGAAMLRTKGEPGTGNIVeavrhMRQVNGQIRQIAGMTDDELMVAAKNFGAPYELIK 198
+                           56888*********98773369*********************9999987443334678*************99999999999999999 PP
+
+        NFECIMNI_00020 271 eieamcrlp 279
+                           ei+ + +lp
+  sp|Q8Y5G2|PDXS_LISMO 199 EIKTLGKLP 207
+                           999999998 PP
+
+>> sp|B8DH17|PDXS_LISMH  Pyridoxal 5'-phosphate synthase subunit PdxS OS=Listeria monocytogenes serotype 4a (strain HCC2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.0   4.8e-05      0.48     189     279 ..     110     207 ..      93     216 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 4.8e-05
+        NFECIMNI_00020 189 aidepyhegkrdftlmki..krdltldllvvgmgrglkgtkyentlgyli.....veekngqqhqvsgmtdaqrvewhanpaaikgkiv 270
+                             d+ +h  k dft+  +   rd+   l  +g g ++  tk e   g ++     + + ngq +q++gmtd + +    n  a    i 
+  sp|B8DH17|PDXS_LISMH 110 PADDEFHLLKSDFTVPFVcgCRDIGEALRRIGEGAAMLRTKGEPGTGNIVeavrhMRQVNGQIRQIAGMTDDELMVAAKNFGAPYELIK 198
+                           46888*********98773369*********************9999987433334678*************99999999999999999 PP
+
+        NFECIMNI_00020 271 eieamcrlp 279
+                           ei+ + +lp
+  sp|B8DH17|PDXS_LISMH 199 EIKTLGKLP 207
+                           999999998 PP
+
+>> sp|C1KX53|PDXS_LISMC  Pyridoxal 5'-phosphate synthase subunit PdxS OS=Listeria monocytogenes serotype 4b (strain CLIP
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.0   4.8e-05      0.48     189     279 ..     110     207 ..      93     216 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 4.8e-05
+        NFECIMNI_00020 189 aidepyhegkrdftlmki..krdltldllvvgmgrglkgtkyentlgyli.....veekngqqhqvsgmtdaqrvewhanpaaikgkiv 270
+                             d+ +h  k dft+  +   rd+   l  +g g ++  tk e   g ++     + + ngq +q++gmtd + +    n  a    i 
+  sp|C1KX53|PDXS_LISMC 110 PADDEFHLLKSDFTVPFVcgCRDIGEALRRIGEGAAMLRTKGEPGTGNIVeavrhMRQVNGQIRQIAGMTDDELMVAAKNFGAPYELIK 198
+                           46888*********98773369*********************9999987433334678*************99999999999999999 PP
+
+        NFECIMNI_00020 271 eieamcrlp 279
+                           ei+ + +lp
+  sp|C1KX53|PDXS_LISMC 199 EIKTLGKLP 207
+                           999999998 PP
+
+>> sp|Q71XR3|PDXS_LISMF  Pyridoxal 5'-phosphate synthase subunit PdxS OS=Listeria monocytogenes serotype 4b (strain F236
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.0   4.8e-05      0.48     189     279 ..     110     207 ..      93     216 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 4.8e-05
+        NFECIMNI_00020 189 aidepyhegkrdftlmki..krdltldllvvgmgrglkgtkyentlgyli.....veekngqqhqvsgmtdaqrvewhanpaaikgkiv 270
+                             d+ +h  k dft+  +   rd+   l  +g g ++  tk e   g ++     + + ngq +q++gmtd + +    n  a    i 
+  sp|Q71XR3|PDXS_LISMF 110 PADDEFHLLKSDFTVPFVcgCRDIGEALRRIGEGAAMLRTKGEPGTGNIVeavrhMRQVNGQIRQIAGMTDDELMVAAKNFGAPYELIK 198
+                           46888*********98773369*********************9999987433334678*************99999999999999999 PP
+
+        NFECIMNI_00020 271 eieamcrlp 279
+                           ei+ + +lp
+  sp|Q71XR3|PDXS_LISMF 199 EIKTLGKLP 207
+                           999999998 PP
+
+>> sp|A1SKL2|DNLI_NOCSJ  Probable DNA ligase OS=Nocardioides sp. (strain ATCC BAA-499 / JS614) OX=196162 GN=lig PE=3 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.0   0.00012       1.2     180     221 ..     355     396 ..     344     409 .. 0.85
+   2 ?   -1.6   0.0       3.6   3.6e+04     272     301 ..     469     499 ..     452     499 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 0.00012
+        NFECIMNI_00020 180 laregiigkaidepyhegkrdftlmkikrdltldllvvgmgr 221
+                             +eg++ k++  py+ g+r  + +k+k   tldl+v+++  
+  sp|A1SKL2|DNLI_NOCSJ 355 SGHEGVVVKSLAAPYEAGRRGASWVKVKPVHTLDLVVLAVEW 396
+                           5689*******************************9987643 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 3.6
+        NFECIMNI_00020 272 ieamcrlpng.slrearfkairhdktivdid 301
+                           ++   r p g +lr ar    r dk + +id
+  sp|A1SKL2|DNLI_NOCSJ 469 VQRSTRYPGGvALRFARVLRYRDDKPVAEID 499
+                           56678999986799*************9998 PP
+
+>> sp|A1T6P2|DNLI_MYCVP  Probable DNA ligase OS=Mycolicibacterium vanbaalenii (strain DSM 7251 / JCM 13017 / BCRC 16820 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.0   0.00012       1.2     168     225 ..     349     403 ..     326     415 .. 0.76
+   2 ?   -1.8   0.0       4.2   4.2e+04     272     301 ..     491     521 ..     482     521 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 0.00012
+        NFECIMNI_00020 168 feditstpdafglaregiigkaidepyhegkrdftlmkikrdltldllvvgm..grglkg 225
+                           f d t     ++  +eg+++k+   py+ g+r    +k+k   tldl+v+++  g g + 
+  sp|A1T6P2|DNLI_MYCVP 349 FLDAT-----LAAGHEGVMAKSPTAPYEAGRRGAGWLKVKPVHTLDLVVLAVewGSGRRT 403
+                           44443.....34568*******************************98876522555555 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 4.2
+        NFECIMNI_00020 272 ieamcrlpng.slrearfkairhdktivdid 301
+                           i+   r p g +lr ar    r dkt  + d
+  sp|A1T6P2|DNLI_MYCVP 491 IQTSSRYPGGmALRFARVLCYRDDKTAAEAD 521
+                           66778999995699***********988765 PP
+
+>> sp|Q2NHF9|DNLI_METST  DNA ligase OS=Methanosphaera stadtmanae (strain ATCC 43021 / DSM 3091 / JCM 11832 / MCB-3) OX=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.0   8.5e-05      0.85     181     245 ..     400     466 ..     364     482 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 8.5e-05
+        NFECIMNI_00020 181 aregiigkaidepyhegkrdftlmkikr.dltldllvvg..mgrglkgtkyentlgyliveekngqqh 245
+                            +egi+ k +  py  gkr   ++k k    tld ++ g   g+g    k+  +    +++ek g+  
+  sp|Q2NHF9|DNLI_METST 400 GHEGIMFKDVTSPYSPGKRGKNMLKYKPlRETLDCVITGgtYGKGK-RAKFFGSYLLSLLDEKTGEYK 466
+                           579**********************9952469***99993335553.345555555557899999853 PP
+
+>> sp|A0R3R7|LIGD_MYCS2  Multifunctional non-homologous end joining protein LigD OS=Mycolicibacterium smegmatis (strain 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.2   0.0    0.0039        39      27      65 ..     474     511 ..     465     537 .. 0.81
+   2 ?    2.6   0.0       0.2     2e+03     183     225 ..     616     658 ..     604     681 .. 0.83
+   3 ?   -2.8   0.0       8.6   8.6e+04     271     297 ..     730     756 ..     724     759 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 8.2 bits;  conditional E-value: 0.0039
+        NFECIMNI_00020  27 hlgkeyaifekydgwymyvdcingvwqgirsktgrklps 65 
+                           + +k++a+  k+dg+ + +d+ +g  q irs+tgr++  
+  sp|A0R3R7|LIGD_MYCS2 474 YKAKQWAFEGKWDGYRVIIDADHGQLQ-IRSRTGREVTG 511
+                           6689999999**************987.9******9865 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.2
+        NFECIMNI_00020 183 egiigkaidepyhegkrdftlmkikrdltldllvvgmgrglkg 225
+                           eg+++k  d  y+ g+r  + +k k   t ++++ g  +g  g
+  sp|A0R3R7|LIGD_MYCS2 616 EGVVAKKWDSTYQPGRRSSSWIKDKIWNTQEVVIGGWRQGEGG 658
+                           9***********************9999999888887777555 PP
+
+  == domain 3  score: -2.8 bits;  conditional E-value: 8.6
+        NFECIMNI_00020 271 eieamcrlpngslrearfkairhdkti 297
+                           e+    r  +g lr+  ++ +r dkt 
+  sp|A0R3R7|LIGD_MYCS2 730 EVRYSERTSDGRLRQPSWRGLRPDKTP 756
+                           5666678899***************95 PP
+
+>> sp|Q9HHC4|DNLI_THEKO  DNA ligase OS=Thermococcus kodakarensis (strain ATCC BAA-918 / JCM 12380 / KOD1) OX=69014 GN=li
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   0.0    0.0001         1     175     273 ..     390     498 ..     344     535 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 0.0001
+        NFECIMNI_00020 175 pdafglaregiigkaidepyhegkrdftlmkikrdl.tldllvvgmgrglkgtkyentlgyliv...eekngqqhqv....sgmtdaqr 255
+                             a+ l +eg+++k +d  y+ g r    +kik  +  ldl+++g   g +g +  + lg ++v   +  +g+   v    sg+td   
+  sp|Q9HHC4|DNLI_THEKO 390 RRALELGHEGLMAKRLDSIYEPGNRGKKWLKIKPTMeNLDLVIIGAEWG-EGRR-AHLLGSFLVaayDPHSGEFLPVgkvgSGFTDEDL 476
+                           5678899**************************988469******8766.4544.3455544441213345554333222367777777 PP
+
+        NFECIMNI_00020 256 vewh..anpaai..kgkiveie 273
+                           ve+     p  +  +gk+veie
+  sp|Q9HHC4|DNLI_THEKO 477 VEFTkmLKPYIVrqEGKFVEIE 498
+                           7764113455442246666666 PP
+
+>> sp|A4TDS2|DNLI_MYCGI  Probable DNA ligase OS=Mycolicibacterium gilvum (strain PYR-GCK) OX=350054 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.0   0.00017       1.7     179     230 ..     351     404 ..     329     412 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 0.00017
+        NFECIMNI_00020 179 glaregiigkaidepyhegkrdftlmkikrdltldllvvgm..grglkgtkyen 230
+                           +  +eg+++k+   py+ g+r    +k+k   tldl+v+++  g g ++ k  n
+  sp|A4TDS2|DNLI_MYCGI 351 AAGHEGVMAKSTVAPYEAGRRGAGWLKVKPVHTLDLVVLAVewGSGRRSGKLSN 404
+                           4568*******************************9886542277766666655 PP
+
+>> sp|A1UDY9|DNLI_MYCSK  Probable DNA ligase OS=Mycobacterium sp. (strain KMS) OX=189918 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   0.00013       1.3     180     229 ..     353     404 ..     346     437 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 0.00013
+        NFECIMNI_00020 180 laregiigkaidepyhegkrdftlmkikrdltldllvvgm..grglkgtkye 229
+                             +eg+++k+ + py+ g+r    +k+k   tldl+v+++  g g +  k  
+  sp|A1UDY9|DNLI_MYCSK 353 AGHEGVMAKSPNAPYEAGRRGAGWLKVKPVHTLDLVVLAVewGSGRRTGKLS 404
+                           568*******************************988664226666655555 PP
+
+>> sp|A3PXE2|DNLI_MYCSJ  Probable DNA ligase OS=Mycobacterium sp. (strain JLS) OX=164757 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   0.00013       1.3     180     229 ..     353     404 ..     346     437 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 0.00013
+        NFECIMNI_00020 180 laregiigkaidepyhegkrdftlmkikrdltldllvvgm..grglkgtkye 229
+                             +eg+++k+ + py+ g+r    +k+k   tldl+v+++  g g +  k  
+  sp|A3PXE2|DNLI_MYCSJ 353 AGHEGVMAKSPNAPYEAGRRGAGWLKVKPVHTLDLVVLAVewGSGRRTGKLS 404
+                           568*******************************988664226666655555 PP
+
+>> sp|Q1BB26|DNLI_MYCSS  Probable DNA ligase OS=Mycobacterium sp. (strain MCS) OX=164756 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   0.00013       1.3     180     229 ..     353     404 ..     346     437 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 0.00013
+        NFECIMNI_00020 180 laregiigkaidepyhegkrdftlmkikrdltldllvvgm..grglkgtkye 229
+                             +eg+++k+ + py+ g+r    +k+k   tldl+v+++  g g +  k  
+  sp|Q1BB26|DNLI_MYCSS 353 AGHEGVMAKSPNAPYEAGRRGAGWLKVKPVHTLDLVVLAVewGSGRRTGKLS 404
+                           568*******************************988664226666655555 PP
+
+>> sp|B8HCE1|DNLI_PSECP  Probable DNA ligase OS=Pseudarthrobacter chlorophenolicus (strain ATCC 700700 / DSM 12829 / CIP
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   0.00036       3.6     174     219 ..     341     386 ..     328     414 .. 0.82
+   2 ?   -0.6   0.0       1.8   1.8e+04     272     301 ..     466     496 ..     444     496 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 0.00036
+        NFECIMNI_00020 174 tpdafglaregiigkaidepyhegkrdftlmkikrdltldllvvgm 219
+                           + da++  +eg++ k++   y  g+r    +k+k  lt dl+v++ 
+  sp|B8HCE1|DNLI_PSECP 341 SRDALAAGHEGVMLKSVGSLYAAGRRGSNWIKVKPVLTYDLVVLAC 386
+                           35788999*********************************99865 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 1.8
+        NFECIMNI_00020 272 ieamcrlpng.slrearfkairhdktivdid 301
+                           ++   r p   +lr ar k  r+dkt  + d
+  sp|B8HCE1|DNLI_PSECP 466 VQQSPRYPGRiALRFARVKGYREDKTAAEAD 496
+                           55555666533799************98765 PP
+
+>> sp|P54875|DNLI_METTF  DNA ligase OS=Methanothermobacter thermautotrophicus OX=145262 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.1   0.00017       1.7     181     247 ..     399     467 ..     387     482 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 0.00017
+        NFECIMNI_00020 181 aregiigkaidepyhegkrdftlmkikrd.ltldllvvgmgrglkgtkyentlgyliv..eekngqqhqv 247
+                            +egi+ k  + py  g r   ++k+k +  tldl+vvg   g +g +     +yl+   +ek+g+   +
+  sp|P54875|DNLI_METTF 399 GHEGIMIKDTEAPYIPGIRGKKMLKFKAEpETLDLIVVGGTYG-RGKRAHLVGSYLLAvrDEKSGELKTI 467
+                           579************************87369******95444.45444444445543227888886544 PP
+
+>> sp|A7IAA9|DNLI_METB6  DNA ligase OS=Methanoregula boonei (strain DSM 21154 / JCM 14090 / 6A8) OX=456442 GN=lig PE=3 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.0   0.00017       1.7     175     226 ..     381     432 ..     353     470 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 0.00017
+        NFECIMNI_00020 175 pdafglaregiigkaidepyhegkrdftlmkikrdl.tldllvvgmgrglkgt 226
+                            da++  +egi+ k    py  g+r    +kik ++ tldl v+g   g +g 
+  sp|A7IAA9|DNLI_METB6 381 HDALAAGHEGIMLKVPASPYTPGQRGKNWIKIKPEVdTLDLAVIGAEWG-EGK 432
+                           5899999**************************99869*******7655.333 PP
+
+>> sp|A0AKK8|PDXS_LISW6  Pyridoxal 5'-phosphate synthase subunit PdxS OS=Listeria welshimeri serovar 6b (strain ATCC 358
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   0.00012       1.2     189     279 ..     110     207 ..      93     217 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 0.00012
+        NFECIMNI_00020 189 aidepyhegkrdftlmki..krdltldllvvgmgrglkgtkyentlgyli.....veekngqqhqvsgmtdaqrvewhanpaaikgkiv 270
+                             d+ +h  k dft+  +   rd+   l  +g g ++  tk e   g ++     + + ngq +q+ gmtd + +    n  a    + 
+  sp|A0AKK8|PDXS_LISW6 110 PADDEFHLLKSDFTVPFVcgCRDIGEALRRIGEGAAMLRTKGEPGTGNIVeavrhMRQVNGQIRQIVGMTDDELMVAAKNFGAPYELVK 198
+                           46888*********98773369*********************9999987433334678*************99999999999988999 PP
+
+        NFECIMNI_00020 271 eieamcrlp 279
+                           ei+++ +lp
+  sp|A0AKK8|PDXS_LISW6 199 EIKSLGKLP 207
+                           999999998 PP
+
+>> sp|D4GYZ4|DNLI_HALVD  DNA ligase OS=Haloferax volcanii (strain ATCC 29605 / DSM 3757 / JCM 8879 / NBRC 14742 / NCIMB 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0    0.0002         2     175     227 ..     420     472 ..     401     500 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 0.0002
+        NFECIMNI_00020 175 pdafglaregiigkaidepyhegkrdftlmkikrdl.tldllvvgmgrglkgtk 227
+                            da+   +egi+ k  d py  g r    +k k d+ tldl+v g   g +g +
+  sp|D4GYZ4|DNLI_HALVD 420 ADALDAGHEGIMLKNPDAPYSPGDRGKNWLKRKPDVeTLDLVVTGAEWG-EGRR 472
+                           6999999****************************879*****997555.3443 PP
+
+>> sp|Q9HH07|DNLI_THEFM  DNA ligase OS=Thermococcus fumicolans OX=46540 GN=lig PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   0.00018       1.8     177     237 ..     392     451 ..     351     535 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 0.00018
+        NFECIMNI_00020 177 afglaregiigkaidepyhegkrdftlmkikrdl.tldllvvgmgrglkgtkyentlgyliv 237
+                           a+ l +eg+++k +d  y+ g r    +kik  +  ldl+++g   g +g +  + lg ++v
+  sp|Q9HH07|DNLI_THEFM 392 ALELGHEGLMAKRLDSVYEPGNRGKKWLKIKPTMeDLDLVIIGAEWG-EGRR-AHLLGSFLV 451
+                           67899**************************988459****998666.4544.345554443 PP
+
+>> sp|A2SR38|DNLI_METLZ  DNA ligase OS=Methanocorpusculum labreanum (strain ATCC 43576 / DSM 4855 / Z) OX=410358 GN=lig 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.0   0.00022       2.2     181     248 ..     387     455 ..     358     468 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 0.00022
+        NFECIMNI_00020 181 aregiigkaidepyhegkrdftlmkikrdl.tldllvvgm..grglkgtkyentlgyliveekngqqhqvs 248
+                            +egi+ k +d py  g r    +kik ++ t+dl+v +   g+g ++  + + l  l  +++ng   ++s
+  sp|A2SR38|DNLI_METLZ 387 GNEGIMLKVLDSPYLPGNRGKLWIKIKPEVdTIDLVVTAAewGEGKRAKMFGSFL--LACQDENGDLLEIS 455
+                           689************************9986899988764115554444443332..45678888777766 PP
+
+>> sp|Q3IPX0|DNLI_NATPD  DNA ligase OS=Natronomonas pharaonis (strain ATCC 35678 / DSM 2160 / CIP 103997 / JCM 8858 / NB
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   0.00023       2.4     174     245 ..     389     459 ..     363     488 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.00023
+        NFECIMNI_00020 174 tpdafglaregiigkaidepyhegkrdftlmkikrdl.tldllvvgmgrglkgtkyentlgyliveekngqqh 245
+                             da+   +egi+ k  d  y  g r    +k k d+ tldl+v g   g +g    n lg ++v  +    +
+  sp|Q3IPX0|DNLI_NATPD 389 EADALDAGHEGIMLKNPDSTYTPGSRGKNWLKRKPDVeTLDLVVTGAEWG-EGR-RANLLGTFVVSARADDGY 459
+                           46999999****************************879******98777.454.579999999877654444 PP
+
+>> sp|O93723|DNLI_PYRAE  DNA ligase OS=Pyrobaculum aerophilum (strain ATCC 51768 / DSM 7523 / JCM 9630 / CIP 104966 / NB
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   0.00039       3.9     144     224 ..     356     449 ..     327     461 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 0.00039
+        NFECIMNI_00020 144 lnydwlrkaeiicctkdpev.wykvfeditstp....dafglaregiigkaidepyhegkrdftlmkikrdl......tldllvvgm.. 219
+                           l y  +r +ei+c t    +  +++f++  +      ++ ++  eg+i k+    y+ g r +  +k krd       t+dl+vvg   
+  sp|O93723|DNLI_PYRAE 356 LIYRRVRLSEIVCETDKVSIaKWRIFDNAEAVDvffhESVSMGTEGLICKSPSSIYEMGARGWNWIKYKRDYrsemidTVDLVVVGAfh 444
+                           567788999****997766526799998776541122556899***************************9744555578999999633 PP
+
+        NFECIMNI_00020 220 grglk 224
+                           grg +
+  sp|O93723|DNLI_PYRAE 445 GRGKR 449
+                           55554 PP
+
+>> sp|A5UKX2|DNLI_METS3  DNA ligase OS=Methanobrevibacter smithii (strain ATCC 35061 / DSM 861 / OCM 144 / PS) OX=420247
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.1   0.00033       3.3     179     235 ..     394     450 ..     334     480 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00033
+        NFECIMNI_00020 179 glaregiigkaidepyhegkrdftlmkikrd.ltldllvvgmgrglkgtkyentlgyl 235
+                           +  +egi+ k   epy  g r   ++k k +  tld++vvg   g+ g + +   +yl
+  sp|A5UKX2|DNLI_METS3 394 AQHHEGIMIKDAGEPYIPGLRGKKMLKYKAEpETLDMVVVGGTYGI-GKRGDFVGSYL 450
+                           33479***********************987369******976665.33333333333 PP
+
+>> sp|B2HHE1|DNLI_MYCMM  Probable DNA ligase OS=Mycobacterium marinum (strain ATCC BAA-535 / M) OX=216594 GN=lig PE=3 SV
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   0.00046       4.6     180     230 ..     359     411 ..     349     446 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00046
+        NFECIMNI_00020 180 laregiigkaidepyhegkrdftlmkikrdltldllvvgm..grglkgtkyen 230
+                             +eg+++k+   py  g+r    +k+k   tldl+v+++  g g +  k  n
+  sp|B2HHE1|DNLI_MYCMM 359 AGHEGVMAKSPTAPYLAGRRGAGWLKVKPVHTLDLVVLAVewGSGRRRGKLSN 411
+                           568*******************************9886542266666666655 PP
+
+>> sp|O29632|DNLI_ARCFU  DNA ligase OS=Archaeoglobus fulgidus (strain ATCC 49558 / DSM 4304 / JCM 9628 / NBRC 100126 / V
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   0.00044       4.4     175     220 ..     387     433 ..     366     451 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00044
+        NFECIMNI_00020 175 pdafglaregiigkaidepyhegkrdftlmkikrdl.tldllvvgmg 220
+                            +a++  +eg++ k    py  gkr    +k+k  + tldl+vvg  
+  sp|O29632|DNLI_ARCFU 387 DEAISAGHEGVMIKLPSSPYIPGKRGKNWLKVKAIMeTLDLVVVGGE 433
+                           46788899*************************98769******953 PP
+
+>> sp|B1W5J2|DNLI_STRGG  Probable DNA ligase OS=Streptomyces griseus subsp. griseus (strain JCM 4626 / CBS 651.72 / NBRC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0    0.0004       4.1     181     223 ..     359     401 ..     312     440 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 0.0004
+        NFECIMNI_00020 181 aregiigkaidepyhegkrdftlmkikrdltldllvvgmgrgl 223
+                            +eg++ k +   y  g+r  + +k+k   tldl+v+++ rg 
+  sp|B1W5J2|DNLI_STRGG 359 GHEGVVVKDLAAAYSAGRRGASWLKVKPVHTLDLVVLAVERGS 401
+                           579********************************99988874 PP
+
+>> sp|Q8TWN3|DNLI_METKA  DNA ligase OS=Methanopyrus kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938) OX=190192
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.1   0.00044       4.4     124     227 ..     350     445 ..     321     472 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00044
+        NFECIMNI_00020 124 kyphttfrkrydrlgsvvsflnydwlrkaeiicctkdpevwykvfeditstpdafglaregiigkaidepyhegkrdftlmkikrdl.t 211
+                               t fr+r  rl  +v     + +   ++i  t dp+   ++f        a+ + +eg++ k +d  y  g r   ++k+k  l t
+  sp|Q8TWN3|DNLI_METKA 350 SLVDTPFRERRRRLEEIVREREGEVMLVEQVI--TDDPKEAAEMFH------RALEMGHEGVMVKDLDANYTPGVRGKKMLKVKPVLeT 430
+                           55678888888888888888777777666665..778887777775......477899**************************99879 PP
+
+        NFECIMNI_00020 212 ldllvvgmgrglkgtk 227
+                           ld +v+g   g kg +
+  sp|Q8TWN3|DNLI_METKA 431 LDCVVIGGIWG-KGKR 445
+                           *****994333.4433 PP
+
+>> sp|Q929R9|PDXS_LISIN  Pyridoxal 5'-phosphate synthase subunit PdxS OS=Listeria innocua serovar 6a (strain ATCC BAA-68
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   0.00043       4.3     189     279 ..     110     207 ..      93     216 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00043
+        NFECIMNI_00020 189 aidepyhegkrdftlmki..krdltldllvvgmgrglkgtkyentlgyli.....veekngqqhqvsgmtdaqrvewhanpaaikgkiv 270
+                             d+ +h  k dft+  +   rd+   l  +g g ++  tk e   g ++     + + ngq +q+++mtd + +    n  a    + 
+  sp|Q929R9|PDXS_LISIN 110 PADDEFHLLKSDFTVPFVcgCRDIGEALRRIGEGAAMLRTKGEPGTGNIVeavrhMRQVNGQIRQIASMTDDELMVAAKNFGAPYELVK 198
+                           46888*********98773369*********************9999987433334678*************99998889888888888 PP
+
+        NFECIMNI_00020 271 eieamcrlp 279
+                           ei+ + +lp
+  sp|Q929R9|PDXS_LISIN 199 EIKTLGKLP 207
+                           999998888 PP
+
+>> sp|A0R5T2|LIGC1_MYCS2  DNA ligase C1 OS=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155) OX=246196 GN=ligC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   0.00043       4.3     179     218 ..     177     214 ..     138     247 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.00043
+         NFECIMNI_00020 179 glaregiigkaidepyhegkrdftlmkikrdltldllvvg 218
+                            g   +g+i+k +d py  gkr++  +k  rd   d + +g
+  sp|A0R5T2|LIGC1_MYCS2 177 GAGLDGVIAKRLDGPYLPGKREMVKVKHHRD--ADCVAMG 214
+                            55679****************9876666666..4555444 PP
+
+>> sp|A0PTC0|DNLI_MYCUA  Probable DNA ligase OS=Mycobacterium ulcerans (strain Agy99) OX=362242 GN=lig PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   0.00069       6.9     180     227 ..     359     408 ..     349     439 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 0.00069
+        NFECIMNI_00020 180 laregiigkaidepyhegkrdftlmkikrdltldllvvgm..grglkgtk 227
+                             +eg+++k+   py  g+r    +k+k   tldl+v+++  g g +  k
+  sp|A0PTC0|DNLI_MYCUA 359 AGHEGVMAKSPTAPYLAGRRGAGWLKVKPVHTLDLVVLAVewGSGRRRGK 408
+                           568*******************************9887652266655555 PP
+
+>> sp|Q18GX5|DNLI2_HALWD  DNA ligase 2 OS=Haloquadratum walsbyi (strain DSM 16790 / HBSQ001) OX=362976 GN=lig2 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1   0.0    0.0042        42     177     241 ..     454     517 ..     440     540 .. 0.80
+   2 ?    1.3   0.0      0.48   4.9e+03     282     301 ..     584     603 ..     553     603 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.0042
+         NFECIMNI_00020 177 afglaregiigkaidepyhegkrdftlmkikrdl.tldllvvgmgrglkgtkyentlgyliveekn 241
+                            a++  +eg++ k  d  y+ g r    +k k d+ tldl+v g   g +g    n +g ++v  + 
+  sp|Q18GX5|DNLI2_HALWD 454 ALSNGHEGVMLKDPDSTYNPGSRGQHWLKHKPDVeTLDLVVTGAEWG-EGR-RANVFGTFVVSART 517
+                            566678***************************879******98666.443.45777777776554 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 0.48
+         NFECIMNI_00020 282 slrearfkairhdktivdid 301
+                            +lr  r   irhdk i d+d
+  sp|Q18GX5|DNLI2_HALWD 584 ALRFPRVVGIRHDKAISDVD 603
+                            6899999***********98 PP
+
+>> sp|Q50566|DNLI_METTH  DNA ligase OS=Methanothermobacter thermautotrophicus (strain ATCC 29096 / DSM 1053 / JCM 10044 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.1    0.0009         9     181     229 ..     399     447 ..     383     479 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 0.0009
+        NFECIMNI_00020 181 aregiigkaidepyhegkrdftlmkikrd.ltldllvvgmgrglkgtkye 229
+                            +egi+ k  + py  g r   ++k+k +  tldl+vvg   g +g +  
+  sp|Q50566|DNLI_METTH 399 GHEGIMIKDTEAPYIPGIRGKKMLKFKAEpETLDLIVVGGTYG-RGKRAH 447
+                           679************************87369******95444.344433 PP
+
+>> sp|Q60034|DYR_THEMA  Dihydrofolate reductase OS=Thermotoga maritima (strain ATCC 43589 / DSM 3109 / JCM 10099 / NBRC 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   0.00051       5.1      58     124 ..      51     114 ..      21     143 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.00051
+       NFECIMNI_00020  58 ktgrklpsmdrydailaagpkpnqnirlifeaiipgmifkdlngkfnqkkialdgvvcmahdvlfek 124
+                          + gr lp  +r + +l   pk + n  l+f    p+ + k l gk  ++ +a+ g   +  + l ek
+  sp|Q60034|DYR_THEMA  51 EIGRPLP--ERLNVVLTRRPKTSNNPSLVFFNGSPADVVKFLEGKGYER-VAVIGGKTVFTEFLREK 114
+                          5688887..79**********************************8765.55555455555666666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (302 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13104  (0.0229145); expected 11437.3 (0.02)
+Passed bias filter:                    11549  (0.0201954); expected 11437.3 (0.02)
+Passed Vit filter:                       728  (0.00127303); expected 571.9 (0.001)
+Passed Fwd filter:                        57  (9.9674e-05); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              57  [number of targets reported over threshold]
+# CPU time: 3.09u 0.42s 00:00:03.51 Elapsed: 00:00:01.34
+# Mc/sec: 46358.48
+//
+[ok]

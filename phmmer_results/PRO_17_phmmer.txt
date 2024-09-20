@@ -1,0 +1,2309 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /home/hang/project/pro_7-8/ALL_PRO_2/PRO_17.fasta
+# target sequence database:        /home/hang/databases/swissprot2/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NFECIMNI_00017  [L=368]
+Description: hypothetical protein
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+    6.8e-48  168.7   1.0    2.2e-23   88.1   0.0    2.0  2  sp|P43755|RIR2_HAEIN      Ribonucleoside-diphosphate reductas
+    1.7e-44  157.5   0.6    1.2e-42  151.5   0.6    2.0  1  sp|P37427|RIR2_SALTY      Ribonucleoside-diphosphate reductas
+    2.1e-44  157.2   0.7    1.1e-42  151.6   0.7    2.0  1  sp|P69924|RIR2_ECOLI      Ribonucleoside-diphosphate reductas
+    2.1e-44  157.2   0.7    1.1e-42  151.6   0.7    2.0  1  sp|P69925|RIR2_ECO57      Ribonucleoside-diphosphate reductas
+    1.7e-42  151.0   0.7    3.3e-20   77.6   0.0    2.0  2  sp|Q89AS5|RIR2_BUCBP      Ribonucleoside-diphosphate reductas
+      3e-40  143.6   0.2    3.5e-19   74.3   0.0    2.0  2  sp|P57275|RIR2_BUCAI      Ribonucleoside-diphosphate reductas
+    4.3e-40  143.1   0.2    8.4e-19   73.0   0.0    2.0  2  sp|Q8K9W4|RIR2_BUCAP      Ribonucleoside-diphosphate reductas
+    4.5e-33  119.9   0.2    2.3e-15   61.7   0.1    2.2  2  sp|P11156|RIR2_BPT4       Ribonucleoside-diphosphate reductas
+    1.7e-17   68.7   0.4    1.9e-17   68.6   0.4    1.0  1  sp|Q9ZKC3|RIR2_HELPJ      Ribonucleoside-diphosphate reductas
+    1.7e-17   68.7   0.4    1.9e-17   68.6   0.4    1.0  1  sp|P55983|RIR2_HELPY      Ribonucleoside-diphosphate reductas
+    1.3e-14   59.3   0.1    2.4e-14   58.4   0.1    1.4  1  sp|P09938|RIR2_YEAST      Ribonucleoside-diphosphate reductas
+    1.3e-13   56.0   0.2    4.6e-13   54.2   0.2    1.7  1  sp|P36603|RIR2_SCHPO      Ribonucleoside-diphosphate reductas
+    1.6e-13   55.7   0.1    1.7e-13   55.5   0.1    1.0  1  sp|O83092|RIR2_TREPA      Ribonucleoside-diphosphate reductas
+    6.1e-13   53.7   0.2    1.7e-12   52.3   0.2    1.6  1  sp|P50650|RIR2_PLAF4      Ribonucleoside-diphosphate reductas
+    6.5e-13   53.7   0.1    1.7e-12   52.3   0.1    1.6  1  sp|O15910|RIR2_TRYBB      Ribonucleoside-diphosphate reductas
+    8.3e-13   53.3   0.0    1.4e-12   52.5   0.0    1.3  1  sp|Q9C167|RIR2_NEUCR      Ribonucleoside-diphosphate reductas
+    3.1e-12   51.4   0.4    3.8e-12   51.1   0.4    1.0  1  sp|Q9KFH7|RIR2_HALH5      Ribonucleoside-diphosphate reductas
+    3.9e-12   51.1   0.1    6.3e-12   50.4   0.1    1.3  1  sp|Q9DHU2|RIR2_YLDV       Ribonucleoside-diphosphate reductas
+    6.8e-12   50.3   0.1    1.6e-11   49.1   0.1    1.5  1  sp|P50649|RIR2_PLAFG      Ribonucleoside-diphosphate reductas
+    1.5e-11   49.2   0.1    1.8e-11   48.9   0.1    1.0  1  sp|O84835|RIR2_CHLTR      Ribonucleoside-diphosphate reductas
+    4.3e-11   47.7   0.0    6.7e-11   47.0   0.0    1.2  1  sp|P07201|RIR2_SPISO      Ribonucleoside-diphosphate reductas
+    1.1e-10   46.4   0.3    4.4e-10   44.3   0.3    1.9  1  sp|P49730|RIR2_TOBAC      Ribonucleoside-diphosphate reductas
+    1.2e-10   46.2   0.1    2.1e-10   45.4   0.1    1.3  1  sp|P48592|RIR2_DROME      Ribonucleoside-diphosphate reductas
+    1.3e-10   46.1   0.2    3.2e-10   44.8   0.2    1.6  1  sp|Q4R741|RIR2B_MACFA     Ribonucleoside-diphosphate reductas
+    1.6e-10   45.8   0.2    4.4e-10   44.3   0.2    1.6  1  sp|Q6PEE3|RIR2B_MOUSE     Ribonucleoside-diphosphate reductas
+    1.8e-10   45.6   0.1    4.5e-10   44.3   0.1    1.6  1  sp|Q7LG56|RIR2B_HUMAN     Ribonucleoside-diphosphate reductas
+    1.8e-10   45.6   0.1    4.5e-10   44.3   0.1    1.6  1  sp|Q5R9G0|RIR2B_PONAB     Ribonucleoside-diphosphate reductas
+    2.1e-10   45.4   0.1    3.7e-10   44.6   0.1    1.3  1  sp|O46310|RIR2_LEIAM      Ribonucleoside-diphosphate reductas
+    2.2e-10   45.3   0.2    4.6e-10   44.3   0.2    1.4  1  sp|Q9QTF2|RIR2_RSIV       Ribonucleoside-diphosphate reductas
+    2.5e-10   45.2   0.4    8.6e-10   43.4   0.4    1.8  1  sp|P0DKH3|RI2BL_ARATH     Ribonucleoside-diphosphate reductas
+    6.3e-10   43.8   0.1    7.6e-10   43.6   0.1    1.1  1  sp|Q9PL92|RIR2_CHLMU      Ribonucleoside-diphosphate reductas
+    9.1e-10   43.3   0.6    1.2e-09   42.9   0.6    1.0  1  sp|P50621|RIR2_BACSU      Ribonucleoside-diphosphate reductas
+    1.9e-09   42.3   0.1    2.4e-09   41.9   0.1    1.1  1  sp|Q9Z6S4|RIR2_CHLPN      Ribonucleoside-diphosphate reductas
+    4.9e-09   40.9   0.1    8.8e-09   40.1   0.1    1.3  1  sp|P42170|RIR2_CAEEL      Ribonucleoside-diphosphate reductas
+    5.2e-09   40.8   0.6    2.6e-08   38.5   0.6    1.9  1  sp|Q9LSD0|RIR2C_ARATH     Ribonucleoside-diphosphate reductas
+    5.5e-09   40.7   0.0    8.9e-09   40.1   0.0    1.2  1  sp|P42521|RIR2_DICDI      Ribonucleoside-diphosphate reductas
+    1.7e-08   39.1   0.0    2.6e-08   38.5   0.0    1.2  1  sp|P0DSS8|RIR2_VARV       Ribonucleoside-diphosphate reductas
+    1.8e-08   39.0   0.0    3.1e-08   38.3   0.0    1.3  1  sp|O57175|RIR2_VACCA      Ribonucleoside-diphosphate reductas
+    2.3e-08   38.7   0.0    3.9e-08   37.9   0.0    1.3  1  sp|P20493|RIR2_VACCC      Ribonucleoside-diphosphate reductas
+    2.5e-08   38.6   0.0    4.2e-08   37.8   0.0    1.3  1  sp|P11158|RIR2_VACCW      Ribonucleoside-diphosphate reductas
+    2.5e-08   38.6   0.0      4e-08   37.9   0.0    1.3  1  sp|P29883|RIR2_VACCP      Ribonucleoside-diphosphate reductas
+    2.9e-08   38.4   0.3      6e-08   37.3   0.3    1.4  1  sp|P32209|RIR2_SWPVK      Ribonucleoside-diphosphate reductas
+    7.9e-08   36.9   0.9    2.7e-07   35.2   0.9    1.7  1  sp|P79733|RIR2_DANRE      Ribonucleoside-diphosphate reductas
+      1e-07   36.6   0.1      2e-07   35.6   0.1    1.4  1  sp|A0A7H0DN21|RIR2_MONPV  Ribonucleoside-diphosphate reductas
+    1.8e-07   35.8   0.2    4.6e-07   34.4   0.2    1.6  1  sp|P11157|RIR2_MOUSE      Ribonucleoside-diphosphate reductas
+    2.2e-07   35.5   0.0    3.5e-07   34.8   0.0    1.3  1  sp|P0DSS7|RIR2_VAR67      Ribonucleoside-diphosphate reductas
+    2.2e-07   35.5   0.1    2.8e-07   35.2   0.1    1.1  1  sp|O30601|YOSP_BACSU      SPbeta prophage-derived ribonucleos
+    2.2e-07   35.5   0.1    2.8e-07   35.2   0.1    1.1  1  sp|O64174|BNRDF_BPSPB     Ribonucleoside-diphosphate reductas
+    2.4e-07   35.4   0.1    3.8e-07   34.7   0.1    1.3  1  sp|P09247|RIR2_VZVD       Ribonucleoside-diphosphate reductas
+    2.4e-07   35.4   0.1    3.8e-07   34.7   0.1    1.3  1  sp|Q4JQV7|RIR2_VZVO       Ribonucleoside-diphosphate reductas
+    3.9e-07   34.7   0.4    1.2e-06   33.0   0.4    1.7  1  sp|Q4R7Q7|RIR2_MACFA      Ribonucleoside-diphosphate reductas
+    4.1e-07   34.6   0.3    1.1e-06   33.2   0.3    1.6  1  sp|P50651|RIR2A_ARATH     Ribonucleoside-diphosphate reductas
+    5.1e-07   34.3   0.4    1.7e-06   32.6   0.4    1.7  1  sp|P31350|RIR2_HUMAN      Ribonucleoside-diphosphate reductas
+      7e-07   33.8   0.5    1.8e-06   32.5   0.5    1.6  1  sp|Q60561|RIR2_MESAU      Ribonucleoside-diphosphate reductas
+      1e-06   33.2   0.3    3.4e-06   31.6   0.3    1.7  1  sp|Q4KLN6|RIR2_RAT        Ribonucleoside-diphosphate reductas
+    2.7e-06   31.9   0.2    5.9e-06   30.8   0.2    1.5  1  sp|P49723|RIR4_YEAST      Ribonucleoside-diphosphate reductas
+    1.6e-05   29.3   0.0    2.4e-05   28.8   0.0    1.2  1  sp|Q6UDJ1|RIR2_PSHV1      Ribonucleoside-diphosphate reductas
+    3.5e-05   28.2   0.1    9.4e-05   26.8   0.1    1.6  1  sp|Q8SRR2|RIR2_ENCCU      Ribonucleoside-diphosphate reductas
+    9.2e-05   26.9   0.1       0.38   15.0   0.0    2.2  2  sp|O67475|RIR2_AQUAE      Ribonucleoside-diphosphate reductas
+    0.00026   25.4   0.1    0.00031   25.1   0.1    1.0  1  sp|P0DKH2|RI2BC_ARATH     Putative ribonucleoside-diphosphate
+    0.00071   23.9   0.3     0.0014   23.0   0.3    1.4  1  sp|P0C8I1|RIR2_ASFP4      Ribonucleoside-diphosphate reductas
+     0.0019   22.6   0.0     0.0024   22.2   0.0    1.1  1  sp|Q77MS0|RIR2_GAHVM      Ribonucleoside-diphosphate reductas
+     0.0023   22.3   0.7     0.0059   20.9   0.7    1.6  1  sp|P0C8I0|RIR2_ASFK5      Ribonucleoside-diphosphate reductas
+     0.0024   22.2   0.0     0.0087   20.4   0.0    1.8  1  sp|Q6GZQ8|RIR2_FRG3G      Putative ribonucleoside-diphosphate
+     0.0031   21.9   0.3      0.006   20.9   0.3    1.4  1  sp|P0C8I2|RIR2_ASFWA      Ribonucleoside-diphosphate reductas
+     0.0031   21.8   0.6     0.0093   20.3   0.6    1.6  1  sp|P26713|RIR2_ASFM2      Ribonucleoside-diphosphate reductas
+     0.0032   21.8   0.3      0.011   20.0   0.3    1.7  1  sp|P17424|RIR4_SALTY      Ribonucleoside-diphosphate reductas
+     0.0033   21.8   0.1     0.0043   21.4   0.1    1.1  1  sp|P0C701|RIR2_EBVG       Ribonucleoside-diphosphate reductas
+     0.0033   21.8   0.1     0.0043   21.4   0.1    1.1  1  sp|P0CAP6|RIR2_EBVB9      Ribonucleoside-diphosphate reductas
+     0.0033   21.8   0.1     0.0043   21.4   0.1    1.1  1  sp|P0CAP7|RIR2_EBVA8      Ribonucleoside-diphosphate reductas
+     0.0041   21.4   0.1     0.0083   20.4   0.1    1.5  1  sp|P37146|RIR4_ECOLI      Ribonucleoside-diphosphate reductas
+     0.0054   21.0   0.2      0.015   19.6   0.2    1.6  1  sp|P47471|RIR2_MYCGE      Ribonucleoside-diphosphate reductas
+      0.006   20.9   0.4      0.014   19.7   0.4    1.5  1  sp|P42492|RIR2_ASFB7      Ribonucleoside-diphosphate reductas
+      0.006   20.9   0.1      0.026   18.8   0.1    1.9  1  sp|P28847|RIR2_EHV1B      Ribonucleoside-diphosphate reductas
+     0.0093   20.3   0.0      0.011   20.0   0.0    1.1  1  sp|Q01038|RIR2_SHV21      Ribonucleoside-diphosphate reductas
+  ------ inclusion threshold ------
+      0.014   19.7   0.3        1.6   12.9   0.2    2.3  1  sp|P50644|RIR2_EHV4       Ribonucleoside-diphosphate reductas
+      0.021   19.1   0.5      0.071   17.4   0.5    1.7  1  sp|P75461|RIR2_MYCPN      Ribonucleoside-diphosphate reductas
+      0.053   17.8   0.0      0.057   17.7   0.0    1.1  1  sp|O36410|RIR2_ALHV1      Ribonucleoside-diphosphate reductas
+      0.064   17.5   0.0       0.12   16.6   0.0    1.4  1  sp|Q9XC20|RIR2_MYCGA      Ribonucleoside-diphosphate reductas
+       0.16   16.2   0.2       0.47   14.7   0.2    1.7  1  sp|P9WH72|RIR2A_MYCTO     Ribonucleoside-diphosphate reductas
+       0.16   16.2   0.2       0.47   14.7   0.2    1.7  1  sp|P9WH73|RIR2A_MYCTU     Ribonucleoside-diphosphate reductas
+       0.19   16.0   0.0       0.24   15.6   0.0    1.1  1  sp|Q66662|RIR2_EHV2       Ribonucleoside-diphosphate reductas
+        1.4   13.1   0.0        1.4   13.1   0.0    1.1  1  sp|F5HAW0|RIR2_HHV8P      Ribonucleoside-diphosphate reductas
+        1.4   13.1   0.1        2.5   12.3   0.1    1.4  1  sp|Q9CBQ2|RIR2_MYCLE      Ribonucleoside-diphosphate reductas
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P43755|RIR2_HAEIN  Ribonucleoside-diphosphate reductase subunit beta OS=Haemophilus influenzae (strain ATCC 51907 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   79.5   0.2   1.4e-24   9.2e-21      26     165 ..      26     165 ..       9     173 .. 0.92
+   2 !   88.1   0.0   3.2e-27   2.2e-23     175     355 ..     194     372 ..     182     376 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 79.5 bits;  conditional E-value: 1.4e-24
+        NFECIMNI_00017  26 lldtinvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawsl 114
+                           +      +y  +e l ++q+s +w   evd+sqdr+d     +    +++  + +q l ds+  rs +  l+p v+  e+e  i  w++
+  sp|P43755|RIR2_HAEIN  26 VARYDQQKYETFEKLIEKQLSFFWRPEEVDVSQDRIDYAALPEHEKHIFISNLKYQTLLDSIQGRSPNVALLPLVSIPELETWIETWTF 114
+                           555556689999***************************************************************************** PP
+
+        NFECIMNI_00017 115 fetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedh 165
+                            etih+r+y+hi++    dp+ ++++  tn  ++ r+q i + +d l  d 
+  sp|P43755|RIR2_HAEIN 115 SETIHSRSYTHIIRNIVNDPSIVFDDIVTNEEIIKRAQDISSYYDDLIRDS 165
+                           ********************************************9997775 PP
+
+  == domain 2  score: 88.1 bits;  conditional E-value: 3.2e-27
+        NFECIMNI_00017 175 illtltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkih...qripaiaemlespmlksqiqkilda 260
+                           + l l ++ ale i f  sfa +f++ae+   + g a+++k+i+rde lh      il i    q  p +ae+ e    k +   ++ a
+  sp|P43755|RIR2_HAEIN 194 LYLCLMSVNALEAIRFYVSFACSFAFAERR-LMEGNAKIIKFIARDEALHLTGTQHILNIMaagQDDPEMAEIAEE--CKQEAYDLFVA 279
+                           678899999******************985.578****************99888888875222777888888775..68899999999 PP
+
+        NFECIMNI_00017 261 vvaqeivfqdylfsegreciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgavaddt 349
+                              qe  + dylf +g   ig+n d++ qy+ ++     +a gl   f   + np+p+++ w+ +  vqvapqe++ s+y vg +    
+  sp|P43755|RIR2_HAEIN 280 AAEQEKAWADYLFKDGS-MIGLNRDILVQYVEYITNIRMQAVGLPLPFQT-RSNPIPWINAWLVSDNVQVAPQEVEVSSYLVGQIDSKV 366
+                           ***************95.8*************************988975.89******************************997654 PP
+
+        NFECIMNI_00017 350 hnldlg 355
+                              d+ 
+  sp|P43755|RIR2_HAEIN 367 DTNDFD 372
+                           444444 PP
+
+>> sp|P37427|RIR2_SALTY  Ribonucleoside-diphosphate reductase 1 subunit beta OS=Salmonella typhimurium (strain LT2 / SGS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.5   0.6   1.7e-46   1.2e-42      31     356 ..      31     373 ..      10     376 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 151.5 bits;  conditional E-value: 1.7e-46
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                             +y  +e l ++q+s +w   evd+s+dr+d     +    +++  + +q l ds+  rs +  l+p ++  e+e  +  w++ etih
+  sp|P37427|RIR2_SALTY  31 QQKYDIFEKLIEKQLSFFWRPEEVDVSRDRIDYQALPEHEKHIFISNLKYQTLLDSIQGRSPNVALLPLISIPELETWVETWAFSETIH 119
+                           5578889********************************************************************************** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdklee..dhrh..sqvtdt...............silltltalfaleeig 189
+                           +r+y+hi++    dp+ ++++  tn  +  r++ i + +d+l e   + h   + t t                + l l ++ ale i 
+  sp|P37427|RIR2_SALTY 120 SRSYTHIIRNIVNDPAVVFDDIVTNEQIQKRAEGISAYYDELIEmtSYWHllGEGTHTvngktvvvnlrelkkKLYLCLMSVNALEAIR 208
+                           *****************************************977332222222222221111111111111113456778889****** PP
+
+        NFECIMNI_00017 190 fmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqr...ipaiaemlespmlksqiqkildavvaqeivfqdylfse 275
+                           f  sfa +f++ae+   + g a++++li+rde lh      +l + +     p +ae+ e    k +   ++     qe  + dylf +
+  sp|P37427|RIR2_SALTY 209 FYVSFACSFAFAERE-LMEGNAKIIRLIARDEALHLTGTQHMLNLLRSgvdDPEMAEIAEE--CKQECYDLFVQAAQQEKEWADYLFRD 294
+                           ************986.678****************87777766665441115777777665..688888888888999*********** PP
+
+        NFECIMNI_00017 276 greciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgavaddthnldlgd 356
+                           g   ig+n d++ qy+ ++     +a gl   f   + np+p+++ w+ +  vqvapqe++ s+y vg +  +    dl++
+  sp|P37427|RIR2_SALTY 295 GS-MIGLNKDILCQYVEYITNIRMQAVGLDLPFQT-RSNPIPWINTWLVSDNVQVAPQEVEVSSYLVGQIDSEVDTDDLSN 373
+                           95.8*************************999985.89*******************************988777666655 PP
+
+>> sp|P69924|RIR2_ECOLI  Ribonucleoside-diphosphate reductase 1 subunit beta OS=Escherichia coli (strain K12) OX=83333 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.6   0.7   1.5e-46   1.1e-42      31     356 ..      31     373 ..      10     376 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 151.6 bits;  conditional E-value: 1.5e-46
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                             +y  +e l ++q+s +w   evd+s+dr+d     +    +++  + +q l ds+  rs +  l+p ++  e+e  +  w++ etih
+  sp|P69924|RIR2_ECOLI  31 QQKYDIFEKLIEKQLSFFWRPEEVDVSRDRIDYQALPEHEKHIFISNLKYQTLLDSIQGRSPNVALLPLISIPELETWVETWAFSETIH 119
+                           5578889********************************************************************************** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdklee.........dhrhs..qvtdt........silltltalfaleeig 189
+                           +r+y+hi++    dp+ ++++  tn  +  r++ i + +d+l e         +  h+    t t         + l l ++ ale i 
+  sp|P69924|RIR2_ECOLI 120 SRSYTHIIRNIVNDPSVVFDDIVTNEQIQKRAEGISSYYDELIEmtsywhllgEGTHTvnGKTVTvslrelkkKLYLCLMSVNALEAIR 208
+                           ****************************************9977332211111112221111212111111113457788889****** PP
+
+        NFECIMNI_00017 190 fmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihq...ripaiaemlespmlksqiqkildavvaqeivfqdylfse 275
+                           f  sfa +f++ae+   + g a++++li+rde lh      +l + +     p +ae+ e    k +   ++     qe  + dylf +
+  sp|P69924|RIR2_ECOLI 209 FYVSFACSFAFAERE-LMEGNAKIIRLIARDEALHLTGTQHMLNLLRsgaDDPEMAEIAEE--CKQECYDLFVQAAQQEKDWADYLFRD 294
+                           ************986.678****************87777666665411156677776664..688888888888999*********** PP
+
+        NFECIMNI_00017 276 greciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgavaddthnldlgd 356
+                           g   ig+n d++ qy+ ++     +a gl   f   + np+p+++ w+ +  vqvapqe++ s+y vg +  +    dl++
+  sp|P69924|RIR2_ECOLI 295 GS-MIGLNKDILCQYVEYITNIRMQAVGLDLPFQT-RSNPIPWINTWLVSDNVQVAPQEVEVSSYLVGQIDSEVDTDDLSN 373
+                           95.8*************************999985.89*******************************988777666655 PP
+
+>> sp|P69925|RIR2_ECO57  Ribonucleoside-diphosphate reductase 1 subunit beta OS=Escherichia coli O157:H7 OX=83334 GN=nrd
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.6   0.7   1.5e-46   1.1e-42      31     356 ..      31     373 ..      10     376 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 151.6 bits;  conditional E-value: 1.5e-46
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                             +y  +e l ++q+s +w   evd+s+dr+d     +    +++  + +q l ds+  rs +  l+p ++  e+e  +  w++ etih
+  sp|P69925|RIR2_ECO57  31 QQKYDIFEKLIEKQLSFFWRPEEVDVSRDRIDYQALPEHEKHIFISNLKYQTLLDSIQGRSPNVALLPLISIPELETWVETWAFSETIH 119
+                           5578889********************************************************************************** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdklee.........dhrhs..qvtdt........silltltalfaleeig 189
+                           +r+y+hi++    dp+ ++++  tn  +  r++ i + +d+l e         +  h+    t t         + l l ++ ale i 
+  sp|P69925|RIR2_ECO57 120 SRSYTHIIRNIVNDPSVVFDDIVTNEQIQKRAEGISSYYDELIEmtsywhllgEGTHTvnGKTVTvslrelkkKLYLCLMSVNALEAIR 208
+                           ****************************************9977332211111112221111212111111113457788889****** PP
+
+        NFECIMNI_00017 190 fmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihq...ripaiaemlespmlksqiqkildavvaqeivfqdylfse 275
+                           f  sfa +f++ae+   + g a++++li+rde lh      +l + +     p +ae+ e    k +   ++     qe  + dylf +
+  sp|P69925|RIR2_ECO57 209 FYVSFACSFAFAERE-LMEGNAKIIRLIARDEALHLTGTQHMLNLLRsgaDDPEMAEIAEE--CKQECYDLFVQAAQQEKDWADYLFRD 294
+                           ************986.678****************87777666665411156677776664..688888888888999*********** PP
+
+        NFECIMNI_00017 276 greciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgavaddthnldlgd 356
+                           g   ig+n d++ qy+ ++     +a gl   f   + np+p+++ w+ +  vqvapqe++ s+y vg +  +    dl++
+  sp|P69925|RIR2_ECO57 295 GS-MIGLNKDILCQYVEYITNIRMQAVGLDLPFQT-RSNPIPWINTWLVSDNVQVAPQEVEVSSYLVGQIDSEVDTDDLSN 373
+                           95.8*************************999985.89*******************************988777666655 PP
+
+>> sp|Q89AS5|RIR2_BUCBP  Ribonucleoside-diphosphate reductase subunit beta OS=Buchnera aphidicola subsp. Baizongia pista
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   71.7   0.3   3.1e-22   2.1e-18      15     163 ..      15     163 ..       5     170 .. 0.94
+   2 !   77.6   0.0   4.8e-24   3.3e-20     175     353 ..     194     370 ..     181     375 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 71.7 bits;  conditional E-value: 3.1e-22
+        NFECIMNI_00017  15 yqrlflgvkqglldtinvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtns 103
+                           y+ +f+g   ++      +y  +e l ++q+s +w   evdls+d +d+    +    ++v  + +q l ds+  rs +  l+p v+  
+  sp|Q89AS5|RIR2_BUCBP  15 YEPMFFGQSVNISRYDQQKYEIFEKLIEKQLSFFWRPEEVDLSRDYIDFQNLPQHEKHIFVSNLKYQTLLDSIQGRSPNIALLPIVSLP 103
+                           77888888888877778889999****************************************************************** PP
+
+        NFECIMNI_00017 104 emenlinawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdklee 163
+                           e+e  i  ws+ etih+r+y+hi++  +  p+ ++++   n  + nr++ i   +d l e
+  sp|Q89AS5|RIR2_BUCBP 104 ELETWIETWSFSETIHSRSYTHIIRNIINTPSLIFDDIIDNKNIANRAKDIAKYYDDLIE 163
+                           ***************************************************999998865 PP
+
+  == domain 2  score: 77.6 bits;  conditional E-value: 4.8e-24
+        NFECIMNI_00017 175 illtltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemle.spmlksqiqkildavv 262
+                           + l l ++ ale i f  sfa +f++ae+  k+ g a++++li+rde lh      il i  +      m + s     +   ++  v 
+  sp|Q89AS5|RIR2_BUCBP 194 LYLCLISVNALEAIRFYVSFACSFAFAER-EKMEGNAKIIRLIARDEALHLTSTQHILNILHNDKNNEGMSDiSKECYEECYHLFIRVS 281
+                           678899999******************97.599*******************9999999866655555554424556678888999999 PP
+
+        NFECIMNI_00017 263 aqeivfqdylfsegreciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgavaddthn 351
+                            qe ++  ylf  g   +g+n +++ qyi ++     +a gl   f +   np+p+++ w+ +  vqvapqe+  s+y +g +  + ++
+  sp|Q89AS5|RIR2_BUCBP 282 DQEKIWAKYLFQNGS-MLGLNQEILSQYIEYITNIRMKAIGLPSPFKIL-SNPIPWINSWLISDNVQVAPQEISVSSYLIGQINSEIND 368
+                           ***********9995.89************************9999985.7*******************************9888777 PP
+
+        NFECIMNI_00017 352 ld 353
+                            d
+  sp|Q89AS5|RIR2_BUCBP 369 SD 370
+                           66 PP
+
+>> sp|P57275|RIR2_BUCAI  Ribonucleoside-diphosphate reductase subunit beta OS=Buchnera aphidicola subsp. Acyrthosiphon p
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.4   0.1   6.2e-21   4.2e-17      28     161 ..      28     161 ..       8     170 .. 0.92
+   2 !   74.3   0.0   5.1e-23   3.5e-19     174     349 ..     193     366 ..     181     375 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 67.4 bits;  conditional E-value: 6.2e-21
+        NFECIMNI_00017  28 dtinvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfe 116
+                                +y  +e l ++q+s +w   e+dls+dr+d+     +   +++  + +q l ds+  rs +  ++p ++  e+e  i  ws+ e
+  sp|P57275|RIR2_BUCAI  28 RYDQQKYKIFEQLIEKQLSFFWRPEEIDLSRDRIDFQNLPDNEKHIFISNLKYQTLLDSIQGRSPNIAFLPIISIPELETWIETWSFSE 116
+                           5555678999*****************************999*********************************************** PP
+
+        NFECIMNI_00017 117 tihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkl 161
+                           tih+r+y+hi++     p+ ++++  +n  + +r+q i   +d+l
+  sp|P57275|RIR2_BUCAI 117 TIHSRSYTHIIRNIVNCPSLVFDDIISNKNIYDRAQNISIYYDEL 161
+                           ************************************998888876 PP
+
+  == domain 2  score: 74.3 bits;  conditional E-value: 5.1e-23
+        NFECIMNI_00017 174 silltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespml..ksqiqkilda 260
+                            + l l ++  le i f  sfa +f++ae+   + g a++++li+rde lh      il +  +i    e +e  +l  k +   i+ +
+  sp|P57275|RIR2_BUCAI 193 RLYLCLISVNVLEAIRFYVSFACSFAFAERE-LMEGNAKIIRLIARDEALHLTGTQHILNLLSNIKNN-ENMEDVVLecKEEAINIFIS 279
+                           56788999999*****************986.678*****************************9875.66677777224555567777 PP
+
+        NFECIMNI_00017 261 vvaqeivfqdylfsegreciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgavaddt 349
+                              qe  +  ylf  g   +g+n d++ qyi ++      a g+   f   + np+p+++ w+ +  +q+apqe + s+y vg +  + 
+  sp|P57275|RIR2_BUCAI 280 AAQQEKKWASYLFKSGS-MLGLNKDILCQYIEYITNIRMHAIGFKMPFK-KQSNPIPWINDWLTSDNIQIAPQETEISSYLVGQIDSEV 366
+                           8889*********9995.89**************999999***999997.578******************************987665 PP
+
+>> sp|Q8K9W4|RIR2_BUCAP  Ribonucleoside-diphosphate reductase subunit beta OS=Buchnera aphidicola subsp. Schizaphis gram
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.1   0.1   3.8e-21   2.6e-17      20     161 ..      20     161 ..       9     169 .. 0.92
+   2 !   73.0   0.0   1.2e-22   8.4e-19     175     353 ..     194     370 ..     178     375 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 68.1 bits;  conditional E-value: 3.8e-21
+        NFECIMNI_00017  20 lgvkqglldtinvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenl 108
+                           +g   ++      +y  +e l ++q+s +w   e+dls+dr+d+     +   +++  + +q l ds+  rs +  ++p v+  e+e  
+  sp|Q8K9W4|RIR2_BUCAP  20 FGQSVNIARYDQQKYNIFEKLIEKQLSFFWRPEEIDLSKDRIDFDNLPSNEKHIFISNLKYQTLLDSIQGRSPNIAFLPIVSIPELETW 108
+                           555555555556678899**************************999999*************************************** PP
+
+        NFECIMNI_00017 109 inawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkl 161
+                           i  ws+ etih+r+y+hi++  + +p+ ++++  +n  + +r+q i   +d+l
+  sp|Q8K9W4|RIR2_BUCAP 109 IETWSFSETIHSRSYTHIIRNIINNPSIVFDDIISNKNINDRAQDISIYYDEL 161
+                           ********************************************998888876 PP
+
+  == domain 2  score: 73.0 bits;  conditional E-value: 1.2e-22
+        NFECIMNI_00017 175 illtltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlk..sqiqkildav 261
+                           + l l ++  le i f  sfa +f++ae+   + g a++++li+rde lh      il i  +     e +++ +l+   +  ki+ + 
+  sp|Q8K9W4|RIR2_BUCAP 194 LYLCLISVNVLEAIRFYVSFACSFAFAERE-IMEGNAKIIRLIARDEALHLTGTQHILNILNNEKN-NENMKNTVLEcrEEAIKIFISA 280
+                           6788899999******************86.568**************************988765.5666666765115566888888 PP
+
+        NFECIMNI_00017 262 vaqeivfqdylfsegreciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgavaddth 350
+                             qe  +  ylf +g   +g+n d++ qyi ++      a g+   f+    np+p+++ w+++  +q apqe + s+y vg +  +  
+  sp|Q8K9W4|RIR2_BUCAP 281 SEQEKKWAKYLFQDGS-MLGLNKDILCQYIEYITNIRMHAIGFKMPFEK-TSNPIPWINSWLNSDYIQAAPQETEISSYLVGQIESEIS 367
+                           8999**********96.79***************99999****999996.57********************************99888 PP
+
+        NFECIMNI_00017 351 nld 353
+                           n +
+  sp|Q8K9W4|RIR2_BUCAP 368 NQE 370
+                           865 PP
+
+>> sp|P11156|RIR2_BPT4  Ribonucleoside-diphosphate reductase subunit beta OS=Enterobacteria phage T4 OX=10665 GN=NRDB PE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.7   0.1   3.4e-19   2.3e-15      18     160 ..      17     159 ..       3     174 .. 0.90
+   2 !   55.9   0.0   1.9e-17   1.3e-13     166     349 ..     192     376 ..     174     384 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 61.7 bits;  conditional E-value: 3.4e-19
+       NFECIMNI_00017  18 lflgvkqglldtinvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemen 107
+                          +f+g   gl      ++  +e l ++q+s +w   ev+l  d   + +  +   +++   + +q l ds+  r+ s++lm  +++  ++ 
+  sp|P11156|RIR2_BPT4  17 MFFGSGLGLARYDIQRHRVFEELIERQISFFWRPEEVNLMMDAAQFNKLPQYQQNIFTNNLKYQSLLDSIQGRAPSAVLMSLISDPSLDT 106
+                          677777777655444567789********************************************************************* PP
+
+       NFECIMNI_00017 108 linawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdk 160
+                           +  w++ etih+r+y+hi++  + dp+++++e   + a++ r+++i   +d 
+  sp|P11156|RIR2_BPT4 107 WVATWTFSETIHSRSYTHIMRNLYTDPSKVFDEIVLDEAIMKRAESIGRYYDD 159
+                          *********************************************99777775 PP
+
+  == domain 2  score: 55.9 bits;  conditional E-value: 1.9e-17
+       NFECIMNI_00017 166 rhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemles.pmlksqi 254
+                          r  +    s+ l l  + ale i f  sfa tf++ ++   + g a+++k+i+rde lh +    i++  q      e ++     + + 
+  sp|P11156|RIR2_BPT4 192 RAKRDLMKSLYLCLHVINALEAIRFYVSFACTFNFHKNMEIMEGNAKIMKFIARDEQLHLKGTQYIIRQLQSGTDGDEWVKIaQECEQEA 281
+                          4444445689999**************************999*******************99999987777766677666414456667 PP
+
+       NFECIMNI_00017 255 qkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyeaygl.vpsfdvpkknplpymdhwidgskvqvapqelqnsayqvg 343
+                            i+  v  qe  +  +lf +g +  g+n + +  +i ++     +  gl  p  d p k+p p++ +++++  vq apqe++ s+y v+
+  sp|P11156|RIR2_BPT4 282 VDIFMEVNRQEKDWAVHLFKDG-DVPGLNTNSMWSFIDYLTVSRMKQCGLpCPITDAPVKHPYPWIREYLNSDNVQSAPQEVELSSYLVA 370
+                          778888999************9.689***********99999988889984699***********************************9 PP
+
+       NFECIMNI_00017 344 avaddt 349
+                           + +d 
+  sp|P11156|RIR2_BPT4 371 QIDNDV 376
+                          998876 PP
+
+>> sp|Q9ZKC3|RIR2_HELPJ  Ribonucleoside-diphosphate reductase subunit beta OS=Helicobacter pylori (strain J99 / ATCC 700
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.6   0.4   2.8e-21   1.9e-17       5     345 ..      10     336 ..       6     341 .] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 68.6 bits;  conditional E-value: 2.8e-21
+        NFECIMNI_00017   5 naentgyktgyqrlflgvkqglldtinvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsis 93 
+                           n  +t    + +++f g   +++d   ++y   + l++  ++  w   ev ++ d+ d l+          + ++   + ds+ a+++ 
+  sp|Q9ZKC3|RIR2_HELPJ  10 NPNST-ESVNERKIFGGNPTSMFDLNKIKYQWADHLWKTMLANTWFAEEVSMNDDKRDYLKLSAEEKIGYDRALAQLIFMDSLQANNLI 97 
+                           54433.4567789999999*****************************************98877777778889988999********* PP
+
+        NFECIMNI_00017  94 gllmphvtnsemenlinawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltal 182
+                             + p +t+ e+   +   +  e +h++ y+ +v+   a+  ++ +    +  + +++  i   + +l +       t+ +il  l a 
+  sp|Q9ZKC3|RIR2_HELPJ  98 DNINPFITSPEINLCLVRQAYEEALHSHAYAVMVESISANTEEIYDMWRNDMQLKSKNDYIAQVYMELAK-----NPTEENILKALFAN 181
+                           ***********988888888899************99999988777666666666788888888887765.....468999******** PP
+
+        NFECIMNI_00017 183 faleeigfmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtr.fngailkihqripaiaemlespmlksqiqkildavvaqeivfqd 270
+                             le i f + f+  + +a ++gk++g aq++++i rdev h   f + i  ++ +    a+ l +p+l +++ +++   v  e  + d
+  sp|Q9ZKC3|RIR2_HELPJ 182 QILEGIYFYSGFSYFYTLA-RSGKMLGSAQMIRFIQRDEVTHLIlFQNMINALRNE---RAD-LFTPQLINEVIEMFKKAVEIEASWGD 265
+                           *************999888.68********************75266655555433...355.557888888888899999999***** PP
+
+        NFECIMNI_00017 271 ylfsegreciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgav 345
+                           y+ ++g+  +g+ + li+qyi f+a       g+   + v  ++p+ +++ +   ++ +    e + s y  g+v
+  sp|Q9ZKC3|RIR2_HELPJ 266 YI-TQGK-ILGLTSSLIEQYIQFLADSRLSKVGIAKVYGV--QHPIKWVESFSSFNEQRSNFFEARVSNYAKGSV 336
+                           *8.5775.89******************9999*9999987..578888777766555555555555555555555 PP
+
+>> sp|P55983|RIR2_HELPY  Ribonucleoside-diphosphate reductase subunit beta OS=Helicobacter pylori (strain ATCC 700392 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.6   0.4   2.8e-21   1.9e-17       5     345 ..      10     336 ..       6     341 .] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 68.6 bits;  conditional E-value: 2.8e-21
+        NFECIMNI_00017   5 naentgyktgyqrlflgvkqglldtinvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsis 93 
+                           n  +t    + +++f g   +++d   ++y   + l++  ++  w   ev ++ d+ d l+          + ++   + ds+ a+++ 
+  sp|P55983|RIR2_HELPY  10 NPNST-ESVNERKIFGGNPTSMFDLNKIKYQWADHLWKTMLANTWFAEEVSMNDDKRDYLKLSAEEKIGYDRALAQLIFMDSLQANNLI 97 
+                           54433.4567789999999*****************************************98877777778889988999********* PP
+
+        NFECIMNI_00017  94 gllmphvtnsemenlinawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltal 182
+                             + p +t+ e+   +   +  e +h++ y+ +v+   a+  ++ +    +  + +++  i   + +l +       t+ +il  l a 
+  sp|P55983|RIR2_HELPY  98 DNINPFITSPEINLCLVRQAYEEALHSHAYAVMVESISANTEEIYDMWRNDMQLKSKNDYIAQVYMELAK-----NPTEENILKALFAN 181
+                           ***********988888888899************99999988777666666666788888888887765.....468999******** PP
+
+        NFECIMNI_00017 183 faleeigfmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtr.fngailkihqripaiaemlespmlksqiqkildavvaqeivfqd 270
+                             le i f + f+  + +a ++gk++g aq++++i rdev h   f + i  ++ +    a+ l +p+l +++  ++   v  e ++ d
+  sp|P55983|RIR2_HELPY 182 QILEGIYFYSGFSYFYTLA-RSGKMLGSAQMIRFIQRDEVTHLIlFQNMINALRNE---RAD-LFTPQLINEVIGMFKKAVEIEALWGD 265
+                           *************999888.68********************75266655555433...345.55788889999999999999****** PP
+
+        NFECIMNI_00017 271 ylfsegreciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgav 345
+                           y+ ++g+  +g+ + li+qyi f+a       g+   + v  ++p+ +++ +   ++ +    e + s y  g+v
+  sp|P55983|RIR2_HELPY 266 YI-TQGK-ILGLTSSLIEQYIQFLADSRLSKVGIAKVYGV--QHPIKWVESFSSFNEQRSNFFEARVSNYAKGSV 336
+                           *8.5775.89******************9999*9999987..578888777766555555555555555555555 PP
+
+>> sp|P09938|RIR2_YEAST  Ribonucleoside-diphosphate reductase small chain 1 OS=Saccharomyces cerevisiae (strain ATCC 204
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.4   0.1   3.5e-18   2.4e-14      31     329 ..      90     367 ..      80     392 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 58.4 bits;  conditional E-value: 3.5e-18
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmlet.dksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfeti 118
+                            ++y e+   y++  + +w   e+dls+d  d     +++   ++ + +++   +d +  +++   +  +v   e +++     ++e i
+  sp|P09938|RIR2_YEAST  90 PIKYHEIWQAYKRAEASFWTAEEIDLSKDIHDWNNRmNENERFFISRVLAFFAASDGIVNENLVENFSTEVQIPEAKSFYGFQIMIENI 178
+                           578999*99**********************98754155666677789999999*********9999********************** PP
+
+        NFECIMNI_00017 119 hartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkf 207
+                           h++tys ++   + dp +     +    ++n    i    +k e   r  q  d  +   l a+ ++e + f gsfa  f + +  g +
+  sp|P09938|RIR2_YEAST 179 HSETYSLLIDTYIKDPKES---EF----LFNAIHTIPEIGEKAEWALRWIQDADALFGERLVAFASIEGVFFSGSFASIFWLKK-RGMM 259
+                           *********9999999653...33....4555667777789*************99999*********************9865.79** PP
+
+        NFECIMNI_00017 208 mgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkil.davvaqeivfqdylfsegreciginadlikqyiyfma 295
+                            g+    +licrde lht f   +l  h +          p +   ++ki+ +av  ++  f d l       +g+nadl+ qy+ f+a
+  sp|P09938|RIR2_YEAST 260 PGLTFSNELICRDEGLHTDFA-CLLFAHLKNK------PDPAI---VEKIVtEAVEIEQRYFLDAL---PVALLGMNADLMNQYVEFVA 335
+                           *******************95.5566665432......23433...44443155555555565555...56799*************** PP
+
+        NFECIMNI_00017 296 apmyeayglvpsfdvpkknplpymdhwidgskvq 329
+                             +  a+g    + v  +np+ +m++   + k  
+  sp|P09938|RIR2_YEAST 336 DRLLVAFGNKKYYKV--ENPFDFMENISLAGKTN 367
+                           ********9999887..69999999866555655 PP
+
+>> sp|P36603|RIR2_SCHPO  Ribonucleoside-diphosphate reductase small chain OS=Schizosaccharomyces pombe (strain 972 / ATC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.2   0.2   6.7e-17   4.6e-13      32     353 ..      81     379 ..      75     387 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 54.2 bits;  conditional E-value: 6.7e-17
+        NFECIMNI_00017  32 vqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvkti.swqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                           ++y e+  +y++  + +w   e+dls+d +d      +    ++ t+ ++   +d +  +++   +  +v   e   +     ++e ih
+  sp|P36603|RIR2_SCHPO  81 IKYHEIWQFYKKAEASFWTAEEIDLSKDLVDWDNKLNADERYFISTVlAYFAASDGIVNENLLERFSSEVQIPEARCVYGFQIMIENIH 169
+                           7899**************************98665555555677775267778899*9999999999*******9999999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfm 208
+                           ++tys ++   + +p +         a+l        a  k +   r     d++  + l a+ a+e i f gsfa  f + +  g + 
+  sp|P36603|RIR2_SCHPO 170 SETYSLLLDTYIREPKEKQ---RHFDAILTMGSI--KA--KAKWALRWINDEDSTYAIRLVAFAAVEGIFFSGSFASIFWLKK-RGLMP 250
+                           *****99988888887643...334577765543..33..44455677778899999**********************9865.79*** PP
+
+        NFECIMNI_00017 209 giaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfseg..reciginadlikqyiyfma 295
+                           g+    +licrde lht f   ++  h +          p      +k+++a++ + + ++   f+++     +g+n dl+ qyi f+a
+  sp|P36603|RIR2_SCHPO 251 GLTFSNELICRDEGLHTDFAC-LMFSHLK--------HRPG-----RKVVEAIIVEAVDIEKEYFTDAlpVSLLGMNKDLMCQYIEFVA 325
+                           ******************954.3333433........3343.....3445555555444444444444114689*************** PP
+
+        NFECIMNI_00017 296 apmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgavaddthnld 353
+                             +  a g    ++v   np+ +m++   + k     +  + s yq++ v   t   +
+  sp|P36603|RIR2_SCHPO 326 DRLLVALGNDKYYNV--TNPFDFMENISLAGKTNFFEK--KVSDYQIAGVMSGTKRAE 379
+                           *********999998..59******9988888887655..457799998888877665 PP
+
+>> sp|O83092|RIR2_TREPA  Ribonucleoside-diphosphate reductase subunit beta OS=Treponema pallidum (strain Nichols) OX=243
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.5   0.1   2.6e-17   1.7e-13      16     341 ..      25     342 ..      12     351 .] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 55.5 bits;  conditional E-value: 2.6e-17
+        NFECIMNI_00017  16 qrlflgvkqglldtinvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnse 104
+                           +r+  g   +l d  n++yp +   y+q m+ +w   e+++s d +d             k +s+  + ds+   ++ ++   ++t +e
+  sp|O83092|RIR2_TREPA  25 RRMVGGNTTNLNDFNNMKYPWVSKWYRQAMNNFWIPEEINMSSDVQDYRNLSAIEKTAYDKILSFLIFLDSIQTANLPNI-GQYITANE 112
+                           455566677899999*****************************9999887777777778999***********999986.679***** PP
+
+        NFECIMNI_00017 105 menlinawslfetihartyshivkqtfadpgq...mleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigf 190
+                           +   +   ++ e +h+++ys+++  t+  p +   +l +   +  +l r++ i + ++++++d         ++l    a + le i f
+  sp|O83092|RIR2_TREPA 113 INLCLTIQAFQEAVHSQSYSYML-DTICSPEErndILYQWKDDEHLLARNKFIGNLYNEFQDDKS-----VLALLKVAIANYVLEGIYF 195
+                           *9999999999**********87.57777766111566666788999***999999999998853.....34677778899******** PP
+
+        NFECIMNI_00017 191 mgsfavtfgiaehtgkfmgiaqlvklicrdevlht.rfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegre 278
+                            + f   +++    +k+ g  q ++ i rde  h   f + i +++++ p +       +++  i++       qei + dy++  g +
+  sp|O83092|RIR2_TREPA 196 YSGFMFFYNLGR-NNKMPGSVQEIRYINRDENTHLwLFRSIIQELQKEEPQVFTARNVRLFRDMIRE----GCEQEIKWGDYVI--GDQ 277
+                           ****99999986.579******************835778888899999999988888888877765....4579*******98..678 PP
+
+        NFECIMNI_00017 279 ciginadlikqyiyfmaapmyeayglvpsfdvpkknp..lpymdhwidgskvqvapqelqnsayq 341
+                             g+n  ++  yi ++     e  g+ p ++  +  p  + ++ ++ +++ ++    e +++ay 
+  sp|O83092|RIR2_TREPA 278 IPGLNRHMVADYIRYLGNLRCENLGFEPLYEGHRVEPesMSWVSQYSNANLIKTDFFEAKSTAYA 342
+                           99***************************998887763355666666666666666666666664 PP
+
+>> sp|P50650|RIR2_PLAF4  Ribonucleoside-diphosphate reductase small chain OS=Plasmodium falciparum (isolate Dd2) OX=5726
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.3   0.2   2.5e-16   1.7e-12      31     321 ..      45     312 ..      32     335 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 52.3 bits;  conditional E-value: 2.5e-16
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            + yp++  +y++  + +w   e+dls d  d+ + +++   ++   +++   +d +  +++++ ++ +v  +e + + +     e ih
+  sp|P50650|RIR2_PLAF4  45 PILYPDVWDFYKKAEASFWTAEEIDLSSDLKDFEKLNENEKHFIKHVLAFFAASDGIVLENLASKFLREVQITEAKKFYSFQIAVENIH 133
+                           578************************************99999999*********************************999****** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdt.silltltalfaleeigfmgsfavtfgiaehtgkf 207
+                           ++tys ++   + d  + l   +    + n    i +  +k         + dt s+   + a   +e i f gsf   f + +  +k+
+  sp|P50650|RIR2_PLAF4 134 SETYSLLIDNYIKDEKERLNLFHA---IEN----IPAVKNKAL--WAAKWINDTnSFAERIVANACVEGILFSGSFCAIFWFKK-QNKL 212
+                           **********99999888765443...222....222222222..2334566662345567888899*************9876.579* PP
+
+        NFECIMNI_00017 208 mgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaa 296
+                            g+    +li rde lht fn  i            +l++ + +  iq i+   v  e  f     s   + ig+n+ l+ qyi f+a 
+  sp|P50650|RIR2_PLAF4 213 HGLTFSNELISRDEGLHTDFNCLIYS----------LLDNKLPEQIIQNIVKEAVEVERSF--ICESLPCDLIGMNSRLMSQYIEFVAD 289
+                           *********************87654..........5666666666777766555444333..233445677***************** PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpymdh 321
+                            + e  g    f    knp+ +md 
+  sp|P50650|RIR2_PLAF4 290 RLLECLGCSKIFH--SKNPFNWMDL 312
+                           *******988885..79**999984 PP
+
+>> sp|O15910|RIR2_TRYBB  Ribonucleoside-diphosphate reductase small chain OS=Trypanosoma brucei brucei OX=5702 GN=RNR2 P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.3   0.1   2.5e-16   1.7e-12      32     321 ..      32     299 ..      26     325 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 52.3 bits;  conditional E-value: 2.5e-16
+        NFECIMNI_00017  32 vqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetiha 120
+                           ++yp++   y++  s iw   e+dl  d  d  + d     ++   +++   +d +  ++++  +m +v   e+  +      +e ih+
+  sp|O15910|RIR2_TRYBB  32 IKYPDIWQKYKEAESSIWTVEEIDLGNDMTDWEKLDDGERHFIKHVLAFFAASDGIVLENLAERFMCEVQVPEVRCFYGFQIAMENIHS 120
+                           89***************************************99999*******************************999999****** PP
+
+        NFECIMNI_00017 121 rtyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmg 209
+                           +tys ++     dp +     +         +  +  ++k  +   +   + ts+   l a+ a+e i f gsf   f + +  g + g
+  sp|O15910|RIR2_TRYBB 121 ETYSVLIDTYVVDPDEKQRLLH-------AIRT-IPCIEKKAKWAIEWIGSQTSFPTRLVAFAAVEGIFFSGSFCAIFWLKK-RGLMPG 200
+                           *******99999**87544333.......2222.2334444443334444568889999999****************9865.79**** PP
+
+        NFECIMNI_00017 210 iaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqk.ildavvaqeivfqdylfsegreciginadlikqyiyfmaap 297
+                           +    +li rde lht f    l ++++   i   l     + ++ + i +av  +   + d l       ig+n+ l+ qyi f+a  
+  sp|O15910|RIR2_TRYBB 201 LTFSNELISRDEGLHTDFAC--L-LYEKY--IVNKL----PRDRVLEiICNAVSIEREFICDAL---PVRLIGMNSQLMTQYIEFVADR 277
+                           ****************9954..3.34432..33333....344444404556544444444555...4579****************** PP
+
+        NFECIMNI_00017 298 myeayglvpsfdvpkknplpymdh 321
+                           +  + g    ++   knp+ +md 
+  sp|O15910|RIR2_TRYBB 278 LLVSLGYDRHYN--SKNPFDFMDM 299
+                           **9999887775..79*****996 PP
+
+>> sp|Q9C167|RIR2_NEUCR  Ribonucleoside-diphosphate reductase small chain OS=Neurospora crassa (strain ATCC 24698 / 74-O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.5   0.0   2.1e-16   1.4e-12      32     353 ..      92     390 ..      84     398 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 52.5 bits;  conditional E-value: 2.1e-16
+        NFECIMNI_00017  32 vqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmv.ktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                           ++y e+  +y++  + +w   e+dls+d  d          +++   +++   +d +  +++   +  +v   e   +     ++e ih
+  sp|Q9C167|RIR2_NEUCR  92 IKYHEIWQMYKKAEASFWTAEEIDLSKDLHDWNNRLNDDEKFFIsHILAFFAASDGIVNENLVERFSGEVQIPEARCFYGFQIMMENIH 180
+                           7999************************9998655444444444156688889999*99999999999*******99999999****** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdts..illtltalfaleeigfmgsfavtfgiaehtgk 206
+                           ++tys ++   + +p+q    ty   a       i       + d     +td s  +   l a+ a+e i f g+fa  f + +  g 
+  sp|Q9C167|RIR2_NEUCR 181 SETYSLLIDTYIKEPSQ---RTYLFNA----IDTIPCIRK--KADWALRWITDKSstFAQRLVAFAAVEGIFFSGAFASIFWLKK-RGL 259
+                           ********998999987...4776555....455544444..456666677876611456799999***************9865.79* PP
+
+        NFECIMNI_00017 207 fmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqki.ldavvaqeivfqdylfsegrec..iginadlikqyiy 292
+                           + g+    +li rde lht f   +l  h +         +   k  iq+i +dav       q++l +e+  c  +g+nadl+kqyi 
+  sp|Q9C167|RIR2_NEUCR 260 MPGLTFSNELISRDEGLHTDFAC-LLFSHLN---------NRPSKQLIQEIiVDAVRI----EQEFL-TEALPCalLGMNADLMKQYIE 333
+                           ********************964.4444432.........223355566651566543....34554.566666448************ PP
+
+        NFECIMNI_00017 293 fmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgavaddthnld 353
+                           f+a  +  a g    +     np+ +m++   g k     + +    yq + v + t   d
+  sp|Q9C167|RIR2_NEUCR 334 FVADRLLVALGNEKIY--RSTNPFDFMENISLGGKTNFFEKRV--GDYQKAGVMNSTKKAD 390
+                           *********9987776..5789******999999988765544..5577777777776665 PP
+
+>> sp|Q9KFH7|RIR2_HALH5  Ribonucleoside-diphosphate reductase subunit beta OS=Halalkalibacterium halodurans (strain ATCC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.1   0.4   5.7e-16   3.8e-12      21     324 ..      24     317 ..       9     339 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 51.1 bits;  conditional E-value: 5.7e-16
+        NFECIMNI_00017  21 gvkqglldtinvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenli 109
+                           g   ++l+  +v++     ly+  ++ +w  fe+++s d   +    ++  + + k i    + dsv     s     ++t+s +  l+
+  sp|Q9KFH7|RIR2_HALH5  24 GKSSNVLNWDDVRFSWAYPLYKNMLANFWTPFEINMSHDAKQFPTLTETEQEAFKKIIGLLAFLDSVQT-DYSMRAAEYLTDSSLAALM 111
+                           6666778888899999999********************999888888888999999999999***976.57778899*********** PP
+
+        NFECIMNI_00017 110 nawslfetihartyshivkqtf..adpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfav 196
+                           +  s+ e +h ++ys+++      a   +++e    +  +  r++ i+  ++k+ ++      t  ++l ++     le ++f + fa 
+  sp|Q9KFH7|RIR2_HALH5 112 SVLSFQEVVHNQSYSYVLSSLVpkATQDEIFEYWKHDDVLKERNEFIIDGYEKFVDNP-----TPKTFLESIVYDVILEGLNFYSGFAF 195
+                           *****************998761134445555555555566799*********98654.....555566677777789*********** PP
+
+        NFECIMNI_00017 197 tfgiaehtgkfmgiaqlvklicrdevlhtr.fngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegrecigina 284
+                            +++a +  k+++ + ++  i rde lh   f + + ++  ++p +       ++k+ + k  d    ++     + +  g +  gin 
+  sp|Q9KFH7|RIR2_HALH5 196 FYNLARN-QKMVSTSTMINYINRDEQLHVYlFTNIFKELLVEFPELNTEETKTFVKTTLMKAADL---EKDW---FRYIIGDKIPGINP 277
+                           ****986.6999****************9725555556777777776655566666666665553...2333...3445588999**** PP
+
+        NFECIMNI_00017 285 dlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwid 324
+                           + ++ yi f+a       g+   +   k np+ ++  + d
+  sp|Q9KFH7|RIR2_HALH5 278 EDMETYISFIANKRAVQLGMEKPYPEIKHNPMKWIRAYED 317
+                           *********************99*999****998876655 PP
+
+>> sp|Q9DHU2|RIR2_YLDV  Ribonucleoside-diphosphate reductase small chain OS=Yaba-like disease virus OX=132475 GN=20L PE=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.4   0.1   9.3e-16   6.3e-12      32     322 ..      21     289 ..      13     323 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 50.4 bits;  conditional E-value: 9.3e-16
+       NFECIMNI_00017  32 vqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihar 121
+                          + y ++  +y++ ++ +w   evdls+d  d l+   +  +++   +++   +d +  ++++  +  +v  se   +      +e ih++
+  sp|Q9DHU2|RIR2_YLDV  21 IVYEDIWKMYKKAVASFWTVEEVDLSKDFSDWLKLSDNEKNFIKHILAFFAASDGIVNENLAERFYSEVQISEARCFYGFQIAMENIHSE 110
+                          67899999***************************999999999999****************************99999999******* PP
+
+       NFECIMNI_00017 122 tyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgia 211
+                           ys ++   + d     e+ y   a+ n +        k     +  +  + +    l a+ a+e i f gsfa  f i +  g + g+ 
+  sp|Q9DHU2|RIR2_YLDV 111 MYSLLIDTYILDS---KEKNYLFNAIENMNCVK----QKANWAKKWIESKNRTYGERLVAFAAVEGIFFSGSFAAIFWIKK-RGLMPGLT 192
+                          ***9998777775...57899999998876433....3333344444444555666788999****************976.69****** PP
+
+       NFECIMNI_00017 212 qlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyea 301
+                             +li rde lh  f   ++k h         l +p l s ++ i+   v  e  f     +   + ig+n dl+kqyi f+a  +   
+  sp|Q9DHU2|RIR2_YLDV 193 FSNELISRDEGLHCDFACIMFK-H---------LLNPPLNSVVRDIIIEAVNIEKNFLTE--AIPVKLIGMNCDLMKQYIEFVADRLLLE 270
+                          ***************9654443.4.........345667787776654434333333222..234689****************999988 PP
+
+       NFECIMNI_00017 302 yglvpsfdvpkknplpymdhw 322
+                           g    +    knp+ +m++ 
+  sp|Q9DHU2|RIR2_YLDV 271 LGCDKYY--CSKNPFDFMENI 289
+                          8876554..578999999875 PP
+
+>> sp|P50649|RIR2_PLAFG  Ribonucleoside-diphosphate reductase small subunit OS=Plasmodium falciparum (isolate FCR-3 / Ga
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.1   0.1   2.3e-15   1.6e-11      31     321 ..      16     285 ..       2     308 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 49.1 bits;  conditional E-value: 2.3e-15
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            + yp++  +y++  + +w   e+d s d  d+ + +++   ++   +++   +d +  ++++  ++ +v  +e + + +     e ih
+  sp|P50649|RIR2_PLAFG  16 PILYPDVFPFYKKAEACFWTAEEIDYSSDLKDFEKLNENEKHFIKHVLAFFAASDGIVLENLAVSFLREVQITEAKKFYSFQIAVENIH 104
+                           578************************************99999999****************999**************9999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdt.silltltalfaleeigfmgsfavtfgiaehtgkf 207
+                           ++tys ++   + d  + l   +    + n    i +  +k         + dt s+   + a   +e i f gsf   f + +  +k+
+  sp|P50649|RIR2_PLAFG 105 SETYSLLIDNYIKDEKERLNLFHA---IEN----IPAVKNKAL--WAAKWINDTnSFAERIVANACVEGILFSGSFCAIFWFKK-QNKL 183
+                           **********99999888765443...222....222222222..2334566662345567888899*************9876.579* PP
+
+        NFECIMNI_00017 208 mgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaa 296
+                            g+    +li rde lht fn  i            +l++ + +  +q i+      e+       s   + ig+n+ l+ qyi f+a 
+  sp|P50649|RIR2_PLAFG 184 HGLTFSNELISRDEGLHTDFNCLIYS----------LLDNKLPEQMVQNIVKEAGGVEVEKSFICESLPCDLIGMNSRLMSQYIEFVAD 262
+                           *********************87654..........455555566667776666666654444444556678***************** PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpymdh 321
+                            + e  g    f    knp+ +md 
+  sp|P50649|RIR2_PLAFG 263 RLLECLGCSKIFH--SKNPFNWMDL 285
+                           *******988885..79**999984 PP
+
+>> sp|O84835|RIR2_CHLTR  Ribonucleoside-diphosphate reductase subunit beta OS=Chlamydia trachomatis serovar D (strain AT
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.9   0.1   2.7e-15   1.8e-11      49     327 ..      51     326 ..      27     341 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 48.9 bits;  conditional E-value: 2.7e-15
+        NFECIMNI_00017  49 wnefevdlsqdrmdmletdksvtd...lmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivkqtfadp 134
+                           w   e+ + +d +++ ++d+   d   +++  + +   a+s+  ++i   ++ hvtn e    +   ++ e +h +t+ +i +    d 
+  sp|O84835|RIR2_CHLTR  51 WLPTEIPMGKD-IELWKSDRLSEDerrVILLNLGFFSTAESLVGNNIVLAIFKHVTNPEARQYLLRQAFEEAVHTHTFLYICESLGLDE 138
+                           55555555555.33444443333211145567888899************************99999999***************9**9 PP
+
+        NFECIMNI_00017 135 gqmleetytntavlnrsqaivgafdk.leedhrhsqvtdts.illtltalfa.leeigfmgsfavtfgiaehtgkfmgiaqlvklicrd 220
+                            +++       a+  +    +    k l+ + r   v     ++  l   +  +e i f + f + +++  + +k++gi +  + i rd
+  sp|O84835|RIR2_CHLTR 139 KEIFNAYNERAAIKAKDDFQMEITGKvLDPNFRTDSVEGLQeFVKNLVGYYIiMEGIFFYSGFVMILSF-HRQNKMIGIGEQYQYILRD 226
+                           998865444555555555445554552778889888887651566788877615778888889887776.4578*************** PP
+
+        NFECIMNI_00017 221 evlhtrfngail.kihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyeayglvpsf 308
+                           e +h +f   ++  i ++ p     + +p l+ +i +++   v  ei +    +   r  +g+ a ++  y+  +a    e  gl p +
+  sp|O84835|RIR2_CHLTR 227 ETIHLNFGIDLInGIKEENPE----IWTPELQQEIVELIKRAVDLEIEYAQDCLP--RGILGLRASMFIDYVQHIADRRLERIGLKPIY 309
+                           *******86554146666665....468*************9*99*998655555..668***************************99 PP
+
+        NFECIMNI_00017 309 dvpkknplpymdhwidgsk 327
+                               knp+p+m + id +k
+  sp|O84835|RIR2_CHLTR 310 H--TKNPFPWMSETIDLNK 326
+                           7..59**********9877 PP
+
+>> sp|P07201|RIR2_SPISO  Ribonucleoside-diphosphate reductase small chain OS=Spisula solidissima OX=6584 PE=2 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.0   0.0   9.9e-15   6.7e-11      30     327 ..      75     350 ..      65     382 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 47.0 bits;  conditional E-value: 9.9e-15
+        NFECIMNI_00017  30 invqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfeti 118
+                           + +qy ++  +y++  + +w   evdls+d        k    ++   +++   +d +  +++   +  +v  +e   +      +e i
+  sp|P07201|RIR2_SPISO  75 LPIQYHDIWKMYKKAEASFWTAEEVDLSKDMAHWESLKKEEKHFISHVLAFFAASDGIVNENLVERFSKEVQVTEARCFYGFQIAMENI 163
+                           679***************************999888889999999999****************************999999999**** PP
+
+        NFECIMNI_00017 119 hartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkf 207
+                           h++ ys ++   + dp +     +    ++n  + +    +k +   r      +s    + a+ a+e i f gsfa  f + +  g +
+  sp|P07201|RIR2_SPISO 164 HSEMYSLLIDTYIKDPQE---RDF----LFNAIETMPCVKEKADWAMRWINDDSSSYAERVVAFAAVEGIFFSGSFASIFWLKK-RGIM 244
+                           ********9998999954...344....44555666666788877778777777788888999999**************9865.799* PP
+
+        NFECIMNI_00017 208 mgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaa 296
+                            g+    +li rde lh  f    l        ++ ++  p  + +i +i+d  v  e vf    +      ig+n dl++qyi f+a 
+  sp|P07201|RIR2_SPISO 245 PGLTFSNELISRDEGLHCDFA--CLM-------FSHLVNKPS-QERIHQIIDEAVKIEQVFLTEAL--PCRLIGMNCDLMRQYIEFVAD 321
+                           ******************994..343.......344566675.57899999999888877754333..34569***************9 PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpymdhwidgsk 327
+                            +             k+np+ +m+h     k
+  sp|P07201|RIR2_SPISO 322 RLLLELKCDKL--YNKENPFDFMEHISLEGK 350
+                           88765554444..5699*******9643333 PP
+
+>> sp|P49730|RIR2_TOBAC  Ribonucleoside-diphosphate reductase small chain OS=Nicotiana tabacum OX=4097 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.3   0.3   6.5e-14   4.4e-10      31     320 ..      21     287 ..      14     310 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 44.3 bits;  conditional E-value: 6.5e-14
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +qyp++  +y++ ++ +w   evdls d             ++   +++   +d +  ++++g +m +v  +e   +      +e ih
+  sp|P49730|RIR2_TOBAC  21 PIQYPQIWEMYKKALASFWTAEEVDLSSDTRHWETLTPGERHFITHVLAFFAASDGIVLENLAGRFMKEVQVAEARAFYGFQIAIENIH 109
+                           58***************************99887778888999999********************************999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgq...mleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtg 205
+                           ++ ys +++  + d  +   ++    tn  v  +++  +  +d           ++t +   l a+  +e i f gsf   f + +  g
+  sp|P49730|RIR2_TOBAC 110 SEMYSLLLESYIKDSDEksrLFRAVETNPCVEKKAKWALRWIDG----------SET-FAERLVAFACVEGIFFSGSFCAIFWLKK-RG 186
+                           ******99988877643111556666777776666655544443..........333.34467788899*************9865.79 PP
+
+        NFECIMNI_00017 206 kfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkil.davvaqeivfqdylfsegreciginadlikqyiyf 293
+                            + g+    +li rde lh  f   +            +l + + + +++ i+ dav  +     d l       +g+n dl+ +yi f
+  sp|P49730|RIR2_TOBAC 187 LMPGLTFSNELISRDEGLHCDFACLLY----------SLLRTKLTEERVKGIVaDAVEIEREFVCDAL---PCALVGMNGDLMSKYIEF 262
+                           ********************9954332..........3455555555655543155543333333443...34569************* PP
+
+        NFECIMNI_00017 294 maapmyeayglvpsfdvpkknplpymd 320
+                           +a  + +a g    ++   +np+ +m+
+  sp|P49730|RIR2_TOBAC 263 VADRLLDALGYDKLYNA--QNPFDWME 287
+                           *********99888765..67877775 PP
+
+>> sp|P48592|RIR2_DROME  Ribonucleoside-diphosphate reductase subunit M2 OS=Drosophila melanogaster OX=7227 GN=RnrS PE=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.4   0.1   3.1e-14   2.1e-10      31     325 ..      88     361 ..      82     391 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 45.4 bits;  conditional E-value: 3.1e-14
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +qy ++  +y++  + +w   evdls+d  d          ++   +++   +d +  +++   +  +v  +e   +      +e +h
+  sp|P48592|RIR2_DROME  88 PIQYHDIWQMYKKAEASFWTVEEVDLSKDLTDWHRLKDDERHFISHVLAFFAASDGIVNENLVERFSQEVQITEARCFYGFQIAMENVH 176
+                           589*****************************988888888999999****************************999999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsill..tltalfaleeigfmgsfavtfgiaehtgk 206
+                           ++ ys ++   + dp q     y   a+     a+     k + d   s ++  s  +   + a+ a+e i f gsfa  f + +  g 
+  sp|P48592|RIR2_DROME 177 SEMYSVLIDTYIRDPHQR---EYLFNAIE-TMPAV-----KRKADWALSWISSKSANFgeRIIAFAAVEGIFFSGSFASIFWLKK-RGL 255
+                           ********99999**984...35444443.23333.....455666677776665543226789999**************9865.79* PP
+
+        NFECIMNI_00017 207 fmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfma 295
+                           + g+    +li rde lh  f  a+l ++        +++ p  +  i+ i dav  ++  + d l       ig+n dl+ qyi f+a
+  sp|P48592|RIR2_DROME 256 MPGLTFSNELISRDEGLHCDF--AVLMFQ-------HLVQRPKRERIIEIIRDAVAIEQEFLTDALP---VNLIGMNCDLMSQYIEFVA 332
+                           ******************998..666543.......4678899999999999999887777777764...579**************** PP
+
+        NFECIMNI_00017 296 apmyeayglvpsfdvpkknplpymdhw.idg 325
+                             +    g+   ++   knp+ +m+   +dg
+  sp|P48592|RIR2_DROME 333 DRLLVELGVGKIYN--TKNPFNFMEMIsLDG 361
+                           ***99999988887..599999998641444 PP
+
+>> sp|Q4R741|RIR2B_MACFA  Ribonucleoside-diphosphate reductase subunit M2 B OS=Macaca fascicularis OX=9541 GN=RRM2B PE=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.8   0.2   4.6e-14   3.2e-10      31     345 ..      46     336 ..      32     350 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 44.8 bits;  conditional E-value: 4.6e-14
+         NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrm..dmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfe 116
+                             +qyp++  +y+q ++ +w   evdls+d    + l+ d+    ++   +++   +d +  +++   +  +v   e   +     l+e
+  sp|Q4R741|RIR2B_MACFA  46 PIQYPDIWKMYKQAQASFWTAEEVDLSKDLPhwNKLKADEK--YFISHILAFFAASDGIVNENLVERFSQEVQVPEARCFYGFQILIE 131
+                            68**************************9751155666654..4566678899999******************************** PP
+
+         NFECIMNI_00017 117 tihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdt..silltltalfaleeigfmgsfavtfgiae 202
+                             +h++ ys ++   + dp +   e +    ++n  + +   + k + d     + d   ++   + a+ a+e i f gsfa  f + +
+  sp|Q4R741|RIR2B_MACFA 132 NVHSEMYSLLIDTYIRDPKKR--E-F----LFNAIETM--PYVKKKADWALRWIADRksTFGERVVAFAAVEGIFFSGSFAAIFWLKK 210
+                            ***********9999999753..3.2....23333333..3445555555555665410444567888999*************9865 PP
+
+         NFECIMNI_00017 203 htgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqy 290
+                              g + g+    +li rde lh  f    l ++        ++  p  +   + i+dav  ++  + +  +  g   ig+n  l+kqy
+  sp|Q4R741|RIR2B_MACFA 211 -RGLMPGLTFSNELISRDEGLHCDFA--CLMFQY-------LVNKPSEERVREIIVDAVQIEQEFLTE-ALPVG--LIGMNCILMKQY 285
+                            .79********************995..443332.......344454444444567887554333333.33444..7*********** PP
+
+         NFECIMNI_00017 291 iyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgav 345
+                            i f+a  +    g+   f    +np+ +m++     k        + s yq  av
+  sp|Q4R741|RIR2B_MACFA 286 IEFVADRLLVELGFSKIFQA--ENPFDFMENISLEGKTNFFE--KRVSEYQRFAV 336
+                            *********99**9999875..89*****9865555555543..34455555444 PP
+
+>> sp|Q6PEE3|RIR2B_MOUSE  Ribonucleoside-diphosphate reductase subunit M2 B OS=Mus musculus OX=10090 GN=Rrm2b PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.3   0.2   6.5e-14   4.4e-10      31     345 ..      46     336 ..      38     350 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 44.3 bits;  conditional E-value: 6.5e-14
+         NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrm..dmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfe 116
+                             +qyp++  +y+q ++ +w   evdls+d    + l++d+    ++   +++   +d +  +++   +  +v   e   +     l+e
+  sp|Q6PEE3|RIR2B_MOUSE  46 PIQYPDIWRMYKQAQASFWTAEEVDLSKDLPhwNKLKSDEK--YFISHILAFFAASDGIVNENLVERFSQEVQVPEARCFYGFQILIE 131
+                            58**************************9751145555554..4556677899999******************************** PP
+
+         NFECIMNI_00017 117 tihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdt..silltltalfaleeigfmgsfavtfgiae 202
+                             +h++ ys ++   + dp +   e +    ++n  + +   + k + d     + d   ++   + a+ a+e i f gsfa  f + +
+  sp|Q6PEE3|RIR2B_MOUSE 132 NVHSEMYSLLIDTYIRDPKKR--E-F----LFNAIETM--PYVKKKADWALRWIADRksTFGERVVAFAAVEGIFFSGSFAAIFWLKK 210
+                            ***********9999999753..3.2....23333333..3445555555555665410444567888999*************9865 PP
+
+         NFECIMNI_00017 203 htgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqki.ldavvaqeivfqdylfsegreciginadlikq 289
+                              g + g+    +li rde lh  f    l ++        ++  p  + ++++i  dav  ++  f    +  g   ig+n  l+kq
+  sp|Q6PEE3|RIR2B_MOUSE 211 -RGLMPGLTFSNELISRDEGLHCDFA--CLMFQY-------LVNKPS-EDRVREIiADAVQIEQ-EFLTEALPVG--LIGMNCVLMKQ 284
+                            .79********************995..443332.......334443.4455554056664433.3333334444..7********** PP
+
+         NFECIMNI_00017 290 yiyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgav 345
+                            yi f+a  +    g+   f    +np+ +m++     k        + s yq  av
+  sp|Q6PEE3|RIR2B_MOUSE 285 YIEFVADRLLGELGFSKIFQA--ENPFDFMENISLEGKTNFFE--KRVSEYQRFAV 336
+                            **************9999875..89*****9865555555543..34455555444 PP
+
+>> sp|Q7LG56|RIR2B_HUMAN  Ribonucleoside-diphosphate reductase subunit M2 B OS=Homo sapiens OX=9606 GN=RRM2B PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.3   0.1   6.6e-14   4.5e-10      31     345 ..      46     336 ..      34     350 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 44.3 bits;  conditional E-value: 6.6e-14
+         NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrm..dmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfe 116
+                             +qyp++  +y+q ++ +w   evdls+d    + l+ d+    ++   +++   +d +  +++   +  +v   e   +     l+e
+  sp|Q7LG56|RIR2B_HUMAN  46 PIQYPDIWKMYKQAQASFWTAEEVDLSKDLPhwNKLKADEK--YFISHILAFFAASDGIVNENLVERFSQEVQVPEARCFYGFQILIE 131
+                            68**************************9751155666654..4566678899999******************************** PP
+
+         NFECIMNI_00017 117 tihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdt..silltltalfaleeigfmgsfavtfgiae 202
+                             +h++ ys ++   + dp +   e +    ++n  + +   + k + d     + d   ++   + a+ a+e + f gsfa  f + +
+  sp|Q7LG56|RIR2B_HUMAN 132 NVHSEMYSLLIDTYIRDPKKR--E-F----LFNAIETM--PYVKKKADWALRWIADRksTFGERVVAFAAVEGVFFSGSFAAIFWLKK 210
+                            ***********9999999753..3.2....23333333..3445555555555666410444567888999*************9865 PP
+
+         NFECIMNI_00017 203 htgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqy 290
+                              g + g+    +li rde lh  f    l ++        ++  p  +   + i+dav  ++  + +  +  g   ig+n  l+kqy
+  sp|Q7LG56|RIR2B_HUMAN 211 -RGLMPGLTFSNELISRDEGLHCDFA--CLMFQY-------LVNKPSEERVREIIVDAVKIEQEFLTE-ALPVG--LIGMNCILMKQY 285
+                            .79********************995..443332.......344554444444567887554433333.33444..7*********** PP
+
+         NFECIMNI_00017 291 iyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgav 345
+                            i f+a  +    g+   f    +np+ +m++     k        + s yq  av
+  sp|Q7LG56|RIR2B_HUMAN 286 IEFVADRLLVELGFSKVFQA--ENPFDFMENISLEGKTNFFE--KRVSEYQRFAV 336
+                            *********999*9999875..89*****9865555555543..34455555444 PP
+
+>> sp|Q5R9G0|RIR2B_PONAB  Ribonucleoside-diphosphate reductase subunit M2 B OS=Pongo abelii OX=9601 GN=RRM2B PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.3   0.1   6.6e-14   4.5e-10      31     345 ..      46     336 ..      34     350 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 44.3 bits;  conditional E-value: 6.6e-14
+         NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrm..dmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfe 116
+                             +qyp++  +y+q ++ +w   evdls+d    + l+ d+    ++   +++   +d +  +++   +  +v   e   +     l+e
+  sp|Q5R9G0|RIR2B_PONAB  46 PIQYPDIWKMYKQAQASFWTAEEVDLSKDLPhwNKLKADEK--YFISHILAFFAASDGIVNENLVERFSQEVQVPEARCFYGFQILIE 131
+                            68**************************9751155666654..4566678899999******************************** PP
+
+         NFECIMNI_00017 117 tihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdt..silltltalfaleeigfmgsfavtfgiae 202
+                             +h++ ys ++   + dp +   e +    ++n  + +   + k + d     + d   ++   + a+ a+e + f gsfa  f + +
+  sp|Q5R9G0|RIR2B_PONAB 132 NVHSEMYSLLIDTYIRDPKKR--E-F----LFNAIETM--PYVKKKADWALRWIADRksTFGERVVAFAAVEGVFFSGSFAAIFWLKK 210
+                            ***********9999999753..3.2....23333333..3445555555555666410444567888999*************9865 PP
+
+         NFECIMNI_00017 203 htgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqy 290
+                              g + g+    +li rde lh  f    l ++        ++  p  +   + i+dav  ++  + +  +  g   ig+n  l+kqy
+  sp|Q5R9G0|RIR2B_PONAB 211 -RGLMPGLTFSNELISRDEGLHCDFA--CLMFQY-------LVNKPSEERVREIIVDAVKIEQEFLTE-ALPVG--LIGMNCILMKQY 285
+                            .79********************995..443332.......344554444444567887554433333.33444..7*********** PP
+
+         NFECIMNI_00017 291 iyfmaapmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayqvgav 345
+                            i f+a  +    g+   f    +np+ +m++     k        + s yq  av
+  sp|Q5R9G0|RIR2B_PONAB 286 IEFVADRLLVELGFSKVFQA--ENPFDFMENISLEGKTNFFE--KRVSEYQRFAV 336
+                            *********999*9999875..89*****9865555555543..34455555444 PP
+
+>> sp|O46310|RIR2_LEIAM  Ribonucleoside-diphosphate reductase small subunit OS=Leishmania amazonensis OX=5659 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.6   0.1   5.4e-14   3.7e-10      31     302 ..      39     290 ..      34     310 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 44.6 bits;  conditional E-value: 5.4e-14
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +qy ++   y++q s iw   e+dl  d  d    +     ++   +++   +d +  ++++  +m  v   e   +     ++e ih
+  sp|O46310|RIR2_LEIAM  39 PIQYHDIWRKYKEQESCIWTVEEIDLGNDMKDWATLNDGERHFIKHVLAFFAGSDGIVIENLAQRFMSDVKVPEARAFYGFQLMMENIH 127
+                           589*******************************99999999999999*****************************9999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfm 208
+                           ++tys ++   + d  +          +l+  q i     k e   r    +  s+   l  + a+e i f gsf   f + +  g + 
+  sp|O46310|RIR2_LEIAM 128 SETYSVLLDTYITDSEEK-------LRLLHAIQTIPCIQKKAEWPVRWI-GSSASFQQRLIGFAAVEGIFFSGSFCALFWLKK-RGLMP 207
+                           *****8887666665444.......457888888877777777777765.5678999999*******************9865.79*** PP
+
+        NFECIMNI_00017 209 giaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaap 297
+                           g+    +li rde lht f   +   h +       l  p  +  ++ i+dav  +   + d l       ig+na+l+ qyi f+a  
+  sp|O46310|RIR2_LEIAM 208 GLTFSNELISRDEGLHTDFACLLYNSHIKH-----KL--PR-ERVLEIIVDAVNIEREFICDALP---VRLIGMNAELMAQYIEFVADR 285
+                           *******************77766666433.....22..22.23456688998766655666664...569***************987 PP
+
+        NFECIMNI_00017 298 myeay 302
+                           +  + 
+  sp|O46310|RIR2_LEIAM 286 LLVSL 290
+                           76655 PP
+
+>> sp|Q9QTF2|RIR2_RSIV  Ribonucleoside-diphosphate reductase small chain OS=Red sea bream iridovirus OX=65424 GN=RR-2 PE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.3   0.2   6.7e-14   4.6e-10      34     322 ..      10     277 ..       4     300 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 44.3 bits;  conditional E-value: 6.7e-14
+       NFECIMNI_00017  34 ypelealyqqqmsqiwnefevdlsqdrmdmle.tdksvtdlmvktiswqhladsvaarsisgllmphvtns.emenlinawslfetihar 121
+                           p l a+y++ ++ +w   evdls d     +   ++   +m   +++  +ad +   ++   +  ++ +  e   +      +e iha+
+  sp|Q9QTF2|RIR2_RSIV  10 DPHLWAMYKKAVASFWTVEEVDLSTDVRHWTDkLTEAERRFMSHILAFFAMADGIVGDNLVCNFAKELDHIpEARAFYGFQVAIENIHAE 99 
+                          69999********************98765431334556678888999999999998877655555444431445556666679****** PP
+
+       NFECIMNI_00017 122 tyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgia 211
+                           y++++    a  +q         a+++ ++ +     k +   +    t   i   l a+ a+e + f gsfa  f + ++ + + g+a
+  sp|Q9QTF2|RIR2_RSIV 100 MYTQLIITLVAKENQA--------ALFSAAEDMPCVKAKAQWAAQWLNATHKPIATRLLAFAAVEGVMFSGSFAAIFWLKKR-SLMPGLA 180
+                          *****99888876664........34444444444445566666667777778888999999****************9876.5789*** PP
+
+       NFECIMNI_00017 212 qlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyea 301
+                             +li rde lh  f   +         + +m   p      q i dav  +   f++ l +     +g+n+d +k yi f+a  + +a
+  sp|Q9QTF2|RIR2_RSIV 181 FSNELISRDEGLHCDFACML---------FRQMANKPCQDDAHQIISDAVDIETAFFREALKT---PLLGMNSDSMKLYIQFVADRLLDA 258
+                          **************996443.........346788999999999999***9999999998865...69********************** PP
+
+       NFECIMNI_00017 302 yglvpsfdvpkknplpymdhw 322
+                           g    ++v   np+ +md+ 
+  sp|Q9QTF2|RIR2_RSIV 259 LGYAKMYNV--SNPFDFMDNI 277
+                          *******99..69*****985 PP
+
+>> sp|P0DKH3|RI2BL_ARATH  Ribonucleoside-diphosphate reductase small chain B OS=Arabidopsis thaliana OX=3702 GN=RNR2B PE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.4   0.4   1.3e-13   8.6e-10      31     320 ..      21     288 ..      17     323 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 43.4 bits;  conditional E-value: 1.3e-13
+         NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvk.tiswqhladsvaarsisgllmphvtnsemenlinawslfet 117
+                             +qyp++  +y++  + +w   evdlsqd+ d   +  +    ++k  +++   +d +  +++s  +m  v  se   +      +e 
+  sp|P0DKH3|RI2BL_ARATH  21 PIQYPQIWEMYKKAEASFWTAEEVDLSQDNRDWENSLTNDERHFIKhVLAFFAASDGIVLENLSTRFMSDVQISEARAFYGFQIAIEN 108
+                            58*****************************986654444444555167899999************************999999*** PP
+
+         NFECIMNI_00017 118 ihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtg 205
+                            ih++ ys ++  t+   ++  +  +   a     + i     k e   +       s+   + a+  +e i f gsf   f + +  g
+  sp|P0DKH3|RI2BL_ARATH 109 IHSEMYSLLLD-TYIKDNKERDHLF--RA----IETIPCVTKKAEWAMKWIN-GSQSFAERIVAFACVEGIFFSGSFCSIFWLKK-RG 187
+                            ******97765.6655554333333..33....3444444455555444433.345677788888899*************9865.79 PP
+
+         NFECIMNI_00017 206 kfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyf 293
+                             + g+    +li rde lh  f   i  +      +   l+   lk+    + dav  +     d l       +g+n +l+ qyi f
+  sp|P0DKH3|RI2BL_ARATH 188 LMPGLTFSNELISRDEGLHCDFACLIYSL------LRTKLDEDRLKAI---VCDAVEIEREFVCDALP---CALVGMNRELMSQYIEF 263
+                            ********************997655443......3456777777764...46777554444445543...4579************* PP
+
+         NFECIMNI_00017 294 maapmyeayglvpsfdvpkknplpymd 320
+                            +a  +  a g    + v   np+ +m+
+  sp|P0DKH3|RI2BL_ARATH 264 VADRLLAALGCAKVYGV--SNPFDWME 288
+                            **********9999988..58888876 PP
+
+>> sp|Q9PL92|RIR2_CHLMU  Ribonucleoside-diphosphate reductase subunit beta OS=Chlamydia muridarum (strain MoPn / Nigg) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.6   0.1   1.1e-13   7.6e-10      73     328 ..      77     327 ..      30     343 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 43.6 bits;  conditional E-value: 1.1e-13
+        NFECIMNI_00017  73 lmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivkqtfadpgqmleetytntavln.rsqaivgafdk 160
+                           +++  + +   a+s+  ++i   ++ hvtn e    +   ++ e +h +t+ +i +    d  +++   y   a +  +    +    k
+  sp|Q9PL92|RIR2_CHLMU  77 VILLNLGFFSTAESLVGNNIVLAIFKHVTNPEARQYLLRQAFEEAVHTHTFLYICESLGLDEKEIFN-AYNERASIKaKDDFQMEITGK 164
+                           3445677788999********99************99999999**************9999998876.566655554144444444444 PP
+
+        NFECIMNI_00017 161 .leedhrhsqvtdts.illtltalfa.leeigfmgsfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailk.ihqripaiaeml 245
+                            l+ + r   v     ++  l   +  +e i f + f + +++  + +k++gi +  + i rde +h +f   ++  i ++ p i    
+  sp|Q9PL92|RIR2_CHLMU 165 vLDPNFRTDSVEGLQeFIKNLVGYYIiMEGIFFYSGFVMILSF-HRQNKMVGIGEQYQYILRDETIHLNFGVDLINgIKEENPEIW--- 249
+                           2788889888887651666788877615778888889887776.4578**********************8765542777777664... PP
+
+        NFECIMNI_00017 246 espmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwidgskv 328
+                            +  l+ +i +++   v  ei +    +   r  +g+ a ++  y+  +a    e  gl p +    knp+p+m + id +k 
+  sp|Q9PL92|RIR2_CHLMU 250 -TTELQQEIIEMIQRAVDLEIDYARDCL--PRGILGLRASMFIDYVQHIADRRLERIGLKPIYH--TKNPFPWMSETIDLNKE 327
+                           .344566666666666777776654444..4669***************************997..59**********98875 PP
+
+>> sp|P50621|RIR2_BACSU  Ribonucleoside-diphosphate reductase subunit beta OS=Bacillus subtilis (strain 168) OX=224308 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.9   0.6   1.8e-13   1.2e-09      38     316 ..      19     285 ..      11     291 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 42.9 bits;  conditional E-value: 1.8e-13
+        NFECIMNI_00017  38 ealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfe.tihartysh 125
+                           + +y q + q+w   e+ l+ d +      k+  d  +k ++   l d+   ++   ++  hv   + + ++n  +++e  +ha++ys+
+  sp|P50621|RIR2_BACSU  19 QMFYNQNVKQFWLPEEIALNGDLLTWKYLGKNEQDTYMKVLAGLTLLDTEQGNTGMPIVAEHVDGHQRKAVLNFMAMMEnAVHAKSYSN 107
+                           5689*************************************************9999*******************998459******* PP
+
+        NFECIMNI_00017 126 ivkqtfadp...gqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgia 211
+                           i   t+a     ++++e    n  +  ++q ivg +  +++d +       s++  + a   le + f + f   + +    gk+m   
+  sp|P50621|RIR2_BACSU 108 IFM-TLAPTetiNEVFEWVKQNKYLQKKAQMIVGLYKAIQKDDE------ISLFKAMVASVYLESFLFYSGFYYPLYF-YGQGKLMQSG 188
+                           975.555321114556666679999999***********99964......5677888888899999998888776654.457******* PP
+
+        NFECIMNI_00017 212 qlvklicrdevlhtrfngailk.ihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmy 299
+                           +++ li rde +h  + g + + i+ +     e  ++  l+     +l+ +   e+ + + l+ +    +g++ d +k++i + a    
+  sp|P50621|RIR2_BACSU 189 EIINLILRDEAIHGVYVGLLAQeIYNK---QTEEKKAE-LREFAIDLLNQLYENELEYTEDLYDQ----VGLSHD-VKKFIRYNANKAL 268
+                           ****************99875313333...33444444.44445568888889999888888864....899988.5889999998888 PP
+
+        NFECIMNI_00017 300 eayglvpsfdvpkknpl 316
+                              g+ p f+    np+
+  sp|P50621|RIR2_BACSU 269 MNLGFDPYFEEEDINPI 285
+                           88999999988888886 PP
+
+>> sp|Q9Z6S4|RIR2_CHLPN  Ribonucleoside-diphosphate reductase subunit beta OS=Chlamydia pneumoniae OX=83558 GN=nrdB PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.9   0.1   3.6e-13   2.4e-09      47     327 ..      49     326 ..      27     342 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 41.9 bits;  conditional E-value: 3.6e-13
+        NFECIMNI_00017  47 qiwnefevdlsqdrmdmletdksvtd...lmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivkqtfa 132
+                             w   ev +++d +++ ++d+   d   +++  + +   a+s+  ++i   ++ h+tn e    +   ++ e +h +t+ +i +    
+  sp|Q9Z6S4|RIR2_CHLPN  49 NNWLPTEVPMARD-IELWKSDELSEDerrVILLNLGFFSTAESLVGNNIVLAIFKHITNPEARQYLLRQAFEEAVHTHTFLYICESLGL 136
+                           5566677777766.34444443333212145667888899************************99999999***************** PP
+
+        NFECIMNI_00017 133 dpgqmleetytntavlnrsq..aivgafdkleedhrhsq.vtdtsilltltalfa.leeigfmgsfavtfgiaehtgkfmgiaqlvkli 217
+                           d g+++   y   a +       +    d l+ +           ++  l   +  +e i f + f + +++  + +k+ gi +  + i
+  sp|Q9Z6S4|RIR2_CHLPN 137 DEGEVFN-AYNERASIRAKDdfQMTLTVDVLDPNFSVQSsEGLGQFIKNLVGYYIiMEGIFFYSGFVMILSF-HRQNKMTGIGEQYQYI 223
+                           ****987.5666665554431235567888887765332023345666777776516778888999888776.45689*********** PP
+
+        NFECIMNI_00017 218 crdevlhtrfngail.kihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyeayglv 305
+                            rde +h +f   ++  i ++ p +     +  l+ +i  +++  v  ei +    +   r  +g+ + ++  y+  +a    e  gl 
+  sp|Q9Z6S4|RIR2_CHLPN 224 LRDETIHLNFGIDLInGIKEENPEV----WTTELQEEIVALIEKAVELEIEYAKDCLP--RGILGLRSSMFIDYVRHIADRRLERIGLK 306
+                           **********865541466666655....35568899999999999999998766665..568************************** PP
+
+        NFECIMNI_00017 306 psfdvpkknplpymdhwidgsk 327
+                           p +    +np+p+m + +d +k
+  sp|Q9Z6S4|RIR2_CHLPN 307 PIYH--SRNPFPWMSETMDLNK 326
+                           *996..79*******9999777 PP
+
+>> sp|P42170|RIR2_CAEEL  Ribonucleoside-diphosphate reductase small chain OS=Caenorhabditis elegans OX=6239 GN=rnr-2 PE=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.1   0.1   1.3e-12   8.8e-09      35     326 ..      80     350 ..      69     376 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 40.1 bits;  conditional E-value: 1.3e-12
+        NFECIMNI_00017  35 pelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetiharty 123
+                            ++  +y++ ++ +w   evdl +d  d  + +     ++ + +++   +d +  +++   +  +v  se   +      +e ih++ y
+  sp|P42170|RIR2_CAEEL  80 HDIWNFYKKAVASFWTVEEVDLGKDMNDWEKMNGDEQYFISRILAFFAASDGIVNENLCERFSNEVQVSEARFFYGFQIAIENIHSEMY 168
+                           566678999*****************999988888888899999***************************999999999********* PP
+
+        NFECIMNI_00017 124 shivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtd..tsilltltalfaleeigfmgsfavtfgiaehtgkfmgi 210
+                           s +++  +       +et  nt  +n    +   f k + d     ++d   s+   l a+ a+e i f gsfa  f + +  g + g+
+  sp|P42170|RIR2_CAEEL 169 SKLIETYI------RDETERNTL-FNAVDEF--EFIKKKADWALRWISDkkASFAERLIAFAAVEGIFFSGSFASIFWLKK-RGLMPGL 247
+                           ***97544......467888874.5655544..56677777777777772257778899*9****************9865.79***** PP
+
+        NFECIMNI_00017 211 aqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfs.egreciginadlikqyiyfmaapm 298
+                               +li rde lh  f      ++         l+  + + +i  i+   va e   q++l      + ig+n  l+ qyi f+a  +
+  sp|P42170|RIR2_CAEEL 248 THSNELISRDEGLHRDFACL---LYS-------KLQKKLTQQRIYDIIKDAVAIE---QEFLTEaLPVDMIGMNCRLMSQYIEFVADHL 323
+                           **************999533...233.......3455566666666554444433...444432034689******************9 PP
+
+        NFECIMNI_00017 299 yeayglvpsfdvpkknplpymdhw.idgs 326
+                               g    +    knp+ +m++  idg 
+  sp|P42170|RIR2_CAEEL 324 LVELGCDKLY--KSKNPFDFMENIsIDGK 350
+                           9999987776..579******98526664 PP
+
+>> sp|Q9LSD0|RIR2C_ARATH  Ribonucleoside-diphosphate reductase small chain C OS=Arabidopsis thaliana OX=3702 GN=TSO2 PE=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.5   0.6   3.9e-12   2.6e-08      32     319 ..      22     287 ..      16     298 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 38.5 bits;  conditional E-value: 3.9e-12
+         NFECIMNI_00017  32 vqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvk.tiswqhladsvaarsisgllmphvtnsemenlinawslfeti 118
+                            + yp++  +y++  + +w   evdlsqd+ d   +       ++k  +++   +d +  +++++ +m  v  se   +      +e i
+  sp|Q9LSD0|RIR2C_ARATH  22 IHYPQIWEMYKKAEASFWTAEEVDLSQDNRDWENSLNDGERHFIKhVLAFFAASDGIVLENLASRFMSDVQVSEARAFYGFQIAIENI 109
+                            79*****************************97765554444555167899999************************999999**** PP
+
+         NFECIMNI_00017 119 hartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgk 206
+                            h++ ys ++  t+   ++  +  +   a+    + i     k +   +    + t +   + a+  +e i f gsf   f + +  g 
+  sp|Q9LSD0|RIR2C_ARATH 110 HSEMYSLLLD-TYIKDNKERDHLF--RAI----ETIPCVAKKAQWAMKWIDGSQT-FAERIIAFACVEGIFFSGSFCSIFWLKK-RGL 188
+                            ******8775.5555444334333..222....3333333444444444333333.3345667778999***********9865.79* PP
+
+         NFECIMNI_00017 207 fmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqki.ldavvaqeivfqdylfsegreciginadlikqyiyf 293
+                            + g+    +li rde lh  f   +            +l++ + + +++ i  dav  +     d l       +g+n dl+ qyi f
+  sp|Q9LSD0|RIR2C_ARATH 189 MPGLTFSNELISRDEGLHCDFACLLY----------TLLKTKLSEERVKSIvCDAVEIEREFVCDAL---PCALVGMNRDLMSQYIEF 263
+                            *******************9954332..........2344444444454441577754443334544...34579************* PP
+
+         NFECIMNI_00017 294 maapmyeayglvpsfdvpkknplpym 319
+                            +a  +  a g    + v   np+ +m
+  sp|Q9LSD0|RIR2C_ARATH 264 VADRLLGALGYGKVYGVT--NPFDWM 287
+                            ***999998887777663..666655 PP
+
+>> sp|P42521|RIR2_DICDI  Ribonucleoside-diphosphate reductase small subunit OS=Dictyostelium discoideum OX=44689 GN=rnrB
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.1   0.0   1.3e-12   8.9e-09      31     319 ..      26     292 ..      13     301 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 40.1 bits;  conditional E-value: 1.3e-12
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdml.etdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfeti 118
+                            ++yp++  +y++ ++  w   e+dl  d++d   +   +   ++   +++   +d +  ++++  +m +v   e   +      +e i
+  sp|P42521|RIR2_DICDI  26 PIKYPDIWRMYKKALASHWVAEEIDLGNDNVDWEyKLTDNERHFISHVLAFFAASDGIVNENLATRFMSEVQIPEARCFYGFQIAIENI 114
+                           589****************************97413334456677889999999***********************99999999**** PP
+
+        NFECIMNI_00017 119 hartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkf 207
+                           h++tys +++ t+       ++  t   ++n  + i     k e   r    +d s+   l a+ a+e i f gsf   f + +  g +
+  sp|P42521|RIR2_DICDI 115 HSETYSLLIE-TYI------KDKQTKDKLFNAIETIPCIKKKAEWALRWINDSD-SFAERLVAFAAVEGIFFSGSFCSIFWLKK-RGLM 194
+                           ******9886.554......3445667778888888877778887777766555.5677899999***************9865.79** PP
+
+        NFECIMNI_00017 208 mgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaa 296
+                           +g+    +li rde lh  f   +     +   +   l+  +++     i dav  ++  + +   s   + ig+n+  + qyi f a 
+  sp|P42521|RIR2_DICDI 195 QGLTFSNELISRDEGLHCDFACLLY---TK---LQRKLDPKVIEKM---IRDAVECEKEFICE---SLPVDLIGMNSRSMSQYIEFCAD 271
+                           ******************9965443...33...3345555555544...44777655433333...445689**************999 PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpym 319
+                            +  + g    f+    np+ +m
+  sp|P42521|RIR2_DICDI 272 RLVVSLGYKKIFN--SSNPFEWM 292
+                           9999999888876..46777766 PP
+
+>> sp|P0DSS8|RIR2_VARV  Ribonucleoside-diphosphate reductase small chain OS=Variola virus OX=10255 GN=OPG048 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.5   0.0   3.9e-12   2.6e-08      31     323 ..      16     285 ..       7     317 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 38.5 bits;  conditional E-value: 3.9e-12
+       NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetiha 120
+                           +qy ++  +y++  + +w   evd+s+d  d  +       ++   +++   +d +  ++++  +  +v  +e   +      +e ih+
+  sp|P0DSS8|RIR2_VARV  16 PIQYHDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNENLAERFCIEVQITEARCFYGFQMAIENIHS 105
+                          589**************************999887777766677778899999***********************99999999****** PP
+
+       NFECIMNI_00017 121 rtyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdt.silltltalfaleeigfmgsfavtfgiaehtgkfmg 209
+                          + ys ++     d     e+ y   a+      +     k + d  +  + d+ s    l a+ a+e i f gsfa  f + +  g + g
+  sp|P0DSS8|RIR2_VARV 106 EMYSLLIDTYVKDS---NEKNYLFNAIETM-PCV-----KKKADWAQKWIHDSaSYGERLIAFAAVEGIFFSGSFASIFWLKK-RGLMPG 185
+                          ****9987555554...4778877776432.222.....445566666666651445678899999*************9865.79**** PP
+
+       NFECIMNI_00017 210 iaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmy 299
+                          +    +li rde lh  f   ++k h   p   e + s         i dav  +   f     +   + ig+n +++k yi f+a  + 
+  sp|P0DSS8|RIR2_VARV 186 LTFSNELISRDEGLHCDFACLMFK-HLLYPPSEETVRS--------IITDAVSIE-QEFLT--VALPVKLIGMNCEMMKTYIKFVADRLI 263
+                          *****************9755554.7666665554433........345666433.23333..3446789******************** PP
+
+       NFECIMNI_00017 300 eayglvpsfdvpkknplpymdhwi 323
+                             g+   ++v   np+ +m++  
+  sp|P0DSS8|RIR2_VARV 264 SELGFKKIYNVT--NPFDFMENIS 285
+                          ******999995..9999998754 PP
+
+>> sp|O57175|RIR2_VACCA  Ribonucleoside-diphosphate reductase small chain OS=Vaccinia virus (strain Ankara) OX=126794 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.3   0.0   4.5e-12   3.1e-08      31     323 ..      16     285 ..       8     317 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 38.3 bits;  conditional E-value: 4.5e-12
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +qy ++  +y++  + +w   evd+s+d  d  +       ++   +++   +d +  ++++  +  +v  +e   +      +e ih
+  sp|O57175|RIR2_VACCA  16 PIQYHDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNENLAERFCTEVQITEARCFYGFQMAIENIH 104
+                           589**************************999887777766677778899999***********************99999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsil.ltltalfaleeigfmgsfavtfgiaehtgkf 207
+                           ++ ys ++     d     e+ y   a+      +     k + d  +  + d++     l a+ a+e i f gsfa  f + +  g +
+  sp|O57175|RIR2_VACCA 105 SEMYSLLIDTYVKDS---NEKNYLFNAIETM-PCV-----KKKADWAQKWIHDSAGYgERLIAFAAVEGIFFSGSFASIFWLKK-RGLM 183
+                           *****9987555554...4778877776432.222.....445566666777765441568888999*************9865.79** PP
+
+        NFECIMNI_00017 208 mgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfs.egreciginadlikqyiyfma 295
+                            g+    +li rde lh  f   ++k h   p   e +           i dav  +    q++l +    + ig+n +++k yi f+a
+  sp|O57175|RIR2_VACCA 184 PGLTFSNELISRDEGLHCDFACLMFK-HLLHPPSEETV--------RSIITDAVSIE----QEFLTAaLPVKLIGMNCEMMKTYIEFVA 259
+                           *******************9655554.54444333332........23355666433....444443135689**************** PP
+
+        NFECIMNI_00017 296 apmyeayglvpsfdvpkknplpymdhwi 323
+                             +    g+   ++v   np+ +m++  
+  sp|O57175|RIR2_VACCA 260 DRLISELGFKKIYNVT--NPFDFMENIS 285
+                           **********999995..9999998754 PP
+
+>> sp|P20493|RIR2_VACCC  Ribonucleoside-diphosphate reductase small chain OS=Vaccinia virus (strain Copenhagen) OX=10249
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.9   0.0   5.8e-12   3.9e-08      31     323 ..      16     285 ..       9     317 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 37.9 bits;  conditional E-value: 5.8e-12
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +qy ++  +y++  + +w   evd+s+d  d  +       ++   +++   +d +  ++++  +  +v  +e   +      +e ih
+  sp|P20493|RIR2_VACCC  16 PIQYYDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNENLAERFCTEVQITEARCFYGFQMAIENIH 104
+                           58999************************999887777766677778899999***********************99999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsil.ltltalfaleeigfmgsfavtfgiaehtgkf 207
+                           ++ ys ++     d     e+ y   a+      +     k + d  +  + d++     l a+ a+e i f gsfa  f + +  g +
+  sp|P20493|RIR2_VACCC 105 SEMYSLLIDTYVKDS---NEKNYLFNAIETM-PCV-----KKKADWAQKWIHDSAGYgERLIAFAAVEGIFFSGSFASIFWLKK-RGLM 183
+                           *****9987555554...4778877776432.222.....445566666777765441568888999*************9865.79** PP
+
+        NFECIMNI_00017 208 mgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfs.egreciginadlikqyiyfma 295
+                            g+    +li rde lh  f   ++k h   p   e + s         i dav  +    q++l +    + ig+n +++k yi f+a
+  sp|P20493|RIR2_VACCC 184 PGLTFSNELISRDEGLHCDFACLMFK-HLLYPPSEETVRS--------IITDAVSIE----QEFLTAaLPVKLIGMNCEMMKTYIEFVA 259
+                           *******************9755554.7666665554433........355666433....444443135689**************** PP
+
+        NFECIMNI_00017 296 apmyeayglvpsfdvpkknplpymdhwi 323
+                             +    g+   ++v   np+ +m++  
+  sp|P20493|RIR2_VACCC 260 DRLISELGFKKIYNVT--NPFDFMENIS 285
+                           **********999995..9999998754 PP
+
+>> sp|P11158|RIR2_VACCW  Ribonucleoside-diphosphate reductase small chain OS=Vaccinia virus (strain Western Reserve) OX=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.8   0.0   6.2e-12   4.2e-08      31     323 ..      16     285 ..       9     317 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 37.8 bits;  conditional E-value: 6.2e-12
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +qy ++  +y++  + +w   evd+s+d  d  +       ++   +++   +d +  ++++  +  +v  +e   +      +e ih
+  sp|P11158|RIR2_VACCW  16 PIQYYDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNENLAERFCTEVQITEARCFYGFQMAIENIH 104
+                           58999************************999887777766677778899999***********************99999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsil.ltltalfaleeigfmgsfavtfgiaehtgkf 207
+                           ++ ys ++     d     e+ y   a+      +     k + d  +  + d++     l a+ a+e i f gsfa  f + +  g +
+  sp|P11158|RIR2_VACCW 105 SEMYSLLIDTYVKDS---NEKNYLFNAIETM-PCV-----KKKADWAQKWIHDSAGYgERLIAFAAVEGIFFSGSFASIFWLKK-RGLM 183
+                           *****9987555554...4778877776432.222.....445566666777765441568888999*************9865.79** PP
+
+        NFECIMNI_00017 208 mgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfs.egreciginadlikqyiyfma 295
+                            g+    +li rde lh  f   ++k h   p   e +           i dav  +    q++l +    + ig+n +++k yi f+a
+  sp|P11158|RIR2_VACCW 184 PGLTFSNELISRDEGLHCDFACLMFK-HLLHPPSEETV--------RSIITDAVSIE----QEFLTAaLPVKLIGMNCEMMKTYIEFVA 259
+                           *******************9655554.54444333332........23355666433....444443135689**************** PP
+
+        NFECIMNI_00017 296 apmyeayglvpsfdvpkknplpymdhwi 323
+                             +    g+   ++v   np+ +m++  
+  sp|P11158|RIR2_VACCW 260 DRLISELGFKKIYNVT--NPFDFMENIS 285
+                           **********999995..9999998754 PP
+
+>> sp|P29883|RIR2_VACCP  Ribonucleoside-diphosphate reductase small chain OS=Vaccinia virus (strain L-IVP) OX=31531 GN=O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.9   0.0   5.9e-12     4e-08      31     322 ..      16     284 ..       8     317 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 37.9 bits;  conditional E-value: 5.9e-12
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +qy ++  +y++  + +w   evd+s+d  d  +       ++   +++   +d +  ++++  +  +v  +e   +      +e ih
+  sp|P29883|RIR2_VACCP  16 PIQYHDIWNMYKKAEASFWTVEEVDISKDINDWNKVTPDEKYFIKHVLAFFAASDGIVNENLAERFCTEVQITEARCFYGFRMAIENIH 104
+                           589*****************************998888877777788999999***********************99999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsil.ltltalfaleeigfmgsfavtfgiaehtgkf 207
+                           ++ ys ++     d     e+ y   a+      +     k + d  +  + d++     l a+ a+e i f gsfa  f + +  g +
+  sp|P29883|RIR2_VACCP 105 SEMYSLLIDTYVKDS---NEKNYLFNAIETM-PCV-----KKKADWAQKWIHDSAGYgERLIAFAAVEGIFFSGSFASIFWLKK-RGLM 183
+                           *****9987555554...4778877776432.222.....445566666777765441568888999*************9865.79** PP
+
+        NFECIMNI_00017 208 mgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfs.egreciginadlikqyiyfma 295
+                            g+    +li rde lh  f   ++k h   p   e +           i dav  +    q++l +    + ig+n +++k yi f+a
+  sp|P29883|RIR2_VACCP 184 PGLTFSNELISRDEGLHCDFACLMFK-HLLHPPSEETV--------RSIITDAVSIE----QEFLTAaLPVKLIGMNCEMMKTYIEFVA 259
+                           *******************9655554.54444333332........23355666433....444443135689**************** PP
+
+        NFECIMNI_00017 296 apmyeayglvpsfdvpkknplpymdhw 322
+                             +    g+   ++v   np+ +m++ 
+  sp|P29883|RIR2_VACCP 260 DRLISELGFKKIYNVT--NPFDFMENI 284
+                           *********9999985..899999875 PP
+
+>> sp|P32209|RIR2_SWPVK  Ribonucleoside-diphosphate reductase small chain OS=Swinepox virus (strain Kasza) OX=10277 GN=C
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.3   8.8e-12     6e-08      32     299 ..      17     263 ..      10     271 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 37.3 bits;  conditional E-value: 8.8e-12
+        NFECIMNI_00017  32 vqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetiha 120
+                           ++y ++  +y+q ++ +w   evdls+d  d  +  k    ++   +++   +d +  ++++  +   v  se   +      +e ih+
+  sp|P32209|RIR2_SWPVK  17 IKYHDIWKMYKQSVASFWTVEEVDLSKDLDDWDKLTKDEKYFIKHILAFFASSDGIVNENLAERFYVDVQCSEARCFYGFQIAMENIHS 105
+                           7899999********************9988888778777777778899999***********************99999999****** PP
+
+        NFECIMNI_00017 121 rtyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsillt.ltalfaleeigfmgsfavtfgiaehtgkfm 208
+                           + ys ++     d    +e+ +   a+    + +     k + d  +  ++   +    + a+ a+e i f gsfa  f i +  g + 
+  sp|P32209|RIR2_SWPVK 106 EMYSLLIDTYVRD---NIEKMHLFNAIET-MECV-----KKKADWARKWISSNKVYGErVVAFAAVEGIFFSGSFAAIFWIKK-RGLMP 184
+                           ****998655444...4677776666533.3333.....45567777778888777551566778999************976.69*** PP
+
+        NFECIMNI_00017 209 giaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaap 297
+                           g+    +li rde lh  f   ++k h   p   e++ s         i+dav  ++  f     +   + ig+n  l+ qyi f+a  
+  sp|P32209|RIR2_SWPVK 185 GLTFSNELISRDEGLHCDFACLMFK-HLLHPPSKEVITS--------IIIDAVNIEK-EFL--TVAIPVDLIGMNCCLMSQYIEFVADR 261
+                           ******************9765554.6555555555544........3677775443.233..34456789999999999999999876 PP
+
+        NFECIMNI_00017 298 my 299
+                           + 
+  sp|P32209|RIR2_SWPVK 262 LL 263
+                           65 PP
+
+>> sp|P79733|RIR2_DANRE  Ribonucleoside-diphosphate reductase subunit M2 OS=Danio rerio OX=7955 GN=rrm2 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.2   0.9     4e-11   2.7e-07      31     323 ..      81     351 ..      76     385 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 35.2 bits;  conditional E-value: 4e-11
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrm..dmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfet 117
+                            +qy ++  +y++  + +w   evdls+d +  d l+ ++    ++   +++   +d +  +++   +  +v  +e   +      +e 
+  sp|P79733|RIR2_DANRE  81 PIQYHDIWQMYKKAEASFWTAEEVDLSKDLQhwDSLKDEE--RYFISHVLAFFAASDGIVNENLVERFTQEVQVTEARCFYGFQIAMEN 167
+                           589*************************975115554443..44566778999999********99999*******9999999999*** PP
+
+        NFECIMNI_00017 118 ihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsill..tltalfaleeigfmgsfavtfgiaeht 204
+                           ih++ ys ++   + d  +  e  +   a+    + +     k + d   + + d +      + a+ a+e i f gsfa  f + +  
+  sp|P79733|RIR2_DANRE 168 IHSEMYSLLIDTYIKDS-KERE--FLFNAI----ETMPC--VKKKADWALNWIGDKNARYgeRVVAFAAVEGIFFSGSFASIFWLKK-R 246
+                           *******9987555554.3333..333333....32222..24455666666666655442157788899*************9865.7 PP
+
+        NFECIMNI_00017 205 gkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyf 293
+                           g + g+    +li rde lh  f   ++k          ++  p  ++  + i++av  ++  + d l     + ig+n dl+kqyi f
+  sp|P79733|RIR2_DANRE 247 GLMPGLTFSNELISRDEGLHCDFACLMFK---------HLINKPSEETVKKIIMNAVEIEQEFLTDAL---PVKLIGMNCDLMKQYIEF 323
+                           9********************99655444.........344555544433345677655555555655...4579************** PP
+
+        NFECIMNI_00017 294 maapmyeayglvpsfdvpkknplpymdhwi 323
+                           +a  +    g+   + v  +np+ +m++  
+  sp|P79733|RIR2_DANRE 324 VADRLLLELGFDKVYRV--ENPFDFMENIS 351
+                           **999988998887776..69999998754 PP
+
+>> sp|A0A7H0DN21|RIR2_MONPV  Ribonucleoside-diphosphate reductase small chain OS=Monkeypox virus OX=10244 GN=OPG048 PE=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.6   0.1   2.9e-11     2e-07      31     323 ..      16     285 ..       8     317 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 35.6 bits;  conditional E-value: 2.9e-11
+            NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslf 115
+                                +qy ++  +y++  + +w   evd+s+d  d  +       ++   +++   +d +  ++++  +  +v  +e   +      +
+  sp|A0A7H0DN21|RIR2_MONPV  16 PIQYHDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNENLAERFCTEVQITEARCFYGFQMAI 100
+                               589**************************999887777766677778899999***********************99999999* PP
+
+            NFECIMNI_00017 116 etihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsil.ltltalfaleeigfmgsfavtfg 199
+                               e ih++ ys ++     d     e+ y   a+      +     k + d  +  + d++     l a+ a+e i f gsfa  f 
+  sp|A0A7H0DN21|RIR2_MONPV 101 ENIHSEMYSLLIDTYVKDS---NEKNYLFNAIETM-PCV-----KKKADWAQKWIHDSAGYgERLIAFAAVEGIFFSGSFASIFW 176
+                               *********9987555554...4778877776432.222.....445566666777765441568888999*************9 PP
+
+            NFECIMNI_00017 200 iaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegrecigina 284
+                               + +  g + g+    +li rde lh  f   ++k h        +l  p  +  ++ i+   v+ e  f     +   + ig+n 
+  sp|A0A7H0DN21|RIR2_MONPV 177 LKK-RGLMPGLTFSNELISRDEGLHCDFACLMFK-H--------LLHPP-SEETVRFIITNAVSIEQEFLT--VALPVKLIGMNC 248
+                               865.79********************99655544.4........34433.344566666665655544443..3446789***** PP
+
+            NFECIMNI_00017 285 dlikqyiyfmaapmyeayglvpsfdvpkknplpymdhwi 323
+                               +++k yi f+a  +    g+   ++v   np+ +m++  
+  sp|A0A7H0DN21|RIR2_MONPV 249 EMMKTYIEFVADRLISELGFKKIYNVT--NPFDFMENIS 285
+                               *********************999985..9999998754 PP
+
+>> sp|P11157|RIR2_MOUSE  Ribonucleoside-diphosphate reductase subunit M2 OS=Mus musculus OX=10090 GN=Rrm2 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.4   0.2   6.7e-11   4.6e-07      31     328 ..      85     360 ..      79     388 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 34.4 bits;  conditional E-value: 6.7e-11
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            ++y ++  +y++  + +w   evdls+d +           ++   +++   +d +  +++   +  +v  +e   +      +e ih
+  sp|P11157|RIR2_MOUSE  85 PIEYHDIWQMYKKAEASFWTAEEVDLSKDIQHWEALKPDERHFISHVLAFFAASDGIVNENLVERFSQEVQVTEARCFYGFQIAMENIH 173
+                           58999999********************976554444445677888999999***********************999999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfm 208
+                           ++ ys ++   + dp +     y   a+      +     k +   r     + +    + a+ a+e i f gsfa  f + +  g + 
+  sp|P11157|RIR2_MOUSE 174 SEMYSLLIDTYIKDPKE---REYLFNAIE----TMPCVKKKADWALRWIGDKEATYGERVVAFAAVEGIFFSGSFASIFWLKK-RGLMP 254
+                           ********999999964...556555553....33333344444445544455555667889999**************9865.79*** PP
+
+        NFECIMNI_00017 209 giaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfs.egreciginadlikqyiyfmaa 296
+                           g+    +li rde lh  f   ++k          ++  p  + ++++i+   v  e   q++l      + ig+n  l+kqyi f+a 
+  sp|P11157|RIR2_MOUSE 255 GLTFSNELISRDEGLHCDFACLMFKH---------LVHKPA-EQRVREIITNAVRIE---QEFLTEaLPVKLIGMNCTLMKQYIEFVAD 330
+                           *****************996655553.........233332.334555554444333...444432034689***************** PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpymdhwidgskv 328
+                            +    g+   f v  +np+ +m++     k 
+  sp|P11157|RIR2_MOUSE 331 RLMLELGFNKIFRV--ENPFDFMENISLEGKT 360
+                           99999999999988..6999999986444444 PP
+
+>> sp|P0DSS7|RIR2_VAR67  Ribonucleoside-diphosphate reductase small chain OS=Variola virus (isolate Human/India/Ind3/196
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.8   0.0   5.2e-11   3.5e-07      31     322 ..      16     284 ..       7     317 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 34.8 bits;  conditional E-value: 5.2e-11
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +qy ++  +y++  + +w   evd+s+d  d  +       ++   +++   +d +  ++++  +  +v  +e   +      +e ih
+  sp|P0DSS7|RIR2_VAR67  16 PIQYHDIWNMYKKAEASFWTVEEVDISKDINDWNKLTPDEKYFIKHVLAFFAASDGIVNENLAERFCIEVQITEARCFYGFQMAIENIH 104
+                           589**************************999887777766677778899999***********************99999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsil.ltltalfaleeigfmgsfavtfgiaehtgkf 207
+                           ++ ys ++     d     e+ y   a+      +     k + d  +  + d++     l a+ a+e i f gsfa  f + +  g +
+  sp|P0DSS7|RIR2_VAR67 105 SEMYSLLIDTYVKDS---NEKNYLFNAIETM-PCV-----KKKADWAQKWIHDSAGYgERLIAFAAVEGIFFSGSFASIFWLKK-RGLM 183
+                           *****9987555554...4778877776432.222.....445566666777765441568888999*************9865.79** PP
+
+        NFECIMNI_00017 208 mgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaa 296
+                            g+    +li rde lh  f   ++k h   p   e + s         i dav  +   f     +   + ig+n +++k y+ f+a 
+  sp|P0DSS7|RIR2_VAR67 184 PGLTFSNELISRDEGLHCDFACLMFK-HLLYPPSEETVRS--------IITDAVSIE-QEFLT--VALPVKLIGMNCEMMKTYMEFVAD 260
+                           *******************9755554.7666665554433........345666433.23333..3446789***************** PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpymdhw 322
+                            +    g+   ++v   np  +m++ 
+  sp|P0DSS7|RIR2_VAR67 261 RLISELGFKRIYNVT--NPSDFMENI 284
+                           ****99*99999985..888888775 PP
+
+>> sp|O30601|YOSP_BACSU  SPbeta prophage-derived ribonucleoside-diphosphate reductase subunit beta OS=Bacillus subtilis 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.2   0.1     4e-11   2.8e-07      38     233 ..      19     210 ..      11     286 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 35.2 bits;  conditional E-value: 4e-11
+        NFECIMNI_00017  38 ealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfe.tihartysh 125
+                           + +y q + q+w   e+ l+ d +      k+  d  +k ++   l d+   ++   ++  hv   + + ++n  +++e  +ha++ys+
+  sp|O30601|YOSP_BACSU  19 QMFYNQNVKQFWLPEEIALNGDLLTWKYLGKNEQDTYMKVLAGLTLLDTEQGNTGMPIVAEHVDGHQRKAVLNFMAMMEnAVHAKSYSN 107
+                           5689*************************************************9999*******************998459******* PP
+
+        NFECIMNI_00017 126 ivkqtfadpgqm...leetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgia 211
+                           i   t+a   q+   +e    n  +  +++ iv+ +  ++++       + s++  + a   le + f + f   + +    gk+m   
+  sp|O30601|YOSP_BACSU 108 IFL-TLAPTEQInevFEWVKNNRFLQKKARTIVSVYKTIKKND------EISLFKGMVASVFLESFLFYSGFYYPLYF-YGQGKLMQSG 188
+                           975.666554431103444456666678899999999887654......45677778888889998888888766554.357******* PP
+
+        NFECIMNI_00017 212 qlvklicrdevlhtrfngailk 233
+                           +++ li rde +h  + g + +
+  sp|O30601|YOSP_BACSU 189 EIINLIIRDEAIHGVYVGLLAQ 210
+                           *************999997653 PP
+
+>> sp|O64174|BNRDF_BPSPB  Ribonucleoside-diphosphate reductase subunit beta OS=Bacillus phage SPbeta OX=2932878 GN=bnrdF
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.2   0.1     4e-11   2.8e-07      38     233 ..      19     210 ..      11     286 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 35.2 bits;  conditional E-value: 4e-11
+         NFECIMNI_00017  38 ealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfe.tihartys 124
+                            + +y q + q+w   e+ l+ d +      k+  d  +k ++   l d+   ++   ++  hv   + + ++n  +++e  +ha++ys
+  sp|O64174|BNRDF_BPSPB  19 QMFYNQNVKQFWLPEEIALNGDLLTWKYLGKNEQDTYMKVLAGLTLLDTEQGNTGMPIVAEHVDGHQRKAVLNFMAMMEnAVHAKSYS 106
+                            5689*************************************************9999*******************998459****** PP
+
+         NFECIMNI_00017 125 hivkqtfadpgqm...leetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmg 209
+                            +i   t+a   q+   +e    n  +  +++ iv+ +  ++++       + s++  + a   le + f + f   + +    gk+m 
+  sp|O64174|BNRDF_BPSPB 107 NIFL-TLAPTEQInevFEWVKNNRFLQKKARTIVSVYKTIKKND------EISLFKGMVASVFLESFLFYSGFYYPLYF-YGQGKLMQ 186
+                            *975.666554431103444456666678899999999887654......45677778888889998888888766554.357***** PP
+
+         NFECIMNI_00017 210 iaqlvklicrdevlhtrfngailk 233
+                              +++ li rde +h  + g + +
+  sp|O64174|BNRDF_BPSPB 187 SGEIINLIIRDEAIHGVYVGLLAQ 210
+                            ***************999997653 PP
+
+>> sp|P09247|RIR2_VZVD  Ribonucleoside-diphosphate reductase small subunit OS=Varicella-zoster virus (strain Dumas) OX=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.7   0.1   5.6e-11   3.8e-07      35     313 ..      16     273 ..      11     286 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 34.7 bits;  conditional E-value: 5.6e-11
+       NFECIMNI_00017  35 pelealyqqqmsqiwnefevdlsqd..rmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihart 122
+                          p++  l    +s  w e +  +  d   +d l  d+ +   ++ t  +   ad +   ++ + l    +  ++ +       +e +har 
+  sp|P09247|RIR2_VZVD  16 PDINNLRALSISNRWLESDFIIEDDyqYLDCLTEDELIFYRFIFT--FLSAADDLVNVNLGS-LTQLFSQKDIHHYYIEQECIEVVHARV 102
+                          556666666667777654444443311567777777766665544..456677776666644.45566777888888888999******* PP
+
+       NFECIMNI_00017 123 yshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhs.qvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgia 211
+                          ys+i    f    + l   y n  + n s  i      lee  r +  v +  il+     + +e i f++sfa   +   + g f+   
+  sp|P09247|RIR2_VZVD 103 YSQIQLMLFRG-DESLRVQYVNVTINNPS--IQQKVQWLEEKVRDNpSVAEKYILM-----ILIEGIFFVSSFAAI-AYLRNNGLFVVTC 183
+                          ****9999976.4778999***9987765..6777788998887651455555554.....55899*******975.567899******* PP
+
+       NFECIMNI_00017 212 qlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyea 301
+                          q+  li rde +ht  +  i      +p      e p + ++i +++   v  e  f   l s + +   +n d i qy+ f a  +  a
+  sp|P09247|RIR2_VZVD 184 QFNDLISRDEAIHTSASCCIYN--NYVP------EKPAI-TRIHQLFSEAVEIECAF---LKSHAPKTRLVNVDAITQYVKFSADRLLSA 261
+                          **************98877654..4455......67776.46777777777667665...77888888899**************99999 PP
+
+       NFECIMNI_00017 302 yglvpsfdvpkk 313
+                           ++   f+ p  
+  sp|P09247|RIR2_VZVD 262 INVPKLFNTPPP 273
+                          998888988754 PP
+
+>> sp|Q4JQV7|RIR2_VZVO  Ribonucleoside-diphosphate reductase small subunit OS=Varicella-zoster virus (strain Oka vaccine
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.7   0.1   5.6e-11   3.8e-07      35     313 ..      16     273 ..      11     286 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 34.7 bits;  conditional E-value: 5.6e-11
+       NFECIMNI_00017  35 pelealyqqqmsqiwnefevdlsqd..rmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihart 122
+                          p++  l    +s  w e +  +  d   +d l  d+ +   ++ t  +   ad +   ++ + l    +  ++ +       +e +har 
+  sp|Q4JQV7|RIR2_VZVO  16 PDINNLRALSISNRWLESDFIIEDDyqYLDCLTEDELIFYRFIFT--FLSAADDLVNVNLGS-LTQLFSQKDIHHYYIEQECIEVVHARV 102
+                          556666666667777654444443311567777777766665544..456677776666644.45566777888888888999******* PP
+
+       NFECIMNI_00017 123 yshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhs.qvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgia 211
+                          ys+i    f    + l   y n  + n s  i      lee  r +  v +  il+     + +e i f++sfa   +   + g f+   
+  sp|Q4JQV7|RIR2_VZVO 103 YSQIQLMLFRG-DESLRVQYVNVTINNPS--IQQKVQWLEEKVRDNpSVAEKYILM-----ILIEGIFFVSSFAAI-AYLRNNGLFVVTC 183
+                          ****9999976.4778999***9987765..6777788998887651455555554.....55899*******975.567899******* PP
+
+       NFECIMNI_00017 212 qlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyea 301
+                          q+  li rde +ht  +  i      +p      e p + ++i +++   v  e  f   l s + +   +n d i qy+ f a  +  a
+  sp|Q4JQV7|RIR2_VZVO 184 QFNDLISRDEAIHTSASCCIYN--NYVP------EKPAI-TRIHQLFSEAVEIECAF---LKSHAPKTRLVNVDAITQYVKFSADRLLSA 261
+                          **************98877654..4455......67776.46777777777667665...77888888899**************99999 PP
+
+       NFECIMNI_00017 302 yglvpsfdvpkk 313
+                           ++   f+ p  
+  sp|Q4JQV7|RIR2_VZVO 262 INVPKLFNTPPP 273
+                          998888988754 PP
+
+>> sp|Q4R7Q7|RIR2_MACFA  Ribonucleoside-diphosphate reductase subunit M2 OS=Macaca fascicularis OX=9541 GN=RRM2 PE=2 SV=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.0   0.4   1.8e-10   1.2e-06      32     322 ..      85     353 ..      79     386 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 33.0 bits;  conditional E-value: 1.8e-10
+        NFECIMNI_00017  32 vqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetiha 120
+                           ++y ++  +y++  + +w   evdls+d +           ++   +++   +d +  +++   +  +v  +e   +      +e ih+
+  sp|Q4R7Q7|RIR2_MACFA  85 IEYHDIWQMYKKAEASFWTAEEVDLSKDIQHWESLKPEERYFISHVLAFFAASDGIVNENLVERFSQEVQITEARCFYGFQIAMENIHS 173
+                           7899999*********************7765444444455566778999999*********************999999999****** PP
+
+        NFECIMNI_00017 121 rtyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmg 209
+                           + ys ++   + dp +     +   a+    + +     k +   r     + +    + a+ a+e i f gsfa  f + +  g + g
+  sp|Q4R7Q7|RIR2_MACFA 174 EMYSLLIDTYIKDPKER---EFLFNAI----ETMPCVEKKADWALRWIGDKEATYGERVVAFAAVEGIFFSGSFASIFWLKK-RGLMPG 254
+                           *******9999999753...3333333....333333444444555555555556667889999**************9865.79**** PP
+
+        NFECIMNI_00017 210 iaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfs.egreciginadlikqyiyfmaap 297
+                           +    +li rde lh  f   ++k          ++  p  +   + i++av       q++l      + ig+n  l+kqyi f+a  
+  sp|Q4R7Q7|RIR2_MACFA 255 LTFSNELISRDEGLHCDFACLMFKH---------LVHKPSEERVREIIINAVRV----EQEFLTEaLPVKLIGMNCTLMKQYIEFVADR 330
+                           ****************996655542.........34455433333345555543....3444432024689*****************9 PP
+
+        NFECIMNI_00017 298 myeayglvpsfdvpkknplpymdhw 322
+                           +    g+   f v  +np+ +m++ 
+  sp|Q4R7Q7|RIR2_MACFA 331 LMLELGFSKVFRV--ENPFDFMENI 353
+                           9999999999987..6999999875 PP
+
+>> sp|P50651|RIR2A_ARATH  Ribonucleoside-diphosphate reductase small chain A OS=Arabidopsis thaliana OX=3702 GN=RNR2A PE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.2   0.3   1.6e-10   1.1e-06      30     321 ..      32     300 ..      15     330 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 33.2 bits;  conditional E-value: 1.6e-10
+         NFECIMNI_00017  30 invqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfet 117
+                            + ++y  +  +y++  + +w   evdls d +       s   ++   +++   +d +  +++++ ++  v   e   +      +e 
+  sp|P50651|RIR2A_ARATH  32 FPIRYKSIWEMYKKAEASFWTAEEVDLSTDVQQWEALTDSEKHFISHILAFFAASDGIVLENLAARFLNDVQVPEARAFYGFQIAMEN 119
+                            5689999999********************888776666778888899999999**********************999999999*** PP
+
+         NFECIMNI_00017 118 ihartyshivkqtfadpgqmleetytntavlnrsqaivgafd..kleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaeh 203
+                            ih++ ys ++ +tf   ++  +  +      n  + i       k   d  +   +  s+ + l a+  +e i f gsf   f + + 
+  sp|P50651|RIR2A_ARATH 120 IHSEMYSLLL-ETFIKDSKEKDRLF------NAIETIPCISKkaKWCLDWIQ---SPMSFAVRLVAFACVEGIFFSGSFCAIFWLKK- 196
+                            ******9766.67876655444444......444444333330033334333...45688899999999**************9865. PP
+
+         NFECIMNI_00017 204 tgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyi 291
+                             g + g+    +li rde lh  f   +  + q+        + p+   ++ +i+   v  e  f     +   + ig+n++l+ qyi
+  sp|P50651|RIR2A_ARATH 197 RGLMPGLTFSNELISRDEGLHCDFACLLYSLLQK--------QLPL--EKVYQIVHEAVEIETEF--VCKALPCDLIGMNSNLMSQYI 272
+                            79*********************97666555443........2233..33455555444444434..334456788************ PP
+
+         NFECIMNI_00017 292 yfmaapmyeayglvpsfdvpkknplpymdh 321
+                             f+a  +    g   ++    +np+ +m+ 
+  sp|P50651|RIR2A_ARATH 273 QFVADRLLVTLGCERTYK--AENPFDWMEF 300
+                            *****9999999988775..4788888765 PP
+
+>> sp|P31350|RIR2_HUMAN  Ribonucleoside-diphosphate reductase subunit M2 OS=Homo sapiens OX=9606 GN=RRM2 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.6   0.4   2.4e-10   1.7e-06      32     322 ..      85     353 ..      79     386 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 32.6 bits;  conditional E-value: 2.4e-10
+        NFECIMNI_00017  32 vqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetiha 120
+                           ++y ++  +y++  + +w   evdls+d +           ++   +++   +d +  +++   +  +v  +e   +      +e ih+
+  sp|P31350|RIR2_HUMAN  85 IEYHDIWQMYKKAEASFWTAEEVDLSKDIQHWESLKPEERYFISHVLAFFAASDGIVNENLVERFSQEVQITEARCFYGFQIAMENIHS 173
+                           7899999*********************7765444444455566778999999*********************999999999****** PP
+
+        NFECIMNI_00017 121 rtyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmg 209
+                           + ys ++   + dp +     +   a+    + +     k +   r     + +    + a+ a+e i f gsfa  f + +  g + g
+  sp|P31350|RIR2_HUMAN 174 EMYSLLIDTYIKDPKER---EFLFNAI----ETMPCVKKKADWALRWIGDKEATYGERVVAFAAVEGIFFSGSFASIFWLKK-RGLMPG 254
+                           *******9999999753...3333333....333333344444445544455555667889999**************9865.79**** PP
+
+        NFECIMNI_00017 210 iaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfs.egreciginadlikqyiyfmaap 297
+                           +    +li rde lh  f   ++k          ++  p  +   + i++av       q++l      + ig+n  l+kqyi f+a  
+  sp|P31350|RIR2_HUMAN 255 LTFSNELISRDEGLHCDFACLMFKH---------LVHKPSEERVREIIINAVRI----EQEFLTEaLPVKLIGMNCTLMKQYIEFVADR 330
+                           ****************996655542.........34445433333334555533....3444432024689*****************9 PP
+
+        NFECIMNI_00017 298 myeayglvpsfdvpkknplpymdhw 322
+                           +    g+   f v  +np+ +m++ 
+  sp|P31350|RIR2_HUMAN 331 LMLELGFSKVFRV--ENPFDFMENI 353
+                           9999999999987..6999999875 PP
+
+>> sp|Q60561|RIR2_MESAU  Ribonucleoside-diphosphate reductase subunit M2 OS=Mesocricetus auratus OX=10036 GN=RRM2 PE=2 S
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.5   0.5   2.6e-10   1.8e-06      31     322 ..      85     354 ..      79     384 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 32.5 bits;  conditional E-value: 2.6e-10
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            ++y ++  +y++  + +w   evdls+d +           ++   +++   +d +  +++   +  +v  +e   +      +e ih
+  sp|Q60561|RIR2_MESAU  85 PIEYHDIWKMYKKAEASFWTAEEVDLSKDIQHWEALKPDERHFISHVLAFFAASDGIVNENLVERFSQEVQVTEARCFYGFQIAMENIH 173
+                           58999999********************976554444445677888999999***********************999999999***** PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfm 208
+                           ++ ys ++   + d  +  e  y   a+    + +     k +   r     + +    + a+ a+e i f gsfa  f + +  g + 
+  sp|Q60561|RIR2_MESAU 174 SEMYSLLIDTYIKDS-K--EREYLFNAI----ETMPCVKKKADWALRWIGDKEATYGERVVAFAAVEGIFFSGSFASIFWLKK-RGLMP 254
+                           *****9987555554.3..455655554....333333344444455554455555667889999**************9865.79*** PP
+
+        NFECIMNI_00017 209 giaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfs.egreciginadlikqyiyfmaa 296
+                           g+    +li rde lh  f   ++k          ++  p  + ++q+i+   v  e   q++l      + ig+n  l+kqyi f+a 
+  sp|Q60561|RIR2_MESAU 255 GLTFSNELISRDEGLHCDFACLMFK---------HLVHKPS-EQRVQEIITNAVRIE---QEFLTEaLPVKLIGMNCTLMKQYIEFVAD 330
+                           *****************99655544.........2444554.457888776666544...444432034689***************** PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpymdhw 322
+                            +    g+   f v  +np+ +m++ 
+  sp|Q60561|RIR2_MESAU 331 RLMLELGFNKIFKV--ENPFDFMENI 354
+                           99999999999987..6999999874 PP
+
+>> sp|Q4KLN6|RIR2_RAT  Ribonucleoside-diphosphate reductase subunit M2 OS=Rattus norvegicus OX=10116 GN=Rrm2 PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.6   0.3   4.9e-10   3.4e-06      31     329 ..      85     361 ..      80     388 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 31.6 bits;  conditional E-value: 4.9e-10
+      NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihar 121
+                          ++y ++  +y++  + +w   evdls+d +           ++   +++   +d +  +++   +  +v  +e   +      +e ih++
+  sp|Q4KLN6|RIR2_RAT  85 PIEYHDIWQMYKKAEASFWTAEEVDLSKDIQHWEALKPDERHFISHVLAFFAASDGIVNENLVERFSQEVQVTEARCFYGFQIAMENIHSE 175
+                         57999999********************976554444445677888999999***********************999999999******* PP
+
+      NFECIMNI_00017 122 tyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaq 212
+                          ys ++   + d  +  e  y   a+    + +     k +   r     + +    + a+ a+e i f gsfa  f + +  g + g+  
+  sp|Q4KLN6|RIR2_RAT 176 MYSLLIDTYIKDS-K--EREYLFNAI----ETMPCVKKKADWALRWIGDKEATYGERVVAFAAVEGIFFSGSFASIFWLKK-RGLMPGLTF 258
+                         ***9987555554.3..455655554....333333344444455554455555667889999**************9865.79******* PP
+
+      NFECIMNI_00017 213 lvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfse.greciginadlikqyiyfmaapmyeay 302
+                           +li rde lh  f   ++k          ++  p  + ++++i+   v    + q++l      + ig+n  l+kqyi f+a  +    
+  sp|Q4KLN6|RIR2_RAT 259 SNELISRDEGLHCDFACLMFKH---------LVHKPS-EQRVKEIITNSV---RIEQEFLTEAlPVKLIGMNCTLMKQYIEFVADRLMLEL 336
+                         *************996555542.........333343.233444433333...333444433214689*****************999999 PP
+
+      NFECIMNI_00017 303 glvpsfdvpkknplpymdhwidgskvq 329
+                         g+   f v  +np+ +m++     k  
+  sp|Q4KLN6|RIR2_RAT 337 GFNKIFKV--ENPFDFMENISLEGKTN 361
+                         *9999988..69999999864444544 PP
+
+>> sp|P49723|RIR4_YEAST  Ribonucleoside-diphosphate reductase small chain 2 OS=Saccharomyces cerevisiae (strain ATCC 204
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.8   0.2   8.6e-10   5.9e-06      31     325 ..      39     310 ..      25     329 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 30.8 bits;  conditional E-value: 8.6e-10
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmle.tdks...vtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslf 115
+                            ++y e+ a y++  + +w   e++l++d  d+ + td     + +l+  +is  +l +    +++s+    ++ n e +++     ++
+  sp|P49723|RIR4_YEAST  39 PIKYHEIWAAYKKVEASFWTAEEIELAKDTEDFQKlTDDQktyIGNLLALSISSDNLVNKYLIENFSA----QLQNPEGKSFYGFQIMM 123
+                           589**************************999754244331124577888888888877777777766....56799999****99*** PP
+
+        NFECIMNI_00017 116 etihartyshivkqtfadpgqm.leetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaeh 203
+                           e i+++ ys +v   f dp  + l +   n   + +  a++  +             d+     l a+ a e i   g++a  f + + 
+  sp|P49723|RIR4_YEAST 124 ENIYSEVYSMMVDAFFKDPKNIpLFKEIANLPEVKHKAAFIERW---------ISNDDSLYAERLVAFAAKEGIFQAGNYASMFWLTDK 203
+                           *******************8763555556666655555554433.........333344444567777778888889*********986 PP
+
+        NFECIMNI_00017 204 tgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiy 292
+                              + g+a   + icrd   +t f+  +l  h r         +p     i+ki+   v  ei  + y  s   e +g++   i  yi 
+  sp|P49723|RIR4_YEAST 204 K-IMPGLAMANRNICRDRGAYTDFS-CLLFAHLRTKP------NPK---IIEKIITEAV--EIEKEYYSNSLPVEKFGMDLKSIHTYIE 279
+                           3.456*******************7.57778887643......333...3566665433..5556667777788999999999****** PP
+
+        NFECIMNI_00017 293 fmaapmyeayglvpsfdvpkknplpymdhwidg 325
+                           f+a  + + +g    ++    np+ +m+    +
+  sp|P49723|RIR4_YEAST 280 FVADGLLQGFGNEKYYNA--VNPFEFMEDVATA 310
+                           ******999999888775..5888888766555 PP
+
+>> sp|Q6UDJ1|RIR2_PSHV1  Ribonucleoside-diphosphate reductase small subunit OS=Psittacid herpesvirus 1 (isolate Amazon p
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.8   0.0   3.5e-09   2.4e-05      34     233 ..      17     209 ..      12     292 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 28.8 bits;  conditional E-value: 3.5e-09
+        NFECIMNI_00017  34 ypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihart 122
+                            p++  l    ++  wnefe+  ++d+ d+    +   d+    + +   ad +   ++ +l+       ++++       +et+h+rt
+  sp|Q6UDJ1|RIR2_PSHV1  17 CPDMRELRDLSIANNWNEFELCYARDEKDVDCLTEDECDFYKFVFCFLAAADDLVNVNLDNLVT-LFPQKDIQHYYAEQIRIETVHSRT 104
+                           6888999999999*************99987777778899999999999*****9999999865.4567899999999999******** PP
+
+        NFECIMNI_00017 123 yshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgia 211
+                           ys +    f     +  + y   av +   ai   +d l   +++    + ++      ++ +e i f++sfa    +  h+  f+   
+  sp|Q6UDJ1|RIR2_PSHV1 105 YSAVQL-VFFRNDAIARDRYVLEAVKD--GAIRRKIDWLSRIQNEG--DELTLPEKYILMILIEGIFFVSSFAAISYLRRHS-IFQVTC 187
+                           **8655.555667789999*9999965..57777777776544332..23333334444567899********999999996.79999* PP
+
+        NFECIMNI_00017 212 qlvklicrdevlhtrfngailk 233
+                           q   li rde +ht  +  i  
+  sp|Q6UDJ1|RIR2_PSHV1 188 QSNDLISRDETIHTTASCCIYN 209
+                           **************98766643 PP
+
+>> sp|Q8SRR2|RIR2_ENCCU  Ribonucleoside-diphosphate reductase small chain OS=Encephalitozoon cuniculi (strain GB-M1) OX=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.8   0.1   1.4e-08   9.4e-05      18     321 ..       9     288 ..       4     322 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 26.8 bits;  conditional E-value: 1.4e-08
+        NFECIMNI_00017  18 lflgvkqglldtinvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnseme 106
+                           l+l  k+  +  + ++y ++  +y++  s +w   ev l +d  d  + +     ++   +++   +d +   ++   +  +v   e  
+  sp|Q8SRR2|RIR2_ENCCU   9 LLLDPKEERFVLLPIKYHDIWKMYKKAESSFWTVEEVSLDKDIDDWGKLNAKERHFISYVLAFFAASDGIVNLNLVERFSTEVKVLEAR 97 
+                           566667777778899*******************************999999999999999**99******999999999999999999 PP
+
+        NFECIMNI_00017 107 nlinawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfa 195
+                            +      +e ih++ ys ++   + d     e+ +      +  + i +  +k +   r  +  ++ +   l a+  +e i f g+fa
+  sp|Q8SRR2|RIR2_ENCCU  98 FFYGFQMAIENIHSEMYSLLIDTYIRDND---EKNFLF----DAIRTIPSVKEKADWAIRWIEDKNSDFATRLVAFACVEGIFFSGAFA 179
+                           99999999**********99976666654...445544....445677888889888889888888889999999999*********** PP
+
+        NFECIMNI_00017 196 vtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegrecigina 284
+                             f + +  g + g+    +li rde lh +f   +l  h +            +k   + ++dav  ++  + + l       ig+n 
+  sp|Q8SRR2|RIR2_ENCCU 180 SIFWLKK-RGLMPGLTFSNELISRDEGLHCEFA-CLLHYHLK--KKCN-----RIK---EVVMDAVEIEKKFLSESL---PVNLIGMNC 253
+                           ***9865.79*********************94.55555543..3222.....233...346777766554444433...4579***** PP
+
+        NFECIMNI_00017 285 dlikqyiyfmaapmyeayglvpsfdvpkknplpymdh 321
+                           +l+ +yi f+a  + e  g    ++    np+ +m++
+  sp|Q8SRR2|RIR2_ENCCU 254 NLMCRYIEFVADRLLENLGEERVYNA--TNPFDFMEN 288
+                           ************99999998777765..578888876 PP
+
+>> sp|O67475|RIR2_AQUAE  Ribonucleoside-diphosphate reductase subunit beta OS=Aquifex aeolicus (strain VF5) OX=224324 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   0.0   5.6e-05      0.38      45     224 ..      56     231 ..      14     249 .. 0.67
+   2 !    9.7   0.0    0.0023        15     247     322 ..     597     670 ..     575     690 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 5.6e-05
+        NFECIMNI_00017  45 msqiwnefevdlsqdrmdmletdksvtdlmv..ktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivkqtf 131
+                           ++ +w   e+ + +dr    et  s  +       +s+    ds     +  +    +t  e+e  i a  + e++ha +y  i++ + 
+  sp|O67475|RIR2_AQUAE  56 FTNFWIPEEIQMLEDRKQ-YETVLSDYEKRAyeLVLSFLIALDSFQVDMLKEF-GRMITAPEVEMAITAQEFQESVHAYSYQFILE-SV 141
+                           566677677777777654.2333332222220023444455566555554433.3468999********************98875.67 PP
+
+        NFECIMNI_00017 132 adpgqmleetyt....ntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvkl 216
+                            dp +  +e y     +  +l r++ i   ++++          + +++      + le + f + fa  + +  + gk+ +  q +k 
+  sp|O67475|RIR2_AQUAE 142 VDPVKA-DEIYNywreDERLLERNKVIAELYNEFIRKP-----NEENFIKATIGNYILESLYFYSGFAFFYTLG-RQGKMRNTVQQIKY 223
+                           899765.5555412225678999999888777654322.....33344444557899***********988776.67************ PP
+
+        NFECIMNI_00017 217 icrdevlh 224
+                           i rde+  
+  sp|O67475|RIR2_AQUAE 224 INRDELCF 231
+                           *****865 PP
+
+  == domain 2  score: 9.7 bits;  conditional E-value: 0.0023
+        NFECIMNI_00017 247 spmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyeayglvpsfdvpkknplpymdhw 322
+                           +p ++  i + +   v +ei +  y+    ++ +gin  li++yi ++        g+ p +    +npl ++d++
+  sp|O67475|RIR2_AQUAE 597 TPEIEKWIVEYFKYAVNEEIKWGQYVTQ--NQILGINDVLIERYIKYLGNLRITQIGFDPIYPEVTENPLKWIDEF 670
+                           5777777777788889999999999864..689**************************************99976 PP
+
+>> sp|P0DKH2|RI2BC_ARATH  Putative ribonucleoside-diphosphate reductase small chain B OS=Arabidopsis thaliana OX=3702 GN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.1   0.1   4.6e-08   0.00031      31     129 ..      21     120 ..      15     135 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 25.1 bits;  conditional E-value: 4.6e-08
+         NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvk.tiswqhladsvaarsisgllmphvtnsemenlinawslfet 117
+                             +qyp++  +y++  + +w   evdlsqd+ d   +  +    ++k  +++   +d +  +++s  +m  v  se   +      +e 
+  sp|P0DKH2|RI2BC_ARATH  21 PIQYPQIWEMYKKAEASFWTAEEVDLSQDNRDWENSLTNDERHFIKhVLAFFAASDGIVLENLSTRFMSDVQISEARAFYGFQIAIEN 108
+                            58*****************************986654444444555167899999************************999999*** PP
+
+         NFECIMNI_00017 118 ihartyshivkq 129
+                            ih++ ys ++  
+  sp|P0DKH2|RI2BC_ARATH 109 IHSEMYSLLLDT 120
+                            ******987654 PP
+
+>> sp|P0C8I1|RIR2_ASFP4  Ribonucleoside-diphosphate reductase small chain OS=African swine fever virus (isolate Tick/Sou
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.0   0.3     2e-07    0.0014      31     323 ..      16     290 ..       6     321 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 23.0 bits;  conditional E-value: 2e-07
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +q+pe    y++  s  w   evd+ +d  d     ks  ++  + +++  +ad +  +++   +m ++   e+  +    +  e +h
+  sp|P0C8I1|RIR2_ASFP4  16 PIQHPECWNWYKKLESLTWTAQEVDMCKDIDDWEAMPKSQREFYKQILAFFVVADEIVIENLLTNFMREIKVKEVLYFYTMQAAQECVH 104
+                           68******************************999**************************99999*********9999999******* PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfm 208
+                           ++ ys  vk  + d  ++ +  ++    + +   i+  + +    ++    t  s+   l  + a+e i f++ f     +  + + + 
+  sp|P0C8I1|RIR2_ASFP4 105 SEAYSIQVKTLIPDEKEQ-QRIFSG---IEK-HPIIKKMAQ--WVRQWMDPTKNSLGERLVGFAAVEGILFQNHFVAIQFLK-EQNIMP 185
+                           *****9999988776543.334433...344.445543333..2344567899999999*************9996655455.556789 PP
+
+        NFECIMNI_00017 209 giaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreci.ginadlikqyiyfmaa 296
+                           g+    ++i rde +h  f   ++     +  i e       +  i kil   v     f +y f ++r  + g++ +++ qyi ++  
+  sp|P0C8I1|RIR2_ASFP4 186 GLVSYNEFISRDEGVHCSFACFLI--SNYVYNIPE-------ERIIHKILKEAVELVDEFINYAFDKARGRVpGFSKEMLFQYIRYFTD 265
+                           *****************9965554..444444433.......223556666555555568899999988654499********987766 PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpymdhwi 323
+                            +         + v   np+p m  ++
+  sp|P0C8I1|RIR2_ASFP4 266 NLCFMMQCKSIYKV--GNPFPQMTKFF 290
+                           55433333333332..46666666555 PP
+
+>> sp|Q77MS0|RIR2_GAHVM  Ribonucleoside-diphosphate reductase small subunit OS=Gallid herpesvirus 2 (strain Chicken/Md5/
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.2   0.0   3.5e-07    0.0024      40     239 ..      56     246 ..      47     338 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 22.2 bits;  conditional E-value: 3.5e-07
+        NFECIMNI_00017  40 lyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivk 128
+                           l    +   w e e  +s d  d+    +    +    +++   ad +   +i +ll    +  ++ +       +e +h+r ys i  
+  sp|Q77MS0|RIR2_GAHVM  56 LRALSIMNRWTETEFVISDDLRDVSMLTEEERYFYRFLFTFLSAADDLVNLNIDNLLG-LFSQKDIHHYYFEQECIEAVHSRAYSIIQL 143
+                           5555666779999999999988865544444445555567788899999999998875.567889999999999**********96655 PP
+
+        NFECIMNI_00017 129 qtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvkli 217
+                               d   +    y  t++ n s ai + +d l +      +  +si      ++ +e i f +sfa         + f+   q+  li
+  sp|Q77MS0|RIR2_GAHVM 144 ML-FDNDSLARAEYVKTSL-N-SPAIQSKLDWLNKRV----IECSSIAEKYILMILIEGIFFSASFAAIA-YLRINNLFVVTCQINNLI 224
+                           55.5778899999**9985.4.789999888886532....333445555555667899*******9765.5567789*********** PP
+
+        NFECIMNI_00017 218 crdevlhtrfngailkihqrip 239
+                            rde +h + +  i+k +   p
+  sp|Q77MS0|RIR2_GAHVM 225 SRDEAIHVEASCCIFKNYLMGP 246
+                           *********9999999776544 PP
+
+>> sp|P0C8I0|RIR2_ASFK5  Ribonucleoside-diphosphate reductase small chain OS=African swine fever virus (isolate Pig/Keny
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9   0.7   8.7e-07    0.0059      31     341 ..      16     308 ..       4     324 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 8.7e-07
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +q+pe    y++  s  w   evd+ +d  d     k   ++  + +++  +ad +  +++   +m ++   e+  +    +  e +h
+  sp|P0C8I0|RIR2_ASFK5  16 PIQHPECWNWYKKLESLTWTAQEVDMCKDIDDWEAMPKPQREFYKQILAFFVVADEIVIENLLTNFMREIKVKEVLYFYTMQAAQECVH 104
+                           69****************************999999*************************99999*********9999999******* PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfm 208
+                           ++ ys  vk  + d  ++ +  ++    + +   i+  + +  +  +       s+   l  + a+e i f++ f     +  + + + 
+  sp|P0C8I0|RIR2_ASFK5 105 SEAYSIQVKTLIPDEKEQ-QRIFSG---IEK-HPIIRKMAQWVQ--QWMDPVKNSLGERLVGFAAVEGILFQNHFVAIQFLK-EQNIMP 185
+                           *****9999988876543.334433...333.455555544443..344556678889999999********9996655455.556789 PP
+
+        NFECIMNI_00017 209 giaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreci.ginadlikqyiyfmaa 296
+                           g+    ++i rde +h  f   ++     +  i e       +  i kil   v     f  y f ++r  + g++ +++ qyi ++  
+  sp|P0C8I0|RIR2_ASFK5 186 GLVSYNEFISRDEGMHCSFACFLIS--NYLNNIPE-------EKIIHKILKEAVELVDEFISYAFDKARGSVpGFSKEMLFQYIRYFTD 265
+                           *****************99655543..33333333.......33466777666665566889*****9987659**********88877 PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpymdhwidgskvqvapqelqnsayq 341
+                            +              +np+p m  ++ +   +    el+ + yq
+  sp|P0C8I0|RIR2_ASFK5 266 NLCFMLQC--KSIYKVENPFPQMTKFFLNEVEKTNFFELRPTQYQ 308
+                           66433333..33334478888887776655555555566666665 PP
+
+>> sp|Q6GZQ8|RIR2_FRG3G  Putative ribonucleoside-diphosphate reductase small subunit 067L OS=Frog virus 3 (isolate Goorh
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.4   0.0   1.3e-06    0.0087     103     328 ..     149     360 ..      50     380 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 20.4 bits;  conditional E-value: 1.3e-06
+        NFECIMNI_00017 103 semenlinawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfm 191
+                           +e+ n++ +++  e ih + ys ++  t+  p       y   a  +  +      dkl+  ++    t   +  +l      e ++++
+  sp|Q6GZQ8|RIR2_FRG3G 149 NEIRNMLTSFACREAIHQKAYS-LLNDTLGMPDC----EYQAFA--DYGE----MTDKLDFMREMDCSTLPGLARSLLRAVLNEGVSLF 226
+                           4677777777777777777776.44566655543....232222..2222....23555443333334444555555555556778888 PP
+
+        NFECIMNI_00017 192 gsfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreci 280
+                           ++f + +   +++gk+ g+ ++v+   rde +h +  +   k+ + + +    + +  l   +++  + v   e  f d  f e     
+  sp|Q6GZQ8|RIR2_FRG3G 227 AAFVMLLT-FQRSGKMKGMGKVVEWSVRDENIHVEGVS---KLFETLNSEYPWVVTKDLIELFKEDAERVAELEEAFVDLAFQECGPVC 311
+                           88877664.5899********************97544...44444444444444444444555556666777889********99999 PP
+
+        NFECIMNI_00017 281 ginadlikqyiyfmaapmyeayglvpsfd.vpkknplpymdhwidgskv 328
+                           g+    +k y+ ++        gl   ++  p+  p+p++   idg+ +
+  sp|Q6GZQ8|RIR2_FRG3G 312 GLEPKQVKDYVLYVINLRAANMGLPKLIErAPEACPIPWVKWLIDGADL 360
+                           ************99988888889877766489********9999*9875 PP
+
+>> sp|P0C8I2|RIR2_ASFWA  Ribonucleoside-diphosphate reductase small chain OS=African swine fever virus (isolate Warthog/
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9   0.3   8.9e-07     0.006      31     322 ..      16     289 ..       4     320 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 8.9e-07
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +q+pe    y++  s  w   evd+ +d  d     k   ++  + +++  +ad +  +++   +m ++   e+  +    +  e +h
+  sp|P0C8I2|RIR2_ASFWA  16 PIQHPECWNWYKKLESLTWTAQEVDMCKDIDDWEAMPKPQREFYKQILAFFVVADEIVIENLLTNFMREIKVKEVLYFYTMQAAQECVH 104
+                           69****************************999999*************************99999*********9999999******* PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfm 208
+                           ++ ys  vk  + d  ++ +  ++    + +   i+  + +    ++    t  s+   l  + a+e i f++ f     +  + + + 
+  sp|P0C8I2|RIR2_ASFWA 105 SEAYSIQVKTLIPDEKEQ-QRIFSG---IEK-HPIIKKMAQ--WVRQWMDPTKNSLGERLVGFAAVEGILFQNHFVAIQFLK-EQNIMP 185
+                           *****9999988776543.334433...344.445543333..2344567899999999*************9996655455.556789 PP
+
+        NFECIMNI_00017 209 giaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreci.ginadlikqyiyfmaa 296
+                           g+    ++i rde +h  f   ++     +  i e          i kil   v     f  y f ++r  + g++ +++ qyi ++  
+  sp|P0C8I2|RIR2_ASFWA 186 GLVSYNEFISRDEGVHCSFACFLI--SNYVYNIPE---E----KIIHKILKEAVELVDEFISYAFDKARGRVpGFSKEMLFQYIRYFTD 265
+                           *****************9965554..444444433...2....23556666555555567789999888654499********987766 PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpymdhw 322
+                            +         + v   np+p m  +
+  sp|P0C8I2|RIR2_ASFWA 266 NLCFMMQCKSIYKV--GNPFPQMTKF 289
+                           55433333333332..4666666655 PP
+
+>> sp|P26713|RIR2_ASFM2  Ribonucleoside-diphosphate reductase small chain OS=African swine fever virus (isolate Tick/Mal
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.3   0.6   1.4e-06    0.0093      31     323 ..      16     290 ..       4     320 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 20.3 bits;  conditional E-value: 1.4e-06
+        NFECIMNI_00017  31 nvqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetih 119
+                            +q+pe    y++  s  w   evd+ +d  d     k   ++  + +++  +ad +  +++   +m ++   e+  +    +  e +h
+  sp|P26713|RIR2_ASFM2  16 PIQHPECWNWYKKLESMTWTAQEVDMCKDIDDWEAMPKPQREFYKQILAFFVVADEIVIENLLTNFMREIKVKEVLYFYTMQAAQECVH 104
+                           69****************************999999*************************99999*********9999999******* PP
+
+        NFECIMNI_00017 120 artyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfm 208
+                           ++ ys  vk  + d  ++ +  ++    + +   i+  + +    ++       s+   l  + a+e i f++ f     +  + + + 
+  sp|P26713|RIR2_ASFM2 105 SEAYSIQVKTLIPDEKEQ-QRIFSG---IEK-HPIIKKMAQW--VRQWMDPARNSLGERLVGFAAVEGILFQNHFVAIQFLK-EQNIMP 185
+                           *****9999988876543.334433...333.3444333222..223344556677788999999*******9996655455.556789 PP
+
+        NFECIMNI_00017 209 giaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreci.ginadlikqyiyfmaa 296
+                           g+    ++i rde +h  f   +  i   +  i e       +  i kil   v     f +y f ++r  + g++ +++ qyi ++  
+  sp|P26713|RIR2_ASFM2 186 GLVSYNEFISRDEGMHCSFACFL--ISNYVYNIPE-------EKIIHKILKEAVELVDEFINYAFDKARGRVpGFSKEMLFQYIRYFTD 265
+                           *****************996554..4444444433.......233566666666555668899999988654499********988776 PP
+
+        NFECIMNI_00017 297 pmyeayglvpsfdvpkknplpymdhwi 323
+                            +         ++v   np+p m  ++
+  sp|P26713|RIR2_ASFM2 266 NLCFMMQCKSIYNV--GNPFPQMTKFF 290
+                           66544444444554..46666666555 PP
+
+>> sp|P17424|RIR4_SALTY  Ribonucleoside-diphosphate reductase 2 subunit beta OS=Salmonella typhimurium (strain LT2 / SGS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.0   0.3   1.6e-06     0.011      41     251 ..      23     219 ..      12     257 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 20.0 bits;  conditional E-value: 1.6e-06
+        NFECIMNI_00017  41 yqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivkq 129
+                           + +  s +w   +v ls d         +   l ++ ++   l d++   + +  lm        e +++  s++e +har+ys i   
+  sp|P17424|RIR4_SALTY  23 WNRLTSNFWLPEKVPLSNDIPAWQTLSAAEQQLTIRVFTGLTLLDTIQNIAGAPSLMADAITPHEEAVLSNISFMEAVHARSYSSIFS- 110
+                           566678899999999999987777777778899999999999***998666665677776666778888889************9875. PP
+
+        NFECIMNI_00017 130 tfadpgqmleetyt....ntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlv 214
+                           t+    + ++  y     n  +  ++q i+ a         h  v+d  +   + ++f le + f + f + + ++   gk+ + a l+
+  sp|P17424|RIR4_SALTY 111 TLCQTKE-VDAAYAwseeNPPLQRKAQIIL-A---------H-YVSDEPLKKKIASVF-LESFLFYSGFWLPMYFS-SRGKLTNTADLI 185
+                           4544433.3444431111333333333332.2.........3.477888777777777.78888888888887665.57********** PP
+
+        NFECIMNI_00017 215 klicrdevlhtrfngailkih.qripaiaemlespmlk 251
+                           +li rde +h  + g   +i  q++ ai    e   lk
+  sp|P17424|RIR4_SALTY 186 RLIIRDEAVHGYYIGYKYQIAlQKLSAI----EREELK 219
+                           ************9998877752555555....333334 PP
+
+>> sp|P0C701|RIR2_EBVG  Ribonucleoside-diphosphate reductase small subunit OS=Epstein-Barr virus (strain GD1) OX=10376 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.4   0.1   6.3e-07    0.0043     104     320 ..      79     279 ..      52     295 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 21.4 bits;  conditional E-value: 6.3e-07
+       NFECIMNI_00017 104 emenlinawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgs 193
+                          ++++       +e +h +ty++i+   f d  +     y    +    +a+ + +  l +    + vt    +l    ++ +e i f++s
+  sp|P0C701|RIR2_EBVG  79 DIDHYYTEQKAMENVHGETYANILNMLF-DGDRAAMNAYAEAIM--ADEALQAKISWLRDK-VAAAVTLPEKIL---VFLLIEGIFFISS 161
+                          5566666677899***********9998.555566678876544..567888777777654.445555444333...3446899999999 PP
+
+       NFECIMNI_00017 194 favtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegrecigin 283
+                          f  ++++    g + gi      i rde+lhtr  +    ++  + a a+    p   + iq+++   v  e  f +    eg   +   
+  sp|P0C701|RIR2_EBVG 162 FY-SIALLRVRGLMPGICLANNYISRDELLHTRAAS---LLYNSMTAKADR---PR-ATWIQELFRTAVEVETAFIEA-RGEGVTLVD-- 240
+                          95.67899999*********************9643...356677777765...54.467999999999999888764.456666555.. PP
+
+       NFECIMNI_00017 284 adlikqyiyfmaapmyeayglvpsfdvp..kknplpymd 320
+                             ikq++   a  +    g  p +  p  k  pl ym 
+  sp|P0C701|RIR2_EBVG 241 VRAIKQFLEATADRILGDIGQAPLYGTPppKDCPLTYMT 279
+                          5569*******************9987522677999985 PP
+
+>> sp|P0CAP6|RIR2_EBVB9  Ribonucleoside-diphosphate reductase small subunit OS=Epstein-Barr virus (strain B95-8) OX=1037
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.4   0.1   6.3e-07    0.0043     104     320 ..      79     279 ..      52     295 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 21.4 bits;  conditional E-value: 6.3e-07
+        NFECIMNI_00017 104 emenlinawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmg 192
+                           ++++       +e +h +ty++i+   f d  +     y    +    +a+ + +  l +    + vt    +l    ++ +e i f++
+  sp|P0CAP6|RIR2_EBVB9  79 DIDHYYTEQKAMENVHGETYANILNMLF-DGDRAAMNAYAEAIM--ADEALQAKISWLRDK-VAAAVTLPEKIL---VFLLIEGIFFIS 160
+                           5566666677899***********9998.555566678876544..567888777777654.445555444333...344689999999 PP
+
+        NFECIMNI_00017 193 sfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegrecig 281
+                           sf  ++++    g + gi      i rde+lhtr  +    ++  + a a+    p   + iq+++   v  e  f +    eg   + 
+  sp|P0CAP6|RIR2_EBVB9 161 SFY-SIALLRVRGLMPGICLANNYISRDELLHTRAAS---LLYNSMTAKADR---PR-ATWIQELFRTAVEVETAFIEA-RGEGVTLVD 240
+                           995.67899999*********************9643...356677777765...54.467999999999999888764.456666555 PP
+
+        NFECIMNI_00017 282 inadlikqyiyfmaapmyeayglvpsfdvp..kknplpymd 320
+                                ikq++   a  +    g  p +  p  k  pl ym 
+  sp|P0CAP6|RIR2_EBVB9 241 --VRAIKQFLEATADRILGDIGQAPLYGTPppKDCPLTYMT 279
+                           ..5569*******************9987522677999985 PP
+
+>> sp|P0CAP7|RIR2_EBVA8  Ribonucleoside-diphosphate reductase small subunit OS=Epstein-Barr virus (strain AG876) OX=8283
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.4   0.1   6.3e-07    0.0043     104     320 ..      79     279 ..      52     295 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 21.4 bits;  conditional E-value: 6.3e-07
+        NFECIMNI_00017 104 emenlinawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmg 192
+                           ++++       +e +h +ty++i+   f d  +     y    +    +a+ + +  l +    + vt    +l    ++ +e i f++
+  sp|P0CAP7|RIR2_EBVA8  79 DIDHYYTEQKAMENVHGETYANILNMLF-DGDRAAMNAYAEAIM--ADEALQAKISWLRDK-VAAAVTLPEKIL---VFLLIEGIFFIS 160
+                           5566666677899***********9998.555566678876544..567888777777654.445555444333...344689999999 PP
+
+        NFECIMNI_00017 193 sfavtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegrecig 281
+                           sf  ++++    g + gi      i rde+lhtr  +    ++  + a a+    p   + iq+++   v  e  f +    eg   + 
+  sp|P0CAP7|RIR2_EBVA8 161 SFY-SIALLRVRGLMPGICLANNYISRDELLHTRAAS---LLYNSMTAKADR---PR-ATWIQELFRTAVEVETAFIEA-RGEGVTLVD 240
+                           995.67899999*********************9643...356677777765...54.467999999999999888764.456666555 PP
+
+        NFECIMNI_00017 282 inadlikqyiyfmaapmyeayglvpsfdvp..kknplpymd 320
+                                ikq++   a  +    g  p +  p  k  pl ym 
+  sp|P0CAP7|RIR2_EBVA8 241 --VRAIKQFLEATADRILGDIGQAPLYGTPppKDCPLTYMT 279
+                           ..5569*******************9987522677999985 PP
+
+>> sp|P37146|RIR4_ECOLI  Ribonucleoside-diphosphate reductase 2 subunit beta OS=Escherichia coli (strain K12) OX=83333 G
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.4   0.1   1.2e-06    0.0083      44     277 ..      26     245 ..      14     280 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 20.4 bits;  conditional E-value: 1.2e-06
+        NFECIMNI_00017  44 qmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivkqtfa 132
+                             s +w   +v ls d             l ++ ++   l d++     +  lmp       e +++  s++e +har+ys i   t+ 
+  sp|P37146|RIR4_ECOLI  26 LTSNFWLPEKVPLSNDIPAWQTLTVVEQQLTMRVFTGLTLLDTLQNVIGAPSLMPDALTPHEEAVLSNISFMEAVHARSYSSIFS-TLC 113
+                           556677777777777754433333333456667777777888776655566799*9999999999999*************9975.444 PP
+
+        NFECIMNI_00017 133 dpgqmleetyt...ntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvklic 218
+                                ++  y      a l r   i+      +   +h +  d  +   + ++f le + f + f + + ++   gk+ + a l++li 
+  sp|P37146|RIR4_ECOLI 114 QTK-DVDAAYAwseENAPLQRKAQII------Q---QHYRG-DDPLKKKIASVF-LESFLFYSGFWLPMYFS-SRGKLTNTADLIRLII 189
+                           332.2344443111233344433332......3...33332.445556666666.78888888888887665.57************** PP
+
+        NFECIMNI_00017 219 rdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegr 277
+                           rde +h  + g   k ++++  i+ + +   lks    +l  +   e+ + d l++e  
+  sp|P37146|RIR4_ECOLI 190 RDEAVHGYYIGY--KYQKNMEKIS-LGQREELKSFAFDLLLELYDNELQYTDELYAETP 245
+                           *******99996..4444555443.4455668888877887888889999999988864 PP
+
+>> sp|P47471|RIR2_MYCGE  Ribonucleoside-diphosphate reductase subunit beta OS=Mycoplasma genitalium (strain ATCC 33530 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.6   0.2   2.2e-06     0.015      40     293 ..      43     278 ..      16     301 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 19.6 bits;  conditional E-value: 2.2e-06
+        NFECIMNI_00017  40 lyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlina.wslfetihartyshiv 127
+                           ++ + +  +w   ++ +s d     +  k   dl+ kt++   l d++ a       + h      e +i a ++++  +har+y  i 
+  sp|P47471|RIR2_MYCGE  43 VWNRIVQNFWLPEKIPVSNDIPSWKKLSKDWQDLITKTFTGLTLLDTIQATIGDICQIDHALTD-HEQVIYAnFAFMVGVHARSYGTIF 130
+                           45666778999999**********************************9965555567777654.55555552677788*******988 PP
+
+        NFECIMNI_00017 128 kqtf.adpgqmleetytntavl.nrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlv 214
+                                ++      e   nt  l  r++a++  +     d   s+v        l   f      + g f + f ++ +  ++ + + ++
+  sp|P47471|RIR2_MYCGE 131 STLCtSEQINAAHEWVVNTESLqKRAKALIPYYT--GNDPLKSKVA-----AALMPGFL-----LYGGFYLPFYLSSR-KQLPNTSDII 206
+                           6543134445577888999766257888887765..3455555553.....33333343.....46889999998875.578999**** PP
+
+        NFECIMNI_00017 215 klicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyf 293
+                           +li rd+v+h  ++g   k ++++  +  + +   +k+ + +++  ++  e   +dyl  e  e +gi  d ik  +y 
+  sp|P47471|RIR2_MYCGE 207 RLILRDKVIHNYYSGY--KYQRKLEKLP-LAKQKEMKAFVFELMYRLIELE---KDYL-KELYEGFGIVDDAIKFSVYN 278
+                           **************96..5444444433.3444455666666666666544...6776.57778889988888877774 PP
+
+>> sp|P42492|RIR2_ASFB7  Ribonucleoside-diphosphate reductase small chain OS=African swine fever virus (strain Badajoz 1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   0.4     2e-06     0.014      30     323 ..      22     297 ..       7     328 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 2e-06
+        NFECIMNI_00017  30 invqypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfeti 118
+                           + +q+pe    y++  s  w   evd+ +d  d     k   ++  + +++  +ad +  +++   +m ++   e+  +    +  e +
+  sp|P42492|RIR2_ASFB7  22 FPIQHPECWNWYKKLESLTWTAQEVDMCKDIDDWEAMPKPQREFYKQILAFFVVADEIVIENLLTNFMREIKVKEVLYFYTMQAAQECV 110
+                           469****************************999999*************************99999*********9999999****** PP
+
+        NFECIMNI_00017 119 hartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsil.ltltalfaleeigfmgsfavtfgiaehtgk 206
+                           h++ ys  vk  + d  ++ +  ++    + +   i+    k+ +  r+    d + l   l  + a+e i f++ f     +  + + 
+  sp|P42492|RIR2_ASFB7 111 HSEAYSIQVKTLIPDEKEQ-QRIFSG---IEKH-PII---KKMAQWVRQWMDPDRNTLgERLVGFAAVEGILFQNHFVAIQFLK-EQNI 190
+                           ******9999988776543.333433...3333.343...466666677777776666246778889999****9996555455.5567 PP
+
+        NFECIMNI_00017 207 fmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreci.ginadlikqyiyfm 294
+                           + g+    ++i rde +h  f   +  i   +  i e       +  i kil   v     f +y f ++r  + g++ +++ qyi ++
+  sp|P42492|RIR2_ASFB7 191 MPGLVSYNEFISRDEGVHCSFACFL--ISNYVYNIPE-------EKIIHKILKEAVELVDEFINYAFDKARGRVpGFSKEMLFQYIRYF 270
+                           89*****************996554..4444444433.......233566666666555668899999988654499********9877 PP
+
+        NFECIMNI_00017 295 aapmyeayglvpsfdvpkknplpymdhwi 323
+                              +         + v   np+p m  ++
+  sp|P42492|RIR2_ASFB7 271 TDNLCFMMQCKSIYKV--GNPFPQMTKFF 297
+                           6655433333333332..46666666555 PP
+
+>> sp|P28847|RIR2_EHV1B  Ribonucleoside-diphosphate reductase small subunit OS=Equine herpesvirus 1 (strain Ab4p) OX=315
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   0.1   3.8e-06     0.026      33     315 ..      26     290 ..      22     301 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 3.8e-06
+        NFECIMNI_00017  33 qypelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihar 121
+                           + p++e l    ++  w + ++ +s d  d+ +   +  ++    +++   ad +   ++  l     t  ++ +       +e  h+r
+  sp|P28847|RIR2_EHV1B  26 ECPDIEHLRSLSVANRWLDTDLPISDDLKDVAKLTPAEREFYRFLFAFLSAADDLVNLNLGDLSA-LFTQKDILHYYIEQESIEVTHSR 113
+                           57999999999999*******************99999999999999999****99999876655.55666655555555667999*** PP
+
+        NFECIMNI_00017 122 tyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrh.sqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmg 209
+                            ys i    f + +      y  + +     ai      l+   r+   v +  il+     + +e + f +sfa    +  h   f+ 
+  sp|P28847|RIR2_EHV1B 114 VYSAIQLMLFGNDAAA-RARYVASIIG--DAAIGRKVAWLQAKVREcGSVAEKYILM-----ILIEGLFFASSFASIAYLRTHN-LFVV 193
+                           ******9999987654.4556544332..3344334445555544414566666554.....45789999****9888888885.7999 PP
+
+        NFECIMNI_00017 210 iaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreci.ginadlikqyiyfmaap 297
+                             q   li rde +htr +  i   +  +      +e p  k +i +++   v  e     +l+s + +    ++   i  y+ + a  
+  sp|P28847|RIR2_EHV1B 194 TCQSNDLISRDEAIHTRASCCIYNNY--L----GGFEKPEPK-RIYELFSEAVNIECE---FLLSHAPQYShLLDIGAIISYVRYSADR 272
+                           9****************988775433..2....345777766.455666555555554...4555554433034555677999999999 PP
+
+        NFECIMNI_00017 298 myeayglvpsfdvpkknp 315
+                           +    gl p f+ pk +p
+  sp|P28847|RIR2_EHV1B 273 LLGEIGLSPLFNAPKPSP 290
+                           9999**********9987 PP
+
+>> sp|Q01038|RIR2_SHV21  Ribonucleoside-diphosphate reductase small subunit OS=Saimiriine herpesvirus 2 (strain 11) OX=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.0   0.0   1.6e-06     0.011     106     319 ..      84     281 ..      19     297 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 20.0 bits;  conditional E-value: 1.6e-06
+        NFECIMNI_00017 106 enlinawslfetihartyshivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfal.eeigfmgs 193
+                            +       +e ih + y++i+   f +    + e y+    + +  a+    +kl     + +vt+ s       lf l e i f++s
+  sp|Q01038|RIR2_SHV21  84 SHYYAEQMAMENIHGKVYANILNMLFKN---NITEVYSYACDIMNDSALQ---EKLR--WLNGRVTEASDKAEKILLFLLvEGIFFISS 164
+                           555555567899*************986...5788999887666666765...5554..345677777777777777766266778888 PP
+
+        NFECIMNI_00017 194 favtfgiaehtgkfmgiaqlvklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegrecigi 282
+                           f  ++g+    g + gi      i+rde+lht    a l ++     + +  e p  +  i k++   v  e+ f+ ++ ++g     +
+  sp|Q01038|RIR2_SHV21 165 F-FSIGLFRVRGIMNGICLANDYIARDEMLHTSA--AAL-LYNT---MTKSSERPS-EDWIYKLFREAV--EVEFK-FIAAKGYGVSLV 242
+                           7.689**************************964..333.3444...345556665.567888887655..55564.688999999999 PP
+
+        NFECIMNI_00017 283 nadlikqyiyfmaapmyeayglvpsfd.vpkkn.plpym 319
+                           n   i+q++   a  + e+ +l p +  +p +n pl y 
+  sp|Q01038|RIR2_SHV21 243 NVHEIRQFLQATADRILESINLNPIYGsLPPENcPLAYT 281
+                           9999*********99*****9999985355554488775 PP
+
+>> sp|P50644|RIR2_EHV4  Ribonucleoside-diphosphate reductase small subunit OS=Equine herpesvirus 4 (strain 1942) OX=1033
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.2   0.00024       1.6      35     315 ..      27     289 ..      27     299 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 0.00024
+       NFECIMNI_00017  35 pelealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartys 124
+                          p++e l    ++  w + ++ +s d  d+ +   +  ++    +++   ad +   ++  l     t  ++ +       +e  h+r ys
+  sp|P50644|RIR2_EHV4  27 PDIEHLRLLSVANRWLDTDLPISDDLKDVAKLAPAEREFYRFLFAFLSAADDLVNLNLGDLSA-LFTQKDILHYYIEQESIEVTHSRVYS 115
+                          667777777778888888888899999988888888888888888888899888888766554.45555555554455567899999999 PP
+
+       NFECIMNI_00017 125 hivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsq.vtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaql 213
+                           i    f + +      y  + v  +  ai      l+   r+ + v +  il     ++ +e + f +sfa    +  h   f+   q 
+  sp|P50644|RIR2_EHV4 116 AIQLMLFGNDAT-ARARYVASVV--KDVAIDLKVSWLQAKVRECKsVAEKYIL-----MILIEGVFFASSFASIAYLRTHN-LFVVTCQS 196
+                          999999998765.4566765555..4556665666666666654414444444.....45589999*****9888888885.79999*** PP
+
+       NFECIMNI_00017 214 vklicrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfseg.reciginadlikqyiyfmaapmyeay 302
+                            li rde +ht+ +  i      +      +e p   ++i  ++   v  e  f   l+s + +    ++ + i  y+ + a  +    
+  sp|P50644|RIR2_EHV4 197 NDLISRDEAIHTNASCCIYNN--YLG----GFEKPA-PTRIYALFSEAVNIECEF---LLSHApKSSHLLDIEAIICYVRYSADRLLGEI 276
+                          ************876665433..232....345664.466777776666655544...44443133334555667778888888888888 PP
+
+       NFECIMNI_00017 303 glvpsfdvpkknp 315
+                          gl p f+ pk  p
+  sp|P50644|RIR2_EHV4 277 GLSPLFNAPKPPP 289
+                          8888888888665 PP
+
+>> sp|P75461|RIR2_MYCPN  Ribonucleoside-diphosphate reductase subunit beta OS=Mycoplasma pneumoniae (strain ATCC 29342 /
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   17.4   0.5     1e-05     0.071      42     293 ..      44     277 ..      19     292 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 17.4 bits;  conditional E-value: 1e-05
+        NFECIMNI_00017  42 qqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlina.wslfetihartyshivkq 129
+                            +    +w   ++ +s d     +  k   dl+ kt++   l d++ a +i  + +     ++ e +i a ++++  +har+y  i   
+  sp|P75461|RIR2_MYCPN  44 NRITQNFWLPEKIPVSNDIPSWKQLSKEWQDLITKTFTGLTLLDTIQA-TIGDIKQIDYALTDHEQVIYAnFAFMVGVHARSYGTIFS- 130
+                           44456689999999*******************************998.5777777777777888888772556678******98875. PP
+
+        NFECIMNI_00017 130 tfadpgqmle..etytnta.vlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvk 215
+                           t+    q+ e  e    t  +  r++a++  +    +d   s+v        l   f      + g f + f ++ +  ++ + + +++
+  sp|P75461|RIR2_MYCPN 131 TLCTSEQITEahEWVVKTEsLQKRAKALIPYYT--GKDPLKSKVA-----AALMPGFL-----LYGGFYLPFYLSSR-KQLPNTSDIIR 206
+                           677666766522444555414467788887664..3555555553.....33333343.....46889999998875.578999***** PP
+
+        NFECIMNI_00017 216 licrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyf 293
+                           li rd+v+h  ++g   k+++++  +++  ++ m +  +  +      + i ++   + e  e +gi  d ik  iy 
+  sp|P75461|RIR2_MYCPN 207 LILRDKVIHNYYSG--YKFQRKVEKMSKEKQAEMKRFVFDLM-----YELIELEKAYLKELYEGFGIVEDAIKFSIYN 277
+                           *************9..58888988888777666644433332.....3333333444456667788888888887774 PP
+
+>> sp|O36410|RIR2_ALHV1  Ribonucleoside-diphosphate reductase small subunit OS=Alcelaphine herpesvirus 1 (strain C500) O
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   17.7   0.0   8.4e-06     0.057      37     239 ..      16     207 ..       8     280 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 17.7 bits;  conditional E-value: 8.4e-06
+        NFECIMNI_00017  37 lealyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartysh 125
+                           +  l q+ +   w   +++ls d   +    ++  ++    +++  +a+++   +i  ll+    + ++++       +e +h + y +
+  sp|O36410|RIR2_ALHV1  16 FFELTQETFQNRWFPAQINLSVDVKCLSLMSEADVNFYKYLFTFLGMAETLVNFNIDELLVDFECH-DIKHYYCEQMAMECVHGKVYFN 103
+                           555667777777888888888876555444444445555667778888888888888888876655.566666677789********** PP
+
+        NFECIMNI_00017 126 ivkqtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlv 214
+                           i+   f +    l  t+     + + +a+   ++ le   + ++     +l+    ++ +e + f++sf   +g+    g + g+    
+  sp|O36410|RIR2_ALHV1 104 ILNMLFKN---NLAATWEFAEAVLKDEALQKKLEWLESKIKMAKTKAEKVLI----FYLIEGVFFISSFY-CIGLLRVKGVMPGVCMAN 184
+                           ******86...4677887777777899**99999999988887766666654....67899999**9996.68**************** PP
+
+        NFECIMNI_00017 215 klicrdevlhtrfngailkihqrip 239
+                             i rde+lhtr     l  +  ip
+  sp|O36410|RIR2_ALHV1 185 DYISRDELLHTRAA--ALLYNTMIP 207
+                           ***********963..343444555 PP
+
+>> sp|Q9XC20|RIR2_MYCGA  Ribonucleoside-diphosphate reductase subunit beta OS=Mycoplasmoides gallisepticum (strain R(low
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   16.6   0.0   1.8e-05      0.12      40     239 ..      42     231 ..      14     263 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 1.8e-05
+        NFECIMNI_00017  40 lyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivk 128
+                           ++ +    +w   ++ +s d     e       l+ +t++   l d++         +p+      + +   +s++  +har+y  i  
+  sp|Q9XC20|RIR2_MYCGA  42 VWTRVTQNFWLPEKIPVSNDLKSWNELTPEWKQLVTRTFTGLTLLDTIQCTLGDIAQIPNSLTDHEQFVYANFSFMVGVHARSYGTIFS 130
+                           455566678999999999999999999999999999999999999999876555555676544443444455888899******99875 PP
+
+        NFECIMNI_00017 129 qtfadpgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvkli 217
+                             + + +  +ee +    v+n+ +    a   l   +       + i   l     +  + + g f + f +a   gk+ + + +++li
+  sp|Q9XC20|RIR2_MYCGA 131 T-L-NTSDEIEEAHE--WVINNEKLQARA-KFLVPYYTSDDPLKSKIAAAL-----MPGFLLYGGFYLPFYLAA-RGKLPNTSDIIRLI 208
+                           3.3.34455666653..455544432222.223222222222333333333.....333445699999**9997.6************* PP
+
+        NFECIMNI_00017 218 crdevlhtrfngailkih.qrip 239
+                            rd+v+h  ++g   ++  q++p
+  sp|Q9XC20|RIR2_MYCGA 209 LRDKVIHNYYSGYKYRLKvQKLP 231
+                           ***********986555325555 PP
+
+>> sp|P9WH72|RIR2A_MYCTO  Ribonucleoside-diphosphate reductase subunit beta nrdF1 OS=Mycobacterium tuberculosis (strain 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.7   0.2     7e-05      0.47      43     309 ..      28     275 ..      17     287 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 7e-05
+         NFECIMNI_00017  43 qqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivkqt 130
+                            +    +w   ++ ls d         +     ++ ++   l d+  a   +  ++        e ++   +++e++ha++ys i   t
+  sp|P9WH72|RIR2A_MYCTO  28 RLTGNFWLPEKIPLSNDLASWQTLSSTEQQTTIRVFTGLTLLDTAQATVGAVAMIDDAVTPHEEAVLTNMAFMESVHAKSYSSIFS-T 114
+                            5556778888888888877665555555566677777888888776654333344444444556677778999*********9875.6 PP
+
+         NFECIMNI_00017 131 fadpgqm...leetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvk 215
+                            +    q+   ++ +  n  +  ++q iv  + +   d    +   +s++        le + f + f + +      gk+ + a l++
+  sp|P9WH72|RIR2A_MYCTO 115 LCSTKQIddaFDWSEQNPYLQRKAQIIVDYY-R--GDDALKRK-ASSVM--------LESFLFYSGFYLPMYW-SSRGKLTNTADLIR 189
+                            6665554111333444555555556555443.2..22222221.23343........4555555555555543.457*********** PP
+
+         NFECIMNI_00017 216 licrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyeayg 303
+                            li rde +h  + g   k ++ +  + +  e    +    ++l  + a ei +   l+ e    +g   d++  y+ + a       g
+  sp|P9WH72|RIR2A_MYCTO 190 LIIRDEAVHGYYIGY--KCQRGLADLTDA-ERADHREYTCELLHTLYANEIDYAHDLYDE----LGWTDDVL-PYMRYNANKALANLG 269
+                            *********999885..554444444433.333445556667777777777776666655....55554543.455555555555566 PP
+
+         NFECIMNI_00017 304 lvpsfd 309
+                              p+fd
+  sp|P9WH72|RIR2A_MYCTO 270 YQPAFD 275
+                            666665 PP
+
+>> sp|P9WH73|RIR2A_MYCTU  Ribonucleoside-diphosphate reductase subunit beta nrdF1 OS=Mycobacterium tuberculosis (strain 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.7   0.2     7e-05      0.47      43     309 ..      28     275 ..      17     287 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 7e-05
+         NFECIMNI_00017  43 qqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivkqt 130
+                            +    +w   ++ ls d         +     ++ ++   l d+  a   +  ++        e ++   +++e++ha++ys i   t
+  sp|P9WH73|RIR2A_MYCTU  28 RLTGNFWLPEKIPLSNDLASWQTLSSTEQQTTIRVFTGLTLLDTAQATVGAVAMIDDAVTPHEEAVLTNMAFMESVHAKSYSSIFS-T 114
+                            5556778888888888877665555555566677777888888776654333344444444556677778999*********9875.6 PP
+
+         NFECIMNI_00017 131 fadpgqm...leetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvk 215
+                            +    q+   ++ +  n  +  ++q iv  + +   d    +   +s++        le + f + f + +      gk+ + a l++
+  sp|P9WH73|RIR2A_MYCTU 115 LCSTKQIddaFDWSEQNPYLQRKAQIIVDYY-R--GDDALKRK-ASSVM--------LESFLFYSGFYLPMYW-SSRGKLTNTADLIR 189
+                            6665554111333444555555556555443.2..22222221.23343........4555555555555543.457*********** PP
+
+         NFECIMNI_00017 216 licrdevlhtrfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegreciginadlikqyiyfmaapmyeayg 303
+                            li rde +h  + g   k ++ +  + +  e    +    ++l  + a ei +   l+ e    +g   d++  y+ + a       g
+  sp|P9WH73|RIR2A_MYCTU 190 LIIRDEAVHGYYIGY--KCQRGLADLTDA-ERADHREYTCELLHTLYANEIDYAHDLYDE----LGWTDDVL-PYMRYNANKALANLG 269
+                            *********999885..554444444433.333445556667777777777776666655....55554543.455555555555566 PP
+
+         NFECIMNI_00017 304 lvpsfd 309
+                              p+fd
+  sp|P9WH73|RIR2A_MYCTU 270 YQPAFD 275
+                            666665 PP
+
+>> sp|Q66662|RIR2_EHV2  Ribonucleoside-diphosphate reductase small subunit OS=Equine herpesvirus 2 (strain 86/87) OX=828
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.6   0.0   3.5e-05      0.24      39     240 ..      18     208 ..       5     283 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 3.5e-05
+       NFECIMNI_00017  39 alyqqqmsqiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivk 128
+                          al q+     w   ++ l+ d   +   +    ++    +s+  +a+ +   +i +l+     + ++e+       +e ih + y++i+ 
+  sp|Q66662|RIR2_EHV2  18 ALTQETWQNRWFPSQISLTSDVACLQSLNPRDLEFYKFLFSFLAMAEKLVNFNIQALVAD-FHSHDLEHYYTEQEAMENIHGKVYANILN 106
+                          566777777777777888777766666555555555566788888888888889887655.566799*********************** PP
+
+       NFECIMNI_00017 129 qtfad.pgqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfa.leeigfmgsfavtfgiaehtgkfmgiaqlvkl 216
+                            f +  g+m  + y    v    +a+ +   kl     h +v++         +f  +e i f++sf  +++     g + g+      
+  sp|Q66662|RIR2_EHV2 107 MFFKNnVGEM--QKYAREIVG--DEALAA---KLHW--LHGRVSEAKTRAEKVLVFLlIEGIFFISSFY-SIATLRVRGLMNGVCMANDY 186
+                          *998625666..457776664..456654...4443..4666666666555555554168899999995.55666788************ PP
+
+       NFECIMNI_00017 217 icrdevlhtrfngailkihqripa 240
+                          i rde +htr   a l ++  +p 
+  sp|Q66662|RIR2_EHV2 187 ISRDEWVHTRA--AALLFNTLVPD 208
+                          *********96..44555666664 PP
+
+>> sp|F5HAW0|RIR2_HHV8P  Ribonucleoside-diphosphate reductase small subunit OS=Human herpesvirus 8 type P (isolate GK18)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   0.00021       1.4     113     232 ..      91     202 ..      21     297 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 0.00021
+        NFECIMNI_00017 113 slfetihartyshivkqtfadp.gqmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgi 200
+                             +e ih   y++i+k  f +  g++l   y    +l+   a+    +kle  h + +   t     l  ++ +e i f++sf  ++++
+  sp|F5HAW0|RIR2_HHV8P  91 VAMENIHGVVYANILKIFFNNSrGELL--AYAAKIILDP--AL---CEKLEWLHSRVRKATTKAQKIL-MFLIVEGIYFISSFY-SISL 170
+                           467999*99*****9999976426776..5777777764..44...5788766555444444443333.344579999**9995.7899 PP
+
+        NFECIMNI_00017 201 aehtgkfmgiaqlvklicrdevlhtrfngail 232
+                               g + g+      i rde+lht+  + + 
+  sp|F5HAW0|RIR2_HHV8P 171 CRVRGIMPGVCLANDYISRDELLHTKAASMLY 202
+                           9************************9654433 PP
+
+>> sp|Q9CBQ2|RIR2_MYCLE  Ribonucleoside-diphosphate reductase subunit beta OS=Mycobacterium leprae (strain TN) OX=272631
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.1   0.00036       2.5      47     284 ..      35     254 ..      18     286 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 0.00036
+        NFECIMNI_00017  47 qiwnefevdlsqdrmdmletdksvtdlmvktiswqhladsvaarsisgllmphvtnsemenlinawslfetihartyshivkqtfadpg 135
+                            +w   +v +s d         s   l ++ ++   l d++     +  l+p       e +    +++e++ha++ys i   t+   +
+  sp|Q9CBQ2|RIR2_MYCLE  35 NFWLPEKVPVSNDLPSWGTLTASEKQLTMRVFTGLTLLDTIQGTVGAVSLIPDALTPHEEAVYTNIAFMESVHAKSYSSIFS-TLCSTA 122
+                           56666677777777766666677777888888888899999887767778899888888888888999**********9875.666666 PP
+
+        NFECIMNI_00017 136 qmleetytntavlnrsqaivgafdkleedhrhsqvtdtsilltltalfaleeigfmgsfavtfgiaehtgkfmgiaqlvklicrdevlh 224
+                           + ++e +  +   n+ q        + e +r  +     +  tl      e + f + f + +  +   +k+ + a +++li rde +h
+  sp|Q9CBQ2|RIR2_MYCLE 123 E-IDEAFRWSEENNNLQRKA---KIVMEYYRGDEPLKRKVASTLL-----ESFLFYSGFYLPMYWS-SRAKLTNTADMIRLIIRDEAVH 201
+                           5.466665555444444322...2234456666655556655554.....4444555555555444.46899***************** PP
+
+        NFECIMNI_00017 225 trfngailkihqripaiaemlespmlksqiqkildavvaqeivfqdylfsegrecigina 284
+                             + g   k+ qr   + +      lk    ++l  +   e+ +   l+      +g+  
+  sp|Q9CBQ2|RIR2_MYCLE 202 GYYIGY--KF-QRGLVLVDDARRAELKEYTYELLFELYDNEVEYTQDLYD----RVGLTE 254
+                           999885..44.344444455555566777777777777777766655553....355555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (368 nodes)
+Target sequences:                     571864  (207016062 residues searched)
+Passed MSV filter:                     13726  (0.0240022); expected 11437.3 (0.02)
+Passed bias filter:                    11777  (0.0205941); expected 11437.3 (0.02)
+Passed Vit filter:                       761  (0.00133074); expected 571.9 (0.001)
+Passed Fwd filter:                        84  (0.000146888); expected 5.7 (1e-05)
+Initial search space (Z):             571864  [actual number of targets]
+Domain search space  (domZ):              84  [number of targets reported over threshold]
+# CPU time: 4.17u 0.42s 00:00:04.59 Elapsed: 00:00:01.73
+# Mc/sec: 43958.20
+//
+[ok]
