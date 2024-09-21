@@ -1,0 +1,1 @@
+I ran prokka for LR813619.1.fasta. The output returned includes annotations of the genome and list of CDSs. Then, I splited list of CDSs into separate CDS files and translated it into protein sequences.
