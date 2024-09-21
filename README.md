@@ -1,1 +1,1 @@
-running phmmer
+running phmmer by swissprot database
